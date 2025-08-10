@@ -80,7 +80,7 @@ PuraX外屏目前仅显示华为白名单内的App，在本软件获得白名单
 
 ### 启动代理
 打开`ClashBox`，在`主页`直接点击右下角的` ▶ `启动即可翻墙。
-<img src="/images/clashbox_photo_2025-07-14_21-16-26.jpg" alt="ClashBox" width="297" heigh="640">
+<img src="/images/clashbox_photo_2025-08-07_13-06-45.jpg" alt="ClashBox" width="297" heigh="640">
 
 ### 节点切换
 打开`ClashBox`进入`代理`页面，然后根据需求选择即可。

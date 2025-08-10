@@ -80,7 +80,7 @@ Open `ClashBox`, go to the `Configuration` page, then click the ` + ` in the bot
 
 ### Start Proxy
 Open `ClashBox`, on the `Home` page directly click the ` ▶ ` in the bottom right corner to start and bypass restrictions.
-<img src="/images/clashbox_photo_2025-07-14_21-16-26.jpg" alt="ClashBox" width="297" heigh="640">
+<img src="/images/clashbox_photo_2025-08-07_13-06-45.jpg" alt="ClashBox" width="297" heigh="640">
 
 ### Switch Nodes
 Open `ClashBox`, go to the `Proxy` page, then select according to your needs.
