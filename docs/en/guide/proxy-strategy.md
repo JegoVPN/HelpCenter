@@ -5,6 +5,9 @@ description: Setting up proxy strategy can make foreign websites automatically g
 
 # Proxy Strategy
 
+::: danger Notice for Mainland China Users
+<span style="color:red;">Jego's Rule mode has pre-configured almost all commonly used websites and IP addresses in mainland China. No need to add these websites to direct connection rules during daily use.</span>
+
 ## Configuration Rules
 
 In **Jego - Control Panel**, click **Proxy Strategy** in the left navigation bar, then click **Add Proxy Strategy**.
