@@ -7,6 +7,7 @@ description: Setting up proxy strategy can make foreign websites automatically g
 
 ::: danger Notice for Mainland China Users
 <span style="color:red;">Jego's Rule mode has pre-configured almost all commonly used websites and IP addresses in mainland China. No need to add these websites to direct connection rules during daily use.</span>
+:::
 
 ## Configuration Rules
 
