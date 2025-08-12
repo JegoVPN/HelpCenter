@@ -54,7 +54,6 @@ docs/
 ### 🌐 在线访问
 
 - **网站地址**: https://help.jegovpn.com/
-- **GitHub Pages**: https://jegoinc.github.io/Jego/
 
 ### 📝 技术栈
 
@@ -136,7 +135,6 @@ docs/
 ### 🌐 Online Access
 
 - **Website**: https://help.jegovpn.com/
-- **GitHub Pages**: https://jegoinc.github.io/Jego/
 
 ### 📝 Tech Stack
 
