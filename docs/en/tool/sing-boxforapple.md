@@ -71,6 +71,8 @@ Reminder: The first time you use it, all three modes may not be selected. It's r
 
 <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F1pikxhPrKq6ac7M6ltdW_2Fimage_1.png" alt="macOS node selection">
 
+On this Tab, you can manually choose the node server you want to use.
+
 ## sing-box for iOS / SFI Usage Tutorial
 
 ### Add Subscription
@@ -101,6 +103,8 @@ Reminder: The first time you use it, all three modes may not be selected. It's r
 `Global` - Global proxy mode, all traffic goes through proxy
 
 #### Groups tab - Switch node servers
+
+On this Tab, you can manually choose the node server you want to use.
 
 ## sing-box Common Issues
 

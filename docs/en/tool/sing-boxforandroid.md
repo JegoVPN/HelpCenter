@@ -71,6 +71,8 @@ Reminder: The first time you use it, all three modes may not be selected. It's r
 
 The default is auto-select. Here auto-select is on the `🇸🇬 Direct｜Singapore Four` server. Click `Auto Select` to manually select other servers.
 
+On this Tab, you can manually choose the node server you want to use.
+
 ## sing-box Common Issues
 
 ### 🚫 Cannot access foreign websites but can access domestic websites?

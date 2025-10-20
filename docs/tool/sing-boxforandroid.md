@@ -58,14 +58,14 @@ sing-box for Android 简称 SFA，SFA是sing-box官方推出的图形界面客�
 第一次启动还会提示要VPN权限，点确定即可。
 
 #### Overview 标签 - 选择上网模式
+提醒：第一次使用可能三个模式都没选中，建议点一下`Rule`。
 
 `Rule` - 智能分流模式，根据规则自动选择直连或代理  
 `Direct` - 直连模式，所有流量都不走代理  
 `Global` - 全局代理模式，所有流量都走代理
 
-提醒：第一次使用可能三个模式都没选中，建议点一下Rule。
-
 #### Groups 标签 ：更换节点服务器
+在这个页面里可以手动选择自己想使用的节点服务器。
 
 <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F4cQ0AKNudR808MoJ1zOt_2FScreenshot_2025-07-30-08-18-21-604_io_nekohasekai_sfa_1.jpg" alt="节点选择1" width="300"> <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F8rR5ZcKgpR3OQPVHoAPx_2FScreenshot_2025-07-30-08-18-27-812_io_nekohasekai_sfa_2.jpg" alt="节点选择2" width="300">
 

@@ -58,6 +58,7 @@ macOS还可以通过Github和命令行安装
 <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FFn3jEa3uWX1o2927aGHo_2Fimage_2.png" alt="macOS开启sing-box">
 
 #### Overview - 选择上网模式
+提醒：第一次使用可能三个模式都没选中，建议点一下`Rule`。
 
 `Rule` - 智能分流模式，根据规则自动选择直连或代理  
 `Direct` - 直连模式，所有流量都不走代理  
@@ -66,6 +67,7 @@ macOS还可以通过Github和命令行安装
 <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FOHCHUCUIQ4chAL7HNnPm_2Fimage_3.png" alt="macOS上网模式">
 
 #### Groups - 更换节点服务器
+在这个页面里可以手动选择自己想使用的节点服务器。
 
 <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F1pikxhPrKq6ac7M6ltdW_2Fimage_1.png" alt="macOS节点选择">
 
@@ -91,12 +93,14 @@ macOS还可以通过Github和命令行安装
 使用上的逻辑和上面macOS大同小异，同一套UI框架。
 
 #### Overview 标签 - 选择上网模式
+提醒：第一次使用可能三个模式都没选中，建议点一下`Rule`。
 
 `Rule` - 智能分流模式，根据规则自动选择直连或代理  
 `Direct` - 直连模式，所有流量都不走代理  
 `Global` - 全局代理模式，所有流量都走代理
 
 #### Groups 标签 - 更换节点服务器
+在这个页面里可以手动选择自己想使用的节点服务器。
 
 ## sing-box 常见问题
 
