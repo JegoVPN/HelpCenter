@@ -59,7 +59,9 @@ Click Dashboard, make sure Profile selects the Jego just created, then click the
 
 #### Overview - Select internet mode
 
-`Rule` `Direct` `Global`
+`Rule` - Smart routing mode, automatically selects direct connection or proxy based on rules  
+`Direct` - Direct connection mode, all traffic bypasses proxy  
+`Global` - Global proxy mode, all traffic goes through proxy
 
 <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FOHCHUCUIQ4chAL7HNnPm_2Fimage_3.png" alt="macOS internet mode">
 
@@ -90,7 +92,9 @@ The usage logic is similar to macOS above, using the same UI framework.
 
 #### Overview tab - Select internet mode
 
-`Rule` `Direct` `Global`
+`Rule` - Smart routing mode, automatically selects direct connection or proxy based on rules  
+`Direct` - Direct connection mode, all traffic bypasses proxy  
+`Global` - Global proxy mode, all traffic goes through proxy
 
 #### Groups tab - Switch node servers
 

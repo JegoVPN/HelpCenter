@@ -59,7 +59,9 @@ macOS还可以通过Github和命令行安装
 
 #### Overview - 选择上网模式
 
-`Rule` `Direct` `Global`
+`Rule` - 智能分流模式，根据规则自动选择直连或代理  
+`Direct` - 直连模式，所有流量都不走代理  
+`Global` - 全局代理模式，所有流量都走代理
 
 <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FOHCHUCUIQ4chAL7HNnPm_2Fimage_3.png" alt="macOS上网模式">
 
@@ -90,7 +92,9 @@ macOS还可以通过Github和命令行安装
 
 #### Overview 标签 - 选择上网模式
 
-`Rule` `Direct` `Global`
+`Rule` - 智能分流模式，根据规则自动选择直连或代理  
+`Direct` - 直连模式，所有流量都不走代理  
+`Global` - 全局代理模式，所有流量都走代理
 
 #### Groups 标签 - 更换节点服务器
 
