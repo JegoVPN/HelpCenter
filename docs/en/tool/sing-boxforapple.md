@@ -59,6 +59,8 @@ Click Dashboard, make sure Profile selects the Jego just created, then click the
 
 #### Overview - Select internet mode
 
+Reminder: The first time you use it, all three modes may not be selected. It's recommended to click on `Rule`.
+
 `Rule` - Smart routing mode, automatically selects direct connection or proxy based on rules  
 `Direct` - Direct connection mode, all traffic bypasses proxy  
 `Global` - Global proxy mode, all traffic goes through proxy
@@ -91,6 +93,8 @@ Click `Dashboard`, make sure Profile selects the Jego just created, then click t
 The usage logic is similar to macOS above, using the same UI framework.
 
 #### Overview tab - Select internet mode
+
+Reminder: The first time you use it, all three modes may not be selected. It's recommended to click on `Rule`.
 
 `Rule` - Smart routing mode, automatically selects direct connection or proxy based on rules  
 `Direct` - Direct connection mode, all traffic bypasses proxy  

@@ -59,11 +59,11 @@ The first time you start, you'll also be prompted for VPN permission, just click
 
 #### Overview tab: Select internet mode
 
+Reminder: The first time you use it, all three modes may not be selected. It's recommended to click on `Rule`.
+
 `Rule` - Smart routing mode, automatically selects direct connection or proxy based on rules  
 `Direct` - Direct connection mode, all traffic bypasses proxy  
 `Global` - Global proxy mode, all traffic goes through proxy
-
-Reminder: The first time you use it, all three modes may not be selected. It's recommended to click on Rule.
 
 #### Groups tab: Switch node servers
 
