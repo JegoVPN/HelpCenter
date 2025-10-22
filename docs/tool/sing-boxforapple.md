@@ -88,11 +88,12 @@ macOS还可以通过Github和命令行安装
 
 点击`Dashboard`，确保Profile选中刚才创建的Jego，然后点击的`Enabled`开关。
 
-<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FxZVgmsq4OQLsT2eLghMZ_2F20250714-162650_1.png" alt="iOS开启sing-box1" width="300"> <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2Fu0p5d9m5Kv1ZFfm2hvm8_2F20250715-064637_2.png" alt="iOS开启sing-box2" width="300">
+<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FxZVgmsq4OQLsT2eLghMZ_2F20250714-162650_1.png" alt="iOS开启sing-box1" width="300"> 
 
 使用上的逻辑和上面macOS大同小异，同一套UI框架。
 
 #### Overview 标签 - 选择上网模式
+<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2Fu0p5d9m5Kv1ZFfm2hvm8_2F20250715-064637_2.png" alt="iOS开启sing-box2" width="300">
 提醒：第一次使用可能三个模式都没选中，建议点一下`Rule`。
 
 `Rule` - 智能分流模式，根据规则自动选择直连或代理  
@@ -100,6 +101,7 @@ macOS还可以通过Github和命令行安装
 `Global` - 全局代理模式，所有流量都走代理
 
 #### Groups 标签 - 更换节点服务器
+<img src="/images/singbox-ios-groups.png" alt="sing-box groups" width="300">
 在这个页面里可以手动选择自己想使用的节点服务器。
 
 ## sing-box 常见问题

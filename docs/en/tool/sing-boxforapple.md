@@ -90,12 +90,12 @@ Open the sing-box client, go to `Profiles -> New Profile`
 
 Click `Dashboard`, make sure Profile selects the Jego just created, then click the `Enabled` switch.
 
-<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FxZVgmsq4OQLsT2eLghMZ_2F20250714-162650_1.png" alt="iOS enable sing-box 1" width="300"> <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2Fu0p5d9m5Kv1ZFfm2hvm8_2F20250715-064637_2.png" alt="iOS enable sing-box 2" width="300">
+<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FxZVgmsq4OQLsT2eLghMZ_2F20250714-162650_1.png" alt="iOS enable sing-box 1" width="300"> 
 
 The usage logic is similar to macOS above, using the same UI framework.
 
 #### Overview tab - Select internet mode
-
+<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2Fu0p5d9m5Kv1ZFfm2hvm8_2F20250715-064637_2.png" alt="iOS enable sing-box 2" width="300">
 Reminder: The first time you use it, all three modes may not be selected. It's recommended to click on `Rule`.
 
 `Rule` - Smart routing mode, automatically selects direct connection or proxy based on rules  
@@ -103,6 +103,7 @@ Reminder: The first time you use it, all three modes may not be selected. It's r
 `Global` - Global proxy mode, all traffic goes through proxy
 
 #### Groups tab - Switch node servers
+<img src="/images/singbox-ios-groups.png" alt="sing-box groups" width="300">
 
 On this Tab, you can manually choose the node server you want to use.
 
