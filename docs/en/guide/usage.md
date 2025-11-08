@@ -38,6 +38,12 @@ Click the <span style="background-color:green; color:white; padding:2px 6px; bor
 
 Click the <span style="background-color:grey; color:white; padding:2px 6px; border-radius:3px;">Off</span> button to disable proxy mode.
 
+### Operation Demo
+
+The following video demonstrates how to switch proxy node servers and how to toggle between <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Global</span> and <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Rules</span> modes. You can choose the appropriate node and mode according to your actual needs to get the best proxy experience.
+
+<video src="/videos/20251108-182013.mp4" controls></video>
+
 ### Daily usage notes:
 
 * When you select nodes or modes, the Jego logo at the top will turn into a small circle, indicating that your request is being processed (as shown in the figure below), please be patient and continue waiting;

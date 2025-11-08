@@ -38,6 +38,13 @@ description: 使用无忧行在浏览器里翻墙非常简单，点一下就翻�
 
 点击<span style="background-color:grey; color:white; padding:2px 6px; border-radius:3px;">关闭</span>按钮关闭了代理模式。
 
+### 操作演示
+
+下面的视频将为你演示如何更换代理节点服务器，以及如何在<span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">全局</span>和<span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">规则</span>模式之间进行切换。你可以根据实际需求选择合适的节点和模式，以获得最佳的翻墙体验。
+
+<video src="/videos/20251108-182013.mp4" controls></video>
+
+
 ### 日常使用注意事项：
 
 * 当你选择节点或者模式时，顶部的无忧行LOGO会变成小圆圈，代表正在处理你的请求（如下图所示），请保持耐心，继续等待；
