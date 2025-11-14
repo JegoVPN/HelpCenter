@@ -454,7 +454,37 @@ type Options<T = any> = {
      * The returned string is fed into the `tokenize` function to split it up
      * into tokens.
      */
-    extractField?: (document: T, fieldName: string) => string;
+    extractField?: (document: T, fieldName: string) => any;
+    /**
+     * Function used to turn field values into strings for indexing
+     *
+     * The function takes as arguments the field value, and the name of the field
+     * to stringify, so that its logic can be customized on specific fields. By
+     * default, it simply calls `toString()` on the field value (which in many
+     * cases is already a string).
+     *
+     * ### Example:
+     *
+     * ```javascript
+     * // Custom stringifier that formats dates as "Tuesday, September 16, 2025"
+     * const miniSearch = new MiniSearch({
+     *   fields: ['title', 'date'],
+     *   stringifyField: ((fieldValue, _fieldName) => {
+     *     if (fieldValue instanceof Date) {
+     *       return fieldValue.toLocaleDateString('en-US', {
+     *         weekday: 'long',
+     *         year: 'numeric',
+     *         month: 'long',
+     *         day: 'numeric'
+     *       })
+     *     } else {
+     *      return fieldValue.toString()
+     *     }
+     *   }
+     * })
+     * ```
+     */
+    stringifyField?: (fieldValue: any, fieldName: string) => string;
     /**
      * Function used to split a field value into individual terms to be indexed.
      * The default tokenizer separates terms by space or punctuation, but a
@@ -545,7 +575,8 @@ type Options<T = any> = {
 type OptionsWithDefaults<T = any> = Options<T> & {
     storeFields: string[];
     idField: string;
-    extractField: (document: T, fieldName: string) => string;
+    extractField: (document: T, fieldName: string) => any;
+    stringifyField: (fieldValue: any, fieldName: string) => string;
     tokenize: (text: string, fieldName: string) => string[];
     processTerm: (term: string, fieldName: string) => string | string[] | null | undefined | false;
     logger: (level: LogLevel, message: string, code?: string) => void;

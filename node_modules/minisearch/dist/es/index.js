@@ -701,7 +701,7 @@ class MiniSearch {
      * @param document  The document to be indexed
      */
     add(document) {
-        const { extractField, tokenize, processTerm, fields, idField } = this._options;
+        const { extractField, stringifyField, tokenize, processTerm, fields, idField } = this._options;
         const id = extractField(document, idField);
         if (id == null) {
             throw new Error(`MiniSearch: document does not have ID field "${idField}"`);
@@ -715,7 +715,7 @@ class MiniSearch {
             const fieldValue = extractField(document, field);
             if (fieldValue == null)
                 continue;
-            const tokens = tokenize(fieldValue.toString(), field);
+            const tokens = tokenize(stringifyField(fieldValue, field), field);
             const fieldId = this._fieldIds[field];
             const uniqueTerms = new Set(tokens).size;
             this.addFieldLength(shortDocumentId, fieldId, this._documentCount - 1, uniqueTerms);
@@ -786,7 +786,7 @@ class MiniSearch {
      * @param document  The document to be removed
      */
     remove(document) {
-        const { tokenize, processTerm, extractField, fields, idField } = this._options;
+        const { tokenize, processTerm, extractField, stringifyField, fields, idField } = this._options;
         const id = extractField(document, idField);
         if (id == null) {
             throw new Error(`MiniSearch: document does not have ID field "${idField}"`);
@@ -799,7 +799,7 @@ class MiniSearch {
             const fieldValue = extractField(document, field);
             if (fieldValue == null)
                 continue;
-            const tokens = tokenize(fieldValue.toString(), field);
+            const tokens = tokenize(stringifyField(fieldValue, field), field);
             const fieldId = this._fieldIds[field];
             const uniqueTerms = new Set(tokens).size;
             this.removeFieldLength(shortId, fieldId, this._documentCount, uniqueTerms);
@@ -1936,6 +1936,7 @@ const termToQuerySpec = (options) => (term, i, terms) => {
 const defaultOptions = {
     idField: 'id',
     extractField: (document, fieldName) => document[fieldName],
+    stringifyField: (fieldValue, fieldName) => fieldValue.toString(),
     tokenize: (text) => text.split(SPACE_OR_PUNCTUATION),
     processTerm: (term) => term.toLowerCase(),
     fields: undefined,
