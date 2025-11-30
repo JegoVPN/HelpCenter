@@ -1,54 +1,78 @@
 ---
-title: Contact Customer Service - User Guide
-description: Given the complexity of network conditions in certain regions, having no problems when using Jego is accidental, encountering problems is inevitable. When encountering problems, please contact us using the methods below.
+title: Contact Support - User Guide
+description: Due to complex network environments in certain regions, you may encounter connectivity issues while using Jego. If you experience any difficulties, please follow the guide below to contact us for assistance.
 ---
 
 # Contact Customer Service
 
 ## Contact Information
 
-To protect member privacy and security, please contact us through the customer service email below.
+To protect your privacy and security, please contact us via the following official support email.
 
 ```bash
 jegocloud@gmail.com
 ```
 
-## How to contact customer service when encountering problems?
+## Feedback for Jego Browser Extension
 
-### 💖 Effective Feedback
+::: info The more specific the information, the faster the resolution!
 
-To improve efficiency for both parties, we recommend you refer to the following template for <span style="color:red;">**effective feedback**</span>.
+<span style="color:blue;">Detailed information and a specific description of the issue allow us to accurately pinpoint and resolve the problem.</span>
+:::
 
-**Email subject reference:**
-
-```
-Cannot find server when accessing bing.com.
-```
-
-**Email content reference:**
+**Email Subject Reference:**
 
 ```
-My Jego account: jegocloud@gmail.com
-My Jego version: V1.3.0
-My browser version: Microsoft Edge Version 114.0.1823.43 (Official build) (64-bit)
-My operating system: Windows 11 Home
-My location: Guangdong Foshan
-My ISP: China Telecom
-The problem I encountered:
-Enabled Jego Rules mode, but when accessing bing.com it shows cannot find server, as shown in the attached screenshot, requesting assistance to resolve.
+Jego Browser Extension: Cannot find server when accessing bing.com
 ```
 
-**Email attachment specific problem screenshot reference:**
+**Email Content Reference:**
+
+```
+Jego Account: jegocloud@gmail.com
+Jego Version: V1.3.0
+Browser Version: Microsoft Edge Version 114.0.1823.43 (Official build) (64-bit)
+Operating System: Windows 11 Home
+Location: Guangdong Foshan
+ISP: China Telecom
+Issue Description:
+Enabled Jego Rule mode, but accessing bing.com shows "server not found" (see attached screenshot). Please assist.
+```
+
+**Please attach a screenshot of the specific problem (see reference below):**
 
 ![Detailed screenshot of specific problem encountered](/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F0afkMRTfjnf1NzV4HqX3_2Fimage_3.png)
 
-::: info The more specific the problem, the faster the response!
+It is recommended to capture both the Jego popup status and the error page in the same screenshot, as shown above.
 
-<span style="color:blue;">Only when we receive very detailed basic information and specific problems can we very accurately locate and solve problems.</span>
-:::
+## Feedback for Jego Subscription Service
 
-### 💔 Ineffective Feedback
+**Email Subject Reference:**
+
+```
+Jego Subscription Service: All nodes show timeout error
+```
+
+**Email Content Reference:**
+
+```
+Jego Account: jegocloud@gmail.com
+Operating System: Windows 11 Home
+Client Software & Version: FlClash V0.8.90
+Location: Guangdong Foshan
+ISP: China Telecom
+Issue Description:
+All server nodes in FlClash are showing as timed out. Please assist.
+```
+
+**Please attach a screenshot of the specific problem (see reference below):**
+
+![Detailed screenshot of specific problem encountered](/images/Catch(11-25-17-58-37).jpg)
+
+It is recommended to provide a full screenshot including the software main interface and the node list page to help us locate the problem quickly.
+
+## 💔 Ineffective Feedback
 
 ![No specific problem description, screenshots and other effective information](/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2Fbdg94Dg1RfBdLyc4L8EI_2Fimage_1.png)
 
-As shown in the figure above, all emails without specific situation descriptions and only saying there are problems are **ineffective feedback** emails. 
+As shown above, emails that merely state "there is a problem" without specific descriptions or screenshots are considered **ineffective feedback**. We cannot provide effective assistance for such reports due to the lack of necessary information.
