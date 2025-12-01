@@ -22,28 +22,32 @@ description: 在你购买无忧行会员卡之前，您必须要了解的各个�
 | 月卡 | 季卡 | 半年卡 | 年卡 |
 | --- | --- | --- | --- |
 | <span style="color:green;">`31天`</span>的VIP时长 | <span style="color:green;">`93天`</span>的VIP时长 | <span style="color:green;">`186天`</span>的VIP时长 | <span style="color:green;">`366天`</span>的VIP时长 |
-| VIP等级升至<span style="color:green;">`1`</span> | VIP等级升至<span style="color:green;">`3`</span> | VIP等级升至<span style="color:green;">`6`</span> | VIP等级升至<span style="color:green;">`12`</span> |
+| VIP等级 +<span style="color:green;">`1`</span> | VIP等级 +<span style="color:green;">`3`</span> | VIP等级 +<span style="color:green;">`6`</span> | VIP等级 +<span style="color:green;">`12`</span> |
 
 ::: warning 节点限制
 部分高速节点有VIP等级的限制。
 :::
 
 ::: info VIP规则说明
+
 ### VIP时长是叠加的
+购买的 VIP 时长会直接累加到您的账户上。
+- 连续购买 2 张月卡 → VIP 时长 = 31 + 31 = 62 天
+- VIP 还剩 3 天时购买月卡 → VIP 时长 = 31 + 3 = 34 天
 
-如果你在一天内购买2次月卡，你的VIP的时长将是<span style="color:green;">`62`</span>天。
+### VIP等级是累加的
+每次购买，等级会增加对应的级数：
 
-如果VIP时长还有<span style="color:green;">`3`</span>天，你购买一张月卡后，你的VIP的时长将是<span style="color:green;">`31+3`</span>天。
+| 月卡 | 季卡 | 半年卡 | 年卡 |
+| :---: | :---: | :---: | :---: |
+| +1 级 | +3 级 | +6 级 | +12 级 |
 
-### VIP等级是四舍五入的
+**举例**：
+- 新用户买月卡 → 等级 = 0 + 1 = **1**
+- 再买一张月卡 → 等级 = 1 + 1 = **2**
+- 再买一张年卡 → 等级 = 2 + 12 = **14**
 
-VIP等级的计算方式是付完费后用你账户内的VIP的<span style="color:green;">`剩余时长 ÷ 30`</span>，然后<span style="color:green;">`四舍五入`</span>，且最小值为<span style="color:green;">`1`</span>。
+### VIP等级的作用
+等级越高，可以访问的高速节点越多。部分高速节点设有等级门槛。
 
-如果付费后你剩余的VIP时长是<span style="color:green;">`45`</span>天，<span style="color:green;">`45 ÷ 30 = 1.5`</span>那么你的VIP等级是<span style="color:green;">`2`</span>
-
-如果付费后你剩余的VIP时长是<span style="color:green;">`44`</span>天，<span style="color:green;">`44 ÷ 30 = 1.47`</span>那么你的VIP等级是<span style="color:green;">`1`</span>
-
-如果付费后你剩余的VIP时长是<span style="color:green;">`10`</span>天，<span style="color:green;">`10 ÷ 30 = 0.33`</span>那么你的VIP等级是<span style="color:green;">`1`</span>
-
-<span style="color:red;">**注：**</span><span style="color:red;">VIP等级不是实时计算并发生变化，当你的账户发生结算动作（购买、到期）时才会计算。</span>
 :::

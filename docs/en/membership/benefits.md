@@ -22,28 +22,32 @@ But rest assured: The Jego team will do their best to ensure normal free service
 | Monthly Card | Quarterly Card | Half-Year Card | Annual Card |
 | --- | --- | --- | --- |
 | <span style="color:green;">`31 days`</span> VIP duration | <span style="color:green;">`93 days`</span> VIP duration | <span style="color:green;">`186 days`</span> VIP duration | <span style="color:green;">`366 days`</span> VIP duration |
-| VIP level rises to <span style="color:green;">`1`</span> | VIP level rises to <span style="color:green;">`3`</span> | VIP level rises to <span style="color:green;">`6`</span> | VIP level rises to <span style="color:green;">`12`</span> |
+| VIP level +<span style="color:green;">`1`</span> | VIP level +<span style="color:green;">`3`</span> | VIP level +<span style="color:green;">`6`</span> | VIP level +<span style="color:green;">`12`</span> |
 
 ::: warning Node Restrictions
 Some high-speed nodes have VIP level restrictions.
 :::
 
 ::: info VIP Rules Explanation
-### VIP duration is cumulative
 
-If you purchase 2 monthly cards in one day, your VIP duration will be <span style="color:green;">`62`</span> days.
+### VIP Duration is Cumulative
+Purchased VIP duration is directly added to your account.
+- Purchase 2 monthly cards → VIP duration = 31 + 31 = 62 days
+- Purchase a monthly card when VIP has 3 days left → VIP duration = 31 + 3 = 34 days
 
-If your VIP duration still has <span style="color:green;">`3`</span> days, after you purchase a monthly card, your VIP duration will be <span style="color:green;">`31+3`</span> days.
+### VIP Level is Cumulative
+Each purchase increases your level by the corresponding amount:
 
-### VIP level is rounded
+| Monthly Card | Quarterly Card | Half-Year Card | Annual Card |
+| :---: | :---: | :---: | :---: |
+| +1 Level | +3 Levels | +6 Levels | +12 Levels |
 
-The VIP level calculation method is to use your account's VIP <span style="color:green;">`remaining duration ÷ 30`</span> after payment, then <span style="color:green;">`round`</span>, with a minimum value of <span style="color:green;">`1`</span>.
+**Examples**:
+- New user buys monthly card → Level = 0 + 1 = **1**
+- Buys another monthly card → Level = 1 + 1 = **2**
+- Buys an annual card → Level = 2 + 12 = **14**
 
-If your remaining VIP duration after payment is <span style="color:green;">`45`</span> days, <span style="color:green;">`45 ÷ 30 = 1.5`</span> then your VIP level is <span style="color:green;">`2`</span>
+### Purpose of VIP Levels
+The higher your level, the more high-speed nodes you can access. Some high-speed nodes have level requirements.
 
-If your remaining VIP duration after payment is <span style="color:green;">`44`</span> days, <span style="color:green;">`44 ÷ 30 = 1.47`</span> then your VIP level is <span style="color:green;">`1`</span>
-
-If your remaining VIP duration after payment is <span style="color:green;">`10`</span> days, <span style="color:green;">`10 ÷ 30 = 0.33`</span> then your VIP level is <span style="color:green;">`1`</span>
-
-<span style="color:red;">**Note:**</span><span style="color:red;">VIP level is not calculated and changed in real time, it is only calculated when your account has settlement actions (purchase, expiration).</span>
 ::: 
