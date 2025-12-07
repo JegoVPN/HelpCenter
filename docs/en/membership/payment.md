@@ -75,4 +75,6 @@ Jego is an overseas company and has not established a main company in mainland C
 
 For membership purchases, we can provide formal Invoices issued by overseas main companies. After each payment, the system will automatically send the Invoice to your registered email and provide a PDF version for download. If you need to reimburse the Invoice, please consult your finance department first.
 
+You can also view your last 3 successful orders in **Jego Dashboard** → **Payment History**, and click to view, print, or download detailed Invoices.
+
 If you don't receive the relevant email, please check your email, including the spam folder. If you need further assistance, please contact our customer support team. 
