@@ -9,8 +9,8 @@ description: Due to product characteristics, we will continuously update version
 
 | Channel Version | Version Number | Update Time | Download Link |
 | --- | --- | --- | --- |
-| Chrome | `1.3.20` | Jan 31, 2025 | [https://chrome.google.com/webstore/detail/bnnamacamhjbdoimlbkegmbgkekphcbb](https://chrome.google.com/webstore/detail/bnnamacamhjbdoimlbkegmbgkekphcbb) |
-| Edge | `1.3.20` | Jan 31, 2025 | [https://microsoftedge.microsoft.com/addons/detail/bkpoijbobhmbglhjjmnoedomdoabilol](https://microsoftedge.microsoft.com/addons/detail/bkpoijbobhmbglhjjmnoedomdoabilol) |
+| Chrome | `1.3.21` | Dec 17, 2025 | [https://chrome.google.com/webstore/detail/bnnamacamhjbdoimlbkegmbgkekphcbb](https://chrome.google.com/webstore/detail/bnnamacamhjbdoimlbkegmbgkekphcbb) |
+| Edge | `1.3.22` | Dec 15, 2025 | [https://microsoftedge.microsoft.com/addons/detail/bkpoijbobhmbglhjjmnoedomdoabilol](https://microsoftedge.microsoft.com/addons/detail/bkpoijbobhmbglhjjmnoedomdoabilol) |
 
 ## Jego Extension Updates
 
