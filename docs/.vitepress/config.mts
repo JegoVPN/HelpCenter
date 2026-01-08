@@ -117,7 +117,7 @@ export default defineConfig({
           }
         },
         footer: {
-          copyright: 'Copyright © 2020-2025 Jego, All rights reserved.'
+          copyright: 'Copyright © 2020-2026 Jego, All rights reserved.'
         }
       }
     },
@@ -209,7 +209,7 @@ export default defineConfig({
           }
         },
         footer: {
-          copyright: 'Copyright © 2020-2025 Jego, All rights reserved.'
+          copyright: 'Copyright © 2020-2026 Jego, All rights reserved.'
         }
       }
     }
