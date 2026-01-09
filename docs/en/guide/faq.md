@@ -5,36 +5,57 @@ description: You may encounter problems with some probability, don't panic, you 
 
 # FAQ
 
-### **Question 1: Does mobile subscription support unlocking ChatGPT and New Bing?**
+### Do all routes support accessing Gemini, ChatGPT, Claude, etc.?
 
-All routes support unlocking ChatGPT APP and web version.
+Not every route works for AI products. Please pick the matching nodes:
+- For mobile subscriptions, select nodes under the `🤖 ChatGPT Group` group to access Gemini, ChatGPT, Claude, and other AI products.
+- For browser extensions, select nodes that carry the `[AI]` label to reach these AI products.
 
-### Question 2: Cannot access New Bing or ChatGPT websites
+### Unable to open Gemini, ChatGPT, Claude or other overseas sites?
 
-Please **optimize your local network and browser environment**, follow the steps below, <span style="background-color:red; color:white; padding:2px 6px; border-radius:3px;">each step is important</span>:
+Please **optimize your local network and browser environment** and go through every item below—each step matters.
 
-1. **Network Environment**
-   1. Change your router and computer DNS to Alibaba Public DNS: [alidns.com](http://alidns.com/) ([View DNS Setup Help](https://www.alidns.com/knowledge?type=SETTING_DOCS#user_windows))
-      * Enter `223.5.5.5` and `223.6.6.6` in DNS server addresses according to setup help.
-      * Disable IPV6.
-   2. Clear DNS cache:
-      * Click `Start` -> `Run`, enter `CMD` to enter command line mode.
-      * Enter `ipconfig/flushdns` in command line and press Enter.
-   3. Close other local proxy software interference such as NetEase UU, Xunfei Game Accelerator, V2rayN, Clash, etc.
-   4. Open `System Settings` -> `Network & Internet` -> `Proxy`, set:
-      * Automatically detect settings: Off
-      * Use setup script: Off
-      * Use proxy server: Off
-2. **Browser Environment**
-   1. Upgrade browser to latest version, clear all Cookies and cache and restart browser
-   2. Upgrade Jego to [latest version](/en/guide/keep-updated), and temporarily disable other browser extensions, keeping only Jego
-   3. Set Jego to Rules mode (free version is enabled)
-   4. Restart browser
-3. **Access Again**
-   * It's best to open Jego in incognito mode and register an overseas Microsoft account.
-   * Then access New Bing, Copilot or ChatGPT
+**Network environment**
+- **Update DNS:** Switch your router and computer DNS to Tencent or Alibaba public DNS (mixing them works best).
+  - **Tencent Public DNS**: [Official site](https://www.dnspod.cn/products/publicdns#publisDnsStart) ([Setup guide](https://cloud.tencent.com/document/product/302/110786))
+    - IPv4: `119.29.29.29`, `182.254.116.116`
+    - IPv6: `2402:4e00::`, `2402:4e00:1::`
+  - **Alibaba Public DNS**: [Official site](https://www.alidns.com/)
+    - IPv4: `223.5.5.5`, `223.6.6.6`
+    - IPv6: `2400:3200::1`, `2400:3200:baba::1`
+- **Clear DNS cache:**
+  - Click `Start` -> `Run`, type `CMD`, and press Enter.
+  - Run `ipconfig/flushdns` in the command window.
+- **Disable other proxy apps** such as NetEase UU, iFlytek accelerators, V2rayN, Clash, etc.
+- **Windows proxy settings** (`Settings` -> `Network & Internet` -> `Proxy`):
+  - Automatically detect settings: Off
+  - Use setup script: Off
+  - Use proxy server: Off
 
-> After being able to access New Bing or ChatGPT, you can try enabling other extensions or software one by one to identify conflicts between extensions.
+**Browser environment**
+- Update your browser to the latest version, clear Cookies and cache, then restart it.
+- Update Jego to the [latest version](/en/guide/keep-updated) and temporarily disable all other extensions.
+- Set Jego to Rules mode (enabled by default on the free tier).
+- Restart the browser again.
+
+> Once you can reach New Bing or ChatGPT, re-enable other extensions one by one to check for conflicts.
+
+### Why do Google or ChatGPT still show the wrong location even after changing nodes?
+
+**Root cause**
+Mainstream platforms such as Google and OpenAI never rely on IP alone. They combine **Cookies**, browser cache, account history, device fingerprints, and other telemetry to build a risk profile. When the same account hops between IPs or regions frequently, the system quickly flags it as proxy usage or suspicious login, which may trigger additional verification or even a ban. Try to keep your exit node stable and avoid cross-region switching when browsing overseas sites.
+
+If you visited these services without a proxy before, or your browser still stores the real location, switching nodes afterward might not help because the platform continues to read the cached signals. Rapid node hopping also contaminates the reputation of the nodes you connect to.
+
+**Suggested reading:** [Understand and manage location in Google Search](https://support.google.com/websearch/answer/179386?hl=en)
+
+**Solution**
+- **Close everything:** Shut down the browser completely.
+- **Incognito test:** Reopen it in private/incognito mode.
+- **Configure the proxy:** Inside that incognito window, set Jego to Global Mode and select the desired node.
+- **Verify the exit:** Visit [IP111.cn](https://ip111.cn) within incognito to confirm the location matches the node you picked.
+- **Test the target site:** Still in incognito mode, open the product you need. If it now shows the correct location, the culprit was cached data.
+- **Clean permanently:** Go back to normal mode, clear all Cookies and cache, then restart the browser.
 
 ### **Question 3: Too many redirects.**
 
