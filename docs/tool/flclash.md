@@ -65,13 +65,14 @@ FlClash是一款基于Mihomo（原ClashMeta）的开源多平台代理客户端�
 
 如果需要自定义某些域名的代理行为，可以通过添加覆写规则来实现：
 
-1. 在配置页面，点击订阅配置卡片右上角的<span style="background-color:grey; color:white; padding:2px 4px; border-radius:3px;">三个点 ⋮</span>
-2. 选择 <span style="background-color:blue; color:white; padding:2px 6px; border-radius:3px;">更多</span>
-3. 点击 <span style="background-color:blue; color:white; padding:2px 6px; border-radius:3px;">覆写</span>
+1. 在配置页面，点击订阅配置卡片右上角的<span style="background-color:green; color:white; padding:2px 4px; border-radius:3px;">三个点 ⋮</span>
+2. 选择 <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">更多</span>
+3. 点击 <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">覆写</span>
 4. 点击 <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">添加</span>
 5. 在弹出的对话框中配置：
-   * **规则内容**：如 `DOMAIN-SUFFIX,example.com`（域名后缀匹配）
-   * **规则目标**：选择目标节点或 `DIRECT`（直连）、`REJECT`（拒绝）
+   * **规则名称**：点击后选择，如 `DOMAIN-SUFFIX`（域名后缀匹配）
+   * **规则内容**：点击后填写，如 `example.com`（主域名或者二级三级域名）
+   * **规则目标**：点击后选择，如 `DIRECT`（直连）、`REJECT`（拒绝）、`MATCH`（匹配）
 6. 点击保存
 
 ::: tip 使用场景

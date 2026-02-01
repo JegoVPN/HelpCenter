@@ -32,15 +32,15 @@ description: 为 Cursor、Claude Code、Google Antigravity、OpenAI Codex 等 AI
 
 在配置页面中：
 
-* 切记选中<span style="background-color:orange; color:white; padding:2px 6px; border-radius:3px;">无忧行</span>的订阅文件
+* 切记选中<span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">无忧行</span>的订阅文件
 * 保持默认的自动更新设置
 
 ### 3. 代理页面：节点选择
 
 在代理页面（节点选择）中进行以下配置：
 
-* **Manual Select** 选：<span style="background-color:blue; color:white; padding:2px 6px; border-radius:3px;">香港 Ultra</span>
-* **ChatGPT Group** 选：<span style="background-color:blue; color:white; padding:2px 6px; border-radius:3px;">新加坡 Pro+</span>
+* **Manual Select** 选：<span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">香港 Ultra</span>
+* **ChatGPT Group** 选：<span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">新加坡 Pro+</span>
 
 ::: tip 节点选择说明
 * **香港 Ultra**：用于常规流量（如浏览网页、YouTube 等），速度快且稳定
@@ -55,8 +55,8 @@ description: 为 Cursor、Claude Code、Google Antigravity、OpenAI Codex 等 AI
 
 在请求页面（或连接页面）中确认流量分流是否正确：
 
-* ✅ AI 相关域名（如 `api.openai.com`、`api.anthropic.com`）经由<span style="background-color:blue; color:white; padding:2px 6px; border-radius:3px;">新加坡 Pro+</span>
-* ✅ 常规流量（如 YouTube、Google）经由<span style="background-color:blue; color:white; padding:2px 6px; border-radius:3px;">香港 Ultra</span>
+* ✅ AI 相关域名（如 `api.openai.com`、`api.anthropic.com`）经由<span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">新加坡 Pro+</span>
+* ✅ 常规流量（如 YouTube、Google）经由<span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">香港 Ultra</span>
 
 ::: warning 自定义分流
 如有自定义接管需求，可在 FlClash 中添加覆写规则（Overrides）。
@@ -65,13 +65,14 @@ description: 为 Cursor、Claude Code、Google Antigravity、OpenAI Codex 等 AI
 
 假设你需要让 DeepSeek.com 直连（不走代理），可按以下步骤操作：
 
-1. 在配置页面，点击无忧行订阅卡片右上角的<span style="background-color:grey; color:white; padding:2px 4px; border-radius:3px;">三个点 ⋮</span>
-2. 选择 <span style="background-color:blue; color:white; padding:2px 6px; border-radius:3px;">更多</span>
-3. 点击 <span style="background-color:blue; color:white; padding:2px 6px; border-radius:3px;">覆写</span>
+1. 在配置页面，点击无忧行订阅卡片右上角的<span style="background-color:green; color:white; padding:2px 4px; border-radius:3px;">三个点 ⋮</span>
+2. 选择 <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">更多</span>
+3. 点击 <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">覆写</span>
 4. 点击 <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">添加</span>
-5. 在弹出的对话框中：
-   * **规则内容**：填写 `DOMAIN-SUFFIX,deepseek.com`
-   * **规则目标**：选择 `DIRECT`（直连）
+5. 在弹出的对话框中配置：
+   * **规则名称**：点击后选择，如 `DOMAIN-SUFFIX`（域名后缀匹配）
+   * **规则内容**：点击后填写，如 `deepseek.com`（主域名或者二级三级域名）
+   * **规则目标**：点击后选择，如 `DIRECT`（直连）、`REJECT`（拒绝）
 6. 点击保存
 
 这样设置后，访问 DeepSeek.com 将不经过代理，直接使用本地网络访问。

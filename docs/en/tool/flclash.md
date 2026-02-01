@@ -62,13 +62,14 @@ Click **three dots -> Sync** in the upper right corner of the configuration file
 
 If you need to customize proxy behavior for specific domains, you can add override rules:
 
-1. On the configuration page, click the <span style="background-color:grey; color:white; padding:2px 4px; border-radius:3px;">three dots ⋮</span> in the upper right corner of the subscription card
-2. Select <span style="background-color:blue; color:white; padding:2px 6px; border-radius:3px;">More</span>
-3. Click <span style="background-color:blue; color:white; padding:2px 6px; border-radius:3px;">Overrides</span>
+1. On the configuration page, click the <span style="background-color:green; color:white; padding:2px 4px; border-radius:3px;">three dots ⋮</span> in the upper right corner of the subscription card
+2. Select <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">More</span>
+3. Click <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Overrides</span>
 4. Click <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Add</span>
 5. In the popup dialog, configure:
-   * **Rule Content**: e.g., `DOMAIN-SUFFIX,example.com` (domain suffix matching)
-   * **Rule Target**: Select target node or `DIRECT` (direct connection), `REJECT` (reject)
+   * **Rule Name**: Click to select, e.g., `DOMAIN-SUFFIX` (domain suffix matching)
+   * **Rule Content**: Click to enter, e.g., `example.com` (main domain or subdomain)
+   * **Rule Target**: Click to select, e.g., `DIRECT` (direct connection), `REJECT` (reject), `MATCH` (match)
 6. Click save
 
 ::: tip Use Cases

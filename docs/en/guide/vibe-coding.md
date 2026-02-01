@@ -32,15 +32,15 @@ If you only need browser access, we recommend using the [Jego browser extension]
 
 On the configuration page:
 
-* Make sure to select the <span style="background-color:orange; color:white; padding:2px 6px; border-radius:3px;">Jego</span> subscription file
+* Make sure to select the <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Jego</span> subscription file
 * Keep the default auto-update settings
 
 ### 3. Proxy Page: Node Selection
 
 Configure the following on the proxy page (node selection):
 
-* **Manual Select**: Choose <span style="background-color:blue; color:white; padding:2px 6px; border-radius:3px;">Hong Kong Ultra</span>
-* **ChatGPT Group**: Choose <span style="background-color:blue; color:white; padding:2px 6px; border-radius:3px;">Singapore Pro+</span>
+* **Manual Select**: Choose <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Hong Kong Ultra</span>
+* **ChatGPT Group**: Choose <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Singapore Pro+</span>
 
 ::: tip Node Selection Guide
 * **Hong Kong Ultra**: For regular traffic (browsing, YouTube, etc.), fast and stable
@@ -55,8 +55,8 @@ Return to the dashboard and click the <span style="background-color:green; color
 
 On the request page (or connections page), confirm that traffic is being routed correctly:
 
-* ✅ AI-related domains (e.g., `api.openai.com`, `api.anthropic.com`) go through <span style="background-color:blue; color:white; padding:2px 6px; border-radius:3px;">Singapore Pro+</span>
-* ✅ Regular traffic (e.g., YouTube, Google) goes through <span style="background-color:blue; color:white; padding:2px 6px; border-radius:3px;">Hong Kong Ultra</span>
+* ✅ AI-related domains (e.g., `api.openai.com`, `api.anthropic.com`) go through <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Singapore Pro+</span>
+* ✅ Regular traffic (e.g., YouTube, Google) goes through <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Hong Kong Ultra</span>
 
 ::: warning Custom Routing
 If you need custom routing rules, you can add override rules (Overrides) in FlClash.
@@ -65,13 +65,14 @@ If you need custom routing rules, you can add override rules (Overrides) in FlCl
 
 For instance, if you need DeepSeek.com to connect directly (without proxy), follow these steps:
 
-1. On the configuration page, click the <span style="background-color:grey; color:white; padding:2px 4px; border-radius:3px;">three dots ⋮</span> in the upper right corner of the Jego subscription card
-2. Select <span style="background-color:blue; color:white; padding:2px 6px; border-radius:3px;">More</span>
-3. Click <span style="background-color:blue; color:white; padding:2px 6px; border-radius:3px;">Overrides</span>
+1. On the configuration page, click the <span style="background-color:green; color:white; padding:2px 4px; border-radius:3px;">three dots ⋮</span> in the upper right corner of the Jego subscription card
+2. Select <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">More</span>
+3. Click <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Overrides</span>
 4. Click <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Add</span>
-5. In the popup dialog:
-   * **Rule Content**: Enter `DOMAIN-SUFFIX,deepseek.com`
-   * **Rule Target**: Select `DIRECT` (direct connection)
+5. In the popup dialog, configure:
+   * **Rule Name**: Click to select, e.g., `DOMAIN-SUFFIX` (domain suffix matching)
+   * **Rule Content**: Click to enter, e.g., `deepseek.com` (main domain or subdomain)
+   * **Rule Target**: Click to select, e.g., `DIRECT` (direct connection), `REJECT` (reject)
 6. Click save
 
 After this setup, visits to DeepSeek.com will bypass the proxy and use your local network directly.
