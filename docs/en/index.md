@@ -39,7 +39,7 @@ features:
 To help you master the usage of the Jego browser extension more efficiently, we recommend reading in the following order:
 
 1. [How to Install Jego Extension in Browser](/en/guide/installation)
-2. [How to Register Jego Account](/en/guide/registration)
+2. [How to Register Jeg Account](/en/guide/registration)
 3. [How to Use Jego Extension for Proxy Access](/en/guide/usage)
    * [How to Access New Bing, Copilot or ChatGPT for Free](/en/guide/chatgpt-access)
 4. [What Services Do Jego Free Version, Trial Version and Paid Version Provide](/en/guide/services)
@@ -50,6 +50,7 @@ To help you master the usage of the Jego browser extension more efficiently, we 
 8. [How to Keep Updated to Latest Version and Avoid Disconnection](/en/guide/keep-updated)
 9. [How to Contact Customer Service When Encountering Problems](/en/guide/support)
 10. [What Common Problems Occur During Jego Usage](/en/guide/faq)
+11. [How to Use Jego for Vibe Coding - AI Development Tools Proxy Configuration Tutorial](/en/guide/vibe-coding)
 
 ### Upgrade to Premium Membership
 
