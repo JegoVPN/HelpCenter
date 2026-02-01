@@ -50,7 +50,7 @@ features:
 8. [怎么才能保持更新到无忧行最新版本，避免失联](/guide/keep-updated)
 9. [遇到问题怎么联系客服](/guide/support)
 10. [无忧行使用过程中有哪些常见的问题](/guide/faq)
-11. [如何使用无忧行进行 Vibe Coding - AI 编程工具代理配置教程](/guide/vibe-coding) <Badge type="tip" text="NEW" />
+11. [如何使用无忧行进行 Vibe Coding - AI 编程工具代理配置教程](/guide/vibe-coding)
 
 ### 升级成为会员
 
