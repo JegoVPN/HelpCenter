@@ -12,7 +12,7 @@ description: Configure Jego proxy for AI coding tools like Cursor, Claude Code, 
 As AI tools like Cursor, Claude Code, Google Antigravity, OpenAI Codex, and OpenClaw gain popularity, we've created this tutorial to address frequently asked configuration questions. Using FlClash as an example (other tools follow similar principles), this guide will help you set up Jego for seamless AI-powered development, whether you're using an IDE or CLI.
 
 ::: tip Applicable Scope
-This tutorial uses FlClash as an example, but the configuration principles apply to other proxy tools such as Clash Verge Rev, sing-box, and GUI.for.SingBox. The key is understanding virtual network adapter mode and node routing strategies.
+This tutorial uses [FlClash](/tool/flclash) as an example, but the configuration principles apply to other proxy tools such as Clash Verge Rev, sing-box, and GUI.for.SingBox. The key is understanding virtual network adapter mode and node routing strategies.
 :::
 
 ## Configuration Steps
@@ -22,7 +22,7 @@ This tutorial uses FlClash as an example, but the configuration principles apply
 In FlClash's dashboard:
 
 * Enable <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Virtual Network Adapter</span> (TUN mode)
-* Select <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Rule Mode</span>
+* Outbound Mode, select <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Rule Mode</span>
 
 ::: info Why Use Virtual Network Adapter?
 Virtual Network Adapter (TUN) mode intercepts all system network traffic, ensuring that all requests from AI coding tools are properly routed through the proxy. This is crucial for tools like Cursor and Claude Code that frequently call APIs.
@@ -30,9 +30,9 @@ Virtual Network Adapter (TUN) mode intercepts all system network traffic, ensuri
 If you only need browser access, we recommend using the [Jego browser extension](/en/guide/usage).
 :::
 
-### 2. Configuration Page: Select Subscription
+### 2. Profiles Page: Select Subscription
 
-On the configuration page:
+On the Profiles page:
 
 * Make sure to select the <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Jego</span> subscription file
 * Keep the default auto-update settings
@@ -41,8 +41,8 @@ On the configuration page:
 
 Configure the following on the proxy page (node selection):
 
-* **Manual Select**: Choose <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Hong Kong Ultra</span>
-* **ChatGPT Group**: Choose <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Singapore Pro+</span>
+* **❇️Manual Select**: Choose <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Hong Kong Ultra</span>
+* **🤖 ChatGPT Group**: Choose <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Singapore Pro+</span>
 
 ::: tip Node Selection Guide
 * **Hong Kong Ultra**: For regular traffic (browsing, YouTube, etc.), fast and stable

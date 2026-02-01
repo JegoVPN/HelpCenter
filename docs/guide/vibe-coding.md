@@ -12,7 +12,7 @@ description: 为 Cursor、Claude Code、Google Antigravity、OpenAI Codex 等 AI
 随着 Cursor、Claude Code、Google Antigravity、OpenAI Codex 乃至 OpenClaw 等 AI 工具的热度攀升，针对大家近期频繁咨询的配置问题，我们以 FlClash 为例（其他产品也类似）撰写了以下教程。请参照以下步骤完成设置，无论是 IDE 还是 CLI，我们都会让你 AI 生产力无忧行。
 
 ::: tip 适用范围
-本教程以 FlClash 为例进行说明，但配置思路同样适用于其他代理工具，如 Clash Verge Rev、sing-box、GUI.for.SingBox 等。关键在于理解虚拟网卡模式和节点分流策略。
+本教程以 [FlClash](/tool/flclash) 为例进行说明，但配置思路同样适用于其他代理工具，如 Clash Verge Rev、sing-box、GUI.for.SingBox 等。关键在于理解虚拟网卡模式和节点分流策略。
 :::
 
 ## 配置步骤
@@ -22,7 +22,7 @@ description: 为 Cursor、Claude Code、Google Antigravity、OpenAI Codex 等 AI
 在 FlClash 的仪表盘页面中：
 
 * 启用<span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">虚拟网卡</span>（TUN 模式）
-* 选择<span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">规则模式</span>
+* 出站模式选择<span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">规则模式</span>
 
 ::: info 为什么要用虚拟网卡？
 虚拟网卡（TUN）模式能够拦截系统所有网络流量，确保 AI 编程工具的所有请求都经过代理判断。这对于 Cursor、Claude Code 等需要频繁调用 API 的工具至关重要。
@@ -41,8 +41,8 @@ description: 为 Cursor、Claude Code、Google Antigravity、OpenAI Codex 等 AI
 
 在代理页面（节点选择）中进行以下配置：
 
-* **Manual Select** 选：<span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">香港 Ultra</span>
-* **ChatGPT Group** 选：<span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">新加坡 Pro+</span>
+* **❇️Manual Select** 选：<span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">香港 Ultra</span>
+* **🤖 ChatGPT Group** 选：<span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">新加坡 Pro+</span>
 
 ::: tip 节点选择说明
 * **香港 Ultra**：用于常规流量（如浏览网页、YouTube 等），速度快且稳定
