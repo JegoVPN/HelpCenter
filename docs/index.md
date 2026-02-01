@@ -17,6 +17,9 @@ hero:
     - theme: alt
       text: 在电脑或手机上翻墙
       link: /devices/pc-mobile
+    - theme: alt
+      text: Vibe Coding
+      link: /guide/vibe-coding
 
 features:
   - title: 简单易用

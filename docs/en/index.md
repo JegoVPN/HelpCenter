@@ -17,6 +17,9 @@ hero:
     - theme: alt
       text: Use Proxy on PC or Mobile
       link: /en/devices/pc-mobile
+    - theme: alt
+      text: Vibe Coding
+      link: /en/guide/vibe-coding
 
 features:
   - title: Simple to Use
