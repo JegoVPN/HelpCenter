@@ -12,6 +12,12 @@ The <span style="background-color:green; color:white; padding:2px 6px; border-ra
 For tutorials on implementing proxy access on PC and mobile, please go to [How to Use Proxy on PC or Mobile](/en/devices/pc-mobile) to learn more.
 :::
 
+## 📺 Video Tutorial
+
+Watch the complete installation and usage tutorial to quickly get started with Jego extension:
+
+<YouTube videoId="buQRWqyO7UM" title="Jego Extension Installation and Usage Tutorial" />
+
 ## How to use proxy for free in browser?
 
 Use Jego extension, register an account to proxy for free!
