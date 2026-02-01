@@ -61,6 +61,23 @@ FlClash是一款基于Mihomo（原ClashMeta）的开源多平台代理客户端�
 
 点击配置文件右上角 **三个点 -> 同步** 就是更新订阅文件的意思。
 
+### 配置覆写规则（可选）
+
+如果需要自定义某些域名的代理行为，可以通过添加覆写规则来实现：
+
+1. 在配置页面，点击订阅配置卡片右上角的<span style="background-color:grey; color:white; padding:2px 4px; border-radius:3px;">三个点 ⋮</span>
+2. 选择 <span style="background-color:blue; color:white; padding:2px 6px; border-radius:3px;">更多</span>
+3. 点击 <span style="background-color:blue; color:white; padding:2px 6px; border-radius:3px;">覆写</span>
+4. 点击 <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">添加</span>
+5. 在弹出的对话框中配置：
+   * **规则内容**：如 `DOMAIN-SUFFIX,example.com`（域名后缀匹配）
+   * **规则目标**：选择目标节点或 `DIRECT`（直连）、`REJECT`（拒绝）
+6. 点击保存
+
+::: tip 使用场景
+覆写规则适用于需要特定域名走指定节点的场景，如 AI 开发工具、特定网站加速等。详见 [Vibe Coding 配置指南](/guide/vibe-coding)。
+:::
+
 ## 开启代理
 
 然后回到仪表盘：**出站模式选规则**，**虚拟网卡打开**，然后点击**右下角的开始**。

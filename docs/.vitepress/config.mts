@@ -49,7 +49,6 @@ export default defineConfig({
               { text: '👶如何注册', link: '/guide/registration' },
               { text: '🔮如何翻墙', link: '/guide/usage' },
               { text: '🤖如何解锁New Bing、Copilot或者ChatGPT', link: '/guide/chatgpt-access' },
-              { text: '🎯Vibe Coding 配置指南', link: '/guide/vibe-coding' },
               { text: '🟢服务详解', link: '/guide/services' },
               { text: '🌐节点选择', link: '/guide/node-selection' },
               { text: '📋节点介绍', link: '/guide/nodes' },
@@ -57,7 +56,8 @@ export default defineConfig({
               { text: '🔀代理策略', link: '/guide/proxy-strategy' },
               { text: '🆕防止失联', link: '/guide/keep-updated' },
               { text: '🙋联系客服', link: '/guide/support' },
-              { text: '❓常见问题', link: '/guide/faq' }
+              { text: '❓常见问题', link: '/guide/faq' },
+              { text: '💻Vibe Coding', link: '/guide/vibe-coding' }
             ]
           },
           {
@@ -142,7 +142,6 @@ export default defineConfig({
               { text: '👶How to Register', link: '/en/guide/registration' },
               { text: '🔮How to Use Proxy', link: '/en/guide/usage' },
               { text: '🤖How to Access New Bing, Copilot or ChatGPT', link: '/en/guide/chatgpt-access' },
-              { text: '🎯Vibe Coding Setup Guide', link: '/en/guide/vibe-coding' },
               { text: '🟢Service Details', link: '/en/guide/services' },
               { text: '🌐Node Selection', link: '/en/guide/node-selection' },
               { text: '📋Node Introduction', link: '/en/guide/nodes' },
@@ -150,7 +149,8 @@ export default defineConfig({
               { text: '🔀Proxy Strategy', link: '/en/guide/proxy-strategy' },
               { text: '🆕Stay Connected', link: '/en/guide/keep-updated' },
               { text: '🙋Contact Support', link: '/en/guide/support' },
-              { text: '❓FAQ', link: '/en/guide/faq' }
+              { text: '❓FAQ', link: '/en/guide/faq' },
+              { text: '💻Vibe Coding', link: '/en/guide/vibe-coding' }
             ]
           },
           {

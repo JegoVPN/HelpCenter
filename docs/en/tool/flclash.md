@@ -58,6 +58,23 @@ Click **three dots -> Sync** in the upper right corner of the configuration file
 
 <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FSUZB0uhm5ulHogGxgLEG_2Fimage_3.png" alt="Update configuration">
 
+### Configure Override Rules (Optional)
+
+If you need to customize proxy behavior for specific domains, you can add override rules:
+
+1. On the configuration page, click the <span style="background-color:grey; color:white; padding:2px 4px; border-radius:3px;">three dots ⋮</span> in the upper right corner of the subscription card
+2. Select <span style="background-color:blue; color:white; padding:2px 6px; border-radius:3px;">More</span>
+3. Click <span style="background-color:blue; color:white; padding:2px 6px; border-radius:3px;">Overrides</span>
+4. Click <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Add</span>
+5. In the popup dialog, configure:
+   * **Rule Content**: e.g., `DOMAIN-SUFFIX,example.com` (domain suffix matching)
+   * **Rule Target**: Select target node or `DIRECT` (direct connection), `REJECT` (reject)
+6. Click save
+
+::: tip Use Cases
+Override rules are suitable for scenarios where specific domains need to go through designated nodes, such as AI development tools, specific website acceleration, etc. See [Vibe Coding Setup Guide](/en/guide/vibe-coding) for details.
+:::
+
 ## Enable Proxy
 
 Then return to the dashboard: **select Rule for outbound mode**, **turn on virtual network card**, then click **Start in the bottom right corner**.
