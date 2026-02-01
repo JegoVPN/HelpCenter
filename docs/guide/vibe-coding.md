@@ -1,9 +1,11 @@
 ---
-title: Vibe Coding 无忧行指南 - AI 编程工具配置
+title: 如何使用无忧行进行 Vibe Coding - AI 编程工具代理配置教程
 description: 为 Cursor、Claude Code、Google Antigravity、OpenAI Codex 等 AI 编程工具配置无忧行代理，实现流畅的 AI 辅助编程体验。以 FlClash 为例的详细配置教程。
 ---
 
-# Vibe Coding 无忧行指南
+# 如何使用无忧行进行 Vibe Coding
+
+## AI 编程工具代理配置教程
 
 <img src="/images/ClaudeCode.png" alt="Claude Code AI 编程工具界面" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); margin: 20px 0;">
 

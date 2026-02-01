@@ -1,9 +1,11 @@
 ---
-title: Vibe Coding with Jego - AI Development Tools Setup
+title: How to Use Jego for Vibe Coding - AI Development Tools Proxy Configuration Tutorial
 description: Configure Jego proxy for AI coding tools like Cursor, Claude Code, Google Antigravity, and OpenAI Codex. A comprehensive setup guide using FlClash as an example.
 ---
 
-# Vibe Coding with Jego Guide
+# How to Use Jego for Vibe Coding
+
+## AI Development Tools Proxy Configuration Tutorial
 
 <img src="/images/ClaudeCode.png" alt="Claude Code AI Development Tool Interface" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); margin: 20px 0;">
 
