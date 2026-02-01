@@ -42,6 +42,7 @@ features:
 2. [如何注册无忧行账号](/guide/registration)
 3. [如何使用无忧行插件翻墙上网](/guide/usage)
    * [怎么免费翻墙访问 New Bing、Copilot 或 ChatGPT](/guide/chatgpt-access)
+   * [Vibe Coding：为 AI 编程工具配置代理](/guide/vibe-coding)
 4. [无忧行的免费版、限时体验版以及付费版分别提供哪些服务](/guide/services)
 5. [使用无忧行翻墙时，如何选择节点服务器](/guide/node-selection)
    * [无忧行都有哪些节点服务器](/guide/nodes)
