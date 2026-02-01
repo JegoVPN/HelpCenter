@@ -12,7 +12,9 @@ description: 为 Cursor、Claude Code、Google Antigravity、OpenAI Codex 等 AI
 随着 Cursor、Claude Code、Google Antigravity、OpenAI Codex 乃至 OpenClaw 等 AI 工具的热度攀升，针对大家近期频繁咨询的配置问题，我们以 FlClash 为例（其他产品也类似）撰写了以下教程。请参照以下步骤完成设置，无论是 IDE 还是 CLI，我们都会让你 AI 生产力无忧行。
 
 ::: tip 适用范围
-本教程以 [FlClash](/tool/flclash) 为例进行说明，但配置思路同样适用于其他代理工具，如 Clash Verge Rev、sing-box、GUI.for.SingBox 等。关键在于理解虚拟网卡模式和节点分流策略。
+本教程以 [FlClash](/tool/flclash) 为例（支持 Windows、macOS、Android、Linux 等多平台），配置思路同样适用于 Clash Verge Rev、sing-box等其他代理工具。无忧行订阅服务兼容各类代理工具，更多平台和工具的详细教程请查看[如何在电脑或手机上翻墙](/devices/pc-mobile)。
+
+关键在于理解虚拟网卡模式和节点分流策略。
 :::
 
 ## 配置步骤

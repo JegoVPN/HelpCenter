@@ -12,7 +12,9 @@ description: Configure Jego proxy for AI coding tools like Cursor, Claude Code, 
 As AI tools like Cursor, Claude Code, Google Antigravity, OpenAI Codex, and OpenClaw gain popularity, we've created this tutorial to address frequently asked configuration questions. Using FlClash as an example (other tools follow similar principles), this guide will help you set up Jego for seamless AI-powered development, whether you're using an IDE or CLI.
 
 ::: tip Applicable Scope
-This tutorial uses [FlClash](/tool/flclash) as an example, but the configuration principles apply to other proxy tools such as Clash Verge Rev, sing-box, and GUI.for.SingBox. The key is understanding virtual network adapter mode and node routing strategies.
+This tutorial uses [FlClash](/en/tool/flclash) as an example (supports Windows, macOS, Android, Linux, and other platforms), but the configuration principles apply to other proxy tools such as Clash Verge Rev, sing-box. Jego subscription service is compatible with various proxy tools. For more detailed tutorials on different platforms and tools, see [How to Use Proxy on PC or Mobile](/en/devices/pc-mobile).
+
+The key is understanding virtual network adapter mode and node routing strategies.
 :::
 
 ## Configuration Steps
