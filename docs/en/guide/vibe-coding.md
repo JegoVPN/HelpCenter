@@ -74,7 +74,7 @@ For instance, if you need DeepSeek.com to connect directly (without proxy), foll
 5. In the popup dialog, configure:
    * **Rule Name**: Click to select, e.g., `DOMAIN-SUFFIX` (domain suffix matching)
    * **Rule Content**: Click to enter, e.g., `deepseek.com` (main domain or subdomain)
-   * **Rule Target**: Click to select, e.g., `DIRECT` (direct connection), `REJECT` (reject)
+   * **Rule Target**: Click to select, e.g., `DIRECT` (direct connection)
 6. Click save
 
 After this setup, visits to DeepSeek.com will bypass the proxy and use your local network directly.

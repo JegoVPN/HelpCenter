@@ -74,7 +74,7 @@ description: 为 Cursor、Claude Code、Google Antigravity、OpenAI Codex 等 AI
 5. 在弹出的对话框中配置：
    * **规则名称**：点击后选择，如 `DOMAIN-SUFFIX`（域名后缀匹配）
    * **规则内容**：点击后填写，如 `deepseek.com`（主域名或者二级三级域名）
-   * **规则目标**：点击后选择，如 `DIRECT`（直连）、`REJECT`（拒绝）
+   * **规则目标**：点击后选择，如 `DIRECT`（直连）
 6. 点击保存
 
 这样设置后，访问 DeepSeek.com 将不经过代理，直接使用本地网络访问。
