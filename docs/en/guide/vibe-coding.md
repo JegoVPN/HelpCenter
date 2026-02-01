@@ -5,6 +5,8 @@ description: Configure Jego proxy for AI coding tools like Cursor, Claude Code, 
 
 # Vibe Coding with Jego Guide
 
+<img src="/images/ClaudeCode.png" alt="Claude Code AI Development Tool Interface" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); margin: 20px 0;">
+
 As AI tools like Cursor, Claude Code, Google Antigravity, OpenAI Codex, and OpenClaw gain popularity, we've created this tutorial to address frequently asked configuration questions. Using FlClash as an example (other tools follow similar principles), this guide will help you set up Jego for seamless AI-powered development, whether you're using an IDE or CLI.
 
 ::: tip Applicable Scope

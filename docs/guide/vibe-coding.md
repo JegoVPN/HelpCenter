@@ -5,6 +5,8 @@ description: 为 Cursor、Claude Code、Google Antigravity、OpenAI Codex 等 AI
 
 # Vibe Coding 无忧行指南
 
+<img src="/images/ClaudeCode.png" alt="Claude Code AI 编程工具界面" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); margin: 20px 0;">
+
 随着 Cursor、Claude Code、Google Antigravity、OpenAI Codex 乃至 OpenClaw 等 AI 工具的热度攀升，针对大家近期频繁咨询的配置问题，我们以 FlClash 为例（其他产品也类似）撰写了以下教程。请参照以下步骤完成设置，无论是 IDE 还是 CLI，我们都会让你 AI 生产力无忧行。
 
 ::: tip 适用范围
