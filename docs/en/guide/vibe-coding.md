@@ -26,6 +26,8 @@ In FlClash's dashboard:
 * Enable <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Virtual Network Adapter</span> (TUN mode)
 * Outbound Mode, select <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Rule Mode</span>
 
+<img src="/images/vibecoding/1.png" alt="Dashboard: Enable Virtual Network Adapter and Rule Mode" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); margin: 16px 0; max-width: 800px; width: 100%;">
+
 ::: info Why Use Virtual Network Adapter?
 Virtual Network Adapter (TUN) mode intercepts all system network traffic, ensuring that all requests from AI coding tools are properly routed through the proxy. This is crucial for tools like Cursor and Claude Code that frequently call APIs.
 
@@ -46,6 +48,8 @@ Configure the following on the proxy page (node selection):
 * **❇️Manual Select**: Choose <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Hong Kong Ultra</span>
 * **🤖 ChatGPT Group**: Choose <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Singapore Pro+</span>
 
+<img src="/images/vibecoding/2.png" alt="Proxy Page: Node Selection" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); margin: 16px 0; max-width: 800px; width: 100%;">
+
 ::: tip Node Selection Guide
 * **Hong Kong Ultra**: For regular traffic (browsing, YouTube, etc.), fast and stable
 * **Singapore Pro+**: Specifically for AI services (OpenAI, Anthropic, Google AI, etc.), optimized for AI APIs
@@ -54,6 +58,10 @@ Configure the following on the proxy page (node selection):
 ### 4. Start Service
 
 Return to the dashboard and click the <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Start</span> button in the lower right corner to activate the proxy service.
+
+<img src="/images/vibecoding/3.png" alt="Start Service" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); margin: 16px 0; max-width: 800px; width: 100%;">
+
+After starting, verify: the network check shows a non-mainland (overseas) IP, the core status in the top-right is a green checkmark, and the bottom-right shows the start time, Virtual Network Adapter is enabled, and the outbound mode is Rule Mode.
 
 ### 5. Request Page: Verify Traffic Routing
 
@@ -78,6 +86,8 @@ For instance, if you need DeepSeek.com to connect directly (without proxy), foll
    * **Rule Content**: Click to enter, e.g., `deepseek.com` (main domain or subdomain)
    * **Rule Target**: Click to select, e.g., `DIRECT` (direct connection)
 6. Click save
+
+<img src="/images/vibecoding/4.png" alt="Custom Routing: Add override rules (Overrides)" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); margin: 16px 0; max-width: 800px; width: 100%;">
 
 After this setup, visits to DeepSeek.com will bypass the proxy and use your local network directly.
 :::

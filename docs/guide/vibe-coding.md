@@ -26,6 +26,8 @@ description: 为 Cursor、Claude Code、Google Antigravity、OpenAI Codex 等 AI
 * 启用<span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">虚拟网卡</span>（TUN 模式）
 * 出站模式选择<span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">规则模式</span>
 
+<img src="/images/vibecoding/1.png" alt="仪表盘页面：启用虚拟网卡和规则模式" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); margin: 16px 0; max-width: 800px; width: 100%;">
+
 ::: info 为什么要用虚拟网卡？
 虚拟网卡（TUN）模式能够拦截系统所有网络流量，确保 AI 编程工具的所有请求都经过代理判断。这对于 Cursor、Claude Code 等需要频繁调用 API 的工具至关重要。
 
@@ -46,6 +48,8 @@ description: 为 Cursor、Claude Code、Google Antigravity、OpenAI Codex 等 AI
 * **❇️Manual Select** 选：<span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">香港 Ultra</span>
 * **🤖 ChatGPT Group** 选：<span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">新加坡 Pro+</span>
 
+<img src="/images/vibecoding/2.png" alt="代理页面：节点选择" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); margin: 16px 0; max-width: 800px; width: 100%;">
+
 ::: tip 节点选择说明
 * **香港 Ultra**：用于常规流量（如浏览网页、YouTube 等），速度快且稳定
 * **新加坡 Pro+**：专门用于 AI 相关服务（OpenAI、Anthropic、Google AI 等），针对 AI API 优化
@@ -54,6 +58,10 @@ description: 为 Cursor、Claude Code、Google Antigravity、OpenAI Codex 等 AI
 ### 4. 启动服务
 
 返回仪表盘，点击右下角的<span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">开启</span>按钮启动代理服务。
+
+<img src="/images/vibecoding/3.png" alt="启动服务" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); margin: 16px 0; max-width: 800px; width: 100%;">
+
+启动后请自检：确保网络检测拿到境外 IP，右上角核心状态为绿色对勾，右下角能看到启动时间、虚拟网卡已开启、出站模式为规则模式。
 
 ### 5. 请求页面：检查分流
 
@@ -78,6 +86,8 @@ description: 为 Cursor、Claude Code、Google Antigravity、OpenAI Codex 等 AI
    * **规则内容**：点击后填写，如 `deepseek.com`（主域名或者二级三级域名）
    * **规则目标**：点击后选择，如 `DIRECT`（直连）
 6. 点击保存
+
+<img src="/images/vibecoding/4.png" alt="自定义分流：添加覆写规则（Overrides）" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); margin: 16px 0; max-width: 800px; width: 100%;">
 
 这样设置后，访问 DeepSeek.com 将不经过代理，直接使用本地网络访问。
 :::
