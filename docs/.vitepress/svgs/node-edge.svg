@@ -1,0 +1,66 @@
+<svg viewBox="25 45 750 110" xmlns="http://www.w3.org/2000/svg"
+  font-family="'PingFang SC','Microsoft YaHei',system-ui,sans-serif">
+
+  <style>
+    .lbl    { font-size:11px; fill:#475569; }
+    .wfill  { fill:#fef2f2; }
+    .gfw    { font-size:12px; font-weight:700; fill:#ed1c24; }
+    .fill-user   { fill:#eef2ff; }
+    .fill-abroad { fill:#fefce8; }
+    .fill-target { fill:#f0fdfa; }
+
+    @media (prefers-color-scheme: dark) {
+      .lbl    { fill:#94a3b8; }
+      .wfill  { fill:#1a0a0a; }
+      .fill-user   { fill:#111827; }
+      .fill-abroad { fill:#1a1706; }
+      .fill-target { fill:#0a1a14; }
+    }
+  </style>
+
+  <defs>
+    <symbol id="lp" viewBox="0 0 16 16">
+      <path d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5" fill="currentColor"/>
+    </symbol>
+    <symbol id="gl" viewBox="0 0 16 16">
+      <path d="M2 2a2 2 0 0 0-2 2v1a2 2 0 0 0 2 2h5.5v3A1.5 1.5 0 0 0 6 11.5H.5a.5.5 0 0 0 0 1H6A1.5 1.5 0 0 0 7.5 14h1a1.5 1.5 0 0 0 1.5-1.5h5.5a.5.5 0 0 0 0-1H10A1.5 1.5 0 0 0 8.5 10V7H14a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zm.5 3a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1m2 0a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1" fill="currentColor"/>
+    </symbol>
+    <symbol id="tg" viewBox="0 0 16 16">
+      <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.25-14.75v1.5a.25.25 0 0 1-.5 0v-1.5a.25.25 0 0 1 .5 0m0 12v1.5a.25.25 0 1 1-.5 0v-1.5a.25.25 0 1 1 .5 0M4.5 1.938a.25.25 0 0 1 .342.091l.75 1.3a.25.25 0 0 1-.434.25l-.75-1.3a.25.25 0 0 1 .092-.341m6 10.392a.25.25 0 0 1 .341.092l.75 1.299a.25.25 0 1 1-.432.25l-.75-1.3a.25.25 0 0 1 .091-.34ZM2.28 4.408l1.298.75a.25.25 0 0 1-.25.434l-1.299-.75a.25.25 0 0 1 .25-.434Zm10.392 6 1.299.75a.25.25 0 1 1-.25.434l-1.3-.75a.25.25 0 0 1 .25-.434ZM1 8a.25.25 0 0 1 .25-.25h1.5a.25.25 0 0 1 0 .5h-1.5A.25.25 0 0 1 1 8m12 0a.25.25 0 0 1 .25-.25h1.5a.25.25 0 1 1 0 .5h-1.5A.25.25 0 0 1 13 8M2.03 11.159l1.298-.75a.25.25 0 0 1 .25.432l-1.299.75a.25.25 0 0 1-.25-.432Zm10.392-6 1.299-.75a.25.25 0 1 1 .25.433l-1.3.75a.25.25 0 0 1-.25-.434ZM4.5 14.061a.25.25 0 0 1-.092-.341l.75-1.3a.25.25 0 0 1 .434.25l-.75 1.3a.25.25 0 0 1-.342.091m6-10.392a.25.25 0 0 1-.091-.342l.75-1.299a.25.25 0 1 1 .432.25l-.75 1.3a.25.25 0 0 1-.341.09ZM6.494 1.415l.13.483a.25.25 0 1 1-.483.13l-.13-.483a.25.25 0 0 1 .483-.13M9.86 13.972l.13.483a.25.25 0 1 1-.483.13l-.13-.483a.25.25 0 0 1 .483-.13M3.05 3.05a.25.25 0 0 1 .354 0l.353.354a.25.25 0 0 1-.353.353l-.354-.353a.25.25 0 0 1 0-.354m9.193 9.193a.25.25 0 0 1 .353 0l.354.353a.25.25 0 1 1-.354.354l-.353-.354a.25.25 0 0 1 0-.353M1.545 6.01l.483.13a.25.25 0 1 1-.13.483l-.483-.13a.25.25 0 1 1 .13-.482Zm12.557 3.365.483.13a.25.25 0 1 1-.13.483l-.483-.13a.25.25 0 1 1 .13-.483m-12.863.436a.25.25 0 0 1 .176-.306l.483-.13a.25.25 0 1 1 .13.483l-.483.13a.25.25 0 0 1-.306-.177m12.557-3.365a.25.25 0 0 1 .176-.306l.483-.13a.25.25 0 1 1 .13.483l-.483.13a.25.25 0 0 1-.306-.177M3.045 12.944a.3.3 0 0 1-.029-.376l3.898-5.592a.3.3 0 0 1 .062-.062l5.602-3.884a.278.278 0 0 1 .392.392L9.086 9.024a.3.3 0 0 1-.062.062l-5.592 3.898a.3.3 0 0 1-.382-.034zm3.143 1.817a.25.25 0 0 1-.176-.306l.129-.483a.25.25 0 0 1 .483.13l-.13.483a.25.25 0 0 1-.306.176M9.553 2.204a.25.25 0 0 1-.177-.306l.13-.483a.25.25 0 1 1 .483.13l-.13.483a.25.25 0 0 1-.306.176" fill="currentColor"/>
+    </symbol>
+    <marker id="a-red"  markerWidth="5" markerHeight="5" refX="4" refY="2.5" orient="auto" markerUnits="strokeWidth"><path d="M.5.5 L4.5 2.5 L.5 4.5" fill="none" stroke="#ed1c24" stroke-width=".8" stroke-linecap="round" stroke-linejoin="round"/></marker>
+    <marker id="a-teal" markerWidth="5" markerHeight="5" refX="4" refY="2.5" orient="auto" markerUnits="strokeWidth"><path d="M.5.5 L4.5 2.5 L.5 4.5" fill="none" stroke="#14b8a6" stroke-width=".8" stroke-linecap="round" stroke-linejoin="round"/></marker>
+    <marker id="a-gray" markerWidth="5" markerHeight="5" refX="4" refY="2.5" orient="auto" markerUnits="strokeWidth"><path d="M.5.5 L4.5 2.5 L.5 4.5" fill="none" stroke="#64748b" stroke-width=".8" stroke-linecap="round" stroke-linejoin="round"/></marker>
+  </defs>
+
+  <g transform="translate(40,59)">
+    <rect width="80" height="82" rx="10" class="fill-user" stroke="#6366f1" stroke-width="1.8"/>
+    <use href="#lp" x="30" y="20" width="20" height="16" color="#818cf8"/>
+    <text x="40" y="55" text-anchor="middle" class="lbl">&#x7528;&#x6237;&#x8BBE;&#x5907;</text>
+  </g>
+  <line x1="122" y1="100" x2="250" y2="100" stroke="#64748b" stroke-width="1.8" stroke-dasharray="5,3" marker-end="url(#a-gray)"/>
+
+  <rect x="250" y="59" width="80" height="82" rx="10" class="wfill" stroke="#ed1c24" stroke-width="2"/>
+  <line x1="250" y1="79"  x2="330" y2="79"  stroke="#ed1c24" stroke-width=".8" opacity=".3"/>
+  <line x1="250" y1="100" x2="330" y2="100" stroke="#ed1c24" stroke-width=".8" opacity=".3"/>
+  <line x1="250" y1="121" x2="330" y2="121" stroke="#ed1c24" stroke-width=".8" opacity=".3"/>
+  <line x1="290" y1="59"  x2="290" y2="141" stroke="#ed1c24" stroke-width=".8" opacity=".3"/>
+  <text x="290" y="100" text-anchor="middle" dominant-baseline="middle" class="gfw">GFW</text>
+
+  <line x1="332" y1="100" x2="468" y2="100" stroke="#ed1c24" stroke-width="1.8" stroke-dasharray="5,3" marker-end="url(#a-red)"/>
+  <text x="394" y="88"  text-anchor="middle" class="lbl">&#x516C;&#x5171;&#x4E92;&#x8054;&#x7F51;</text>
+  <text x="394" y="116" text-anchor="middle" style="fill:#ed1c24;font-size:9px;">&#x4E0D;&#x7A33;&#x5B9A;</text>
+
+  <g transform="translate(470,59)">
+    <rect width="80" height="82" rx="10" class="fill-abroad" stroke="#f8ba16" stroke-width="1.8"/>
+    <use href="#gl" x="28" y="17" width="24" height="24" color="#f8ba16"/>
+    <text x="40" y="55" text-anchor="middle" class="lbl">&#x5883;&#x5916;&#x670D;&#x52A1;&#x5668;</text>
+  </g>
+  <line x1="552" y1="100" x2="678" y2="100" stroke="#14b8a6" stroke-width="2" marker-end="url(#a-teal)"/>
+  <g transform="translate(680,59)">
+    <rect width="80" height="82" rx="10" class="fill-target" stroke="#14b8a6" stroke-width="1.8"/>
+    <use href="#tg" x="28" y="17" width="24" height="24" color="#14b8a6"/>
+    <text x="40" y="55" text-anchor="middle" class="lbl">&#x76EE;&#x6807;&#x7F51;&#x7AD9;</text>
+  </g>
+
+</svg>

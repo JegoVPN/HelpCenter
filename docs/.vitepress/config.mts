@@ -54,7 +54,7 @@ export default defineConfig({
               { text: '📋节点介绍', link: '/guide/nodes' },
               { text: '☑️模式选择', link: '/guide/mode-selection' },
               { text: '🔀代理策略', link: '/guide/proxy-strategy' },
-              { text: '🆕防止失联', link: '/guide/keep-updated' },
+              { text: '🔄防止失联', link: '/guide/keep-updated' },
               { text: '🙋联系客服', link: '/guide/support' },
               { text: '❓常见问题', link: '/guide/faq' },
               { text: '💻Vibe Coding', link: '/guide/vibe-coding' }
@@ -147,7 +147,7 @@ export default defineConfig({
               { text: '📋Node Introduction', link: '/en/guide/nodes' },
               { text: '☑️Mode Selection', link: '/en/guide/mode-selection' },
               { text: '🔀Proxy Strategy', link: '/en/guide/proxy-strategy' },
-              { text: '🆕Stay Connected', link: '/en/guide/keep-updated' },
+              { text: '🔄Stay Connected', link: '/en/guide/keep-updated' },
               { text: '🙋Contact Support', link: '/en/guide/support' },
               { text: '❓FAQ', link: '/en/guide/faq' },
               { text: '💻Vibe Coding', link: '/en/guide/vibe-coding' }
