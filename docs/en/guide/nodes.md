@@ -121,4 +121,8 @@ Users with extremely high requirements for stability and low latency, advanced u
 | Edge Network (Direct) | Overseas | Yes | Low | High | Low |
 | Mainland Optimized (Premium) | Overseas (Premium) | Yes | Medium | Medium-High | Medium |
 | Mainland Transit Server | Domestic Transit | Yes | High | High | High |
-| IEPL Private Line | Private Line | No | Highest | High | High | 
+| IEPL Private Line | Private Line | No | Highest | High | High |
+
+::: info Note
+Some premium routes (such as Pro and Ultra routes) require a corresponding membership tier to access. See [Membership Benefits](/en/membership/benefits) for details.
+::: 

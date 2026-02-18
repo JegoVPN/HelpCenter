@@ -123,3 +123,6 @@ import ieplSvg from '../.vitepress/svgs/node-iepl.svg?raw'
 | 大陆中转服务器 | 境内中转 | 是 | 较高 | 高 | 高 |
 | IEPL 内网专线 | 内网专线 | 否 | 最高 | 高 | 高 |
 
+::: info 提示
+部分高级线路（如Pro、Ultra线路）需要对应的会员等级才能使用。了解详情请查看 [会员体系](/membership/benefits)。
+:::
