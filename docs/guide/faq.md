@@ -10,6 +10,7 @@ description: 你一定有概率遇到问题，不要慌可以通过下面的常�
 并不是所有线路都能使用 AI 产品，请正确操作：
  - 手机订阅 请使用 `🤖 ChatGPT Group 分组`里的节点服务器进行访问Gemini、ChatGPT、Claude 等 AI产品。
  - 浏览器插件 请使用带有`[AI]`标注的节点服务器进行访问Gemini、ChatGPT、Claude 等 AI产品。
+ - 谷歌 AI 产品（如 Gemini、AI Studio、NotebookLM 等）需要将代理设置为**全局模式**才能正常访问。
 
 ### 打不开 Gemini、ChatGPT、Claude 等境外的网站了？
 

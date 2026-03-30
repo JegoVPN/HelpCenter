@@ -10,6 +10,7 @@ description: You may encounter problems with some probability, don't panic, you 
 Not every route works for AI products. Please pick the matching nodes:
 - For mobile subscriptions, select nodes under the `🤖 ChatGPT Group` group to access Gemini, ChatGPT, Claude, and other AI products.
 - For browser extensions, select nodes that carry the `[AI]` label to reach these AI products.
+- Google AI products (such as Gemini, AI Studio, NotebookLM, etc.) require the proxy to be set to **Global Mode** to work properly.
 
 ### Unable to open Gemini, ChatGPT, Claude or other overseas sites?
 
