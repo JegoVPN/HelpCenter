@@ -50,13 +50,16 @@ If you visited these services without a proxy before, or your browser still stor
 
 **Suggested reading:** [Understand and manage location in Google Search](https://support.google.com/websearch/answer/179386?hl=en)
 
-**Solution**
-- **Close everything:** Shut down the browser completely.
-- **Incognito test:** Reopen it in private/incognito mode.
-- **Configure the proxy:** Inside that incognito window, set Jego to Global Mode and select the desired node.
-- **Verify the exit:** Visit [IP111.cn](https://ip111.cn) within incognito to confirm the location matches the node you picked.
-- **Test the target site:** Still in incognito mode, open the product you need. If it now shows the correct location, the culprit was cached data.
-- **Clean permanently:** Go back to normal mode, clear all Cookies and cache, then restart the browser.
+**How to troubleshoot: run a clean-room test in incognito**
+
+The idea is simple — first spin up a fresh environment with no cache or cookies getting in the way, and confirm the node itself is fine. If everything looks right in that clean window, the issue is just stale data left over in your normal browser, and a quick cleanup fixes it. Here's the step-by-step:
+- **Step 1 — Fully quit the browser.** Not just closing tabs — actually exit the app, so no background process is quietly reloading old cache.
+- **Step 2 — Open a fresh incognito / private window.** On Windows the shortcut is usually `Ctrl + Shift + N` (Edge uses `Ctrl + Shift + P`); on Mac it's `Cmd + Shift + N`. This window ignores your regular cookies and cache — think of it as a disposable, "clean" browser.
+- **Step 3 — Let Jego run inside the incognito window.** Browsers disable all extensions in private mode by default, so you have to flip the switch manually: open the extensions page (Chrome: `chrome://extensions`; Edge: `edge://extensions`), find **Jego**, click **Details**, and turn on **Allow in Incognito / Allow in InPrivate**. Skip this and the whole test below is pointless — you'll be browsing the incognito window with no proxy at all.
+- **Step 4 — In the incognito window, open Jego, switch to Global Mode, and pick the node you want to test.** Once you've picked one, stop switching — hopping between nodes makes target sites more likely to flag you as suspicious.
+- **Step 5 — Before touching the target site, go to [IP111.cn](https://ip111.cn) first.** This confirms that "the node you think you're on" and "the node you're actually on" match. If IP111 shows the right country/city, the proxy side is fine.
+- **Step 6 — Now open the site you were having trouble with (Google, ChatGPT, etc.).** If the location looks correct here, you've confirmed it 100% — the node is fine, the real culprit was stale data in your normal browser.
+- **Step 7 — Go back to your normal browser window and clean it out.** In browser settings, **clear all cookies and cache** (set the time range to "All time"), then restart the browser. After that, the target site should behave normally again.
 
 ### **Question 3: Too many redirects.**
 
