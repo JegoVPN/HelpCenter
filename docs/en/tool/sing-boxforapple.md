@@ -15,6 +15,10 @@ macOS iOS iPadOS tvOS can be installed through Apple Store, the only threshold i
 
 * [App Store](https://apps.apple.com/app/sing-box-vt/id6673731168)
 
+::: info Registration Tutorial
+If you want to register your own non-mainland App Store account, see the [US Apple ID Registration Guide](/en/devices/us-apple-id), or purchase a ready-made account.
+:::
+
 macOS can also be installed through Github and command line
 
 * [GitHub Releases](https://github.com/SagerNet/sing-box/releases)

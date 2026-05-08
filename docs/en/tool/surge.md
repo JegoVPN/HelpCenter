@@ -12,7 +12,7 @@ Surge is a powerful network proxy tool on Apple platforms, known for its stable 
 Currently Surge has been required by the government to be removed from the mainland China App Store. Please switch to non-mainland China regions (such as US, Hong Kong, Japan regions), then purchase and download.
 
 ::: info Registration Tutorial
-If you want to register your own non-mainland App Store account, please refer to related tutorials or purchase ready-made accounts.
+If you want to register your own non-mainland App Store account, see the [US Apple ID Registration Guide](/en/devices/us-apple-id), or purchase a ready-made account.
 :::
 
 ## Download Surge

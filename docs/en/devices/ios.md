@@ -15,6 +15,10 @@ Jego subscription service mobile panel: <https://jego.us>
 
 </div>
 
+## Get a Non-Mainland Apple ID
+
+Some iOS/iPadOS proxy apps must be downloaded from an App Store region outside mainland China. If you do not have a usable account, see the [US Apple ID Registration Guide](/en/devices/us-apple-id).
+
 ## <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F7GBp8VQdHNWWH3aalDTP_2Fios_3.svg" width="38" height="28" alt="iOS icon"> Proxy Tools Available on **iOS/iPadOS Devices**
 
 ### Recommended Software

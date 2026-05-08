@@ -15,6 +15,10 @@ macOS iOS iPadOS tvOS 可通过Apple Store安装，唯一门槛是需要非中�
 
 * [App Store](https://apps.apple.com/app/sing-box-vt/id6673731168)
 
+::: info 注册教程
+如果你想注册自己的非大陆地区 App Store 账号，请参考 [美区 Apple ID 注册教程](/devices/us-apple-id)，也可以购买现成的账号。
+:::
+
 macOS还可以通过Github和命令行安装
 
 * [GitHub Releases](https://github.com/SagerNet/sing-box/releases)

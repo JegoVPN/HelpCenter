@@ -15,6 +15,10 @@ iOS是苹果公司为其移动设备所开发的专有移动操作系统，为�
 
 </div>
 
+## 获取非大陆区 Apple ID
+
+部分 iOS/iPadOS 代理工具需要使用非中国大陆区 App Store 下载。如果你没有可用账号，可以参考 [美区 Apple ID 注册教程](/devices/us-apple-id)。
+
 ## <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F7GBp8VQdHNWWH3aalDTP_2Fios_3.svg" width="38" height="28" alt="iOS图标"> **iOS/iPadOS 设备上能用的代理工具**
 
 ### 推荐使用下列软件
