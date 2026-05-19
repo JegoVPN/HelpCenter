@@ -58,5 +58,13 @@ description: 无忧行的订阅节点服务（大陆用户通常称之为"机场
 
 <span style="color:green;">如果你的需求仅仅是在浏览器里实现翻墙，</span>[<span style="color:green;">无忧行浏览器插件才是最佳选择。</span>](/guide/usage)
 
+### 3、开启了软件的 TUN 模式后，无忧行插件应该怎么设置？
 
+如果你已经在 FlClash、Clash Verge Rev、sing-box、v2rayN 等代理软件里开启了虚拟网卡/TUN 模式，电脑上的网络请求已经由这些软件接管并判断是否代理。这时浏览器里的无忧行插件应该保持关闭。
+
+<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FISwY5XX4FX2qker0nOYC_2Fimage_3.png" alt="无忧行插件关闭模式界面" width="280">
+
+在插件小窗里点击<span style="background-color:grey; color:white; padding:2px 6px; border-radius:3px;">关闭</span>，让插件处于上图所示状态。不要再同时开启插件里的<span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">全局</span>、<span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">规则</span>或<span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">开启</span>模式，否则浏览器流量可能被两层代理重复处理，导致访问异常、速度变慢或规则冲突。
+
+这里的<span style="background-color:grey; color:white; padding:2px 6px; border-radius:3px;">关闭</span>只是关闭无忧行插件自己的浏览器代理功能，不会关闭你正在使用的代理软件和 TUN 模式。简单来说：用代理软件的 TUN 模式翻墙时，无忧行插件保持关闭；只想让浏览器翻墙时，再使用[无忧行浏览器插件](/guide/usage)。更多插件模式说明可查看[模式选择](/guide/mode-selection)。
 

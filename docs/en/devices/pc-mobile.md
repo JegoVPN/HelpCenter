@@ -56,4 +56,14 @@ Virtual network card/tun principle is that the proxy software kernel creates a n
 To make all programs on your computer proxy globally, use virtual network card mode;\
 To make browsers proxy, use system proxy mode.
 
-<span style="color:green;">If your need is only to implement proxy in browsers,</span>[<span style="color:green;">Jego browser extension is the best choice.</span>](/en/guide/usage) 
+<span style="color:green;">If your need is only to implement proxy in browsers,</span>[<span style="color:green;">Jego browser extension is the best choice.</span>](/en/guide/usage)
+
+### 3. How should I set the Jego browser extension after enabling TUN mode in proxy software?
+
+If you have enabled virtual network card/TUN mode in proxy software such as FlClash, Clash Verge Rev, sing-box, or v2rayN, your computer's network requests are already handled by that software to decide whether they should go through the proxy. In this case, keep the Jego browser extension turned off.
+
+<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FISwY5XX4FX2qker0nOYC_2Fimage_3.png" alt="Jego extension off mode interface" width="280" />
+
+Click <span style="background-color:grey; color:white; padding:2px 6px; border-radius:3px;">Off</span> in the extension popup and keep it in the state shown above. Do not also enable <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Global</span>, <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Rules</span>, or <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Enable</span> mode in the extension, otherwise browser traffic may be processed by two proxy layers and cause access issues, slower speeds, or rule conflicts.
+
+The <span style="background-color:grey; color:white; padding:2px 6px; border-radius:3px;">Off</span> state here only turns off the browser proxy function of the Jego extension. It does not turn off the proxy software or TUN mode you are using. In short: when using TUN mode in proxy software, keep the Jego extension off; when you only want the browser to use a proxy, use the [Jego browser extension](/en/guide/usage). For more details about extension modes, see [Mode Selection](/en/guide/mode-selection).
