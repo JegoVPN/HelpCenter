@@ -53,7 +53,8 @@ To help you master the usage of the Jego browser extension more efficiently, we 
 8. [How to Keep Updated to Latest Version and Avoid Disconnection](/en/guide/keep-updated)
 9. [How to Contact Customer Service When Encountering Problems](/en/guide/support)
 10. [What Common Problems Occur During Jego Usage](/en/guide/faq)
-11. [How to Use Jego for Vibe Coding - AI Development Tools Proxy Configuration Tutorial](/en/guide/vibe-coding)
+11. [Sites won't open or DNS hijacked? Read this encrypted DNS (DoH / DoT) guide](/en/guide/encrypted-dns)
+12. [How to Use Jego for Vibe Coding - AI Development Tools Proxy Configuration Tutorial](/en/guide/vibe-coding)
 
 ### Upgrade to Premium Membership
 

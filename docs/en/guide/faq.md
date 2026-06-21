@@ -17,16 +17,8 @@ Not every route works for AI products. Please pick the matching nodes:
 Please **optimize your local network and browser environment** and go through every item below—each step matters.
 
 **Network environment**
-- **Update DNS:** Switch your router and computer DNS to Tencent or Alibaba public DNS (mixing them works best).
-  - **Tencent Public DNS**: [Official site](https://www.dnspod.cn/products/publicdns#publisDnsStart) ([Setup guide](https://cloud.tencent.com/document/product/302/110786))
-    - IPv4: `119.29.29.29`, `182.254.116.116`
-    - IPv6: `2402:4e00::`, `2402:4e00:1::`
-  - **Alibaba Public DNS**: [Official site](https://www.alidns.com/)
-    - IPv4: `223.5.5.5`, `223.6.6.6`
-    - IPv6: `2400:3200::1`, `2400:3200:baba::1`
-- **Clear DNS cache:**
-  - Click `Start` -> `Run`, type `CMD`, and press Enter.
-  - Run `ipconfig/flushdns` in the command window.
+- **Update DNS:** Point your computer/router at a domestic public resolver — quickest is Alibaba `223.5.5.5` or Tencent `119.29.29.29`. For safer, tamper-proof **encrypted DNS (DoH/DoT)**, see 👉 [Encrypted DNS Guide](/en/guide/encrypted-dns).
+- **Clear DNS cache:** Press `Win+R`, type `CMD`, Enter, then run `ipconfig /flushdns`.
 - **Disable other proxy apps** such as NetEase UU, iFlytek accelerators, V2rayN, Clash, etc.
 - **Windows proxy settings** (`Settings` -> `Network & Internet` -> `Proxy`):
   - Automatically detect settings: Off

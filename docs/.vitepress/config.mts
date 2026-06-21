@@ -57,6 +57,7 @@ export default defineConfig({
               { text: '🔄防止失联', link: '/guide/keep-updated' },
               { text: '🙋联系客服', link: '/guide/support' },
               { text: '❓常见问题', link: '/guide/faq' },
+              { text: '🔒加密DNS', link: '/guide/encrypted-dns' },
               { text: '💻Vibe Coding', link: '/guide/vibe-coding' }
             ]
           },
@@ -151,6 +152,7 @@ export default defineConfig({
               { text: '🔄Stay Connected', link: '/en/guide/keep-updated' },
               { text: '🙋Contact Support', link: '/en/guide/support' },
               { text: '❓FAQ', link: '/en/guide/faq' },
+              { text: '🔒Encrypted DNS', link: '/en/guide/encrypted-dns' },
               { text: '💻Vibe Coding', link: '/en/guide/vibe-coding' }
             ]
           },
