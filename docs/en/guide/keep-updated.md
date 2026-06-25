@@ -9,7 +9,7 @@ description: Due to product characteristics, we will continuously update version
 
 | Channel Version | Version Number | Update Time | Download Link |
 | --- | --- | --- | --- |
-| Chrome | `1.5.6` | Jun 22, 2026 | [https://chrome.google.com/webstore/detail/bnnamacamhjbdoimlbkegmbgkekphcbb](https://chrome.google.com/webstore/detail/bnnamacamhjbdoimlbkegmbgkekphcbb) |
+| Chrome | `1.5.8` | Jun 25, 2026 | [https://chrome.google.com/webstore/detail/bnnamacamhjbdoimlbkegmbgkekphcbb](https://chrome.google.com/webstore/detail/bnnamacamhjbdoimlbkegmbgkekphcbb) |
 | Edge | `1.5.6` | Jun 24, 2026 | [https://microsoftedge.microsoft.com/addons/detail/bkpoijbobhmbglhjjmnoedomdoabilol](https://microsoftedge.microsoft.com/addons/detail/bkpoijbobhmbglhjjmnoedomdoabilol) |
 
 ## Jego Extension Updates
@@ -59,4 +59,4 @@ Please also maintain the habit of updating mobile proxy subscription nodes every
 
 ## Customer Service
 
-When you encounter problems and still can't solve them after reading this guide and trying repeatedly, you can also [contact customer service](/en/guide/support) and get help. 
+When you encounter problems and still can't solve them after reading this guide and trying repeatedly, you can also [contact customer service](/en/guide/support) and get help.
