@@ -10,7 +10,7 @@ description: Due to product characteristics, we will continuously update version
 | Channel Version | Version Number | Update Time | Download Link |
 | --- | --- | --- | --- |
 | Chrome | `1.5.8` | Jun 25, 2026 | [https://chrome.google.com/webstore/detail/bnnamacamhjbdoimlbkegmbgkekphcbb](https://chrome.google.com/webstore/detail/bnnamacamhjbdoimlbkegmbgkekphcbb) |
-| Edge | `1.5.6` | Jun 24, 2026 | [https://microsoftedge.microsoft.com/addons/detail/bkpoijbobhmbglhjjmnoedomdoabilol](https://microsoftedge.microsoft.com/addons/detail/bkpoijbobhmbglhjjmnoedomdoabilol) |
+| Edge | `1.5.8` | Jun 27, 2026 | [https://microsoftedge.microsoft.com/addons/detail/bkpoijbobhmbglhjjmnoedomdoabilol](https://microsoftedge.microsoft.com/addons/detail/bkpoijbobhmbglhjjmnoedomdoabilol) |
 
 ## Jego Extension Updates
 

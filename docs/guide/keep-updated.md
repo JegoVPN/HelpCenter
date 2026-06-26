@@ -10,7 +10,7 @@ description: 由于产品特性导致我们会不断更新版本的方式来保�
 | 渠道版本 | 版本号 | 更新时间 | 下载链接 |
 | --- | --- | --- | --- |
 | Chrome | `1.5.8` | 2026年6月25日 | [https://chrome.google.com/webstore/detail/bnnamacamhjbdoimlbkegmbgkekphcbb](https://chrome.google.com/webstore/detail/bnnamacamhjbdoimlbkegmbgkekphcbb) |
-| Edge | `1.5.6` | 2026年6月24日 | [https://microsoftedge.microsoft.com/addons/detail/bkpoijbobhmbglhjjmnoedomdoabilol](https://microsoftedge.microsoft.com/addons/detail/bkpoijbobhmbglhjjmnoedomdoabilol) |
+| Edge | `1.5.8` | 2026年6月27日 | [https://microsoftedge.microsoft.com/addons/detail/bkpoijbobhmbglhjjmnoedomdoabilol](https://microsoftedge.microsoft.com/addons/detail/bkpoijbobhmbglhjjmnoedomdoabilol) |
 
 ## 无忧行插件的更新
 
