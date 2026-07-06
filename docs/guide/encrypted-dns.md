@@ -112,18 +112,49 @@ DNS（域名系统）的作用，是把你输入的**域名**（如 `google.com`
 | **CIRA Canadian Shield** | `https://private.canadianshield.cira.ca/dns-query` | `private.canadianshield.cira.ca` | `149.112.121.10` `149.112.122.10` | 加拿大 · 个人信息 24h 内删除 · Protected/Family 变体可加过滤 |
 :::
 
-## 六、如何开启加密 DNS
+## 六、如何开启加密 DNS（推荐组合）
 
-不同平台开启方式不同（多数填 DoH 地址，Android 只支持 DoT）：
+系统级加密 DNS 在 Windows / macOS 上很折腾（Windows 要用 `netsh` 注册模板、Apple 要装 `.mobileconfig` 描述文件）。对大多数人，**分两层**就够用了：
 
-| 平台 | 操作路径 |
+### ① 系统层：填公共 DNS 的明文 IP（管所有应用）
+
+把系统 DNS 从运营商默认换成公共解析器——**这一步不加密**，但能甩掉运营商默认 DNS、挡住最常见的本地 DNS 劫持：
+
+- 中国大陆：`223.5.5.5`（阿里）或 `119.29.29.29`（腾讯）
+- 海外：`1.1.1.1`（Cloudflare）或 `8.8.8.8`（Google）
+
+> Windows：设置 → 网络和 Internet → 网卡属性 → DNS 服务器分配 → 手动 → 填上面的 IP（加密保持「关」即可）。macOS：系统设置 → 网络 → 当前网络「详细信息」→ DNS → 添加上面的 IP。
+
+### ② 浏览器层：开加密 DNS（DoH）——你上网的主战场
+
+浏览器里开 DoH 最省事，粘贴一个地址就行，而且网页浏览大多发生在这里：
+
+| 浏览器 | 操作路径 |
 | --- | --- |
 | **Chrome / Edge** | 设置 → 隐私和安全 → 安全 → 使用安全 DNS → 选「自定义」→ 粘贴 DoH 地址 |
 | **Firefox** | 设置 → 隐私与安全 → DNS over HTTPS → 最大保护 → 自定义 → 粘贴 DoH 地址 |
-| **Windows 11** | 设置 → 网络和 Internet → 对应网卡 → DNS 服务器分配 → 手动 → 开 → 加密（DoH） |
-| **macOS / iOS** | 安装服务商提供的 DoH/DoT 配置描述文件（.mobileconfig） |
-| **Android 9+** | 设置 → 网络和互联网 → 私人 DNS → 填入 DoT 主机名（即表格里的 DoT 列） |
+
+地址填哪个：**中国大陆**填阿里/腾讯的 DoH（`https://dns.alidns.com/dns-query` 等，国外 DoH 在国内用不了）；**海外**填 Cloudflare/Google（见上面第五节）。
+
+### 手机
+
+- **Android 9+**：原生就支持，设置 → 网络和互联网 → 私人 DNS → 填入 DoT 主机名（即表格里的 DoT 列），最省事。
+- **iOS**：系统没有直接填 DoH 的入口，需安装 `.mobileconfig` 描述文件（见下方「进阶」）。
+
+::: warning 这套组合的边界
+浏览器 DoH **只加密浏览器的 DNS**；系统层用明文 IP 时，其他应用的查询仍是明文，在中国大陆也仍可能被 GFW 伪造（明文 IP 只能挡运营商最常见的劫持）。想让**所有应用**都走加密，就用下面的「进阶」在系统或路由器上开 DoH/DoT。
+:::
+
+::: details 进阶：让全系统、所有应用都走加密 DNS（点击展开）
+
+| 平台 | 操作路径 |
+| --- | --- |
+| **Windows 11** | 设置 → 网络和 Internet → Wi-Fi/以太网 → 硬件属性 → DNS 服务器分配 → 编辑 → 手动 → 打开 IPv4 → 填**明文 IP**（不是 DoH 地址）→「首选 DNS 加密」选「仅加密(DoH)」 |
+| **macOS / iOS** | 安装 `.mobileconfig` 配置描述文件（服务商提供或用生成器生成）：iOS 在「设置 → 通用 → VPN、DNS 与设备管理」中安装，macOS 双击文件后在「系统设置 → 通用 → VPN 与设备管理」确认 |
 | **路由器** | 若路由器支持 DoT/DoH，在路由器上设置，全网设备一次性覆盖 |
+
+> **Windows 11 注意**：系统内置 DoH 只认少数已知服务商（Cloudflare `1.1.1.1`、Google `8.8.8.8`、Quad9 `9.9.9.9` 等），直接填这些明文 IP 才会自动走加密；换成别的解析器，需先用 `netsh dns add encryption` 注册它对应的 DoH 模板，否则那个「加密」开关不会生效。
+:::
 
 ## 七、实在配不了 DoH/DoT 怎么办（兜底）
 

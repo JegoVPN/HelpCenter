@@ -112,18 +112,49 @@ In addition to the global anycast set above, these add local jurisdiction / data
 | **CIRA Canadian Shield** | `https://private.canadianshield.cira.ca/dns-query` | `private.canadianshield.cira.ca` | `149.112.121.10` `149.112.122.10` | Canada · PII deleted within 24h · Protected/Family variants add filtering |
 :::
 
-## 6. How to turn on encrypted DNS
+## 6. How to turn on encrypted DNS (recommended combo)
 
-The steps differ per platform (most take a DoH URL; Android is DoT-only):
+System-wide encrypted DNS is fiddly on Windows / macOS (Windows needs a `netsh` template registration; Apple needs a `.mobileconfig` profile). For most people, **two layers** are enough:
 
-| Platform | Where to set it |
+### ① System layer: set a plain-IP public DNS (covers all apps)
+
+Replace your ISP's default system DNS with a public resolver — **this step isn't encrypted**, but it drops the ISP default and blocks the most common local DNS hijacking:
+
+- Mainland China: `223.5.5.5` (AliDNS) or `119.29.29.29` (DNSPod)
+- Elsewhere: `1.1.1.1` (Cloudflare) or `8.8.8.8` (Google)
+
+> Windows: Settings → Network & internet → adapter properties → DNS server assignment → Manual → enter the IP (leave encryption Off). macOS: System Settings → Network → your network's "Details" → DNS → add the IP.
+
+### ② Browser layer: turn on encrypted DNS (DoH) — where you actually browse
+
+DoH is easiest in the browser (paste one URL), and that's where most of your web browsing happens:
+
+| Browser | Where to set it |
 | --- | --- |
 | **Chrome / Edge** | Settings → Privacy and security → Security → Use secure DNS → "With" custom → paste a DoH URL |
 | **Firefox** | Settings → Privacy & Security → DNS over HTTPS → Max Protection → Custom → paste a DoH URL |
-| **Windows 11** | Settings → Network & internet → adapter → DNS server assignment → Manual → On → Encrypted (DoH) |
-| **macOS / iOS** | Install a DoH/DoT configuration profile (.mobileconfig) from the provider |
-| **Android 9+** | Settings → Network & internet → Private DNS → enter the DoT hostname (the DoT column) |
+
+Which URL: in **mainland China** use AliDNS/DNSPod DoH (`https://dns.alidns.com/dns-query`, etc.; foreign DoH doesn't work there); **elsewhere** use Cloudflare/Google (see Section 5).
+
+### Phones
+
+- **Android 9+**: natively supported — Settings → Network & internet → Private DNS → enter the DoT hostname (the DoT column). Easiest option.
+- **iOS**: no built-in field for DoH; install a `.mobileconfig` profile (see "Advanced" below).
+
+::: warning What this combo does and doesn't cover
+Browser DoH **only encrypts the browser's DNS**. With a plain-IP system DNS, other apps' lookups stay in plaintext — and in mainland China they can still be spoofed by the GFW (a plain IP only blocks ordinary ISP hijacking). To encrypt **every app**, use the "Advanced" section below to set DoH at the system or router level.
+:::
+
+::: details Advanced: encrypt DNS for the whole system / all apps (click to expand)
+
+| Platform | Where to set it |
+| --- | --- |
+| **Windows 11** | Settings → Network & internet → Wi-Fi/Ethernet → Hardware properties → DNS server assignment → Edit → Manual → turn on IPv4 → enter the **plain IP** (not a DoH URL) → set "Preferred DNS encryption" to "Encrypted only (DoH)" |
+| **macOS / iOS** | Install a `.mobileconfig` profile (from the provider or a generator): on iOS via Settings → General → VPN, DNS & Device Management; on macOS double-click it, then confirm under System Settings → General → VPN & Device Management |
 | **Router** | If your router supports DoT/DoH, set it there so every device on the network is covered |
+
+> **Windows 11 note**: the built-in DoH only recognizes a few known providers (Cloudflare `1.1.1.1`, Google `8.8.8.8`, Quad9 `9.9.9.9`, etc.) — entering those plain IPs auto-encrypts. For any other resolver you must first register its DoH template with `netsh dns add encryption`, or the "Encrypted" toggle won't take effect.
+:::
 
 ## 7. If you can't set up DoH/DoT (fallback)
 
