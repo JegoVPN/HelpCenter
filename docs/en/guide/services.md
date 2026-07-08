@@ -30,7 +30,7 @@ description: To ensure you can use Jego correctly, you must understand the types
 
 When you log in and see the interface shown in the figure below, it means you are using our free service.
 
-<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FNLG3eiq1aT1jbzIlJMK6_2Fimage_3.png" alt="Free version interface" width="280" />
+<img src="/images/jego-v1.5.9/popup-free-on.png" alt="Free version interface" width="280" />
 
 ## Trial Version
 
@@ -40,10 +40,10 @@ Through the welcome email sent by Jego, click the link inside to activate your a
 
 When you log in and see the interface shown in the figure below, it means you are using our trial service.
 
-<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FtEG00TYt5A6V6Bv3qtID_2Fimage_2.png" alt="Trial version interface" width="280" />
+<img src="/images/jego-v1.5.9/popup-trial-rules-auto.png" alt="Trial version interface" width="280" />
 
 ## Paid Service
 
 When you log in and see the interface shown in the figure below, it means you are using our paid service.
 
-<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FhrnVGhPqgh111EAOaSwA_2Fimage_2.png" alt="Paid service interface" width="280" /> 
+<img src="/images/jego-v1.5.9/popup-paid-rules-auto.png" alt="Paid service interface" width="280" /> 

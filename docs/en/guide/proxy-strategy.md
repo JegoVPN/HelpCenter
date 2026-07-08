@@ -24,7 +24,7 @@ The example shows accessing BBC via London node, accessing Nikkei Chinese via To
 5. Continue adding proxy strategy, select Direct Connection [No Proxy] for Proxy Server
 6. Fill in <span style="color:blue;">`acg.tv acgvideo.com b23.tv bilibili.com bilibili.tv biliapi.net biliapi.com bilivideo.com hdslb.com upos-hz-mirrorakam.akamaized.net`</span> in Domain/Host List and click Save.
 
-![Proxy Strategy Configuration](/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F5RzPsyUBc5EyBgkQyZ9h_2Fimage_3.png)
+![Proxy Strategy Configuration](/images/jego-v1.5.9/dashboard-proxy-policy-example.png)
 
 After successful configuration, when using Jego in <span style="color:green;">`Rules`</span> mode, <span style="color:blue;">`Bilibili`</span> will be direct connection, <span style="color:blue;">`bbc.com`</span> and <span style="color:blue;">`*.bbc.com`</span> will go through London server, <span style="color:blue;">`nikkei.com`</span> and <span style="color:blue;">`*.nikkei.com`</span> will go through Tokyo server.
 

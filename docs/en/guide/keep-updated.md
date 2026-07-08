@@ -45,7 +45,7 @@ Since Jego official website's installation packages are often blocked in mainlan
 
 1. Front URL: <span style="color:blue;">`https://jegocloud.com/static/app/`</span>
 
-2. Installation package: For example, if the latest version number is `1.3.20`, write it as <span style="color:blue;">`JegoV1.3.20.zip`</span>.
+2. Installation package: For example, if the latest version number is `1.5.9`, write it as <span style="color:blue;">`JegoV1.5.9.zip`</span>.
 
 Combining the two gives you the complete download address.
 
