@@ -22,7 +22,7 @@ description: 使用无忧行在浏览器里翻墙非常简单，点一下就翻�
 
 使用无忧行插件，注册个账户就能免费翻墙！
 
-<img src="/images/jego-v1.5.9/popup-free-on.png" alt="免费版翻墙" width="280">
+<img src="/images/jego-v1.5.9/usage-free-browser.png" alt="免费版翻墙">
 
 点击小窗上的<span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">开启</span>按钮，即可开启代理模式，有限地突破部分封锁，<span style="color:orange;">仅能访问Google、Wikipedia、New Bing、ChatGPT、Grok、Claude</span>；
 
@@ -36,7 +36,7 @@ description: 使用无忧行在浏览器里翻墙非常简单，点一下就翻�
 
 使用无忧行插件，**成为会员就能获得无限流量**、畅通无阻的全球互联网访问体验。
 
-<img src="/images/jego-v1.5.9/popup-paid-rules-auto.png" alt="会员翻墙后可访问任意网址" width="280">
+<img src="/images/jego-v1.5.9/usage-paid-browser.png" alt="会员翻墙后可访问任意网址">
 
 点击小窗上的<span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">全局</span>按钮，即可开启全局模式进行访问，访问任意网址都将经由代理（包括大陆地区的网站）。
 

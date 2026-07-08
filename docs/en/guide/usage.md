@@ -22,7 +22,7 @@ Watch the complete installation and usage tutorial to quickly get started with J
 
 Use Jego extension, register an account to proxy for free!
 
-<img src="/images/jego-v1.5.9/popup-free-on.png" alt="Free version proxy" width="280">
+<img src="/images/jego-v1.5.9/usage-free-browser.png" alt="Free version proxy">
 
 Click the <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Enable</span> button on the small window to enable proxy mode, limitedly break through some blocks, <span style="color:orange;">only can access Google, Wikipedia, New Bing,ChatGPT, Grok and Claude</span>;
 
@@ -36,7 +36,7 @@ Jego provides three types of services: [Free, Limited-time Trial, and Paid Servi
 
 Use Jego extension, **become a member to get unlimited traffic and seamless global internet access experience**.
 
-<img src="/images/jego-v1.5.9/popup-paid-rules-auto.png" alt="Member proxy can access any website" width="280">
+<img src="/images/jego-v1.5.9/usage-paid-browser.png" alt="Member proxy can access any website">
 
 Click the <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Global</span> button on the small window to enable global mode for access. Accessing any website will go through the proxy (including mainland websites).
 
