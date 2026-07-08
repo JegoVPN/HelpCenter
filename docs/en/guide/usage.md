@@ -24,7 +24,7 @@ Use Jego extension, register an account to proxy for free!
 
 <img src="/images/jego-v1.5.9/usage-free-browser.png" alt="Free version proxy">
 
-Click the <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Enable</span> button on the small window to enable proxy mode, limitedly break through some blocks, <span style="color:orange;">only can access Google, Wikipedia, New Bing,ChatGPT, Grok and Claude</span>;
+Click the <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Connect</span> button on the small window to enable proxy mode, limitedly break through some blocks, <span style="color:orange;">only can access Google, Wikipedia, New Bing,ChatGPT, Grok and Claude</span>;
 
 Click the <span style="background-color:grey; color:white; padding:2px 6px; border-radius:3px;">Off</span> button to disable proxy mode.
 
