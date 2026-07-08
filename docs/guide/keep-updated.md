@@ -45,7 +45,7 @@ description: 由于产品特性导致我们会不断更新版本的方式来保�
 
 1、前面的网址：<span style="color:blue;">`https://jegocloud.com/static/app/`</span>
 
-2、安装包：比如最新版本号是`1.3.20`，就写成<span style="color:blue;">`JegoV1.3.20.zip`</span>。
+2、安装包：比如最新版本号是`1.5.9`，就写成<span style="color:blue;">`JegoV1.5.9.zip`</span>。
 
 两个拼接后就能得到完整的下载地址。
 

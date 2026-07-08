@@ -8,7 +8,7 @@ title: Node Selection - User Guide
 
 When the node server is in: `🌐 Auto Select / Auto Selection`, as shown in the figure below:
 
-<img src="/images/auto-select-interface.png" alt="Auto selection interface" width="280">
+<img src="/images/jego-v1.5.9/popup-paid-rules-auto.png" alt="Auto selection interface" width="280">
 
 Jego will automatically match the best global network nodes for you based on your network environment. This is the choice of most people.
 
@@ -16,13 +16,13 @@ Jego will automatically match the best global network nodes for you based on you
 
 ### How to Select Nodes?
 
-1. Click the area marked with red box in the figure below to expand Jego's node selection interface.
+1. Click the node selection area in the figure below to expand Jego's node selection interface.
 
-<img src="/images/node-selection-interface.png" alt="Node selection interface" width="280">
+<img src="/images/jego-v1.5.9/popup-node-select-collapsed.png" alt="Node selection interface" width="280">
 
 2. Then you can scroll up and down (as shown in the figure below) to select the node server you want to use for proxy access according to your own needs.
 
-<img src="/images/node-scroll-interface.png" alt="Node scroll interface" width="280">
+<img src="/images/jego-v1.5.9/popup-node-select-open.png" alt="Node scroll interface" width="280">
 
 ::: tip
 For example: Some people have special requirements for IP addresses (for example, Turkey's Youtube Premium is cheap), so they can manually select IP from a specific region for access.
@@ -30,7 +30,7 @@ For example: Some people have special requirements for IP addresses (for example
 
 3. When the node server is not in `🌐 Auto Select / 🌐 Auto Selection` (as shown in the figure below), it means you are using your manually selected proxy server for proxy access.
 
-<img src="/images/manual-selection-interface.png" alt="Manual selection interface" width="280">
+<img src="/images/jego-v1.5.9/popup-manual-node-selected.png" alt="Manual selection interface" width="280">
 
 If you want to learn more about Jego's global network nodes, please visit:
 

@@ -9,7 +9,7 @@ description: How to properly access New Bing, Copilot or ChatGPT in mainland Chi
 
 1️⃣ **Step 1**, ensure that there are no access policies for <span style="color:blue;">`bing.com`</span>, <span style="color:blue;">`microsoft.com`</span> and <span style="color:blue;">`openai.com`</span> in **Jego - Control Panel - Proxy Strategy**:
 
-<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FP4697dXOzW45YZoWIk0T_2Fimage_3.png" alt="Proxy Strategy">
+<img src="/images/jego-v1.5.9/dashboard-proxy-policy-empty.png" alt="Proxy Strategy">
 
 ::: danger Important Reminder
 <span style="color:red;">**Important reminder:**</span>
@@ -17,9 +17,9 @@ description: How to properly access New Bing, Copilot or ChatGPT in mainland Chi
 <span style="color:red;">No proxy strategy setup is required to access ChatGPT and New Bing.</span>
 :::
 
-2️⃣ **Step 2**, Jego extension mode can be either <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Global</span> or <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Rules</span>, and server nodes can be selected freely:
+2️⃣ **Step 2**, Jego extension mode can be either <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Global</span> or <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Rules</span>, but the server node must carry the `[AI]` label:
 
-<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FkeJOr6KeXyIxonlfJZdU_2Fimage_1.png" alt="Jego" width="280" />
+<img src="/images/jego-v1.5.9/popup-paid-rules-ai.png" alt="Jego selected AI node" width="280" />
 
 ✅ **Success**, you have successfully completed the unlocking of `Bing`, `Copilot` and `ChatGPT`:
 
