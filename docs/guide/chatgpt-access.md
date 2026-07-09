@@ -9,7 +9,7 @@ description: 如何用正确的姿势在中国大陆解锁New Bing、Copilot或�
 
 1️⃣ **第一步**，确保 **无忧行** 的 **控制面板 - 代理策略** 里没有<span style="color:blue;">`bing.com`</span>、<span style="color:blue;">`microsoft.com`</span>和<span style="color:blue;">`openai.com`</span>的访问策略：
 
-<img src="/images/jego-v1.5.9/dashboard-proxy-policy-empty.png" alt="代理策略">
+<img src="/images/jego-v1.5.9/dashboard-proxy-policy-empty-zh.png" alt="代理策略">
 
 ::: danger 再次强调
 <span style="color:red;">**再次强调：**</span>
@@ -19,7 +19,7 @@ description: 如何用正确的姿势在中国大陆解锁New Bing、Copilot或�
 
 2️⃣ **第二步**，无忧行插件的模式处于<span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">全局</span>或者<span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">规则</span>均可，但服务器节点必须选择带有`[AI]`标注的节点：
 
-<img src="/images/jego-v1.5.9/popup-paid-rules-ai.png" alt="无忧行选择 AI 节点" width="280">
+<img src="/images/jego-v1.5.9/popup-paid-rules-ai-zh.png" alt="无忧行选择 AI 节点" width="280">
 
 ✅ **大功告成**，️你已经成功地完成了`Bing`、`Copilot`和`ChatGPT`解锁：
 

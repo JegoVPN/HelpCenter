@@ -22,7 +22,7 @@ description: 使用无忧行在浏览器里翻墙非常简单，点一下就翻�
 
 使用无忧行插件，注册个账户就能免费翻墙！
 
-<img src="/images/jego-v1.5.9/usage-free-browser.png" alt="免费版翻墙">
+<img src="/images/jego-v1.5.9/usage-free-browser-zh.png" alt="免费版翻墙">
 
 点击小窗上的<span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">开启</span>按钮，即可开启代理模式，有限地突破部分封锁，<span style="color:orange;">仅能访问Google、Wikipedia、New Bing、ChatGPT、Grok、Claude</span>；
 
@@ -36,7 +36,7 @@ description: 使用无忧行在浏览器里翻墙非常简单，点一下就翻�
 
 使用无忧行插件，**成为会员就能获得无限流量**、畅通无阻的全球互联网访问体验。
 
-<img src="/images/jego-v1.5.9/usage-paid-browser.png" alt="会员翻墙后可访问任意网址">
+<img src="/images/jego-v1.5.9/usage-paid-browser-zh.png" alt="会员翻墙后可访问任意网址">
 
 点击小窗上的<span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">全局</span>按钮，即可开启全局模式进行访问，访问任意网址都将经由代理（包括大陆地区的网站）。
 
@@ -55,11 +55,11 @@ description: 使用无忧行在浏览器里翻墙非常简单，点一下就翻�
 
 * 当你选择节点或者模式时，顶部的无忧行LOGO会变成小圆圈，代表正在处理你的请求（如下图所示），请保持耐心，继续等待；
 
-<img src="/images/jego-v1.5.9/popup-switching-loading.png" alt="保持耐心，继续等待" width="280">
+<img src="/images/jego-v1.5.9/popup-switching-loading-zh.png" alt="保持耐心，继续等待" width="280">
 
 * 直到插件小窗口顶部的小圆圈变成无忧行的LOGO之后，才代表你的设置被成功处理完毕（如下图所示）。
 
-<img src="/images/jego-v1.5.9/popup-manual-node-selected.png" alt="成功" width="280">
+<img src="/images/jego-v1.5.9/popup-manual-node-selected-zh.png" alt="成功" width="280">
 
 ::: info 相关链接
 [如何用正确的姿势在中国大陆解锁ChatGPT和New Bing](/guide/chatgpt-access)

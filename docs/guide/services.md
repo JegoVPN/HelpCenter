@@ -30,7 +30,7 @@ description: 为确保你能正确地使用无忧行，您必须要了解的无�
 
 登录后如下图所示，就代表你正在使用我们提供的免费服务。
 
-<img src="/images/jego-v1.5.9/popup-free-on.png" alt="免费版本界面" width="280">
+<img src="/images/jego-v1.5.9/popup-free-on-zh.png" alt="免费版本界面" width="280">
 
 ## 限时体验
 
@@ -40,10 +40,10 @@ description: 为确保你能正确地使用无忧行，您必须要了解的无�
 
 登录后如下图所示，就代表你正在使用我们的限时体验服务。
 
-<img src="/images/jego-v1.5.9/popup-trial-rules-auto.png" alt="限时体验界面" width="280">
+<img src="/images/jego-v1.5.9/popup-trial-rules-auto-zh.png" alt="限时体验界面" width="280">
 
 ## 付费服务
 
 登录后如下图所示，就代表你正在使用我们的付费服务。
 
-<img src="/images/jego-v1.5.9/popup-paid-rules-auto.png" alt="付费服务界面" width="280">
+<img src="/images/jego-v1.5.9/popup-paid-rules-auto-zh.png" alt="付费服务界面" width="280">

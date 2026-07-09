@@ -22,7 +22,7 @@ Watch the complete installation and usage tutorial to quickly get started with J
 
 Use Jego extension, register an account to proxy for free!
 
-<img src="/images/jego-v1.5.9/usage-free-browser.png" alt="Free version proxy">
+<img src="/images/jego-v1.5.9/usage-free-browser-en.png" alt="Free version proxy">
 
 Click the <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Connect</span> button on the small window to enable proxy mode, limitedly break through some blocks, <span style="color:orange;">only can access Google, Wikipedia, New Bing,ChatGPT, Grok and Claude</span>;
 
@@ -36,7 +36,7 @@ Jego provides three types of services: [Free, Limited-time Trial, and Paid Servi
 
 Use Jego extension, **become a member to get unlimited traffic and seamless global internet access experience**.
 
-<img src="/images/jego-v1.5.9/usage-paid-browser.png" alt="Member proxy can access any website">
+<img src="/images/jego-v1.5.9/usage-paid-browser-en.png" alt="Member proxy can access any website">
 
 Click the <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Global</span> button on the small window to enable global mode for access. Accessing any website will go through the proxy (including mainland websites).
 
@@ -54,11 +54,11 @@ The following video demonstrates how to switch proxy node servers and how to tog
 
 * When you select nodes or modes, the Jego logo at the top will turn into a small circle, indicating that your request is being processed (as shown in the figure below), please be patient and continue waiting;
 
-<img src="/images/jego-v1.5.9/popup-switching-loading.png" alt="Be patient, continue waiting" width="280">
+<img src="/images/jego-v1.5.9/popup-switching-loading-en.png" alt="Be patient, continue waiting" width="280">
 
 * Only when the small circle at the top of the extension small window turns into the Jego logo does it mean your settings have been successfully processed (as shown in the figure below).
 
-<img src="/images/jego-v1.5.9/popup-manual-node-selected.png" alt="Success" width="280">
+<img src="/images/jego-v1.5.9/popup-manual-node-selected-en.png" alt="Success" width="280">
 
 ::: info Related Links
 [How to properly access ChatGPT and New Bing in mainland China](/en/guide/chatgpt-access)
