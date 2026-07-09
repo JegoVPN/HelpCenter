@@ -35,7 +35,7 @@ jobs:
       - name: Check for changes
         id: changes
         run: |
-          if git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep -E '\.(md|ts|js|vue|css|json)$' > /dev/null; then
+          if git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep -E '\.(md|ts|js|vue|css|json|ya?ml|png|jpe?g|gif|webp|svg|mp4|webm)$' > /dev/null; then
             echo "has_changes=true" >> $GITHUB_OUTPUT
           else
             echo "has_changes=false" >> $GITHUB_OUTPUT
