@@ -467,8 +467,8 @@ if (!baselineMode) {
       fail(`版本说明页不得在标题后重复三个版本：${source}`)
     }
     const requiredServiceFacts = page.frontmatter.locale === 'en'
-      ? ['website access is limited', 'Google', 'Wikipedia', 'NewBing', 'ChatGPT', 'Grok', 'Claude', 'nodes and proxy rules preset by Jego', 'three-day Trial', 'limited set of nodes', 'dozens of high-speed nodes worldwide', 'private network lines', 'subscription service for computers and phones']
-      : ['可访问的网站有限', 'Google', 'Wikipedia', 'NewBing', 'ChatGPT', 'Grok', 'Claude', '节点和代理策略由无忧行预先设置', '三天体验', '有限的几个节点', '全球几十个高速节点', '内网专线', '电脑和手机订阅服务']
+      ? ['Register for a Jego account with an email address', 'website access is limited', 'Google', 'Wikipedia', 'NewBing', 'ChatGPT', 'Grok', 'Claude', 'nodes and proxy rules preset by Jego', 'Activate the account from the welcome email', 'three-day Trial', 'limited set of nodes', 'Complete payment', 'dozens of high-speed nodes worldwide', 'private network lines', 'subscription service for computers and phones']
+      : ['使用邮箱注册无忧行账号后', '可访问的网站有限', 'Google', 'Wikipedia', 'NewBing', 'ChatGPT', 'Grok', 'Claude', '节点和代理策略由无忧行预先设置', '通过欢迎邮件激活账号后', '三天体验', '有限的几个节点', '完成付费后', '全球几十个高速节点', '内网专线', '电脑和手机订阅服务']
     for (const fact of requiredServiceFacts) {
       if (!body.includes(fact)) fail(`版本说明页不得删减原有服务范围：${source} -> ${fact}`)
     }

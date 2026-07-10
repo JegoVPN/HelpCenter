@@ -23,6 +23,8 @@ Open the Jego extension popup to see the current version in the top-right corner
 
 ## Free Version
 
+Register for a Jego account with an email address to start using the Free Version.
+
 The Free Version works directly in Chrome and Edge, but website access is limited. It currently supports selected sites such as Google, Wikipedia, NewBing, ChatGPT, Grok, and Claude.
 
 The Free Version uses the overseas edge network, with nodes and proxy rules preset by Jego.
@@ -31,11 +33,15 @@ The Free Version uses the overseas edge network, with nodes and proxy rules pres
 
 ## Trial Version
 
-After registering and activating the account from the welcome email, it receives a three-day Trial. The Trial is not limited to the Free Version's selected-site list; it can choose from a limited set of nodes and customize proxy rules.
+Activate the account from the welcome email to start the three-day Trial.
+
+The Trial is not limited to the Free Version's selected-site list; it can choose from a limited set of nodes and customize proxy rules.
 
 <img src="/images/jego-v1.5.9/popup-trial-rules-auto-en.png" alt="Trial version interface" width="280" />
 
 ## VIP Version
+
+Complete payment to start using the VIP Version.
 
 The VIP Version is also not limited to the Free Version's selected-site list. It can choose from dozens of high-speed nodes worldwide, customize proxy rules, and use the overseas edge network, overseas mainland-optimized routes, and private network lines.
 
