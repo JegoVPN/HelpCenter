@@ -65,13 +65,6 @@ export const zhSidebar = [
     ]
   },
   {
-    text: '帮助与支持',
-    items: [
-      { text: '常见问题', link: '/guide/faq' },
-      { text: '联系支持', link: '/guide/support' }
-    ]
-  },
-  {
     text: '网络与线路',
     items: [
       { text: '节点与线路', link: '/guide/nodes' },
@@ -98,6 +91,13 @@ export const zhSidebar = [
     items: [
       { text: 'AI 产品访问（浏览器插件）', link: '/guide/chatgpt-access' },
       { text: 'Vibe Coding（订阅服务）', link: '/guide/vibe-coding' }
+    ]
+  },
+  {
+    text: '帮助与支持',
+    items: [
+      { text: '常见问题', link: '/guide/faq' },
+      { text: '联系支持', link: '/guide/support' }
     ]
   }
 ]
@@ -141,13 +141,6 @@ export const enSidebar = [
     ]
   },
   {
-    text: 'Help and support',
-    items: [
-      { text: 'FAQ', link: '/en/guide/faq' },
-      { text: 'Contact support', link: '/en/guide/support' }
-    ]
-  },
-  {
     text: 'Network and connections',
     items: [
       { text: 'Nodes and routes', link: '/en/guide/nodes' },
@@ -174,6 +167,13 @@ export const enSidebar = [
     items: [
       { text: 'AI product access (browser extension)', link: '/en/guide/chatgpt-access' },
       { text: 'Vibe Coding (subscription service)', link: '/en/guide/vibe-coding' }
+    ]
+  },
+  {
+    text: 'Help and support',
+    items: [
+      { text: 'FAQ', link: '/en/guide/faq' },
+      { text: 'Contact support', link: '/en/guide/support' }
     ]
   }
 ]

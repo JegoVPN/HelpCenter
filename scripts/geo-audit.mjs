@@ -1003,6 +1003,13 @@ if (!baselineMode) {
   ) {
     fail('帮助与支持侧边栏必须只保留常见问题和联系支持')
   }
+  const zhHelpIndex = navigationSource.lastIndexOf("text: '帮助与支持',\n    items:")
+  const enHelpIndex = navigationSource.lastIndexOf("text: 'Help and support',\n    items:")
+  const zhScenarioIndex = navigationSource.lastIndexOf("text: '场景教程',\n    items:")
+  const enScenarioIndex = navigationSource.lastIndexOf("text: 'Scenario tutorials',\n    items:")
+  if (zhHelpIndex < zhScenarioIndex || enHelpIndex < enScenarioIndex) {
+    fail('帮助与支持必须位于中英文侧边栏最底部')
+  }
   const zhScenarioGroup = navigationSource.match(/text:\s*'场景教程',\s*items:\s*\[([\s\S]*?)\]\s*\}/)?.[1] || ''
   const enScenarioGroup = navigationSource.match(/text:\s*'Scenario tutorials',\s*items:\s*\[([\s\S]*?)\]\s*\}/)?.[1] || ''
   if (
