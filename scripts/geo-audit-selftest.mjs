@@ -164,6 +164,12 @@ try {
     '---\ntitle: 重复目录\n---\n\n# 重复目录\n\n重复内容。\n',
     '未发布的重复入口必须删除：docs/tool/index.md'
   )
+  expectMutationFailure('把订阅页章节重新塞回导航', 'docs/.vitepress/navigation.ts', (raw) =>
+    raw.replace(
+      "{ text: '订阅服务', link: '/subscription/' }",
+      "{ text: '订阅服务', link: '/subscription/' },\n      { text: '按设备安装', link: '/subscription/#按设备安装' }"
+    )
+  )
   console.log('\nGEO regression self-test passed.')
 } finally {
   rmSync(temporaryRoot, { recursive: true, force: true })

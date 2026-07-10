@@ -853,6 +853,16 @@ if (!baselineMode) {
   ) {
     fail('keep-updated 导航必须使用“防止失联”与“Stay Connected”')
   }
+  const zhSubscriptionEntries = navigationSource.match(/\{ text: '订阅服务', link: '\/subscription\/' \}/g) || []
+  const enSubscriptionEntries = navigationSource.match(/\{ text: 'Subscription service', link: '\/en\/subscription\/' \}/g) || []
+  if (
+    zhSubscriptionEntries.length !== 2 ||
+    enSubscriptionEntries.length !== 2 ||
+    /link:\s*'\/(?:en\/)?subscription\/#/.test(navigationSource) ||
+    /text:\s*'(?:按设备安装|复制和更新订阅|连接方式说明|Install by device|Copy and update|Connection methods)'/.test(navigationSource)
+  ) {
+    fail('顶部和侧边导航的订阅服务域必须各只保留一个订阅服务入口，章节跳转留在页内目录')
+  }
 
   const reviewPath = path.join(root, 'GEO_CONTENT_REVIEW.md')
   if (!existsSync(reviewPath)) fail('缺少 GEO_CONTENT_REVIEW.md')

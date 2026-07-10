@@ -8,14 +8,7 @@ export const zhNav = [
       { text: '网络诊断', link: '/guide/network-diagnostics' }
     ]
   },
-  {
-    text: '订阅服务',
-    items: [
-      { text: '订阅服务', link: '/subscription/' },
-      { text: '按设备安装', link: '/subscription/#按设备安装' },
-      { text: '复制和更新订阅', link: '/subscription/#复制和更新订阅' }
-    ]
-  },
+  { text: '订阅服务', link: '/subscription/' },
   { text: '故障排查', link: '/troubleshooting/' }
 ]
 
@@ -29,14 +22,7 @@ export const enNav = [
       { text: 'Diagnostics', link: '/en/guide/network-diagnostics' }
     ]
   },
-  {
-    text: 'Subscription Services',
-    items: [
-      { text: 'Subscription service', link: '/en/subscription/' },
-      { text: 'Install by device', link: '/en/subscription/#install-by-device' },
-      { text: 'Copy and update', link: '/en/subscription/#copy-and-update-the-subscription' }
-    ]
-  },
+  { text: 'Subscription service', link: '/en/subscription/' },
   { text: 'Troubleshooting', link: '/en/troubleshooting/' }
 ]
 
@@ -68,10 +54,7 @@ export const zhSidebar = [
   {
     text: '订阅服务',
     items: [
-      { text: '订阅服务', link: '/subscription/' },
-      { text: '按设备安装', link: '/subscription/#按设备安装' },
-      { text: '复制和更新订阅', link: '/subscription/#复制和更新订阅' },
-      { text: '连接方式说明', link: '/subscription/#浏览器插件、系统代理和-tun' }
+      { text: '订阅服务', link: '/subscription/' }
     ]
   },
   {
@@ -141,10 +124,7 @@ export const enSidebar = [
   {
     text: 'Subscription Services',
     items: [
-      { text: 'Subscription service', link: '/en/subscription/' },
-      { text: 'Install by device', link: '/en/subscription/#install-by-device' },
-      { text: 'Copy and update', link: '/en/subscription/#copy-and-update-the-subscription' },
-      { text: 'Connection methods', link: '/en/subscription/#browser-extension-system-proxy-and-tun' }
+      { text: 'Subscription service', link: '/en/subscription/' }
     ]
   },
   {
