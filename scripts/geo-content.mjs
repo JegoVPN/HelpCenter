@@ -61,7 +61,9 @@ export const APPROVED_CONTENT_RESTRUCTURES = [
   'docs/guide/faq.md',
   'docs/en/guide/faq.md',
   'docs/guide/chatgpt-access.md',
-  'docs/en/guide/chatgpt-access.md'
+  'docs/en/guide/chatgpt-access.md',
+  'docs/guide/services.md',
+  'docs/en/guide/services.md'
 ]
 
 export function toPosix(filePath) {

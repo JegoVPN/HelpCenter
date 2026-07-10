@@ -72,24 +72,23 @@ export const zhSidebar = [
     ]
   },
   {
-    text: '产品与网络参考',
+    text: '网络与线路',
     items: [
-      { text: '服务边界', link: '/guide/services' },
       { text: '节点与线路', link: '/guide/nodes' },
       { text: '加密 DNS', link: '/guide/encrypted-dns' }
     ]
   },
   {
-    text: '账户、会员与支付',
+    text: '会员与支付',
     items: [
+      { text: '无忧行的三个版本', link: '/guide/services' },
       { text: '会员与权益', link: '/membership/benefits' },
-      { text: '支付', link: '/membership/payment' }
+      { text: '如何支付', link: '/membership/payment' }
     ]
   },
   {
-    text: '安全、规则与使用政策',
+    text: '使用规则',
     items: [
-      { text: '隐私与数据说明', link: '/policies/privacy' },
       { text: '公平使用', link: '/abuse/fair-use' },
       { text: '流量限制', link: '/abuse/limits' }
     ]
@@ -149,24 +148,23 @@ export const enSidebar = [
     ]
   },
   {
-    text: 'Product and network reference',
+    text: 'Network and connections',
     items: [
-      { text: 'Service boundaries', link: '/en/guide/services' },
       { text: 'Nodes and routes', link: '/en/guide/nodes' },
       { text: 'Encrypted DNS', link: '/en/guide/encrypted-dns' }
     ]
   },
   {
-    text: 'Account, membership, and billing',
+    text: 'Membership and billing',
     items: [
+      { text: "Jego's three versions", link: '/en/guide/services' },
       { text: 'Membership and benefits', link: '/en/membership/benefits' },
-      { text: 'Payments', link: '/en/membership/payment' }
+      { text: 'How to pay', link: '/en/membership/payment' }
     ]
   },
   {
-    text: 'Safety, rules, and policies',
+    text: 'Usage rules',
     items: [
-      { text: 'Privacy and data', link: '/en/policies/privacy' },
       { text: 'Fair use', link: '/en/abuse/fair-use' },
       { text: 'Traffic limits', link: '/en/abuse/limits' }
     ]

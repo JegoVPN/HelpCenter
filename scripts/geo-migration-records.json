@@ -3959,7 +3959,7 @@
       "route": "/en/guide/services",
       "strategy": "restructure-in-place",
       "baselineH1": "Service Details",
-      "currentH1": "Service Details",
+      "currentH1": "Jego's Three Versions",
       "baselineSections": [
         {
           "level": 2,
@@ -3981,10 +3981,6 @@
       "currentSections": [
         {
           "level": 2,
-          "text": "Free, trial, and paid services"
-        },
-        {
-          "level": 2,
           "text": "Free Version"
         },
         {
@@ -3993,7 +3989,7 @@
         },
         {
           "level": 2,
-          "text": "Paid Service"
+          "text": "VIP Version"
         }
       ],
       "sectionMapping": [
@@ -4004,7 +4000,7 @@
           },
           "to": {
             "level": 2,
-            "text": "Free, trial, and paid services"
+            "text": "Free Version"
           },
           "disposition": "restructured-in-place"
         },
@@ -4037,9 +4033,9 @@
           },
           "to": {
             "level": 2,
-            "text": "Paid Service"
+            "text": "VIP Version"
           },
-          "disposition": "preserved-heading"
+          "disposition": "restructured-in-place"
         }
       ],
       "preservedTasks": [
@@ -4806,7 +4802,7 @@
     {
       "source": "docs/en/membership/benefits.md",
       "route": "/en/membership/benefits",
-      "strategy": "restructure-in-place",
+      "strategy": "preserve-and-enhance",
       "baselineH1": "Membership System",
       "currentH1": "Membership System",
       "baselineSections": [
@@ -4834,19 +4830,23 @@
       "currentSections": [
         {
           "level": 2,
-          "text": "VIP membership benefits"
+          "text": "Paid Membership Benefits"
         },
         {
           "level": 2,
-          "text": "Verify benefits before purchase"
+          "text": "Paid Membership Levels"
         },
         {
-          "level": 2,
-          "text": "Verify activation after purchase"
+          "level": 3,
+          "text": "VIP Duration Is Cumulative"
         },
         {
-          "level": 2,
-          "text": "Free Version versus VIP"
+          "level": 3,
+          "text": "VIP Level Is Cumulative"
+        },
+        {
+          "level": 3,
+          "text": "Purpose of VIP Levels"
         }
       ],
       "sectionMapping": [
@@ -4857,9 +4857,9 @@
           },
           "to": {
             "level": 2,
-            "text": "VIP membership benefits"
+            "text": "Paid Membership Benefits"
           },
-          "disposition": "restructured-in-place"
+          "disposition": "preserved-heading"
         },
         {
           "from": {
@@ -4868,9 +4868,9 @@
           },
           "to": {
             "level": 2,
-            "text": "Verify benefits before purchase"
+            "text": "Paid Membership Levels"
           },
-          "disposition": "restructured-in-place"
+          "disposition": "preserved-heading"
         },
         {
           "from": {
@@ -4878,10 +4878,10 @@
             "text": "VIP Duration is Cumulative"
           },
           "to": {
-            "level": 2,
-            "text": "Verify activation after purchase"
+            "level": 3,
+            "text": "VIP Duration Is Cumulative"
           },
-          "disposition": "restructured-in-place"
+          "disposition": "preserved-heading"
         },
         {
           "from": {
@@ -4889,10 +4889,10 @@
             "text": "VIP Level is Cumulative"
           },
           "to": {
-            "level": 2,
-            "text": "Free Version versus VIP"
+            "level": 3,
+            "text": "VIP Level Is Cumulative"
           },
-          "disposition": "restructured-in-place"
+          "disposition": "preserved-heading"
         },
         {
           "from": {
@@ -4900,10 +4900,10 @@
             "text": "Purpose of VIP Levels"
           },
           "to": {
-            "level": 2,
-            "text": "Free Version versus VIP"
+            "level": 3,
+            "text": "Purpose of VIP Levels"
           },
-          "disposition": "restructured-in-place"
+          "disposition": "preserved-heading"
         }
       ],
       "preservedTasks": [
@@ -4990,6 +4990,10 @@
         {
           "level": 2,
           "text": "Payment Path:"
+        },
+        {
+          "level": 2,
+          "text": "Check Payment History after purchase"
         },
         {
           "level": 2,
@@ -5142,8 +5146,8 @@
             "text": "Payment rejected by card issuer?"
           },
           "to": {
-            "level": 3,
-            "text": "Payment rejected by the card issuer"
+            "level": 2,
+            "text": "Common Questions"
           },
           "disposition": "restructured-in-place"
         },
@@ -5154,7 +5158,7 @@
           },
           "to": {
             "level": 3,
-            "text": "Invoices and receipts"
+            "text": "Payment rejected by the card issuer"
           },
           "disposition": "restructured-in-place"
         }
@@ -10831,7 +10835,7 @@
       "route": "/guide/services",
       "strategy": "restructure-in-place",
       "baselineH1": "服务详解",
-      "currentH1": "服务详解",
+      "currentH1": "无忧行的三个版本",
       "baselineSections": [
         {
           "level": 2,
@@ -10853,19 +10857,15 @@
       "currentSections": [
         {
           "level": 2,
-          "text": "三种服务怎么选"
+          "text": "免费版"
         },
         {
           "level": 2,
-          "text": "免费版本"
+          "text": "体验版"
         },
         {
           "level": 2,
-          "text": "限时体验"
-        },
-        {
-          "level": 2,
-          "text": "付费服务"
+          "text": "会员版"
         }
       ],
       "sectionMapping": [
@@ -10876,7 +10876,7 @@
           },
           "to": {
             "level": 2,
-            "text": "三种服务怎么选"
+            "text": "免费版"
           },
           "disposition": "restructured-in-place"
         },
@@ -10887,9 +10887,9 @@
           },
           "to": {
             "level": 2,
-            "text": "免费版本"
+            "text": "体验版"
           },
-          "disposition": "preserved-heading"
+          "disposition": "restructured-in-place"
         },
         {
           "from": {
@@ -10898,9 +10898,9 @@
           },
           "to": {
             "level": 2,
-            "text": "限时体验"
+            "text": "会员版"
           },
-          "disposition": "preserved-heading"
+          "disposition": "restructured-in-place"
         },
         {
           "from": {
@@ -10909,9 +10909,9 @@
           },
           "to": {
             "level": 2,
-            "text": "付费服务"
+            "text": "会员版"
           },
-          "disposition": "preserved-heading"
+          "disposition": "restructured-in-place"
         }
       ],
       "preservedTasks": [
@@ -11675,7 +11675,7 @@
     {
       "source": "docs/membership/benefits.md",
       "route": "/membership/benefits",
-      "strategy": "restructure-in-place",
+      "strategy": "preserve-and-enhance",
       "baselineH1": "会员体系",
       "currentH1": "会员体系",
       "baselineSections": [
@@ -11703,23 +11703,23 @@
       "currentSections": [
         {
           "level": 2,
-          "text": "付费会员有哪些权益"
+          "text": "付费会员的权益"
         },
         {
           "level": 2,
-          "text": "购买前核对权益"
+          "text": "付费会员的等级"
         },
         {
-          "level": 2,
-          "text": "购买后核对生效状态"
+          "level": 3,
+          "text": "VIP 时长是叠加的"
         },
         {
-          "level": 2,
-          "text": "免费版和会员版的区别"
+          "level": 3,
+          "text": "VIP 等级是累加的"
         },
         {
-          "level": 2,
-          "text": "套餐发生变化时"
+          "level": 3,
+          "text": "VIP 等级的作用"
         }
       ],
       "sectionMapping": [
@@ -11730,9 +11730,9 @@
           },
           "to": {
             "level": 2,
-            "text": "付费会员有哪些权益"
+            "text": "付费会员的权益"
           },
-          "disposition": "restructured-in-place"
+          "disposition": "preserved-heading"
         },
         {
           "from": {
@@ -11741,9 +11741,9 @@
           },
           "to": {
             "level": 2,
-            "text": "购买前核对权益"
+            "text": "付费会员的等级"
           },
-          "disposition": "restructured-in-place"
+          "disposition": "preserved-heading"
         },
         {
           "from": {
@@ -11751,10 +11751,10 @@
             "text": "VIP时长是叠加的"
           },
           "to": {
-            "level": 2,
-            "text": "购买后核对生效状态"
+            "level": 3,
+            "text": "VIP 时长是叠加的"
           },
-          "disposition": "restructured-in-place"
+          "disposition": "preserved-heading"
         },
         {
           "from": {
@@ -11762,10 +11762,10 @@
             "text": "VIP等级是累加的"
           },
           "to": {
-            "level": 2,
-            "text": "免费版和会员版的区别"
+            "level": 3,
+            "text": "VIP 等级是累加的"
           },
-          "disposition": "restructured-in-place"
+          "disposition": "preserved-heading"
         },
         {
           "from": {
@@ -11773,10 +11773,10 @@
             "text": "VIP等级的作用"
           },
           "to": {
-            "level": 2,
-            "text": "套餐发生变化时"
+            "level": 3,
+            "text": "VIP 等级的作用"
           },
-          "disposition": "restructured-in-place"
+          "disposition": "preserved-heading"
         }
       ],
       "preservedTasks": [
@@ -11864,6 +11864,10 @@
         {
           "level": 2,
           "text": "支付路径："
+        },
+        {
+          "level": 2,
+          "text": "付款后查看支付记录"
         },
         {
           "level": 2,
@@ -12028,7 +12032,7 @@
           },
           "to": {
             "level": 3,
-            "text": "发票与收据"
+            "text": "支付被发卡行拒绝"
           },
           "disposition": "restructured-in-place"
         }

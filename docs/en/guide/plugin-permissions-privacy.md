@@ -36,9 +36,9 @@ See the [extension popup](/en/guide/plugin-features) for the modes and node cont
 
 1. Get Jego only from a source listed in the [installation guide](/en/guide/installation).
 2. Open the Chrome or Edge extension manager and check Jego's name, version, and permissions.
-3. If an update suddenly requests a new permission, record the permission and version, then ask support before accepting it.
+3. If an update suddenly requests a new permission, record the permission and version, then use [Contact support](/en/guide/support) before accepting it.
 4. Enable Incognito/InPrivate access only if you actually plan to use Jego there.
 
 Use the official sources above so the extension name, version, and permissions match this guide.
 
-For the complete privacy explanation, read [Jego's official Privacy Policy](https://jegocloud.com/policy) and [Privacy and data](/en/policies/privacy).
+For the complete privacy explanation, read [Jego's official Privacy Policy](https://jegocloud.com/policy).

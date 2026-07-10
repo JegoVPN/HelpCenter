@@ -34,7 +34,9 @@ Before paying, check these items in order:
 3. Choose one of the payment methods actually shown at checkout;
 4. After the payment page opens, check the merchant, amount, and currency once more before confirming.
 
-After payment, return to the Control Panel and check the membership status and expiry date. If the page has not updated yet, refresh it and sign in again, then wait for the order status before taking another step.
+## Check Payment History after purchase
+
+After payment, open **Control Panel → Payment History** and check whether the order appears there.
 
 ## Payment Channels:
 

@@ -30,11 +30,6 @@
       "translationKey": "network-diagnostics-node-speed",
       "zh": { "source": "docs/guide/network-diagnostics-node-speed.md", "route": "/guide/network-diagnostics-node-speed" },
       "en": { "source": "docs/en/guide/network-diagnostics-node-speed.md", "route": "/en/guide/network-diagnostics-node-speed" }
-    },
-    {
-      "translationKey": "privacy-policy",
-      "zh": { "source": "docs/policies/privacy.md", "route": "/policies/privacy" },
-      "en": { "source": "docs/en/policies/privacy.md", "route": "/en/policies/privacy" }
     }
   ]
 }

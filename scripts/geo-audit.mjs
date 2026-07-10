@@ -177,7 +177,7 @@ if (baseline) {
 
 if (required) {
   const pairs = required.requiredPairs || []
-  if (pairs.length !== 7) fail(`mandatory route manifest 必须有 7 对，实际为 ${pairs.length}`)
+  if (pairs.length !== 6) fail(`mandatory route manifest 必须有 6 对，实际为 ${pairs.length}`)
   const keys = new Set()
   const sources = new Set()
   const routes = new Set()
@@ -199,7 +199,7 @@ if (required) {
       }
     }
   }
-  if (sources.size !== 14 || routes.size !== 14) fail('mandatory route manifest 必须固定 14 个唯一源文件和路由')
+  if (sources.size !== 12 || routes.size !== 12) fail('mandatory route manifest 必须固定 12 个唯一源文件和路由')
   pass(`mandatory route manifest：${pairs.length} 对、${sources.size} 个源文件、${routes.size} 条路由`)
 }
 
@@ -219,7 +219,7 @@ for (const media of allMedia) {
 pass(`当前源内容：${markdownFiles.length} 个 Markdown；${allMedia.size} 个独立本地媒体引用均存在`)
 
 if (!baselineMode) {
-  if (markdownFiles.length < 106) fail(`正式 Markdown 不得少于 106，实际为 ${markdownFiles.length}`)
+  if (markdownFiles.length < 104) fail(`正式 Markdown 不得少于 104，实际为 ${markdownFiles.length}`)
   const requiredFields = [
     'title', 'description', 'translationKey', 'contentType', 'product', 'productArea', 'uiSurface',
     'locale', 'status', 'owner', 'reviewStatus', 'lastVerified', 'platforms', 'tools', 'appliesTo', 'sources'
@@ -273,7 +273,7 @@ if (!baselineMode) {
       fail(`translationKey 未形成唯一中英对：${key}`)
     }
   }
-  if (translationGroups.size < 53) fail(`双语关系不得少于 53 对，实际为 ${translationGroups.size}`)
+  if (translationGroups.size < 52) fail(`双语关系不得少于 52 对，实际为 ${translationGroups.size}`)
 
   for (const page of pages) {
     for (const link of extractInternalLinks(page.raw)) {
@@ -425,6 +425,49 @@ if (!baselineMode) {
     }
   }
 
+  for (const source of ['docs/membership/benefits.md', 'docs/en/membership/benefits.md']) {
+    const page = pages.find((entry) => entry.source === source)
+    if (!page) continue
+    const { body } = splitFrontmatter(page.raw)
+    const isEnglish = page.frontmatter.locale === 'en'
+    const restoredMembershipFacts = isEnglish
+      ? ['prioritizes service for paid members', 'more, faster, and more stable nodes', 'Membership includes Jego subscription service', '`31 days`', '`93 days`', '`186 days`', '`366 days`', 'VIP Duration Is Cumulative', 'VIP Level Is Cumulative', 'Level = 2 + 12 = **14**']
+      : ['优先保障付费会员', '更多、更快、更稳定的网络节点', '会员包含无忧行订阅服务', '`31天`', '`93天`', '`186天`', '`366天`', 'VIP 时长是叠加的', 'VIP 等级是累加的', '等级 = 2 + 12 = **14**']
+    const hasRestoredMembership = restoredMembershipFacts.every((phrase) => body.includes(phrase))
+    if (!hasRestoredMembership) {
+      fail(`会员体系页必须保留基线权益、VIP 时长与等级累加规则：${source}`)
+    }
+    if (/一个账号集中管理|购买前看清页面|想先了解具体怎么用|按设备安装|Manage everything in one account|Read the purchase page before paying|understand how subscriptions work|Install by device/i.test(body)) {
+      fail(`会员权益页不得用普通入口充当权益或增加无关跳转：${source}`)
+    }
+  }
+
+  for (const source of ['docs/membership/payment.md', 'docs/en/membership/payment.md']) {
+    const page = pages.find((entry) => entry.source === source)
+    if (!page) continue
+    const { body } = splitFrontmatter(page.raw)
+    const hasPaymentHistory = page.frontmatter.locale === 'en'
+      ? /## Check Payment History after purchase[\s\S]{0,160}Control Panel → Payment History[\s\S]{0,100}order appears there/.test(body)
+      : /## 付款后查看支付记录[\s\S]{0,120}控制面板 → 支付记录[\s\S]{0,80}查询到本次订单/.test(body)
+    if (!hasPaymentHistory) fail(`如何支付页必须使用支付记录查询订单：${source}`)
+  }
+
+  for (const source of ['docs/guide/services.md', 'docs/en/guide/services.md']) {
+    const page = pages.find((entry) => entry.source === source)
+    if (!page) continue
+    const { body } = splitFrontmatter(page.raw)
+    const h2 = [...body.matchAll(/^##\s+(.+?)\s*$/gm)].map((match) => match[1].trim())
+    const expected = page.frontmatter.locale === 'en'
+      ? ['Free Version', 'Trial Version', 'VIP Version']
+      : ['免费版', '体验版', '会员版']
+    if (h2.join('|') !== expected.join('|') || /\|\s*(?:服务|Service)\s*\|/.test(body) || /::: info/.test(body)) {
+      fail(`版本说明页必须直接按免费版、体验版和会员版顺读，不得恢复重复表格或提示框：${source}`)
+    }
+    if (/无忧行分为免费版、体验版和会员版|Jego has a Free Version, Trial Version, and VIP Version/i.test(body)) {
+      fail(`版本说明页不得在标题后重复三个版本：${source}`)
+    }
+  }
+
   const removedDraftPages = [
     'docs/subscription/index.md',
     'docs/en/subscription/index.md',
@@ -437,7 +480,9 @@ if (!baselineMode) {
     'docs/troubleshooting/index.md',
     'docs/en/troubleshooting/index.md',
     'docs/troubleshooting/client.md',
-    'docs/en/troubleshooting/client.md'
+    'docs/en/troubleshooting/client.md',
+    'docs/policies/privacy.md',
+    'docs/en/policies/privacy.md'
   ]
   for (const source of removedDraftPages) {
     if (existsSync(path.join(root, source))) fail(`未发布的重复入口必须删除：${source}`)
@@ -528,8 +573,6 @@ if (!baselineMode) {
 
   const officialPrivacySource = 'https://jegocloud.com/policy'
   for (const source of [
-    'docs/policies/privacy.md',
-    'docs/en/policies/privacy.md',
     'docs/guide/plugin-permissions-privacy.md',
     'docs/en/guide/plugin-permissions-privacy.md'
   ]) {
@@ -597,8 +640,8 @@ if (!baselineMode) {
       fail(`插件权限页不得增加不完整的保密或客服提交清单：${page.source}`)
     }
     const hasPrivacyLinks = page.frontmatter.locale === 'en'
-      ? body.includes("[Jego's official Privacy Policy](https://jegocloud.com/policy)") && body.includes('[Privacy and data](/en/policies/privacy)')
-      : body.includes('[Jego 官方隐私政策](https://jegocloud.com/policy)') && body.includes('[隐私与数据说明](/policies/privacy)')
+      ? body.includes("[Jego's official Privacy Policy](https://jegocloud.com/policy)")
+      : body.includes('[Jego 官方隐私政策](https://jegocloud.com/policy)')
     if (!hasPrivacyLinks || /登录和付款|密码|订单号|交易 ID|Information used for sign-in and payment|password|order number|transaction ID/i.test(body)) {
       fail(`插件权限页只链接完整隐私说明，不解释账号、密码或付款后台字段：${page.source}`)
     }
@@ -691,6 +734,9 @@ if (!baselineMode) {
     const genericPrivacyBurden = /密码[^。\n]{0,100}(?:Cookie|订阅地址)[^。\n]{0,100}(?:留在|只保留在)自己的(?:付款)?设备上|下面这些内容请留在自己的设备上|提交前请遮住密码|Keep passwords[^.\n]{0,140}(?:cookies|subscription URLs)[^.\n]{0,100}(?:on )?(?:your|their) own device|Keep the following on your own device|Before sending, hide passwords/i
     if (genericPrivacyBurden.test(body)) {
       fail(`公开正文不得加入密码、Cookie、订阅地址等泛化保密清单：${page.source}`)
+    }
+    if (/退出后重新登录|刷新并重新登录|重新登录一次|sign out and (?:back )?in|sign in again/i.test(body)) {
+      fail(`公开正文不得把退出后重新登录作为普通操作负担：${page.source}`)
     }
   }
 
@@ -964,6 +1010,20 @@ if (!baselineMode) {
   if (/\/(?:en\/)?troubleshooting(?:\/client)?/.test(navigationSource)) {
     fail('导航不得恢复未发布的重复故障排查入口')
   }
+  if (/\/(?:en\/)?policies\/privacy/.test(navigationSource)) {
+    fail('导航不得恢复已删除的站内隐私页；隐私说明使用 Jego 官方政策')
+  }
+  if (
+    !/text:\s*'会员与支付'[\s\S]{0,140}text:\s*'无忧行的三个版本',\s*link:\s*'\/guide\/services'[\s\S]{0,220}text:\s*'如何支付',\s*link:\s*'\/membership\/payment'/.test(navigationSource) ||
+    !/text:\s*'Membership and billing'[\s\S]{0,150}text:\s*"Jego's three versions",\s*link:\s*'\/en\/guide\/services'[\s\S]{0,240}text:\s*'How to pay',\s*link:\s*'\/en\/membership\/payment'/.test(navigationSource) ||
+    !/text:\s*'使用规则'/.test(navigationSource) ||
+    !/text:\s*'Usage rules'/.test(navigationSource) ||
+    !/text:\s*'网络与线路'[\s\S]{0,180}text:\s*'节点与线路'[\s\S]{0,160}text:\s*'加密 DNS'/.test(navigationSource) ||
+    !/text:\s*'Network and connections'[\s\S]{0,180}text:\s*'Nodes and routes'[\s\S]{0,160}text:\s*'Encrypted DNS'/.test(navigationSource) ||
+    /账户、会员与支付|安全、规则与使用政策|产品与网络参考|了解无忧行|网络科普|服务边界|无忧行服务说明|Account, membership, and billing|Safety, rules, and policies|Product and network reference|About Jego|Network basics|Service boundaries|Jego service guide/.test(navigationSource)
+  ) {
+    fail('侧边栏必须把服务说明归入“会员与支付”，并使用“网络与线路 / 如何支付 / 使用规则”的小白导航名称')
+  }
 
   for (const source of ['docs/guide/faq.md', 'docs/en/guide/faq.md']) {
     const faq = pages.find((page) => page.source === source)
@@ -971,6 +1031,9 @@ if (!baselineMode) {
     const { body } = splitFrontmatter(faq.raw)
     if (/当前加速状态|连接检测|查询网址走向|Current Acceleration Status|Connection Check|website route/i.test(body)) {
       fail(`常见问题不得复制网络诊断的任务说明：${source}`)
+    }
+    if (/网络诊断之外|需要单独说明|outside Diagnostics|need(?:s)? a separate answer/i.test(body)) {
+      fail(`常见问题不得展示内部信息架构决策：${source}`)
     }
     const requiredQuestions = faq.frontmatter.locale === 'en'
       ? ['Do all routes support Gemini, ChatGPT, Claude', 'does not open?', 'location different from the selected node?', 'private browsing window?', 'turn off the firewall']

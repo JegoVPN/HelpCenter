@@ -36,4 +36,4 @@ You receive a fresh full allowance in either case:
 1. **Automatic refresh on the 1st of each month:** The allowance is replenished when the new month begins.
 2. **Immediate refresh after renewal or upgrade:** The allowance is replenished after payment completes.
 
-If the page does not update after a successful payment, refresh the Control Panel and sign in again. Check whether membership status and Remaining Monthly Data changed. If not, [contact support](/en/guide/support) instead of paying again.
+After payment, return to the Control Panel and check membership status and Remaining Monthly Data.

@@ -13,52 +13,28 @@ platforms: [chrome, edge]
 tools: []
 appliesTo: []
 sources: []
-title: Service Details - User Guide
+title: Jego's Three Versions
 description: A simple comparison of Jego Free, Trial, and Paid services.
 ---
 
-# Service Details
+# Jego's Three Versions
 
-Jego offers a Free Version, a limited Trial, and paid VIP membership. After sign-in, the popup badge shows the current status. Trial and VIP accounts also show remaining days or an expiration date.
-
-## Free, trial, and paid services
-
-| Service | Best for | Main difference |
-|---|---|---|
-| Free Version | Trying Jego in Chrome or Edge | Uses the free browser routes currently available to the account |
-| Trial | A newly registered and activated account | Tries additional browser nodes and features for a limited period shown in the popup |
-| Paid VIP | Frequent use or VPN access in other computer and phone apps | Unlocks more high-quality browser nodes and includes the member subscription-node service |
-
-Available modes, nodes, and membership actions follow the account. Before paying, the purchase page shows the current plan, duration, amount, and included service.
-
-::: info Paid membership services
-
-🏆Check out our page about [Membership Benefits](/en/membership/benefits)!
-:::
-
-::: info Nodes and routes
-
-💻Check out our page about [Node Introduction](/en/guide/nodes)!
-:::
+Open the Jego extension popup to see the current version in the top-right corner. The sections below explain where each version works and what it includes.
 
 ## Free Version
 
-When the popup says Free, the account is using Jego's current free service. Select an available mode and node to start browsing.
+The Free Version works directly in Chrome and Edge. Open the extension and choose one of the modes and routes currently shown to start browsing.
 
 <img src="/images/jego-v1.5.9/popup-free-on-en.png" alt="Free version interface" width="280" />
 
 ## Trial Version
 
-::: info Activation Instructions
-Open Jego's welcome email after registration and select its activation link. If the account receives a trial, the popup shows the trial status and remaining time.
-:::
-
-During the trial, you can use the additional modes and nodes currently available to the account. The popup shows when it expires.
+After registering and activating the account from the welcome email, it may receive a Trial Version. The popup shows the remaining time, and the Trial lets the account try additional browser modes and routes.
 
 <img src="/images/jego-v1.5.9/popup-trial-rules-auto-en.png" alt="Trial version interface" width="280" />
 
-## Paid Service
+## VIP Version
 
-VIP members can use more high-quality browser nodes and get subscription nodes for compatible computer and mobile clients. After payment, the popup shows VIP status and expiration. If it does not update, sign out and in again rather than paying twice.
+The VIP Version is for frequent use or for using Jego in computer software and mobile apps. It includes more browser routes plus subscription service for compatible computer and mobile clients. See [Membership System](/en/membership/benefits) for the full benefits and [How to pay](/en/membership/payment) for payment steps.
 
 <img src="/images/jego-v1.5.9/popup-paid-rules-auto-en.png" alt="Paid service interface" width="280" />

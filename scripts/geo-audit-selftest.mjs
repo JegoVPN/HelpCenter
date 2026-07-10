@@ -83,7 +83,7 @@ try {
   expectMutationFailure('把 OneClick 改回仍在更新', 'docs/.vitepress/data/tool-catalog.json', (raw) =>
     raw.replace('"slug": "oneclick", "name": { "zh": "OneClick", "en": "OneClick" }, "platforms": ["ios", "ipados", "android"], "architectures": [], "subscriptionFormats": [], "lifecycle": "discontinued"', '"slug": "oneclick", "name": { "zh": "OneClick", "en": "OneClick" }, "platforms": ["ios", "ipados", "android"], "architectures": [], "subscriptionFormats": [], "lifecycle": "current"')
   )
-  expectMutationFailure('删除官方隐私来源', 'docs/policies/privacy.md', (raw) =>
+  expectMutationFailure('删除官方隐私来源', 'docs/guide/plugin-permissions-privacy.md', (raw) =>
     raw.replace('sources: [https://jegocloud.com/policy]', 'sources: []')
   )
   expectMutationFailure('把小白引导改回设问', 'docs/guide/overview.md', (raw) =>
@@ -200,6 +200,12 @@ try {
     '---\ntitle: 重复故障入口\n---\n\n# 重复故障入口\n\n重复内容。\n',
     '未发布的重复入口必须删除：docs/troubleshooting/index.md'
   )
+  expectAddedFileFailure(
+    '恢复已删除的站内隐私页',
+    'docs/policies/privacy.md',
+    '---\ntitle: 站内隐私页\n---\n\n# 站内隐私页\n\n重复官方政策。\n',
+    '未发布的重复入口必须删除：docs/policies/privacy.md'
+  )
   expectMutationFailure('把订阅页章节重新塞回导航', 'docs/.vitepress/navigation.ts', (raw) =>
     raw.replace(
       "{ text: '订阅服务', link: '/subscription/' }",
@@ -225,13 +231,40 @@ try {
     )
   )
   expectMutationFailure('把网络诊断任务说明复制回常见问题', 'docs/guide/faq.md', (raw) =>
-    raw.replace('这里保留网络诊断之外仍需要单独说明的常见问题。', '这里重新说明当前加速状态、连接检测和查询网址走向。')
+    raw.replace('这里整理了使用无忧行时常见的几个问题。', '这里重新说明当前加速状态、连接检测和查询网址走向。')
   )
   expectMutationFailure('删除经产品确认的 FAQ 问题', 'docs/guide/faq.md', (raw) =>
     raw.replace('### 所有线路都能进行 Gemini、ChatGPT、Claude 等 AI 产品的访问吗？\n\n', '')
   )
   expectMutationFailure('恢复关闭系统防火墙建议', 'docs/guide/faq.md', (raw) =>
     raw.replace('请保持系统防火墙开启。', '建议关闭或者降低网络防火墙的安全等级。')
+  )
+  expectMutationFailure('把会员导航改回账户与支付', 'docs/.vitepress/navigation.ts', (raw) =>
+    raw.replace("text: '会员与支付'", "text: '账户、会员与支付'")
+  )
+  expectMutationFailure('把使用规则改回内部政策名称', 'docs/.vitepress/navigation.ts', (raw) =>
+    raw.replace("text: '使用规则'", "text: '安全、规则与使用政策'")
+  )
+  expectMutationFailure('把网络与线路改回技术参考名称', 'docs/.vitepress/navigation.ts', (raw) =>
+    raw.replace("text: '网络与线路'", "text: '产品与网络参考'")
+  )
+  expectMutationFailure('把版本说明改回服务边界', 'docs/.vitepress/navigation.ts', (raw) =>
+    raw.replace("text: '无忧行的三个版本'", "text: '服务边界'")
+  )
+  expectMutationFailure('把普通控制面板入口重新写成会员权益', 'docs/membership/benefits.md', (raw) =>
+    raw.replace('2. 可以使用无忧行插件里更多、更快、更稳定的网络节点。', '4. **一个账号集中管理**：查看会员状态、订单和客服入口。\n2. 可以使用无忧行插件里更多、更快、更稳定的网络节点。')
+  )
+  expectMutationFailure('把购买后核对改回重新登录', 'docs/membership/payment.md', (raw) =>
+    raw.replace('付款完成后，打开**控制面板 → 支付记录**，查看是否能查询到本次订单。', '付款完成后刷新并重新登录。')
+  )
+  expectMutationFailure('把设备教程塞回购买前核对', 'docs/membership/benefits.md', (raw) =>
+    raw.replace('具体方法见[电脑和手机使用指南](/subscription/)。', '具体方法见[电脑和手机使用指南](/subscription/)。\n从按设备安装进入对应教程。')
+  )
+  expectMutationFailure('把重复对比表塞回版本说明', 'docs/guide/services.md', (raw) =>
+    raw.replace('## 免费版', '## 三种服务说明\n\n| 服务 | 免费版 | 会员版 |\n|---|---|---|\n| 节点 | 少 | 多 |\n\n## 免费版')
+  )
+  expectMutationFailure('在版本标题后重复三个版本', 'docs/guide/services.md', (raw) =>
+    raw.replace('# 无忧行的三个版本', '# 无忧行的三个版本\n\n无忧行分为免费版、体验版和会员版。')
   )
   console.log('\nGEO regression self-test passed.')
 } finally {

@@ -19,7 +19,7 @@ description: Short answers about AI routes, website location, private windows, f
 
 # FAQ
 
-This page keeps the common questions that still need a separate answer outside Diagnostics.
+Here are a few common questions about using Jego.
 
 ### Do all routes support Gemini, ChatGPT, Claude, and other AI products?
 
