@@ -23,15 +23,13 @@ description: 选择正在使用的设备，安装合适的客户端，并了解�
 
 订阅地址在无忧行**控制面板 → 订阅节点**，这里也会显示本月剩余流量。
 
-只在 Chrome 或 Edge 里使用时，直接使用[无忧行浏览器插件](/guide/usage)。
-
 <img src="/images/jego-v1.5.10/subscription-panel-zh.png" alt="无忧行控制面板的订阅节点页面" />
 
 ## 按设备安装
 
 <span id="_1、关于应该使用什么客户端"></span>
 
-选择正在使用的设备，进入对应教程。
+选择正在使用的设备，进入对应教程。每篇教程会先列出当前支持的客户端。
 
 <div class="subscription-device-grid">
   <a class="subscription-device-card" href="/subscription/devices/windows"><img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FbeA5N21M1iATQm5HiGND_2Fwin_1.svg" width="38" height="28" alt="Windows 图标"><strong>Windows</strong><span>电脑安装教程</span></a>

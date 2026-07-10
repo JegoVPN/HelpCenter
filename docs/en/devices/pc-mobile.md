@@ -23,15 +23,13 @@ Subscription service lets computer software and phone apps use Jego. Choose your
 
 Subscription addresses are under **Dashboard → Mobile Proxy**, along with the remaining monthly data.
 
-If you only use Chrome or Edge, use the [Jego browser extension](/en/guide/usage).
-
 <img src="/images/jego-v1.5.10/subscription-panel-en.png" alt="Mobile Proxy page in the Jego Dashboard" />
 
 ## Install by device
 
 <span id="_1-about-which-client-to-use"></span>
 
-Choose the device you are using to open its guide.
+Choose the device you are using to open its guide. Each guide begins with the clients Jego currently supports.
 
 <div class="subscription-device-grid">
   <a class="subscription-device-card" href="/en/subscription/devices/windows"><img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FbeA5N21M1iATQm5HiGND_2Fwin_1.svg" width="38" height="28" alt="Windows icon"><strong>Windows</strong><span>Computer setup</span></a>
