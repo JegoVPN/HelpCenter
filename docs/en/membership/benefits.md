@@ -34,7 +34,7 @@ See [Computer and phone setup](/en/subscription/) to understand how subscription
 1. Click the Free/VIP badge in the Jego popup, or open **Control Panel → Upgrade Membership**.
 2. Choose a plan and review its duration, price, browser nodes, and subscription service.
 3. Review order currency, actual amount, and renewal behavior before paying.
-4. If you need the subscription in desktop or mobile apps, first read the [device guide](/en/subscription/) and [subscription management](/en/subscription/#copy-and-update-the-subscription).
+4. If you need the subscription in desktop or mobile apps, start with [Install by device](/en/subscription/#install-by-device) and open the matching guide.
 
 ::: tip Read the purchase page before paying
 Plans and promotions can change, so the current purchase page is the best source. If the Control Panel and checkout disagree, ask Support to confirm.

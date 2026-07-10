@@ -424,18 +424,21 @@ if (!baselineMode) {
     const { body } = splitFrontmatter(page.raw)
     const h2 = [...body.matchAll(/^##\s+(.+?)\s*$/gm)].map((match) => match[1].trim())
     const expectedHeadings = locale === 'en'
-      ? ['Install by device', 'Copy and update the subscription', 'Browser extension, system proxy, and TUN']
-      : ['按设备安装', '复制和更新订阅', '浏览器插件、系统代理和 TUN']
+      ? ['Install by device', 'Avoid conflicts between the extension and client']
+      : ['按设备安装', '避免浏览器插件和客户端冲突']
     if (h2.join('|') !== expectedHeadings.join('|')) fail(`订阅入口职责未收敛：${source}`)
     if (/<ToolCatalog\b/.test(body)) fail(`订阅入口不得展示客户端大列表：${source}`)
     const devicePrefix = locale === 'en' ? '/en/subscription/devices/' : '/subscription/devices/'
     for (const slug of ['windows', 'mac', 'ios', 'android', 'linux', 'harmony']) {
       if (!body.includes(`${devicePrefix}${slug}`)) fail(`订阅入口缺少设备入口 ${slug}：${source}`)
     }
-    const requiredCopy = locale === 'en'
-      ? ['Mobile Proxy', 'Mihomo', 'sing-box', 'Shadowrocket', 'Reset', 'stops the old one']
-      : ['订阅节点', 'Mihomo', 'sing-box', 'Shadowrocket', '重置', '原地址随即停止使用']
-    if (!requiredCopy.every((phrase) => body.includes(phrase))) fail(`订阅复制、更新与重置说明不完整：${source}`)
+    const panelImage = locale === 'en'
+      ? '/images/jego-v1.5.10/subscription-panel-en.png'
+      : '/images/jego-v1.5.10/subscription-panel-zh.png'
+    if (!body.includes(panelImage)) fail(`订阅入口缺少对应语言的控制面板截图：${source}`)
+    if (/^##\s+(?:复制和更新订阅|Copy and update the subscription|浏览器插件、系统代理和 TUN|Browser extension, system proxy, and TUN)\s*$/m.test(body)) {
+      fail(`订阅入口不得恢复重复管理模块或技术化标题：${source}`)
+    }
   }
 
   const migrationPath = path.join(root, 'scripts/geo-migration-records.json')
@@ -862,6 +865,17 @@ if (!baselineMode) {
     /text:\s*'(?:按设备安装|复制和更新订阅|连接方式说明|Install by device|Copy and update|Connection methods)'/.test(navigationSource)
   ) {
     fail('顶部和侧边导航的订阅服务域必须各只保留一个订阅服务入口，章节跳转留在页内目录')
+  }
+  for (const prefix of ['', 'en/']) {
+    for (const slug of ['windows', 'mac', 'ios', 'android', 'linux', 'harmony', 'us-apple-id']) {
+      const entry = `link: '/${prefix}subscription/devices/${slug}'`
+      if (navigationSource.split(entry).length !== 2) {
+        fail(`订阅侧边栏必须且只能出现一次真实设备子页面：/${prefix}subscription/devices/${slug}`)
+      }
+    }
+  }
+  if (/link:\s*'\/(?:en\/)?subscription\/clients\//.test(navigationSource)) {
+    fail('订阅侧边栏不得重新列出 18 个客户端教程')
   }
 
   const reviewPath = path.join(root, 'GEO_CONTENT_REVIEW.md')

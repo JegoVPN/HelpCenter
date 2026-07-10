@@ -65,8 +65,8 @@ const replacements = computed(() => (tool.value?.replacements || [])
       </span>
     </div>
     <p v-if="tool" class="geo-tool-context-links">
-      <a :href="isEnglish ? '/en/subscription/#copy-and-update-the-subscription' : '/subscription/#复制和更新订阅'">
-        {{ isEnglish ? 'Copy or update a subscription' : '复制或更新订阅' }}
+      <a :href="isEnglish ? '/en/subscription/' : '/subscription/'">
+        {{ isEnglish ? 'Subscription service' : '订阅服务' }}
       </a>
       <span aria-hidden="true">·</span>
       <a :href="`${isEnglish ? '/en' : ''}/troubleshooting/client`">

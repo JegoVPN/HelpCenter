@@ -144,13 +144,16 @@ try {
     raw.replace('完整隐私说明见', '服务会处理登录邮箱、哈希后的密码、订阅状态和用于核对付款的交易 ID。\n\n完整隐私说明见')
   )
   expectMutationFailure('把完整客户端大列表塞回订阅入口', 'docs/devices/pc-mobile.md', (raw) =>
-    raw.replace('## 复制和更新订阅', '<ToolCatalog locale="zh" />\n\n## 复制和更新订阅')
+    raw.replace('## 避免浏览器插件和客户端冲突', '<ToolCatalog locale="zh" />\n\n## 避免浏览器插件和客户端冲突')
   )
   expectMutationFailure('删除订阅入口的设备路径', 'docs/devices/pc-mobile.md', (raw) =>
     raw.replace('/subscription/devices/windows', '/subscription/devices/mac')
   )
-  expectMutationFailure('删除订阅重置结果说明', 'docs/devices/pc-mobile.md', (raw) =>
-    raw.replace('原地址随即停止使用', '地址会发生变化')
+  expectMutationFailure('把复制和更新模块塞回订阅入口', 'docs/devices/pc-mobile.md', (raw) =>
+    raw.replace('## 避免浏览器插件和客户端冲突', '## 复制和更新订阅\n\n重复的订阅管理说明。\n\n## 避免浏览器插件和客户端冲突')
+  )
+  expectMutationFailure('删除订阅入口控制面板截图', 'docs/devices/pc-mobile.md', (raw) =>
+    raw.replace('\n<img src="/images/jego-v1.5.10/subscription-panel-zh.png" alt="无忧行控制面板的订阅节点页面" />\n', '\n')
   )
   expectMutationFailure('把设备页改回完整客户端表', 'docs/devices/windows.md', (raw) =>
     raw.replace('platform="windows" recommended-only', 'platform="windows"')
@@ -169,6 +172,9 @@ try {
       "{ text: '订阅服务', link: '/subscription/' }",
       "{ text: '订阅服务', link: '/subscription/' },\n      { text: '按设备安装', link: '/subscription/#按设备安装' }"
     )
+  )
+  expectMutationFailure('从订阅侧边栏删除真实设备子页面', 'docs/.vitepress/navigation.ts', (raw) =>
+    raw.replace("      { text: 'Windows', link: '/subscription/devices/windows' },\n", '')
   )
   console.log('\nGEO regression self-test passed.')
 } finally {

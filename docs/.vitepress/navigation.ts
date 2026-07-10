@@ -54,7 +54,14 @@ export const zhSidebar = [
   {
     text: '订阅服务',
     items: [
-      { text: '订阅服务', link: '/subscription/' }
+      { text: '订阅服务', link: '/subscription/' },
+      { text: 'Windows', link: '/subscription/devices/windows' },
+      { text: 'macOS', link: '/subscription/devices/mac' },
+      { text: 'iPhone / iPad', link: '/subscription/devices/ios' },
+      { text: 'Android', link: '/subscription/devices/android' },
+      { text: 'Linux', link: '/subscription/devices/linux' },
+      { text: 'HarmonyOS', link: '/subscription/devices/harmony' },
+      { text: 'Apple ID 帮助', link: '/subscription/devices/us-apple-id' }
     ]
   },
   {
@@ -124,7 +131,14 @@ export const enSidebar = [
   {
     text: 'Subscription Services',
     items: [
-      { text: 'Subscription service', link: '/en/subscription/' }
+      { text: 'Subscription service', link: '/en/subscription/' },
+      { text: 'Windows', link: '/en/subscription/devices/windows' },
+      { text: 'macOS', link: '/en/subscription/devices/mac' },
+      { text: 'iPhone / iPad', link: '/en/subscription/devices/ios' },
+      { text: 'Android', link: '/en/subscription/devices/android' },
+      { text: 'Linux', link: '/en/subscription/devices/linux' },
+      { text: 'HarmonyOS', link: '/en/subscription/devices/harmony' },
+      { text: 'Apple ID help', link: '/en/subscription/devices/us-apple-id' }
     ]
   },
   {

@@ -61,6 +61,6 @@ Select **Diagnostics** below this area when you want to check the connection. It
 - Compare the nodes on the current account: [Node Test](/en/guide/network-diagnostics-node-speed)
 - Apply your own connection rule to a website: [Custom proxy rules](/en/guide/proxy-strategy)
 - Use Jego in other computer or phone apps: [Subscription Services](/en/subscription/)
-- Copy, import, or update a subscription: [Subscription management](/en/subscription/#copy-and-update-the-subscription)
+- Use a subscription on a computer or phone: [Install by device](/en/subscription/#install-by-device)
 
 Menus can vary slightly by account. If an entry you need is not visible, confirm that you are signed in, update Jego, and reopen the Control Panel. If it is still missing, record the extension version and menu name before [contacting support](/en/guide/support).
