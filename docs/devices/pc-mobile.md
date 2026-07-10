@@ -29,15 +29,17 @@ description: 选择正在使用的设备，安装合适的客户端，并了解�
 
 <span id="_1、关于应该使用什么客户端"></span>
 
-选择正在使用的设备，进入对应教程。每篇教程会先列出当前支持的客户端。
+选择正在使用的设备，进入对应教程。每篇教程会先列出当前支持的客户端，再说明安装和添加无忧行订阅的方法。
+
+不需要先比较所有客户端，直接从设备教程最上方推荐的客户端开始即可。
 
 <div class="subscription-device-grid">
-  <a class="subscription-device-card" href="/subscription/devices/windows"><img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FbeA5N21M1iATQm5HiGND_2Fwin_1.svg" width="38" height="28" alt="Windows 图标"><strong>Windows</strong><span>电脑安装教程</span></a>
-  <a class="subscription-device-card" href="/subscription/devices/mac"><img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FrUGve1gm2gP1sXdvgjCw_2Fapple_1.svg" width="38" height="28" alt="macOS 图标"><strong>macOS</strong><span>Mac 安装教程</span></a>
-  <a class="subscription-device-card" href="/subscription/devices/ios"><img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F7GBp8VQdHNWWH3aalDTP_2Fios_3.svg" width="38" height="28" alt="iOS 图标"><strong>iPhone / iPad</strong><span>苹果移动设备教程</span></a>
-  <a class="subscription-device-card" href="/subscription/devices/android"><img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F7Hh3XGbbAH0jtCKDKIF6_2Fandroid_3.svg" width="38" height="28" alt="安卓图标"><strong>Android</strong><span>安卓手机教程</span></a>
-  <a class="subscription-device-card" href="/subscription/devices/linux"><img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FJJlooO6sJC8xrcR6vqGj_2Flinux_1.svg" width="38" height="28" alt="Linux 图标"><strong>Linux</strong><span>电脑安装教程</span></a>
-  <a class="subscription-device-card" href="/subscription/devices/harmony"><img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FhUBqYs4CpmMcueAi690m_2FHMOS_Logo_Icon_1.svg" width="38" height="28" alt="HarmonyOS 图标"><strong>HarmonyOS</strong><span>鸿蒙设备教程</span></a>
+  <a class="subscription-device-card" href="/subscription/devices/windows"><img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FbeA5N21M1iATQm5HiGND_2Fwin_1.svg" width="38" height="28" alt="Windows 图标"><strong>Windows</strong><span>翻墙指南</span></a>
+  <a class="subscription-device-card" href="/subscription/devices/mac"><img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FrUGve1gm2gP1sXdvgjCw_2Fapple_1.svg" width="38" height="28" alt="macOS 图标"><strong>macOS</strong><span>翻墙指南</span></a>
+  <a class="subscription-device-card" href="/subscription/devices/ios"><img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F7GBp8VQdHNWWH3aalDTP_2Fios_3.svg" width="38" height="28" alt="iOS 图标"><strong>iPhone / iPad</strong><span>翻墙指南</span></a>
+  <a class="subscription-device-card" href="/subscription/devices/android"><img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F7Hh3XGbbAH0jtCKDKIF6_2Fandroid_3.svg" width="38" height="28" alt="安卓图标"><strong>Android</strong><span>翻墙指南</span></a>
+  <a class="subscription-device-card" href="/subscription/devices/linux"><img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FJJlooO6sJC8xrcR6vqGj_2Flinux_1.svg" width="38" height="28" alt="Linux 图标"><strong>Linux</strong><span>翻墙指南</span></a>
+  <a class="subscription-device-card" href="/subscription/devices/harmony"><img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FhUBqYs4CpmMcueAi690m_2FHMOS_Logo_Icon_1.svg" width="38" height="28" alt="HarmonyOS 图标"><strong>HarmonyOS</strong><span>翻墙指南</span></a>
 </div>
 
 iPhone 和 iPad 的应用商店账号说明放在[Apple ID 教程](/subscription/devices/us-apple-id)中。v2rayN、v2rayNG、Loon 和 OneClick 的旧教程继续保留给现有用户查阅，当前安装请直接使用设备教程里的推荐客户端。
@@ -63,5 +65,3 @@ iPhone 和 iPad 的应用商店账号说明放在[Apple ID 教程](/subscription
 <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FISwY5XX4FX2qker0nOYC_2Fimage_3.png" alt="无忧行插件关闭模式界面" width="280">
 
 插件里的“关闭”只关闭浏览器插件自己的代理功能，不会影响电脑客户端和 TUN。只使用浏览器插件时，再从弹窗选择规则或全局模式。完整说明见[规则、全局和关闭](/guide/mode-selection)。
-
-客户端的下载、安装和按钮位置都放在对应设备教程中；本页不再重复列出全部软件。站内搜索仍可以直接找到现有的 18 篇客户端教程。

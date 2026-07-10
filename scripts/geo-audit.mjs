@@ -432,6 +432,11 @@ if (!baselineMode) {
     for (const slug of ['windows', 'mac', 'ios', 'android', 'linux', 'harmony']) {
       if (!body.includes(`${devicePrefix}${slug}`)) fail(`订阅入口缺少设备入口 ${slug}：${source}`)
     }
+    const guideLabel = locale === 'en' ? '<span>Proxy guide</span>' : '<span>翻墙指南</span>'
+    if (body.split(guideLabel).length !== 7) fail(`六个设备入口必须明确标为翻墙指南：${source}`)
+    if (/站内搜索仍可以直接找到现有的 18 篇客户端教程|Site search can still open any of the 18 existing client guides/.test(body)) {
+      fail(`订阅入口不得恢复无用的站内搜索结尾：${source}`)
+    }
     const panelImage = locale === 'en'
       ? '/images/jego-v1.5.10/subscription-panel-en.png'
       : '/images/jego-v1.5.10/subscription-panel-zh.png'
@@ -866,11 +871,14 @@ if (!baselineMode) {
   ) {
     fail('顶部和侧边导航的订阅服务域必须各只保留一个订阅服务入口，章节跳转留在页内目录')
   }
-  for (const prefix of ['', 'en/']) {
-    for (const slug of ['windows', 'mac', 'ios', 'android', 'linux', 'harmony', 'us-apple-id']) {
-      const entry = `link: '/${prefix}subscription/devices/${slug}'`
+  for (const [prefix, entries] of [
+    ['', [['windows', 'Windows 翻墙指南'], ['mac', 'macOS 翻墙指南'], ['ios', 'iPhone / iPad 翻墙指南'], ['android', 'Android 翻墙指南'], ['linux', 'Linux 翻墙指南'], ['harmony', 'HarmonyOS 翻墙指南'], ['us-apple-id', 'Apple ID 帮助']]],
+    ['en/', [['windows', 'Windows proxy guide'], ['mac', 'macOS proxy guide'], ['ios', 'iPhone / iPad proxy guide'], ['android', 'Android proxy guide'], ['linux', 'Linux proxy guide'], ['harmony', 'HarmonyOS proxy guide'], ['us-apple-id', 'Apple ID help']]]
+  ]) {
+    for (const [slug, label] of entries) {
+      const entry = `{ text: '${label}', link: '/${prefix}subscription/devices/${slug}' }`
       if (navigationSource.split(entry).length !== 2) {
-        fail(`订阅侧边栏必须且只能出现一次真实设备子页面：/${prefix}subscription/devices/${slug}`)
+        fail(`订阅侧边栏必须且只能出现一次带用途说明的设备子页面：/${prefix}subscription/devices/${slug}`)
       }
     }
   }

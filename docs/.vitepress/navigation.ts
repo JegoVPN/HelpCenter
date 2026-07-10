@@ -55,12 +55,12 @@ export const zhSidebar = [
     text: '订阅服务',
     items: [
       { text: '订阅服务', link: '/subscription/' },
-      { text: 'Windows', link: '/subscription/devices/windows' },
-      { text: 'macOS', link: '/subscription/devices/mac' },
-      { text: 'iPhone / iPad', link: '/subscription/devices/ios' },
-      { text: 'Android', link: '/subscription/devices/android' },
-      { text: 'Linux', link: '/subscription/devices/linux' },
-      { text: 'HarmonyOS', link: '/subscription/devices/harmony' },
+      { text: 'Windows 翻墙指南', link: '/subscription/devices/windows' },
+      { text: 'macOS 翻墙指南', link: '/subscription/devices/mac' },
+      { text: 'iPhone / iPad 翻墙指南', link: '/subscription/devices/ios' },
+      { text: 'Android 翻墙指南', link: '/subscription/devices/android' },
+      { text: 'Linux 翻墙指南', link: '/subscription/devices/linux' },
+      { text: 'HarmonyOS 翻墙指南', link: '/subscription/devices/harmony' },
       { text: 'Apple ID 帮助', link: '/subscription/devices/us-apple-id' }
     ]
   },
@@ -132,12 +132,12 @@ export const enSidebar = [
     text: 'Subscription Services',
     items: [
       { text: 'Subscription service', link: '/en/subscription/' },
-      { text: 'Windows', link: '/en/subscription/devices/windows' },
-      { text: 'macOS', link: '/en/subscription/devices/mac' },
-      { text: 'iPhone / iPad', link: '/en/subscription/devices/ios' },
-      { text: 'Android', link: '/en/subscription/devices/android' },
-      { text: 'Linux', link: '/en/subscription/devices/linux' },
-      { text: 'HarmonyOS', link: '/en/subscription/devices/harmony' },
+      { text: 'Windows proxy guide', link: '/en/subscription/devices/windows' },
+      { text: 'macOS proxy guide', link: '/en/subscription/devices/mac' },
+      { text: 'iPhone / iPad proxy guide', link: '/en/subscription/devices/ios' },
+      { text: 'Android proxy guide', link: '/en/subscription/devices/android' },
+      { text: 'Linux proxy guide', link: '/en/subscription/devices/linux' },
+      { text: 'HarmonyOS proxy guide', link: '/en/subscription/devices/harmony' },
       { text: 'Apple ID help', link: '/en/subscription/devices/us-apple-id' }
     ]
   },

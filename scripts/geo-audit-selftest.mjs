@@ -174,7 +174,10 @@ try {
     )
   )
   expectMutationFailure('从订阅侧边栏删除真实设备子页面', 'docs/.vitepress/navigation.ts', (raw) =>
-    raw.replace("      { text: 'Windows', link: '/subscription/devices/windows' },\n", '')
+    raw.replace("      { text: 'Windows 翻墙指南', link: '/subscription/devices/windows' },\n", '')
+  )
+  expectMutationFailure('把订阅侧边栏退回只有系统名', 'docs/.vitepress/navigation.ts', (raw) =>
+    raw.replace("{ text: 'Windows 翻墙指南', link: '/subscription/devices/windows' }", "{ text: 'Windows', link: '/subscription/devices/windows' }")
   )
   console.log('\nGEO regression self-test passed.')
 } finally {
