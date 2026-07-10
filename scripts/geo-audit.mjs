@@ -372,8 +372,6 @@ if (!baselineMode) {
     'docs/en/devices/android.md': ['en', 'android'],
     'docs/devices/ios.md': ['zh', 'ios'],
     'docs/en/devices/ios.md': ['en', 'ios'],
-    'docs/devices/mac.md': ['zh', 'macos'],
-    'docs/en/devices/mac.md': ['en', 'macos'],
     'docs/devices/linux.md': ['zh', 'linux'],
     'docs/en/devices/linux.md': ['en', 'linux'],
     'docs/devices/harmony.md': ['zh', 'harmonyos'],
@@ -390,16 +388,21 @@ if (!baselineMode) {
       fail(`设备页仍含第二份手工推荐表：${source}`)
     }
   }
-  for (const [source, headings] of [
-    ['docs/devices/windows.md', ['### 推荐客户端', '### 其他客户端', '### 历史教程']],
-    ['docs/en/devices/windows.md', ['### Recommended clients', '### Other clients', '### Historical guides']]
+  for (const [source, headings, secondClient] of [
+    ['docs/devices/windows.md', ['### 推荐客户端', '### 其他客户端', '### 历史教程'], 'clashverge'],
+    ['docs/en/devices/windows.md', ['### Recommended clients', '### Other clients', '### Historical guides'], 'clashverge'],
+    ['docs/devices/mac.md', ['### 推荐客户端', '### 历史教程'], 'sing-boxforapple'],
+    ['docs/en/devices/mac.md', ['### Recommended clients', '### Historical guides'], 'sing-boxforapple']
   ]) {
     const raw = pages.find((entry) => entry.source === source)?.raw || ''
     if (/<details class="subscription-more-clients">|<ToolCatalog\b/.test(raw) || !headings.every((heading) => raw.includes(heading))) {
-      fail(`Windows 设备页必须使用直接展开的分组列表，不得恢复折叠区或工具表格：${source}`)
+      fail(`Windows/macOS 设备页必须使用直接展开的分组列表，不得恢复折叠区或工具表格：${source}`)
     }
-    if (raw.indexOf('subscription/clients/flclash') > raw.indexOf('subscription/clients/clashverge')) {
-      fail(`Windows 推荐客户端必须将 FlClash 放在第一项：${source}`)
+    if (raw.split('class="client-guide-link"').length !== 7) {
+      fail(`Windows/macOS 设备页的 6 个客户端图标与名称必须同行：${source}`)
+    }
+    if (raw.indexOf('subscription/clients/flclash') > raw.indexOf(`subscription/clients/${secondClient}`)) {
+      fail(`Windows/macOS 推荐客户端必须将 FlClash 放在第一项：${source}`)
     }
   }
 
@@ -786,6 +789,13 @@ if (!baselineMode) {
   const themeStyleSource = readFileSync(path.join(root, 'docs/.vitepress/theme/style.css'), 'utf8')
   if (!/\.manual-browser-grid\s*\{[\s\S]{0,180}grid-template-columns:\s*repeat\(4/.test(themeStyleSource)) {
     fail('手动安装浏览器在桌面端必须横向排列四项')
+  }
+  if (
+    !themeStyleSource.includes('.vp-doc :is(h2, h3, h4) > img') ||
+    !themeStyleSource.includes('.vp-doc p:has(> img[width="26"]:first-child)') ||
+    !themeStyleSource.includes('.vp-doc p:has(> img[width="30"]:first-child)')
+  ) {
+    fail('标题与小图标必须使用全局同行排版，不得只修复单个页面')
   }
   const modeDefinitionPages = pages.filter((page) => /^docs\/(?:en\/)?guide\/(?:mode-selection|plugin-features|usage)\.md$/.test(page.source))
   for (const page of modeDefinitionPages) {

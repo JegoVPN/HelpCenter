@@ -103,6 +103,46 @@
   line-height: 1.35;
 }
 
+.vp-doc :is(h2, h3, h4) > img {
+  display: inline-block;
+  margin: 0 0.5rem 0 0;
+  vertical-align: -0.18em;
+  object-fit: contain;
+}
+
+.vp-doc p:has(> img[width="26"]:first-child),
+.vp-doc p:has(> img[width="30"]:first-child) {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.vp-doc p:has(> img[width="26"]:first-child) > img,
+.vp-doc p:has(> img[width="30"]:first-child) > img {
+  display: block;
+  flex: 0 0 auto;
+  margin: 0;
+  object-fit: contain;
+}
+
+.client-guide-link {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin: 1rem 0 0.45rem;
+  font-weight: 600;
+}
+
+.vp-doc .client-guide-link img {
+  display: block;
+  flex: 0 0 auto;
+  width: 26px;
+  height: 26px;
+  margin: 0;
+  object-fit: contain;
+}
+
 @media (max-width: 760px) {
   .subscription-device-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));

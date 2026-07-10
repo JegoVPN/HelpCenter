@@ -161,6 +161,12 @@ try {
   expectMutationFailure('把 Windows 其他客户端重新折叠', 'docs/devices/windows.md', (raw) =>
     raw.replace('### 推荐客户端', '<details class="subscription-more-clients">\n<summary>其他客户端与原有教程</summary>\n\n### 推荐客户端')
   )
+  expectMutationFailure('把 macOS 工具表格加回来', 'docs/devices/mac.md', (raw) =>
+    raw.replace('### 推荐客户端', '<ToolCatalog locale="zh" platform="macos" />\n\n### 推荐客户端')
+  )
+  expectMutationFailure('删除全局图标文字同行样式', 'docs/.vitepress/theme/style.css', (raw) =>
+    raw.replace('.vp-doc :is(h2, h3, h4) > img', '.vp-doc h2 > img')
+  )
   expectMutationFailure('把订阅正式路由改回额外页面', 'scripts/subscription-route-map.mjs', (raw) =>
     raw.replace('`/${prefix}subscription/`]', '`/${prefix}subscription/connection-methods`]')
   )
