@@ -39,6 +39,6 @@ After registering and activating the account from the welcome email, it receives
 
 The VIP Version is also not limited to the Free Version's selected-site list. It can choose from dozens of high-speed nodes worldwide, customize proxy rules, and use the overseas edge network, overseas mainland-optimized routes, and private network lines.
 
-VIP also includes subscription service for computers and phones. See [Membership System](/en/membership/benefits) for the full benefits and [How to pay](/en/membership/payment) for payment steps.
+VIP also includes subscription service for computers and phones. See [Membership System](/en/membership/benefits) for the full benefits.
 
 <img src="/images/jego-v1.5.9/popup-paid-rules-auto-en.png" alt="Paid service interface" width="280" />

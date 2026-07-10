@@ -36,10 +36,6 @@ description: 了解无忧行付费会员权益、VIP 时长、VIP 等级和累�
 | <span style="color:green;">`31天`</span>的 VIP 时长 | <span style="color:green;">`93天`</span>的 VIP 时长 | <span style="color:green;">`186天`</span>的 VIP 时长 | <span style="color:green;">`366天`</span>的 VIP 时长 |
 | VIP 等级 +<span style="color:green;">`1`</span> | VIP 等级 +<span style="color:green;">`3`</span> | VIP 等级 +<span style="color:green;">`6`</span> | VIP 等级 +<span style="color:green;">`12`</span> |
 
-::: warning 节点限制
-部分高速节点有 VIP 等级限制。
-:::
-
 ::: info VIP 规则说明
 
 ### VIP 时长是叠加的
@@ -63,8 +59,8 @@ description: 了解无忧行付费会员权益、VIP 时长、VIP 等级和累�
 - 再买一张月卡 → 等级 = 1 + 1 = **2**
 - 再买一张年卡 → 等级 = 2 + 12 = **14**
 
-### VIP 等级的作用
+:::
+
+## VIP 等级的作用
 
 等级越高，可以使用的高速节点越多。部分高速节点设有等级门槛。
-
-:::

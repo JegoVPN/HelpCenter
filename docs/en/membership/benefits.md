@@ -36,10 +36,6 @@ Free routes have more users, so availability and load may vary. The Jego team co
 | <span style="color:green;">`31 days`</span> VIP duration | <span style="color:green;">`93 days`</span> VIP duration | <span style="color:green;">`186 days`</span> VIP duration | <span style="color:green;">`366 days`</span> VIP duration |
 | VIP level +<span style="color:green;">`1`</span> | VIP level +<span style="color:green;">`3`</span> | VIP level +<span style="color:green;">`6`</span> | VIP level +<span style="color:green;">`12`</span> |
 
-::: warning Node Restrictions
-Some high-speed nodes have VIP level requirements.
-:::
-
 ::: info VIP Rules
 
 ### VIP Duration Is Cumulative
@@ -63,8 +59,8 @@ Each purchase increases the level by the corresponding amount:
 - Buys another monthly card → Level = 1 + 1 = **2**
 - Buys an annual card → Level = 2 + 12 = **14**
 
-### Purpose of VIP Levels
+:::
+
+## Purpose of VIP Levels
 
 Higher VIP levels provide access to more high-speed nodes. Some nodes have level requirements.
-
-:::

@@ -39,6 +39,6 @@ description: 轻松了解无忧行免费版、限时体验版和付费版的主�
 
 会员版的网站范围同样不受免费版指定名单限制，可以选择全球几十个高速节点、自定义代理策略，并使用境外边缘网络、境外大陆优化线路和内网专线。
 
-会员还包含电脑和手机订阅服务。完整权益见[会员体系](/membership/benefits)，付款步骤见[如何支付](/membership/payment)。
+会员还包含电脑和手机订阅服务。完整权益见[会员体系](/membership/benefits)。
 
 <img src="/images/jego-v1.5.9/popup-paid-rules-auto-zh.png" alt="付费服务界面" width="280">
