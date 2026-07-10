@@ -240,10 +240,10 @@ try {
     raw.replace('请保持系统防火墙开启。', '建议关闭或者降低网络防火墙的安全等级。')
   )
   expectMutationFailure('删除 FAQ 插件自助网络诊断入口', 'docs/guide/faq.md', (raw) =>
-    raw.replace('## 插件自助使用网络诊断', '## 插件帮助')
+    raw.replace('### 如何使用网络诊断自助检查插件？', '### 插件帮助')
   )
   expectMutationFailure('恢复 FAQ 无帮助导航段落', 'docs/guide/faq.md', (raw) =>
-    raw.replace('## 联系支持', '## 电脑和手机订阅客户端\n\n从订阅服务选择设备。\n\n## 联系支持')
+    raw.replace('### 什么时候需要联系支持？', '## 电脑和手机订阅客户端\n\n从订阅服务选择设备。\n\n### 什么时候需要联系支持？')
   )
   expectMutationFailure('删除 AI 指南的 Google 全局模式', 'docs/guide/chatgpt-access.md', (raw) =>
     raw.replace('## Google AI 产品使用全局模式', '## Google AI 产品')

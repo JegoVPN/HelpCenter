@@ -2556,12 +2556,12 @@
           "text": "The old “turn off the firewall” advice is not suitable. What should I do instead?"
         },
         {
-          "level": 2,
-          "text": "Use extension diagnostics yourself"
+          "level": 3,
+          "text": "How do I check the extension with Diagnostics?"
         },
         {
-          "level": 2,
-          "text": "Contact support"
+          "level": 3,
+          "text": "When should I contact support?"
         }
       ],
       "sectionMapping": [
@@ -2626,8 +2626,8 @@
             "text": "Question 5: What if the default search engine is mainland Bing?"
           },
           "to": {
-            "level": 2,
-            "text": "Use extension diagnostics yourself"
+            "level": 3,
+            "text": "How do I check the extension with Diagnostics?"
           },
           "disposition": "restructured-in-place"
         },
@@ -2637,8 +2637,8 @@
             "text": "Extended Solution 1 for Question 5: It's best to change the Microsoft account country too."
           },
           "to": {
-            "level": 2,
-            "text": "Contact support"
+            "level": 3,
+            "text": "When should I contact support?"
           },
           "disposition": "restructured-in-place"
         },
@@ -2648,8 +2648,8 @@
             "text": "Extended Solution 2 for Question 5: It's best to change Windows settings too"
           },
           "to": {
-            "level": 2,
-            "text": "Contact support"
+            "level": 3,
+            "text": "When should I contact support?"
           },
           "disposition": "restructured-in-place"
         },
@@ -2659,8 +2659,8 @@
             "text": "Extended Solution 3 for Question 5: Change ISP"
           },
           "to": {
-            "level": 2,
-            "text": "Contact support"
+            "level": 3,
+            "text": "When should I contact support?"
           },
           "disposition": "restructured-in-place"
         },
@@ -2670,8 +2670,8 @@
             "text": "Question 6: Bing prompt: You've reached the conversation limit for today. Sign in to continue your chat."
           },
           "to": {
-            "level": 2,
-            "text": "Contact support"
+            "level": 3,
+            "text": "When should I contact support?"
           },
           "disposition": "restructured-in-place"
         },
@@ -2681,8 +2681,8 @@
             "text": "Question 7: How to enable privacy mode?"
           },
           "to": {
-            "level": 2,
-            "text": "Contact support"
+            "level": 3,
+            "text": "When should I contact support?"
           },
           "disposition": "restructured-in-place"
         },
@@ -2692,8 +2692,8 @@
             "text": "Question 8: Recommend turning off firewall"
           },
           "to": {
-            "level": 2,
-            "text": "Contact support"
+            "level": 3,
+            "text": "When should I contact support?"
           },
           "disposition": "restructured-in-place"
         },
@@ -2703,8 +2703,8 @@
             "text": "Question 9: How to test if New Bing is successfully unlocked through Edge incognito mode?"
           },
           "to": {
-            "level": 2,
-            "text": "Contact support"
+            "level": 3,
+            "text": "When should I contact support?"
           },
           "disposition": "restructured-in-place"
         }
@@ -9465,12 +9465,12 @@
           "text": "“建议关闭防火墙”并不合适，应该怎么设置？"
         },
         {
-          "level": 2,
-          "text": "插件自助使用网络诊断"
+          "level": 3,
+          "text": "如何使用网络诊断自助检查插件？"
         },
         {
-          "level": 2,
-          "text": "联系支持"
+          "level": 3,
+          "text": "什么时候需要联系支持？"
         }
       ],
       "sectionMapping": [
@@ -9535,8 +9535,8 @@
             "text": "默认搜索引擎是大陆的必应怎么办？"
           },
           "to": {
-            "level": 2,
-            "text": "插件自助使用网络诊断"
+            "level": 3,
+            "text": "如何使用网络诊断自助检查插件？"
           },
           "disposition": "restructured-in-place"
         },
@@ -9546,8 +9546,8 @@
             "text": "拓展解决方案 1：最好把微软账户也改个国家"
           },
           "to": {
-            "level": 2,
-            "text": "联系支持"
+            "level": 3,
+            "text": "什么时候需要联系支持？"
           },
           "disposition": "restructured-in-place"
         },
@@ -9557,8 +9557,8 @@
             "text": "拓展解决方案 2：最好把 Windows 的设置也改掉"
           },
           "to": {
-            "level": 2,
-            "text": "联系支持"
+            "level": 3,
+            "text": "什么时候需要联系支持？"
           },
           "disposition": "restructured-in-place"
         },
@@ -9568,8 +9568,8 @@
             "text": "拓展解决方案 3：更换 ISP"
           },
           "to": {
-            "level": 2,
-            "text": "联系支持"
+            "level": 3,
+            "text": "什么时候需要联系支持？"
           },
           "disposition": "restructured-in-place"
         },
@@ -9579,8 +9579,8 @@
             "text": "Bing 提示“你已达到今天的对话限制，登录以继续你的聊天”"
           },
           "to": {
-            "level": 2,
-            "text": "联系支持"
+            "level": 3,
+            "text": "什么时候需要联系支持？"
           },
           "disposition": "restructured-in-place"
         },
@@ -9601,8 +9601,8 @@
             "text": "建议关闭防火墙"
           },
           "to": {
-            "level": 2,
-            "text": "联系支持"
+            "level": 3,
+            "text": "什么时候需要联系支持？"
           },
           "disposition": "restructured-in-place"
         },
@@ -9612,8 +9612,8 @@
             "text": "如何通过 Edge 无痕模式测试 New Bing 是否解锁成功？"
           },
           "to": {
-            "level": 2,
-            "text": "联系支持"
+            "level": 3,
+            "text": "什么时候需要联系支持？"
           },
           "disposition": "restructured-in-place"
         }

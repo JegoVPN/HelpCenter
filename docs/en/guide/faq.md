@@ -47,10 +47,10 @@ Open `chrome://extensions` in Chrome or `edge://extensions` in Edge. Open Jego *
 
 Keep the system firewall enabled. If the firewall or security software shows a blocked item, review that specific application or connection and add only the necessary allowance for Chrome or Edge. You can then use [Diagnostics](/en/guide/network-diagnostics) to confirm the current connection status.
 
-## Use extension diagnostics yourself
+### How do I check the extension with Diagnostics?
 
 When you want to check how the Jego browser extension is working, select **Jego icon → Dashboard → Diagnostics**. The page uses the results to show the next step; see [Diagnostics](/en/guide/network-diagnostics) for the full guide.
 
-## Contact support
+### When should I contact support?
 
 If a message concerns an account, payment, or Jego service, open [Contact support](/en/guide/support) and choose the matching category.

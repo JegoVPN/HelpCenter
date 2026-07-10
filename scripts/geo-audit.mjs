@@ -1092,8 +1092,8 @@ if (!baselineMode) {
       fail(`常见问题不得恢复关闭系统防火墙的建议：${source}`)
     }
     const hasSelfDiagnostics = faq.frontmatter.locale === 'en'
-      ? /## Use extension diagnostics yourself[\s\S]*Jego icon → Dashboard → Diagnostics[\s\S]*\/en\/guide\/network-diagnostics/.test(body)
-      : /## 插件自助使用网络诊断[\s\S]*无忧行图标 → 控制面板 → 网络诊断[\s\S]*\/guide\/network-diagnostics/.test(body)
+      ? /### How do I check the extension with Diagnostics\?[\s\S]*Jego icon → Dashboard → Diagnostics[\s\S]*\/en\/guide\/network-diagnostics/.test(body)
+      : /### 如何使用网络诊断自助检查插件？[\s\S]*无忧行图标 → 控制面板 → 网络诊断[\s\S]*\/guide\/network-diagnostics/.test(body)
     if (!hasSelfDiagnostics) fail(`常见问题必须保留插件自助网络诊断入口：${source}`)
     if (/## 电脑和手机订阅客户端|## 插件更新|## Desktop and mobile subscription clients|## Extension updates/.test(body)) {
       fail(`常见问题不得恢复无帮助的订阅客户端和插件更新导航段落：${source}`)
@@ -1102,6 +1102,11 @@ if (!baselineMode) {
       ? /Rules[\s\S]*\[AI\][\s\S]*Global[\s\S]*ChatGPT Group[\s\S]*browser-extension steps/.test(body)
       : /规则[\s\S]*\[AI\][\s\S]*全局[\s\S]*ChatGPT Group[\s\S]*浏览器插件的具体操作/.test(body)
     if (!hasAiRoutingSummary) fail(`常见问题的 AI 线路摘要必须与详细指南分工一致：${source}`)
+    const nonQuestionSections = [...body.matchAll(/^##\s+(.+)$/gm)].map((match) => match[1])
+    const faqQuestions = [...body.matchAll(/^###\s+(.+)$/gm)].map((match) => match[1])
+    if (nonQuestionSections.length || !faqQuestions.length || faqQuestions.some((heading) => !/[?？]$/.test(heading))) {
+      fail(`常见问题正文必须全部使用问题标题和直接答案：${source}`)
+    }
   }
 
   for (const source of ['docs/guide/chatgpt-access.md', 'docs/en/guide/chatgpt-access.md']) {
