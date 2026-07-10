@@ -14,7 +14,7 @@ tools: []
 appliesTo: []
 sources: ["human-product-decision@2026-07-10", "cloud/app/chromev2@1.5.10"]
 title: 常见问题 - 使用指南
-description: AI 产品线路、网站位置、浏览器隐私模式、防火墙、订阅客户端和插件更新的简短说明。
+description: AI 产品线路、网站位置、浏览器隐私模式、防火墙和插件网络诊断的简短说明。
 ---
 
 # 常见问题
@@ -23,13 +23,13 @@ description: AI 产品线路、网站位置、浏览器隐私模式、防火墙�
 
 ### 所有线路都能进行 Gemini、ChatGPT、Claude 等 AI 产品的访问吗？
 
-不同 AI 产品适合的线路会有区别：
+不是所有线路都适合 AI 产品，按使用方式选择即可：
 
-- 浏览器插件选择带 `[AI]` 标注的节点；
-- 手机订阅客户端选择 `🤖 ChatGPT Group` 分组中的节点；
-- Gemini、AI Studio、NotebookLM 等 Google AI 产品使用**全局**模式。
+- 使用浏览器插件访问 ChatGPT、Claude、Grok 等产品时，选择**规则**模式和带 `[AI]` 标注的节点；
+- 使用浏览器插件访问 Gemini、AI Studio、NotebookLM 等 Google AI 产品时，选择**全局**模式和合适的节点；
+- 使用手机订阅客户端时，选择 `🤖 ChatGPT Group` 分组中的节点。
 
-完整步骤见[AI 产品访问指南](/guide/chatgpt-access)。
+浏览器插件的具体操作见[AI 产品访问指南](/guide/chatgpt-access)。
 
 ### 打不开 Gemini、ChatGPT、Claude 等境外的网站了？
 
@@ -47,13 +47,9 @@ Chrome 打开 `chrome://extensions`，Edge 打开 `edge://extensions`。找到�
 
 请保持系统防火墙开启。若防火墙或安全软件显示拦截记录，只检查被拦截的具体应用或连接，并为 Chrome 或 Edge 添加必要的允许项；完成后可用[网络诊断](/guide/network-diagnostics)确认当前连接状态。
 
-## 电脑和手机订阅客户端
+## 插件自助使用网络诊断
 
-从[订阅服务](/subscription/)选择当前设备，再进入对应客户端教程。安装、导入订阅、更新和连接步骤都保留在该客户端自己的页面中。
-
-## 插件更新
-
-商店安装的版本按[防止失联](/guide/keep-updated)查看更新；想确认更新后的模式、节点和工作状态时，继续看[插件更新与恢复](/guide/plugin-maintenance)。
+使用浏览器插件时，想自己查看无忧行当前的工作情况，可以点击**无忧行图标 → 控制面板 → 网络诊断**。页面会根据检测结果给出下一步，完整说明见[网络诊断](/guide/network-diagnostics)。
 
 ## 联系支持
 

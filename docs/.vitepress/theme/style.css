@@ -49,12 +49,6 @@
   margin: 0;
 }
 
-.geo-tool-context-links {
-  display: flex;
-  gap: 0.5rem;
-  margin: 0.6rem 0 0;
-}
-
 .subscription-device-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -172,23 +166,6 @@
 
 .subscription-more-clients[open] {
   padding-bottom: 16px;
-}
-
-.geo-support-warning {
-  margin-top: 0.8rem;
-  padding: 0.7rem 0.85rem;
-  border-left: 3px solid var(--vp-c-warning-1);
-  background: var(--vp-c-warning-soft);
-  color: var(--vp-c-text-1);
-}
-
-.geo-table-wrap {
-  width: 100%;
-  overflow-x: auto;
-}
-
-.geo-tool-table {
-  min-width: 680px;
 }
 
 .jego-popup-state-grid {

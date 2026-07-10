@@ -14,7 +14,7 @@ tools: []
 appliesTo: []
 sources: ["human-product-decision@2026-07-10", "cloud/app/chromev2@1.5.10"]
 title: FAQ - User Guide
-description: Short answers about AI routes, website location, private windows, firewalls, subscription clients, and extension updates.
+description: Short answers about AI routes, website location, private windows, firewalls, and extension diagnostics.
 ---
 
 # FAQ
@@ -23,13 +23,13 @@ Here are a few common questions about using Jego.
 
 ### Do all routes support Gemini, ChatGPT, Claude, and other AI products?
 
-Different AI products may work best with different routes:
+Not every route is suitable for AI products. Choose by how you use Jego:
 
-- In the browser extension, choose a node marked `[AI]`;
-- In a mobile subscription client, choose a node in the `🤖 ChatGPT Group` group;
-- For Google AI products such as Gemini, AI Studio, and NotebookLM, use **Global** mode.
+- In the browser extension, use **Rules** mode and a node marked `[AI]` for ChatGPT, Claude, Grok, and similar products;
+- In the browser extension, use **Global** mode and a suitable node for Google AI products such as Gemini, AI Studio, and NotebookLM;
+- In a mobile subscription client, choose a node in the `🤖 ChatGPT Group` group.
 
-See the [AI product access guide](/en/guide/chatgpt-access) for the complete steps.
+See the [AI product access guide](/en/guide/chatgpt-access) for the browser-extension steps.
 
 ### Gemini, ChatGPT, Claude, or another overseas website does not open?
 
@@ -47,13 +47,9 @@ Open `chrome://extensions` in Chrome or `edge://extensions` in Edge. Open Jego *
 
 Keep the system firewall enabled. If the firewall or security software shows a blocked item, review that specific application or connection and add only the necessary allowance for Chrome or Edge. You can then use [Diagnostics](/en/guide/network-diagnostics) to confirm the current connection status.
 
-## Desktop and mobile subscription clients
+## Use extension diagnostics yourself
 
-Open [Subscription service](/en/subscription/), choose the current device, and then open the matching client guide. Installation, subscription import, update, and connection steps remain on that client's own page.
-
-## Extension updates
-
-For store-installed versions, see [Stay Connected](/en/guide/keep-updated). To confirm the mode, node, and working status after an update, continue with [Updates and recovery](/en/guide/plugin-maintenance).
+When you want to check how the Jego browser extension is working, select **Jego icon → Dashboard → Diagnostics**. The page uses the results to show the next step; see [Diagnostics](/en/guide/network-diagnostics) for the full guide.
 
 ## Contact support
 

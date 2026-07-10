@@ -21,7 +21,7 @@ status: current
 owner: docs
 reviewStatus: needs-review
 lastVerified: 2026-07-10
-platforms: [android, harmonyos]
+platforms: [android]
 tools: [sing-boxforandroid]
 appliesTo: []
 sources: [https://github.com/SagerNet/sing-box, https://play.google.com/store/apps/details?id=io.nekohasekai.sfa]

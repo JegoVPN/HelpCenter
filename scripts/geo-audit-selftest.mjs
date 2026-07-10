@@ -239,6 +239,15 @@ try {
   expectMutationFailure('恢复关闭系统防火墙建议', 'docs/guide/faq.md', (raw) =>
     raw.replace('请保持系统防火墙开启。', '建议关闭或者降低网络防火墙的安全等级。')
   )
+  expectMutationFailure('删除 FAQ 插件自助网络诊断入口', 'docs/guide/faq.md', (raw) =>
+    raw.replace('## 插件自助使用网络诊断', '## 插件帮助')
+  )
+  expectMutationFailure('恢复 FAQ 无帮助导航段落', 'docs/guide/faq.md', (raw) =>
+    raw.replace('## 联系支持', '## 电脑和手机订阅客户端\n\n从订阅服务选择设备。\n\n## 联系支持')
+  )
+  expectMutationFailure('删除 AI 指南的 Google 全局模式', 'docs/guide/chatgpt-access.md', (raw) =>
+    raw.replace('## Google AI 产品使用全局模式', '## Google AI 产品')
+  )
   expectMutationFailure('把会员导航改回账户与支付', 'docs/.vitepress/navigation.ts', (raw) =>
     raw.replace("text: '会员与支付'", "text: '账户、会员与支付'")
   )
@@ -275,11 +284,20 @@ try {
   expectMutationFailure('把平台名称改回内部小写值', 'docs/.vitepress/theme/components/GeoPageMeta.vue', (raw) =>
     raw.replace('{{ platformText }}', "{{ frontmatter.platforms.join(' · ') }}")
   )
+  expectMutationFailure('把未经核实的客户端状态栏加回来', 'docs/.vitepress/theme/components/GeoPageMeta.vue', (raw) =>
+    raw.replace('<div class="geo-page-context">', '<div class="geo-page-context"><span>客户端状态</span><span>Jego 支持</span>')
+  )
+  expectMutationFailure('把客户端模板链接加回来', 'docs/.vitepress/theme/components/GeoPageMeta.vue', (raw) =>
+    raw.replace('<div class="geo-page-context">', '<div class="geo-page-context"><p class="geo-tool-context-links">订阅服务 · 联系支持</p>')
+  )
   expectMutationFailure('删除 Edge 正式显示名称', 'docs/.vitepress/data/platform-labels.json', (raw) =>
     raw.replace('  "edge": "Edge",\n', '')
   )
   expectMutationFailure('把设备摘要改回百科文字', 'docs/devices/windows.md', (raw) =>
     raw.replace('在 Windows 电脑上选择合适的客户端，导入无忧行订阅并开始连接。', 'Windows 在全世界个人电脑操作系统中处于垄断地位。')
+  )
+  expectMutationFailure('删除支付页 GitHub 基线发票问题', 'docs/membership/payment.md', (raw) =>
+    raw.replace('### 购买会员是否可以开发票？', '### 发票与收据')
   )
   console.log('\nGEO regression self-test passed.')
 } finally {

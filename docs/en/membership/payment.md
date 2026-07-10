@@ -80,18 +80,20 @@ Enter card details only on the payment provider's secure checkout. Keep the full
 
 ## Common Questions
 
-### Payment rejected by the card issuer
+### Payment rejected by card issuer?
 
-First check the order amount, currency, billing details, and verification step, then wait for the current transaction status. The issuer or payment provider determines the decline reason. Use the official contact on the back of the card to ask about online, cross-border, or risk-control status.
+If you are a user from mainland China and use UnionPay, Alipay or WeChat Pay bound to bank cards issued by Chinese banks for payment, there is a certain probability of payment failure, because some bank cards issued by Chinese banks do not have cross-border payment functions enabled by default.
 
-### Invoices and receipts
+At this time, you need to call UnionPay customer service center 95516 or your card issuer's customer service center to confirm whether your card has overseas transaction services enabled.
 
-First open **Jego Control Panel → Payment History** and check whether the order has an invoice or receipt download. If it is for reimbursement, ask your organization's finance team which format and legal name they require.
+For cards with overseas transactions enabled and bearing the UnionPay logo, including debit cards, credit cards, and quasi-credit cards, all can be used.
 
-If the required document is absent, follow the [support guide](/en/guide/support) with the order time and a redacted order identifier. Support can then check what documents are available for that order.
+### Can I get an invoice for membership purchase?
 
-Payment History usually shows recent successful orders. If you need an older order, send support a redacted version of the account email and an approximate payment date. Also check your spam folder if you expected a payment email.
+Jego is an overseas company and has not established a main company in mainland China, so we cannot issue mainland China invoices.
 
-### Payment status is temporarily unclear
+For membership purchases, we can provide formal Invoices issued by overseas main companies. After each payment, the system will automatically send the Invoice to your registered email and provide a PDF version for download. If you need to reimburse the Invoice, please consult your finance department first.
 
-If checkout closes, times out, or returns to the Control Panel without a clear result, first check the bank or payment provider for a completed or pending transaction, then refresh **Payment History**. Wait for the current order status before continuing. Keep SMS verification codes, full card details, wallet seed phrases, and private keys on your own payment device. For a duplicate charge or amount mismatch, retain a redacted order page, transaction time, currency, and provider reference, then contact both official Jego support and the issuer as appropriate. A pending authorization is not necessarily a completed membership purchase, so wait for the provider's final state before trying again.
+You can also view your last 3 successful orders in **Jego Dashboard** → **Payment History**, and click to view, print, or download detailed Invoices.
+
+If you don't receive the relevant email, please check your email, including the spam folder. If you need further assistance, please contact our customer support team.

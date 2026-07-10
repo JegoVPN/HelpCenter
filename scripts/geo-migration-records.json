@@ -2077,6 +2077,10 @@
         {
           "level": 2,
           "text": "Choose a suitable route"
+        },
+        {
+          "level": 2,
+          "text": "Use Global mode for Google AI products"
         }
       ],
       "sectionMapping": [
@@ -2109,7 +2113,7 @@
           },
           "to": {
             "level": 2,
-            "text": "Choose a suitable route"
+            "text": "Use Global mode for Google AI products"
           },
           "disposition": "restructured-in-place"
         },
@@ -2120,7 +2124,7 @@
           },
           "to": {
             "level": 2,
-            "text": "Choose a suitable route"
+            "text": "Use Global mode for Google AI products"
           },
           "disposition": "restructured-in-place"
         },
@@ -2131,7 +2135,7 @@
           },
           "to": {
             "level": 2,
-            "text": "Choose a suitable route"
+            "text": "Use Global mode for Google AI products"
           },
           "disposition": "restructured-in-place"
         }
@@ -2151,7 +2155,7 @@
       ],
       "mediaAndExternalLinkChanges": {
         "baselineMediaCount": 5,
-        "currentMediaCount": 3,
+        "currentMediaCount": 4,
         "removedMedia": [
           "/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F8oyNaJcc0tFJdbungX6t_2Fimage_1.png",
           "/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F8xAkeKaPFvJCAt1MuBYf_2Fimage_2.png",
@@ -2553,11 +2557,7 @@
         },
         {
           "level": 2,
-          "text": "Desktop and mobile subscription clients"
-        },
-        {
-          "level": 2,
-          "text": "Extension updates"
+          "text": "Use extension diagnostics yourself"
         },
         {
           "level": 2,
@@ -2627,7 +2627,7 @@
           },
           "to": {
             "level": 2,
-            "text": "Desktop and mobile subscription clients"
+            "text": "Use extension diagnostics yourself"
           },
           "disposition": "restructured-in-place"
         },
@@ -2638,7 +2638,7 @@
           },
           "to": {
             "level": 2,
-            "text": "Extension updates"
+            "text": "Contact support"
           },
           "disposition": "restructured-in-place"
         },
@@ -4933,7 +4933,7 @@
     {
       "source": "docs/en/membership/payment.md",
       "route": "/en/membership/payment",
-      "strategy": "restructure-in-place",
+      "strategy": "preserve-and-enhance",
       "baselineH1": "How to Pay",
       "currentH1": "How to Pay",
       "baselineSections": [
@@ -5025,15 +5025,11 @@
         },
         {
           "level": 3,
-          "text": "Payment rejected by the card issuer"
+          "text": "Payment rejected by card issuer?"
         },
         {
           "level": 3,
-          "text": "Invoices and receipts"
-        },
-        {
-          "level": 3,
-          "text": "Payment status is temporarily unclear"
+          "text": "Can I get an invoice for membership purchase?"
         }
       ],
       "sectionMapping": [
@@ -5142,10 +5138,10 @@
             "text": "Payment rejected by card issuer?"
           },
           "to": {
-            "level": 2,
-            "text": "Common Questions"
+            "level": 3,
+            "text": "Payment rejected by card issuer?"
           },
-          "disposition": "restructured-in-place"
+          "disposition": "preserved-heading"
         },
         {
           "from": {
@@ -5154,9 +5150,9 @@
           },
           "to": {
             "level": 3,
-            "text": "Payment rejected by the card issuer"
+            "text": "Can I get an invoice for membership purchase?"
           },
-          "disposition": "restructured-in-place"
+          "disposition": "preserved-heading"
         }
       ],
       "preservedTasks": [
@@ -8992,6 +8988,10 @@
         {
           "level": 2,
           "text": "选择合适的线路"
+        },
+        {
+          "level": 2,
+          "text": "Google AI 产品使用全局模式"
         }
       ],
       "sectionMapping": [
@@ -9024,7 +9024,7 @@
           },
           "to": {
             "level": 2,
-            "text": "选择合适的线路"
+            "text": "Google AI 产品使用全局模式"
           },
           "disposition": "restructured-in-place"
         },
@@ -9035,7 +9035,7 @@
           },
           "to": {
             "level": 2,
-            "text": "选择合适的线路"
+            "text": "Google AI 产品使用全局模式"
           },
           "disposition": "restructured-in-place"
         },
@@ -9046,7 +9046,7 @@
           },
           "to": {
             "level": 2,
-            "text": "选择合适的线路"
+            "text": "Google AI 产品使用全局模式"
           },
           "disposition": "restructured-in-place"
         }
@@ -9067,7 +9067,7 @@
       ],
       "mediaAndExternalLinkChanges": {
         "baselineMediaCount": 5,
-        "currentMediaCount": 3,
+        "currentMediaCount": 4,
         "removedMedia": [
           "/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F8oyNaJcc0tFJdbungX6t_2Fimage_1.png",
           "/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F8xAkeKaPFvJCAt1MuBYf_2Fimage_2.png",
@@ -9466,11 +9466,7 @@
         },
         {
           "level": 2,
-          "text": "电脑和手机订阅客户端"
-        },
-        {
-          "level": 2,
-          "text": "插件更新"
+          "text": "插件自助使用网络诊断"
         },
         {
           "level": 2,
@@ -9540,7 +9536,7 @@
           },
           "to": {
             "level": 2,
-            "text": "电脑和手机订阅客户端"
+            "text": "插件自助使用网络诊断"
           },
           "disposition": "restructured-in-place"
         },
@@ -9551,7 +9547,7 @@
           },
           "to": {
             "level": 2,
-            "text": "插件更新"
+            "text": "联系支持"
           },
           "disposition": "restructured-in-place"
         },
@@ -11803,7 +11799,7 @@
     {
       "source": "docs/membership/payment.md",
       "route": "/membership/payment",
-      "strategy": "restructure-in-place",
+      "strategy": "preserve-and-enhance",
       "baselineH1": "如何支付",
       "currentH1": "如何支付",
       "baselineSections": [
@@ -11895,15 +11891,11 @@
         },
         {
           "level": 3,
-          "text": "支付被发卡行拒绝"
+          "text": "支付被发卡行拒绝？"
         },
         {
           "level": 3,
-          "text": "发票与收据"
-        },
-        {
-          "level": 3,
-          "text": "支付状态暂时不明确"
+          "text": "购买会员是否可以开发票？"
         }
       ],
       "sectionMapping": [
@@ -12013,7 +12005,7 @@
           },
           "to": {
             "level": 3,
-            "text": "支付被发卡行拒绝"
+            "text": "支付被发卡行拒绝？"
           },
           "disposition": "preserved-heading"
         },
@@ -12024,9 +12016,9 @@
           },
           "to": {
             "level": 3,
-            "text": "支付被发卡行拒绝"
+            "text": "购买会员是否可以开发票？"
           },
-          "disposition": "restructured-in-place"
+          "disposition": "preserved-heading"
         }
       ],
       "preservedTasks": [

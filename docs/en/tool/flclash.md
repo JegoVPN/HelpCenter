@@ -21,7 +21,7 @@ status: current
 owner: docs
 reviewStatus: needs-review
 lastVerified: 2026-07-10
-platforms: [windows, macos, linux, android, harmonyos]
+platforms: [windows, macos, linux, android]
 tools: [flclash]
 appliesTo: []
 sources: [https://github.com/chen08209/FlClash]
@@ -37,7 +37,7 @@ A multi-platform proxy client based on Mihomo (formerly ClashMeta), simple to us
 Welcome to the 2025 FlClash usage tutorial
 :::
 
-FlClash is an open-source multi-platform client based on Mihomo (formerly Clash Meta) and built with Flutter. See this page's status row and GitHub project for current platforms and official sources. Open source or ad-free does not itself guarantee privacy or security; review permissions, release provenance, and security advisories before installation.
+FlClash is an open-source client based on Mihomo (formerly Clash Meta), with official builds for Windows, macOS, Linux, and Android.
 
 ## <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2Fu2sHeQjHJurcgVhJB1zO_2Ficon_2.png" width="26" height="26" alt="FlClash icon"> Get FlClash
 

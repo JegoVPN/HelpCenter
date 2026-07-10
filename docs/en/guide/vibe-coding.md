@@ -9,7 +9,7 @@ status: current
 owner: docs
 reviewStatus: needs-review
 lastVerified: null
-platforms: [windows, macos, linux]
+platforms: [windows, macos, linux, android, ios, ipados, harmonyos]
 tools: [flclash]
 appliesTo: []
 sources: []

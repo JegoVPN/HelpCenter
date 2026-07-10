@@ -173,7 +173,7 @@ for (const page of pages) {
       fail(`可见面包屑与侧边栏或页面短名称不一致：${page.route}`)
     }
   }
-  if (page.frontmatter.platforms?.length) {
+  if (!page.frontmatter.tool && page.frontmatter.platforms?.length) {
     const expectedPlatforms = page.frontmatter.platforms.map((platform) => platformLabels[platform]).join(' · ')
     const escapedPlatforms = expectedPlatforms.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
     if (!new RegExp(`<dt>${page.locale === 'en' ? 'Applies to' : '适用平台'}<\\/dt><dd>${escapedPlatforms}<\\/dd>`).test(html)) {

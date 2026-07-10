@@ -9,7 +9,7 @@ status: current
 owner: docs
 reviewStatus: needs-review
 lastVerified: null
-platforms: [chrome, edge]
+platforms: []
 tools: []
 appliesTo: []
 sources: []

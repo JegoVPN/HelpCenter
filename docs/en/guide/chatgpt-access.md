@@ -19,7 +19,7 @@ description: Use Jego's default rules and a suitable route for OpenAI, Anthropic
 
 # AI Product Access Guide
 
-This page is for the Jego browser extension in Chrome and Edge. OpenAI, Anthropic, Grok, and similar AI products normally work with Jego's existing default rules. Choose a suitable route for the product.
+This page is for the Jego browser extension in Chrome and Edge. Keep the existing Proxy Rules, then choose Rules or Global mode for the AI product.
 
 **Gemini example**
 
@@ -33,6 +33,12 @@ Open **Control Panel → Proxy Rules** and keep Jego's existing default settings
 
 ## Choose a suitable route
 
-Return to the extension popup, select **Rules** mode, and then choose a route suitable for the AI product. A node marked `[AI]` is a useful starting point.
+For ChatGPT, Claude, Grok, and similar products, return to the extension popup, select **Rules** mode, and choose a node marked `[AI]`.
 
 <img src="/images/jego-v1.5.9/popup-paid-rules-ai-en.png" alt="Choose an AI node in Jego" width="280">
+
+## Use Global mode for Google AI products
+
+For Google AI products such as Gemini, AI Studio, and NotebookLM, select **Global** mode in the extension popup and then choose a suitable node.
+
+<img src="/images/jego-v1.5.9/popup-paid-global-auto-en.png" alt="Use Jego Global mode for Google AI products" width="280">

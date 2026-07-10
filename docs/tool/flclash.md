@@ -21,7 +21,7 @@ status: current
 owner: docs
 reviewStatus: needs-review
 lastVerified: 2026-07-10
-platforms: [windows, macos, linux, android, harmonyos]
+platforms: [windows, macos, linux, android]
 tools: [flclash]
 appliesTo: []
 sources: [https://github.com/chen08209/FlClash]
@@ -37,7 +37,7 @@ description: 基于Mihomo（原ClashMeta）的多平台代理客户端，简单�
 欢迎阅读2025年FlClash使用教程
 :::
 
-FlClash 是基于 Mihomo（原 Clash Meta）的开源多平台代理客户端，采用 Flutter 框架开发。当前平台与官方来源见本页状态栏和 GitHub 项目。开源或无广告本身不等于隐私或安全保证；安装前仍应核对权限、发布来源和安全公告。
+FlClash 是基于 Mihomo（原 Clash Meta）的开源客户端，官方提供 Windows、macOS、Linux 和 Android 版本。
 
 ## <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2Fu2sHeQjHJurcgVhJB1zO_2Ficon_2.png" width="26" height="26" alt="FlClash图标"> 获取 FlClash
 

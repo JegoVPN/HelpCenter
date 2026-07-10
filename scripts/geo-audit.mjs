@@ -460,6 +460,12 @@ if (!baselineMode) {
       ? /## Check Payment History after purchase[\s\S]{0,160}Control Panel → Payment History[\s\S]{0,100}order appears there/.test(body)
       : /## 付款后查看支付记录[\s\S]{0,120}控制面板 → 支付记录[\s\S]{0,80}查询到本次订单/.test(body)
     if (!hasPaymentHistory) fail(`如何支付页必须使用支付记录查询订单：${source}`)
+    const restoredFaqFacts = page.frontmatter.locale === 'en'
+      ? ['Payment rejected by card issuer?', 'UnionPay customer service center 95516', 'Can I get an invoice for membership purchase?', 'last 3 successful orders', 'spam folder']
+      : ['支付被发卡行拒绝？', '银联客户服务中心95516', '购买会员是否可以开发票？', '最近 3 笔成功订单', '垃圾邮件文件夹']
+    for (const fact of restoredFaqFacts) {
+      if (!body.includes(fact)) fail(`如何支付页必须保留 GitHub 基线常见问题：${source} -> ${fact}`)
+    }
   }
 
   for (const source of ['docs/guide/services.md', 'docs/en/guide/services.md']) {
@@ -724,6 +730,7 @@ if (!baselineMode) {
   for (const page of pages) {
     const { body } = splitFrontmatter(page.raw)
     const isFaqPage = /^docs\/(?:en\/)?guide\/faq\.md$/.test(page.source)
+    const isPaymentPage = /^docs\/(?:en\/)?membership\/payment\.md$/.test(page.source)
     if (/[?？]/.test(String(page.frontmatter.title)) || /[?？]/.test(String(page.frontmatter.description))) {
       fail(`标题或摘要仍以问题要求用户判断：${page.source}`)
     }
@@ -735,7 +742,8 @@ if (!baselineMode) {
         inFence = !inFence
         continue
       }
-      if (inFence || /^\s*import\s/.test(line) || (isFaqPage && /^###\s+/.test(line))) continue
+      const isApprovedPaymentQuestion = isPaymentPage && /^###\s+(?:支付被发卡行拒绝？|购买会员是否可以开发票？|Payment rejected by card issuer\?|Can I get an invoice for membership purchase\?)$/.test(line)
+      if (inFence || /^\s*import\s/.test(line) || (isFaqPage && /^###\s+/.test(line)) || isApprovedPaymentQuestion) continue
       const visible = line
         .replace(/\]\([^)]*\)/g, ']')
         .replace(/https?:\/\/[^\s)>]+/g, '')
@@ -947,6 +955,9 @@ if (!baselineMode) {
   if (/Content status|内容状态|Facts pending review|部分事实待复核|reviewLabel/.test(metaComponent)) {
     fail('普通用户页面不得展示内部内容审核状态')
   }
+  if (/Client status|客户端状态|Jego support|Jego 支持|geo-tool-context-links|geo-support-warning/.test(metaComponent)) {
+    fail('客户端页不得自动展示未经逐项核实的状态、Jego 支持、平台或模板链接')
+  }
   const presentationSource = readFileSync(path.join(root, 'docs/.vitepress/presentation.ts'), 'utf8')
   const geoHeadSource = readFileSync(path.join(root, 'docs/.vitepress/geo.ts'), 'utf8')
   if (
@@ -961,9 +972,8 @@ if (!baselineMode) {
   ) {
     fail('面包屑、平台名称与结构化数据必须共用正式展示名称')
   }
-  const toolCatalogComponent = readFileSync(path.join(root, 'docs/.vitepress/theme/components/ToolCatalog.vue'), 'utf8')
   const navigationSource = readFileSync(path.join(root, 'docs/.vitepress/navigation.ts'), 'utf8')
-  const publicUiSource = `${metaComponent}\n${toolCatalogComponent}\n${navigationSource}`
+  const publicUiSource = `${metaComponent}\n${navigationSource}`
   if (/还在更新吗|适合谁|能使用 Jego 吗|怎么办|控制面板有什么|插件怎么用|Still maintained\?|Works with Jego\?|Website not opening\?|Jego not working\?/.test(publicUiSource)) {
     fail('公开组件不得使用向用户提问的表头或标签')
   }
@@ -1080,6 +1090,30 @@ if (!baselineMode) {
     }
     if (/建议关闭或者降低网络防火墙|请将设置切换为.?关闭|recommended to turn off|switch the setting to.?Off/i.test(body)) {
       fail(`常见问题不得恢复关闭系统防火墙的建议：${source}`)
+    }
+    const hasSelfDiagnostics = faq.frontmatter.locale === 'en'
+      ? /## Use extension diagnostics yourself[\s\S]*Jego icon → Dashboard → Diagnostics[\s\S]*\/en\/guide\/network-diagnostics/.test(body)
+      : /## 插件自助使用网络诊断[\s\S]*无忧行图标 → 控制面板 → 网络诊断[\s\S]*\/guide\/network-diagnostics/.test(body)
+    if (!hasSelfDiagnostics) fail(`常见问题必须保留插件自助网络诊断入口：${source}`)
+    if (/## 电脑和手机订阅客户端|## 插件更新|## Desktop and mobile subscription clients|## Extension updates/.test(body)) {
+      fail(`常见问题不得恢复无帮助的订阅客户端和插件更新导航段落：${source}`)
+    }
+    const hasAiRoutingSummary = faq.frontmatter.locale === 'en'
+      ? /Rules[\s\S]*\[AI\][\s\S]*Global[\s\S]*ChatGPT Group[\s\S]*browser-extension steps/.test(body)
+      : /规则[\s\S]*\[AI\][\s\S]*全局[\s\S]*ChatGPT Group[\s\S]*浏览器插件的具体操作/.test(body)
+    if (!hasAiRoutingSummary) fail(`常见问题的 AI 线路摘要必须与详细指南分工一致：${source}`)
+  }
+
+  for (const source of ['docs/guide/chatgpt-access.md', 'docs/en/guide/chatgpt-access.md']) {
+    const page = pages.find((entry) => entry.source === source)
+    if (!page) continue
+    const { body } = splitFrontmatter(page.raw)
+    const isEnglish = page.frontmatter.locale === 'en'
+    const completeBrowserGuide = isEnglish
+      ? /browser extension[\s\S]*default Proxy Rules[\s\S]*Rules[\s\S]*\[AI\][\s\S]*Use Global mode for Google AI products[\s\S]*Gemini[\s\S]*AI Studio[\s\S]*NotebookLM/.test(body)
+      : /浏览器插件[\s\S]*默认代理策略[\s\S]*规则[\s\S]*\[AI\][\s\S]*Google AI 产品使用全局模式[\s\S]*Gemini[\s\S]*AI Studio[\s\S]*NotebookLM/.test(body)
+    if (!completeBrowserGuide || /ChatGPT Group/.test(body)) {
+      fail(`AI 产品指南必须完整承接浏览器插件操作，且不得混入手机订阅分组：${source}`)
     }
   }
 
