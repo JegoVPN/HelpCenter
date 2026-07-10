@@ -14,7 +14,7 @@ platforms: [chrome, edge]
 tools: []
 appliesTo: []
 sources: ["cloud/app/chromev2@1.5.10"]
-title: 无忧行节点测速使用指南
+title: 节点测速 - 使用指南
 description: 使用节点测速查看当前可用节点和相对响应结果，再回到插件弹窗选择合适的节点。
 ---
 

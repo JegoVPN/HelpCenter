@@ -14,7 +14,7 @@ platforms: [chrome, edge]
 tools: []
 appliesTo: []
 sources: ["cloud/app/chromev2@1.5.10"]
-title: 无忧行网络诊断使用指南
+title: 网络诊断 - 使用指南
 description: 使用网络诊断了解无忧行代理工作状态，并判断下一步该切换节点还是调整代理策略。
 ---
 

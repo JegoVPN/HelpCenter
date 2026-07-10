@@ -14,7 +14,7 @@ tools: []
 appliesTo: []
 sources: []
 title: Linux 翻墙指南 - 设备支持
-description: Linux严格来说是单指操作系统的内核，因操作系统中包含了许多用户图形界面和其他实用工具。
+description: 在 Linux 电脑上选择合适的客户端，导入无忧行订阅并开始连接。
 ---
 
 # Linux 翻墙指南

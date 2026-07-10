@@ -18,7 +18,7 @@ export const enNav = [
     text: 'Browser Extension',
     items: [
       { text: 'Extension popup', link: '/en/guide/plugin-features' },
-      { text: 'Inside the Control Panel', link: '/en/guide/control-panel' },
+      { text: 'Control Panel', link: '/en/guide/control-panel' },
       { text: 'Diagnostics', link: '/en/guide/network-diagnostics' }
     ]
   },
@@ -118,7 +118,7 @@ export const enSidebar = [
       { text: 'Extension popup', link: '/en/guide/plugin-features' },
       { text: 'Rules, Global, and Off', link: '/en/guide/mode-selection' },
       { text: 'Auto or manual nodes', link: '/en/guide/node-selection' },
-      { text: 'Inside the Control Panel', link: '/en/guide/control-panel' },
+      { text: 'Control Panel', link: '/en/guide/control-panel' },
       { text: 'Proxy Rules', link: '/en/guide/proxy-strategy' },
       { text: 'Diagnostics', link: '/en/guide/network-diagnostics' },
       { text: 'Node Test', link: '/en/guide/network-diagnostics-node-speed' },
@@ -128,7 +128,7 @@ export const enSidebar = [
     ]
   },
   {
-    text: 'Subscription Services',
+    text: 'Subscription service',
     items: [
       { text: 'Subscription service', link: '/en/subscription/' },
       { text: 'Windows proxy guide', link: '/en/subscription/devices/windows' },

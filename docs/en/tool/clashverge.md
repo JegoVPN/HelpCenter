@@ -26,7 +26,7 @@ tools: [clashverge]
 appliesTo: []
 sources: [https://github.com/clash-verge-rev/clash-verge-rev]
 title: Clash Verge Rev - Tools & Software
-description: A multi-platform proxy client based on Mihomo (formerly ClashMeta) kernel, supporting Alpha version kernel switching. Clean and beautiful user interface with customizable theme colors.
+description: Install Clash Verge Rev, import the Jego subscription, and start the connection.
 ---
 
 # Clash Verge Rev

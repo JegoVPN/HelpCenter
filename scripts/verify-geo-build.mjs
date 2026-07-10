@@ -2,13 +2,19 @@ import { execFileSync } from 'node:child_process'
 import { existsSync, readFileSync } from 'node:fs'
 import { homedir, tmpdir, userInfo } from 'node:os'
 import path from 'node:path'
-import { pageRecord, walkFiles } from './geo-content.mjs'
+import { pageRecord, parseFrontmatter, walkFiles } from './geo-content.mjs'
 import { canonicalizeRoute, LEGACY_ROUTE_PAIRS, TOOL_SLUGS } from './subscription-route-map.mjs'
 
 const root = process.cwd()
 const dist = path.join(root, 'docs/.vitepress/dist')
 const origin = 'https://help.jegovpn.com'
 const errors = []
+const platformLabels = JSON.parse(readFileSync(path.join(root, 'docs/.vitepress/data/platform-labels.json'), 'utf8'))
+const navigationSource = readFileSync(path.join(root, 'docs/.vitepress/navigation.ts'), 'utf8')
+const sidebarLabels = new Map(
+  [...navigationSource.matchAll(/\{\s*text:\s*(['"])(.*?)\1,\s*link:\s*(['"])(.*?)\3\s*\}/g)]
+    .map((match) => [match[4], match[2]])
+)
 
 function fail(message) {
   errors.push(message)
@@ -29,6 +35,23 @@ function htmlPath(route) {
   if (route === '/') return path.join(dist, 'index.html')
   if (route.endsWith('/')) return path.join(dist, route.replace(/^\//, ''), 'index.html')
   return path.join(dist, `${route.replace(/^\//, '')}.html`)
+}
+
+function cleanPageTitle(title) {
+  return title
+    .replace(/^✨\s*/, '')
+    .replace(/\s+-\s+(?:使用指南|工具软件|会员服务|使用条款|设备支持|iOS\/iPadOS)$/i, '')
+    .replace(/\s+-\s+(?:User Guide|Tools & Software|Membership Service|Terms of Use|Device Support|iOS\/iPadOS)$/i, '')
+    .trim()
+}
+
+function escapeHtmlText(text) {
+  return text
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;')
 }
 
 function attributes(tag) {
@@ -100,8 +123,9 @@ const sources = walkFiles(path.join(root, 'docs'))
   .filter((file) => file.endsWith('.md'))
   .map((file) => path.relative(root, file))
 const pages = sources.map((source) => {
-  const record = pageRecord(source, readFileSync(path.join(root, source), 'utf8'))
-  return { ...record, route: canonicalizeRoute(record.route) }
+  const raw = readFileSync(path.join(root, source), 'utf8')
+  const record = pageRecord(source, raw)
+  return { ...record, frontmatter: parseFrontmatter(raw), route: canonicalizeRoute(record.route) }
 })
 const routeSet = new Set(pages.map((page) => page.route))
 const htmlByRoute = new Map()
@@ -142,6 +166,20 @@ for (const page of pages) {
     fail(`静态正文不足：${page.route}`)
   }
   if (/noindex|nosnippet|noarchive/i.test(html)) fail(`存在意外索引限制：${page.route}`)
+  if (page.route !== '/' && page.route !== '/en/') {
+    const expectedBreadcrumb = sidebarLabels.get(page.route) || cleanPageTitle(page.title)
+    const escapedBreadcrumb = escapeHtmlText(expectedBreadcrumb).replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+    if (!new RegExp(`<span aria-current="page">${escapedBreadcrumb}<\\/span>`).test(html)) {
+      fail(`可见面包屑与侧边栏或页面短名称不一致：${page.route}`)
+    }
+  }
+  if (page.frontmatter.platforms?.length) {
+    const expectedPlatforms = page.frontmatter.platforms.map((platform) => platformLabels[platform]).join(' · ')
+    const escapedPlatforms = expectedPlatforms.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+    if (!new RegExp(`<dt>${page.locale === 'en' ? 'Applies to' : '适用平台'}<\\/dt><dd>${escapedPlatforms}<\\/dd>`).test(html)) {
+      fail(`可见平台名称未使用正式大小写：${page.route}`)
+    }
+  }
 
   const jsonScripts = [...html.matchAll(/<script\s+type="application\/ld\+json">([\s\S]*?)<\/script>/gi)]
   if (jsonScripts.length !== 1) {
@@ -153,6 +191,13 @@ for (const page of pages) {
     const graph = data['@graph'] || []
     for (const type of ['Organization', 'WebSite', 'BreadcrumbList']) {
       if (!graph.some((node) => node['@type'] === type)) fail(`JSON-LD 缺少 ${type}：${page.route}`)
+    }
+    const breadcrumbNode = graph.find((node) => node['@type'] === 'BreadcrumbList')
+    if (page.route !== '/' && page.route !== '/en/') {
+      const expectedBreadcrumb = sidebarLabels.get(page.route) || cleanPageTitle(page.title)
+      if (breadcrumbNode?.itemListElement?.at(-1)?.name !== expectedBreadcrumb) {
+        fail(`JSON-LD 面包屑与可见短名称不一致：${page.route}`)
+      }
     }
     const pageNode = graph.find((node) => ['TechArticle', 'WebPage'].includes(node['@type']))
     if (!pageNode) fail(`JSON-LD 缺少页面实体：${page.route}`)

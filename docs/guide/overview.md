@@ -10,7 +10,7 @@ owner: docs
 reviewStatus: verified
 lastVerified: 2026-07-10
 dateModified: 2026-07-10
-platforms: [chrome, edge]
+platforms: []
 tools: []
 appliesTo: []
 sources: ["human-confirmed-2026-07-10", "cloud/app/chromev2@1.5.10", "cloud/locales@2026-07-10"]

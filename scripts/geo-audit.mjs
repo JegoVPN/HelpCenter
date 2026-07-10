@@ -105,12 +105,15 @@ function scanPrivacyDenyTokens() {
 
 const baselinePath = path.join(root, 'scripts/geo-baseline.json')
 const requiredPath = path.join(root, 'scripts/geo-required-routes.json')
+const platformLabelsPath = path.join(root, 'docs/.vitepress/data/platform-labels.json')
 
 if (!existsSync(baselinePath)) fail('缺少 scripts/geo-baseline.json')
 if (!existsSync(requiredPath)) fail('缺少 scripts/geo-required-routes.json')
+if (!existsSync(platformLabelsPath)) fail('缺少正式平台显示名称映射')
 
 const baseline = existsSync(baselinePath) ? readJson(baselinePath) : null
 const required = existsSync(requiredPath) ? readJson(requiredPath) : null
+const platformLabels = existsSync(platformLabelsPath) ? readJson(platformLabelsPath) : {}
 
 if (baseline) {
   if (baseline.baselineCommit !== BASELINE_COMMIT) fail('基线 commit 与实施契约不一致')
@@ -256,6 +259,13 @@ if (!baselineMode) {
     if (page.frontmatter.locale !== page.record.locale) fail(`locale 与路径不一致：${page.source}`)
     if (!Array.isArray(page.frontmatter.platforms) || !Array.isArray(page.frontmatter.sources)) {
       fail(`platforms/sources 必须是数组：${page.source}`)
+    }
+    for (const platform of page.frontmatter.platforms || []) {
+      if (!platformLabels[platform]) fail(`平台缺少正式显示名称：${page.source} -> ${platform}`)
+    }
+    const description = String(page.frontmatter.description || '')
+    if (/珍爱生活|基于Linux核心|市占率|垄断地位|开发代号Ark|strictly speaking|market share|monopoly position|development codename Ark/i.test(description)) {
+      fail(`页面摘要仍是百科式或无关描述：${page.source}`)
     }
     const headings = extractHeadings(page.raw).filter((heading) => heading.level === 1)
     if (page.frontmatter.contentType !== 'home' && headings.length !== 1) fail(`源文件 H1 不唯一：${page.source}`)
@@ -936,6 +946,20 @@ if (!baselineMode) {
   const metaComponent = readFileSync(path.join(root, 'docs/.vitepress/theme/components/GeoPageMeta.vue'), 'utf8')
   if (/Content status|内容状态|Facts pending review|部分事实待复核|reviewLabel/.test(metaComponent)) {
     fail('普通用户页面不得展示内部内容审核状态')
+  }
+  const presentationSource = readFileSync(path.join(root, 'docs/.vitepress/presentation.ts'), 'utf8')
+  const geoHeadSource = readFileSync(path.join(root, 'docs/.vitepress/geo.ts'), 'utf8')
+  if (
+    !/pageDisplayTitle/.test(metaComponent) ||
+    !/formatPlatforms/.test(metaComponent) ||
+    /frontmatter\.platforms\.join/.test(metaComponent) ||
+    /aria-current="page">\{\{\s*page\.title/.test(metaComponent) ||
+    !/zhSidebar/.test(presentationSource) ||
+    !/enSidebar/.test(presentationSource) ||
+    !/platform-labels\.json/.test(presentationSource) ||
+    !/pageDisplayTitle/.test(geoHeadSource)
+  ) {
+    fail('面包屑、平台名称与结构化数据必须共用正式展示名称')
   }
   const toolCatalogComponent = readFileSync(path.join(root, 'docs/.vitepress/theme/components/ToolCatalog.vue'), 'utf8')
   const navigationSource = readFileSync(path.join(root, 'docs/.vitepress/navigation.ts'), 'utf8')

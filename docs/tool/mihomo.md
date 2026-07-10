@@ -26,7 +26,7 @@ tools: [mihomo]
 appliesTo: []
 sources: [https://github.com/MetaCubeX/mihomo, https://mihomo.party/]
 title: Mihomo系列软件 - 工具软件
-description: MetaCubeX基于Clash核心推出的全新的Mihomo内核，团队持续地在开源社区维护和更新，生态链里已经推出了包含Windows、Andriod、macOS和Linux的客户端。
+description: 了解 Mihomo 系列客户端，并从对应设备教程进入安装和订阅步骤。
 ---
 
 # Mihomo系列软件

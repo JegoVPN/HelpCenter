@@ -14,7 +14,7 @@ tools: []
 appliesTo: []
 sources: []
 title: iPhone / iPad 翻墙指南 - 设备支持
-description: iOS是苹果公司为其移动设备所开发的专有移动操作系统，为其公司的许多移动设备提供操作界面，支持设备包括iPhone、iPad、iPod touch和Apple TV。
+description: 在 iPhone 或 iPad 上选择合适的客户端，导入无忧行订阅并开始连接。
 ---
 
 # iPhone / iPad 翻墙指南

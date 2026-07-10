@@ -1,7 +1,7 @@
 ---
 translationKey: guide-support
 contentType: support
-product: browser-extension
+product: both
 productArea: support
 uiSurface: null
 locale: en
@@ -9,12 +9,12 @@ status: current
 owner: docs
 reviewStatus: verified
 lastVerified: 2026-07-10
-platforms: [chrome, edge]
+platforms: []
 tools: []
 appliesTo: []
 sources: ["cloud/app/chromev2@1.5.10", "cloud/locales/*.csv"]
 title: Contact Support - User Guide
-description: Due to complex network environments in certain regions, you may encounter connectivity issues while using Jego. If you experience any difficulties, please follow the guide below to contact us for assistance.
+description: Contact support from the Jego Control Panel and include the device and connection details shown in the examples.
 ---
 
 # Contact Customer Service

@@ -14,7 +14,7 @@ tools: []
 appliesTo: []
 sources: ["human-confirmed-2026-07-10"]
 title: 公平使用 - 使用条款
-description: 珍爱生活、珍爱无忧行……
+description: 了解无忧行账号的设备数量、公平使用范围和禁止的滥用行为。
 ---
 
 # 公平使用

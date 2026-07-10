@@ -1,5 +1,6 @@
 import type { HeadConfig } from 'vitepress'
 import { canonicalizeRoute } from '../../scripts/subscription-route-map.mjs'
+import { pageDisplayTitle } from './presentation'
 
 export const SITE_ORIGIN = 'https://help.jegovpn.com'
 const ORGANIZATION_ID = `${SITE_ORIGIN}/#organization`
@@ -131,7 +132,12 @@ function jsonLd(ctx: any, route: string, locale: 'zh-Hans' | 'en') {
                 name: locale === 'en' ? 'Jego Help Center' : 'Jego 帮助中心',
                 item: absolute(locale === 'en' ? '/en/' : '/')
               },
-              { '@type': 'ListItem', position: 2, name: pageData.title || title, item: url }
+              {
+                '@type': 'ListItem',
+                position: 2,
+                name: pageDisplayTitle(pageData.relativePath || page, pageData.title || title),
+                item: url
+              }
             ]
     }
   ]

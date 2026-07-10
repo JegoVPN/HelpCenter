@@ -1,7 +1,7 @@
 ---
 translationKey: guide-support
 contentType: support
-product: browser-extension
+product: both
 productArea: support
 uiSurface: null
 locale: zh-Hans
@@ -9,12 +9,12 @@ status: current
 owner: docs
 reviewStatus: verified
 lastVerified: 2026-07-10
-platforms: [chrome, edge]
+platforms: []
 tools: []
 appliesTo: []
 sources: ["cloud/app/chromev2@1.5.10", "cloud/locales/zh_CN.csv"]
 title: 联系客服 - 使用指南
-description: 由于部分地区网络环境复杂，在使用无忧行服务的过程中可能会遇到连接问题。若您在使用中遇到任何困难，请参考以下指南与我们联系，我们将竭诚为您解决。
+description: 通过无忧行控制面板联系支持，并按示例提供必要的设备和连接信息。
 ---
 
 # 联系客服

@@ -1,0 +1,13 @@
+{
+  "chrome": "Chrome",
+  "edge": "Edge",
+  "firefox": "Firefox",
+  "windows": "Windows",
+  "macos": "macOS",
+  "linux": "Linux",
+  "android": "Android",
+  "ios": "iOS",
+  "ipados": "iPadOS",
+  "harmonyos": "HarmonyOS",
+  "tvos": "Apple TV"
+}

@@ -14,7 +14,7 @@ tools: []
 appliesTo: []
 sources: []
 title: Windows Proxy Guide - Device Support
-description: Microsoft Windows, commonly known as Windows operating system, is a series of proprietary commercial software operating systems launched by Microsoft with graphical user interface as the main feature. It has a monopoly position in personal computer operating systems worldwide.
+description: Choose a Windows client, import the Jego subscription, and start the connection.
 ---
 
 # Windows Proxy Guide

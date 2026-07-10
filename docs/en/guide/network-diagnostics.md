@@ -14,7 +14,7 @@ platforms: [chrome, edge]
 tools: []
 appliesTo: []
 sources: ["cloud/app/chromev2@1.5.10"]
-title: Jego Diagnostics guide
+title: Diagnostics - User Guide
 description: Use Diagnostics to understand how the Jego proxy is working and decide whether to change the node or adjust Proxy Rules.
 ---
 

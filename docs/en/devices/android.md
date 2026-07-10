@@ -14,7 +14,7 @@ tools: []
 appliesTo: []
 sources: []
 title: Android Proxy Guide - Device Support
-description: Android is an open source mobile operating system based on Linux kernel and other open source software, continuously led and developed by the Open Handset Alliance established by Google.
+description: Choose an Android client, import the Jego subscription, and start the connection.
 ---
 
 # Android Proxy Guide

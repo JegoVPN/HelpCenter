@@ -2077,10 +2077,6 @@
         {
           "level": 2,
           "text": "Choose a suitable route"
-        },
-        {
-          "level": 2,
-          "text": "View the current connection status"
         }
       ],
       "sectionMapping": [
@@ -2113,7 +2109,7 @@
           },
           "to": {
             "level": 2,
-            "text": "View the current connection status"
+            "text": "Choose a suitable route"
           },
           "disposition": "restructured-in-place"
         },
@@ -2124,7 +2120,7 @@
           },
           "to": {
             "level": 2,
-            "text": "View the current connection status"
+            "text": "Choose a suitable route"
           },
           "disposition": "restructured-in-place"
         },
@@ -2135,7 +2131,7 @@
           },
           "to": {
             "level": 2,
-            "text": "View the current connection status"
+            "text": "Choose a suitable route"
           },
           "disposition": "restructured-in-place"
         }
@@ -2155,7 +2151,7 @@
       ],
       "mediaAndExternalLinkChanges": {
         "baselineMediaCount": 5,
-        "currentMediaCount": 2,
+        "currentMediaCount": 3,
         "removedMedia": [
           "/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F8oyNaJcc0tFJdbungX6t_2Fimage_1.png",
           "/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F8xAkeKaPFvJCAt1MuBYf_2Fimage_2.png",
@@ -4845,7 +4841,7 @@
           "text": "VIP Level Is Cumulative"
         },
         {
-          "level": 3,
+          "level": 2,
           "text": "Purpose of VIP Levels"
         }
       ],
@@ -4900,7 +4896,7 @@
             "text": "Purpose of VIP Levels"
           },
           "to": {
-            "level": 3,
+            "level": 2,
             "text": "Purpose of VIP Levels"
           },
           "disposition": "preserved-heading"
@@ -8996,10 +8992,6 @@
         {
           "level": 2,
           "text": "选择合适的线路"
-        },
-        {
-          "level": 2,
-          "text": "查看当前连接状态"
         }
       ],
       "sectionMapping": [
@@ -9032,7 +9024,7 @@
           },
           "to": {
             "level": 2,
-            "text": "查看当前连接状态"
+            "text": "选择合适的线路"
           },
           "disposition": "restructured-in-place"
         },
@@ -9043,7 +9035,7 @@
           },
           "to": {
             "level": 2,
-            "text": "查看当前连接状态"
+            "text": "选择合适的线路"
           },
           "disposition": "restructured-in-place"
         },
@@ -9054,7 +9046,7 @@
           },
           "to": {
             "level": 2,
-            "text": "查看当前连接状态"
+            "text": "选择合适的线路"
           },
           "disposition": "restructured-in-place"
         }
@@ -9075,7 +9067,7 @@
       ],
       "mediaAndExternalLinkChanges": {
         "baselineMediaCount": 5,
-        "currentMediaCount": 2,
+        "currentMediaCount": 3,
         "removedMedia": [
           "/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F8oyNaJcc0tFJdbungX6t_2Fimage_1.png",
           "/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F8xAkeKaPFvJCAt1MuBYf_2Fimage_2.png",
@@ -11718,7 +11710,7 @@
           "text": "VIP 等级是累加的"
         },
         {
-          "level": 3,
+          "level": 2,
           "text": "VIP 等级的作用"
         }
       ],
@@ -11773,7 +11765,7 @@
             "text": "VIP等级的作用"
           },
           "to": {
-            "level": 3,
+            "level": 2,
             "text": "VIP 等级的作用"
           },
           "disposition": "preserved-heading"

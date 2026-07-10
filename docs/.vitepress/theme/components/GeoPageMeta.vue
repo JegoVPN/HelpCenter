@@ -2,10 +2,13 @@
 import { computed } from 'vue'
 import { useData } from 'vitepress'
 import catalog from '../../data/tool-catalog.json'
+import { formatPlatforms, pageDisplayTitle } from '../../presentation'
 
 const { frontmatter, page, lang } = useData()
 const isEnglish = computed(() => lang.value === 'en')
 const home = computed(() => isEnglish.value ? '/en/' : '/')
+const displayTitle = computed(() => pageDisplayTitle(page.value.relativePath, page.value.title))
+const platformText = computed(() => formatPlatforms(frontmatter.value.platforms))
 const tool = computed(() => catalog.tools.find((entry) => entry.slug === frontmatter.value.tool))
 const lifecycleLabel = computed(() => {
   const value = tool.value?.lifecycle
@@ -35,7 +38,7 @@ const replacements = computed(() => (tool.value?.replacements || [])
     <nav class="geo-breadcrumb" :aria-label="isEnglish ? 'Breadcrumb' : '面包屑'">
       <a :href="home">{{ isEnglish ? 'Help Center' : '帮助中心' }}</a>
       <span aria-hidden="true">/</span>
-      <span aria-current="page">{{ page.title }}</span>
+      <span aria-current="page">{{ displayTitle }}</span>
     </nav>
     <dl v-if="tool || frontmatter.platforms?.length" class="geo-page-meta">
       <div v-if="tool">
@@ -48,7 +51,7 @@ const replacements = computed(() => (tool.value?.replacements || [])
       </div>
       <div v-if="frontmatter.platforms?.length">
         <dt>{{ isEnglish ? 'Applies to' : '适用平台' }}</dt>
-        <dd>{{ frontmatter.platforms.join(' · ') }}</dd>
+        <dd>{{ platformText }}</dd>
       </div>
     </dl>
     <div v-if="jegoSupport === 'unsupported'" class="geo-support-warning" role="note">

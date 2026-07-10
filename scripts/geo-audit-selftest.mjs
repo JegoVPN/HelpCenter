@@ -269,6 +269,18 @@ try {
   expectMutationFailure('删除免费版网站限制', 'docs/guide/services.md', (raw) =>
     raw.replace('但可访问的网站有限，目前主要支持 Google、Wikipedia、NewBing、ChatGPT、Grok、Claude 等指定网站', '可以访问任意网站')
   )
+  expectMutationFailure('把面包屑改回 SEO 长标题', 'docs/.vitepress/theme/components/GeoPageMeta.vue', (raw) =>
+    raw.replace('{{ displayTitle }}', '{{ page.title }}')
+  )
+  expectMutationFailure('把平台名称改回内部小写值', 'docs/.vitepress/theme/components/GeoPageMeta.vue', (raw) =>
+    raw.replace('{{ platformText }}', "{{ frontmatter.platforms.join(' · ') }}")
+  )
+  expectMutationFailure('删除 Edge 正式显示名称', 'docs/.vitepress/data/platform-labels.json', (raw) =>
+    raw.replace('  "edge": "Edge",\n', '')
+  )
+  expectMutationFailure('把设备摘要改回百科文字', 'docs/devices/windows.md', (raw) =>
+    raw.replace('在 Windows 电脑上选择合适的客户端，导入无忧行订阅并开始连接。', 'Windows 在全世界个人电脑操作系统中处于垄断地位。')
+  )
   console.log('\nGEO regression self-test passed.')
 } finally {
   rmSync(temporaryRoot, { recursive: true, force: true })

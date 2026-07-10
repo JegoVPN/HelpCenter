@@ -26,7 +26,7 @@ tools: [guiforsing-box]
 appliesTo: []
 sources: [https://github.com/GUI-for-Cores/GUI.for.SingBox]
 title: GUI.for.SingBox - 工具软件
-description: GUI.for.SingBox是开源社区基于sing-box内核在Windows系统里做的图形客户端。
+description: 介绍如何安装 GUI.for.SingBox、导入无忧行订阅并开始连接。
 ---
 
 # GUI.for.SingBox
@@ -86,4 +86,3 @@ GUI.for.SingBox是开源社区基于sing-box内核在Windows系统里做的图�
 * 启动后应该就能用了，其他一些使用习惯上的问题需要慢慢学习。
 
 另外建议去设置里打开以管理员身份运行：对于非 Windows Administrators 用户组成员，建议勾选此项，以避免 TUN 模式启动失败。
-

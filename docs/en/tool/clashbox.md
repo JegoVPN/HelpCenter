@@ -26,7 +26,7 @@ tools: [clashbox]
 appliesTo: []
 sources: [https://github.com/xiaobaigroup/ClashBox, https://appgallery.huawei.com/app/detail?id=org.xbgroup.clashbox]
 title: ClashBox - Tools & Software
-description: ClashBox/ClashNEXT is the first proxy software based on the Navigation framework for HarmonyOS NEXT(OpenHarmony) platform, using a modified Mihomo(ClashMeta) kernel.
+description: Install ClashBox on HarmonyOS and import a subscription after checking the compatibility notes.
 ---
 
 # ClashBox

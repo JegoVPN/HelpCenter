@@ -14,7 +14,7 @@ tools: []
 appliesTo: []
 sources: []
 title: HarmonyOS 翻墙指南 - 设备支持
-description: 鸿蒙（英语：HarmonyOS，简称HMOS，开发代号Ark，正式名称为华为终端鸿蒙智能设备操作系统软件）
+description: 在 HarmonyOS 设备上选择合适的客户端，导入无忧行订阅并开始连接。
 ---
 
 # HarmonyOS 翻墙指南

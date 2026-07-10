@@ -14,7 +14,7 @@ tools: []
 appliesTo: []
 sources: []
 title: macOS 翻墙指南 - 设备支持
-description: macOS是苹果公司推出的使用图形用户界面的操作系统，为麦金塔（Macintosh，简称 Mac）系列电脑的操作系统。在桌面操作系统中，macOS的市占率位居第二。
+description: 在 macOS 电脑上选择合适的客户端，导入无忧行订阅并开始连接。
 ---
 
 # macOS 翻墙指南

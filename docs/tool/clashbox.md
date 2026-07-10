@@ -26,7 +26,7 @@ tools: [clashbox]
 appliesTo: []
 sources: [https://github.com/xiaobaigroup/ClashBox, https://appgallery.huawei.com/app/detail?id=org.xbgroup.clashbox]
 title: ClashBox - 工具软件
-description: ClashBox/ClashNEXT是首个基于Navigation框架的HarmonyOS NEXT(OpenHarmony)平台的代理软件，使用改版的Mihomo(ClashMeta)内核。
+description: 介绍 ClashBox 在 HarmonyOS 上的安装和订阅步骤，使用前请先查看兼容性说明。
 ---
 
 # ClashBox

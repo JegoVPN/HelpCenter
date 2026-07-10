@@ -14,7 +14,7 @@ tools: []
 appliesTo: []
 sources: []
 title: 无忧行的三个版本 - 使用指南
-description: 轻松了解无忧行免费版、限时体验版和付费版的主要区别。
+description: 了解无忧行免费版、体验版和会员版的获得方式与主要区别。
 ---
 
 # 无忧行的三个版本

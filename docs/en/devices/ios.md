@@ -14,7 +14,7 @@ tools: []
 appliesTo: []
 sources: []
 title: iPhone / iPad Proxy Guide - Device Support
-description: iOS is a proprietary mobile operating system developed by Apple Inc. for its mobile devices, providing operating interface for many of the company's mobile devices, supporting devices including iPhone, iPad, iPod touch and Apple TV.
+description: Choose an iPhone or iPad client, import the Jego subscription, and start the connection.
 ---
 
 # iPhone / iPad Proxy Guide

@@ -26,7 +26,7 @@ tools: [clashverge]
 appliesTo: []
 sources: [https://github.com/clash-verge-rev/clash-verge-rev]
 title: Clash Verge Rev - 工具软件
-description: 基于Mihomo（原ClashMeta）内核的多平台代理客户端，并支持切换 Alpha 版本内核。简洁美观的用户界面，支持自定义主题颜色。
+description: 介绍如何安装 Clash Verge Rev、导入无忧行订阅并开始连接。
 ---
 
 # Clash Verge Rev

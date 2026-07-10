@@ -14,7 +14,7 @@ platforms: [chrome, edge]
 tools: []
 appliesTo: []
 sources: ["cloud/app/chromev2@1.5.10", "cloud/locales/zh_CN.csv"]
-title: 无忧行代理策略使用指南
+title: 代理策略 - 使用指南
 description: 在规则模式下为指定域名或 IP 选择无忧行节点或直连方式，并在保存后查看、编辑和确认规则。
 ---
 

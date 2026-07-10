@@ -14,7 +14,7 @@ platforms: [chrome, edge]
 tools: []
 appliesTo: []
 sources: ["cloud/app/chromev2@1.5.10", "cloud/locales/en.csv"]
-title: Jego Proxy Rules guide
+title: Proxy Rules - User Guide
 description: In Rules mode, choose a Jego node or a direct connection for selected domains or IP addresses, then view, edit, and check the saved rule.
 ---
 

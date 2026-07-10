@@ -14,7 +14,7 @@ platforms: [chrome, edge]
 tools: []
 appliesTo: []
 sources: ["cloud/app/chromev2@1.5.10"]
-title: Jego Node Test guide
+title: Node Test - User Guide
 description: Use Node Test to see which nodes are currently available, compare their relative responses, and choose a suitable node in the Jego popup.
 ---
 

@@ -14,7 +14,7 @@ tools: []
 appliesTo: []
 sources: ["human-confirmed-2026-07-10"]
 title: Fair Use - Terms of Use
-description: Cherish life, cherish Jego...
+description: Learn Jego's device allowance, fair-use rules, and prohibited account abuse.
 ---
 
 # Fair Use

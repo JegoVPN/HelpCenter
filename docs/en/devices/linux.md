@@ -14,7 +14,7 @@ tools: []
 appliesTo: []
 sources: []
 title: Linux Proxy Guide - Device Support
-description: Linux strictly speaking refers only to the operating system kernel, as the operating system contains many user graphical interfaces and other utility tools.
+description: Choose a Linux client, import the Jego subscription, and start the connection.
 ---
 
 # Linux Proxy Guide

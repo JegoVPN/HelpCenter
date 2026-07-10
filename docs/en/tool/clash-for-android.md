@@ -26,7 +26,7 @@ tools: [clash-for-android]
 appliesTo: []
 sources: []
 title: Clash for Android - Tools & Software
-description: A Graphical user interface of clash for Android
+description: Historical Clash for Android installation and subscription steps, with currently supported alternatives.
 ---
 
 # Clash for Android

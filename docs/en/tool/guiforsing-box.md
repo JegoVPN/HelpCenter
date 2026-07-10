@@ -26,7 +26,7 @@ tools: [guiforsing-box]
 appliesTo: []
 sources: [https://github.com/GUI-for-Cores/GUI.for.SingBox]
 title: GUI.for.SingBox - Tools & Software
-description: GUI.for.SingBox is a graphical client made by the open source community based on the sing-box kernel in Windows systems.
+description: Install GUI.for.SingBox, import the Jego subscription, and start the connection.
 ---
 
 # GUI.for.SingBox

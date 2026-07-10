@@ -14,7 +14,7 @@ tools: []
 appliesTo: []
 sources: []
 title: macOS Proxy Guide - Device Support
-description: macOS is an operating system with graphical user interface launched by Apple Inc., serving as the operating system for the Macintosh (Mac for short) series of computers. Among desktop operating systems, macOS ranks second in market share.
+description: Choose a macOS client, import the Jego subscription, and start the connection.
 ---
 
 # macOS Proxy Guide

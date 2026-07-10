@@ -26,7 +26,7 @@ tools: [mihomo]
 appliesTo: []
 sources: [https://github.com/MetaCubeX/mihomo, https://mihomo.party/]
 title: Mihomo Series Software - Tools & Software
-description: MetaCubeX launched a brand new Mihomo kernel based on the Clash core, and the team continues to maintain and update in the open source community. The ecosystem has launched clients including Windows, Android, macOS and Linux.
+description: Learn about Mihomo clients and open the matching device guide for installation and subscription steps.
 ---
 
 # Mihomo Series Software

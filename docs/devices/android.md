@@ -14,7 +14,7 @@ tools: []
 appliesTo: []
 sources: []
 title: Android 翻墙指南 - 设备支持
-description: Android/安卓是一个基于Linux核心与其他开源软件的开放源代码的移动操作系统，由Google成立的开放手持设备联盟持续领导与开发。
+description: 在 Android 手机上选择合适的客户端，导入无忧行订阅并开始连接。
 ---
 
 # Android 翻墙指南

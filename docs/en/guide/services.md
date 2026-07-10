@@ -14,7 +14,7 @@ tools: []
 appliesTo: []
 sources: []
 title: Jego's Three Versions
-description: A simple comparison of Jego Free, Trial, and Paid services.
+description: Learn how Jego Free, Trial, and VIP start and how their main features differ.
 ---
 
 # Jego's Three Versions

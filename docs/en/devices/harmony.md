@@ -14,7 +14,7 @@ tools: []
 appliesTo: []
 sources: []
 title: HarmonyOS Proxy Guide - Device Support
-description: "HarmonyOS (English: HarmonyOS, abbreviated as HMOS, development codename Ark, official name is Huawei Terminal HarmonyOS Intelligent Device Operating System Software)"
+description: Choose a HarmonyOS client, import the Jego subscription, and start the connection.
 ---
 
 # HarmonyOS Proxy Guide

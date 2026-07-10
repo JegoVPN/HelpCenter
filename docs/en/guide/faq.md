@@ -9,7 +9,7 @@ status: current
 owner: docs
 reviewStatus: verified
 lastVerified: 2026-07-10
-platforms: [chrome, edge, windows, macos, linux, android, ios, ipados, harmonyos]
+platforms: []
 tools: []
 appliesTo: []
 sources: ["human-product-decision@2026-07-10", "cloud/app/chromev2@1.5.10"]
