@@ -466,6 +466,12 @@ if (!baselineMode) {
     if (/无忧行分为免费版、体验版和会员版|Jego has a Free Version, Trial Version, and VIP Version/i.test(body)) {
       fail(`版本说明页不得在标题后重复三个版本：${source}`)
     }
+    const requiredServiceFacts = page.frontmatter.locale === 'en'
+      ? ['website access is limited', 'Google', 'Wikipedia', 'NewBing', 'ChatGPT', 'Grok', 'Claude', 'nodes and proxy rules preset by Jego', 'three-day Trial', 'several nodes', 'dozens of high-speed nodes worldwide', 'private network lines', 'subscription service for computers and phones']
+      : ['可访问的网站有限', 'Google', 'Wikipedia', 'NewBing', 'ChatGPT', 'Grok', 'Claude', '节点和代理策略由无忧行预先设置', '三天体验', '几个节点', '全球几十个高速节点', '内网专线', '电脑和手机订阅服务']
+    for (const fact of requiredServiceFacts) {
+      if (!body.includes(fact)) fail(`版本说明页不得删减原有服务范围：${source} -> ${fact}`)
+    }
   }
 
   const removedDraftPages = [

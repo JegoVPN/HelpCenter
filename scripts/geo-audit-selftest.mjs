@@ -266,6 +266,9 @@ try {
   expectMutationFailure('在版本标题后重复三个版本', 'docs/guide/services.md', (raw) =>
     raw.replace('# 无忧行的三个版本', '# 无忧行的三个版本\n\n无忧行分为免费版、体验版和会员版。')
   )
+  expectMutationFailure('删除免费版网站限制', 'docs/guide/services.md', (raw) =>
+    raw.replace('但可访问的网站有限，目前主要支持 Google、Wikipedia、NewBing、ChatGPT、Grok、Claude 等指定网站', '可以访问任意网站')
+  )
   console.log('\nGEO regression self-test passed.')
 } finally {
   rmSync(temporaryRoot, { recursive: true, force: true })
