@@ -23,16 +23,11 @@ Microsoft Windows，通称Windows操作系统，是微软以图形用户界面�
 
 无忧行会员可以把订阅节点添加到 Windows 代理客户端中，让浏览器之外的软件也能使用代理。下面先选一个当前支持的工具，再跟着完整教程安装和导入订阅。
 
-## <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FbeA5N21M1iATQm5HiGND_2Fwin_1.svg" width="38" height="28" alt="Windows图标"> Windows PC **设备上能用的代理工具**
+## <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FbeA5N21M1iATQm5HiGND_2Fwin_1.svg" width="38" height="28" alt="Windows图标"> Windows 翻墙客户端
 
-新用户优先选择同时标为“适合大多数用户”和“能使用 Jego：可以”的客户端，再点进完整教程。
+新用户可以直接从 **FlClash** 开始。下面按使用难度排列，点击客户端名称即可查看完整教程。
 
-<ToolCatalog locale="zh" platform="windows" recommended-only />
-
-<details class="subscription-more-clients">
-<summary>其他客户端与原有教程</summary>
-
-### 既有工具说明与教程入口
+### 推荐客户端
 
 <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2Fu2sHeQjHJurcgVhJB1zO_2Ficon_2.png" width="26" height="26" alt="FlClash图标"> [FlClash](/subscription/clients/flclash)
 
@@ -44,7 +39,7 @@ Clash Verge Rev是一款基于Mihomo（原ClashMeta）内核的多平台代理�
 
 ---
 
-#### 需要更多配置的既有教程：
+### 其他客户端
 
 <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FfJY0Si3bowLOO8nIXwPG_2Fmihomo_3.png" width="26" height="26" alt="Mihomo图标"> [Mihomo系列软件](/subscription/clients/mihomo)
 
@@ -52,11 +47,11 @@ MetaCubeX基于Clash核心推出的全新的Mihomo内核，团队持续地在开
 
 <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FX6LBfzRlMdWyQVvPC9eg_2Fimage_1.png" width="26" height="26" alt="sing-box图标"> [GUI.for.SingBox](/subscription/clients/guiforsing-box)
 
-sing-box 是跨平台网络代理项目；GUI.for.SingBox 是社区图形客户端，需要更多配置。当前协议、平台、版本和官方命令行包以各自项目来源为准。
+sing-box 是跨平台网络代理项目；GUI.for.SingBox 是社区图形客户端。当前协议、平台、版本和官方命令行包以各自项目来源为准。
 
 ---
 
-#### 历史或不推荐工具教程：
+### 历史教程
 
 <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FzSfmyRFCh3igxLUDkYXc_2Fimage_2.png" width="26" height="26" alt="v2rayN图标"> [v2rayN](/subscription/clients/v2rayn)
 
@@ -65,5 +60,3 @@ v2rayN是Windows系统下的代理软件客户端，功能强大且支持多种�
 <img src="/images/image_clash_2.png" width="26" height="26" alt="Clash图标"> [Clash for Windows](/subscription/clients/clash-for-windows)
 
 Clash for Windows已于2023年11月2日下架，但当时的最后一个版本还能用，建议换至Mihomo系列软件如[FlClash](/subscription/clients/flclash) 。
-
-</details>

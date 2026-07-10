@@ -372,8 +372,6 @@ if (!baselineMode) {
     'docs/en/devices/android.md': ['en', 'android'],
     'docs/devices/ios.md': ['zh', 'ios'],
     'docs/en/devices/ios.md': ['en', 'ios'],
-    'docs/devices/windows.md': ['zh', 'windows'],
-    'docs/en/devices/windows.md': ['en', 'windows'],
     'docs/devices/mac.md': ['zh', 'macos'],
     'docs/en/devices/mac.md': ['en', 'macos'],
     'docs/devices/linux.md': ['zh', 'linux'],
@@ -390,6 +388,18 @@ if (!baselineMode) {
     if (!page.raw.includes(expected)) fail(`设备页未从唯一 catalog 渲染：${source}`)
     if (/推荐使用下列软件|### Recommended Software|\*\*Recommended\*\*/.test(page.raw)) {
       fail(`设备页仍含第二份手工推荐表：${source}`)
+    }
+  }
+  for (const [source, headings] of [
+    ['docs/devices/windows.md', ['### 推荐客户端', '### 其他客户端', '### 历史教程']],
+    ['docs/en/devices/windows.md', ['### Recommended clients', '### Other clients', '### Historical guides']]
+  ]) {
+    const raw = pages.find((entry) => entry.source === source)?.raw || ''
+    if (/<details class="subscription-more-clients">|<ToolCatalog\b/.test(raw) || !headings.every((heading) => raw.includes(heading))) {
+      fail(`Windows 设备页必须使用直接展开的分组列表，不得恢复折叠区或工具表格：${source}`)
+    }
+    if (raw.indexOf('subscription/clients/flclash') > raw.indexOf('subscription/clients/clashverge')) {
+      fail(`Windows 推荐客户端必须将 FlClash 放在第一项：${source}`)
     }
   }
 
