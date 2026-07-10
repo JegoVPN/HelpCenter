@@ -164,6 +164,12 @@ try {
   expectMutationFailure('把 macOS 工具表格加回来', 'docs/devices/mac.md', (raw) =>
     raw.replace('### 推荐客户端', '<ToolCatalog locale="zh" platform="macos" />\n\n### 推荐客户端')
   )
+  expectMutationFailure('把 iPhone 和 iPad 工具表格加回来', 'docs/devices/ios.md', (raw) =>
+    raw.replace('### 推荐客户端', '<ToolCatalog locale="zh" platform="ios" />\n\n### 推荐客户端')
+  )
+  expectMutationFailure('把 Android 工具表格加回来', 'docs/devices/android.md', (raw) =>
+    raw.replace('### 推荐客户端', '<ToolCatalog locale="zh" platform="android" />\n\n### 推荐客户端')
+  )
   expectMutationFailure('删除全局图标文字同行样式', 'docs/.vitepress/theme/style.css', (raw) =>
     raw.replace('.vp-doc :is(h2, h3, h4) > img', '.vp-doc h2 > img')
   )

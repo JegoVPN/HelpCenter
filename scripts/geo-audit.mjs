@@ -368,10 +368,6 @@ if (!baselineMode) {
   }
 
   const deviceCatalogPages = {
-    'docs/devices/android.md': ['zh', 'android'],
-    'docs/en/devices/android.md': ['en', 'android'],
-    'docs/devices/ios.md': ['zh', 'ios'],
-    'docs/en/devices/ios.md': ['en', 'ios'],
     'docs/devices/linux.md': ['zh', 'linux'],
     'docs/en/devices/linux.md': ['en', 'linux'],
     'docs/devices/harmony.md': ['zh', 'harmonyos'],
@@ -388,21 +384,27 @@ if (!baselineMode) {
       fail(`设备页仍含第二份手工推荐表：${source}`)
     }
   }
-  for (const [source, headings, secondClient] of [
-    ['docs/devices/windows.md', ['### 推荐客户端', '### 其他客户端', '### 历史教程'], 'clashverge'],
-    ['docs/en/devices/windows.md', ['### Recommended clients', '### Other clients', '### Historical guides'], 'clashverge'],
-    ['docs/devices/mac.md', ['### 推荐客户端', '### 历史教程'], 'sing-boxforapple'],
-    ['docs/en/devices/mac.md', ['### Recommended clients', '### Historical guides'], 'sing-boxforapple']
+  for (const [source, headings, expectedLinks, firstClient, secondClient] of [
+    ['docs/devices/windows.md', ['### 推荐客户端', '### 其他客户端', '### 历史教程'], 6, 'flclash', 'clashverge'],
+    ['docs/en/devices/windows.md', ['### Recommended clients', '### Other clients', '### Historical guides'], 6, 'flclash', 'clashverge'],
+    ['docs/devices/mac.md', ['### 推荐客户端', '### 历史教程'], 6, 'flclash', 'sing-boxforapple'],
+    ['docs/en/devices/mac.md', ['### Recommended clients', '### Historical guides'], 6, 'flclash', 'sing-boxforapple'],
+    ['docs/devices/ios.md', ['### 推荐客户端', '### 历史教程'], 6, 'shadowrocket', 'sing-boxforapple'],
+    ['docs/en/devices/ios.md', ['### Recommended clients', '### Historical guides'], 6, 'shadowrocket', 'sing-boxforapple'],
+    ['docs/devices/android.md', ['### 推荐客户端', '### 其他客户端', '### 历史教程'], 7, 'sing-boxforandroid', 'flclash'],
+    ['docs/en/devices/android.md', ['### Recommended clients', '### Other clients', '### Historical guides'], 7, 'sing-boxforandroid', 'flclash']
   ]) {
     const raw = pages.find((entry) => entry.source === source)?.raw || ''
     if (/<details class="subscription-more-clients">|<ToolCatalog\b/.test(raw) || !headings.every((heading) => raw.includes(heading))) {
-      fail(`Windows/macOS 设备页必须使用直接展开的分组列表，不得恢复折叠区或工具表格：${source}`)
+      fail(`Windows/macOS/iOS/Android 设备页必须使用直接展开的分组列表，不得恢复折叠区或工具表格：${source}`)
     }
-    if (raw.split('class="client-guide-link"').length !== 7) {
-      fail(`Windows/macOS 设备页的 6 个客户端图标与名称必须同行：${source}`)
+    if (raw.split('class="client-guide-link"').length !== expectedLinks + 1) {
+      fail(`设备页客户端图标与名称的同行数量不正确：${source}`)
     }
-    if (raw.indexOf('subscription/clients/flclash') > raw.indexOf(`subscription/clients/${secondClient}`)) {
-      fail(`Windows/macOS 推荐客户端必须将 FlClash 放在第一项：${source}`)
+    const firstIndex = raw.indexOf(`subscription/clients/${firstClient}`)
+    const secondIndex = raw.indexOf(`subscription/clients/${secondClient}`)
+    if (firstIndex < 0 || secondIndex < 0 || firstIndex > secondIndex) {
+      fail(`设备页推荐客户端的首项顺序不正确：${source}`)
     }
   }
 

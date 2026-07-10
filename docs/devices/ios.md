@@ -33,43 +33,36 @@ iOS是苹果公司为其移动设备所开发的专有移动操作系统，为�
 
 部分 iOS/iPadOS 代理工具需要使用非中国大陆区 App Store 下载。如果你没有可用账号，可以参考 [美区 Apple ID 注册教程](/subscription/devices/us-apple-id)。
 
-## <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F7GBp8VQdHNWWH3aalDTP_2Fios_3.svg" width="38" height="28" alt="iOS图标"> **iOS/iPadOS 设备上能用的代理工具**
+## <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F7GBp8VQdHNWWH3aalDTP_2Fios_3.svg" width="38" height="28" alt="iOS图标"> iPhone / iPad 翻墙客户端
 
-新用户优先选择同时标为“适合大多数用户”和“能使用 Jego：可以”的客户端，再点进完整教程。
+下面先列出 Jego 当前支持的客户端，点击名称即可查看完整教程。
 
-<ToolCatalog locale="zh" platform="ios" recommended-only />
+### 推荐客户端
 
-<details class="subscription-more-clients">
-<summary>其他客户端与原有教程</summary>
-
-### 既有工具说明与教程入口
-
-<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FX6LBfzRlMdWyQVvPC9eg_2Fimage_1.png" width="26" height="26" alt="sing-box图标"> [sing-box for Apple platforms](/subscription/clients/sing-boxforapple)
-
-sing-box for Apple platforms / sing-box VT 是 Apple 平台客户端；当前协议、价格、维护和商店可用性以官方来源与工具页状态为准。
-
-<img src="/images/image_shadowrocket_2.png" width="26" height="26" alt="Shadowrocket图标"> [Shadowrocket](/subscription/clients/shadowrocket)
+<div class="client-guide-link"><img src="/images/image_shadowrocket_2.png" width="26" height="26" alt="Shadowrocket图标"><a href="/subscription/clients/shadowrocket">Shadowrocket</a></div>
 
 Shadowrocket 是一个功能齐全的 iOS/iPadOS 代理工具客戶端，支持大多数常见的连接协议。
 
-<img src="/images/image_surge_3.png" width="26" height="26" alt="Surge图标"> [Surge](/subscription/clients/surge)
+<div class="client-guide-link"><img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FX6LBfzRlMdWyQVvPC9eg_2Fimage_1.png" width="26" height="26" alt="sing-box图标"><a href="/subscription/clients/sing-boxforapple">sing-box for Apple platforms</a></div>
+
+sing-box for Apple platforms / sing-box VT 是 Apple 平台客户端；当前协议、价格、维护和商店可用性以官方来源与工具页状态为准。
+
+<div class="client-guide-link"><img src="/images/image_surge_3.png" width="26" height="26" alt="Surge图标"><a href="/subscription/clients/surge">Surge</a></div>
 
 Surge 是 Apple 平台的网络工具；当前功能、平台、价格和版本以官方来源与工具页状态为准。
 
-<img src="/images/image_quantumultx_1.png" width="26" height="26" alt="Quantumult X图标"> [Quantumult X](/subscription/clients/quantumult-x)
+<div class="client-guide-link"><img src="/images/image_quantumultx_1.png" width="26" height="26" alt="Quantumult X图标"><a href="/subscription/clients/quantumult-x">Quantumult X</a></div>
 
 Quantumult X是 iOS/iPadOS 上一款功能强大的网络工具。
 
 ---
 
-#### 历史或不推荐工具教程：
+### 历史教程
 
-<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2Fws9jtv8bFaMiuYKmsAZX_2Floon_2.png" width="26" height="26" alt="Loon图标"> [Loon](/subscription/clients/loon)
+<div class="client-guide-link"><img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2Fws9jtv8bFaMiuYKmsAZX_2Floon_2.png" width="26" height="26" alt="Loon图标"><a href="/subscription/clients/loon">Loon</a></div>
 
 Loon 的第三方项目可能仍在维护，但 Jego 已不再支持该客户端；本入口仅保留历史教程，现有用户应按工具页迁移。
 
-<img src="/images/image_oneclick_3.png" width="26" height="26" alt="OneClick图标"> [OneClick](/subscription/clients/oneclick)
+<div class="client-guide-link"><img src="/images/image_oneclick_3.png" width="26" height="26" alt="OneClick图标"><a href="/subscription/clients/oneclick">OneClick</a></div>
 
 OneClick 的第三方项目可能仍在维护，但 Jego 已不再支持该客户端；本入口仅保留历史教程，现有用户应按工具页迁移。
-
-</details>
