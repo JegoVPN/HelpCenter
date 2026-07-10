@@ -1,4 +1,18 @@
 ---
+translationKey: devices-mac
+contentType: device-guide
+product: subscription-service
+productArea: device-selection
+uiSurface: null
+locale: zh-Hans
+status: current
+owner: docs
+reviewStatus: needs-review
+lastVerified: null
+platforms: [macos]
+tools: []
+appliesTo: []
+sources: []
 title: 苹果Mac电脑怎么翻墙 - 设备支持
 description: macOS是苹果公司推出的使用图形用户界面的操作系统，为麦金塔（Macintosh，简称 Mac）系列电脑的操作系统。在桌面操作系统中，macOS的市占率位居第二。
 ---
@@ -7,15 +21,19 @@ description: macOS是苹果公司推出的使用图形用户界面的操作系�
 
 macOS是苹果公司推出的使用图形用户界面的操作系统，为麦金塔（Macintosh，简称 Mac）系列电脑的操作系统。在桌面操作系统中，macOS的市占率位居第二。
 
-无忧行的订阅节点服务（大陆用户通常称之为"机场"）与macOS系统上的众多网络代理工具程序（大陆用户通常称之为"梯子"）兼容。只需简单学习，就能轻松让电脑和手机上的所有应用程序都能翻墙，随时畅享全球无限制网络资源。
+无忧行会员可以把订阅节点添加到 Mac 代理客户端中，让浏览器之外的软件也能使用代理。下面先选一个当前支持的工具，再跟着完整教程安装和导入订阅。
 
 ## <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FrUGve1gm2gP1sXdvgjCw_2Fapple_1.svg" width="38" height="28" alt="macOS图标"> **macOS 设备上能用的代理工具**
 
-### 推荐使用下列软件
+新用户优先选择同时标为“适合大多数用户”和“能使用 Jego：可以”的客户端，再点进完整教程。
+
+<ToolCatalog locale="zh" platform="macos" />
+
+### 既有工具说明与教程入口
 
 <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FX6LBfzRlMdWyQVvPC9eg_2Fimage_1.png" width="26" height="26" alt="sing-box图标"> [sing-box for Apple platforms](/tool/sing-boxforapple)
 
-sing-box for Apple platforms / sing-box VT 是一款全新的内核，几乎支持目前所有协议，是App Store里唯一免费开源无广告而且还好用的工具。
+sing-box for Apple platforms / sing-box VT 是 Apple 平台客户端；当前协议、价格、维护和商店可用性以官方来源与工具页状态为准。
 
 <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2Fu2sHeQjHJurcgVhJB1zO_2Ficon_2.png" width="26" height="26" alt="FlClash图标"> [FlClash](/tool/flclash)
 
@@ -23,7 +41,7 @@ FlClash是一款基于Mihomo（原ClashMeta）的多平台代理客户端，简�
 
 <img src="/images/image_surge_3.png" width="26" height="26" alt="Surge图标"> [Surge](/tool/surge)
 
-Surge是一款Apple平台里功能强大的网络代理工具，以其稳定的性能、丰富的功能和优秀的用户体验而著称。
+Surge 是 Apple 平台的网络工具；当前功能、平台、价格和版本以官方来源与工具页状态为准。
 
 <img src="/images/image_shadowrocket_2.png" width="26" height="26" alt="Shadowrocket图标"> [Shadowrocket](/tool/shadowrocket)
 
@@ -36,9 +54,8 @@ Clash Verge Rev是一款基于Mihomo（原ClashMeta）内核的多平台代理�
 
 ---
 
-#### 下列软件能用但不推荐：
+#### 历史或不推荐工具教程：
 
 <img src="/images/image_clash_2.png" width="26" height="26" alt="Clash图标"> [Clash for Windows](/tool/clash-for-windows)
 
 Clash for Windows已于2023年11月2日下架，但当时的最后一个版本还能用，建议换至Mihomo系列软件如[FlClash](/tool/flclash) 。
-

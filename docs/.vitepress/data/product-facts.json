@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 2,
+  "browserExtension": {
+    "version": "1.5.10",
+    "minimumChromeVersion": "88",
+    "modes": [
+      { "code": "7", "key": "Rules", "zhCN": "规则" },
+      { "code": "5", "key": "Global", "zhCN": "全局" },
+      { "code": "0", "key": "Off", "zhCN": "关闭" }
+    ],
+    "modeBehavior": {
+      "rules": {
+        "matches": ["domain", "ipv4-address", "ipv4-subnet"],
+        "actions": ["proxy", "direct"]
+      },
+      "global": "all-browser-requests-use-current-node-except-local-addresses",
+      "off": "browser-uses-local-connection"
+    },
+    "nodeSelection": ["automatic", "manual"],
+    "popup": {
+      "signedOut": ["login", "sign-up-link", "forgot-password-link"],
+      "signedIn": ["mode-switch", "node-picker", "membership-status", "dashboard-link", "guidelines-link", "logout"],
+      "nodePickerDisabledWhenOff": true,
+      "switchingIndicator": "breathing-dot-replaces-logo"
+    },
+    "dashboard": ["current-mode", "current-node", "google-reachability", "network-diagnostics-link"],
+    "permissions": {
+      "storage": "save-settings-locally",
+      "proxy": "route-browser-traffic",
+      "alarms": "schedule-session-refresh",
+      "management": "detect-conflicting-extensions"
+    },
+    "hostPermissions": ["<all_urls>"],
+    "interfaceLanguages": [
+      "ar", "bn", "en", "fa", "fil", "fr", "hi", "id", "ja", "ko",
+      "ms", "my", "ru", "th", "tk", "uk", "vi", "zh-CN", "zh-HK", "zh-TW"
+    ],
+    "interfaceLanguageCount": 20,
+    "reviewStatus": "verified",
+    "permissionsReviewStatus": "verified",
+    "lastVerified": "2026-07-10",
+    "sources": [
+      "cloud/app/chromev2/public/manifest.json",
+      "cloud/app/chromev2/src/popup/App.vue",
+      "cloud/app/chromev2/src/pac/build-pac.js",
+      "cloud/app/chromev2/src/api/rule-domains.ts",
+      "cloud/app/chromev2/src/components/schema/primitives/DashboardBody.vue",
+      "cloud/locales/*.csv",
+      "https://jegocloud.com/policy"
+    ]
+  },
+  "privacyPolicy": {
+    "effectiveDate": "2026-01-05",
+    "lastVerified": "2026-07-10",
+    "serviceScope": ["browser-extension", "website"],
+    "collectedData": ["email", "hashed-password", "subscription-status", "transaction-id"],
+    "processingRegion": "US",
+    "paymentBoundary": "payment-details-processed-by-payment-processors; jego-receives-transaction-id",
+    "diagnosticDetails": null,
+    "reviewStatus": "verified",
+    "sources": ["https://jegocloud.com/policy"]
+  },
+  "networkDiagnostics": {
+    "title": { "key": "Diagnostics", "zhCN": "网络诊断" },
+    "tabs": [
+      { "key": "Connection", "zhCN": "连接检测" },
+      { "key": "Node test", "zhCN": "节点测速" },
+      { "key": "Encrypted DNS", "zhCN": "加密 DNS" }
+    ],
+    "connectionCheck": {
+      "shows": ["current-mode", "current-node"],
+      "commonSites": ["Google", "YouTube", "GitHub", "OpenAI", "Apple"],
+      "commonSiteResults": ["checking", "reachable", "unreachable"],
+      "routeCheck": {
+        "key": "Rules Check",
+        "zhCN": "查网址走向",
+        "input": "hostname",
+        "results": ["proxy", "direct", "unknown"],
+        "showsReason": true,
+        "showsMatchedRuleWhenAvailable": true,
+        "runsIn": "extension-worker"
+      },
+      "commonSiteCheckRunsIn": "extension-worker-with-in-page-fallback",
+      "retentionInClientImplementation": "page-memory-only"
+    },
+    "nodeTest": {
+      "button": { "key": "Test all nodes", "zhCN": "测试全部节点" },
+      "method": "per-node-https-probe-routed-through-that-node",
+      "slowThresholdMs": 2000,
+      "greenLightning": "one-of-the-10-lowest-round-trip-results-in-this-run",
+      "yellowIndicator": "reachable-but-round-trip-over-2000ms",
+      "failedIndicator": "unreachable-in-this-run",
+      "visibleLatencyValue": false,
+      "canSwitchNodeOnPage": false,
+      "recommendedPrecondition": "turn-jego-off",
+      "retentionInClientImplementation": "page-memory-only-no-speed-tester-write-back"
+    },
+    "reviewStatus": "verified",
+    "lastVerified": "2026-07-10",
+    "sources": [
+      "cloud/app/chromev2/src/components/schema/primitives/DiagnosticsBody.vue",
+      "cloud/app/chromev2/src/views/diagnostics-route.ts",
+      "cloud/handler/chrome.py",
+      "cloud/locales/zh_CN.csv"
+    ]
+  },
+  "subscriptionService": {
+    "toolSupportCatalog": "docs/.vitepress/data/tool-catalog.json",
+    "unsupportedByJego": ["v2rayn", "v2rayng", "loon", "oneclick"],
+    "deviceLimit": 6,
+    "reviewStatus": "verified",
+    "lastVerified": "2026-07-10",
+    "sources": ["human-confirmed-2026-07-10"]
+  },
+  "commercialPolicy": {
+    "browserExtensionTraffic": "no-data-limit-currently",
+    "subscriptionTraffic": "monthly-limited",
+    "subscriptionResetDayOfMonth": 1,
+    "subscriptionResetAfterRenewalOrUpgradePayment": true,
+    "fairUse": {
+      "maximumOwnDevices": 6,
+      "p2pProhibited": true,
+      "longTermAccountSharingEnforcement": "permanent-ban",
+      "p2pEnforcement": "permanent-ban",
+      "highLoadWindowMinutes": 60,
+      "highLoadOccurrencesPerMonthBeforeThrottle": 3,
+      "highLoadStatedRate": "100 M/s",
+      "throttledMaximumRate": "1 M/s"
+    },
+    "reviewStatus": "verified",
+    "lastVerified": "2026-07-10",
+    "sources": ["human-confirmed-2026-07-10"]
+  },
+  "paymentsAndSupport": {
+    "paymentMethods": "shown-dynamically-at-checkout",
+    "supportChannels": ["online-tickets", "email"],
+    "responseTarget": "all-ticket-messages-answered-within-24-hours",
+    "reviewStatus": "verified",
+    "lastVerified": "2026-07-10",
+    "sources": ["cloud/locales/zh_CN.csv", "cloud/app/chromev2@1.5.10"]
+  }
+}

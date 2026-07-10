@@ -1,32 +1,49 @@
 ---
+jegoSupport: unsupported
+tool: loon
+clientKind: null
+minimumOs: []
+architectures: []
+subscriptionFormats: []
+lifecycle: current
+recommendation: not-recommended
+securityStatus: needs-review
+supportedVersions: []
+replacements: [sing-boxforapple, shadowrocket, surge, quantumult-x]
+officialSources: [https://apps.apple.com/us/app/loon/id1373567447, https://nsloon.app/docs/intro]
+translationKey: tool-loon
+contentType: tool-guide
+product: subscription-service
+productArea: tools
+uiSurface: null
+locale: zh-Hans
+status: current
+owner: docs
+reviewStatus: needs-review
+lastVerified: 2026-07-10
+platforms: [ios, ipados, tvos]
+tools: [loon]
+appliesTo: []
+sources: [https://apps.apple.com/us/app/loon/id1373567447, https://nsloon.app/docs/intro]
 title: Loon - 工具软件
-description: Loon是一个集网络代理、网络调试、网络改写等一系列功能于一体的网络工具。
+description: Loon 第三方项目可能仍在维护，但 Jego 已不再支持；本页保留历史 Apple 平台教程并提供受支持替代项。
 ---
 
 # Loon
 
 ::: danger 不推荐使用
-由于Loon不支持无忧行最新的协议，所以无忧行不推荐大家继续使用。by 20250714
+Loon 第三方项目可能仍在维护，但 Jego 已不再支持其当前订阅协议，因此不推荐继续用于 Jego。
 
 请使用[无忧行推荐的客户端](/devices/pc-mobile#_1、关于应该使用什么客户端)
 :::
 
 ## <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FrQykYPazvOUVLyWMmu7C_2Floon_2.png" width="26" height="26" alt="Loon图标"> 获取Loon
 
-目前 Loon 已经被政府要求从中国大陆区的 App Store 移除。请切换至非中国大陆地区（如美国、香港、日本地区），再购买下载。
-
-::: info 注册教程
-如果你想注册自己的非大陆地区 App Store 账号，请参考 [美区 Apple ID 注册教程](/devices/us-apple-id)，也可以购买现成的账号。
-:::
-
-::: info 购买渠道
-您可以在[ rocketgirls.space](https://www.rocketgirls.space/) 购买国外区Apple ID，并购买礼品卡进行充值。\
-注意：无忧行与该平台无任何合作关系。
-:::
+App Store 可用性由 Apple 和开发者按账户地区决定。不要购买、共享账号或虚构地区资料；只使用本人合法账户和官方商店入口。Loon 第三方项目仍可能更新，但 Jego 已不再支持其当前订阅协议，本页仅保留历史教程。
 
 ## 下载 Loon
 
-打开 "App Store" 应用 > 我的头像 > 滑动到页面底部注销您的 Apple ID > 登陆非中国大陆区 Apple ID[ ](https://apps.apple.com/us/app/quantumult-x/id1443988620)>搜索 [Loon](https://apps.apple.com/us/app/loon/id1373567447) 并安装
+如 [Loon 官方 App Store 页面](https://apps.apple.com/us/app/loon/id1373567447)在你的合法账户地区可用，可从商店安装；Jego 用户应优先选择上方列出的受支持替代工具。
 
 ## 添加订阅
 
@@ -68,6 +85,6 @@ description: Loon是一个集网络代理、网络调试、网络改写等一系
 
 ## 常见问题
 
-**Q**: 配置文件已经设置完成，vpn也开启为什么无法连接外网？
+**配置完成并开启 VPN 后仍无法连接外网**
 
 A: 查看你的配置的代理服务器ip是否正确；在手机设置中查看Loon的**WLAN与蜂窝移动网**是否勾上。

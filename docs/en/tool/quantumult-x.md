@@ -1,4 +1,30 @@
 ---
+jegoSupport: supported
+tool: quantumult-x
+clientKind: null
+minimumOs: []
+architectures: []
+subscriptionFormats: []
+lifecycle: current
+recommendation: recommended
+securityStatus: needs-review
+supportedVersions: []
+replacements: []
+officialSources: [https://apps.apple.com/us/app/quantumult-x/id1443988620]
+translationKey: tool-quantumult-x
+contentType: tool-guide
+product: subscription-service
+productArea: tools
+uiSurface: null
+locale: en
+status: current
+owner: docs
+reviewStatus: needs-review
+lastVerified: 2026-07-10
+platforms: [ios, ipados, macos, tvos]
+tools: [quantumult-x]
+appliesTo: []
+sources: [https://apps.apple.com/us/app/quantumult-x/id1443988620]
 title: Quantumult X - Tools & Software
 description: Quantumult X is a powerful network tool on iOS.
 ---
@@ -9,20 +35,11 @@ Quantumult X is a powerful network tool on iOS.
 
 ## <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2Fuap2kKrwZ32jilQhXxlt_2Fquantumultx_3.png" width="26" height="26" alt="Quantumult X icon"> Get Quantumult X
 
-Currently Quantumult X has been required by the government to be removed from the mainland China App Store. Please switch to non-mainland China regions (such as US, Hong Kong, Japan regions), then purchase and download.
-
-::: info Registration Tutorial
-If you want to register your own non-mainland App Store account, see the [US Apple ID Registration Guide](/en/devices/us-apple-id), or purchase a ready-made account.
-:::
-
-::: info Purchase Channels
-You can purchase overseas Apple IDs at [rocketgirls.space](http://www.rocketgirls.space/) and purchase gift cards for recharge.\
-Note: Jego has no cooperation relationship with this platform.
-:::
+App Store availability is controlled by Apple and the developer for each account region. Do not buy or share accounts or falsify region details; use an account you legitimately own and the official store.
 
 ## Download Quantumult X
 
-Open the "App Store" app > My avatar > Scroll to the bottom of the page to log out your Apple ID > Log in to non-mainland China region Apple ID[ ](https://apps.apple.com/us/app/quantumult-x/id1443988620)>Search for [Quantumult X](https://apps.apple.com/us/app/quantumult-x/id1443988620) and install
+If the [official Quantumult X App Store page](https://apps.apple.com/us/app/quantumult-x/id1443988620) is available for your legitimate account region, purchase or install it there. Follow Apple's current payment and region requirements.
 
 ## Add Subscription
 
@@ -36,7 +53,7 @@ Jego subscription service mobile panel: <https://jego.us>
 
 </div>
 
-Open **Quantumult X**, open the App, click **the icon in the bottom right corner** <img src="https://file.olo4.com/unpanel/quantumult%20x%20setup.jpg" alt="quantumult_x_setup" width="300">
+Open **Quantumult X** and tap the main function icon in the bottom-right corner. The old off-site image is no longer reliable; the local screenshot below shows the same entry:
 
 <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FTYLTzRrBAtQzw9mgGxzK_2Fimage_3.png" alt="Quantumult X interface" width="300">
 
@@ -62,4 +79,4 @@ Long press the main function icon in the bottom right corner of the client homep
 * Colorful icon represents **Rule-based Traffic Routing**, meaning the client automatically judges whether proxy network data is needed according to the rule set in the configuration file, **recommended to switch to this mode for use**.
 * Blue icon represents **All Proxy**, meaning all traffic must go through proxy relay. This mode is only recommended when rule-based traffic routing cannot be used, otherwise it will consume too much traffic and cause some domestic sites to not be accessible normally.
 
-<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FmHZ6WRyt5hJsKl3g3SUI_2Fimage_3.png" alt="Proxy mode" width="300"> 
+<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FmHZ6WRyt5hJsKl3g3SUI_2Fimage_3.png" alt="Proxy mode" width="300">

@@ -1,4 +1,30 @@
 ---
+jegoSupport: supported
+tool: guiforsing-box
+clientKind: null
+minimumOs: []
+architectures: []
+subscriptionFormats: []
+lifecycle: current
+recommendation: advanced
+securityStatus: needs-review
+supportedVersions: []
+replacements: []
+officialSources: [https://github.com/GUI-for-Cores/GUI.for.SingBox]
+translationKey: tool-guiforsing-box
+contentType: tool-guide
+product: subscription-service
+productArea: tools
+uiSurface: null
+locale: zh-Hans
+status: current
+owner: docs
+reviewStatus: needs-review
+lastVerified: 2026-07-10
+platforms: [windows, macos, linux]
+tools: [guiforsing-box]
+appliesTo: []
+sources: [https://github.com/GUI-for-Cores/GUI.for.SingBox]
 title: GUI.for.SingBox - 工具软件
 description: GUI.for.SingBox是开源社区基于sing-box内核在Windows系统里做的图形客户端。
 ---

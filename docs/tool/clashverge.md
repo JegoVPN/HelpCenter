@@ -1,4 +1,30 @@
 ---
+jegoSupport: supported
+tool: clashverge
+clientKind: null
+minimumOs: []
+architectures: []
+subscriptionFormats: []
+lifecycle: current
+recommendation: recommended
+securityStatus: needs-review
+supportedVersions: []
+replacements: []
+officialSources: [https://github.com/clash-verge-rev/clash-verge-rev]
+translationKey: tool-clashverge
+contentType: tool-guide
+product: subscription-service
+productArea: tools
+uiSurface: null
+locale: zh-Hans
+status: current
+owner: docs
+reviewStatus: needs-review
+lastVerified: 2026-07-10
+platforms: [windows, macos, linux]
+tools: [clashverge]
+appliesTo: []
+sources: [https://github.com/clash-verge-rev/clash-verge-rev]
 title: Clash Verge Rev - 工具软件
 description: 基于Mihomo（原ClashMeta）内核的多平台代理客户端，并支持切换 Alpha 版本内核。简洁美观的用户界面，支持自定义主题颜色。
 ---

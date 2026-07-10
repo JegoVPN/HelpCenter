@@ -1,6 +1,20 @@
 ---
+translationKey: guide-vibe-coding
+contentType: how-to
+product: browser-extension
+productArea: scenario-tutorial
+uiSurface: null
+locale: zh-Hans
+status: current
+owner: docs
+reviewStatus: needs-review
+lastVerified: null
+platforms: [chrome, edge]
+tools: []
+appliesTo: []
+sources: []
 title: 如何使用无忧行进行 Vibe Coding - AI 编程工具代理配置教程
-description: 为 Cursor、Claude Code、Google Antigravity、OpenAI Codex 等 AI 编程工具配置无忧行代理，实现流畅的 AI 辅助编程体验。以 FlClash 为例的详细配置教程。
+description: 以 FlClash 为例，为 IDE 或 CLI 配置并验证代理路径，同时区分连接结果与第三方账户资格。
 ---
 
 # 如何使用无忧行进行 Vibe Coding
@@ -9,10 +23,10 @@ description: 为 Cursor、Claude Code、Google Antigravity、OpenAI Codex 等 AI
 
 <img src="/images/ClaudeCode.png" alt="Claude Code AI 编程工具界面" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); margin: 20px 0;">
 
-随着 Cursor、Claude Code、Google Antigravity、OpenAI Codex 乃至 OpenClaw 等 AI 工具的热度攀升，针对大家近期频繁咨询的配置问题，我们以 FlClash 为例（其他产品也类似）撰写了以下教程。请参照以下步骤完成设置，无论是 IDE 还是 CLI，我们都会让你 AI 生产力无忧行。
+本教程以 FlClash 为例，介绍怎样给 IDE 和命令行工具配置代理。不同开发工具对系统代理、环境变量和 TUN 的支持不同，完成后请用实际工具测试一次。
 
 ::: tip 适用范围
-本教程以 [FlClash](/tool/flclash) 为例（支持 Windows、macOS、Android、Linux 等多平台），配置思路同样适用于 Clash Verge Rev、sing-box等其他代理工具。无忧行订阅服务兼容各类代理工具，更多平台和工具的详细教程请查看[如何在电脑或手机上翻墙](/devices/pc-mobile)。
+本教程以 [FlClash](/tool/flclash) 的桌面界面为例。其他客户端的菜单会有差别，请先从[设备选择页](/devices/)确认它能使用 Jego，再打开该客户端自己的完整教程。
 
 关键在于理解虚拟网卡模式和节点分流策略。
 :::
@@ -28,8 +42,8 @@ description: 为 Cursor、Claude Code、Google Antigravity、OpenAI Codex 等 AI
 
 <img src="/images/vibecoding/1.png" alt="仪表盘页面：启用虚拟网卡和规则模式" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); margin: 16px 0; max-width: 800px; width: 100%;">
 
-::: info 为什么要用虚拟网卡？
-虚拟网卡（TUN）模式能够拦截系统所有网络流量，确保 AI 编程工具的所有请求都经过代理判断。这对于 Cursor、Claude Code 等需要频繁调用 API 的工具至关重要。
+::: info 使用虚拟网卡的原因
+虚拟网卡（TUN）模式可以处理被操作系统路由到虚拟接口的流量，常用于不遵守系统代理的桌面应用。但权限、路由例外、其他 VPN 和应用实现仍会影响结果，不能保证所有请求都经过代理。
 
 如果你只是浏览器使用，建议使用[无忧行浏览器插件](/guide/usage)。
 :::
@@ -45,14 +59,13 @@ description: 为 Cursor、Claude Code、Google Antigravity、OpenAI Codex 等 AI
 
 在代理页面（节点选择）中进行以下配置：
 
-* **❇️Manual Select** 选：<span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">香港 Ultra</span>
-* **🤖 ChatGPT Group** 选：<span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">新加坡 Pro+</span>
+* 在 **❇️Manual Select** 中选择控制面板当前提供且能连接的候选节点；
+* 如果界面仍提供 **🤖 ChatGPT Group**，可选择其中的候选节点，再用真实 API 目标验证。截图中的“香港 Ultra”“新加坡 Pro+”只是旧版示例，不保证当前仍存在或具备固定性能。
 
 <img src="/images/vibecoding/2.png" alt="代理页面：节点选择" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); margin: 16px 0; max-width: 800px; width: 100%;">
 
 ::: tip 节点选择说明
-* **香港 Ultra**：用于常规流量（如浏览网页、YouTube 等），速度快且稳定
-* **新加坡 Pro+**：专门用于 AI 相关服务（OpenAI、Anthropic、Google AI 等），针对 AI API 优化
+节点名称和分组来自当前订阅配置，可能更新。带宽、稳定性和第三方可用情况以相同网络与时间下的实际测试为准。
 :::
 
 ### 4. 启动服务
@@ -61,14 +74,14 @@ description: 为 Cursor、Claude Code、Google Antigravity、OpenAI Codex 等 AI
 
 <img src="/images/vibecoding/3.png" alt="启动服务" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); margin: 16px 0; max-width: 800px; width: 100%;">
 
-启动后请自检：确保网络检测拿到境外 IP，右上角核心状态为绿色对勾，右下角能看到启动时间、虚拟网卡已开启、出站模式为规则模式。
+启动后记录界面明确显示的核心状态、启动时间、虚拟网卡和出站模式。颜色或图标含义可能随版本变化，再打开测试页面或运行下面的命令确认连接。
 
 ### 5. 请求页面：检查分流
 
 在请求页面（或连接页面）中确认流量分流是否正确：
 
-* ✅ AI 相关域名（如 `api.openai.com`、`api.anthropic.com`）经由<span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">新加坡 Pro+</span>
-* ✅ 常规流量（如 YouTube、Google）经由<span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">香港 Ultra</span>
+* 检查 AI 相关 hostname（如 `api.openai.com`、`api.anthropic.com`）是否命中你为 AI 分组选择的当前节点；
+* 检查一个普通 hostname 是否命中预期的通用分组或直连规则。只记录 hostname，不公开查询串、令牌或请求内容。
 
 ::: warning 自定义分流
 如有自定义接管需求，可在 FlClash 中添加覆写规则（Overrides）。
@@ -94,13 +107,13 @@ description: 为 Cursor、Claude Code、Google Antigravity、OpenAI Codex 等 AI
 
 ## 验证配置
 
-在命令行（Terminal）中输入以下命令，检查是否已成功获取境外 IP：
+可以在命令行中查询本次公开出口 IP。第三方查询站会看到你的出口地址；不愿使用时跳过此步，改用客户端请求页核对路径：
 
 ```bash
 curl ip.sb
 ```
 
-如果返回的是境外 IP 地址（非中国大陆 IP），说明配置成功！
+返回的地址只能说明该命令这一次的出口，不能证明 IDE、CLI、全部域名或第三方账户也使用同一路径。
 
 ::: tip 进一步验证
 你也可以在 Cursor 或其他 AI 编程工具中尝试使用 AI 功能，如代码补全、对话等，验证是否能正常访问 AI 服务。
@@ -108,29 +121,25 @@ curl ip.sb
 
 ## 常见问题
 
-### 为什么 AI 工具连接失败？
+### AI 工具连接失败
 
 1. **检查虚拟网卡是否启用**：确保 TUN 模式已开启
-2. **检查节点选择**：确认 ChatGPT Group 选择了新加坡 Pro+ 节点
-3. **检查订阅更新**：确保订阅文件是最新的
-4. **查看请求日志**：在请求页面查看具体的连接失败原因
+2. **检查节点选择**：确认当前 AI 分组选择了一个可用候选节点
+3. **检查订阅更新**：按客户端教程手动更新一次并记录时间
+4. **查看请求日志**：只查看本次相关且已脱敏的错误行，不公开令牌或请求内容
 
-### 可以用系统代理模式吗？
+### 使用系统代理模式
 
-不推荐。系统代理模式下，某些 AI 工具的请求可能不会经过代理，导致连接失败。虚拟网卡模式能够拦截所有流量，确保稳定性。
+可以，但取决于 AI 工具是否遵守系统代理或支持代理环境变量。先用系统代理做最小测试；若应用明确绕过，再评估 TUN，并在切换后复验。两种方式都不保证稳定性。
 
-### 其他代理工具怎么配置？
+### 配置其他代理工具
 
-配置思路相同：
-
-1. 启用虚拟网卡（TUN）模式
-2. 选择规则模式
-3. 正确分配节点（AI 服务用新加坡 Pro+，常规流量用香港 Ultra）
+目标相同，但菜单和能力不一定相同：按对应工具教程确认代理入口、规则模式、节点分组和验证方法，不复制 FlClash 的按钮或旧节点名称。
 
 ## 相关链接
 
 * [FlClash 详细使用教程](/tool/flclash) - 了解 FlClash 的完整功能
-* [Clash Verge Rev 教程](/tool/clashverge) - 另一款优秀的多平台代理工具
+* [Clash Verge Rev 教程](/tool/clashverge) - 多平台代理工具教程
 * [sing-box 教程](/tool/sing-box) - 轻量级代理工具
-* [节点选择指南](/guide/node-selection) - 了解如何选择最适合的节点
+* [节点选择指南](/guide/node-selection) - 了解如何选择并验证候选节点
 * [设备配置总览](/devices/pc-mobile) - 查看所有设备的翻墙指南

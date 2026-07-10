@@ -1,23 +1,45 @@
 ---
+jegoSupport: supported
+tool: surge
+clientKind: null
+minimumOs: []
+architectures: []
+subscriptionFormats: []
+lifecycle: current
+recommendation: recommended
+securityStatus: needs-review
+supportedVersions: []
+replacements: []
+officialSources: [https://nssurge.com/, https://apps.apple.com/us/app/surge-3/id1442620678]
+translationKey: tool-surge
+contentType: tool-guide
+product: subscription-service
+productArea: tools
+uiSurface: null
+locale: en
+status: current
+owner: docs
+reviewStatus: needs-review
+lastVerified: 2026-07-10
+platforms: [macos, ios]
+tools: [surge]
+appliesTo: []
+sources: [https://nssurge.com/, https://apps.apple.com/us/app/surge-3/id1442620678]
 title: Surge - Tools & Software
-description: Surge is a powerful network proxy tool on Apple platforms, known for its stable performance, rich features and excellent user experience.
+description: Surge is an Apple-platform network tool; verify current features, platforms, price, and version from official sources and the tool status.
 ---
 
 # Surge
 
-Surge is a powerful network proxy tool on Apple platforms, known for its stable performance, rich features and excellent user experience.
+Surge is an Apple-platform network tool; verify current features, platforms, price, and version from official sources and the tool status.
 
 ## <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FoBLta0TNRbF6ARUAOFxW_2Fsurge_1.png" width="26" height="26" alt="Surge icon"> Get Surge
 
-Currently Surge has been required by the government to be removed from the mainland China App Store. Please switch to non-mainland China regions (such as US, Hong Kong, Japan regions), then purchase and download.
-
-::: info Registration Tutorial
-If you want to register your own non-mainland App Store account, see the [US Apple ID Registration Guide](/en/devices/us-apple-id), or purchase a ready-made account.
-:::
+App Store availability is controlled by Apple and the developer for each account region. Do not buy or share accounts or falsify region details; use an account you legitimately own and the official store.
 
 ## Download Surge
 
-Open the "App Store" app > My avatar > Scroll to the bottom of the page to log out your Apple ID > Log in to non-mainland China region Apple ID[ ](https://apps.apple.com/us/app/quantumult-x/id1443988620)>Search for [**Surge**](https://apps.apple.com/us/app/surge-3/id1442620678?ls=1) and install.
+If the [official Surge App Store page](https://apps.apple.com/us/app/surge-3/id1442620678?ls=1) is available for your legitimate account region, purchase or install it there.
 
 Surge's network proxy function requires Pro authorization unlock, which can be purchased through [AppStore in-app purchase](https://apps.apple.com/us/app/surge-3/id1442620678?ls=1) or visit its [official website](https://nssurge.com/) for purchase.
 
@@ -53,4 +75,4 @@ Return to the software homepage, click **Start** in the upper left corner. When 
 
 <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2Ft80CtVLqpyO2IboAxhnj_2Fimage_1.png" alt="Start connection">
 
-At this time, your device will connect to the first node in the node list by default. 
+At this time, your device will connect to the first node in the node list by default.

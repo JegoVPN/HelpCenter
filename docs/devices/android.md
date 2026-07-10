@@ -1,4 +1,18 @@
 ---
+translationKey: devices-android
+contentType: device-guide
+product: subscription-service
+productArea: device-selection
+uiSurface: null
+locale: zh-Hans
+status: current
+owner: docs
+reviewStatus: needs-review
+lastVerified: null
+platforms: [android]
+tools: []
+appliesTo: []
+sources: []
 title: 安卓手机怎么翻墙 - 设备支持
 description: Android/安卓是一个基于Linux核心与其他开源软件的开放源代码的移动操作系统，由Google成立的开放手持设备联盟持续领导与开发。
 ---
@@ -7,7 +21,7 @@ description: Android/安卓是一个基于Linux核心与其他开源软件的开
 
 Android/安卓是一个基于Linux核心与其他开源软件的开放源代码的移动操作系统，由Google成立的开放手持设备联盟持续领导与开发。
 
-无忧行的订阅节点服务（大陆用户通常称之为"机场"）与Android系统上的众多网络代理工具程序（大陆用户通常称之为"梯子"）兼容。只需简单学习，就能轻松让电脑和手机上的所有应用程序都能翻墙，随时畅享全球无限制网络资源。
+无忧行会员可以把订阅节点添加到 Android 代理客户端中，让手机里的其他应用也能使用代理。下面先选一个当前支持的工具，再跟着完整教程安装和导入订阅。
 
 <div class="tip custom-block" style="padding-top: 8px">
 
@@ -15,9 +29,15 @@ Android/安卓是一个基于Linux核心与其他开源软件的开放源代码�
 
 </div>
 
+## 当前工具状态
+
+新用户优先选择同时标为“适合大多数用户”和“能使用 Jego：可以”的客户端，再点进完整教程。
+
+<ToolCatalog locale="zh" platform="android" />
+
 ## <img src="/images/android_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F7Hh3XGbbAH0jtCKDKIF6_2Fandroid_1.svg" width="38" height="28" alt="Android图标"> **Android 设备上能用的代理工具**
 
-### 推荐使用下列软件
+### 既有工具说明与教程入口
 
 <img src="/images/android_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FX6LBfzRlMdWyQVvPC9eg_2Fimage_2.png" width="26" height="26" alt="sing-box图标"> [sing-box for Android](/tool/sing-boxforandroid)
 
@@ -33,11 +53,11 @@ Mihomo（原ClashMeta）官方出品的Android客户端，开源免费无广告�
 
 ---
 
-#### 下列软件能用但不推荐
+#### 历史或不推荐工具教程
 
 <img src="/images/android_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FtXufQKQ8l3yWMHiAonjn_2Fimage_5.png" width="26" height="26" alt="v2rayNG图标"> [v2rayNG](/tool/v2rayng)
 
-v2rayNG 是一个基于 v2ray 内核的 Android 应用，适用于安卓手机及支持部分基于安卓TV系统的电视或者电视盒子。
+v2rayNG 是一个基于 v2ray 内核的 Android 应用，适用于安卓手机及部分 Android TV 设备；Jego 已不再支持该客户端，现有用户应按工具页迁移到受支持的替代项。
 
 <img src="/images/android_surfboard_6.png" width="26" height="26" alt="Surfboard图标"> [Surfboard](/tool/surfboard)
 
@@ -49,4 +69,4 @@ Clash 在 Android系统上的图形用户界面，于2023年11月3日删库并�
 
 <img src="/images/android_oneclick_8.png" width="26" height="26" alt="OneClick图标"> [OneClick](/tool/oneclick)
 
-OneClick是一款免费的支持主流加密协议的上网工具。
+OneClick 的第三方项目可能仍在维护，但 Jego 已不再支持该客户端；本入口仅保留历史教程，现有用户应按工具页迁移。

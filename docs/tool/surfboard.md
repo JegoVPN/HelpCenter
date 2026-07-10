@@ -1,4 +1,30 @@
 ---
+jegoSupport: supported
+tool: surfboard
+clientKind: null
+minimumOs: []
+architectures: []
+subscriptionFormats: []
+lifecycle: current
+recommendation: not-recommended
+securityStatus: needs-review
+supportedVersions: []
+replacements: []
+officialSources: [https://github.com/getsurfboard/surfboard]
+translationKey: tool-surfboard
+contentType: tool-guide
+product: subscription-service
+productArea: tools
+uiSurface: null
+locale: zh-Hans
+status: current
+owner: docs
+reviewStatus: needs-review
+lastVerified: 2026-07-10
+platforms: [android]
+tools: [surfboard]
+appliesTo: []
+sources: [https://github.com/getsurfboard/surfboard]
 title: Surfboard - 工具软件
 description: Surfboard 是一款运行在 Android 系统上的网络代理工具。
 ---
@@ -9,9 +35,10 @@ Surfboard 是一款运行在 Android 系统上的网络代理工具。
 
 ## <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FIywLDSGlP6GDDb2QtWh5_2Fsurfboard_3.png" width="26" height="26" alt="Surfboard图标"> 获取Surfboard
 
-1. Surfboard官方电报群：[https://t.me/surfboardnews](https://t.me/surfboardnews)
-2. APKPure: [https://apkpure.com/surfboard/com.getsurfboard](https://apkpure.com/surfboard/com.getsurfboard)
-3. Github release: [https://github.com/getsurfboard/surfboard/releases/latest](https://github.com/getsurfboard/surfboard/releases/latest)
+1. 官方代码仓库：[https://github.com/getsurfboard/surfboard](https://github.com/getsurfboard/surfboard)
+2. 官方 GitHub Releases：[https://github.com/getsurfboard/surfboard/releases/latest](https://github.com/getsurfboard/surfboard/releases/latest)
+
+不要从 APK 聚合站或群聊转发链接下载安装包；下载前确认仓库所有者与上方官方来源一致。
 
 ## 添加订阅
 
@@ -25,7 +52,7 @@ Surfboard 是一款运行在 Android 系统上的网络代理工具。
 
 </div>
 
-# Surfboard 使用教程
+## Surfboard 使用教程
 
 ## 配置订阅
 

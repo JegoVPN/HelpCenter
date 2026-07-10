@@ -1,4 +1,30 @@
 ---
+jegoSupport: unsupported
+tool: clash-for-android
+clientKind: null
+minimumOs: []
+architectures: []
+subscriptionFormats: []
+lifecycle: discontinued
+recommendation: not-recommended
+securityStatus: blocked
+supportedVersions: []
+replacements: [flclash, sing-boxforandroid]
+officialSources: []
+translationKey: tool-clash-for-android
+contentType: tool-guide
+product: subscription-service
+productArea: tools
+uiSurface: null
+locale: zh-Hans
+status: current
+owner: docs
+reviewStatus: needs-review
+lastVerified: 2026-07-10
+platforms: [android]
+tools: [clash-for-android]
+appliesTo: []
+sources: []
 title: Clash for Android - 工具软件
 description: A Graphical user interface of clash for Android
 ---
@@ -21,11 +47,9 @@ Clash for Android已于2023年11月3日下架。
 可以移步 [Mihomo系列软件](/tool/mihomo) 页面获取最新软件。
 :::
 
-## <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FOSsqZTRrboImnICfYPE0_2Fclash_3.png" width="26" height="26" alt="Clash图标"> ~~获取 Clash for Android~~
+## <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FOSsqZTRrboImnICfYPE0_2Fclash_3.png" width="26" height="26" alt="Clash图标"> 历史获取说明
 
-1. ~~Google Play:~~ [~~https://play.google.com/store/apps/details?id=com.github.kr328.clash~~](https://play.google.com/store/apps/details?id=com.github.kr328.clash)
-2. APKPure: [https://apkpure.com/clash-for-android/com.github.kr328.clash](https://apkpure.com/clash-for-android/com.github.kr328.clash)
-3. ~~Github release:~~ [~~https://github.com/Kr328/ClashForAndroid/releases~~](https://github.com/Kr328/ClashForAndroid/releases)
+原 Google Play 与 GitHub 项目入口现已不可用，第三方 APK 聚合站也不是可核验的安全来源。本页不再提供安装包入口；请改用上方受维护的替代工具。以下界面与订阅步骤仅为迁移旧设备时识别配置所保留。
 
 <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FL71PvhWJcSBBz3HTeoia_2Fimage_1.png" alt="Clash for Android界面">
 

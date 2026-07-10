@@ -1,4 +1,30 @@
 ---
+jegoSupport: supported
+tool: sing-boxforandroid
+clientKind: null
+minimumOs: []
+architectures: []
+subscriptionFormats: []
+lifecycle: current
+recommendation: recommended
+securityStatus: needs-review
+supportedVersions: []
+replacements: []
+officialSources: [https://github.com/SagerNet/sing-box, https://play.google.com/store/apps/details?id=io.nekohasekai.sfa]
+translationKey: tool-sing-boxforandroid
+contentType: tool-guide
+product: subscription-service
+productArea: tools
+uiSurface: null
+locale: zh-Hans
+status: current
+owner: docs
+reviewStatus: needs-review
+lastVerified: 2026-07-10
+platforms: [android, harmonyos]
+tools: [sing-boxforandroid]
+appliesTo: []
+sources: [https://github.com/SagerNet/sing-box, https://play.google.com/store/apps/details?id=io.nekohasekai.sfa]
 title: sing-box for Android - 工具软件
 description: sing-box for Android 简称 SFA，SFA是sing-box官方推出的图形界面客户端，开源免费无广告。
 ---
@@ -60,8 +86,8 @@ sing-box for Android 简称 SFA，SFA是sing-box官方推出的图形界面客�
 #### Overview 标签 - 选择上网模式
 提醒：第一次使用可能三个模式都没选中，建议点一下`Rule`。
 
-`Rule` - 智能分流模式，根据规则自动选择直连或代理  
-`Direct` - 直连模式，所有流量都不走代理  
+`Rule` - 智能分流模式，根据规则自动选择直连或代理
+`Direct` - 直连模式，所有流量都不走代理
 `Global` - 全局代理模式，所有流量都走代理
 
 #### Groups 标签 ：更换节点服务器
@@ -73,11 +99,11 @@ sing-box for Android 简称 SFA，SFA是sing-box官方推出的图形界面客�
 
 ## sing-box 常见问题
 
-### 🚫 无法访问境外网站但可访问境内网站？
+### 仅境内网站可以访问时
 
 **🟡 情况一：刚启动时**
 
-刚启动 sing-box 时，程序在处理境外域名解析前，会先对所有可用节点进行一次 URL 测速，目的是选出最快的节点来完成后续的 DNS 解析。因此，在测速完成前，可能暂时无法访问境外网站。
+部分配置在启动时会执行 URL 测试或下载规则集，期间可能暂时没有可用结果。是否测试、测试对象和 DNS 行为取决于实际配置；请根据状态文字和日志排查，不把它概括为“选择最快节点”。
 
 > ✅ 解决方法：如果不想等待测速过程，可以手动选择一个可用节点，这样就能立即访问境外网站。
 

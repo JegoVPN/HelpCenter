@@ -1,6 +1,20 @@
 ---
+translationKey: guide-registration
+contentType: how-to
+product: browser-extension
+productArea: browser-extension
+uiSurface: null
+locale: zh-Hans
+status: current
+owner: docs
+reviewStatus: needs-review
+lastVerified: null
+platforms: [chrome, edge]
+tools: []
+appliesTo: []
+sources: []
 title: 如何注册 - 使用指南
-description: 在你使用无忧行之前，您必须要了解的无忧行账户如何注册、登录，以及如何找回密码。
+description: 按步骤注册和登录无忧行账号，并在需要时找回密码。
 ---
 
 # 如何注册

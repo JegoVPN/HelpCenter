@@ -1,80 +1,95 @@
 ---
+translationKey: membership-payment
+contentType: billing
+product: both
+productArea: account-billing
+uiSurface: control-panel
+locale: en
+status: current
+owner: docs
+reviewStatus: needs-review
+lastVerified: null
+platforms: []
+tools: []
+appliesTo: []
+sources: []
 title: How to Pay - Membership Service
-description: Before you pay, you must understand the payment methods supported by Jego.
+description: Follow Jego payment steps and learn how to check checkout methods, order status, invoices, and receipts.
 ---
 
 # How to Pay
 
 ::: info Currency Note
-Our product pricing is based on <span style="color:green;">`USD`</span>, but depending on different payment methods, there may be various currencies and exchange rate changes.
+Checkout displays the current product currency, actual charge, and available payment methods. Exchange rates, fees, and channels can vary by region, issuer, and payment provider; verify the page before confirming payment.
 :::
 
 ## Payment Path:
 
 Open the **Jego** extension, click **Control Panel**, then click **Upgrade Membership** in the left navigation bar, select the membership you want to purchase to start payment.
 
+Before paying, check these items in order:
+
+1. Make sure you are signed in to the Jego account that should receive the membership;
+2. Select a plan and check its term, currency, and total;
+3. Choose one of the payment methods actually shown at checkout;
+4. After the payment page opens, check the merchant, amount, and currency once more before confirming.
+
+After payment, return to the Control Panel and check the membership status and expiry date. If the page has not updated yet, refresh it and sign in again, then wait for the order status before taking another step.
+
 ## Payment Channels:
+
+Jego shows the payment methods currently available for your account and region. The entries below are methods you may see at checkout; use a method only when it appears on your checkout page.
 
 ### <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F24s06IHgl9yYTX5MypkX_2Fimage_3.png" width="104" height="33" alt="UnionPay icon"> UnionPay
 
-UnionPay settlement currency unit is <span style="color:green;">`SGD Singapore Dollar or USD Dollar`</span>.
+If checkout shows UnionPay, follow the redirect to its checkout. Supported cards, charge currency, exchange rate, and fees are determined by that page and the card issuer.
 
-UnionPay is a very popular payment method in mainland China, supporting almost all bank cards issued in mainland China. When you choose UnionPay payment, the page will redirect to UnionPay's official payment interface, then follow the prompts to complete payment.
-
-You can use any currency in your bank card for payment, exchange rate issues will be automatically handled by China UnionPay.
+A card issued in mainland China may be declined if online or cross-border payments are not enabled. If that happens, call the official number on the back of the card and wait for the transaction status before continuing.
 
 ### <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F6dqhoWXM9ypD6HfwNX3X_2Fimage_1.png" width="104" height="33" alt="Alipay icon"> Alipay
 
-Alipay settlement currency unit is <span style="color:green;">`SGD Singapore Dollar or USD Dollar`</span>.
+If checkout shows Alipay, verify the paying account, currency, and amount on its checkout before completing payment. Current availability is controlled by the provider.
 
-Alipay is a very popular payment method in mainland China. When you choose Alipay payment, the page will redirect to Alipay's checkout interface, then follow the prompts to complete payment.
-
-You can use any currency in your Alipay for payment, exchange rate issues will be automatically handled by Alipay.
+Wait for Alipay to return you to Jego after payment, or go back to the Control Panel and check **Payment History**.
 
 ### <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FP1bfW4Ha7dtRtCBM1TsO_2Fimage_2.png" width="104" height="33" alt="WeChat Pay icon"> WeChat Pay
 
-WeChat Pay settlement currency unit is <span style="color:green;">`SGD Singapore Dollar or USD Dollar`</span>.
+If checkout shows WeChat Pay, verify the paying account, currency, and amount before completing payment. Current availability is controlled by the provider.
 
-WeChat Pay is a very popular payment method in mainland China. When you choose WeChat Pay payment, the page redirects to the payment page, where you can follow the prompts to complete payment.
-
-You can use any currency in your WeChat Pay for payment, exchange rate issues will be automatically handled by WeChat Pay.
+Before confirming a QR-code payment, check the amount and payment page, and keep the QR code on the device used for this payment.
 
 ### <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FNYpn2vq3mOCdLVmJFJxU_2Fimage_3.png" width="104" height="33" alt="Cryptocurrency icon"> Cryptocurrency Payment
 
-Cryptocurrency payment supports mainstream currencies such as USDT, USDC, ETH, BTC, etc., but does not support users with IP addresses from mainland China.
+Use cryptocurrency only if checkout currently offers it. Verify the asset, network, address, amount, and confirmation requirement; blockchain transfers are generally hard to reverse. Use only the address generated by the current checkout.
+
+The same asset can exist on different networks. Check both the asset name and network name, and use only the payment information generated for the current checkout.
 
 ### <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F5872Aul15csYNh36x2ea_2Fimage_1.png" width="104" height="33" alt="PayPal icon"> PayPal
 
-PayPal settlement currency unit is <span style="color:green;">`SGD Singapore Dollar or USD Dollar`</span>.
+If checkout shows PayPal, verify the account, currency, amount, and offered funding sources on PayPal's checkout. Guest-card and specific-card support are determined by the current PayPal page.
 
-PayPal, as a more convenient and secure shopping payment method, is trusted by over 400 million users worldwide. When you choose PayPal payment, the page will redirect to PayPal's payment page, you can use your PayPal account and password to easily checkout; if you don't have a PayPal account, you can also directly use UnionPay debit cards or credit cards for direct payment.
-
-Exchange rate issues will be automatically handled by your bank card issuer.
+You can use a funding source saved in your PayPal account. If checkout offers card payment without a PayPal balance, follow the instructions shown there.
 
 ### <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F6ALLasfYTQHuuqkOWP85_2Fimage_2.png" width="104" height="33" alt="Credit card icon"> Credit Card
 
-Credit cards use Stripe for settlement, currency unit is <span style="color:green;">`SGD Singapore Dollar or USD Dollar`</span>.
+If checkout shows a card or digital-wallet option, follow its secure checkout. Supported card networks, wallets, currency, fees, and conversion are determined by the current checkout and issuer.
 
-For credit cards, we cooperate with Stripe, the world's most popular payment processor, which accepts all mainstream debit cards and credit cards from global customers. When you choose credit card payment, the page will redirect to Stripe's payment page, where you can easily use your credit card to checkout; you can also choose popular regional payment methods like Link, Apple Pay and Google Pay.
-
-Exchange rate issues will be automatically handled by your bank card issuer.
+Enter card details only on the payment provider's secure checkout. Keep the full card number, security code, SMS verification code, and Apple Pay / Google Pay verification information on your own payment device; support only needs redacted order details.
 
 ## Common Questions
 
-### Payment rejected by card issuer?
+### Payment rejected by the card issuer
 
-If you are a user from mainland China and use UnionPay, Alipay or WeChat Pay bound to bank cards issued by Chinese banks for payment, there is a certain probability of payment failure, because some bank cards issued by Chinese banks do not have cross-border payment functions enabled by default.
+First check the order amount, currency, billing details, and verification step, then wait for the current transaction status. The issuer or payment provider determines the decline reason. Use the official contact on the back of the card to ask about online, cross-border, or risk-control status.
 
-At this time, you need to call UnionPay customer service center 95516 or your card issuer's customer service center to confirm whether your card has overseas transaction services enabled.
+### Invoices and receipts
 
-For cards with overseas transactions enabled and bearing the UnionPay logo, including debit cards, credit cards, and quasi-credit cards, all can be used.
+First open **Jego Control Panel → Payment History** and check whether the order has an invoice or receipt download. If it is for reimbursement, ask your organization's finance team which format and legal name they require.
 
-### Can I get an invoice for membership purchase?
+If the required document is absent, follow the [support guide](/en/guide/support) with the order time and a redacted order identifier. Support can then check what documents are available for that order.
 
-Jego is an overseas company and has not established a main company in mainland China, so we cannot issue mainland China invoices.
+Payment History usually shows recent successful orders. If you need an older order, send support a redacted version of the account email and an approximate payment date. Also check your spam folder if you expected a payment email.
 
-For membership purchases, we can provide formal Invoices issued by overseas main companies. After each payment, the system will automatically send the Invoice to your registered email and provide a PDF version for download. If you need to reimburse the Invoice, please consult your finance department first.
+### Payment status is temporarily unclear
 
-You can also view your last 3 successful orders in **Jego Dashboard** → **Payment History**, and click to view, print, or download detailed Invoices.
-
-If you don't receive the relevant email, please check your email, including the spam folder. If you need further assistance, please contact our customer support team. 
+If checkout closes, times out, or returns to the Control Panel without a clear result, first check the bank or payment provider for a completed or pending transaction, then refresh **Payment History**. Wait for the current order status before continuing. Keep SMS verification codes, full card details, wallet seed phrases, and private keys on your own payment device. For a duplicate charge or amount mismatch, retain a redacted order page, transaction time, currency, and provider reference, then contact both official Jego support and the issuer as appropriate. A pending authorization is not necessarily a completed membership purchase, so wait for the provider's final state before trying again.

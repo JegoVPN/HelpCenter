@@ -1,4 +1,18 @@
 ---
+translationKey: guide-encrypted-dns
+contentType: reference
+product: general
+productArea: network-reference
+uiSurface: null
+locale: en
+status: current
+owner: docs
+reviewStatus: needs-review
+lastVerified: null
+platforms: [chrome, edge]
+tools: []
+appliesTo: []
+sources: []
 title: Encrypted DNS (DoH / DoT) — Complete Guide - User Guide
 description: A plain-language guide to encrypted DNS — what DNS is, why plain DNS is risky, the difference between DoH and DoT, how to turn it on per platform, and what to use in mainland China.
 ---
@@ -7,7 +21,7 @@ description: A plain-language guide to encrypted DNS — what DNS is, why plain 
 
 A surprising number of "the site won't open / the page dies halfway / I'm on the proxy but it still fails" problems start at the **DNS** step. This guide explains, in plain language, what DNS is, why plain DNS is risky, how encrypted DNS (DoH / DoT) helps, and how to turn it on across your devices.
 
-## 1. What is DNS, and why is plain DNS risky?
+## 1. DNS and plain-text queries
 
 DNS (the Domain Name System) translates a **domain name** you type (like `google.com`) into the **IP address** a server is reachable at (like `142.250.x.x`). Every site you open starts with a DNS lookup.
 
@@ -18,7 +32,7 @@ The catch: **traditional plain DNS is not encrypted at all.** That lookup travel
 
 Encrypted DNS exists to fix both the "seen" and the "tampered with" problems.
 
-## 2. What are DoH and DoT?
+## 2. DoH and DoT
 
 Both are standard protocols that **encrypt** the DNS lookup; they differ only in which channel they use:
 
@@ -42,7 +56,7 @@ Jego is a **browser proxy** — it only carries traffic inside the browser and *
 
 If you're in mainland China, **read this section first** — the overseas resolvers below won't work as your DNS here.
 
-::: warning Foreign resolvers don't work here
+::: warning Resolver availability in mainland China
 Foreign public resolvers (e.g. Cloudflare 1.1.1.1, Google 8.8.8.8, Quad9, AdGuard, Mullvad) are **blocked or DNS-poisoned in mainland China** — the GFW forges plain-DNS answers and SNI-blocks foreign DoH/DoT — so they **will not work as your DNS** here.
 :::
 
@@ -62,15 +76,15 @@ What to do instead: use a **domestic resolver** — these actually work in mainl
 
 ### Top global picks (use any one)
 
-These are global anycast resolvers that auto-route to the nearest point of presence. They work well on every continent **except mainland China**, and are the default recommendation:
+These public endpoints are configuration references. Reachability, filtering, logging, and retention policies can change; verify each provider's current official documentation. The table makes no speed, privacy, or availability guarantee:
 
 | Provider | DoH URL | DoT hostname | Plain IP | Notes |
 | --- | --- | --- | --- | --- |
-| **Cloudflare** | `https://cloudflare-dns.com/dns-query` | `one.one.one.one` | `1.1.1.1` `1.0.0.1` | Fastest · no filtering · query logs purged within ~25h |
-| **Google** | `https://dns.google/dns-query` | `dns.google` | `8.8.8.8` `8.8.4.4` | Most reliable · no content filtering |
-| **Quad9** | `https://dns.quad9.net/dns-query` | `dns.quad9.net` | `9.9.9.9` `149.112.112.112` | Blocks malicious domains · Switzerland · no PII logging |
-| **AdGuard** | `https://dns.adguard-dns.com/dns-query` | `dns.adguard-dns.com` | `94.140.14.14` `94.140.15.15` | Blocks ads & trackers · Cyprus · no IP logging |
-| **Mullvad** | `https://dns.mullvad.net/dns-query` | `dns.mullvad.net` | `194.242.2.2` | Open-source · Sweden · no logs · encrypted-only (no plain DNS) |
+| **Cloudflare** | `https://cloudflare-dns.com/dns-query` | `one.one.one.one` | `1.1.1.1` `1.0.0.1` | Check the provider's current feature and privacy policy |
+| **Google** | `https://dns.google/dns-query` | `dns.google` | `8.8.8.8` `8.8.4.4` | Check the provider's current feature and privacy policy |
+| **Quad9** | `https://dns.quad9.net/dns-query` | `dns.quad9.net` | `9.9.9.9` `149.112.112.112` | Optional malicious-domain protection; verify current policy |
+| **AdGuard** | `https://dns.adguard-dns.com/dns-query` | `dns.adguard-dns.com` | `94.140.14.14` `94.140.15.15` | Optional filtering; verify current policy |
+| **Mullvad** | `https://dns.mullvad.net/dns-query` | `dns.mullvad.net` | `194.242.2.2` | Encrypted endpoint; verify current policy |
 
 ::: details More global resolvers (click to expand)
 | Provider | DoH URL | DoT hostname | Plain IP | Notes |
@@ -78,7 +92,7 @@ These are global anycast resolvers that auto-route to the nearest point of prese
 | **NextDNS** | `https://dns.nextdns.io` | — | `45.90.28.0` `45.90.30.0` | Configurable per-account profiles · US/EU/UK/CH data residency · DoT needs a profile ID |
 | **ControlD (free, unfiltered)** | `https://freedns.controld.com/p0` | `p0.freedns.controld.com` | `76.76.2.0` `76.76.10.0` | Canada · variants p1/p2/p3 add malware/ad/social blocking |
 | **OpenDNS (Cisco)** | `https://doh.opendns.com/dns-query` | `dns.opendns.com` | `208.67.222.222` `208.67.220.220` | Blocks malware/phishing · US |
-| **CleanBrowsing (security)** | `https://doh.cleanbrowsing.org/doh/security-filter/` | `security-filter-dns.cleanbrowsing.org` | `185.228.168.9` `185.228.169.9` | Blocks malware/phishing · US · free tier keeps no query logs |
+| **CleanBrowsing (security)** | `https://doh.cleanbrowsing.org/doh/security-filter/` | `security-filter-dns.cleanbrowsing.org` | `185.228.168.9` `185.228.169.9` | Security-filtering endpoint; verify current policy |
 :::
 
 ::: details Region-specific resolvers (click to expand)
@@ -88,9 +102,9 @@ In addition to the global anycast set above, these add local jurisdiction / data
 
 | Provider | DoH URL | DoT hostname | Plain IP | Notes |
 | --- | --- | --- | --- | --- |
-| **DNS4EU** | `https://unfiltered.joindns4.eu/dns-query` | `unfiltered.joindns4.eu` | `86.54.11.100` `86.54.11.200` | EU-official · GDPR · 24h log deletion · protective.* variant blocks malware (86.54.11.1) |
-| **DNS.SB** | `https://doh.sb/dns-query` | `dot.sb` | `185.222.222.222` `45.11.45.11` | Germany (xTom) · no logs · 30+ PoPs incl. strong Asia coverage |
-| **Digitale Gesellschaft** | `https://dns.digitale-gesellschaft.ch/dns-query` | `dns.digitale-gesellschaft.ch` | `185.95.218.42` `185.95.218.43` | Switzerland non-profit · no logs · encrypted-only |
+| **DNS4EU** | `https://unfiltered.joindns4.eu/dns-query` | `unfiltered.joindns4.eu` | `86.54.11.100` `86.54.11.200` | Check official documentation for endpoint variants and policy |
+| **DNS.SB** | `https://doh.sb/dns-query` | `dot.sb` | `185.222.222.222` `45.11.45.11` | Check official documentation for coverage and privacy policy |
+| **Digitale Gesellschaft** | `https://dns.digitale-gesellschaft.ch/dns-query` | `dns.digitale-gesellschaft.ch` | `185.95.218.42` `185.95.218.43` | Encrypted endpoint; verify current policy |
 
 **Russia / CIS**
 
@@ -102,14 +116,14 @@ In addition to the global anycast set above, these add local jurisdiction / data
 
 | Provider | DoH URL | DoT hostname | Plain IP | Notes |
 | --- | --- | --- | --- | --- |
-| **IIJ (Japan)** | `https://public.dns.iij.jp/dns-query` | `public.dns.iij.jp` | — | Japan · encrypted-only · query data deleted within 24h |
-| **Tiarap** | `https://doh.tiar.app/dns-query` | `dot.tiar.app` | `174.138.21.128` `188.166.206.224` | Singapore · no logs · blocks ads & malware |
+| **IIJ (Japan)** | `https://public.dns.iij.jp/dns-query` | `public.dns.iij.jp` | — | Encrypted endpoint; verify current policy |
+| **Tiarap** | `https://doh.tiar.app/dns-query` | `dot.tiar.app` | `174.138.21.128` `188.166.206.224` | Optional filtering; verify current policy |
 
 **Americas / Oceania**
 
 | Provider | DoH URL | DoT hostname | Plain IP | Notes |
 | --- | --- | --- | --- | --- |
-| **CIRA Canadian Shield** | `https://private.canadianshield.cira.ca/dns-query` | `private.canadianshield.cira.ca` | `149.112.121.10` `149.112.122.10` | Canada · PII deleted within 24h · Protected/Family variants add filtering |
+| **CIRA Canadian Shield** | `https://private.canadianshield.cira.ca/dns-query` | `private.canadianshield.cira.ca` | `149.112.121.10` `149.112.122.10` | Endpoint variants and privacy policy may change; verify officially |
 :::
 
 ## 6. How to turn on encrypted DNS (recommended combo)
@@ -164,4 +178,4 @@ If you can't set up DoH/DoT for now, **at least set a plain public-resolver IP a
 
 ---
 
-> Still can't open a site? Go back to the [FAQ](/en/guide/faq) and work through the "Network environment + Browser environment" checklist, or [contact support](/en/guide/support).
+> If the connection has not recovered, return to the [FAQ](/en/guide/faq) and follow the “Network environment + Browser environment” checklist, or [contact support](/en/guide/support).

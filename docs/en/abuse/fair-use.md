@@ -1,26 +1,42 @@
 ---
+translationKey: abuse-fair-use
+contentType: policy
+product: general
+productArea: policies
+uiSurface: null
+locale: en
+status: current
+owner: docs
+reviewStatus: verified
+lastVerified: 2026-07-10
+platforms: []
+tools: []
+appliesTo: []
+sources: ["human-confirmed-2026-07-10"]
 title: Fair Use - Terms of Use
 description: Cherish life, cherish Jego...
 ---
 
 # Fair Use
 
-## Multi-person Sharing
+Jego wants every user to have a stable and safe experience on shared network resources. Please read the rules below.
 
-One account can be used simultaneously on up to 6 of your own devices.
+## Six devices per account
 
-But to ensure service/route quality, we do not allow multiple people (more than 6 devices) to share one account, as this will cause us to make incorrect judgments about bandwidth and architecture. To prevent incorrect judgments, we therefore prohibit multiple people from sharing one account.
+One account can be used simultaneously on up to **6 devices you own**.
 
-Once we discover long-term multi-person sharing of one account, we will <span style="color:red;">permanently ban</span> that account.
+Do not share the account among multiple people or use it on more than 6 devices at the same time. Long-term sharing affects route and capacity planning. An account found doing this will be <span style="color:red;">permanently banned</span>.
 
-## Fair Use
+Protect your account, password, and subscription URL. Do not publish, resell, or give them to an untrusted person.
 
-Please do not use Jego for BT, magnet links, Xunlei and other P2P software downloads <span style="color:red;">(permanent ban once discovered);</span>
+## Fair use
 
-Please do not use Jego to **watch high-definition videos for long periods** or download large software;
+Do not use Jego for BT, magnet-link, Xunlei, or other P2P downloads. An account found doing so will be <span style="color:red;">permanently banned</span>.
 
-Within one month, if you exceed three times of long periods (long period defined as greater than 60 minutes) occupying up to 100 M per second data usage, you can still maintain unlimited data traffic usage, but traffic speed will slow down from maximum 100 M per second to maximum 1 M per second (applies to upload and download).
+Please also avoid watching high-definition video or downloading large software continuously for long periods, because sustained heavy use affects other users.
 
-## Abuse Behavior
+Within one month, if high-load usage happens more than 3 times, each lasting longer than 60 minutes and reaching 100 M/s, the account can continue using data, but maximum upload and download speed will be reduced from 100 M/s to 1 M/s.
 
-Please do not use Jego's provided services to attack others' devices, scam others' property, infringe on others' property rights, and other illegal activities with third-party victims. 
+## Prohibited abuse
+
+Do not use Jego to attack devices or networks, distribute malware, commit fraud, infringe another person's rights, or carry out other illegal activity that harms a third party.

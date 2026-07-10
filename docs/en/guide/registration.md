@@ -1,6 +1,20 @@
 ---
+translationKey: guide-registration
+contentType: how-to
+product: browser-extension
+productArea: browser-extension
+uiSurface: null
+locale: en
+status: current
+owner: docs
+reviewStatus: needs-review
+lastVerified: null
+platforms: [chrome, edge]
+tools: []
+appliesTo: []
+sources: []
 title: How to Register - User Guide
-description: Before using Jego, you must understand how to register, log in to Jego accounts, and how to recover passwords.
+description: Register and sign in to a Jego account, with password recovery steps when needed.
 ---
 
 # How to Register

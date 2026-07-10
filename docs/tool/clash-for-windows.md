@@ -1,11 +1,37 @@
 ---
+jegoSupport: unsupported
+tool: clash-for-windows
+clientKind: null
+minimumOs: []
+architectures: []
+subscriptionFormats: []
+lifecycle: discontinued
+recommendation: not-recommended
+securityStatus: blocked
+supportedVersions: []
+replacements: [flclash, clashverge]
+officialSources: []
+translationKey: tool-clash-for-windows
+contentType: tool-guide
+product: subscription-service
+productArea: tools
+uiSurface: null
+locale: zh-Hans
+status: current
+owner: docs
+reviewStatus: needs-review
+lastVerified: 2026-07-10
+platforms: [windows, macos]
+tools: [clash-for-windows]
+appliesTo: []
+sources: []
 title: Clash for Windows - 工具软件
 description: 本文是Clash for Windows客户端的教程，Clash for Windows已于2023年11月2日下架，但当时的最后一个版本还能用
 ---
 
 # Clash for Windows
 
-本文是Clash for Windows客户端的教程，Clash for Windows已于2023年11月2日下架，但当时的最后一个版本还能用。
+本文保留 Clash for Windows 客户端的历史教程。该项目已经下架且不再获得安全更新，不应把旧版本“仍能启动”理解为适合继续使用。
 
 ::: danger 不推荐使用
 该软件已经好几年不更新了，无忧行不推荐大家继续使用。
@@ -21,13 +47,9 @@ Clash for Windows已于2023年11月2日下架。
 可以移步 [Mihomo系列软件](/tool/mihomo) 页面获取最新软件。
 :::
 
-## <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F4VjXObRb6A8YcNiBGA9e_2Fclash_2.png" width="26" height="26" alt="Clash图标"> 获取Clash for Windows
+## <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F4VjXObRb6A8YcNiBGA9e_2Fclash_2.png" width="26" height="26" alt="Clash图标"> 历史安装说明
 
-可从这里下载最后版本的备份文件：[https://archive.org/download/clash_for_windows_pkg](https://archive.org/download/clash_for_windows_pkg)
-
-WindowsOS请下载<span style="color:blue;">`Clash.for.Windows-[版本号]-win.7z`</span>压缩包，并使用[7-zip](https://www.7-zip.org/)进行解压缩。
-
-macOS请下载<span style="color:blue;">`Clash.for.Windows-[版本号]-mac.7z`</span>压缩包，并使用[7-zip](https://www.7-zip.org/)进行解压缩。
+旧归档站不是官方、受维护或可验证完整性的分发入口，本页不再提供下载链接。请安装上方列出的受维护替代工具；以下步骤与截图仅用于从旧设备迁移订阅和识别设置。不要从搜索结果下载名称相似的 `.7z`、`.exe` 或 `.dmg` 文件。
 
 ## 添加 Clash 配置订阅
 
@@ -133,7 +155,7 @@ Clash 共有三种工作模式：
 
 ### **首次运行 Clash 的注意事项**
 
-1. 建议 ⛔ 退出 xx 卫士、xx 管家、防火墙等安全类软件，避免阻止软件正常运行。
+1. 不要关闭系统防火墙或整体退出安全软件。若启动被拦截，只核对 Clash 可执行文件的来源和完整性，并为该程序设置最小范围例外；复测后删除不再需要的例外。
 2. 必须解压缩后再运行，不能直接在压缩包里运行。
 3. 运行后屏幕底部任務欄將显示 Clash 图标「貓咪」。
    * 如果您看不到 Clash 图标，它可能已隐藏，点击  可显示隐藏的图标。
@@ -142,9 +164,9 @@ Clash 共有三种工作模式：
 ### 获取订阅地址
 
 1. 务必 🚫 **禁用网页翻译功能**，否则获取的订阅地址有可能出错。
-2. 在**无忧行 - 控制面板**里点击左侧导航栏**手机订阅** ，找到**Clash for Windows**订阅地址并点击**复制**。
+2. 在**无忧行 - 控制面板**里点击左侧导航栏**订阅节点**，找到 **Clash for Windows** 订阅地址并点击**复制**。
 
-### **下载或更新订阅出错怎么办**
+### **下载或更新订阅出错**
 
 以下 3 种原因最常见，按下列顺序排查即可：
 
@@ -155,7 +177,7 @@ Clash 共有三种工作模式：
    * 尝试关闭 Clash > General > System Proxy 。
    * 尝试退出其它 VPN 或代理软件。
    * 尝试重启电脑、猫、路由器。
-   * 尝试关闭防火墙。
+   * 保持系统防火墙开启。若日志明确显示浏览器或客户端被阻止，只按系统或组织管理员要求添加最小范围的应用例外，复测后撤销临时规则。
 
 ## 设置代理模式
 
@@ -164,14 +186,14 @@ Clash 共有三种工作模式：
 ### **全局连接 | Global：代理所有流量**
 
 * 适用于不依赖国内服务的用户。
-* 對国外流量效果非常好，国内流量會被減速。
+* 全局模式会让客户端管理的流量使用代理；实际性能和站点结果需要在当前网络中验证。
 * 此模式下 🈲 **不能选 DIRECT 和 REJECT 节点**，它们会导致无法上网。
 
 ### **规则判断 | Rules：只代理国外流量**
 
 适用于同時使用国內外服务的用戶。
 
-* 国内流量不会消耗套餐流量。
+* 规则命中直连还是代理取决于当前配置；流量如何计入套餐以账户界面为准。
 * 在国内網站上查询 IP 得到的是本地 IP 地址。
 * 在国外网站上查询 IP 得到的是代理 IP 地址。
 
@@ -191,7 +213,7 @@ Clash 共有三种工作模式：
 
 ## 故障排查
 
-### **我已选择可用节点，但 Chrome 无法访问境外网站怎么办**
+### **已选择可用节点，但 Chrome 无法访问境外网站**
 
 有以下 2 种原因：
 
@@ -204,13 +226,13 @@ Clash 共有三种工作模式：
   1. 右键点击 Chrome 快捷方式，选取属性。
   2. 在目标后面添加**一个空格**和**启动参数**：--proxy-server="http://127.0.0.1:7890"
 
-### **360 / QQ / 搜狗等国产浏览器无法访问境外网站怎么办**
+### **360 / QQ / 搜狗等浏览器无法访问境外网站**
 
 不要使用国产浏览器访问境外网站，防止泄露浏览器历史记录。
 
 国内浏览器出现无法使用的情况，我们不提供技术支持。
 
-### **LINE 无法连接服务器怎么办**
+### **LINE 无法连接服务器**
 
 LINE 不会跟随系统代理设置，需要在 LINE 的高级设置里手动配置代理：
 

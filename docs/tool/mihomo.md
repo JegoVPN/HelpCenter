@@ -1,4 +1,30 @@
 ---
+jegoSupport: supported
+tool: mihomo
+clientKind: null
+minimumOs: []
+architectures: []
+subscriptionFormats: []
+lifecycle: current
+recommendation: advanced
+securityStatus: needs-review
+supportedVersions: []
+replacements: []
+officialSources: [https://github.com/MetaCubeX/mihomo, https://mihomo.party/]
+translationKey: tool-mihomo
+contentType: tool-guide
+product: subscription-service
+productArea: tools
+uiSurface: null
+locale: zh-Hans
+status: current
+owner: docs
+reviewStatus: needs-review
+lastVerified: 2026-07-10
+platforms: [windows, macos, linux, android]
+tools: [mihomo]
+appliesTo: []
+sources: [https://github.com/MetaCubeX/mihomo, https://mihomo.party/]
 title: Mihomo系列软件 - 工具软件
 description: MetaCubeX基于Clash核心推出的全新的Mihomo内核，团队持续地在开源社区维护和更新，生态链里已经推出了包含Windows、Andriod、macOS和Linux的客户端。
 ---
@@ -72,11 +98,9 @@ Clash Verge Rev是一款基于Mihomo（原ClashMeta）内核的多平台代理�
 
 [Clash Meta for Android](https://github.com/MetaCubeX/ClashMetaForAndroid) 是根据Clash for Android修改的基于Mihomo核心的版本，界面简单易用。
 
-### mihomo (Clash Meta) 懒人配置
+### Mihomo 配置安全
 
-```
-https://gist.githubusercontent.com/proother/4d07f66bded8c9e8220837a3d3755837/raw/8636e7bd63d26c3e9e9e65e9e171485b26e9cf2d/config.yaml
-```
+旧版页面曾提供未核验的第三方“懒人配置”直链。远程配置可以改变流量去向和 DNS 行为，因此该链接已中性化：请只导入无忧行控制面板为当前账户生成的订阅地址，或使用 Mihomo 官方文档自行维护且已审阅的配置。
 
 ## Mihomo订阅地址
 
@@ -101,4 +125,3 @@ https://gist.githubusercontent.com/proother/4d07f66bded8c9e8220837a3d3755837/raw
 ## 手机上：Clash Meta for Android 和 FlClash 翻墙视频教程
 
 <YouTube videoId="HtZWdMHui6I" title="Clash Meta for Android 和 FlClash 翻墙视频教程" />
-

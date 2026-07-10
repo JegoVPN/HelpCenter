@@ -1,11 +1,37 @@
 ---
+jegoSupport: unsupported
+tool: clash-for-windows
+clientKind: null
+minimumOs: []
+architectures: []
+subscriptionFormats: []
+lifecycle: discontinued
+recommendation: not-recommended
+securityStatus: blocked
+supportedVersions: []
+replacements: [flclash, clashverge]
+officialSources: []
+translationKey: tool-clash-for-windows
+contentType: tool-guide
+product: subscription-service
+productArea: tools
+uiSurface: null
+locale: en
+status: current
+owner: docs
+reviewStatus: needs-review
+lastVerified: 2026-07-10
+platforms: [windows, macos]
+tools: [clash-for-windows]
+appliesTo: []
+sources: []
 title: Clash for Windows - Tools & Software
 description: This is a tutorial for the Clash for Windows client. Clash for Windows was discontinued on November 2, 2023, but the last version at that time can still be used.
 ---
 
 # Clash for Windows
 
-This is a tutorial for the Clash for Windows client. Clash for Windows was discontinued on November 2, 2023, but the last version at that time can still be used.
+This historical tutorial covers the Clash for Windows client. The project is discontinued and receives no security updates; an old build still launching does not make it suitable for continued use.
 
 ::: danger Not Recommended
 This software has not been updated for several years. Jego does not recommend continued use.
@@ -21,13 +47,9 @@ Clash for Windows was discontinued on November 2, 2023.
 You can visit the [Mihomo Series Software](/en/tool/mihomo) page to get the latest software.
 :::
 
-## <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F4VjXObRb6A8YcNiBGA9e_2Fclash_2.png" width="26" height="26" alt="Clash icon"> Get Clash for Windows
+## <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F4VjXObRb6A8YcNiBGA9e_2Fclash_2.png" width="26" height="26" alt="Clash icon"> Historical installation note
 
-You can download the backup files of the last version from here: [https://archive.org/download/clash_for_windows_pkg](https://archive.org/download/clash_for_windows_pkg)
-
-For Windows OS, please download the <span style="color:blue;">`Clash.for.Windows-[version]-win.7z`</span> compressed package and use [7-zip](https://www.7-zip.org/) to extract it.
-
-For macOS, please download the <span style="color:blue;">`Clash.for.Windows-[version]-mac.7z`</span> compressed package and use [7-zip](https://www.7-zip.org/) to extract it.
+The old archive is not an official, maintained, or integrity-verifiable distribution source, so this page no longer links it. Install a maintained replacement above. The remaining steps and screenshots exist only for subscription migration and settings identification on an old device. Do not download similarly named `.7z`, `.exe`, or `.dmg` files from search results.
 
 ## Add Clash Configuration Subscription
 
@@ -133,7 +155,7 @@ Nodes are separated by policy groups and can be tested for latency by group, mak
 
 ### **Precautions for First Running Clash**
 
-1. It is recommended ⛔ to exit security software such as xx Guardian, xx Manager, firewall, etc., to avoid preventing the software from running normally.
+1. Do not turn off the system firewall or exit security software globally. If launch is blocked, verify the Clash executable's source and integrity, then create only the minimum app-specific exception and remove it when no longer needed.
 2. Must extract before running, cannot run directly in the compressed package.
 3. After running, the Clash icon "cat" will be displayed in the taskbar at the bottom of the screen.
    * If you can't see the Clash icon, it may be hidden. Click to show hidden icons.
@@ -142,9 +164,9 @@ Nodes are separated by policy groups and can be tested for latency by group, mak
 ### Get Subscription Address
 
 1. Be sure to 🚫 **disable web translation function**, otherwise the obtained subscription address may be incorrect.
-2. In the **Jego - Control Panel**, click on **Mobile Subscription** in the left navigation bar, find the **Clash for Windows** subscription address and click **Copy**.
+2. In the **Jego - Control Panel**, select **Mobile Proxy** in the left navigation, find the **Clash for Windows** subscription address, and click **Copy**.
 
-### **What to do if subscription download or update fails**
+### **Subscription download or update fails**
 
 The following 3 reasons are most common, check in the following order:
 
@@ -155,7 +177,7 @@ The following 3 reasons are most common, check in the following order:
    * Try turning off Clash > General > System Proxy.
    * Try exiting other VPN or proxy software.
    * Try restarting computer, modem, router.
-   * Try turning off firewall.
+   * Keep the system firewall on. If logs identify a blocked browser or client, add only a narrowly scoped app exception permitted by the operating system or administrator, then remove temporary rules after testing.
 
 ## Set Proxy Mode
 
@@ -171,7 +193,7 @@ Go to the "Proxies" interface and select the proxy mode according to your needs:
 
 Suitable for users who use both domestic and foreign services.
 
-* Domestic traffic will not consume package data.
+* Whether traffic is direct or proxied depends on the active configuration; account UI determines how it counts toward the plan.
 * When querying IP on domestic websites, you get the local IP address.
 * When querying IP on foreign websites, you get the proxy IP address.
 
@@ -191,7 +213,7 @@ Official manual: [https://lancellc.gitbook.io/clash/clash-config-file/script](ht
 
 ## Troubleshooting
 
-### **I have selected an available node, but Chrome cannot access foreign websites. What should I do?**
+### **Chrome does not connect after selecting an available node**
 
 There are 2 reasons:
 
@@ -204,17 +226,17 @@ There are 2 reasons:
   1. Right-click on Chrome shortcut, select Properties.
   2. Add **one space** and **startup parameter** after the target: --proxy-server="http://127.0.0.1:7890"
 
-### **What to do if 360 / QQ / Sogou and other domestic browsers cannot access foreign websites**
+### **360 / QQ / Sogou or another browser cannot access foreign websites**
 
 Do not use domestic browsers to access foreign websites to prevent leaking browser history.
 
 For domestic browsers that cannot be used, we do not provide technical support.
 
-### **What to do if LINE cannot connect to server**
+### **LINE cannot connect to the server**
 
 LINE does not follow system proxy settings and needs to manually configure proxy in LINE's advanced settings:
 
 1. Ensure the browser can normally access foreign websites.
 2. ✅ Enable proxy server
 3. Proxy server: **HTTP** or **SOCKS5**
-4. Server: **127.0.0.1**:**7890** 
+4. Server: **127.0.0.1**:**7890**

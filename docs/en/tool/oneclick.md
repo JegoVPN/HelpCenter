@@ -1,6 +1,32 @@
 ---
+jegoSupport: unsupported
+tool: oneclick
+clientKind: null
+minimumOs: []
+architectures: []
+subscriptionFormats: []
+lifecycle: current
+recommendation: not-recommended
+securityStatus: needs-review
+supportedVersions: []
+replacements: [sing-boxforapple, shadowrocket, sing-boxforandroid, flclash]
+officialSources: [https://apps.apple.com/us/app/id1545555197, https://www.oneclick.earth/]
+translationKey: tool-oneclick
+contentType: tool-guide
+product: subscription-service
+productArea: tools
+uiSurface: null
+locale: en
+status: current
+owner: docs
+reviewStatus: needs-review
+lastVerified: 2026-07-10
+platforms: [ios, ipados, android]
+tools: [oneclick]
+appliesTo: []
+sources: [https://apps.apple.com/us/app/id1545555197, https://www.oneclick.earth/]
 title: OneClick - Tools & Software
-description: OneClick is a free internet tool that supports mainstream encryption protocols.
+description: The third-party OneClick project may still be maintained, but Jego no longer supports it; this historical guide provides supported alternatives.
 ---
 
 # OneClick
@@ -8,26 +34,21 @@ description: OneClick is a free internet tool that supports mainstream encryptio
 OneClick is a free internet tool that supports mainstream encryption protocols.
 
 ::: danger Not Recommended
-This software has not been updated for several years. Jego does not recommend continued use.
+The third-party OneClick project may still be maintained, but Jego no longer supports its current subscription protocol and therefore does not recommend it for Jego.
 
 Please use [Jego's recommended clients](/en/devices/pc-mobile#_1-about-which-client-to-use)
 :::
 
 ## <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FJbOoXNw3x77qs1JZbQlI_2Foneclick_2.png" width="26" height="26" alt="OneClick icon"> Get OneClick
 
-Currently OneClick has been required by the government to be removed from the mainland China App Store. Please switch to non-mainland China regions (such as US, Hong Kong, Japan regions), then purchase and download.
-
-::: info Registration Tutorial
-If you want to register your own non-mainland App Store account, please refer to related tutorials or purchase ready-made accounts.
-:::
+Store availability is controlled by each platform and developer. Do not buy or share accounts or falsify region details; use an account you legitimately own and the official sources below. The historical steps remain, but Jego users should choose one of the supported replacements listed above.
 
 ## Download OneClick
 
 * Official website: [https://www.oneclick.earth/](https://www.oneclick.earth/#/)
 * Google Play: [https://play.google.com/store/apps/details?id=earth.oneclick](https://play.google.com/store/apps/details?id=earth.oneclick)
-* APKPure: [https://apkpure.com/oneclick-vpn/earth.oneclick](https://apkpure.com/oneclick-vpn/earth.oneclick)
 * iOS \
-  Open the "App Store" app > My avatar > Scroll to the bottom of the page to log out your Apple ID > Log in to non-mainland China region Apple ID[ ](https://apps.apple.com/us/app/quantumult-x/id1443988620)>Search for [**OneClick**](https://apps.apple.com/us/app/id1545555197) and install
+  If the [official OneClick App Store page](https://apps.apple.com/us/app/id1545555197) is available for your legitimate account region, install it from the store.
 
 ## Add Subscription
 
@@ -67,4 +88,4 @@ OneClick provides automatic, global, and direct modes. Click to select the speci
 
 Click the connect button on the OneClick homepage to connect to the server. When first started, it will request VPN permissions, and you need to click OK to allow.
 
-<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FjHJ6f1fmiDH7wANQRtRL_2Fimage_2.png" alt="Connect to server" width="300"> 
+<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FjHJ6f1fmiDH7wANQRtRL_2Fimage_2.png" alt="Connect to server" width="300">

@@ -1,4 +1,30 @@
 ---
+jegoSupport: supported
+tool: guiforsing-box
+clientKind: null
+minimumOs: []
+architectures: []
+subscriptionFormats: []
+lifecycle: current
+recommendation: advanced
+securityStatus: needs-review
+supportedVersions: []
+replacements: []
+officialSources: [https://github.com/GUI-for-Cores/GUI.for.SingBox]
+translationKey: tool-guiforsing-box
+contentType: tool-guide
+product: subscription-service
+productArea: tools
+uiSurface: null
+locale: en
+status: current
+owner: docs
+reviewStatus: needs-review
+lastVerified: 2026-07-10
+platforms: [windows, macos, linux]
+tools: [guiforsing-box]
+appliesTo: []
+sources: [https://github.com/GUI-for-Cores/GUI.for.SingBox]
 title: GUI.for.SingBox - Tools & Software
 description: GUI.for.SingBox is a graphical client made by the open source community based on the sing-box kernel in Windows systems.
 ---
@@ -59,4 +85,4 @@ Open the GUI.for.SingBox client, go to `Overview -> QuickStart`
 
 * After starting, it should be usable. Other usage habit issues need to be learned slowly.
 
-Also, it's recommended to go to settings and turn on "Run as administrator": For users who are not members of the Windows Administrators group, it's recommended to check this item to avoid TUN mode startup failure. 
+Also, it's recommended to go to settings and turn on "Run as administrator": For users who are not members of the Windows Administrators group, it's recommended to check this item to avoid TUN mode startup failure.

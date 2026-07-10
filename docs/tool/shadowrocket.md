@@ -1,4 +1,30 @@
 ---
+jegoSupport: supported
+tool: shadowrocket
+clientKind: null
+minimumOs: []
+architectures: []
+subscriptionFormats: []
+lifecycle: current
+recommendation: recommended
+securityStatus: needs-review
+supportedVersions: []
+replacements: []
+officialSources: [https://apps.apple.com/us/app/shadowrocket/id932747118]
+translationKey: tool-shadowrocket
+contentType: tool-guide
+product: subscription-service
+productArea: tools
+uiSurface: null
+locale: zh-Hans
+status: current
+owner: docs
+reviewStatus: needs-review
+lastVerified: 2026-07-10
+platforms: [ios, ipados, macos, tvos]
+tools: [shadowrocket]
+appliesTo: []
+sources: [https://apps.apple.com/us/app/shadowrocket/id932747118]
 title: Shadowrocket - 工具软件
 description: Shadowrocket 是一个功能齐全的 iOS 代理工具客戶端，支持大多数常见的连接协议。
 ---
@@ -9,20 +35,11 @@ Shadowrocket 是一个功能齐全的 iOS 代理工具客戶端，支持大多�
 
 ## <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F7AV6HDd5wUpQFm7nVO7V_2Fshadowrocket_1.png" width="26" height="26" alt="Shadowrocket图标"> 获取Shadowrocket
 
-目前 Shadowrocket 已经被政府要求从中国大陆区的 App Store 移除。请切换至非中国大陆地区（如美国、香港、日本地区），再购买下载。
-
-::: info 注册教程
-如果你想注册自己的非大陆地区 App Store 账号，请参考 [美区 Apple ID 注册教程](/devices/us-apple-id)，也可以购买现成的账号。
-:::
-
-::: info 购买渠道
-您可以在[ rocketgirls.space](https://www.rocketgirls.space/) 购买国外区Apple ID，并购买礼品卡进行充值。\
-注意：无忧行与该平台无任何合作关系。
-:::
+App Store 可用性由 Apple 和开发者按账户地区决定。不要购买、共享账号或虚构地区资料；只使用本人合法账户与官方商店入口。
 
 ## 下载 Shadowrocket
 
-打开 "App Store" 应用 > 我的头像 > 滑动到页面底部注销您的 Apple ID > 登陆非中国大陆区 Apple ID[ ](https://apps.apple.com/us/app/quantumult-x/id1443988620)>搜索 [**Shadowrocket**](https://apps.apple.com/us/app/shadowrocket/id932747118) 并安装
+如 [Shadowrocket 官方 App Store 页面](https://apps.apple.com/us/app/shadowrocket/id932747118)在你的合法账户地区可用，可从商店购买或安装。
 
 ## 添加订阅
 
@@ -62,13 +79,10 @@ Shadowrocket 是一个功能齐全的 iOS 代理工具客戶端，支持大多�
 
 ### **配置 / Config：只代理国外流量**
 
-<span style="color:red;">👍强烈推荐懒人配置：</span>\
-[https://raw.githubusercontent.com/proother/Shadowrocket/refs/heads/main/lazy.conf](https://raw.githubusercontent.com/proother/Shadowrocket/refs/heads/main/lazy.conf)
-
-添加配置方法：配置 - 右上角➕ - 粘贴上方的配置链接 - 下载 - 点击对应的配置文件 - 使用配置。
+不要导入来源、维护状态和内容未经核验的第三方远程配置。需要规则分流时，优先使用 Jego 控制面板提供的对应订阅地址，并在导入前确认域名与账户一致。
 
 适用于同时使用国内外服务的用户。\
-大陆流量不会消耗套餐流量。\
+规则命中直连还是代理取决于当前配置；流量如何计入套餐以账户界面为准。\
 在大陆网站上查询 IP 得到的是本地 IP 地址。\
 在国外网站上查询 IP 得到的是代理 IP 地址。\
 分流规则无法做到全面且具有时效性，如果遇到以下情况，请尝试全局代理。
@@ -80,12 +94,12 @@ Shadowrocket 是一个功能齐全的 iOS 代理工具客戶端，支持大多�
 
 适用于不依赖大陆服务的用户。
 
-对国外流量效果非常好，大陆流量会被减速。
+全局模式会让客户端管理的流量使用代理；实际性能和站点结果需要在当前网络中验证。
 
 ### **直连 / Direct：不代理任何流量**
 
 选择此模式将导致无法翻牆，与关闭 VPN 的效果一致。
 
-### **场景 / Scene：根据场景代理流量** 
+### **场景 / Scene：根据场景代理流量**
 
 您可以根据自身需要，自定义所需网络、路由、节点等代理条件。

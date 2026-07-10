@@ -1,22 +1,48 @@
 ---
+jegoSupport: supported
+tool: sing-boxforapple
+clientKind: null
+minimumOs: []
+architectures: []
+subscriptionFormats: []
+lifecycle: current
+recommendation: recommended
+securityStatus: needs-review
+supportedVersions: []
+replacements: []
+officialSources: [https://github.com/SagerNet/sing-box, https://apps.apple.com/app/sing-box-vt/id6673731168]
+translationKey: tool-sing-boxforapple
+contentType: tool-guide
+product: subscription-service
+productArea: tools
+uiSurface: null
+locale: zh-Hans
+status: current
+owner: docs
+reviewStatus: needs-review
+lastVerified: 2026-07-10
+platforms: [macos, ios, ipados, tvos]
+tools: [sing-boxforapple]
+appliesTo: []
+sources: [https://github.com/SagerNet/sing-box, https://apps.apple.com/app/sing-box-vt/id6673731168]
 title: sing-box for Apple platforms - 工具软件
-description: sing-box for Apple platforms在Apple Store叫sing-box VT，是一款全新的内核，几乎支持目前所有协议，是App Store里唯一免费开源无广告而且还好用的工具。
+description: sing-box for Apple platforms 在 App Store 中名为 sing-box VT；当前协议、价格和平台以官方来源为准。
 ---
 
 # sing-box for Apple platforms
 
-sing-box for Apple platforms在Apple Store叫sing-box VT，是一款全新的内核，几乎支持目前所有协议，是App Store里唯一免费开源无广告而且还好用的工具。
+sing-box for Apple platforms 在 App Store 中名为 sing-box VT，是 sing-box 项目的 Apple 平台客户端。具体协议、价格和可用性以官方项目及商店页面为准。
 
 ## <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FX6LBfzRlMdWyQVvPC9eg_2Fimage_1.png" width="26" height="26" alt="sing-box图标"> 获取sing-box for Apple platforms
 
 ### 苹果全家桶系列
 
-macOS iOS iPadOS tvOS 可通过Apple Store安装，唯一门槛是需要非中国大陆地区的Apple ID
+macOS、iOS、iPadOS 和 tvOS 可通过 App Store 安装；是否可见由 Apple 与开发者按合法账户地区决定。
 
 * [App Store](https://apps.apple.com/app/sing-box-vt/id6673731168)
 
-::: info 注册教程
-如果你想注册自己的非大陆地区 App Store 账号，请参考 [美区 Apple ID 注册教程](/devices/us-apple-id)，也可以购买现成的账号。
+::: info 账户安全
+只使用本人合法 Apple Account，不购买或共享账号，不虚构地区、电话或账单资料。商店不可用时，请选择当前地区可用的受支持工具。
 :::
 
 macOS还可以通过Github和命令行安装
@@ -64,8 +90,8 @@ macOS还可以通过Github和命令行安装
 #### Overview - 选择上网模式
 提醒：第一次使用可能三个模式都没选中，建议点一下`Rule`。
 
-`Rule` - 智能分流模式，根据规则自动选择直连或代理  
-`Direct` - 直连模式，所有流量都不走代理  
+`Rule` - 智能分流模式，根据规则自动选择直连或代理
+`Direct` - 直连模式，所有流量都不走代理
 `Global` - 全局代理模式，所有流量都走代理
 
 <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FOHCHUCUIQ4chAL7HNnPm_2Fimage_3.png" alt="macOS上网模式">
@@ -92,7 +118,7 @@ macOS还可以通过Github和命令行安装
 
 点击`Dashboard`，确保Profile选中刚才创建的Jego，然后点击的`Enabled`开关。
 
-<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FxZVgmsq4OQLsT2eLghMZ_2F20250714-162650_1.png" alt="iOS开启sing-box1" width="300"> 
+<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FxZVgmsq4OQLsT2eLghMZ_2F20250714-162650_1.png" alt="iOS开启sing-box1" width="300">
 
 使用上的逻辑和上面macOS大同小异，同一套UI框架。
 
@@ -100,8 +126,8 @@ macOS还可以通过Github和命令行安装
 <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2Fu0p5d9m5Kv1ZFfm2hvm8_2F20250715-064637_2.png" alt="iOS开启sing-box2" width="300">
 提醒：第一次使用可能三个模式都没选中，建议点一下`Rule`。
 
-`Rule` - 智能分流模式，根据规则自动选择直连或代理  
-`Direct` - 直连模式，所有流量都不走代理  
+`Rule` - 智能分流模式，根据规则自动选择直连或代理
+`Direct` - 直连模式，所有流量都不走代理
 `Global` - 全局代理模式，所有流量都走代理
 
 #### Groups 标签 - 更换节点服务器
@@ -110,11 +136,11 @@ macOS还可以通过Github和命令行安装
 
 ## sing-box 常见问题
 
-### 🚫 无法访问境外网站但可访问境内网站？
+### 仅境内网站可以访问时
 
 **🟡 情况一：刚启动时**
 
-刚启动 sing-box 时，程序在处理境外域名解析前，会先对所有可用节点进行一次 URL 测速，目的是选出最快的节点来完成后续的 DNS 解析。因此，在测速完成前，可能暂时无法访问境外网站。
+部分配置在启动时会执行 URL 测试或下载规则集，期间可能暂时没有可用结果。是否测试、测试对象和 DNS 行为取决于实际配置；请根据状态文字和日志排查，不把它概括为“选择最快节点”。
 
 > ✅ 解决方法：如果不想等待测速过程，可以手动选择一个可用节点，这样就能立即访问境外网站。
 

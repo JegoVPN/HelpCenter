@@ -8,3 +8,232 @@
     );
   }
 
+.geo-page-context {
+  margin: 0 0 1.75rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--vp-c-divider);
+  color: var(--vp-c-text-2);
+  font-size: 0.875rem;
+}
+
+.geo-breadcrumb {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 0.65rem;
+}
+
+.geo-breadcrumb a {
+  color: var(--vp-c-brand-1);
+  text-decoration: none;
+}
+
+.geo-page-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.25rem;
+  margin: 0;
+}
+
+.geo-page-meta > div {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.geo-page-meta dt {
+  font-weight: 600;
+  color: var(--vp-c-text-1);
+}
+
+.geo-page-meta dd {
+  margin: 0;
+}
+
+.geo-tool-context-links {
+  display: flex;
+  gap: 0.5rem;
+  margin: 0.6rem 0 0;
+}
+
+.geo-support-warning {
+  margin-top: 0.8rem;
+  padding: 0.7rem 0.85rem;
+  border-left: 3px solid var(--vp-c-warning-1);
+  background: var(--vp-c-warning-soft);
+  color: var(--vp-c-text-1);
+}
+
+.geo-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.geo-tool-table {
+  min-width: 680px;
+}
+
+.jego-popup-state-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 280px));
+  gap: 1rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.jego-popup-state-grid figure {
+  margin: 0;
+}
+
+.jego-popup-state-grid figcaption {
+  margin-bottom: 0.5rem;
+  color: var(--vp-c-text-2);
+  font-weight: 600;
+}
+
+.jego-popup-state-grid img {
+  display: block;
+  width: 100%;
+  max-width: 280px;
+  margin: 0;
+}
+
+.jego-wide-screenshot {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 1rem 0 1.5rem;
+  border-radius: 8px;
+}
+
+.installation-choice-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.8rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.vp-doc .installation-choice-card {
+  display: block;
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 10px;
+  background: var(--vp-c-bg-soft);
+  color: var(--vp-c-text-1);
+  text-decoration: none;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.vp-doc .installation-choice-card:hover {
+  border-color: var(--vp-c-brand-1);
+  background: var(--vp-c-brand-soft);
+  color: var(--vp-c-text-1);
+}
+
+.installation-choice-card strong,
+.installation-choice-card span {
+  display: block;
+}
+
+.installation-choice-card span {
+  margin-top: 0.25rem;
+  color: var(--vp-c-text-2);
+  font-size: 0.92rem;
+}
+
+.installation-choice-card strong {
+  color: var(--vp-c-brand-1);
+}
+
+.version-card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.8rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.vp-doc .version-card {
+  display: grid;
+  gap: 0.25rem;
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 10px;
+  background: var(--vp-c-bg-soft);
+  color: var(--vp-c-text-1);
+  text-decoration: none;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.vp-doc .version-card:hover {
+  border-color: var(--vp-c-brand-1);
+  background: var(--vp-c-brand-soft);
+  color: var(--vp-c-text-1);
+}
+
+.version-card strong {
+  color: var(--vp-c-brand-1);
+  font-size: 1.25rem;
+}
+
+.version-card small {
+  color: var(--vp-c-text-2);
+  font-size: 0.9rem;
+}
+
+.manual-browser-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.75rem 1rem;
+  margin: 0.75rem 0 1.25rem;
+}
+
+.manual-browser-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  min-width: 0;
+  white-space: nowrap;
+}
+
+.vp-doc .manual-browser-item img {
+  display: block;
+  flex: 0 0 auto;
+  width: 38px;
+  height: 28px;
+  margin: 0;
+  object-fit: contain;
+}
+
+.installation-settings-image {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+}
+
+@media (max-width: 640px) {
+  .geo-page-meta {
+    display: grid;
+    gap: 0.35rem;
+  }
+
+  .geo-breadcrumb span[aria-current='page'] {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .jego-popup-state-grid {
+    grid-template-columns: minmax(0, 280px);
+  }
+
+  .installation-choice-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .version-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .manual-browser-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

@@ -1,62 +1,93 @@
 ---
+translationKey: guide-keep-updated
+contentType: how-to
+product: browser-extension
+productArea: browser-extension
+uiSurface: null
+locale: en
+status: current
+owner: docs
+reviewStatus: needs-review
+lastVerified: null
+platforms: [chrome, edge]
+tools: []
+appliesTo: []
+sources: []
 title: Stay Connected - User Guide
-description: Due to product characteristics, we will continuously update versions to ensure network connectivity stability in certain specific regions. Please remember to follow our latest version releases to prevent disconnection.
+description: Check the current Jego version and update it in your browser or mobile client.
 ---
 
 # Stay Connected
 
-## Latest Version
+Jego regularly updates both the browser extension and subscription content. Keeping them up to date gives your browser and mobile client the latest nodes and connection settings. Store installations usually update automatically; use the matching browser section below when you want to check immediately.
 
-| Channel Version | Version Number | Update Time | Download Link |
-| --- | --- | --- | --- |
-| Chrome | `1.5.9` | Jul 4, 2026 | [https://chrome.google.com/webstore/detail/bnnamacamhjbdoimlbkegmbgkekphcbb](https://chrome.google.com/webstore/detail/bnnamacamhjbdoimlbkegmbgkekphcbb) |
-| Edge | `1.5.9` | Jul 4, 2026 | [https://microsoftedge.microsoft.com/addons/detail/bkpoijbobhmbglhjjmnoedomdoabilol](https://microsoftedge.microsoft.com/addons/detail/bkpoijbobhmbglhjjmnoedomdoabilol) |
+## Current extension version
 
-## Jego Extension Updates
+<div class="version-card-grid">
+  <a class="version-card" href="https://chrome.google.com/webstore/detail/bnnamacamhjbdoimlbkegmbgkekphcbb">
+    <span>Chrome</span>
+    <strong>1.5.9</strong>
+    <small>July 4, 2026 · Chrome Web Store</small>
+  </a>
+  <a class="version-card" href="https://microsoftedge.microsoft.com/addons/detail/bkpoijbobhmbglhjjmnoedomdoabilol">
+    <span>Microsoft Edge</span>
+    <strong>1.5.9</strong>
+    <small>July 4, 2026 · Microsoft Edge Add-ons</small>
+  </a>
+</div>
 
-### Online Updates
+## Update Jego in Chrome
 
-#### <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F5JRmsC6cdLC8T1CMokaN_2Fmsedge_3.png" width="38" height="28" alt="Edge icon"> Edge:
+<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2Fomxd1Mr1qsuzHUduonWU_2Fchrome_1.png" width="38" height="28" alt="Chrome icon">
 
-* Method 1: Update through Edge Store: [https://microsoftedge.microsoft.com/addons/detail/bkpoijbobhmbglhjjmnoedomdoabilol](https://microsoftedge.microsoft.com/addons/detail/bkpoijbobhmbglhjjmnoedomdoabilol)
-* Method 2: Enter `edge://extensions/` in Edge address bar to open Edge extension management interface, find the `Update` button in the upper right corner, click and wait for automatic update to complete.
-* Method 3: Restarting the browser will also automatically update to the latest version of Jego.
+Chrome normally updates Jego automatically. To check immediately, use any one of these methods:
 
-::: warning Think Edge's Jego version updates too slowly?
+1. Open the [Jego page in Chrome Web Store](https://chrome.google.com/webstore/detail/bnnamacamhjbdoimlbkegmbgkekphcbb) so Chrome can check the store version.
+2. Enter `chrome://extensions/` in the address bar, then select **Update** in the upper-left corner.
+3. Fully quit and reopen Chrome so the browser checks for extension updates automatically.
 
-⚡Come try [installing Chrome extensions in Edge](/en/guide/installation#edge-can-also-install-Jego-from-chrome-web-store)⚡
-:::
+## Update Jego in Edge
 
-#### <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2Fomxd1Mr1qsuzHUduonWU_2Fchrome_1.png" width="38" height="28" alt="Chrome icon"> Chrome:
+<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F5JRmsC6cdLC8T1CMokaN_2Fmsedge_3.png" width="38" height="28" alt="Edge icon">
 
-* Method 1: Update through Chrome Store: [https://chrome.google.com/webstore/detail/bnnamacamhjbdoimlbkegmbgkekphcbb](https://chrome.google.com/webstore/detail/bnnamacamhjbdoimlbkegmbgkekphcbb)
-* Method 2: Enter `chrome://extensions/` in Chrome address bar to open Chrome extension management interface, find the `Update` button in the upper left corner, click and wait for automatic update to complete.
-* Method 3: Restarting the browser will also automatically update to the latest version of Jego.
+Edge normally updates Jego automatically as well. To check immediately, use any one of these methods:
 
-### Manual Updates
+1. Open the [Jego page in Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/detail/bkpoijbobhmbglhjjmnoedomdoabilol) so Edge can check the store version.
+2. Enter `edge://extensions/` in the address bar, then select **Update** in the upper-right corner.
+3. Fully quit and reopen Edge so the browser checks for extension updates automatically.
 
-#### Installation package supports<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F5C1uC1qTbxO3LKHO4oql_2Fmsedge_2.png" width="38" height="28" alt="Edge icon">Edge, <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FczhA5KDPiurdPyCanu1Z_2Fchrome_3.png" width="38" height="28" alt="Chrome icon">Chrome, <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FbhAczGOlghKJxh3Y4N7u_2FQQBrowser_1.png" width="38" height="28" alt="QQ Browser icon">QQ Browser, <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FYHwAipQtF3QwJ7z85hyz_2F360se_2.png" width="38" height="28" alt="360 Browser icon">360 Browser
+While Microsoft Edge Add-ons is rolling out a new version, open the [online installation guide](/en/guide/installation#online-installation) to check the currently available official source.
 
-Since Jego official website's installation packages are often blocked in mainland China, you can get them through:
+## Update a manually installed version
 
-* **Self-construct download URL address:**
+The installation package supports the browsers below and other Chromium-based browsers:
 
-`https://jegocloud.com/static/app/JegoV`<span style="color:red;">version number</span>`.zip`
+<div class="manual-browser-grid">
+  <span class="manual-browser-item"><img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F5C1uC1qTbxO3LKHO4oql_2Fmsedge_2.png" width="38" height="28" alt="Edge icon"><span>Edge</span></span>
+  <span class="manual-browser-item"><img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FczhA5KDPiurdPyCanu1Z_2Fchrome_3.png" width="38" height="28" alt="Chrome icon"><span>Chrome</span></span>
+  <span class="manual-browser-item"><img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FbhAczGOlghKJxh3Y4N7u_2FQQBrowser_1.png" width="38" height="28" alt="QQ Browser icon"><span>QQ Browser</span></span>
+  <span class="manual-browser-item"><img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FYHwAipQtF3QwJ7z85hyz_2F360se_2.png" width="38" height="28" alt="360 Browser icon"><span>360 Browser</span></span>
+</div>
 
-1. Front URL: <span style="color:blue;">`https://jegocloud.com/static/app/`</span>
+When you need a manual package, build the download address with this fixed format:
 
-2. Installation package: For example, if the latest version number is `1.5.9`, write it as <span style="color:blue;">`JegoV1.5.9.zip`</span>.
+1. Address prefix: `https://jegocloud.com/static/app/`
+2. Package filename: `JegoV` + version number + `.zip`
 
-Combining the two gives you the complete download address.
+For the current `1.5.9` release, the filename is `JegoV1.5.9.zip`. Join the address prefix and filename to form the complete download address.
 
-* **Contact customer service to get download URL address:**
+You can also [contact support](/en/guide/support) for the current CRX package. After downloading it, follow the manual steps for your browser in the [installation guide](/en/guide/installation).
 
-Contact customer service to get Jego's latest `CRX installation package`. -> [Contact Customer Service](/en/guide/support)
+## Update a mobile subscription
 
-## Mobile Proxy Updates
+Mobile subscription clients should be updated every 24 hours so they receive Jego's latest nodes and ports. You can also update immediately after a renewal or after the subscription content in your account changes.
 
-Please also maintain the habit of updating mobile proxy subscription nodes every 24 hours. We will continuously update server nodes and ports to ensure network connectivity stability in certain specific regions.
+Update controls differ by client. Open your current app in the [client guides](/en/tool/) to follow its steps. Use the time and status shown by the client to confirm that the update has finished.
 
-## Customer Service
+## After updating
 
-When you encounter problems and still can't solve them after reading this guide and trying repeatedly, you can also [contact customer service](/en/guide/support) and get help.
+After updating the browser extension, fully quit and reopen the browser. To check the version or reselect the mode and node, continue with [Jego updates and recovery](/en/guide/plugin-maintenance).
+
+## Contact support
+
+When you need personal help, [contact support](/en/guide/support) and include the name and current version of your browser or client.

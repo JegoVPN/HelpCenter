@@ -1,4 +1,18 @@
 ---
+translationKey: devices-windows
+contentType: device-guide
+product: subscription-service
+productArea: device-selection
+uiSurface: null
+locale: zh-Hans
+status: current
+owner: docs
+reviewStatus: needs-review
+lastVerified: null
+platforms: [windows]
+tools: []
+appliesTo: []
+sources: []
 title: Windows 电脑怎么翻墙 - 设备支持
 description: Microsoft Windows，通称Windows操作系统，是微软以图形用户界面为主推出的一系列专有商业软件操作系统。在全世界范围内个人电脑操作系统的处于垄断地位。
 ---
@@ -7,11 +21,15 @@ description: Microsoft Windows，通称Windows操作系统，是微软以图形�
 
 Microsoft Windows，通称Windows操作系统，是微软以图形用户界面为主推出的一系列专有商业软件操作系统。在全世界范围内个人电脑操作系统的处于垄断地位。
 
-无忧行的订阅节点服务（大陆用户通常称之为"机场"）与Windows PC系统上的众多网络代理工具程序（大陆用户通常称之为"梯子"）兼容。只需简单学习，就能轻松让电脑和手机上的所有应用程序都能翻墙，随时畅享全球无限制网络资源。
+无忧行会员可以把订阅节点添加到 Windows 代理客户端中，让浏览器之外的软件也能使用代理。下面先选一个当前支持的工具，再跟着完整教程安装和导入订阅。
 
 ## <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FbeA5N21M1iATQm5HiGND_2Fwin_1.svg" width="38" height="28" alt="Windows图标"> Windows PC **设备上能用的代理工具**
 
-### 推荐使用下列软件
+新用户优先选择同时标为“适合大多数用户”和“能使用 Jego：可以”的客户端，再点进完整教程。
+
+<ToolCatalog locale="zh" platform="windows" />
+
+### 既有工具说明与教程入口
 
 <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2Fu2sHeQjHJurcgVhJB1zO_2Ficon_2.png" width="26" height="26" alt="FlClash图标"> [FlClash](/tool/flclash)
 
@@ -23,7 +41,7 @@ Clash Verge Rev是一款基于Mihomo（原ClashMeta）内核的多平台代理�
 
 ---
 
-#### 下列软件推荐但门槛较高：
+#### 需要更多配置的既有教程：
 
 <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FfJY0Si3bowLOO8nIXwPG_2Fmihomo_3.png" width="26" height="26" alt="Mihomo图标"> [Mihomo系列软件](/tool/mihomo)
 
@@ -31,11 +49,11 @@ MetaCubeX基于Clash核心推出的全新的Mihomo内核，团队持续地在开
 
 <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FX6LBfzRlMdWyQVvPC9eg_2Fimage_1.png" width="26" height="26" alt="sing-box图标"> [GUI.for.SingBox](/tool/guiforsing-box)
 
-sing-box 是一款全新的内核，几乎支持目前所有协议，但 GUI.for.SingBox客户端是社区爱好者做的客户端，比较难入门。硬核玩家可以使用sing-box官方发布的Windows命令行版本。
+sing-box 是跨平台网络代理项目；GUI.for.SingBox 是社区图形客户端，需要更多配置。当前协议、平台、版本和官方命令行包以各自项目来源为准。
 
 ---
 
-#### 下列软件能用但不推荐：
+#### 历史或不推荐工具教程：
 
 <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FzSfmyRFCh3igxLUDkYXc_2Fimage_2.png" width="26" height="26" alt="v2rayN图标"> [v2rayN](/tool/v2rayn)
 
@@ -44,4 +62,3 @@ v2rayN是Windows系统下的代理软件客户端，功能强大且支持多种�
 <img src="/images/image_clash_2.png" width="26" height="26" alt="Clash图标"> [Clash for Windows](/tool/clash-for-windows)
 
 Clash for Windows已于2023年11月2日下架，但当时的最后一个版本还能用，建议换至Mihomo系列软件如[FlClash](/tool/flclash) 。
-

@@ -1,6 +1,32 @@
 ---
+jegoSupport: unsupported
+tool: v2rayn
+clientKind: null
+minimumOs: []
+architectures: []
+subscriptionFormats: []
+lifecycle: current
+recommendation: not-recommended
+securityStatus: needs-review
+supportedVersions: []
+replacements: [flclash, clashverge]
+officialSources: [https://github.com/2dust/v2rayN]
+translationKey: tool-v2rayn
+contentType: tool-guide
+product: subscription-service
+productArea: tools
+uiSurface: null
+locale: zh-Hans
+status: current
+owner: docs
+reviewStatus: needs-review
+lastVerified: 2026-07-10
+platforms: [windows]
+tools: [v2rayn]
+appliesTo: []
+sources: [https://github.com/2dust/v2rayN]
 title: v2rayN - 工具软件
-description: v2rayN 是PC 平台上一个对新手比较友好的v2ray Windows 客户端。
+description: v2rayN 第三方项目可能仍在维护，但 Jego 已不再支持；本页保留历史 Windows 教程并提供受支持替代项。
 ---
 
 # v2rayN
@@ -8,7 +34,7 @@ description: v2rayN 是PC 平台上一个对新手比较友好的v2ray Windows �
 v2rayN 是PC 平台上一个对新手比较友好的v2ray Windows 客户端。
 
 ::: danger 不推荐使用
-由于v2rayN不支持无忧行最新的协议，所以无忧行不推荐大家继续使用。by 20250714
+v2rayN 第三方项目可能仍在维护，但 Jego 已不再支持其当前订阅协议，因此不推荐继续用于 Jego。本页保留为历史教程，并提供受支持的替代工具。
 
 请使用[无忧行推荐的客户端](/devices/pc-mobile#_1、关于应该使用什么客户端)
 :::
@@ -97,14 +123,14 @@ v2rayN 是PC 平台上一个对新手比较友好的v2ray Windows 客户端。
 
 ### 常见问题
 
-#### core类型的区别是什么？
+#### core 类型的区别
 
 core类型一共有四个，分别是v2fly、SgerNet、Xray、sing-box，一般日常使用没有任何区别，随意选择哪个都可以。
 
-#### 支持哪些协议？
+#### 支持的协议
 
 <img src="/images/image_1655215063-favicon-70x70_3.png" alt="v2rayN" width="30">VMess、VLESS、Trojan、Socks、Shadowsocks、Hysteria2、Tuic等代理协议。
 
-#### 与 v2rayNG 的关系？
+#### 与 v2rayNG 的关系
 
 <img src="/images/image_1707374615-v2rayNG-150x150_1.png" alt="v2rayNG" width="30">v2rayN 安卓手机版名为 v2rayNG，可移步至 [v2rayNG](/tool/v2rayng) 下载并查看详细教程。

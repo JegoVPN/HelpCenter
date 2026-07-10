@@ -1,23 +1,45 @@
 ---
+jegoSupport: supported
+tool: surge
+clientKind: null
+minimumOs: []
+architectures: []
+subscriptionFormats: []
+lifecycle: current
+recommendation: recommended
+securityStatus: needs-review
+supportedVersions: []
+replacements: []
+officialSources: [https://nssurge.com/, https://apps.apple.com/us/app/surge-3/id1442620678]
+translationKey: tool-surge
+contentType: tool-guide
+product: subscription-service
+productArea: tools
+uiSurface: null
+locale: zh-Hans
+status: current
+owner: docs
+reviewStatus: needs-review
+lastVerified: 2026-07-10
+platforms: [macos, ios]
+tools: [surge]
+appliesTo: []
+sources: [https://nssurge.com/, https://apps.apple.com/us/app/surge-3/id1442620678]
 title: Surge - 工具软件
-description: Surge是一款Apple平台里功能强大的网络代理工具，以其稳定的性能、丰富的功能和优秀的用户体验而著称。
+description: Surge 是 Apple 平台的网络工具；当前功能、平台、价格和版本以官方来源与工具页状态为准。
 ---
 
 # Surge
 
-Surge是一款Apple平台里功能强大的网络代理工具，以其稳定的性能、丰富的功能和优秀的用户体验而著称。
+Surge 是 Apple 平台的网络工具；当前功能、平台、价格和版本以官方来源与工具页状态为准。
 
 ## <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FoBLta0TNRbF6ARUAOFxW_2Fsurge_1.png" width="26" height="26" alt="Surge图标"> 获取Surge
 
-目前 Surge已经被政府要求从中国大陆区的 App Store 移除。请切换至非中国大陆地区（如美国、香港、日本地区），再购买下载。
-
-::: info 注册教程
-如果你想注册自己的非大陆地区 App Store 账号，请参考 [美区 Apple ID 注册教程](/devices/us-apple-id)，也可以购买现成的账号。
-:::
+App Store 可用性由 Apple 和开发者按账户地区决定。不要购买、共享账号或虚构地区资料；只使用本人合法账户与官方商店入口。
 
 ## 下载 Surge
 
-打开 "App Store" 应用 > 我的头像 > 滑动到页面底部注销您的 Apple ID > 登陆非中国大陆区 Apple ID[ ](https://apps.apple.com/us/app/quantumult-x/id1443988620)>搜索 [**Surge**](https://apps.apple.com/us/app/surge-3/id1442620678?ls=1) 并安装。
+如 [Surge 官方 App Store 页面](https://apps.apple.com/us/app/surge-3/id1442620678?ls=1)在你的合法账户地区可用，可从商店购买或安装。
 
 Surge 的网络代理功能需要解锁 Pro 授权，可通过 [AppStore 内购](https://apps.apple.com/us/app/surge-3/id1442620678?ls=1)或访问其[官网](https://nssurge.com/)进行购买。
 

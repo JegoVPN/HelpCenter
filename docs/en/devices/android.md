@@ -1,4 +1,18 @@
 ---
+translationKey: devices-android
+contentType: device-guide
+product: subscription-service
+productArea: device-selection
+uiSurface: null
+locale: en
+status: current
+owner: docs
+reviewStatus: needs-review
+lastVerified: null
+platforms: [android]
+tools: []
+appliesTo: []
+sources: []
 title: How to Use Proxy on Android - Device Support
 description: Android is an open source mobile operating system based on Linux kernel and other open source software, continuously led and developed by the Open Handset Alliance established by Google.
 ---
@@ -7,7 +21,7 @@ description: Android is an open source mobile operating system based on Linux ke
 
 Android is an open source mobile operating system based on Linux kernel and other open source software, continuously led and developed by the Open Handset Alliance established by Google.
 
-Jego's subscription node service (mainland users usually call it "airport") is compatible with numerous network proxy tool programs (mainland users usually call it "ladder") on Android systems. With simple learning, you can easily enable proxy access for all applications on your PC and mobile, enjoy unlimited global network resources anytime.
+Jego members can add subscription nodes to a compatible Android client, allowing other phone apps to use the VPN. Choose a currently supported client below, then follow its complete installation and import guide.
 
 <div class="tip custom-block" style="padding-top: 8px">
 
@@ -15,9 +29,15 @@ Jego subscription service mobile panel: <https://jego.us>
 
 </div>
 
+## Current tool status
+
+New users should choose a client marked **Good for most users** and **Works with Jego: Yes**, then open its complete guide.
+
+<ToolCatalog locale="en" platform="android" />
+
 ## <img src="/images/android_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F7Hh3XGbbAH0jtCKDKIF6_2Fandroid_1.svg" width="38" height="28" alt="Android icon"> Proxy Tools Available on **Android Devices**
 
-### Recommended Software
+### Existing tool notes and tutorial entry points
 
 <img src="/images/android_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FX6LBfzRlMdWyQVvPC9eg_2Fimage_2.png" width="26" height="26" alt="sing-box icon"> [sing-box for Android](/en/tool/sing-boxforandroid)
 
@@ -33,11 +53,11 @@ Mihomo (formerly ClashMeta) official Android client, open source, free and ad-fr
 
 ---
 
-#### The following software works but is not recommended
+#### Historical or not-recommended tool tutorials
 
 <img src="/images/android_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FtXufQKQ8l3yWMHiAonjn_2Fimage_5.png" width="26" height="26" alt="v2rayNG icon"> [v2rayNG](/en/tool/v2rayng)
 
-v2rayNG is an Android application based on v2ray kernel, suitable for Android phones and supports some TVs or TV boxes based on Android TV systems.
+v2rayNG is an Android application based on the v2ray core for phones and some Android TV devices. Jego no longer supports this client; existing users should migrate to a supported alternative from the tool page.
 
 <img src="/images/android_surfboard_6.png" width="26" height="26" alt="Surfboard icon"> [Surfboard](/en/tool/surfboard)
 
@@ -49,4 +69,4 @@ Clash's graphical user interface on Android systems, deleted repository and disc
 
 <img src="/images/android_oneclick_8.png" width="26" height="26" alt="OneClick icon"> [OneClick](/en/tool/oneclick)
 
-OneClick is a free internet tool that supports mainstream encryption protocols. 
+The third-party OneClick project may still be maintained, but Jego no longer supports this client. This entry preserves the historical tutorial; existing users should follow its migration alternatives.

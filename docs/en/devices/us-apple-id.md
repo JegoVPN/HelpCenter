@@ -1,25 +1,41 @@
 ---
+translationKey: devices-us-apple-id
+contentType: device-guide
+product: subscription-service
+productArea: device-selection
+uiSurface: null
+locale: en
+status: current
+owner: docs
+reviewStatus: needs-review
+lastVerified: 2026-07-10
+platforms: [ios, ipados]
+tools: []
+appliesTo: []
+sources: [https://support.apple.com/en-us/118283, https://support.apple.com/en-us/118429, https://support.apple.com/en-us/108285]
 title: US Apple ID Registration Guide - iOS/iPadOS
-description: Learn how to create and verify a US Apple ID, then use the US App Store to download or purchase iOS apps.
+description: Manage an Apple Account and region under Apple's official requirements when your real residence or account region is the United States.
 ---
 
 # US Apple ID Registration Guide
 
-Some iOS/iPadOS proxy apps must be downloaded from an App Store region outside mainland China. If you do not have a usable non-mainland Apple ID, you can follow this guide to create a US account. Apple may also refer to Apple ID as Apple Account; follow the wording shown on Apple's pages during registration.
+This page keeps its original URL and historical screenshots to identify Apple Account (formerly Apple ID) creation, verification, payment, and gift-card screens. The US flow applies when the United States is your real residence or legitimate account region. Everyone else can use an app available in their real region. Apple and each developer control app availability.
+
+Apple says a region change may require spending the balance, cancelling subscriptions, leaving Family Sharing, and supplying a valid payment method and billing address for the new region. When those conditions are not met, select an app available in your current region and supported by Jego.
 
 ## Before You Start
 
-1. An email address that has not been used to register an Apple ID. Gmail is recommended.
-2. An iPhone or iPad.
-3. Turn on Jego global mode and select any US node.
+1. An email address and phone number you personally control long term.
+2. A supported Apple device on which you can complete two-factor verification.
+3. Account details that match your real residence, payment method, and billing address. Creating or changing a region does not require using Jego to disguise location.
 
 ## Step 1: Create an Apple ID
 
-1. Open the [Apple ID website](https://appleid.apple.com/us/) and click **Create Your Apple ID** in the upper right corner. The page language does not matter as long as the country or region is set correctly.
+1. Open the official [Apple Account site](https://account.apple.com/) and choose the account-creation entry. The screenshots below show an older interface; follow Apple's current wording.
 
 <img src="/images/apple-id-us/apple-id-us-01.png" alt="Apple ID creation entry">
 
-2. Create a new Apple ID and select **United States** as the country or region. Use a real phone number and email address so you can complete verification. The password must include uppercase letters, lowercase letters, and numbers. After filling in the form, click **Continue**.
+2. Select **United States** only when it is your real account region; otherwise select the real region. Use accurate name, birthday, email, and phone details that remain verifiable. Follow the current password requirements shown by Apple.
 
 <img src="/images/apple-id-us/apple-id-us-02.png" alt="Create Apple ID form" width="257">
 
@@ -35,54 +51,54 @@ Some iOS/iPadOS proxy apps must be downloaded from an App Store region outside m
 
 <img src="/images/apple-id-us/apple-id-us-06.png" alt="Verify phone number" width="244">
 
-5. At this point, the first stage of US Apple ID registration is complete. You still need to verify the account on an iOS device.
+5. After web creation, continue verification on an iOS/iPadOS device you control when Apple prompts you.
 
 <img src="/images/apple-id-us/apple-id-us-07.png" alt="Apple ID creation completed">
 
 ## Step 2: Verify the Account
 
-1. Sign in to the newly created US Apple ID on your iOS device. After entering the correct account and password, a verification prompt will usually appear. Tap to verify.
+1. Sign in to your own account on iOS/iPadOS. If a verification prompt appears, confirm that it is a trusted system screen before entering a code.
 
-::: warning Note
-Your phone must be in proxy mode, and the selected node should be in the United States.
+::: warning Protect credentials
+Keep passwords, verification codes, and recovery keys on your own Apple devices. Jego support does not need these credentials to check a connection issue.
 :::
 
 <img src="/images/apple-id-us/apple-id-us-08.png" alt="Verify Apple ID on iOS device" width="298">
 
-2. Keep the region as **United States**, enable **Agree to Terms and Conditions**, then tap **Next**.
+2. Confirm that the displayed region matches your real account details. Read the terms before accepting and continuing. **United States** in the screenshot applies only to a legitimate US-region account.
 
 <img src="/images/apple-id-us/apple-id-us-09.png" alt="Select United States and agree to terms" width="257">
 
-3. Next, Apple will ask you to choose a payment method. If **None** does not appear, your phone network is usually not using a US IP address. Switch to a US node and try again. Choose **None** as the payment method.
+3. Choose a payment method you own and that Apple currently accepts for the account region. Apple decides whether `None` appears for the current account, so follow the page as shown.
 
 ::: info Note
-US accounts usually support payment methods such as bank cards or credit cards, US PayPal, and None. Cards issued in mainland China, including foreign-currency cards, dual-currency cards, all-currency cards, and US PayPal accounts bound to those cards, may fail during verification. Choosing None is recommended here.
+Available payment methods change. Name and billing address must match the financial institution's records. If payment setup fails, consult Apple's current regional payment-method page or the financial institution.
 :::
 
 <img src="/images/apple-id-us/apple-id-us-10.png" alt="Choose None as payment method" width="258">
 
-4. Fill in the billing information, address, and phone number. You can search for a US address generator for the address. For the phone number, use a number that can reliably receive future verification codes, and avoid unstable or discontinued temporary SMS-number services. After filling in the information, tap Next to complete verification.
+4. Enter your own valid billing address and phone number, consistent with the payment record. Review the form and continue.
 
 <img src="/images/apple-id-us/apple-id-us-11.png" alt="Fill in billing address information" width="239">
 
-::: warning Note
-Purchases made with a US Apple ID may be subject to sales tax. If you want lower tax when purchasing paid apps, use an address in a low-tax state such as Oregon, Alaska, Delaware, Montana, or New Hampshire.
+::: warning Tax and region
+Tax is determined by the real billing address, applicable law, and Apple's checkout. Enter the state and address from your own payment record.
 :::
 
-5. Your US Apple ID is now registered. You can download games and apps from the US App Store and use related US iTunes services.
+5. After verification, available apps and content still depend on the account's current region, device, and developer rules.
 
 ## How to Buy Paid Apps in the US App Store
 
 ### Recharge with a Gift Card
 
-A convenient method is to buy an iTunes Gift Card. You can purchase one from Apple's US website or from third-party platforms such as Amazon. Make sure the gift card region is the United States. Gift card purchases usually support foreign-currency cards, dual-currency cards, and all-currency cards issued in mainland China.
+A gift card can be redeemed only in the store country or region where it was purchased. Buy from Apple or a trusted authorized retailer and verify type, region, terms, currency, and refund conditions. Use Apple Account passwords and verification codes only on your own Apple device.
 
 Open the gift card purchase page on Apple's US website, then click the buy button.
 
 <img src="/images/apple-id-us/apple-id-us-12.png" alt="Apple US gift card purchase page">
 
 ::: warning Note
-Check whether the country or region at the bottom of the page is the United States. If not, switch it to the United States first.
+Check that the site country or region matches both your real account region and the gift card being purchased.
 :::
 
 <img src="/images/apple-id-us/apple-id-us-13.png" alt="Check Apple website country or region">
@@ -101,20 +117,20 @@ Next, review your order and continue as a guest.
 
 <img src="/images/apple-id-us/apple-id-us-18.png" alt="Continue as guest" width="563">
 
-Then choose your payment method. Available options commonly include Apple Card, Visa, Mastercard, AMEX, Discover, UnionPay, and PayPal.
+Choose a payment method you own and that the current checkout actually offers. The screenshot is historical; current methods are controlled by Apple.
 
 <img src="/images/apple-id-us/apple-id-us-19.png" alt="Choose gift card payment method" width="563">
 
-For credit card payment, fill in the card number, expiration date, and security code.
+For card payment, enter the number, expiration date, and security code only after confirming that the secure checkout domain belongs to Apple. Keep these details on your own payment device.
 
 <img src="/images/apple-id-us/apple-id-us-20.png" alt="Fill in credit card payment information" width="416">
 
-Finally, pay for the order. After the purchase succeeds, the gift card code is usually sent to your email within a few hours.
+Before payment, recheck the recipient email, region, amount, and terms. Delivery timing is defined by Apple's order page and confirmation; this article makes no fixed-time promise.
 
 ### Redeem the Gift Card
 
 Open **App Store**, tap your Apple ID avatar in the upper right corner, tap **Redeem Gift Card or Code**, then tap **You can also enter your code manually** and enter the code. After redemption, you can buy paid apps in the US App Store.
 
 ::: warning Note
-Gift cards purchased from Apple's China website can only be used with China-region Apple IDs and are usually limited to App Store spending. Gift cards purchased from Apple's US website can be used not only in the App Store, but also in iTunes Store and other Apple stores.
+Apple states that gift cards cannot be redeemed outside their country or region of purchase. What a balance can buy depends on card type, account region, and Apple's current terms; verify the official support page before redemption.
 :::

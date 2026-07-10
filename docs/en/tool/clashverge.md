@@ -1,4 +1,30 @@
 ---
+jegoSupport: supported
+tool: clashverge
+clientKind: null
+minimumOs: []
+architectures: []
+subscriptionFormats: []
+lifecycle: current
+recommendation: recommended
+securityStatus: needs-review
+supportedVersions: []
+replacements: []
+officialSources: [https://github.com/clash-verge-rev/clash-verge-rev]
+translationKey: tool-clashverge
+contentType: tool-guide
+product: subscription-service
+productArea: tools
+uiSurface: null
+locale: en
+status: current
+owner: docs
+reviewStatus: needs-review
+lastVerified: 2026-07-10
+platforms: [windows, macos, linux]
+tools: [clashverge]
+appliesTo: []
+sources: [https://github.com/clash-verge-rev/clash-verge-rev]
 title: Clash Verge Rev - Tools & Software
 description: A multi-platform proxy client based on Mihomo (formerly ClashMeta) kernel, supporting Alpha version kernel switching. Clean and beautiful user interface with customizable theme colors.
 ---
@@ -90,7 +116,7 @@ Traffic routing rules cannot be comprehensive and have timeliness. If you encoun
 
 All traffic goes through the proxy server, suitable for scenarios requiring global proxy access, users who don't rely on mainland services.
 
-Very effective for overseas traffic, mainland traffic will be slowed down.
+Global mode sends client-managed traffic through the proxy; verify performance and destination results on the current network.
 
 ### **Direct Mode: No proxy for any traffic**
 

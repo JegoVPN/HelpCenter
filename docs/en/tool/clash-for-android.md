@@ -1,4 +1,30 @@
 ---
+jegoSupport: unsupported
+tool: clash-for-android
+clientKind: null
+minimumOs: []
+architectures: []
+subscriptionFormats: []
+lifecycle: discontinued
+recommendation: not-recommended
+securityStatus: blocked
+supportedVersions: []
+replacements: [flclash, sing-boxforandroid]
+officialSources: []
+translationKey: tool-clash-for-android
+contentType: tool-guide
+product: subscription-service
+productArea: tools
+uiSurface: null
+locale: en
+status: current
+owner: docs
+reviewStatus: needs-review
+lastVerified: 2026-07-10
+platforms: [android]
+tools: [clash-for-android]
+appliesTo: []
+sources: []
 title: Clash for Android - Tools & Software
 description: A Graphical user interface of clash for Android
 ---
@@ -21,11 +47,9 @@ Clash for Android was discontinued on November 3, 2023.
 You can visit the [Mihomo Series Software](/en/tool/mihomo) page to get the latest software.
 :::
 
-## <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FOSsqZTRrboImnICfYPE0_2Fclash_3.png" width="26" height="26" alt="Clash icon"> ~~Get Clash for Android~~
+## <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FOSsqZTRrboImnICfYPE0_2Fclash_3.png" width="26" height="26" alt="Clash icon"> Historical acquisition note
 
-1. ~~Google Play:~~ [~~https://play.google.com/store/apps/details?id=com.github.kr328.clash~~](https://play.google.com/store/apps/details?id=com.github.kr328.clash)
-2. APKPure: [https://apkpure.com/clash-for-android/com.github.kr328.clash](https://apkpure.com/clash-for-android/com.github.kr328.clash)
-3. ~~Github release:~~ [~~https://github.com/Kr328/ClashForAndroid/releases~~](https://github.com/Kr328/ClashForAndroid/releases)
+The original Google Play and GitHub project entries are no longer available, and third-party APK aggregators are not a verifiable security source. This page no longer links an installer; use a maintained replacement above. The interface and subscription steps remain only to help identify settings during migration from an old device.
 
 <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FL71PvhWJcSBBz3HTeoia_2Fimage_1.png" alt="Clash for Android interface">
 
@@ -70,7 +94,7 @@ Go to the App main page, tap "Proxy" > "┇" > "Mode", and select the proxy mode
 
 Suitable for users who use both domestic and foreign services.
 
-Mainland traffic will not consume package data.
+Whether traffic is direct or proxied depends on the active configuration; account UI determines how it counts toward the plan.
 
 When querying IP on mainland websites, you get the local IP address.
 
@@ -89,4 +113,4 @@ Choosing this mode will result in inability to bypass restrictions, with the sam
 
 Suitable for users who do not rely on mainland services.
 
-Very effective for foreign traffic, mainland traffic will be slowed down. 
+Global mode sends client-managed traffic through the proxy; verify performance and destination results on the current network.

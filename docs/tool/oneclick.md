@@ -1,6 +1,32 @@
 ---
+jegoSupport: unsupported
+tool: oneclick
+clientKind: null
+minimumOs: []
+architectures: []
+subscriptionFormats: []
+lifecycle: current
+recommendation: not-recommended
+securityStatus: needs-review
+supportedVersions: []
+replacements: [sing-boxforapple, shadowrocket, sing-boxforandroid, flclash]
+officialSources: [https://apps.apple.com/us/app/id1545555197, https://www.oneclick.earth/]
+translationKey: tool-oneclick
+contentType: tool-guide
+product: subscription-service
+productArea: tools
+uiSurface: null
+locale: zh-Hans
+status: current
+owner: docs
+reviewStatus: needs-review
+lastVerified: 2026-07-10
+platforms: [ios, ipados, android]
+tools: [oneclick]
+appliesTo: []
+sources: [https://apps.apple.com/us/app/id1545555197, https://www.oneclick.earth/]
 title: OneClick - 工具软件
-description: OneClick是一款免费的支持主流加密协议的上网工具。
+description: OneClick 第三方项目可能仍在维护，但 Jego 已不再支持；本页保留历史教程并提供受支持替代项。
 ---
 
 # OneClick
@@ -8,26 +34,21 @@ description: OneClick是一款免费的支持主流加密协议的上网工具�
 OneClick是一款免费的支持主流加密协议的上网工具。
 
 ::: danger 不推荐使用
-该软件已经好几年不更新了，无忧行不推荐大家继续使用。
+OneClick 第三方项目可能仍在维护，但 Jego 已不再支持其当前订阅协议，因此不推荐继续用于 Jego。
 
 请使用[无忧行推荐的客户端](/devices/pc-mobile#_1、关于应该使用什么客户端)
 :::
 
 ## <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FJbOoXNw3x77qs1JZbQlI_2Foneclick_2.png" width="26" height="26" alt="OneClick图标"> 获取OneClick
 
-目前 OneClick 已经被政府要求从中国大陆区的 App Store 移除。请切换至非中国大陆地区（如美国、香港、日本地区），再购买下载。
-
-::: info 注册教程
-如果你想注册自己的非大陆地区的 App Store 账号，请参考相关教程或购买现成的账号。
-:::
+商店可用性由平台与开发者决定。不要购买、共享账号或虚构地区资料；只使用本人合法账户和下列官方入口。本页保留历史操作步骤，但 Jego 用户应改用上方受支持的替代工具。
 
 ## 下载 OneClick
 
 * 官网：[https://www.oneclick.earth/](https://www.oneclick.earth/#/)
 * Google Play: [https://play.google.com/store/apps/details?id=earth.oneclick](https://play.google.com/store/apps/details?id=earth.oneclick)
-* APKPure: [https://apkpure.com/oneclick-vpn/earth.oneclick](https://apkpure.com/oneclick-vpn/earth.oneclick)
 * iOS \
-  打开 "App Store" 应用 > 我的头像 > 滑动到页面底部注销您的 Apple ID > 登陆非中国大陆区 Apple ID[ ](https://apps.apple.com/us/app/quantumult-x/id1443988620)>搜索 [**OneClick**](https://apps.apple.com/us/app/id1545555197) 并安装
+  如 [OneClick 官方 App Store 页面](https://apps.apple.com/us/app/id1545555197)在你的合法账户地区可用，可从商店安装。
 
 ## 添加订阅
 

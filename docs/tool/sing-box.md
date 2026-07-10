@@ -1,11 +1,37 @@
 ---
+jegoSupport: supported
+tool: sing-box
+clientKind: null
+minimumOs: []
+architectures: []
+subscriptionFormats: []
+lifecycle: current
+recommendation: advanced
+securityStatus: needs-review
+supportedVersions: []
+replacements: []
+officialSources: [https://github.com/SagerNet/sing-box]
+translationKey: tool-sing-box
+contentType: tool-guide
+product: subscription-service
+productArea: tools
+uiSurface: null
+locale: zh-Hans
+status: current
+owner: docs
+reviewStatus: needs-review
+lastVerified: 2026-07-10
+platforms: [windows, macos, linux, android, ios]
+tools: [sing-box]
+appliesTo: []
+sources: [https://github.com/SagerNet/sing-box]
 title: sing-box - 工具软件
-description: sing-box 是一款全新的内核，几乎支持目前所有协议，还拥有全平台的代理工具客户端，包括 Windows、macOS、Android、iOS 和 Linux。
+description: sing-box 是跨平台网络代理项目；当前协议、平台与版本以官方项目文档和发布页为准。
 ---
 
 # sing-box
 
-sing-box 是一款全新的内核，几乎支持目前所有协议，还拥有全平台的代理工具客户端，包括 Windows、macOS、Android、iOS 和 Linux。
+sing-box 是跨平台网络代理项目。当前协议、平台与版本以官方项目文档和发布页为准，本页不使用“支持所有协议”或“全平台”作为承诺。
 
 <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FX6LBfzRlMdWyQVvPC9eg_2Fimage_1.png" width="38" height="38" alt="sing-box图标">
 
@@ -36,11 +62,11 @@ Linux的硬核玩家请移步sing-box官方的[Github Release](https://github.co
 
 ## sing-box 常见问题
 
-### 🚫 无法访问境外网站但可访问境内网站？
+### 仅境内网站可以访问时
 
 **🟡 情况一：刚启动时**
 
-刚启动 sing-box 时，程序在处理境外域名解析前，会先对所有可用节点进行一次 URL 测速，目的是选出最快的节点来完成后续的 DNS 解析。因此，在测速完成前，可能暂时无法访问境外网站。
+部分配置在启动时会执行 URL 测试或下载规则集，期间可能暂时没有可用结果。是否测试、测试对象和 DNS 行为取决于实际配置；请根据状态文字和日志排查，不把它概括为“选择最快节点”。
 
 > ✅ 解决方法：如果不想等待测速过程，可以手动选择一个可用节点，这样就能立即访问境外网站。
 
@@ -53,4 +79,3 @@ Linux的硬核玩家请移步sing-box官方的[Github Release](https://github.co
 ---
 
 **💡** 注意：此问题不会影响境内网站的访问，也不影响基于境外 IP 的服务（如 Telegram）的使用，只影响访问境外域名的网站。
-

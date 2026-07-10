@@ -32,19 +32,6 @@ jobs:
         uses: actions/checkout@v7
         with:
           fetch-depth: 0 # 如果未启用 lastUpdated，则不需要
-      - name: Check for changes
-        id: changes
-        run: |
-          if git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep -E '\.(md|ts|js|vue|css|json|ya?ml|png|jpe?g|gif|webp|svg|mp4|webm)$' > /dev/null; then
-            echo "has_changes=true" >> $GITHUB_OUTPUT
-          else
-            echo "has_changes=false" >> $GITHUB_OUTPUT
-          fi
-      - name: Skip if no relevant changes
-        if: steps.changes.outputs.has_changes == 'false'
-        run: |
-          echo "No relevant changes detected, skipping build"
-          exit 0
       # - uses: pnpm/action-setup@v3 # 如果使用 pnpm，请取消此区域注释
       #   with:
       #     version: 9
@@ -58,8 +45,8 @@ jobs:
         uses: actions/configure-pages@v6
       - name: Install dependencies
         run: npm ci # 或 pnpm install / yarn install / bun install
-      - name: Build with VitePress
-        run: npm run docs:build # 或 pnpm docs:build / yarn docs:build / bun run docs:build
+      - name: Audit content and verify the VitePress build
+        run: npm run geo:verify
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v5
         with:

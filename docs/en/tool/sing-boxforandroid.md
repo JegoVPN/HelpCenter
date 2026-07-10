@@ -1,4 +1,30 @@
 ---
+jegoSupport: supported
+tool: sing-boxforandroid
+clientKind: null
+minimumOs: []
+architectures: []
+subscriptionFormats: []
+lifecycle: current
+recommendation: recommended
+securityStatus: needs-review
+supportedVersions: []
+replacements: []
+officialSources: [https://github.com/SagerNet/sing-box, https://play.google.com/store/apps/details?id=io.nekohasekai.sfa]
+translationKey: tool-sing-boxforandroid
+contentType: tool-guide
+product: subscription-service
+productArea: tools
+uiSurface: null
+locale: en
+status: current
+owner: docs
+reviewStatus: needs-review
+lastVerified: 2026-07-10
+platforms: [android, harmonyos]
+tools: [sing-boxforandroid]
+appliesTo: []
+sources: [https://github.com/SagerNet/sing-box, https://play.google.com/store/apps/details?id=io.nekohasekai.sfa]
 title: sing-box for Android - Tools & Software
 description: sing-box for Android, abbreviated as SFA, is a graphical interface client officially launched by sing-box, open source, free and ad-free.
 ---
@@ -61,8 +87,8 @@ The first time you start, you'll also be prompted for VPN permission, just click
 
 Reminder: The first time you use it, all three modes may not be selected. It's recommended to click on `Rule`.
 
-`Rule` - Smart routing mode, automatically selects direct connection or proxy based on rules  
-`Direct` - Direct connection mode, all traffic bypasses proxy  
+`Rule` - Smart routing mode, automatically selects direct connection or proxy based on rules
+`Direct` - Direct connection mode, all traffic bypasses proxy
 `Global` - Global proxy mode, all traffic goes through proxy
 
 #### Groups tab: Switch node servers
@@ -75,11 +101,11 @@ On this Tab, you can manually choose the node server you want to use.
 
 ## sing-box Common Issues
 
-### 🚫 Cannot access foreign websites but can access domestic websites?
+### When only local websites open
 
 **🟡 Situation 1: Just started**
 
-When sing-box just starts, before processing foreign domain name resolution, it will first conduct a URL speed test on all available nodes to select the fastest node to complete subsequent DNS resolution. Therefore, before the speed test is completed, you may temporarily be unable to access foreign websites.
+Some configurations run a URL test or fetch rule sets during startup, during which a usable result may be temporarily absent. Whether a test runs, what it covers, and how DNS behaves depend on the actual configuration; use status text and logs rather than describing it as “selecting the fastest node.”
 
 > ✅ Solution: If you don't want to wait for the speed test process, you can manually select an available node, so you can immediately access foreign websites.
 
@@ -111,4 +137,4 @@ If you encounter the error shown in the image below when starting:
 * Switch to mobile network (such as 4G/5G)
 * Change network operator (such as from China Telecom to China Unicom, ask friends for hotspot)
 
-**💡** Note: Once the rule files are successfully loaded once, this error will not appear again. 
+**💡** Note: Once the rule files are successfully loaded once, this error will not appear again.

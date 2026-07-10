@@ -1,4 +1,30 @@
 ---
+jegoSupport: supported
+tool: mihomo
+clientKind: null
+minimumOs: []
+architectures: []
+subscriptionFormats: []
+lifecycle: current
+recommendation: advanced
+securityStatus: needs-review
+supportedVersions: []
+replacements: []
+officialSources: [https://github.com/MetaCubeX/mihomo, https://mihomo.party/]
+translationKey: tool-mihomo
+contentType: tool-guide
+product: subscription-service
+productArea: tools
+uiSurface: null
+locale: en
+status: current
+owner: docs
+reviewStatus: needs-review
+lastVerified: 2026-07-10
+platforms: [windows, macos, linux, android]
+tools: [mihomo]
+appliesTo: []
+sources: [https://github.com/MetaCubeX/mihomo, https://mihomo.party/]
 title: Mihomo Series Software - Tools & Software
 description: MetaCubeX launched a brand new Mihomo kernel based on the Clash core, and the team continues to maintain and update in the open source community. The ecosystem has launched clients including Windows, Android, macOS and Linux.
 ---
@@ -73,11 +99,9 @@ Clash Verge Rev is a multi-platform proxy client based on Mihomo (formerly Clash
 
 [Clash Meta for Android](https://github.com/MetaCubeX/ClashMetaForAndroid) is a version based on Mihomo core modified from Clash for Android, with a simple and easy-to-use interface.
 
-### mihomo (Clash Meta) Lazy Configuration
+### Mihomo configuration safety
 
-```
-https://gist.githubusercontent.com/proother/4d07f66bded8c9e8220837a3d3755837/raw/8636e7bd63d26c3e9e9e65e9e171485b26e9cf2d/config.yaml
-```
+An older revision linked an unverified third-party “lazy configuration.” A remote configuration can change traffic routing and DNS behavior, so that URL has been neutralized. Import only the subscription URL generated for your account in the Jego Control Panel, or a configuration you have reviewed and maintain using Mihomo's official documentation.
 
 ## Mihomo Subscription Address
 
@@ -101,4 +125,4 @@ Welcome to watch the video tutorial forced to be recorded by the Jego team.
 
 ## On Mobile: Clash Meta for Android and FlClash Bypass Video Tutorial
 
-<YouTube videoId="HtZWdMHui6I" title="Clash Meta for Android and FlClash Bypass Video Tutorial" /> 
+<YouTube videoId="HtZWdMHui6I" title="Clash Meta for Android and FlClash Bypass Video Tutorial" />

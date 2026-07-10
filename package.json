@@ -5,7 +5,17 @@
   "scripts": {
     "docs:dev": "vitepress dev docs --port 3000",
     "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs --port 3001"
+    "docs:preview": "vitepress preview docs --port 3001",
+    "geo:baseline:generate": "node scripts/generate-geo-baseline.mjs",
+    "geo:migration:update": "node scripts/update-geo-migration-records.mjs",
+    "geo:frontmatter:normalize": "node scripts/normalize-geo-frontmatter.mjs",
+    "geo:navigation:apply": "node scripts/apply-geo-navigation.mjs",
+    "geo:content:safety": "node scripts/apply-geo-safety-rewrites.mjs",
+    "geo:audit:baseline": "node scripts/geo-audit.mjs --baseline",
+    "geo:audit:selftest": "node scripts/geo-audit-selftest.mjs",
+    "geo:audit": "node scripts/geo-audit.mjs",
+    "geo:verify:build": "node scripts/verify-geo-build.mjs",
+    "geo:verify": "npm run geo:audit && npm run docs:build && npm run geo:verify:build"
   },
   "devDependencies": {
     "vitepress": "^2.0.0-alpha.18"

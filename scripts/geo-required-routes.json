@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "requiredPairs": [
+    {
+      "translationKey": "plugin-features",
+      "zh": { "source": "docs/guide/plugin-features.md", "route": "/guide/plugin-features" },
+      "en": { "source": "docs/en/guide/plugin-features.md", "route": "/en/guide/plugin-features" }
+    },
+    {
+      "translationKey": "control-panel",
+      "zh": { "source": "docs/guide/control-panel.md", "route": "/guide/control-panel" },
+      "en": { "source": "docs/en/guide/control-panel.md", "route": "/en/guide/control-panel" }
+    },
+    {
+      "translationKey": "plugin-maintenance",
+      "zh": { "source": "docs/guide/plugin-maintenance.md", "route": "/guide/plugin-maintenance" },
+      "en": { "source": "docs/en/guide/plugin-maintenance.md", "route": "/en/guide/plugin-maintenance" }
+    },
+    {
+      "translationKey": "plugin-permissions-privacy",
+      "zh": { "source": "docs/guide/plugin-permissions-privacy.md", "route": "/guide/plugin-permissions-privacy" },
+      "en": { "source": "docs/en/guide/plugin-permissions-privacy.md", "route": "/en/guide/plugin-permissions-privacy" }
+    },
+    {
+      "translationKey": "network-diagnostics",
+      "zh": { "source": "docs/guide/network-diagnostics.md", "route": "/guide/network-diagnostics" },
+      "en": { "source": "docs/en/guide/network-diagnostics.md", "route": "/en/guide/network-diagnostics" }
+    },
+    {
+      "translationKey": "network-diagnostics-node-speed",
+      "zh": { "source": "docs/guide/network-diagnostics-node-speed.md", "route": "/guide/network-diagnostics-node-speed" },
+      "en": { "source": "docs/en/guide/network-diagnostics-node-speed.md", "route": "/en/guide/network-diagnostics-node-speed" }
+    },
+    {
+      "translationKey": "subscription-index",
+      "zh": { "source": "docs/subscription/index.md", "route": "/subscription/" },
+      "en": { "source": "docs/en/subscription/index.md", "route": "/en/subscription/" }
+    },
+    {
+      "translationKey": "subscription-management",
+      "zh": { "source": "docs/subscription/management.md", "route": "/subscription/management" },
+      "en": { "source": "docs/en/subscription/management.md", "route": "/en/subscription/management" }
+    },
+    {
+      "translationKey": "tool-index",
+      "zh": { "source": "docs/tool/index.md", "route": "/tool/" },
+      "en": { "source": "docs/en/tool/index.md", "route": "/en/tool/" }
+    },
+    {
+      "translationKey": "devices-index",
+      "zh": { "source": "docs/devices/index.md", "route": "/devices/" },
+      "en": { "source": "docs/en/devices/index.md", "route": "/en/devices/" }
+    },
+    {
+      "translationKey": "troubleshooting-index",
+      "zh": { "source": "docs/troubleshooting/index.md", "route": "/troubleshooting/" },
+      "en": { "source": "docs/en/troubleshooting/index.md", "route": "/en/troubleshooting/" }
+    },
+    {
+      "translationKey": "troubleshooting-client",
+      "zh": { "source": "docs/troubleshooting/client.md", "route": "/troubleshooting/client" },
+      "en": { "source": "docs/en/troubleshooting/client.md", "route": "/en/troubleshooting/client" }
+    },
+    {
+      "translationKey": "privacy-policy",
+      "zh": { "source": "docs/policies/privacy.md", "route": "/policies/privacy" },
+      "en": { "source": "docs/en/policies/privacy.md", "route": "/en/policies/privacy" }
+    }
+  ]
+}

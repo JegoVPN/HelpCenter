@@ -1,6 +1,20 @@
 ---
+translationKey: guide-vibe-coding
+contentType: how-to
+product: browser-extension
+productArea: scenario-tutorial
+uiSurface: null
+locale: en
+status: current
+owner: docs
+reviewStatus: needs-review
+lastVerified: null
+platforms: [chrome, edge]
+tools: []
+appliesTo: []
+sources: []
 title: How to Use Jego for Vibe Coding - AI Development Tools Proxy Configuration Tutorial
-description: Configure Jego proxy for AI coding tools like Cursor, Claude Code, Google Antigravity, and OpenAI Codex. A comprehensive setup guide using FlClash as an example.
+description: Configure and verify a proxy path for an IDE or CLI using FlClash as the example, while separating connectivity from third-party account eligibility.
 ---
 
 # How to Use Jego for Vibe Coding
@@ -9,10 +23,10 @@ description: Configure Jego proxy for AI coding tools like Cursor, Claude Code, 
 
 <img src="/images/ClaudeCode.png" alt="Claude Code AI Development Tool Interface" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); margin: 20px 0;">
 
-As AI tools like Cursor, Claude Code, Google Antigravity, OpenAI Codex, and OpenClaw gain popularity, we've created this tutorial to address frequently asked configuration questions. Using FlClash as an example (other tools follow similar principles), this guide will help you set up Jego for seamless AI-powered development, whether you're using an IDE or CLI.
+This guide uses FlClash to show how to configure a proxy for an IDE and command-line tools. Development tools differ in system-proxy, environment-variable, and TUN support, so test the actual tool after setup.
 
 ::: tip Applicable Scope
-This tutorial uses [FlClash](/en/tool/flclash) as an example (supports Windows, macOS, Android, Linux, and other platforms), but the configuration principles apply to other proxy tools such as Clash Verge Rev, sing-box. Jego subscription service is compatible with various proxy tools. For more detailed tutorials on different platforms and tools, see [How to Use Proxy on PC or Mobile](/en/devices/pc-mobile).
+This tutorial uses the FlClash desktop interface. Other clients have different menus, so first [choose a client by device](/en/devices/) and make sure it works with Jego, then open that client's complete guide.
 
 The key is understanding virtual network adapter mode and node routing strategies.
 :::
@@ -28,8 +42,8 @@ In FlClash's dashboard:
 
 <img src="/images/vibecoding/1.png" alt="Dashboard: Enable Virtual Network Adapter and Rule Mode" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); margin: 16px 0; max-width: 800px; width: 100%;">
 
-::: info Why Use Virtual Network Adapter?
-Virtual Network Adapter (TUN) mode intercepts all system network traffic, ensuring that all requests from AI coding tools are properly routed through the proxy. This is crucial for tools like Cursor and Claude Code that frequently call APIs.
+::: info Why a virtual network adapter helps
+Virtual Network Adapter (TUN) mode can process traffic the operating system routes to the virtual interface and is often used for desktop apps that ignore system proxy. Permissions, route exceptions, other VPNs, and app behavior still matter, so it cannot guarantee that every request uses the proxy.
 
 If you only need browser access, we recommend using the [Jego browser extension](/en/guide/usage).
 :::
@@ -45,14 +59,13 @@ On the Profiles page:
 
 Configure the following on the proxy page (node selection):
 
-* **❇️Manual Select**: Choose <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Hong Kong Ultra</span>
-* **🤖 ChatGPT Group**: Choose <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Singapore Pro+</span>
+* Under **❇️Manual Select**, choose a current candidate exposed by the Control Panel that can connect.
+* If **🤖 ChatGPT Group** still appears, choose a candidate from it and verify with the real API destination. “Hong Kong Ultra” and “Singapore Pro+” in the screenshot are historical examples, not promises that those names or performance remain.
 
 <img src="/images/vibecoding/2.png" alt="Proxy Page: Node Selection" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); margin: 16px 0; max-width: 800px; width: 100%;">
 
 ::: tip Node Selection Guide
-* **Hong Kong Ultra**: For regular traffic (browsing, YouTube, etc.), fast and stable
-* **Singapore Pro+**: Specifically for AI services (OpenAI, Anthropic, Google AI, etc.), optimized for AI APIs
+Node names and groups come from the current subscription configuration and can change. Compare bandwidth, stability, and third-party availability through actual results on the same network and at the same time.
 :::
 
 ### 4. Start Service
@@ -61,14 +74,14 @@ Return to the dashboard and click the <span style="background-color:green; color
 
 <img src="/images/vibecoding/3.png" alt="Start Service" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); margin: 16px 0; max-width: 800px; width: 100%;">
 
-After starting, verify: the network check shows a non-mainland (overseas) IP, the core status in the top-right is a green checkmark, and the bottom-right shows the start time, Virtual Network Adapter is enabled, and the outbound mode is Rule Mode.
+After starting, check the status, start time, virtual-adapter state, and outbound mode shown by the app, then open a test page or run the command below to confirm the connection.
 
 ### 5. Request Page: Verify Traffic Routing
 
 On the request page (or connections page), confirm that traffic is being routed correctly:
 
-* ✅ AI-related domains (e.g., `api.openai.com`, `api.anthropic.com`) go through <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Singapore Pro+</span>
-* ✅ Regular traffic (e.g., YouTube, Google) goes through <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Hong Kong Ultra</span>
+* Check whether an AI hostname such as `api.openai.com` or `api.anthropic.com` matches the node currently chosen for the AI group.
+* Check whether an ordinary hostname matches the expected general group or direct rule. Record only hostnames; never publish query strings, tokens, or request content.
 
 ::: warning Custom Routing
 If you need custom routing rules, you can add override rules (Overrides) in FlClash.
@@ -94,13 +107,13 @@ After this setup, visits to DeepSeek.com will bypass the proxy and use your loca
 
 ## Verify Configuration
 
-Run the following command in your terminal to check if you've successfully obtained a foreign IP:
+You may query the public exit IP for this command. A third-party lookup service sees that exit address; skip this step if undesired and inspect the client's request page instead:
 
 ```bash
 curl ip.sb
 ```
 
-If it returns a foreign IP address (non-China mainland IP), your configuration is successful!
+The returned address belongs only to this test request. Your IDE or CLI may use different settings, so test the actual tool after configuring it.
 
 ::: tip Further Verification
 You can also try using AI features in Cursor or other AI coding tools, such as code completion or chat, to verify that you can access AI services normally.
@@ -108,29 +121,25 @@ You can also try using AI features in Cursor or other AI coding tools, such as c
 
 ## Common Issues
 
-### Why is my AI tool connection failing?
+### AI tool connection failure
 
 1. **Check if virtual network adapter is enabled**: Ensure TUN mode is active
-2. **Check node selection**: Confirm that ChatGPT Group is set to Singapore Pro+ node
-3. **Check subscription updates**: Make sure your subscription file is up to date
-4. **Review request logs**: Check the request page for specific connection failure reasons
+2. **Check node selection**: Confirm that the current AI group has a usable candidate selected.
+3. **Check subscription updates**: Run one manual update per the client tutorial and record its time.
+4. **Review request logs**: Inspect only redacted lines relevant to this incident; never publish tokens or request content.
 
-### Can I use system proxy mode?
+### Using system proxy mode
 
-Not recommended. In system proxy mode, some AI tool requests may not go through the proxy, causing connection failures. Virtual network adapter mode intercepts all traffic, ensuring stability.
+Yes, depending on whether the AI tool honors system proxy or supports proxy environment variables. Test system proxy first; if the app demonstrably bypasses it, evaluate TUN and retest. Neither method guarantees stability.
 
-### How do I configure other proxy tools?
+### Configure other proxy tools
 
-The configuration approach is the same:
-
-1. Enable virtual network adapter (TUN) mode
-2. Select rule mode
-3. Properly assign nodes (Singapore Pro+ for AI services, Hong Kong Ultra for regular traffic)
+The objective is similar, but menus and capabilities are not necessarily the same. Follow the specific tool tutorial for proxy entry, rule mode, node groups, and verification rather than copying FlClash buttons or old node names.
 
 ## Related Links
 
 * [FlClash Complete Tutorial](/en/tool/flclash) - Learn all FlClash features
-* [Clash Verge Rev Tutorial](/en/tool/clashverge) - Another excellent multi-platform proxy tool
+* [Clash Verge Rev Tutorial](/en/tool/clashverge) - Multi-platform client tutorial
 * [sing-box Tutorial](/en/tool/sing-box) - Lightweight proxy tool
-* [Node Selection Guide](/en/guide/node-selection) - Learn how to choose the best nodes
+* [Node Selection Guide](/en/guide/node-selection) - Choose and verify a candidate node
 * [Device Configuration Overview](/en/devices/pc-mobile) - View proxy guides for all devices

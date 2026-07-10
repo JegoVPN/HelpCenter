@@ -1,4 +1,18 @@
 ---
+translationKey: guide-chatgpt-access
+contentType: how-to
+product: browser-extension
+productArea: browser-extension
+uiSurface: null
+locale: zh-Hans
+status: current
+owner: docs
+reviewStatus: needs-review
+lastVerified: null
+platforms: [chrome, edge]
+tools: []
+appliesTo: []
+sources: []
 title: 如何解锁New Bing、Copilot或者ChatGPT - 使用指南
 description: 如何用正确的姿势在中国大陆解锁New Bing、Copilot或者ChatGPT
 ---
@@ -21,7 +35,7 @@ description: 如何用正确的姿势在中国大陆解锁New Bing、Copilot或�
 
 <img src="/images/jego-v1.5.9/popup-paid-rules-ai-zh.png" alt="无忧行选择 AI 节点" width="280">
 
-✅ **大功告成**，️你已经成功地完成了`Bing`、`Copilot`和`ChatGPT`解锁：
+✅ **连接检查完成**。下面的截图展示历史上成功加载 `Bing`、`Copilot` 和 `ChatGPT` 的页面；实际功能仍取决于第三方服务状态和账户资格：
 
 <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F8xAkeKaPFvJCAt1MuBYf_2Fimage_2.png" alt="New Bing ✌">
 
@@ -31,7 +45,7 @@ description: 如何用正确的姿势在中国大陆解锁New Bing、Copilot或�
 
 ::: info 就是这么简单
 
-使用无忧行解锁New Bing以及ChatGPT就是这么简单！
+以上步骤用于检查浏览器连接，不会更改或保证第三方账户资格。
 :::
 
 ---
@@ -53,13 +67,14 @@ description: 如何用正确的姿势在中国大陆解锁New Bing、Copilot或�
    * 使用代理服务器：关闭
 
 ### 2. 浏览器环境
-1. 升级浏览器至最新版本，清除所有Cookies和缓存并重启浏览器
+1. 升级浏览器至最新版本；如需清理，只删除发生问题域名的 Cookies 和缓存后重启浏览器
 2. 升级无忧行至[最新版本](/guide/keep-updated)，并只保留无忧行暂时禁用其他浏览器插件
 3. 将无忧行设置为规则模式（免费为开启）
 4. 重启浏览器
 
 ### 3. 再次访问
-* 最好去无痕模式下开启无忧行注册一个境外的微软账户。
-* 然后开启New Bing、Copilot或者ChatGPT
+* 在无痕模式开启无忧行，对比未登录和登录状态，区分连接故障与账户资格问题。
+* 使用本人持有、资料真实并符合第三方条款的账户，按目标网站的正式资格和地区规则操作。
+* 然后再次访问 New Bing、Copilot 或 ChatGPT；若只有登录后失败，请联系对应平台支持。
 
 > 能访问New Bing或者ChatGPT之后，就可以尝试逐个开启其他插件或者软件了，目的是排查插件之间的相互影响。

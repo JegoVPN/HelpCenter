@@ -1,17 +1,21 @@
 import { defineConfig } from 'vitepress'
+import { geoHead, geoSitemapItems } from './geo'
+import { enNav, enSidebar, zhNav, zhSidebar } from './navigation'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   lang: 'zh-Hans',
   title: "无忧行 - 使用指南",
-  description: "无忧行是最好用的免费代理工具，专为Edge和Chrome浏览器设计",
+  description: "无忧行是专为 Chrome 和 Edge 设计的免费代理工具，简单易用、高效安全，帮助你轻松访问全球网站。",
   base: '/',
   lastUpdated: true,
   
   sitemap: {
     hostname: 'https://help.jegovpn.com',
-    lastmodDateOnly: false
+    lastmodDateOnly: false,
+    transformItems: geoSitemapItems
   },
+  transformHead: geoHead,
   // 启用简洁URL，移除.html后缀
   cleanUrls: true,
   
@@ -34,84 +38,11 @@ export default defineConfig({
       label: '中文',
       lang: 'zh-Hans',
       title: "无忧行 - 使用指南",
-      description: "无忧行是最好用的免费代理工具，专为Edge和Chrome浏览器设计",
+      description: "无忧行是专为 Chrome 和 Edge 设计的免费代理工具，简单易用、高效安全，帮助你轻松访问全球网站。",
       themeConfig: {
         // 中文主题配置
-        nav: [
-          { text: '浏览器翻墙教程', link: '/guide/usage' },
-          { text: '电脑和手机翻墙教程', link: '/devices/pc-mobile' }
-        ],
-        sidebar: [
-          {
-            text: '使用教程',
-            items: [
-              { text: '📗如何安装', link: '/guide/installation' },
-              { text: '👶如何注册', link: '/guide/registration' },
-              { text: '🔮如何翻墙', link: '/guide/usage' },
-              { text: '🤖如何解锁New Bing、Copilot或者ChatGPT', link: '/guide/chatgpt-access' },
-              { text: '🟢服务详解', link: '/guide/services' },
-              { text: '🌐节点选择', link: '/guide/node-selection' },
-              { text: '📋节点介绍', link: '/guide/nodes' },
-              { text: '☑️模式选择', link: '/guide/mode-selection' },
-              { text: '🔀代理策略', link: '/guide/proxy-strategy' },
-              { text: '🔄防止失联', link: '/guide/keep-updated' },
-              { text: '🙋联系客服', link: '/guide/support' },
-              { text: '❓常见问题', link: '/guide/faq' },
-              { text: '🔒加密DNS', link: '/guide/encrypted-dns' },
-              { text: '💻Vibe Coding', link: '/guide/vibe-coding' }
-            ]
-          },
-          {
-            text: '升级会员',
-            items: [
-              { text: '🏆会员体系', link: '/membership/benefits' },
-              { text: '💳如何支付', link: '/membership/payment' }
-            ]
-          },
-          {
-            text: '订阅服务',
-            items: [
-              { text: '在电脑或手机上如何翻墙', link: '/devices/pc-mobile' },
-              { text: '安卓手机怎么翻墙', link: '/devices/android' },
-              { text: '苹果手机/iPad 怎么翻墙', link: '/devices/ios' },
-              { text: '美区 Apple ID 注册教程', link: '/devices/us-apple-id' },
-              { text: '华为鸿蒙手机怎么翻墙', link: '/devices/harmony' },
-              { text: 'Windows 电脑怎么翻墙', link: '/devices/windows' },
-              { text: '苹果Mac电脑怎么翻墙', link: '/devices/mac' },
-              { text: 'Linux 电脑怎么翻墙', link: '/devices/linux' }
-            ]
-          },
-          {
-            text: '工具软件',
-            items: [
-              { text: 'Mihomo系列软件', link: '/tool/mihomo' },
-              { text: 'FlClash', link: '/tool/flclash' },
-              { text: 'Clash Verge Rev', link: '/tool/clashverge' },
-              { text: 'sing-box', link: '/tool/sing-box' },
-              { text: 'sing-box for Android', link: '/tool/sing-boxforandroid' },
-              { text: 'sing-box for Apple', link: '/tool/sing-boxforapple' },
-              { text: 'GUI.for.SingBox', link: '/tool/guiforsing-box' },
-              { text: 'Shadowrocket', link: '/tool/shadowrocket' },
-              { text: 'Surfboard', link: '/tool/surfboard' },
-              { text: 'v2rayN', link: '/tool/v2rayn' },
-              { text: 'v2rayNG', link: '/tool/v2rayng' },
-              { text: 'OneClick', link: '/tool/oneclick' },
-              { text: 'Surge', link: '/tool/surge' },
-              { text: 'Quantumult X', link: '/tool/quantumult-x' },
-              { text: 'Loon', link: '/tool/loon' },
-              { text: 'ClashBox', link: '/tool/clashbox' },
-              { text: 'Clash for Windows', link: '/tool/clash-for-windows' },
-              { text: 'Clash for Android', link: '/tool/clash-for-android' }
-            ]
-          },
-          {
-            text: '使用准则',
-            items: [
-              { text: '❤️公平使用', link: '/abuse/fair-use' },
-              { text: '⏳流量限制', link: '/abuse/limits' }
-            ]
-          }
-        ],
+        nav: zhNav,
+        sidebar: zhSidebar,
         lastUpdated: {
           text: '最后更新于',
           formatOptions: {
@@ -128,85 +59,12 @@ export default defineConfig({
       label: 'English',
       lang: 'en',
       title: "Jego - User Guide",
-      description: "Jego is the best free proxy tool designed for Edge and Chrome browsers",
+      description: "Jego is a free proxy tool designed for Chrome and Edge, making it simple, fast, and secure to access websites around the world.",
       link: '/en/',
       themeConfig: {
         // 英文主题配置
-        nav: [
-          { text: 'Browser Proxy Tutorial', link: '/en/guide/usage' },
-          { text: 'PC & Mobile Proxy Tutorial', link: '/en/devices/pc-mobile' }
-        ],
-        sidebar: [
-          {
-            text: 'User Guide',
-            items: [
-              { text: '📗How to Install', link: '/en/guide/installation' },
-              { text: '👶How to Register', link: '/en/guide/registration' },
-              { text: '🔮How to Use Proxy', link: '/en/guide/usage' },
-              { text: '🤖How to Access New Bing, Copilot or ChatGPT', link: '/en/guide/chatgpt-access' },
-              { text: '🟢Service Details', link: '/en/guide/services' },
-              { text: '🌐Node Selection', link: '/en/guide/node-selection' },
-              { text: '📋Node Introduction', link: '/en/guide/nodes' },
-              { text: '☑️Mode Selection', link: '/en/guide/mode-selection' },
-              { text: '🔀Proxy Strategy', link: '/en/guide/proxy-strategy' },
-              { text: '🔄Stay Connected', link: '/en/guide/keep-updated' },
-              { text: '🙋Contact Support', link: '/en/guide/support' },
-              { text: '❓FAQ', link: '/en/guide/faq' },
-              { text: '🔒Encrypted DNS', link: '/en/guide/encrypted-dns' },
-              { text: '💻Vibe Coding', link: '/en/guide/vibe-coding' }
-            ]
-          },
-          {
-            text: 'Premium Membership',
-            items: [
-              { text: '🏆Membership Benefits', link: '/en/membership/benefits' },
-              { text: '💳How to Pay', link: '/en/membership/payment' }
-            ]
-          },
-          {
-            text: 'Subscription Services',
-            items: [
-              { text: 'How to Use Proxy on PC or Mobile', link: '/en/devices/pc-mobile' },
-              { text: 'How to Use Proxy on Android', link: '/en/devices/android' },
-              { text: 'How to Use Proxy on iPhone/iPad', link: '/en/devices/ios' },
-              { text: 'US Apple ID Registration Guide', link: '/en/devices/us-apple-id' },
-              { text: 'How to Use Proxy on Harmony OS', link: '/en/devices/harmony' },
-              { text: 'How to Use Proxy on Windows', link: '/en/devices/windows' },
-              { text: 'How to Use Proxy on Mac', link: '/en/devices/mac' },
-              { text: 'How to Use Proxy on Linux', link: '/en/devices/linux' }
-            ]
-          },
-          {
-            text: 'Tools & Software',
-            items: [
-              { text: 'Mihomo Series', link: '/en/tool/mihomo' },
-              { text: 'FlClash', link: '/en/tool/flclash' },
-              { text: 'Clash Verge Rev', link: '/en/tool/clashverge' },
-              { text: 'sing-box', link: '/en/tool/sing-box' },
-              { text: 'sing-box for Android', link: '/en/tool/sing-boxforandroid' },
-              { text: 'sing-box for Apple', link: '/en/tool/sing-boxforapple' },
-              { text: 'GUI.for.SingBox', link: '/en/tool/guiforsing-box' },
-              { text: 'Shadowrocket', link: '/en/tool/shadowrocket' },
-              { text: 'Surfboard', link: '/en/tool/surfboard' },
-              { text: 'v2rayN', link: '/en/tool/v2rayn' },
-              { text: 'v2rayNG', link: '/en/tool/v2rayng' },
-              { text: 'OneClick', link: '/en/tool/oneclick' },
-              { text: 'Surge', link: '/en/tool/surge' },
-              { text: 'Quantumult X', link: '/en/tool/quantumult-x' },
-              { text: 'Loon', link: '/en/tool/loon' },
-              { text: 'ClashBox', link: '/en/tool/clashbox' },
-              { text: 'Clash for Windows', link: '/en/tool/clash-for-windows' },
-              { text: 'Clash for Android', link: '/en/tool/clash-for-android' }
-            ]
-          },
-          {
-            text: 'Usage Guidelines',
-            items: [
-              { text: '❤️Fair Use', link: '/en/abuse/fair-use' },
-              { text: '⏳Traffic Limits', link: '/en/abuse/limits' }
-            ]
-          }
-        ],
+        nav: enNav,
+        sidebar: enSidebar,
         lastUpdated: {
           text: 'Last updated',
           formatOptions: {

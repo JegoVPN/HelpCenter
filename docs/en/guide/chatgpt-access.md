@@ -1,4 +1,18 @@
 ---
+translationKey: guide-chatgpt-access
+contentType: how-to
+product: browser-extension
+productArea: browser-extension
+uiSurface: null
+locale: en
+status: current
+owner: docs
+reviewStatus: needs-review
+lastVerified: null
+platforms: [chrome, edge]
+tools: []
+appliesTo: []
+sources: []
 title: How to Access New Bing, Copilot or ChatGPT - User Guide
 description: How to properly access New Bing, Copilot or ChatGPT in mainland China
 ---
@@ -21,7 +35,7 @@ description: How to properly access New Bing, Copilot or ChatGPT in mainland Chi
 
 <img src="/images/jego-v1.5.9/popup-paid-rules-ai-en.png" alt="Jego selected AI node" width="280" />
 
-✅ **Success**, you have successfully completed the unlocking of `Bing`, `Copilot` and `ChatGPT`:
+✅ **Connection check complete.** The screenshots below show historically successful page loads for `Bing`, `Copilot`, and `ChatGPT`; actual features still depend on third-party service status and account eligibility:
 
 <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F8xAkeKaPFvJCAt1MuBYf_2Fimage_2.png" alt="New Bing ✌">
 
@@ -31,7 +45,7 @@ description: How to properly access New Bing, Copilot or ChatGPT in mainland Chi
 
 ::: info It's That Simple
 
-Using Jego to unlock New Bing and ChatGPT is that simple!
+These steps test browser connectivity; they do not change or guarantee third-party account eligibility.
 :::
 
 ---
@@ -53,13 +67,14 @@ Please **optimize your local network and browser environment**, follow the steps
    * Use proxy server: Off
 
 ### 2. Browser Environment
-1. Upgrade browser to latest version, clear all Cookies and cache and restart browser
+1. Upgrade the browser. If cleanup is needed, remove cookies and cache only for the affected domain, then restart it.
 2. Upgrade Jego to [latest version](/en/guide/keep-updated), and temporarily disable other browser extensions, keeping only Jego
 3. Set Jego to Rules mode (free version is enabled)
 4. Restart browser
 
 ### 3. Access Again
-* It's best to open Jego in incognito mode and register an overseas Microsoft account.
-* Then access New Bing, Copilot or ChatGPT
+* Open Jego in a private window and compare signed-out with signed-in behavior to separate connection issues from account eligibility.
+* Use an account you own with accurate details, and follow the destination service's current eligibility and region rules.
+* Try New Bing, Copilot, or ChatGPT again. If only the signed-in session fails, contact the destination platform's support.
 
-> After being able to access New Bing or ChatGPT, you can try enabling other extensions or software one by one to identify conflicts between extensions. 
+> After being able to access New Bing or ChatGPT, you can try enabling other extensions or software one by one to identify conflicts between extensions.

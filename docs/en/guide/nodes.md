@@ -1,6 +1,20 @@
 ---
+translationKey: guide-nodes
+contentType: reference
+product: general
+productArea: network-reference
+uiSurface: null
+locale: en
+status: current
+owner: docs
+reviewStatus: needs-review
+lastVerified: null
+platforms: [chrome, edge]
+tools: []
+appliesTo: []
+sources: []
 title: Node Introduction - User Guide
-description: Before selecting Jego's various nodes, you must understand the basic network knowledge.
+description: Learn Jego node types in plain language and choose one for the current connection.
 ---
 
 <script setup>
@@ -12,14 +26,14 @@ import ieplSvg from '../../.vitepress/svgs/node-iepl.svg?raw'
 
 # Node Introduction
 
-The node routes of a proxy service can essentially be distinguished by the **entry and exit paths of traffic**. Understanding this core logic will help you choose the most suitable route based on your network environment. Our node servers are mainly composed of the following four solutions.
+A node is a Jego network route. Each connection passes through your local network, ISP, a Jego node, and the destination website. Congestion in any one part can affect the final speed. The four labels below explain common route types in plain language.
 
 ## <span style="color:red;">Conclusion First</span>
 
 ::: danger Important Reminder
 <span style="color:red;">If there are no special requirements, prefer</span><span style="color:red;">**Auto Selection**</span><span style="color:red;">.</span>
 
-Due to different network environments in various regions, not every user can smoothly connect to every node server. When Jego is in **Auto Selection** state, the program will automatically select a node server that can connect.
+The same node can behave differently across regions and ISPs. **Auto Select** chooses from the routes currently available to the account and is the easiest place to start. If a site still feels slow, run [Node Test](/en/guide/network-diagnostics-node-speed) and choose another node.
 :::
 
 ## FYI: Your Speed Depends on the Weakest Link
@@ -28,10 +42,10 @@ The full path when you visit an overseas website (e.g. YouTube) looks roughly li
 
 > Your Home → Your ISP (Telecom/Unicom/Mobile) → Domestic Public Network → Jego Domestic Entry Server → Private Line or IEPL → Overseas Exit Server → YouTube
 
-Jego's private line or IEPL only handles the middle segment — the **cross-border transit**. Your overall internet experience depends on the **weakest segment** in this entire chain — this is known as the barrel effect.
+Jego can optimize only part of this path. Home Wi-Fi, the local ISP, cross-border links, node load, and the destination website all affect the result. A premium node cannot fix a poor local connection by itself.
 
 ::: warning Example
-If your local network speed to China's cross-border backbone entry point is already poor, the segment from your home to Jego's entry server is already congested — our private line won't help no matter how fast it is. So when troubleshooting network issues, please first check your local network environment. See: [Optimize your local network and browser environment](/en/guide/faq#unable-to-open-gemini-chatgpt-claude-or-other-overseas-sites)
+If your local connection to the cross-border backbone entry point is already congested, every route after that point will also be affected. Start by checking the local network environment. See: [Check the local network and browser](/en/guide/faq#gemini-chatgpt-claude-or-another-website-does-not-connect)
 :::
 
 ## <span style="color:orange;">Edge Network (Overseas)</span>
@@ -40,49 +54,39 @@ If your local network speed to China's cross-border backbone entry point is alre
 
 **How it works:** Traffic travels from your device directly across the public internet to an overseas server. The entire path goes through public networks without any special optimization for mainland China.
 
-Cloud services provided by operators or merchants from around the world, providing international network capacity ranging from 100Mbps to 10Gbps. Since it uses the public internet, route quality is entirely dependent on the cross-border public network conditions between mainland China and overseas. Speed drops or disconnections may occur during peak hours or sensitive periods.
+This route mainly reaches an overseas node through the public internet. It has broad coverage and is easy to use, but speed and availability can change during busy periods.
 
-::: info Limitations
-Cannot guarantee speed for users in mainland China;
-
-Cannot guarantee connectivity for users in mainland China;
-
-Users in Fujian, Henan, and Xinjiang regions of China may not be able to use it.
+::: info Usage tip
+Results depend heavily on your region and ISP. If it fails, return to Auto Select or choose another route that passed Node Test.
 :::
 
 ::: tip Best For
-Periods of relaxed network controls, or budget-sensitive users with light usage and low stability requirements.
+Everyday light use, or a quick first check that Jego can connect.
 :::
 
 ## <span style="color:blue;">Mainland Optimized Routes (Overseas)</span>
 
 <div v-html="optimizedSvg"></div>
 
-**How it works:** Servers are also located overseas and traffic still needs to cross the firewall, but the outbound and/or return paths use **premium backbone routes** such as China Telecom CN2 GIA, China Unicom AS9929, or China Mobile CMIN2, rather than ordinary public networks.
+**How it works:** An optimized route tries to use a carrier or path that works better for mainland-China connectivity. The exact underlying network can change as nodes are adjusted, so the label alone does not identify one carrier.
 
-Composed of backbone networks and premium business networks, it is the highest-level bearer network between mainland China and the global network. Compared to direct connections, cross-border routing quality is higher with lower latency and better stability, but bandwidth resources are limited and pricing is typically higher.
+It may feel smoother than ordinary public routing in some regions or time periods. Return routing, local ISP congestion, or the destination can still reduce the difference.
 
-::: info Limitations
-Cannot provide unlimited data transmission;
-
-Cannot guarantee connectivity for users in mainland China;
-
-During certain specific periods, cannot guarantee connectivity for users in mainland China;
-
-Users in Fujian, Henan, and Xinjiang regions of China may not be able to use it.
+::: info Usage tip
+Optimized does not mean faster at every moment. Compare the same website around the same time for a useful result.
 :::
 
 ::: tip Best For
-Daily high-frequency use, video conferencing, streaming, and other scenarios requiring decent speed and stability, but with limited budget and no access to private lines.
+Frequent international browsing when ordinary public routes fluctuate during busy periods.
 :::
 
 ## <span style="color:purple;">Mainland Transit Server Routes</span>
 
 <div v-html="transitSvg"></div>
 
-**How it works:** A transit server is deployed within mainland China as an **entry point**. Your traffic first connects to this domestic server, which then forwards it to an overseas exit node. The final outbound traffic still needs to cross the firewall, but the entry segment (from you to the transit server) is completed entirely within domestic networks, ensuring connection quality.
+**How it works:** A transit route first reaches a nearer entry and then forwards traffic to the overseas exit. This can improve the first part of the path, but the extra hop can also become another failure point.
 
-The domestic access segment is stable with low latency from user to transit entry, and is less affected by local ISP network quality. Compared to direct connections, connectivity is generally better in complex network environments. Transit servers are additional infrastructure, resulting in higher costs and relatively limited node availability.
+Actual speed still depends on congestion at the entry, cross-border segment, and exit.
 
 ::: info Limitations
 The cross-border exit segment still uses public or optimized routes, and exit stability is affected by overseas node and cross-border link quality;
@@ -91,38 +95,34 @@ Outbound traffic still needs to cross the firewall, so zero-firewall-crossing ri
 :::
 
 ::: tip Best For
-Users with complex network environments where direct connection routes are frequently unstable, who need better entry-point stability.
+When direct overseas routes are unstable, compare a transit route and then test the actual website again.
 :::
 
 ## <span style="color:green;">IEPL Private Lines</span>
 
 <div v-html="ieplSvg"></div>
 
-**How it works:** IEPL (International Ethernet Private Line) is a carrier-grade **end-to-end private network circuit**. Through cooperation with operators such as China Telecom, China Unicom, and China Mobile, a dedicated channel is built on internal backbone networks. Traffic **never passes through the public internet**, meaning it **does not need to cross the firewall**.
+**How it works:** IEPL means International Ethernet Private Line, a carrier private-line transport product. Jego uses the label to distinguish a route type, while the physical path can change as the network is deployed and adjusted.
 
-Using BGP protocol in close cooperation with multiple partners, a global private communication channel is built that can automatically optimize network structure according to real-time routing protocols. Latency is extremely low with minimal jitter, and links can be quickly switched during internal operator failures. This ensures that users in mainland China can continuously enjoy stable and efficient global network services.
+A private-line segment can reduce exposure to public-network congestion in the middle of the path. Local Wi-Fi, ISP access, overseas exit, and the destination still affect the final experience.
 
-::: info Advantages
-Traffic travels through operator intranets, naturally bypassing GFW inspection — theoretically the most stable option;
-
-Provides 24/7 stable and high-speed network access experience for users in mainland China;
-
-Can guarantee connectivity for users in mainland China.
+::: info Usage tip
+Private line does not mean a route can never fail. Use Node Test and the actual website to check the current result.
 :::
 
 ::: tip Best For
-Users with extremely high requirements for stability and low latency, advanced users who need to maintain constant availability during sensitive periods.
+Users who value stability and want to reduce the effect of public-network congestion.
 :::
 
 ## Comprehensive Comparison
 
-| Route Type | Entry Point | Crosses Firewall | Stability | Max Speed | Cost |
-|---|---|---|---|---|---|
-| Edge Network (Direct) | Overseas | Yes | Low | High | Low |
-| Mainland Optimized (Premium) | Overseas (Premium) | Yes | Medium | Medium-High | Medium |
-| Mainland Transit Server | Domestic Transit | Yes | High | High | High |
-| IEPL Private Line | Private Line | No | Highest | High | High |
+| Route label | Simple meaning | Try it when |
+|---|---|---|
+| Edge network | Mainly uses the public internet to reach an overseas node | Everyday light use or a first connection check |
+| Mainland optimized | Optimizes part of the cross-border route | Ordinary public routes fluctuate at busy times |
+| Mainland transit | Reaches an entry first, then forwards to the overseas exit | A direct overseas route is unstable |
+| IEPL | Uses a private-line-style transport for a middle segment | Stability matters and you want less public-network fluctuation |
 
 ::: info Note
-Some premium routes (such as Pro and Ultra routes) require a corresponding membership tier to access. See [Membership Benefits](/en/membership/benefits) for details.
-::: 
+Whether Pro, Ultra, or another route appears depends on the account and VIP level. Check the popup node list and [Membership Benefits](/en/membership/benefits).
+:::

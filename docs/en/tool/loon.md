@@ -1,32 +1,49 @@
 ---
+jegoSupport: unsupported
+tool: loon
+clientKind: null
+minimumOs: []
+architectures: []
+subscriptionFormats: []
+lifecycle: current
+recommendation: not-recommended
+securityStatus: needs-review
+supportedVersions: []
+replacements: [sing-boxforapple, shadowrocket, surge, quantumult-x]
+officialSources: [https://apps.apple.com/us/app/loon/id1373567447, https://nsloon.app/docs/intro]
+translationKey: tool-loon
+contentType: tool-guide
+product: subscription-service
+productArea: tools
+uiSurface: null
+locale: en
+status: current
+owner: docs
+reviewStatus: needs-review
+lastVerified: 2026-07-10
+platforms: [ios, ipados, tvos]
+tools: [loon]
+appliesTo: []
+sources: [https://apps.apple.com/us/app/loon/id1373567447, https://nsloon.app/docs/intro]
 title: Loon - Tools & Software
-description: Loon is a network tool that integrates network proxy, network debugging, network rewriting and a series of other functions.
+description: The third-party Loon project may still be maintained, but Jego no longer supports it; this historical Apple-platform guide provides supported alternatives.
 ---
 
 # Loon
 
 ::: danger Not Recommended
-Since Loon doesn't support Jego's latest protocols, Jego doesn't recommend continued use. by 20250714
+The third-party Loon project may still be maintained, but Jego no longer supports its current subscription protocol and therefore does not recommend it for Jego.
 
 Please use [Jego's recommended clients](/en/devices/pc-mobile#_1-about-which-client-to-use)
 :::
 
 ## <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FrQykYPazvOUVLyWMmu7C_2Floon_2.png" width="26" height="26" alt="Loon icon"> Get Loon
 
-Currently Loon has been required by the government to be removed from the mainland China App Store. Please switch to non-mainland China regions (such as US, Hong Kong, Japan regions), then purchase and download.
-
-::: info Registration Tutorial
-If you want to register your own non-mainland App Store account, see the [US Apple ID Registration Guide](/en/devices/us-apple-id), or purchase a ready-made account.
-:::
-
-::: info Purchase Channels
-You can purchase overseas Apple IDs at [rocketgirls.space](https://www.rocketgirls.space/) and purchase gift cards for recharge.\
-Note: Jego has no cooperation relationship with this platform.
-:::
+App Store availability is controlled by Apple and the developer for each account region. Do not buy or share accounts or falsify region details; use an account you legitimately own and the official store. The third-party Loon project may still be updated, but Jego no longer supports its current subscription protocol, so this page is retained as a historical tutorial.
 
 ## Download Loon
 
-Open the "App Store" app > My avatar > Scroll to the bottom of the page to log out your Apple ID > Log in to non-mainland China region Apple ID[ ](https://apps.apple.com/us/app/quantumult-x/id1443988620)>Search for [Loon](https://apps.apple.com/us/app/loon/id1373567447) and install
+If the [official Loon App Store page](https://apps.apple.com/us/app/loon/id1373567447) is available for your legitimate account region, install it from the store. Jego users should prefer one of the supported replacements listed above.
 
 ## Add Subscription
 
@@ -68,6 +85,6 @@ Click the small text below LOON in the upper right corner of the homepage, and a
 
 ## Common Issues
 
-**Q**: The configuration file has been set up and VPN is also turned on, why can't I connect to the external network?
+**When the profile is ready and VPN is on but websites still do not connect**
 
-A: Check if the proxy server IP in your configuration is correct; check in phone settings whether Loon's **WLAN and Cellular Network** is checked. 
+A: Check if the proxy server IP in your configuration is correct; check in phone settings whether Loon's **WLAN and Cellular Network** is checked.

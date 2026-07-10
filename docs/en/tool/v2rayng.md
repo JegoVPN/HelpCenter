@@ -1,6 +1,32 @@
 ---
+jegoSupport: unsupported
+tool: v2rayng
+clientKind: null
+minimumOs: []
+architectures: []
+subscriptionFormats: []
+lifecycle: current
+recommendation: not-recommended
+securityStatus: needs-review
+supportedVersions: []
+replacements: [sing-boxforandroid, flclash]
+officialSources: [https://github.com/2dust/v2rayNG, https://play.google.com/store/apps/details?id=com.v2ray.ang]
+translationKey: tool-v2rayng
+contentType: tool-guide
+product: subscription-service
+productArea: tools
+uiSurface: null
+locale: en
+status: current
+owner: docs
+reviewStatus: needs-review
+lastVerified: 2026-07-10
+platforms: [android]
+tools: [v2rayng]
+appliesTo: []
+sources: [https://github.com/2dust/v2rayNG, https://play.google.com/store/apps/details?id=com.v2ray.ang]
 title: v2rayNG - Tools & Software
-description: v2rayNG is a proxy software client under Android system, that is, Android mobile system, with powerful functions and supports multiple proxy protocols, such as VMess, VLESS, Shadowsocks, Socks, Trojan and other proxy protocols.
+description: The third-party v2rayNG project may still be maintained, but Jego no longer supports it; this historical Android guide provides supported alternatives.
 ---
 
 # v2rayNG
@@ -8,7 +34,7 @@ description: v2rayNG is a proxy software client under Android system, that is, A
 v2rayNG is a proxy software client under Android system, that is, Android mobile system, with powerful functions and supports multiple proxy protocols, such as VMess, VLESS, Shadowsocks, Socks, Trojan and other proxy protocols.
 
 ::: danger Not Recommended
-Since v2rayNG doesn't support Jego's latest protocols, Jego doesn't recommend continued use. by 20250714
+The third-party v2rayNG project may still be maintained, but Jego no longer supports its current subscription protocol and therefore does not recommend it for Jego. This historical tutorial remains available with supported alternatives.
 
 Please use [Jego's recommended clients](/en/devices/pc-mobile#_1-about-which-client-to-use)
 :::
@@ -101,4 +127,4 @@ Recommended for beginners, in predefined rules, the system has built-in differen
 * Bypass LAN and mainland addresses then proxy
 * Global direct connection
 
-Choose the appropriate predefined rules according to different needs, generally choose `Bypass LAN and mainland addresses then proxy`. 
+Choose the appropriate predefined rules according to different needs, generally choose `Bypass LAN and mainland addresses then proxy`.

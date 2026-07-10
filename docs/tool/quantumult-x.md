@@ -1,4 +1,30 @@
 ---
+jegoSupport: supported
+tool: quantumult-x
+clientKind: null
+minimumOs: []
+architectures: []
+subscriptionFormats: []
+lifecycle: current
+recommendation: recommended
+securityStatus: needs-review
+supportedVersions: []
+replacements: []
+officialSources: [https://apps.apple.com/us/app/quantumult-x/id1443988620]
+translationKey: tool-quantumult-x
+contentType: tool-guide
+product: subscription-service
+productArea: tools
+uiSurface: null
+locale: zh-Hans
+status: current
+owner: docs
+reviewStatus: needs-review
+lastVerified: 2026-07-10
+platforms: [ios, ipados, macos, tvos]
+tools: [quantumult-x]
+appliesTo: []
+sources: [https://apps.apple.com/us/app/quantumult-x/id1443988620]
 title: Quantumult X - 工具软件
 description: Quantumult X是iOS上一款功能强大的网络工具。
 ---
@@ -9,20 +35,11 @@ Quantumult X是iOS上一款功能强大的网络工具。
 
 ## <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2Fuap2kKrwZ32jilQhXxlt_2Fquantumultx_3.png" width="26" height="26" alt="Quantumult X图标"> 获取Quantumult  X
 
-目前 Quantumult X已经被政府要求从中国大陆区的 App Store 移除。请切换至非中国大陆地区（如美国、香港、日本地区），再购买下载。
-
-::: info 注册教程
-如果你想注册自己的非大陆地区 App Store 账号，请参考 [美区 Apple ID 注册教程](/devices/us-apple-id)，也可以购买现成的账号。
-:::
-
-::: info 购买渠道
-您可以在[ rocketgirls.space](http://www.rocketgirls.space/) 购买国外区Apple ID，并购买礼品卡进行充值。\
-注意：无忧行与该平台无任何合作关系。
-:::
+App Store 可用性由 Apple 和开发者按账户地区决定。不要购买、共享账号或虚构地区资料；只使用本人合法账户与官方商店入口。
 
 ## 下载 Quantumult X
 
-打开 "App Store" 应用 > 我的头像 > 滑动到页面底部注销您的 Apple ID > 登陆非中国大陆区 Apple ID[ ](https://apps.apple.com/us/app/quantumult-x/id1443988620)>搜索 [Quantumult X](https://apps.apple.com/us/app/quantumult-x/id1443988620) 并安装
+如 [Quantumult X 官方 App Store 页面](https://apps.apple.com/us/app/quantumult-x/id1443988620)在你的合法账户地区可用，可从商店购买或安装。付款与地区要求以 Apple 当前页面为准。
 
 ## 添加订阅
 
@@ -36,7 +53,7 @@ Quantumult X是iOS上一款功能强大的网络工具。
 
 </div>
 
-打开 **Quantumult X**，打开App，点击**右下角图标** <img src="https://file.olo4.com/unpanel/quantumult%20x%20setup.jpg" alt="quantumult_x_setup" width="300">
+打开 **Quantumult X**，点击右下角主功能图标。旧外站图片已失效，以下本地截图展示同一入口：
 
 <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FTYLTzRrBAtQzw9mgGxzK_2Fimage_3.png" alt="Quantumult X界面" width="300">
 

@@ -1,4 +1,18 @@
 ---
+translationKey: devices-linux
+contentType: device-guide
+product: subscription-service
+productArea: device-selection
+uiSurface: null
+locale: en
+status: current
+owner: docs
+reviewStatus: needs-review
+lastVerified: null
+platforms: [linux]
+tools: []
+appliesTo: []
+sources: []
 title: How to Use Proxy on Linux PC - Device Support
 description: Linux strictly speaking refers only to the operating system kernel, as the operating system contains many user graphical interfaces and other utility tools.
 ---
@@ -7,15 +21,19 @@ description: Linux strictly speaking refers only to the operating system kernel,
 
 Linux strictly speaking refers only to the operating system kernel, as the operating system contains many user graphical interfaces and other utility tools.
 
-Jego's subscription node service (mainland users usually call it "airport") is compatible with numerous network proxy tool programs (mainland users usually call it "ladder") on Linux systems. With simple learning, you can easily enable proxy access for all applications on your PC and mobile, enjoy unlimited global network resources anytime.
+Jego members can add subscription nodes to a compatible Linux client, allowing apps outside the browser to use the VPN. Choose a currently supported client below, then follow its complete installation and import guide.
 
 ## <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FJJlooO6sJC8xrcR6vqGj_2Flinux_1.svg" width="38" height="28" alt="Linux icon"> Proxy Tools Available on Linux Devices
 
-### Recommended Software
+New users should choose a client marked **Good for most users** and **Works with Jego: Yes**, then open its complete guide.
+
+<ToolCatalog locale="en" platform="linux" />
+
+### Existing tool notes and tutorial entry points
 
 <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FX6LBfzRlMdWyQVvPC9eg_2Fimage_1.png" width="26" height="26" alt="sing-box icon"> [sing-box](/en/tool/sing-box)
 
-sing-box is a brand new kernel that supports almost all current protocols, and also has cross-platform proxy tool clients, including Windows, macOS, Android, iOS and Linux.
+sing-box is a cross-platform network proxy project; verify current protocols, platforms, and versions from the official project and tool status.
 
 <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2Fu2sHeQjHJurcgVhJB1zO_2Ficon_2.png" width="26" height="26" alt="FlClash icon"> [FlClash](/en/tool/flclash)
 
@@ -27,4 +45,4 @@ MetaCubeX launched the new Mihomo kernel based on Clash core, the team continuou
 
 <img src="/images/clashvergelogo.png" width="26" height="26" alt="Clash Verge Rev"> [Clash Verge Rev](/en/tool/clashverge)
 
-Clash Verge Rev is a multi-platform proxy client based on Mihomo (formerly ClashMeta) kernel, supporting Alpha version kernel switching. Clean and beautiful user interface with customizable theme colors. 
+Clash Verge Rev is a multi-platform proxy client based on Mihomo (formerly ClashMeta) kernel, supporting Alpha version kernel switching. Clean and beautiful user interface with customizable theme colors.

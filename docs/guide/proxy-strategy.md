@@ -1,42 +1,83 @@
 ---
-title: 代理策略 - 使用指南
-description: 设置好代理策略可以让国外的网站自动走代理，而国内的影视站则不走代理等等。
+translationKey: guide-proxy-strategy
+contentType: how-to
+product: browser-extension
+productArea: browser-extension
+uiSurface: control-panel
+locale: zh-Hans
+status: current
+owner: docs
+reviewStatus: verified
+lastVerified: 2026-07-10
+dateModified: 2026-07-10
+platforms: [chrome, edge]
+tools: []
+appliesTo: []
+sources: ["cloud/app/chromev2@1.5.10", "cloud/locales/zh_CN.csv"]
+title: 无忧行代理策略使用指南
+description: 在规则模式下为指定域名或 IP 选择无忧行节点或直连方式，并在保存后查看、编辑和确认规则。
 ---
 
 # 代理策略
 
-::: danger 中国大陆地区用户注意
-<span style="color:red;">无忧行的规则模式已预置几乎所有大陆常用的网站和IP地址，日常使用时无需再添加这些网站到直连规则。</span>
+规则模式已经带有无忧行提供的默认策略，大多数网站可以直接使用。需要让某个网站固定走指定节点，或固定使用本地网络时，再添加一条自己的代理策略。
+
+::: info 代理策略只在规则模式下使用
+全局模式会让全部浏览器请求经过当前节点；关闭模式会使用本地网络。自定义代理策略在**规则**模式下生效。
 :::
 
-## 配置规则
+## 添加一条代理策略
 
-在**无忧行 - 控制面板**里点击左侧导航栏**代理策略** ，点击**添加代理策略**。
+还没有添加自定义策略时，页面会显示下面的状态：
 
-::: info 示例说明
-示例以访问BBC经由伦敦节点、访问日经中文网经由东京节点、访问哔哩哔哩不经过代理为例。
-:::
+![代理策略空白页面](/images/jego-v1.5.9/dashboard-proxy-policy-empty-zh.png)
 
-1. Proxy Server选择伦敦节点
-2. Domain/Host List填写<span style="color:blue;">`bbc.com`</span>（如有多个域名请用英文的逗号和空格分隔）点击保存。
-3. 继续添加代理策略，Proxy Server选择东京节点
-4. Domain/Host List填写<span style="color:blue;">`nikkei.com`</span>（如有多个域名请用英文的逗号和空格分隔）点击保。
-5. 继续添加代理策略，Proxy Server选择直连\[不走代理]
-6. Domain/Host List填写<span style="color:blue;">`acg.tv acgvideo.com b23.tv bilibili.com bilibili.tv biliapi.net biliapi.com bilivideo.com hdslb.com upos-hz-mirrorakam.akamaized.net`</span>点击保存。
+1. 点击无忧行图标，进入**控制面板**。
+2. 在左侧打开**代理策略**，点击**添加代理策略**。
+3. 在**代理线路**中选择一种连接方式：
+   - 选择一个无忧行节点，匹配的地址就会经过这个节点；
+   - 选择**直连[不走代理]**，匹配的地址就会使用本地网络。
+4. 在**域名/主机列表**中填写网站域名，例如 `bbc.com`。多项内容可以一行一个；有明确需求时，也可以填写 IPv4 地址或使用 `1.1.1.*` 这样的 IPv4 网段。
+5. 点击**保存**。保存完成后会回到代理策略列表，刚添加的线路和地址会显示在这里。
+
+最简单的写法是填写主域名。比如填写 `bbc.com` 后，`www.bbc.com` 等子域名也会使用同一条策略。
+
+## 域名和 IP 的填写方式
+
+- **同一条线路使用多个地址**：把这些域名或 IP 放在同一条策略里，一行填写一个。保存后，它们会一起使用所选节点或直连方式。
+- **不同地址使用不同线路**：分别添加策略。例如 `bbc.com` 使用伦敦节点，`nikkei.com` 使用东京节点，就保存成两条策略。
+- **网站通常填写主域名**：填写 `bbc.com` 就能覆盖它的子域名，日常不需要逐个添加 `www.bbc.com` 等地址。
+- **按 IP 分流**：单个 IPv4 地址可以直接填写；IPv4 网段使用星号写法，例如 `1.1.1.*`。
+
+一条自定义策略只处理列表中匹配的地址，其他网站仍然按照无忧行现有的默认策略连接。
+
+## 三个例子
+
+- **BBC 使用伦敦节点**：代理线路选择伦敦节点，域名/主机列表填写 `bbc.com`。
+- **日经中文网使用东京节点**：代理线路选择东京节点，域名/主机列表填写 `nikkei.com`。
+- **哔哩哔哩使用本地网络**：代理线路选择**直连[不走代理]**，域名/主机列表填写 `bilibili.com`。
+
+节点名称会随账号和当前线路变化，选择自己列表中对应地区的节点即可。
 
 ![代理策略配置](/images/jego-v1.5.9/dashboard-proxy-policy-example-zh.png)
 
-配置成功后，<span style="color:green;">`Rules`</span>模式下使用无忧行时，<span style="color:blue;">`哔哩哔哩`</span>都是直接连接，<span style="color:blue;">`bbc.com`</span>及<span style="color:blue;">`*.bbc.com`</span>都将走伦敦服务器，<span style="color:blue;">`nikkei.com`</span>及<span style="color:blue;">`*.nikkei.com`</span>都将走东京服务器。
+保存这三条策略后，在**规则**模式下：BBC 及其子域名使用伦敦节点，日经中文网及其子域名使用东京节点，哔哩哔哩主域名及其子域名使用本地网络。
 
-::: danger 重要提醒
-1. <span style="color:red;">只用输入域名即可，不用输入</span><span style="color:red;">`https://`</span> <span style="color:red;"></span><span style="color:red;">以及</span> <span style="color:red;"></span><span style="color:red;">`http://`</span> <span style="color:red;"></span><span style="color:red;">。</span>
-2. <span style="color:red;">主域名即代表泛域名，</span><span style="color:blue;">`bbc.com`</span><span style="color:red;">即代表</span><span style="color:blue;">`*.bbc.com`</span><span style="color:red;">`以及`</span><span style="color:blue;">`*.*.bbc.com`</span> <span style="color:red;">。</span>
-:::
+## 在列表中确认结果
 
-## OpenAI和Bing
+保存后回到代理策略列表，每一行就是一条策略：**代理线路**显示这条策略使用的节点或直连方式，**域名/主机**显示会匹配的地址。先核对这两列，就能确认刚才的选择是否符合预期。
 
-由于无忧行在服务端提供了 [如何解锁New Bing、Copilot或者ChatGPT](/guide/chatgpt-access)的服务，我们强烈建议您<span style="color:red;">**不要**</span>设置任何关于`bing.com`和`openai.com`的策略。
+需要让更多地址使用同一条线路时，点击**编辑**并补充地址；需要使用另一条线路时，点击**添加代理策略**建立新的一条。这样每条策略的作用都容易看懂。
 
-## 高效实用
+## 保存后查看和调整
 
-配置好规则，可以让你更加畅快地享受境内自由且高速地冲浪。
+1. 回到插件弹窗，选择**规则**模式。
+2. 打开目标网站正常使用。
+3. 需要确认网站走向时，进入**网络诊断 → 连接检测**，在“查网址走向”中输入域名。
+4. 回到代理策略列表，可以随时使用**编辑**修改线路或地址，使用**删除**移除不再需要的策略。删除后，原来匹配的地址会继续按照无忧行的其他规则连接。
+
+详细的检查方法见[查询网址走向](/guide/network-diagnostics#route-check)。
+
+## AI 产品
+
+这些服务通常先使用无忧行现有的默认策略，选择正确的线路即可，详细使用方法见[AI 产品访问指南](/guide/chatgpt-access)。

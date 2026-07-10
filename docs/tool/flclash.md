@@ -1,4 +1,30 @@
 ---
+jegoSupport: supported
+tool: flclash
+clientKind: null
+minimumOs: []
+architectures: []
+subscriptionFormats: []
+lifecycle: current
+recommendation: recommended
+securityStatus: needs-review
+supportedVersions: []
+replacements: []
+officialSources: [https://github.com/chen08209/FlClash]
+translationKey: tool-flclash
+contentType: tool-guide
+product: subscription-service
+productArea: tools
+uiSurface: null
+locale: zh-Hans
+status: current
+owner: docs
+reviewStatus: needs-review
+lastVerified: 2026-07-10
+platforms: [windows, macos, linux, android, harmonyos]
+tools: [flclash]
+appliesTo: []
+sources: [https://github.com/chen08209/FlClash]
 title: FlClash - 工具软件
 description: 基于Mihomo（原ClashMeta）的多平台代理客户端，简单易用，开源无广告。
 ---
@@ -11,7 +37,7 @@ description: 基于Mihomo（原ClashMeta）的多平台代理客户端，简单�
 欢迎阅读2025年FlClash使用教程
 :::
 
-FlClash是一款基于Mihomo（原ClashMeta）的开源多平台代理客户端，采用Flutter框架开发，支持Windows、Android、macOS和Linux等多种平台。其直观易用的界面设计，使用户能够方便地进行代理设置、管理路由规则，并查看实时流量监控，完全开源且无广告，用户无需担心隐私安全问题。
+FlClash 是基于 Mihomo（原 Clash Meta）的开源多平台代理客户端，采用 Flutter 框架开发。当前平台与官方来源见本页状态栏和 GitHub 项目。开源或无广告本身不等于隐私或安全保证；安装前仍应核对权限、发布来源和安全公告。
 
 ## <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2Fu2sHeQjHJurcgVhJB1zO_2Ficon_2.png" width="26" height="26" alt="FlClash图标"> 获取 FlClash
 
@@ -23,10 +49,10 @@ FlClash是一款基于Mihomo（原ClashMeta）的开源多平台代理客户端�
 
 **下载说明：**
 
-* 安卓手机一般情况下载第一个
-* Windows一般情况下载第一个
-* macOS一般情况下载第一个
-* Linux一般情况下载第一个
+* 先展开对应 Release 的 Assets，并查看发布说明；
+* 根据操作系统和 CPU 架构选择明确匹配的包；
+* 不要机械下载“第一个”文件，也不要从非官方镜像取得安装包；
+* 架构或包格式不确定时，先查项目说明再安装。
 
 
 ### 操作界面

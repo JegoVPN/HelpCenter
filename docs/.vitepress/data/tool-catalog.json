@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "jegoSupport": {
+    "clash-for-android": "unsupported",
+    "clash-for-windows": "unsupported",
+    "clashbox": "experimental",
+    "clashverge": "supported",
+    "flclash": "supported",
+    "guiforsing-box": "supported",
+    "loon": "unsupported",
+    "mihomo": "supported",
+    "oneclick": "unsupported",
+    "quantumult-x": "supported",
+    "shadowrocket": "supported",
+    "sing-box": "supported",
+    "sing-boxforandroid": "supported",
+    "sing-boxforapple": "supported",
+    "surfboard": "supported",
+    "surge": "supported",
+    "v2rayn": "unsupported",
+    "v2rayng": "unsupported"
+  },
+  "tools": [
+    { "slug": "clash-for-android", "name": { "zh": "Clash for Android", "en": "Clash for Android" }, "platforms": ["android"], "architectures": [], "subscriptionFormats": [], "lifecycle": "discontinued", "recommendation": "not-recommended", "securityStatus": "blocked", "supportedVersions": [], "replacements": ["flclash", "sing-boxforandroid"], "officialSources": [], "lastVerified": "2026-07-10" },
+    { "slug": "clash-for-windows", "name": { "zh": "Clash for Windows", "en": "Clash for Windows" }, "platforms": ["windows", "macos"], "architectures": [], "subscriptionFormats": [], "lifecycle": "discontinued", "recommendation": "not-recommended", "securityStatus": "blocked", "supportedVersions": [], "replacements": ["flclash", "clashverge"], "officialSources": [], "lastVerified": "2026-07-10" },
+    { "slug": "clashbox", "name": { "zh": "ClashBox", "en": "ClashBox" }, "platforms": ["harmonyos"], "architectures": [], "subscriptionFormats": [], "lifecycle": "experimental", "recommendation": "advanced", "securityStatus": "needs-review", "supportedVersions": [], "replacements": [], "officialSources": ["https://github.com/xiaobaigroup/ClashBox", "https://appgallery.huawei.com/app/detail?id=org.xbgroup.clashbox"], "lastVerified": "2026-07-10" },
+    { "slug": "clashverge", "name": { "zh": "Clash Verge Rev", "en": "Clash Verge Rev" }, "platforms": ["windows", "macos", "linux"], "architectures": [], "subscriptionFormats": [], "lifecycle": "current", "recommendation": "recommended", "securityStatus": "needs-review", "supportedVersions": [], "replacements": [], "officialSources": ["https://github.com/clash-verge-rev/clash-verge-rev"], "lastVerified": "2026-07-10" },
+    { "slug": "flclash", "name": { "zh": "FlClash", "en": "FlClash" }, "platforms": ["windows", "macos", "linux", "android", "harmonyos"], "architectures": [], "subscriptionFormats": [], "lifecycle": "current", "recommendation": "recommended", "securityStatus": "needs-review", "supportedVersions": [], "replacements": [], "officialSources": ["https://github.com/chen08209/FlClash"], "lastVerified": "2026-07-10" },
+    { "slug": "guiforsing-box", "name": { "zh": "GUI.for.SingBox", "en": "GUI.for.SingBox" }, "platforms": ["windows", "macos", "linux"], "architectures": [], "subscriptionFormats": [], "lifecycle": "current", "recommendation": "advanced", "securityStatus": "needs-review", "supportedVersions": [], "replacements": [], "officialSources": ["https://github.com/GUI-for-Cores/GUI.for.SingBox"], "lastVerified": "2026-07-10" },
+    { "slug": "loon", "name": { "zh": "Loon", "en": "Loon" }, "platforms": ["ios", "ipados", "tvos"], "architectures": [], "subscriptionFormats": [], "lifecycle": "current", "recommendation": "not-recommended", "securityStatus": "needs-review", "supportedVersions": [], "replacements": ["sing-boxforapple", "shadowrocket", "surge", "quantumult-x"], "officialSources": ["https://apps.apple.com/us/app/loon/id1373567447", "https://nsloon.app/docs/intro"], "lastVerified": "2026-07-10" },
+    { "slug": "mihomo", "name": { "zh": "Mihomo 系列", "en": "Mihomo Series" }, "platforms": ["windows", "macos", "linux", "android"], "architectures": [], "subscriptionFormats": [], "lifecycle": "current", "recommendation": "advanced", "securityStatus": "needs-review", "supportedVersions": [], "replacements": [], "officialSources": ["https://github.com/MetaCubeX/mihomo", "https://mihomo.party/"], "lastVerified": "2026-07-10" },
+    { "slug": "oneclick", "name": { "zh": "OneClick", "en": "OneClick" }, "platforms": ["ios", "ipados", "android"], "architectures": [], "subscriptionFormats": [], "lifecycle": "current", "recommendation": "not-recommended", "securityStatus": "needs-review", "supportedVersions": [], "replacements": ["sing-boxforapple", "shadowrocket", "sing-boxforandroid", "flclash"], "officialSources": ["https://apps.apple.com/us/app/id1545555197", "https://www.oneclick.earth/"], "lastVerified": "2026-07-10" },
+    { "slug": "quantumult-x", "name": { "zh": "Quantumult X", "en": "Quantumult X" }, "platforms": ["ios", "ipados", "macos", "tvos"], "architectures": [], "subscriptionFormats": [], "lifecycle": "current", "recommendation": "recommended", "securityStatus": "needs-review", "supportedVersions": [], "replacements": [], "officialSources": ["https://apps.apple.com/us/app/quantumult-x/id1443988620"], "lastVerified": "2026-07-10" },
+    { "slug": "shadowrocket", "name": { "zh": "Shadowrocket", "en": "Shadowrocket" }, "platforms": ["ios", "ipados", "macos", "tvos"], "architectures": [], "subscriptionFormats": [], "lifecycle": "current", "recommendation": "recommended", "securityStatus": "needs-review", "supportedVersions": [], "replacements": [], "officialSources": ["https://apps.apple.com/us/app/shadowrocket/id932747118"], "lastVerified": "2026-07-10" },
+    { "slug": "sing-box", "name": { "zh": "sing-box", "en": "sing-box" }, "platforms": ["windows", "macos", "linux", "android", "ios"], "architectures": [], "subscriptionFormats": [], "lifecycle": "current", "recommendation": "advanced", "securityStatus": "needs-review", "supportedVersions": [], "replacements": [], "officialSources": ["https://github.com/SagerNet/sing-box"], "lastVerified": "2026-07-10" },
+    { "slug": "sing-boxforandroid", "name": { "zh": "sing-box for Android", "en": "sing-box for Android" }, "platforms": ["android", "harmonyos"], "architectures": [], "subscriptionFormats": [], "lifecycle": "current", "recommendation": "recommended", "securityStatus": "needs-review", "supportedVersions": [], "replacements": [], "officialSources": ["https://github.com/SagerNet/sing-box", "https://play.google.com/store/apps/details?id=io.nekohasekai.sfa"], "lastVerified": "2026-07-10" },
+    { "slug": "sing-boxforapple", "name": { "zh": "sing-box for Apple", "en": "sing-box for Apple" }, "platforms": ["macos", "ios", "ipados", "tvos"], "architectures": [], "subscriptionFormats": [], "lifecycle": "current", "recommendation": "recommended", "securityStatus": "needs-review", "supportedVersions": [], "replacements": [], "officialSources": ["https://github.com/SagerNet/sing-box", "https://apps.apple.com/app/sing-box-vt/id6673731168"], "lastVerified": "2026-07-10" },
+    { "slug": "surfboard", "name": { "zh": "Surfboard", "en": "Surfboard" }, "platforms": ["android"], "architectures": [], "subscriptionFormats": [], "lifecycle": "current", "recommendation": "not-recommended", "securityStatus": "needs-review", "supportedVersions": [], "replacements": [], "officialSources": ["https://github.com/getsurfboard/surfboard"], "lastVerified": "2026-07-10" },
+    { "slug": "surge", "name": { "zh": "Surge", "en": "Surge" }, "platforms": ["macos", "ios"], "architectures": [], "subscriptionFormats": [], "lifecycle": "current", "recommendation": "recommended", "securityStatus": "needs-review", "supportedVersions": [], "replacements": [], "officialSources": ["https://nssurge.com/", "https://apps.apple.com/us/app/surge-3/id1442620678"], "lastVerified": "2026-07-10" },
+    { "slug": "v2rayn", "name": { "zh": "v2rayN", "en": "v2rayN" }, "platforms": ["windows"], "architectures": [], "subscriptionFormats": [], "lifecycle": "current", "recommendation": "not-recommended", "securityStatus": "needs-review", "supportedVersions": [], "replacements": ["flclash", "clashverge"], "officialSources": ["https://github.com/2dust/v2rayN"], "lastVerified": "2026-07-10" },
+    { "slug": "v2rayng", "name": { "zh": "v2rayNG", "en": "v2rayNG" }, "platforms": ["android"], "architectures": [], "subscriptionFormats": [], "lifecycle": "current", "recommendation": "not-recommended", "securityStatus": "needs-review", "supportedVersions": [], "replacements": ["sing-boxforandroid", "flclash"], "officialSources": ["https://github.com/2dust/v2rayNG", "https://play.google.com/store/apps/details?id=com.v2ray.ang"], "lastVerified": "2026-07-10" }
+  ]
+}

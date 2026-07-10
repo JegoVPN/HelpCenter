@@ -1,69 +1,91 @@
 ---
+translationKey: guide-usage
+contentType: how-to
+product: browser-extension
+productArea: browser-extension
+uiSurface: plugin-popup
+locale: en
+status: current
+owner: docs
+reviewStatus: verified
+lastVerified: 2026-07-10
+platforms: [chrome, edge]
+tools: []
+appliesTo: []
+sources: ["cloud/app/chromev2@1.5.10", "cloud/locales/*.csv"]
 title: How to Use Proxy - User Guide
-description: Using Jego to proxy in browser is very simple, just click and you're out!
+description: Sign in, choose Rules mode and Auto Select, and start using Jego in Chrome or Edge in just a few steps.
 ---
 
 # How to Use Proxy
 
-::: info Friendly Reminder
+Jego is a free VPN extension built for Chrome and Edge. After installation, sign in, choose a mode and node, and you can start accessing websites worldwide in that browser. First-time users should begin with **Rules** mode and **Auto Select**.
 
-The <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Global</span> and <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Rules</span> mode settings in the Jego browser extension only affect your current browser.
-
-For tutorials on implementing proxy access on PC and mobile, please go to [How to Use Proxy on PC or Mobile](/en/devices/pc-mobile) to learn more.
+::: info It affects this browser only
+Rules, Global, and Off control the browser where Jego is installed. To use a VPN in other apps on your computer or phone, see [Use Jego on a computer or phone](/en/devices/pc-mobile).
 :::
 
 ## 📺 Video Tutorial
 
-Watch the complete installation and usage tutorial to quickly get started with Jego extension:
+If you prefer video, start with the complete installation and usage demo:
 
 <YouTube videoId="buQRWqyO7UM" title="Jego Extension Installation and Usage Tutorial" />
 
-## How to use proxy for free in browser?
+## Get started in five steps
 
-Use Jego extension, register an account to proxy for free!
+1. Click the Jego icon in the top-right corner of the browser.
+2. If you are signed out, enter your email and password and select **Log In**. Select **Sign Up** if you do not have an account.
+3. Choose **Rules** mode.
+4. Under **Current location**, choose **Auto Select**.
+5. Open Google or the website you need. Reload it if it was already open.
+
+The image below shows the free interface. Jego displays Free, Trial, or VIP status, while available modes and nodes follow the current account.
 
 <img src="/images/jego-v1.5.9/usage-free-browser-en.png" alt="Free version proxy">
 
-Click the <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Connect</span> button on the small window to enable proxy mode, limitedly break through some blocks, <span style="color:orange;">only can access Google, Wikipedia, New Bing,ChatGPT, Grok and Claude</span>;
+If your version shows only Connect and Off, **Connect** starts the browser VPN and **Off** returns to the normal connection. The current interface uses Rules, Global, and Off as described next.
 
-Click the <span style="background-color:grey; color:white; padding:2px 6px; border-radius:3px;">Off</span> button to disable proxy mode.
+## Choose Rules, Global, or Off
 
-::: info Related Links
-Jego provides three types of services: [Free, Limited-time Trial, and Paid Services](/en/guide/services)
-:::
+- **Rules:** Follows proxy rules for domains and IP addresses. Proxy requests use the current node, while direct rules use the local connection.
+- **Global:** All browser requests use the current node, while local addresses still connect directly.
+- **Off:** Stops the browser VPN and uses the normal local connection for every site.
 
-## How to achieve one-click proxy in browser?
+The member interface below shows membership status, mode buttons, and node selection.
 
-Use Jego extension, **become a member to get unlimited traffic and seamless global internet access experience**.
+<img src="/images/jego-v1.5.9/usage-paid-browser-en.png" alt="Older paid browser-proxy interface">
 
-<img src="/images/jego-v1.5.9/usage-paid-browser-en.png" alt="Member proxy can access any website">
+See [Mode Selection](/en/guide/mode-selection) for examples. If Rules mode does not proxy a website, add its domain through [Proxy Rules](/en/guide/proxy-strategy).
 
-Click the <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Global</span> button on the small window to enable global mode for access. Accessing any website will go through the proxy (including mainland websites).
+## Change nodes
 
-Click the <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Rules</span> button on the small window to enable rules mode for access. Accessing any website will first go through rules to determine whether to access directly or through proxy. You can set mainland websites to direct connection, and overseas blocked websites to access through proxy servers, enjoying free and high-speed surfing.
-
-Click the <span style="background-color:grey; color:white; padding:2px 6px; border-radius:3px;">Off</span> button to disable proxy mode.
+Click the node shown under **Current location**, then choose Auto Select or a specific location. Start with Auto Select and switch manually when the current route is unavailable or slow. Node selection is disabled in Off mode, so choose Rules or Global first.
 
 ### Operation Demo
 
-The following video demonstrates how to switch proxy node servers and how to toggle between <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Global</span> and <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Rules</span> modes. You can choose the appropriate node and mode according to your actual needs to get the best proxy experience.
+The video demonstrates changing nodes and switching between Global and Rules mode.
 
 <video src="/videos/20251108-182013.mp4" controls></video>
 
-### Daily usage notes:
+### Wait for the small dot to finish
 
-* When you select nodes or modes, the Jego logo at the top will turn into a small circle, indicating that your request is being processed (as shown in the figure below), please be patient and continue waiting;
+After a mode or node change, the Jego logo becomes a breathing dot while the setting is saved and applied. The controls are temporarily disabled, so wait a moment.
 
 <img src="/images/jego-v1.5.9/popup-switching-loading-en.png" alt="Be patient, continue waiting" width="280">
 
-* Only when the small circle at the top of the extension small window turns into the Jego logo does it mean your settings have been successfully processed (as shown in the figure below).
+When the dot becomes the Jego logo again, the change is complete. Now reload the target website.
 
 <img src="/images/jego-v1.5.9/popup-manual-node-selected-en.png" alt="Success" width="280">
 
-::: info Related Links
-[How to properly access ChatGPT and New Bing in mainland China](/en/guide/chatgpt-access)
-:::
+## If a website still will not open
+
+1. Make sure Jego is not Off.
+2. Try another node or run [Node Test](/en/guide/network-diagnostics-node-speed).
+3. Open **Control Panel → Diagnostics → Connection** and run the common-site check.
+4. If only one website fails, use **Rules Check** to see whether its domain is proxied.
+
+More help: [FAQ](/en/guide/faq) · [Use ChatGPT, Copilot, and other services](/en/guide/chatgpt-access) · [Contact support](/en/guide/support)
 
 ## How to use Jego for proxy access on PC or mobile
 
-➡️ For tutorials on implementing proxy access on PC and mobile, please go to [How to Use Proxy on PC or Mobile](/en/devices/pc-mobile) to learn more. 
+The browser extension does not control other apps on your computer or phone. Members can use a Jego subscription and follow the [device guide](/en/devices/) to install a compatible client.

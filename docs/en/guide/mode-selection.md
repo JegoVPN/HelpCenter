@@ -1,58 +1,100 @@
 ---
+translationKey: guide-mode-selection
+contentType: how-to
+product: browser-extension
+productArea: browser-extension
+uiSurface: plugin-popup
+locale: en
+status: current
+owner: docs
+reviewStatus: verified
+lastVerified: 2026-07-10
+platforms: [chrome, edge]
+tools: []
+appliesTo: []
+sources: ["cloud/app/chromev2@1.5.10", "cloud/locales/*.csv"]
 title: Mode Selection - User Guide
+description: Learn how Jego Rules, Global, and Off handle browser requests.
 ---
 
 # Mode Selection
 
-## 🆓 Free Version
+The top of the Jego popup shows the modes available to the current account. **Rules** follows proxy rules, **Global** proxies all browser requests, and **Off** uses the local connection. Switch according to how you want the browser to connect.
 
-<img src="/images/jego-v1.5.9/popup-free-on-en.png" alt="Free version interface" width="280" />
+## Rules mode: follow proxy rules
 
-When your Jego is in the state shown in the figure above, it means you are using the free service provided by Jego.
+Rules mode handles each browser request according to Jego's proxy rules. A rule can match a domain, IP address, or IP subnet. Requests marked for proxy use the current node, while direct requests use the local connection.
 
-### Free version browser icon status:
+<img src="/images/jego-v1.5.9/popup-paid-rules-auto-en.png" alt="Jego Rules mode" width="280" />
 
-<span style="color:green;">V 1.5.9 version feature:</span>
+In Rules mode:
+
+- domains or IP addresses matched by a proxy rule use the current node;
+- domains, IP addresses, or subnets matched by a direct rule use the local connection;
+- requests not matched by a custom rule continue through Jego's built-in rules.
+
+If a domain or IP address does not follow the expected proxy rule, open **Control Panel → Diagnostics → Connection → Rules Check** to view the match result.
+
+## Global mode: proxy all browser requests
+
+Global mode sends all browser requests through the current Jego node, while local addresses still connect directly.
+
+<img src="/images/jego-v1.5.9/popup-paid-global-auto-en.png" alt="Jego Global mode" width="280" />
+
+In Global mode:
+
+- all browser requests use the proxy;
+- browser requests not matched by a Rules entry also use the current node;
+- local addresses still connect directly.
+
+Switch back to Rules whenever you want proxy-rule routing. Mode changes affect only the browser where Jego is installed.
+
+## Off: use the local connection
+
+Off stops Jego from proxying browser traffic. Websites use the local connection. The popup may keep the previously selected node name, but the node is not active and cannot be changed while Jego is off.
+
+<img src="/images/jego-v1.5.9/popup-paid-off-en.png" alt="Jego Off mode" width="280" />
+
+When Jego is Off:
+
+- browser websites use the local connection;
+- the saved node does not take part in the connection;
+- Node Test may ask for this state before a test.
+
+## When the buttons look different
+
+Depending on the account plan, the popup may show Connect/Off or Rules/Global/Off:
+
+- **Connect** enables the proxy mode available to the account;
+- **Rules** and **Global** work as described above;
+- **Off** always returns the browser to its normal connection.
+
+The example below shows the Free interface and helps Free users recognize the Connect and Off states.
+
+<div class="jego-popup-state-grid">
+  <figure>
+    <figcaption>Free version: Connected</figcaption>
+    <img src="/images/jego-v1.5.9/popup-free-on-en.png" alt="Free version connected interface">
+  </figure>
+  <figure>
+    <figcaption>Free version: Off</figcaption>
+    <img src="/images/jego-v1.5.9/popup-free-off-en.png" alt="Free version off interface">
+  </figure>
+</div>
+
+## Browser icon state
+
+Free version icon states:
 
 | Connected | Off |
 | --- | --- |
 | <img src="/images/jego-v1.5.9/icon-rule-48.png" alt="Connected icon" width="32" /> | <img src="/images/jego-v1.5.9/icon-off-48.png" alt="Disabled icon" width="32" /> |
 
-### Connect
-
-When your Jego is in the state shown in the figure above (i.e., the <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Connect</span> button is selected), Jego will provide you with free services to break through Google, Wikipedia, New Bing and ChatGPT.
-
-### Off
-
-<img src="/images/jego-v1.5.9/popup-free-off-en.png" alt="Free version off interface" width="280" />
-
-When you click Off (i.e., the <span style="background-color:grey; color:white; padding:2px 6px; border-radius:3px;">Off</span> button is selected), it means you have turned off the browser's proxy function. Accessing any website will use your local network for direct access (at this time you cannot access Google, Wikipedia, New Bing and ChatGPT services).
-
-## 🏆 Paid Version
-
-### Paid version browser icon status:
-
-<span style="color:green;">V 1.5.9 version feature:</span>
+Member icon states:
 
 | When in Global mode | When in Rules mode | When disabled |
 | --- | --- | --- |
 | <img src="/images/jego-v1.5.9/icon-global-48.png" alt="Global mode icon" width="32" /> | <img src="/images/jego-v1.5.9/icon-rule-48.png" alt="Rules mode icon" width="32" /> | <img src="/images/jego-v1.5.9/icon-off-48.png" alt="Disabled icon" width="32" /> |
 
 
-### Global
-
-<img src="/images/jego-v1.5.9/popup-paid-global-auto-en.png" alt="Global mode interface" width="280" />
-
-When your Jego is in the state shown in the figure above (i.e., the <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Global</span> button is selected), it means you are using the browser's global mode for access. Accessing any website will go through the proxy (including mainland websites).
-
-### Rules
-
-<img src="/images/jego-v1.5.9/popup-paid-rules-auto-en.png" alt="Rules mode interface" width="280" />
-
-When your Jego is in the state shown in the figure above (i.e., the <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Rules</span> button is selected), it means you are using the browser's rules mode for access. Accessing any website will first go through Jego's built-in rules to determine whether to access directly or through proxy. Mainland websites will default to direct connection, while overseas blocked websites will be set to access through proxy servers, enjoying free and high-speed surfing.
-
-### Off
-
-<img src="/images/jego-v1.5.9/popup-paid-off-en.png" alt="Disabled mode interface" width="280" />
-
-When your Jego is in the state shown in the figure above (i.e., the <span style="background-color:grey; color:white; padding:2px 6px; border-radius:3px;">Off</span> button is selected), it means you have turned off the browser's proxy function. Accessing any website will use your local network for direct access (at this time you cannot access overseas blocked websites). 
+After switching, wait for the small dot at the top to become the Jego logo again, then reload the website. Use [Website Route Check](/en/guide/network-diagnostics#route-check) to confirm the actual route.

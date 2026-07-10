@@ -1,13 +1,27 @@
 ---
+translationKey: guide-encrypted-dns
+contentType: reference
+product: general
+productArea: network-reference
+uiSurface: null
+locale: zh-Hans
+status: current
+owner: docs
+reviewStatus: needs-review
+lastVerified: null
+platforms: [chrome, edge]
+tools: []
+appliesTo: []
+sources: []
 title: 加密DNS（DoH / DoT）完全指南 - 使用指南
-description: 加密 DNS 科普：DNS 是什么、明文 DNS 为什么有风险、DoH 与 DoT 的区别、各平台如何开启，以及中国大陆该怎么选。
+description: 用简单的话了解 DNS、明文查询、DoH 与 DoT，并按设备开启适合当前网络的加密 DNS。
 ---
 
 # 加密DNS（DoH / DoT）完全指南
 
 很多「打不开网站、网页加载到一半被掐断、明明连了代理却还是访问异常」的问题，根子都在 **DNS** 这一步。这篇文章用大白话讲清楚 DNS 是什么、为什么明文 DNS 不安全、加密 DNS（DoH / DoT）怎么帮你，以及在你的设备上怎么开。
 
-## 一、什么是 DNS？明文 DNS 有什么风险
+## 一、DNS 与明文查询
 
 DNS（域名系统）的作用，是把你输入的**域名**（如 `google.com`）翻译成服务器能识别的 **IP 地址**（如 `142.250.x.x`）。你每打开一个网站，背后都会先做一次 DNS 查询。
 
@@ -18,7 +32,7 @@ DNS（域名系统）的作用，是把你输入的**域名**（如 `google.com`
 
 加密 DNS 就是为了解决「被看见」和「被篡改」这两件事。
 
-## 二、DoH 与 DoT 是什么
+## 二、DoH 与 DoT
 
 两者都是把 DNS 查询**加密**起来的标准协议，区别只在「走哪条通道」：
 
@@ -62,15 +76,15 @@ DNS（域名系统）的作用，是把你输入的**域名**（如 `google.com`
 
 ### 全球首选（任选其一）
 
-这几家是全球任播（Anycast）解析器，会自动就近接入，**除中国大陆外**在各大洲都好用，作为默认推荐：
+这些公开端点可作为配置参考。可达性、过滤、日志和保留政策会变化，请在使用前核对服务商当前官方说明；下表不作速度、隐私或可用性保证：
 
 | 服务商 | DoH 地址 | DoT 主机名 | 明文 IP | 特点 |
 | --- | --- | --- | --- | --- |
-| **Cloudflare** | `https://cloudflare-dns.com/dns-query` | `one.one.one.one` | `1.1.1.1` `1.0.0.1` | 速度最快 · 不过滤 · 查询日志约 25 小时内清除 |
-| **Google** | `https://dns.google/dns-query` | `dns.google` | `8.8.8.8` `8.8.4.4` | 最稳定 · 不做内容过滤 |
-| **Quad9** | `https://dns.quad9.net/dns-query` | `dns.quad9.net` | `9.9.9.9` `149.112.112.112` | 拦截恶意域名 · 瑞士 · 不记录个人信息 |
-| **AdGuard** | `https://dns.adguard-dns.com/dns-query` | `dns.adguard-dns.com` | `94.140.14.14` `94.140.15.15` | 拦截广告与追踪 · 塞浦路斯 · 不记录 IP |
-| **Mullvad** | `https://dns.mullvad.net/dns-query` | `dns.mullvad.net` | `194.242.2.2` | 开源 · 瑞典 · 无日志 · 仅加密（无明文 DNS） |
+| **Cloudflare** | `https://cloudflare-dns.com/dns-query` | `one.one.one.one` | `1.1.1.1` `1.0.0.1` | 功能与隐私政策请查服务商官方说明 |
+| **Google** | `https://dns.google/dns-query` | `dns.google` | `8.8.8.8` `8.8.4.4` | 功能与隐私政策请查服务商官方说明 |
+| **Quad9** | `https://dns.quad9.net/dns-query` | `dns.quad9.net` | `9.9.9.9` `149.112.112.112` | 可选恶意域名防护；核对当前政策 |
+| **AdGuard** | `https://dns.adguard-dns.com/dns-query` | `dns.adguard-dns.com` | `94.140.14.14` `94.140.15.15` | 可选过滤功能；核对当前政策 |
+| **Mullvad** | `https://dns.mullvad.net/dns-query` | `dns.mullvad.net` | `194.242.2.2` | 加密端点；核对当前政策 |
 
 ::: details 更多全球解析器（点击展开）
 | 服务商 | DoH 地址 | DoT 主机名 | 明文 IP | 特点 |
@@ -78,7 +92,7 @@ DNS（域名系统）的作用，是把你输入的**域名**（如 `google.com`
 | **NextDNS** | `https://dns.nextdns.io` | — | `45.90.28.0` `45.90.30.0` | 可按账号自定义过滤 · 美/欧/英/瑞数据驻留 · DoT 需配置 ID |
 | **ControlD（免费·不过滤）** | `https://freedns.controld.com/p0` | `p0.freedns.controld.com` | `76.76.2.0` `76.76.10.0` | 加拿大 · p1/p2/p3 变体可加恶意/广告/社媒拦截 |
 | **OpenDNS（Cisco）** | `https://doh.opendns.com/dns-query` | `dns.opendns.com` | `208.67.222.222` `208.67.220.220` | 拦截恶意/钓鱼 · 美国 |
-| **CleanBrowsing（安全版）** | `https://doh.cleanbrowsing.org/doh/security-filter/` | `security-filter-dns.cleanbrowsing.org` | `185.228.168.9` `185.228.169.9` | 拦截恶意/钓鱼 · 美国 · 免费版不留查询日志 |
+| **CleanBrowsing（安全版）** | `https://doh.cleanbrowsing.org/doh/security-filter/` | `security-filter-dns.cleanbrowsing.org` | `185.228.168.9` `185.228.169.9` | 安全过滤端点；核对当前政策 |
 :::
 
 ::: details 各地区解析器（点击展开）
@@ -88,9 +102,9 @@ DNS（域名系统）的作用，是把你输入的**域名**（如 `google.com`
 
 | 服务商 | DoH 地址 | DoT 主机名 | 明文 IP | 特点 |
 | --- | --- | --- | --- | --- |
-| **DNS4EU** | `https://unfiltered.joindns4.eu/dns-query` | `unfiltered.joindns4.eu` | `86.54.11.100` `86.54.11.200` | 欧盟官方 · 符合 GDPR · 24h 删日志 · protective.* 变体拦恶意（86.54.11.1） |
-| **DNS.SB** | `https://doh.sb/dns-query` | `dot.sb` | `185.222.222.222` `45.11.45.11` | 德国（xTom）· 无日志 · 30+ 节点，亚洲覆盖好 |
-| **Digitale Gesellschaft** | `https://dns.digitale-gesellschaft.ch/dns-query` | `dns.digitale-gesellschaft.ch` | `185.95.218.42` `185.95.218.43` | 瑞士非营利 · 无日志 · 仅加密 |
+| **DNS4EU** | `https://unfiltered.joindns4.eu/dns-query` | `unfiltered.joindns4.eu` | `86.54.11.100` `86.54.11.200` | 端点与过滤变体请查官方说明 |
+| **DNS.SB** | `https://doh.sb/dns-query` | `dot.sb` | `185.222.222.222` `45.11.45.11` | 服务覆盖与隐私政策请查官方说明 |
+| **Digitale Gesellschaft** | `https://dns.digitale-gesellschaft.ch/dns-query` | `dns.digitale-gesellschaft.ch` | `185.95.218.42` `185.95.218.43` | 加密端点；核对当前政策 |
 
 **俄罗斯 / 独联体**
 
@@ -103,7 +117,7 @@ DNS（域名系统）的作用，是把你输入的**域名**（如 `google.com`
 | 服务商 | DoH 地址 | DoT 主机名 | 明文 IP | 特点 |
 | --- | --- | --- | --- | --- |
 | **IIJ（日本）** | `https://public.dns.iij.jp/dns-query` | `public.dns.iij.jp` | — | 日本 · 仅加密 · 查询数据 24h 内删除 |
-| **Tiarap** | `https://doh.tiar.app/dns-query` | `dot.tiar.app` | `174.138.21.128` `188.166.206.224` | 新加坡 · 无日志 · 拦广告与恶意 |
+| **Tiarap** | `https://doh.tiar.app/dns-query` | `dot.tiar.app` | `174.138.21.128` `188.166.206.224` | 可选过滤端点；核对当前政策 |
 
 **美洲 / 大洋洲**
 
@@ -112,7 +126,7 @@ DNS（域名系统）的作用，是把你输入的**域名**（如 `google.com`
 | **CIRA Canadian Shield** | `https://private.canadianshield.cira.ca/dns-query` | `private.canadianshield.cira.ca` | `149.112.121.10` `149.112.122.10` | 加拿大 · 个人信息 24h 内删除 · Protected/Family 变体可加过滤 |
 :::
 
-## 六、如何开启加密 DNS（推荐组合）
+## 六、开启加密 DNS（推荐组合）
 
 系统级加密 DNS 在 Windows / macOS 上很折腾（Windows 要用 `netsh` 注册模板、Apple 要装 `.mobileconfig` 描述文件）。对大多数人，**分两层**就够用了：
 
@@ -156,12 +170,12 @@ DNS（域名系统）的作用，是把你输入的**域名**（如 `google.com`
 > **Windows 11 注意**：系统内置 DoH 只认少数已知服务商（Cloudflare `1.1.1.1`、Google `8.8.8.8`、Quad9 `9.9.9.9` 等），直接填这些明文 IP 才会自动走加密；换成别的解析器，需先用 `netsh dns add encryption` 注册它对应的 DoH 模板，否则那个「加密」开关不会生效。
 :::
 
-## 七、实在配不了 DoH/DoT 怎么办（兜底）
+## 七、暂时无法使用 DoH/DoT 时
 
 ::: tip 至少做这一步
-如果你暂时搞不定 DoH/DoT，**至少把系统 DNS 的明文 IP 换成公共解析器**，别用运营商默认的：中国大陆用 `223.5.5.5`（阿里），其他地区用 `1.1.1.1` / `8.8.8.8`。这一步虽然不加密，但能避开运营商最常见的 DNS 劫持。
+如果暂时没有配置 DoH/DoT，可以先按系统说明使用公共解析器：中国大陆可用 `223.5.5.5`（阿里），其他地区可比较 `1.1.1.1` / `8.8.8.8`。这一步本身不加密，但有助于排除运营商默认 DNS 的解析影响。
 :::
 
 ---
 
-> 仍然打不开网站？回到 [常见问题](/guide/faq) 按「网络环境 + 浏览器环境」逐项排查，或 [联系客服](/guide/support)。
+> 连接仍未恢复时，可以回到[常见问题](/guide/faq)，按“网络环境 + 浏览器环境”逐项检查，也可以直接[联系客服](/guide/support)。

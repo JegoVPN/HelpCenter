@@ -1,118 +1,157 @@
 ---
+translationKey: guide-installation
+contentType: how-to
+product: browser-extension
+productArea: browser-extension
+uiSurface: null
+locale: zh-Hans
+status: current
+owner: docs
+reviewStatus: needs-review
+lastVerified: 2026-07-10
+platforms: [chrome, edge]
+tools: []
+appliesTo: []
+sources: [https://developer.chrome.com/docs/extensions/get-started/tutorial/hello-world, https://learn.microsoft.com/en-us/microsoft-edge/extensions/getting-started/extension-sideloading]
 title: 如何安装 - 使用指南
-description: 在你使用无忧行之前，您必须要了解的无忧行的安装方式。
+description: 按浏览器选择官方入口，几步完成无忧行安装并确认插件已经启用。
 ---
 
 # 如何安装
 
-::: tip 最新版本
+无忧行推荐安装在 Chrome 或 Microsoft Edge。直接从浏览器的官方扩展商店安装最简单；商店暂时无法使用时，本页也保留了手动安装方法。
 
-请一定要通过[防止失联](/guide/keep-updated)页面查看并更新至无忧行的最新版本，以确保无忧行在某些特定地区能正常突破封锁，进行跨境访问。
+::: tip 安装前先确认版本
+可以在[防止失联](/guide/keep-updated)页面查看当前官方发布入口。保持浏览器和无忧行为最新版本，可以及时获得功能改进和问题修复；实际连接情况还会受到所在地区和目标网站的影响。
 :::
 
-## Microsoft Edge如何安装无忧行
+## 先按浏览器进入安装步骤 {#在线安装}
 
-::: info 提醒
-先将Edge升级到最新版本。
-:::
+<div class="installation-choice-grid">
+  <a class="installation-choice-card" href="#chrome-install"><strong>Google Chrome</strong><span>从 Chrome Web Store 安装</span></a>
+  <a class="installation-choice-card" href="#edge-install"><strong>Microsoft Edge</strong><span>从 Microsoft Edge 扩展商店安装</span></a>
+</div>
 
-### 在线安装
+## 在 Microsoft Edge 中安装 {#edge-install}
 
-1. 访问：[https://microsoftedge.microsoft.com/addons/detail/bkpoijbobhmbglhjjmnoedomdoabilol](https://microsoftedge.microsoft.com/addons/detail/bkpoijbobhmbglhjjmnoedomdoabilol)
-2. 点击页面右上角的获取即可安装完成。
+开始前先把 Edge 更新到最新版本。
 
-::: info 重要提示
-无忧行将接管你Edge的代理设置，初次安装Edge将会提醒你此扩展正在控制你的Internet链接，请选择保留更改，这样才能正常地使用无忧行进行突破网络封锁。
-:::
+### 从 Edge 扩展商店安装
 
-### 手动安装
+1. 打开[无忧行的 Microsoft Edge 扩展商店页面](https://microsoftedge.microsoft.com/addons/detail/bkpoijbobhmbglhjjmnoedomdoabilol)。
+2. 点击页面右上角的**获取**，按照浏览器提示完成安装。
+3. 安装后如果 Edge 提示扩展正在控制代理设置，先核对扩展名称、来源和权限。确认安装的是无忧行后，按浏览器提示保留更改。
 
-先前往无忧行官网：[https://www.jegocloud.com/zh/](https://jegocloud.com/zh/)，并下载官网提供的`CRX 安装包`，解压后准备好CRX文件。
+### 商店暂时无法使用时，手动安装
 
-➊ 在Edge浏览器里输入 `edge://extensions/`
+优先使用 Edge 扩展商店。无忧行官网提供手动安装包时，可以按下面的步骤安装：
 
-➋ 打开开发模式
+1. 从[无忧行官网](https://jegocloud.com/zh/)下载手动安装包并解压。
+2. 在 Edge 地址栏输入 `edge://extensions/`。
+3. 打开页面上的**开发人员模式**。
+4. 点击 **Load unpacked**，选择解压后直接包含 `manifest.json` 的文件夹。
+5. 如果下载内容只有 `.crx` 文件，请改用扩展商店或 Edge 当前允许的安装方式；**Load unpacked** 选择的是文件夹，不是 `.crx` 文件。
 
-➌ 点击`Load unpacked`，选中刚才准备好的无忧行的`.CRX`文件即可安装。
+<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FfcXOYhXbZ9Tr2bWUoI5p_2Fimage_3.png" alt="Edge 插件管理界面">
 
-<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FfcXOYhXbZ9Tr2bWUoI5p_2Fimage_3.png" alt="Edge插件管理界面">
+<span id="安装完成后-固定无忧行图标"></span>
+<span id="安装后的初始设置"></span>
 
-## Google Chrome如何安装无忧行
+### 固定无忧行图标 {#edge-pin}
 
-::: info 提醒
-先将Chrome升级到最新版本。
-:::
+把无忧行固定到 Edge 工具栏后，以后点击右上角的图标就能直接打开插件。
 
-### 在线安装
+1. 打开 Edge，点击右上角的菜单按钮（三个水平点）。
+2. 进入**扩展 → 管理扩展**。
+3. 找到**无忧行**，确认扩展已经启用。
+4. 点击地址栏右侧的扩展图标，打开扩展列表。
+5. 点击无忧行右侧的图钉图标，把它固定到工具栏。
+6. 地址栏右侧出现无忧行图标后，就可以直接点击使用。
 
-1. 访问：[https://chrome.google.com/webstore/detail/bnnamacamhjbdoimlbkegmbgkekphcbb](https://chrome.google.com/webstore/detail/bnnamacamhjbdoimlbkegmbgkekphcbb)
-2. 点击页面右上角的Add to Chrome 即可安装完成。
+<img class="installation-settings-image" src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2Fg4tbKt6AKXlmq4DaA3H6_2Fimage_3.png" alt="Edge 设置界面">
 
-### 手动安装
+## 在 Google Chrome 中安装 {#chrome-install}
 
-先前往无忧行官网：[https://www.jegocloud.com/zh/](https://jegocloud.com/zh/)，并下载官网提供的`CRX 安装包`，解压后准备好CRX文件。
+开始前先把 Chrome 更新到最新版本。
 
-➊ 在Chrome浏览器里输入 `chrome://extensions/`
+### 从 Chrome Web Store 安装
 
-➋ 打开开发模式
+1. 打开[无忧行的 Chrome Web Store 页面](https://chrome.google.com/webstore/detail/bnnamacamhjbdoimlbkegmbgkekphcbb)。
+2. 点击页面右上角的 **Add to Chrome**，按照浏览器提示完成安装。
 
-➌ 点击`Load unpacked`，选中刚才准备好的无忧行的`.CRX`文件即可安装。
+### 商店暂时无法使用时，手动安装
 
-<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F8gEriEnVmF77fYUY2XxI_2Fimage_1.png" alt="Chrome插件管理界面">
+优先使用 Chrome Web Store。无忧行官网提供手动安装包时，可以按下面的步骤安装：
 
-<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FqJVM1Fphg1LsgyqucvDn_2F20250326-115951_2.gif" alt="Chrome安装无忧行录屏演示">
+1. 从[无忧行官网](https://jegocloud.com/zh/)下载手动安装包并解压。
+2. 在 Chrome 地址栏输入 `chrome://extensions/`。
+3. 打开页面上的**开发者模式**。
+4. 点击 **Load unpacked**，选择解压后直接包含 `manifest.json` 的文件夹。
+5. 如果下载内容只有 `.crx` 文件，请改用 Chrome Web Store 或 Chrome 当前允许的安装方式；**Load unpacked** 选择的是文件夹，不是 `.crx` 文件。
 
-## 安装后的初始设置
+<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F8gEriEnVmF77fYUY2XxI_2Fimage_1.png" alt="Chrome 插件管理界面">
 
-| Edge浏览器的初始设置 | Chrome浏览器的初始设置 |
-| --- | --- |
-| <ul><li>打开Edge浏览器。</li><li>点击右上角的菜单按钮（三个水平点）。</li><li>进入"扩展 -> 管理扩展"页面。</li><li>找到"无忧行"扩展，并确保其处于启用状态。</li><li>点击浏览器地址栏右侧的扩展图标，打开扩展列表。</li><li>点击"无忧行"扩展右侧的图钉图标，将其固定到工具栏。</li><li>这样，在浏览器的地址栏最右侧，就可以看到"无忧行"的小图标了，方便日常使用。</li></ul> | <ul><li>打开Chrome浏览器。</li><li>点击右上角的菜单按钮（三个垂直点）。</li><li>进入"扩展程序 -> 管理扩展程序"页面。</li><li>找到"无忧行"扩展，并确保其处于启用状态。</li><li>点击浏览器地址栏右侧的扩展图标，打开扩展列表。</li><li>确保"无忧行"扩展右侧的图钉图标为蓝色选中状态。</li><li>这样，在浏览器的地址栏最右侧，就可以看到"无忧行"的小图标了，方便日常使用。</li></ul> |
-| <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2Fg4tbKt6AKXlmq4DaA3H6_2Fimage_3.png" alt="Edge设置界面"> | <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FGzs5DCiSzki2ZpCWTW3Z_2Fimage_1.png" alt="Chrome设置界面"> |
+下面的录屏演示了 Chrome 的安装过程：
 
-## 其他浏览器如何安装无忧行
+<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FqJVM1Fphg1LsgyqucvDn_2F20250326-115951_2.gif" alt="Chrome 安装无忧行录屏演示">
 
-::: danger 注意
-其他浏览器必须是Chromium内核120及以上才支持安装无忧行。
+### 固定无忧行图标 {#chrome-pin}
+
+把无忧行固定到 Chrome 工具栏后，以后点击右上角的图标就能直接打开插件。
+
+1. 打开 Chrome，点击右上角的菜单按钮（三个垂直点）。
+2. 进入**扩展程序 → 管理扩展程序**。
+3. 找到**无忧行**，确认扩展已经启用。
+4. 点击地址栏右侧的扩展图标，打开扩展列表。
+5. 点击无忧行右侧的图钉图标，让它显示为蓝色选中状态。
+6. 地址栏右侧出现无忧行图标后，就可以直接点击使用。
+
+<img class="installation-settings-image" src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FGzs5DCiSzki2ZpCWTW3Z_2Fimage_1.png" alt="Chrome 设置界面">
+
+接下来可以[注册账户](/guide/registration)，再按[开始使用无忧行](/guide/usage)完成登录、模式和节点设置。
+
+## 在其他 Chromium 浏览器中安装
+
+::: warning 兼容性说明
+QQ 浏览器、360 浏览器等 Chromium 浏览器的扩展兼容性和安装规则可能随版本变化。先升级到浏览器当前稳定版，并以该浏览器当前允许的扩展安装方式为准。
 :::
 
 ### QQ浏览器
 
-1、访问 [https://jegocloud.com/](https://jegocloud.com/) ，下载CRX package for Jego，把下载 zip文件进行解压缩取得 .crx 文件。
+1. 访问[无忧行官网](https://jegocloud.com/)，下载 **CRX package for Jego**，解压 ZIP 文件后取得 `.crx` 文件。
 
-2、打开QQ浏览器，点击右上角"**≡**"，再点击**应用中心**。
+2. 打开 QQ 浏览器，点击右上角的 **≡**，再点击**应用中心**。
 
 <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FNu4OazcBbbAFfWuQgezF_2Fimage_2.png" alt="QQ浏览器应用中心" width="300">
 
-3、再点击管理我的应用，并在右上角勾选**开发者模式**。
+3. 点击**管理我的应用**，再在右上角打开**开发者模式**。
 
 <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F89zJpPggJ1YdQjAXLRra_2Fimage_3.png" alt="QQ浏览器开发者模式">
 
-4、将第一步下载到的crx文件拖放到浏览器的扩展程序页面上，即可安装完成。
+4. QQ 浏览器当前版本允许外部 CRX 时，把从无忧行官网取得的 CRX 拖到扩展页，并按页面提示核对权限、完成安装。如果当前版本不接受该文件，请使用浏览器提供的扩展安装入口。
 
 <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FDBP0gASUKK3dAUPq95HO_2F20250310-162502_1.gif" alt="QQ浏览器13.6版本 安装录屏">
 
 ### 360浏览器
 
-1、访问 [https://jegocloud.com/](https://jegocloud.com/) ，下载CRX package for Jego，把下载 zip文件进行解压缩取得 .crx 文件。
+1. 访问[无忧行官网](https://jegocloud.com/)，下载 **CRX package for Jego**，解压 ZIP 文件后取得 `.crx` 文件。
 
-2、打开360浏览器，点击右上角四个彩色方块的**图标**，再点击**管理**。
+2. 打开 360 浏览器，点击右上角四个彩色方块的图标，再点击**管理**。
 
 <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FgcDXVCfrl7t3dVK5jghY_2Fimage_2.png" alt="360浏览器管理界面" width="300">
 
-3、然后再次点击新页面右上角的**高级管理**
+3. 在新页面右上角点击**高级管理**。
 
 <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FBe1trubV92DFGWVGoa5L_2Fimage_3.png" alt="360浏览器高级管理">
 
-4、在页面右上角，勾选打开**开发者模式**
+4. 在页面右上角打开**开发者模式**。
 
 <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FDWVaPCNn9QB2NmtZXyng_2Fimage_1.png" alt="360浏览器开发者模式">
 
-5、将第一步下载到的crx文件拖放到浏览器的扩展程序页面上，即可安装完成。
+5. 360 浏览器当前版本允许外部 CRX 时，把从无忧行官网取得的 CRX 拖到扩展页，并按页面提示核对权限、完成安装。如果当前版本不接受该文件，请使用浏览器提供的扩展安装入口。
 
 <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F4oRzIdJCgphxrFgU4Cls_2F20250310-163456_2.gif" alt="360浏览器15版本 安装录屏">
 
-## 如何在电脑或手机上安装无忧行？
+## 在电脑或手机的其他应用中使用
 
-➡️关于在电脑和手机上实现翻墙的教程，请移步 [如何在电脑或手机上翻墙](/devices/pc-mobile)了解更多。
-
-无忧行手机代理的订阅地址可以用于您的所有设备上，与Windows PC、macOS、iOS、iPadOS、Android 系统上的众多应用程序兼容。
+浏览器插件只控制安装了无忧行的浏览器。需要在电脑或手机的其他应用中翻墙时，请查看[如何在电脑或手机上翻墙](/devices/pc-mobile)。

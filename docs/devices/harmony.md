@@ -1,4 +1,18 @@
 ---
+translationKey: devices-harmony
+contentType: device-guide
+product: subscription-service
+productArea: device-selection
+uiSurface: null
+locale: zh-Hans
+status: current
+owner: docs
+reviewStatus: needs-review
+lastVerified: null
+platforms: [harmonyos]
+tools: []
+appliesTo: []
+sources: []
 title: 华为鸿蒙手机怎么翻墙 - 设备支持
 description: 鸿蒙（英语：HarmonyOS，简称HMOS，开发代号Ark，正式名称为华为终端鸿蒙智能设备操作系统软件）
 ---
@@ -7,13 +21,19 @@ description: 鸿蒙（英语：HarmonyOS，简称HMOS，开发代号Ark，正式
 
 鸿蒙（英语：HarmonyOS，简称HMOS，开发代号Ark，正式名称为华为终端鸿蒙智能设备操作系统软件）
 
-无忧行的订阅节点服务（大陆用户通常称之为"机场"）与HarmonyOS鸿蒙和Android系统上的众多网络代理工具程序（大陆用户通常称之为"梯子"）兼容。只需简单学习，就能轻松让电脑和手机上的所有应用程序都能翻墙，随时畅享全球无限制网络资源。
+无忧行会员可以在 HarmonyOS 设备上使用兼容的代理客户端。HarmonyOS NEXT 与旧版鸿蒙可用的工具不同，请先确认系统版本，再按下面的教程安装和导入订阅。
 
 <div class="tip custom-block" style="padding-top: 8px">
 
 无忧行订阅服务手机面板：<https://jego.us>
 
 </div>
+
+## 当前工具状态
+
+先看下表确认工具是否能使用 Jego，再进入与你系统版本对应的教程。
+
+<ToolCatalog locale="zh" platform="harmonyos" />
 
 ## <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FhUBqYs4CpmMcueAi690m_2FHMOS_Logo_Icon_1.svg" width="38" height="28" alt="HarmonyOS图标"> HarmonyOS 5(鸿蒙) 设备上能用的代理工具
 
@@ -27,9 +47,11 @@ ClashBox/ClashNEXT 的安装条件非常硬核，需要华为开发者账户或�
 
 ## <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FhUBqYs4CpmMcueAi690m_2FHMOS_Logo_Icon_1.svg" width="38" height="28" alt="HarmonyOS图标"> HarmonyOS 1.0至4.3(鸿蒙) 设备上能用的代理工具
 
-关闭纯净模式，使用安卓软件进行翻墙。
+在旧版 HarmonyOS 上，部分用户通过兼容层运行 Android 客户端。优先从华为应用市场或项目官方来源安装，并保持系统安全保护开启。
 
-### 纯净模式->关闭增强保护
+### 历史界面参考：纯净模式与增强保护
+
+以下截图用于识别旧版安全设置。若系统阻止安装，先核对应用来源、签名和权限；官方渠道仍无法安装时，直接选择当前系统支持的工具。
 
 <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FlOmPh9FmJQxTo1pm8Jsv_2FScreenshot_20250728_172057_com_android_settings_3.jpg" alt="纯净模式设置1" width="300"> <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FDveGgHccNfs6rbpP0MDI_2FScreenshot_20250728_172103_com_huawei_security_privacycenter_1.jpg" alt="纯净模式设置2" width="300">
 

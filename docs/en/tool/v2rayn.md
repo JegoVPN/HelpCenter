@@ -1,6 +1,32 @@
 ---
+jegoSupport: unsupported
+tool: v2rayn
+clientKind: null
+minimumOs: []
+architectures: []
+subscriptionFormats: []
+lifecycle: current
+recommendation: not-recommended
+securityStatus: needs-review
+supportedVersions: []
+replacements: [flclash, clashverge]
+officialSources: [https://github.com/2dust/v2rayN]
+translationKey: tool-v2rayn
+contentType: tool-guide
+product: subscription-service
+productArea: tools
+uiSurface: null
+locale: en
+status: current
+owner: docs
+reviewStatus: needs-review
+lastVerified: 2026-07-10
+platforms: [windows]
+tools: [v2rayn]
+appliesTo: []
+sources: [https://github.com/2dust/v2rayN]
 title: v2rayN - Tools & Software
-description: v2rayN is a v2ray Windows client that is relatively friendly to beginners on PC platforms.
+description: The third-party v2rayN project may still be maintained, but Jego no longer supports it; this historical Windows guide provides supported alternatives.
 ---
 
 # v2rayN
@@ -8,7 +34,7 @@ description: v2rayN is a v2ray Windows client that is relatively friendly to beg
 v2rayN is a v2ray Windows client that is relatively friendly to beginners on PC platforms.
 
 ::: danger Not Recommended
-Since v2rayN doesn't support Jego's latest protocols, Jego doesn't recommend continued use. by 20250714
+The third-party v2rayN project may still be maintained, but Jego no longer supports its current subscription protocol and therefore does not recommend it for Jego. This historical tutorial remains available with supported alternatives.
 
 Please use [Jego's recommended clients](/en/devices/pc-mobile#_1-about-which-client-to-use)
 :::
@@ -97,14 +123,14 @@ The icon color of the software is different in different states, refer to the ic
 
 ### Common Issues
 
-#### What's the difference between core types?
+#### Core type differences
 
 There are four core types in total: v2fly, SgerNet, Xray, sing-box. Generally, there's no difference in daily use, you can choose any one randomly.
 
-#### What protocols are supported?
+#### Supported protocols
 
 <img src="/images/image_1655215063-favicon-70x70_3.png" alt="v2rayN" width="30">VMess, VLESS, Trojan, Socks, Shadowsocks, Hysteria2, Tuic and other proxy protocols.
 
-#### Relationship with v2rayNG?
+#### Relationship with v2rayNG
 
-<img src="/images/image_1707374615-v2rayNG-150x150_1.png" alt="v2rayNG" width="30">The Android mobile version of v2rayN is called v2rayNG, you can go to [v2rayNG](/en/tool/v2rayng) to download and view detailed tutorials. 
+<img src="/images/image_1707374615-v2rayNG-150x150_1.png" alt="v2rayNG" width="30">The Android mobile version of v2rayN is called v2rayNG, you can go to [v2rayNG](/en/tool/v2rayng) to download and view detailed tutorials.

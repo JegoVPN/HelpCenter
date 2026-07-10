@@ -1,19 +1,39 @@
 ---
+translationKey: abuse-limits
+contentType: policy
+product: general
+productArea: policies
+uiSurface: null
+locale: en
+status: current
+owner: docs
+reviewStatus: verified
+lastVerified: 2026-07-10
+platforms: []
+tools: []
+appliesTo: []
+sources: ["human-confirmed-2026-07-10"]
 title: Traffic Limits - Terms of Use
-description: Jego extension has no traffic limits, but Jego's mobile subscription service has traffic limits.
+description: The Jego browser extension currently has no data limit; member subscriptions use a monthly allowance that refreshes on the 1st or after renewal or upgrade payment.
 ---
 
 # Traffic Limits
 
-## Jego Extension
+## Jego browser extension
 
-The Jego proxy extension on computer browsers currently has <span style="color:orange;">**no traffic limits**</span>, but to ensure other users' experience, please do not occupy excessive traffic for long periods affecting other users.
+The Jego extension on computer browsers currently has <span style="color:orange;">**no data limit**</span>. To protect everyone else's experience, please do not occupy very large amounts of traffic for long periods.
 
-## Jego Subscription
+## Jego member subscription
 
-Jego's subscription service has <span style="color:orange;">**monthly data limits**</span>. To check how much data you have left, go to **Control Panel → Mobile Subscription** and look at **"Monthly Remaining Data"** in the upper right corner (if it shows a negative number, it means you've used up all your data for the month).
+The Jego subscription service has a <span style="color:orange;">**monthly data limit**</span>.
 
-**What happens when I run out of data?** You'll get a fresh, full data allowance in either of these cases:
+To see what remains, open **Control Panel → Mobile Proxy** and look at **Remaining Monthly Data**. A negative value means the monthly allowance has been used up.
 
-1. **Automatic monthly refresh** — On the 1st of each month, your data allowance is fully restored;
-2. **Instant refresh after payment** — Whenever you make a payment (renewal or upgrade), your data allowance is fully restored right away.
+## After the monthly allowance is used
+
+You receive a fresh full allowance in either case:
+
+1. **Automatic refresh on the 1st of each month:** The allowance is replenished when the new month begins.
+2. **Immediate refresh after renewal or upgrade:** The allowance is replenished after payment completes.
+
+If the page does not update after a successful payment, refresh the Control Panel and sign in again. Check whether membership status and Remaining Monthly Data changed. If not, [contact support](/en/guide/support) instead of paying again.

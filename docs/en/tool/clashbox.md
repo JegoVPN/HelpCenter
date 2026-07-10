@@ -1,4 +1,30 @@
 ---
+jegoSupport: experimental
+tool: clashbox
+clientKind: null
+minimumOs: []
+architectures: []
+subscriptionFormats: []
+lifecycle: experimental
+recommendation: advanced
+securityStatus: needs-review
+supportedVersions: []
+replacements: []
+officialSources: [https://github.com/xiaobaigroup/ClashBox, https://appgallery.huawei.com/app/detail?id=org.xbgroup.clashbox]
+translationKey: tool-clashbox
+contentType: tool-guide
+product: subscription-service
+productArea: tools
+uiSurface: null
+locale: en
+status: current
+owner: docs
+reviewStatus: needs-review
+lastVerified: 2026-07-10
+platforms: [harmonyos]
+tools: [clashbox]
+appliesTo: []
+sources: [https://github.com/xiaobaigroup/ClashBox, https://appgallery.huawei.com/app/detail?id=org.xbgroup.clashbox]
 title: ClashBox - Tools & Software
 description: ClashBox/ClashNEXT is the first proxy software based on the Navigation framework for HarmonyOS NEXT(OpenHarmony) platform, using a modified Mihomo(ClashMeta) kernel.
 ---
@@ -25,7 +51,7 @@ Cool Interface: Uses HarmonyOS NEXT design style, adopts UI layout design simila
 
 Multi-device Adaptation: UI has been adapted for phones, tablets, foldable screens, HarmonyOS computers and even PuraX outer screen*;
 
-Stable Kernel: Uses the widely praised [Mihomo(ClashMeta)](/en/tool/mihomo) kernel, with functions basically aligned with Mihomo(ClashMeta), stable and reliable;
+Kernel: Uses a Mihomo (Clash Meta)-related implementation; verify current version, feature differences, and stability in the project documentation;
 
 Core Recovery: Due to HarmonyOS NEXT's background scheduling mechanism not being mature yet, the software may have background processes killed by the system, so ClashBox has built-in core recovery functionality. After the system kills the process, the core process will be automatically restored (this function will be automatically enabled after turning on "Background Running - Simulate Picture-in-Picture").
 
@@ -37,27 +63,18 @@ PuraX outer screen currently only displays apps in Huawei's whitelist. It is tem
 
 ## <img src="/images/clashbox-logo-new.png" width="26" height="26" alt="ClashBox icon"> Get ClashBox/ClashNEXT
 
-Download from Huawei AppGallery by changing regions
+Prefer the [official Huawei AppGallery page](https://appgallery.huawei.com/app/detail?id=org.xbgroup.clashbox). Huawei and the developer control visibility by device and legitimate account region. Do not falsify a region, create replacement accounts, or node-hop to evade store restrictions.
 
-* Another HarmonyOS 4.2 device changes region in Huawei AppGallery, then HarmonyOS 5.0 logs into Huawei AppGallery to search for [ClashBox](https://appgallery.huawei.com/app/detail?id=org.xbgroup.clashbox)
-
-* Side-load clashbox, open global mode and select Hong Kong node, then open Huawei AppGallery to search for [ClashBox](https://appgallery.huawei.com/app/detail?id=org.xbgroup.clashbox)
-
-* Download [FlClash](/en/tool/flclash) to Zhuoyitong, then open global mode and select Hong Kong node, then search for [ClashBox](https://appgallery.huawei.com/app/detail?id=org.xbgroup.clashbox) in AppGallery
-
-* Re-register a Huawei Hong Kong region account, domestic mobile number can register. After registration, go to settings to exit the original Huawei mainland account and switch to the newly registered Hong Kong region. Finally go to App Gallery to search for [ClashBox](https://appgallery.huawei.com/app/detail?id=org.xbgroup.clashbox)
-
-Download from Github repository, then use developer tools for installation
+Developers can obtain a project release from the official GitHub repository and use Huawei's official developer tools under current documentation:
 * Github download: [https://github.com/xiaobaigroup/ClashBox/releases](https://github.com/xiaobaigroup/ClashBox/releases)
-* Then use [Auto-installer](https://github.com/likuai2010/auto-installer/) for installation
 * Or use [DevEcho Testing](https://developer.huawei.com/consumer/cn/deveco-testing/) for installation
 
-::: warning Regional Restrictions
-Huawei's signing server blocks IP addresses from outside mainland China. To side-load software for HarmonyOS NEXT in countries/regions outside mainland China, please use proxy or other methods to use mainland China IP addresses.
+::: warning Developer installation
+Developer-tool installation requires an understanding of signing, permissions, and validity. If Huawei's official tools reject an action because of account, device, or region policy, consult Huawei's current developer documentation; do not disguise an IP address or account region to bypass the restriction.
 :::
 
-::: warning Validity Period Note
-Apps side-loaded on HarmonyOS NEXT using self-signing method have a default validity period of only 14 days. After completing [Developer Real-name Verification](https://developer.huawei.com/consumer/cn/verified/enrollment), the validity period can be extended to 180 days.
+::: warning Signing validity
+Self-signed app validity and developer requirements can change with Huawei policy, account state, and tool version. Before installation, consult the [Huawei developer enrollment entry](https://developer.huawei.com/consumer/cn/verified/enrollment) and current official documentation; this page does not retain unverified fixed-day claims.
 :::
 
 ## Add Subscription
@@ -85,4 +102,4 @@ Open `ClashBox`, on the `Home` page directly click the ` ▶ ` in the bottom rig
 ### Switch Nodes
 Open `ClashBox`, go to the `Proxy` page, then select according to your needs.
 
-The usage method is similar to other similar software, you can refer to [FlClash](/en/tool/flclash), or refer to the original product [Clash for Android](/en/tool/clash-for-android) 
+The usage method is similar to other similar software, you can refer to [FlClash](/en/tool/flclash), or refer to the original product [Clash for Android](/en/tool/clash-for-android)

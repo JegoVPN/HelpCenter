@@ -1,4 +1,30 @@
 ---
+jegoSupport: supported
+tool: flclash
+clientKind: null
+minimumOs: []
+architectures: []
+subscriptionFormats: []
+lifecycle: current
+recommendation: recommended
+securityStatus: needs-review
+supportedVersions: []
+replacements: []
+officialSources: [https://github.com/chen08209/FlClash]
+translationKey: tool-flclash
+contentType: tool-guide
+product: subscription-service
+productArea: tools
+uiSurface: null
+locale: en
+status: current
+owner: docs
+reviewStatus: needs-review
+lastVerified: 2026-07-10
+platforms: [windows, macos, linux, android, harmonyos]
+tools: [flclash]
+appliesTo: []
+sources: [https://github.com/chen08209/FlClash]
 title: FlClash - Tools & Software
 description: A multi-platform proxy client based on Mihomo (formerly ClashMeta), simple to use, open source and ad-free.
 ---
@@ -11,7 +37,7 @@ A multi-platform proxy client based on Mihomo (formerly ClashMeta), simple to us
 Welcome to the 2025 FlClash usage tutorial
 :::
 
-FlClash is an open-source multi-platform proxy client based on Mihomo (formerly ClashMeta), developed using the Flutter framework, supporting Windows, Android, macOS and Linux platforms. Its intuitive and user-friendly interface design allows users to easily configure proxy settings, manage routing rules, and view real-time traffic monitoring. It's completely open source and ad-free, so users don't need to worry about privacy and security issues.
+FlClash is an open-source multi-platform client based on Mihomo (formerly Clash Meta) and built with Flutter. See this page's status row and GitHub project for current platforms and official sources. Open source or ad-free does not itself guarantee privacy or security; review permissions, release provenance, and security advisories before installation.
 
 ## <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2Fu2sHeQjHJurcgVhJB1zO_2Ficon_2.png" width="26" height="26" alt="FlClash icon"> Get FlClash
 
@@ -23,10 +49,10 @@ After opening the Github Release page, you'll see many installation packages. Do
 
 **Download Instructions:**
 
-* Android phones generally download the first one
-* Windows generally download the first one
-* macOS generally download the first one
-* Linux generally download the first one
+* Expand the Assets for the intended release and read its notes.
+* Select a package that explicitly matches the operating system and CPU architecture.
+* Do not mechanically download the first file or use an unofficial mirror.
+* If architecture or package format is unclear, consult the project documentation first.
 
 ### Operation Interface
 
@@ -108,7 +134,7 @@ Note: Low latency doesn't mean fast speed, high latency doesn't mean slow speed,
 
 Suitable for users who use both domestic and foreign services.
 
-Mainland traffic will not consume package data.
+Whether traffic is direct or proxied depends on the active configuration; account UI determines how it counts toward the plan.
 
 When querying IP on mainland websites, you get the local IP address.
 
@@ -127,10 +153,10 @@ Choosing this mode will result in inability to bypass restrictions, with the sam
 
 Suitable for users who do not rely on mainland services.
 
-Very effective for foreign traffic, mainland traffic will be slowed down.
+Global mode sends client-managed traffic through the proxy; verify performance and destination results on the current network.
 
 ## FlClash Mobile Version Usage Tutorial
 
 Please watch from 2 minutes 04 seconds of this video.
 
-<YouTube videoId="HtZWdMHui6I" title="FlClash Usage Tutorial Video" /> 
+<YouTube videoId="HtZWdMHui6I" title="FlClash Usage Tutorial Video" />

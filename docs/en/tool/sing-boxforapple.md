@@ -1,22 +1,48 @@
 ---
+jegoSupport: supported
+tool: sing-boxforapple
+clientKind: null
+minimumOs: []
+architectures: []
+subscriptionFormats: []
+lifecycle: current
+recommendation: recommended
+securityStatus: needs-review
+supportedVersions: []
+replacements: []
+officialSources: [https://github.com/SagerNet/sing-box, https://apps.apple.com/app/sing-box-vt/id6673731168]
+translationKey: tool-sing-boxforapple
+contentType: tool-guide
+product: subscription-service
+productArea: tools
+uiSurface: null
+locale: en
+status: current
+owner: docs
+reviewStatus: needs-review
+lastVerified: 2026-07-10
+platforms: [macos, ios, ipados, tvos]
+tools: [sing-boxforapple]
+appliesTo: []
+sources: [https://github.com/SagerNet/sing-box, https://apps.apple.com/app/sing-box-vt/id6673731168]
 title: sing-box for Apple platforms - Tools & Software
-description: sing-box for Apple platforms is called sing-box VT in Apple Store, a brand new kernel that supports almost all current protocols, and is the only free, open source, ad-free and good tool in App Store.
+description: sing-box for Apple platforms is listed as sing-box VT in the App Store; verify current protocols, price, and platforms from official sources.
 ---
 
 # sing-box for Apple platforms
 
-sing-box for Apple platforms is called sing-box VT in Apple Store, a brand new kernel that supports almost all current protocols, and is the only free, open source, ad-free and good tool in App Store.
+sing-box for Apple platforms is listed as sing-box VT in the App Store and is the Apple-platform client from the sing-box project. Verify current protocols, price, and availability on the official project and store pages.
 
 ## <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FX6LBfzRlMdWyQVvPC9eg_2Fimage_1.png" width="26" height="26" alt="sing-box icon"> Get sing-box for Apple platforms
 
 ### Apple Family Series
 
-macOS iOS iPadOS tvOS can be installed through Apple Store, the only threshold is that you need a non-mainland China Apple ID
+macOS, iOS, iPadOS, and tvOS builds can be installed from the App Store when Apple and the developer make them available for your legitimate account region.
 
 * [App Store](https://apps.apple.com/app/sing-box-vt/id6673731168)
 
-::: info Registration Tutorial
-If you want to register your own non-mainland App Store account, see the [US Apple ID Registration Guide](/en/devices/us-apple-id), or purchase a ready-made account.
+::: info Account safety
+Use only an Apple Account you legitimately own. Do not buy or share accounts or falsify region, phone, or billing details. If the app is unavailable, choose a supported tool offered in your current region.
 :::
 
 macOS can also be installed through Github and command line
@@ -65,8 +91,8 @@ Click Dashboard, make sure Profile selects the Jego just created, then click the
 
 Reminder: The first time you use it, all three modes may not be selected. It's recommended to click on `Rule`.
 
-`Rule` - Smart routing mode, automatically selects direct connection or proxy based on rules  
-`Direct` - Direct connection mode, all traffic bypasses proxy  
+`Rule` - Smart routing mode, automatically selects direct connection or proxy based on rules
+`Direct` - Direct connection mode, all traffic bypasses proxy
 `Global` - Global proxy mode, all traffic goes through proxy
 
 <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FOHCHUCUIQ4chAL7HNnPm_2Fimage_3.png" alt="macOS internet mode">
@@ -94,7 +120,7 @@ Open the sing-box client, go to `Profiles -> New Profile`
 
 Click `Dashboard`, make sure Profile selects the Jego just created, then click the `Enabled` switch.
 
-<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FxZVgmsq4OQLsT2eLghMZ_2F20250714-162650_1.png" alt="iOS enable sing-box 1" width="300"> 
+<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FxZVgmsq4OQLsT2eLghMZ_2F20250714-162650_1.png" alt="iOS enable sing-box 1" width="300">
 
 The usage logic is similar to macOS above, using the same UI framework.
 
@@ -102,8 +128,8 @@ The usage logic is similar to macOS above, using the same UI framework.
 <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2Fu0p5d9m5Kv1ZFfm2hvm8_2F20250715-064637_2.png" alt="iOS enable sing-box 2" width="300">
 Reminder: The first time you use it, all three modes may not be selected. It's recommended to click on `Rule`.
 
-`Rule` - Smart routing mode, automatically selects direct connection or proxy based on rules  
-`Direct` - Direct connection mode, all traffic bypasses proxy  
+`Rule` - Smart routing mode, automatically selects direct connection or proxy based on rules
+`Direct` - Direct connection mode, all traffic bypasses proxy
 `Global` - Global proxy mode, all traffic goes through proxy
 
 #### Groups tab - Switch node servers
@@ -113,11 +139,11 @@ On this Tab, you can manually choose the node server you want to use.
 
 ## sing-box Common Issues
 
-### 🚫 Cannot access foreign websites but can access domestic websites?
+### When only local websites open
 
 **🟡 Situation 1: Just started**
 
-When sing-box just starts, before processing foreign domain name resolution, it will first conduct a URL speed test on all available nodes to select the fastest node to complete subsequent DNS resolution. Therefore, before the speed test is completed, you may temporarily be unable to access foreign websites.
+Some configurations run a URL test or fetch rule sets during startup, during which a usable result may be temporarily absent. Whether a test runs, what it covers, and how DNS behaves depend on the actual configuration; use status text and logs rather than describing it as “selecting the fastest node.”
 
 > ✅ Solution: If you don't want to wait for the speed test process, you can manually select an available node, so you can immediately access foreign websites.
 
@@ -149,4 +175,4 @@ If you encounter the error shown in the image below when starting:
 * Switch to mobile network (such as 4G/5G)
 * Change network operator (such as from China Telecom to China Unicom, ask friends for hotspot)
 
-**💡** Note: Once the rule files are successfully loaded once, this error will not appear again. 
+**💡** Note: Once the rule files are successfully loaded once, this error will not appear again.

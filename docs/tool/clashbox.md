@@ -1,4 +1,30 @@
 ---
+jegoSupport: experimental
+tool: clashbox
+clientKind: null
+minimumOs: []
+architectures: []
+subscriptionFormats: []
+lifecycle: experimental
+recommendation: advanced
+securityStatus: needs-review
+supportedVersions: []
+replacements: []
+officialSources: [https://github.com/xiaobaigroup/ClashBox, https://appgallery.huawei.com/app/detail?id=org.xbgroup.clashbox]
+translationKey: tool-clashbox
+contentType: tool-guide
+product: subscription-service
+productArea: tools
+uiSurface: null
+locale: zh-Hans
+status: current
+owner: docs
+reviewStatus: needs-review
+lastVerified: 2026-07-10
+platforms: [harmonyos]
+tools: [clashbox]
+appliesTo: []
+sources: [https://github.com/xiaobaigroup/ClashBox, https://appgallery.huawei.com/app/detail?id=org.xbgroup.clashbox]
 title: ClashBox - 工具软件
 description: ClashBox/ClashNEXT是首个基于Navigation框架的HarmonyOS NEXT(OpenHarmony)平台的代理软件，使用改版的Mihomo(ClashMeta)内核。
 ---
@@ -13,19 +39,19 @@ ClashBox/ClashNEXT是首个基于Navigation框架的HarmonyOS NEXT(OpenHarmony)�
 ClashBox暂未开源，请谨慎使用。
 :::
 
-::: info 已上架境外AppGallery 
+::: info 已上架境外AppGallery
 [https://appgallery.huawei.com/app/detail?id=org.xbgroup.clashbox](https://appgallery.huawei.com/app/detail?id=org.xbgroup.clashbox)
 :::
 
 **软件特色**
 
-ArkTS开发：前端部分使用ArkTS开发，更流畅，动效更丰富; 
+ArkTS开发：前端部分使用ArkTS开发，更流畅，动效更丰富;
 
-炫酷界面：使用HarmonyOS NEXT设计风格，采用类[Surfboard](surfboard)的UI排版设计，支持深色模式、模糊效果等，使用体验上更进一步； 
+炫酷界面：使用HarmonyOS NEXT设计风格，采用类[Surfboard](surfboard)的UI排版设计，支持深色模式、模糊效果等，使用体验上更进一步；
 
-多端适配：UI方面对手机、平板、折叠屏、鸿蒙电脑甚至PuraX外屏*都进行了适配； 
+多端适配：UI方面对手机、平板、折叠屏、鸿蒙电脑甚至PuraX外屏*都进行了适配；
 
-稳定内核：采用广受好评的[Mihomo(ClashMeta)](mihomo)内核，功能基本对齐Mihomo(ClashMeta)，稳定可靠； 
+内核：使用 Mihomo（Clash Meta）相关实现；具体版本、功能差异和稳定性以项目当前说明为准；
 
 核心恢复：由于HarmonyOS NEXT的后台调度机制尚不成熟，软件可能存在后台进程被系统关闭的情况，因此ClashBox内置了核心恢复功能，系统杀进程后将自动恢复核心进程（开启“后台运行-模拟画中画”后将自动启用本功能）。
 
@@ -37,27 +63,18 @@ PuraX外屏目前仅显示华为白名单内的App，在本软件获得白名单
 
 ## <img src="/images/clashbox-logo-new.png" width="26" height="26" alt="ClashBox图标"> 获取 ClashBox/ClashNEXT
 
-从华为应用市场换区下载
+优先从[华为 AppGallery 官方页面](https://appgallery.huawei.com/app/detail?id=org.xbgroup.clashbox)获取。可见性由华为与开发者按设备和合法账户地区决定；不要通过虚构地区、重复注册账号或切换节点规避商店限制。
 
-* 另一台鸿蒙4.2在华为应用市场换区后 鸿蒙5.0登录华为应用市场搜索[ClashBox](https://appgallery.huawei.com/app/detail?id=org.xbgroup.clashbox)
-
-* 侧载clashbox打开全局后选择香港节点，然后打开华为应用市场搜索[ClashBox](https://appgallery.huawei.com/app/detail?id=org.xbgroup.clashbox)
-
-* 下载[FlClash](flclash) 到卓易通然后开全局后选择香港节点，然后应用市场搜索[ClashBox](https://appgallery.huawei.com/app/detail?id=org.xbgroup.clashbox)
-
-* 重新注册一个华为港区账号，国内手机号即可注册。注册完毕后去设置退出原来的华为国区账号，换为新注册的香港区。最后去App Gallery搜索[ClashBox](https://appgallery.huawei.com/app/detail?id=org.xbgroup.clashbox)
-
-从Github库下载，然后使用开发者工具进行安装
+开发者可从官方 GitHub 仓库取得项目发布，并使用华为官方开发者工具按当前文档安装：
 * Github下载：[https://github.com/xiaobaigroup/ClashBox/releases](https://github.com/xiaobaigroup/ClashBox/releases)
-* 然后使用[Auto-installer](https://github.com/likuai2010/auto-installer/)进行安装
 * 或者使用[DevEcho Testing](https://developer.huawei.com/consumer/cn/deveco-testing/)进行安装
 
-::: warning 地区限制
-华为的签名服务器屏蔽了非中国大陆的IP地址，若要在非中国大陆的国家/地区为HarmonyOS NEXT侧载软件，请使用代理等方式使用中国大陆的IP地址。
+::: warning 开发者安装
+开发者工具安装需要理解签名、权限和有效期。若华为官方工具因账户、设备或地区策略拒绝操作，请查阅华为当前开发者文档，不要伪装 IP 或账户地区绕过限制。
 :::
 
-::: warning 有效期说明
-在HarmonyOS NEXT使用自签名的方式进行侧载的App默认只有14天的有效期，进行[开发者实名认证](https://developer.huawei.com/consumer/cn/verified/enrollment)后即可将有效期提升至180天。
+::: warning 签名有效期
+自签名应用的有效期和开发者要求会随华为政策、账户与工具版本变化。安装前查阅[华为开发者认证入口](https://developer.huawei.com/consumer/cn/verified/enrollment)及当前官方文档；本页不保留未经核验的固定天数。
 :::
 
 ## 添加订阅

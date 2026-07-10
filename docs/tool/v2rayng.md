@@ -1,6 +1,32 @@
 ---
+jegoSupport: unsupported
+tool: v2rayng
+clientKind: null
+minimumOs: []
+architectures: []
+subscriptionFormats: []
+lifecycle: current
+recommendation: not-recommended
+securityStatus: needs-review
+supportedVersions: []
+replacements: [sing-boxforandroid, flclash]
+officialSources: [https://github.com/2dust/v2rayNG, https://play.google.com/store/apps/details?id=com.v2ray.ang]
+translationKey: tool-v2rayng
+contentType: tool-guide
+product: subscription-service
+productArea: tools
+uiSurface: null
+locale: zh-Hans
+status: current
+owner: docs
+reviewStatus: needs-review
+lastVerified: 2026-07-10
+platforms: [android]
+tools: [v2rayng]
+appliesTo: []
+sources: [https://github.com/2dust/v2rayNG, https://play.google.com/store/apps/details?id=com.v2ray.ang]
 title: v2rayNG - 工具软件
-description: v2rayNG是Android系统即安卓手机系统下的代理软件客户端，功能强大且支持多种代理协议，如VMess、VLESS、Shadowsocks、Socks、Trojan等代理协议。
+description: v2rayNG 第三方项目可能仍在维护，但 Jego 已不再支持；本页保留历史 Android 教程并提供受支持替代项。
 ---
 
 # v2rayNG
@@ -8,7 +34,7 @@ description: v2rayNG是Android系统即安卓手机系统下的代理软件客�
 v2rayNG是Android系统即安卓手机系统下的代理软件客户端，功能强大且支持多种代理协议，如VMess、VLESS、Shadowsocks、Socks、Trojan等代理协议。
 
 ::: danger 不推荐使用
-由于v2rayNG不支持无忧行最新的协议，所以无忧行不推荐大家继续使用。by 20250714
+v2rayNG 第三方项目可能仍在维护，但 Jego 已不再支持其当前订阅协议，因此不推荐继续用于 Jego。本页保留为历史教程，并提供受支持的替代工具。
 
 请使用[无忧行推荐的客户端](/devices/pc-mobile#_1、关于应该使用什么客户端)
 :::
@@ -102,5 +128,3 @@ v2rayNG是Android系统即安卓手机系统下的代理软件客户端，功能
 * 全局直连
 
 根据不同的需求选择合适的预定义规则，一般选择`绕过局域网及大陆地址而后代理`。
-
-

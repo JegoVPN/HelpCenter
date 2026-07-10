@@ -1,4 +1,30 @@
 ---
+jegoSupport: supported
+tool: surfboard
+clientKind: null
+minimumOs: []
+architectures: []
+subscriptionFormats: []
+lifecycle: current
+recommendation: not-recommended
+securityStatus: needs-review
+supportedVersions: []
+replacements: []
+officialSources: [https://github.com/getsurfboard/surfboard]
+translationKey: tool-surfboard
+contentType: tool-guide
+product: subscription-service
+productArea: tools
+uiSurface: null
+locale: en
+status: current
+owner: docs
+reviewStatus: needs-review
+lastVerified: 2026-07-10
+platforms: [android]
+tools: [surfboard]
+appliesTo: []
+sources: [https://github.com/getsurfboard/surfboard]
 title: Surfboard - Tools & Software
 description: Surfboard is a network proxy tool that runs on Android systems.
 ---
@@ -9,9 +35,10 @@ Surfboard is a network proxy tool that runs on Android systems.
 
 ## <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FIywLDSGlP6GDDb2QtWh5_2Fsurfboard_3.png" width="26" height="26" alt="Surfboard icon"> Get Surfboard
 
-1. Surfboard official Telegram group: [https://t.me/surfboardnews](https://t.me/surfboardnews)
-2. APKPure: [https://apkpure.com/surfboard/com.getsurfboard](https://apkpure.com/surfboard/com.getsurfboard)
-3. Github release: [https://github.com/getsurfboard/surfboard/releases/latest](https://github.com/getsurfboard/surfboard/releases/latest)
+1. Official source repository: [https://github.com/getsurfboard/surfboard](https://github.com/getsurfboard/surfboard)
+2. Official GitHub Releases: [https://github.com/getsurfboard/surfboard/releases/latest](https://github.com/getsurfboard/surfboard/releases/latest)
+
+Do not install packages from APK aggregators or chat-forwarded links. Before download, confirm that the repository owner matches the official source above.
 
 ## Add Subscription
 
@@ -25,7 +52,7 @@ Jego subscription service mobile panel: <https://jego.us>
 
 </div>
 
-# Surfboard Usage Tutorial
+## Surfboard Usage Tutorial
 
 ## Configure Subscription
 
@@ -57,4 +84,4 @@ Switch to the "Dashboard" tab, click the start button in the bottom right corner
 
 If it's the first time using it, the Android system will pop up an authorization prompt asking whether to authorize Surfboard to get VPN permissions, please select Allow.
 
-Surfboard supports setting proxy mode to Global, Direct, and Rule-Based modes. 
+Surfboard supports setting proxy mode to Global, Direct, and Rule-Based modes.
