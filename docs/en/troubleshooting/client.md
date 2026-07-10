@@ -20,11 +20,11 @@ description: Follow simple steps when a subscription will not import, nodes are 
 
 # Fix a Jego subscription client
 
-Find your current app in the [client guides](/en/tool/) first and confirm that you completed installation, subscription import, node selection, and the connection switch. Then choose the symptom below.
+Start from [Install by device](/en/subscription/#install-by-device), open the guide for the client you use, and follow its installation, subscription import, node selection, and connection steps.
 
 ## 1. Subscription will not import
 
-Confirm that the client matches your [device](/en/devices/), then copy the subscription again from the Jego Control Panel. Use the subscription type named by the client guide and import the original link directly into the trusted client. Record the error text.
+Open your [device guide](/en/subscription/#install-by-device), then copy the subscription again from the Jego Control Panel. Use the subscription type named by the client guide and import that URL into the client.
 
 ## 2. Import succeeds but no usable item appears
 
@@ -48,6 +48,6 @@ Record the versions before and after the update, then check the matching client 
 
 ## Choose the matching client guide
 
-<ToolCatalog locale="en" />
+Open [Install by device](/en/subscription/#install-by-device), choose the current system, and then open the guide for the client in use. Its installation, import, and update steps remain on that page.
 
 If the problem remains, send [Support](/en/guide/support) the client and operating-system versions, time, error text, node name, and steps to reproduce.

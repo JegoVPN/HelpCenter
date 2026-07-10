@@ -37,7 +37,7 @@ GUI.for.SingBox is a graphical client made by the open source community based on
 Welcome to the 2025 GUI.for.SingBox usage tutorial
 :::
 
-> Whispering: The experience of using GUI.for.SingBox is not very smooth. Non-sing-box believers are recommended to use [FlClash](/en/tool/flclash).
+> Whispering: The experience of using GUI.for.SingBox is not very smooth. Non-sing-box believers are recommended to use [FlClash](/en/subscription/clients/flclash).
 
 ## Get GUI.for.SingBox
 

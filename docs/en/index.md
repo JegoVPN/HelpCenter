@@ -31,7 +31,7 @@ hero:
       link: /en/guide/usage
     - theme: alt
       text: Use Proxy on PC or Mobile
-      link: /en/devices/pc-mobile
+      link: /en/subscription/
     - theme: alt
       text: Vibe Coding
       link: /en/guide/vibe-coding
@@ -89,12 +89,12 @@ To help you master the usage of the Jego browser extension more efficiently, we 
 
 To help you master PC and mobile proxy methods more efficiently, we have organized the following proxy guides according to different operating systems and devices. Please read as needed:
 
-1. [How to Use Proxy on Android](/en/devices/android)
-2. [How to Use Proxy on iPhone/iPad](/en/devices/ios)
-3. [How to Use Proxy on Huawei Harmony OS](/en/devices/harmony)
-4. [How to Use Proxy on Windows PC](/en/devices/windows)
-5. [How to Use Proxy on Mac](/en/devices/mac)
-6. [How to Use Proxy on Linux PC](/en/devices/linux)
+1. [How to Use Proxy on Android](/en/subscription/devices/android)
+2. [How to Use Proxy on iPhone/iPad](/en/subscription/devices/ios)
+3. [How to Use Proxy on Huawei Harmony OS](/en/subscription/devices/harmony)
+4. [How to Use Proxy on Windows PC](/en/subscription/devices/windows)
+5. [How to Use Proxy on Mac](/en/subscription/devices/mac)
+6. [How to Use Proxy on Linux PC](/en/subscription/devices/linux)
 
 ### III. Understand Jego Usage Guidelines
 

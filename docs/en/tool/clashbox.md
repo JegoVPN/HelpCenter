@@ -47,7 +47,7 @@ ClashBox is not yet open source, please use with caution.
 
 ArkTS Development: The frontend is developed using ArkTS, more fluid with richer animations;
 
-Cool Interface: Uses HarmonyOS NEXT design style, adopts UI layout design similar to [Surfboard](/en/tool/surfboard), supports dark mode, blur effects, etc., providing a further improved user experience;
+Cool Interface: Uses HarmonyOS NEXT design style, adopts UI layout design similar to [Surfboard](/en/subscription/clients/surfboard), supports dark mode, blur effects, etc., providing a further improved user experience;
 
 Multi-device Adaptation: UI has been adapted for phones, tablets, foldable screens, HarmonyOS computers and even PuraX outer screen*;
 
@@ -102,4 +102,4 @@ Open `ClashBox`, on the `Home` page directly click the ` ▶ ` in the bottom rig
 ### Switch Nodes
 Open `ClashBox`, go to the `Proxy` page, then select according to your needs.
 
-The usage method is similar to other similar software, you can refer to [FlClash](/en/tool/flclash), or refer to the original product [Clash for Android](/en/tool/clash-for-android)
+The usage method is similar to other similar software, you can refer to [FlClash](/en/subscription/clients/flclash), or refer to the original product [Clash for Android](/en/subscription/clients/clash-for-android)

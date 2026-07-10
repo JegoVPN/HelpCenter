@@ -1,9 +1,9 @@
 ---
 translationKey: devices-pc-mobile
-contentType: device-guide
+contentType: overview
 product: subscription-service
-productArea: device-selection
-uiSurface: null
+productArea: subscription-management
+uiSurface: control-panel
 locale: zh-Hans
 status: current
 owner: docs
@@ -13,59 +13,69 @@ platforms: [windows, macos, linux, android, ios, harmonyos]
 tools: []
 appliesTo: []
 sources: []
-title: 如何在电脑或手机上翻墙 - 设备支持
-description: 无忧行会员如何在 Windows、Mac、Linux、Android、iPhone、iPad 和 HarmonyOS 上选择客户端并导入订阅节点。
+title: 在电脑和手机上使用无忧行订阅
+description: 按设备安装无忧行支持的客户端，从控制面板复制和更新订阅，并了解浏览器插件、系统代理和 TUN 的区别。
 ---
 
-# 如何在电脑或手机上翻墙
+# 在电脑和手机上使用无忧行订阅
 
-无忧行会员可以把订阅节点添加到 Windows、Mac、Linux、Android、iPhone、iPad 和 HarmonyOS 的兼容客户端中，让浏览器之外的应用也能使用代理。先选择设备，再跟着对应教程安装和导入即可。
+无忧行会员可以把订阅添加到电脑或手机的兼容客户端中。完成一次安装和导入后，浏览器之外的应用也能使用无忧行线路。
 
-::: info 快速上手
-为了让能您快速上手，我们提供了各种网络代理工具程序（大陆用户通常称之为"梯子"）的初级使用指南，请根据您的需求选择适合您的指南认真阅读。
+浏览器插件和订阅服务是两种使用方式：Chrome、Edge 里的网页可以直接使用[无忧行浏览器插件](/guide/usage)；电脑软件和手机应用则通过本页的订阅客户端连接。
 
-如想深入研究还请自行在YouTube上搜索相关的视频教程。
-:::
+## 按设备安装
 
-| 操作系统 | 设备 | 使用指南 |
-| --- | --- | --- |
-| <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F7Hh3XGbbAH0jtCKDKIF6_2Fandroid_3.svg" width="38" height="28" alt="安卓图标"> | **安卓设备** | [安卓手机怎么翻墙](/devices/android) |
-| <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F7GBp8VQdHNWWH3aalDTP_2Fios_3.svg" width="38" height="28" alt="iOS图标"> | **苹果手机、iPad设备** | [苹果手机/iPad 怎么翻墙](/devices/ios) |
-| <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FbeA5N21M1iATQm5HiGND_2Fwin_1.svg" width="38" height="28" alt="Windows 图标"> | **Windows PC 电脑** | [Windows PC电脑怎么翻墙](/devices/windows) |
-| <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FrUGve1gm2gP1sXdvgjCw_2Fapple_1.svg" width="38" height="28" alt="macOS 图标"> | **苹果Mac 电脑** | [苹果Mac 电脑怎么翻墙](/devices/mac) |
-| <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FJJlooO6sJC8xrcR6vqGj_2Flinux_1.svg" width="38" height="28" alt="Linux 图标"> | **Linux 电脑** | [Linux 电脑怎么翻墙](/devices/linux) |
-| <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FhUBqYs4CpmMcueAi690m_2FHMOS_Logo_Icon_1.svg" width="38" height="28" alt="HarmonyOS 图标"> | **华为鸿蒙设备** | [华为鸿蒙手机怎么翻墙](/devices/harmony) |
+<span id="_1、关于应该使用什么客户端"></span>
 
-## 常见问题
+这里只需要选择正在使用的设备。进入设备教程后，先安装页面推荐的客户端，再跟着同一篇教程导入订阅。
 
-### 1、关于应该使用什么客户端
+<div class="subscription-device-grid">
+  <a class="subscription-device-card" href="/subscription/devices/windows"><img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FbeA5N21M1iATQm5HiGND_2Fwin_1.svg" width="38" height="28" alt="Windows 图标"><strong>Windows</strong><span>电脑安装教程</span></a>
+  <a class="subscription-device-card" href="/subscription/devices/mac"><img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FrUGve1gm2gP1sXdvgjCw_2Fapple_1.svg" width="38" height="28" alt="macOS 图标"><strong>macOS</strong><span>Mac 安装教程</span></a>
+  <a class="subscription-device-card" href="/subscription/devices/ios"><img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F7GBp8VQdHNWWH3aalDTP_2Fios_3.svg" width="38" height="28" alt="iOS 图标"><strong>iPhone / iPad</strong><span>苹果移动设备教程</span></a>
+  <a class="subscription-device-card" href="/subscription/devices/android"><img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F7Hh3XGbbAH0jtCKDKIF6_2Fandroid_3.svg" width="38" height="28" alt="安卓图标"><strong>Android</strong><span>安卓手机教程</span></a>
+  <a class="subscription-device-card" href="/subscription/devices/linux"><img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FJJlooO6sJC8xrcR6vqGj_2Flinux_1.svg" width="38" height="28" alt="Linux 图标"><strong>Linux</strong><span>电脑安装教程</span></a>
+  <a class="subscription-device-card" href="/subscription/devices/harmony"><img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FhUBqYs4CpmMcueAi690m_2FHMOS_Logo_Icon_1.svg" width="38" height="28" alt="HarmonyOS 图标"><strong>HarmonyOS</strong><span>鸿蒙设备教程</span></a>
+</div>
 
-下面的表格会同时告诉你客户端的维护状态、适用用户，以及 Jego 支持情况。Jego 已不支持 v2rayN、v2rayNG、Loon 和 OneClick；新用户直接选择标为“适合大多数用户”的客户端即可。
+iPhone 和 iPad 的应用商店账号说明放在[Apple ID 教程](/subscription/devices/us-apple-id)中。v2rayN、v2rayNG、Loon 和 OneClick 的旧教程继续保留给现有用户查阅，当前安装请直接使用设备教程里的推荐客户端。
 
-<ToolCatalog locale="zh" />
+## 复制和更新订阅
 
-选好客户端后，点击名称进入完整教程。需要复制或更新订阅时看[订阅管理](/subscription/management)，连接失败时看[客户端故障排查](/troubleshooting/client)。
+客户端安装完成后，按下面的顺序添加无忧行订阅：
 
-旧页还列过 Hiddify、Karing、ClashMi 和特定旧版 Clash Verge Rev 的负面结论，但没有可核验来源，因此本次不继续发布那些定性说法。选择目录外工具时请自行核对官方来源、许可证、维护状态和安全公告。
+1. 打开无忧行控制面板，进入**订阅节点**。
+2. 回到客户端教程，确认它使用的订阅类型。
+3. 在“订阅节点”中复制对应的一行地址。
+4. 把地址粘贴到客户端的添加订阅入口，保存并更新。
+5. 节点出现后，选择线路并打开连接。
 
-### 2、这些软件里的系统代理和虚拟网卡/tun的区别
+控制面板里的 Mihomo、sing-box、Surfboard、Shadowrocket、Surge、Quantumult X 和 Clash，是同一项订阅服务提供给不同客户端的格式。客户端教程写明使用哪一种，就复制哪一行。
 
-系统代理是操作系统提供的代理接口；是否遵守由应用实现决定，浏览器通常会读取该设置，但仍应以实际连接结果为准。
+以后需要取得新的节点时，在客户端里打开已有订阅并选择**更新**、**同步**或**刷新**。换电脑、换手机或更换客户端时，可以从控制面板再次复制相应格式。手机上也可以通过 <https://jego.us> 复制和管理订阅节点。
 
-虚拟网卡/TUN 模式创建虚拟网络接口，并按客户端配置处理被路由到该接口的流量。路由例外、权限、其他 VPN 和应用实现仍可能影响结果，因此不能写成“保证所有请求都经过”。
+需要更换订阅地址时，可以在“订阅节点”页面执行重置。重置会生成新地址，原地址随即停止使用；把新地址重新导入正在使用的客户端即可。
 
-#### 结论：
+## 浏览器插件、系统代理和 TUN
 
-需要覆盖不遵守系统代理的应用时，可评估客户端的 TUN 模式并逐项验证；只处理浏览器流量时，可使用系统代理或浏览器插件。
+这三种方式控制的范围不同，按实际使用的应用选择即可。
 
-<span style="color:green;">如果需求仅限浏览器，</span>[<span style="color:green;">可以从无忧行浏览器插件开始。</span>](/guide/usage)
+- **浏览器插件**：负责安装了无忧行的 Chrome 或 Edge，适合主要在浏览器里使用。
+- **系统代理**：客户端把代理设置写入系统，浏览器和支持系统代理的软件会使用该设置。
+- **TUN 模式**：客户端创建虚拟网卡，并按照客户端规则处理进入虚拟网卡的网络请求，适合还需要覆盖其他电脑应用的场景。
 
-### 3、开启软件的 TUN 模式后设置无忧行插件
+<span id="_2、这些软件里的系统代理和虚拟网卡/tun的区别"></span>
 
-如果你已经在 FlClash、Clash Verge Rev、sing-box、v2rayN 等代理软件里开启了虚拟网卡/TUN 模式，电脑上的网络请求已经由这些软件接管并判断是否代理。这时浏览器里的无忧行插件应该保持关闭。
+系统代理和 TUN 都由订阅客户端控制。手机上的客户端通常通过系统显示的 VPN 连接来接管网络请求，连接仍由当前客户端和所选节点提供。
+
+<span id="_3、开启软件的-tun-模式后设置无忧行插件"></span>
+
+### 客户端使用 TUN 时的浏览器插件
+
+电脑客户端已经开启 TUN 模式时，让无忧行浏览器插件保持**关闭**，浏览器请求便由当前客户端统一处理。
 
 <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FISwY5XX4FX2qker0nOYC_2Fimage_3.png" alt="无忧行插件关闭模式界面" width="280">
 
-在插件小窗里点击<span style="background-color:grey; color:white; padding:2px 6px; border-radius:3px;">关闭</span>，让插件保持上图所示状态。TUN 模式开启期间只保留客户端这一层代理，可以减少浏览器流量重复处理、速度变慢或规则冲突。
+插件里的“关闭”只关闭浏览器插件自己的代理功能，不会影响电脑客户端和 TUN。只使用浏览器插件时，再从弹窗选择规则或全局模式。完整说明见[规则、全局和关闭](/guide/mode-selection)。
 
-这里的<span style="background-color:grey; color:white; padding:2px 6px; border-radius:3px;">关闭</span>只是关闭无忧行插件自己的浏览器代理功能，不会关闭你正在使用的代理软件和 TUN 模式。简单来说：用代理软件的 TUN 模式翻墙时，无忧行插件保持关闭；只想让浏览器翻墙时，再使用[无忧行浏览器插件](/guide/usage)。更多插件模式说明可查看[模式选择](/guide/mode-selection)。
+客户端的下载、安装和按钮位置都放在对应设备教程中；本页不再重复列出全部软件。站内搜索仍可以直接找到现有的 18 篇客户端教程。

@@ -1,8 +1,3 @@
-import catalog from './data/tool-catalog.json'
-
-const zhTools = catalog.tools.map((tool) => ({ text: tool.name.zh, link: `/tool/${tool.slug}` }))
-const enTools = catalog.tools.map((tool) => ({ text: tool.name.en, link: `/en/tool/${tool.slug}` }))
-
 export const zhNav = [
   { text: '快速开始', link: '/guide/overview' },
   {
@@ -17,8 +12,8 @@ export const zhNav = [
     text: '订阅服务',
     items: [
       { text: '订阅服务', link: '/subscription/' },
-      { text: '按设备选客户端', link: '/devices/' },
-      { text: '客户端教程', link: '/tool/' }
+      { text: '按设备安装', link: '/subscription/#按设备安装' },
+      { text: '复制和更新订阅', link: '/subscription/#复制和更新订阅' }
     ]
   },
   { text: '故障排查', link: '/troubleshooting/' }
@@ -37,9 +32,9 @@ export const enNav = [
   {
     text: 'Subscription Services',
     items: [
-      { text: 'Computers and phones', link: '/en/subscription/' },
-      { text: 'Choose by device', link: '/en/devices/' },
-      { text: 'Client guides', link: '/en/tool/' }
+      { text: 'Subscription service', link: '/en/subscription/' },
+      { text: 'Install by device', link: '/en/subscription/#install-by-device' },
+      { text: 'Copy and update', link: '/en/subscription/#copy-and-update-the-subscription' }
     ]
   },
   { text: 'Troubleshooting', link: '/en/troubleshooting/' }
@@ -73,19 +68,10 @@ export const zhSidebar = [
   {
     text: '订阅服务',
     items: [
-      { text: '在电脑和手机上使用', link: '/subscription/' },
-      { text: '复制和更新订阅', link: '/subscription/management' },
-      { text: '按设备选客户端', link: '/devices/' },
-      { text: 'PC 与手机选择', link: '/devices/pc-mobile' },
-      { text: 'Android', link: '/devices/android' },
-      { text: 'iPhone / iPad', link: '/devices/ios' },
-      { text: 'Apple ID 帮助', link: '/devices/us-apple-id' },
-      { text: 'HarmonyOS', link: '/devices/harmony' },
-      { text: 'Windows', link: '/devices/windows' },
-      { text: 'macOS', link: '/devices/mac' },
-      { text: 'Linux', link: '/devices/linux' },
-      { text: '全部客户端教程', link: '/tool/' },
-      ...zhTools
+      { text: '订阅服务', link: '/subscription/' },
+      { text: '按设备安装', link: '/subscription/#按设备安装' },
+      { text: '复制和更新订阅', link: '/subscription/#复制和更新订阅' },
+      { text: '连接方式说明', link: '/subscription/#浏览器插件、系统代理和-tun' }
     ]
   },
   {
@@ -155,19 +141,10 @@ export const enSidebar = [
   {
     text: 'Subscription Services',
     items: [
-      { text: 'Use Jego on other devices', link: '/en/subscription/' },
-      { text: 'Copy or update a subscription', link: '/en/subscription/management' },
-      { text: 'Choose a client by device', link: '/en/devices/' },
-      { text: 'PC and mobile', link: '/en/devices/pc-mobile' },
-      { text: 'Android', link: '/en/devices/android' },
-      { text: 'iPhone / iPad', link: '/en/devices/ios' },
-      { text: 'Apple ID help', link: '/en/devices/us-apple-id' },
-      { text: 'HarmonyOS', link: '/en/devices/harmony' },
-      { text: 'Windows', link: '/en/devices/windows' },
-      { text: 'macOS', link: '/en/devices/mac' },
-      { text: 'Linux', link: '/en/devices/linux' },
-      { text: 'All client guides', link: '/en/tool/' },
-      ...enTools
+      { text: 'Subscription service', link: '/en/subscription/' },
+      { text: 'Install by device', link: '/en/subscription/#install-by-device' },
+      { text: 'Copy and update', link: '/en/subscription/#copy-and-update-the-subscription' },
+      { text: 'Connection methods', link: '/en/subscription/#browser-extension-system-proxy-and-tun' }
     ]
   },
   {

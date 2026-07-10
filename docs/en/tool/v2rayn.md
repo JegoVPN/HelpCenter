@@ -36,7 +36,7 @@ v2rayN is a v2ray Windows client that is relatively friendly to beginners on PC 
 ::: danger Not Recommended
 The third-party v2rayN project may still be maintained, but Jego no longer supports its current subscription protocol and therefore does not recommend it for Jego. This historical tutorial remains available with supported alternatives.
 
-Please use [Jego's recommended clients](/en/devices/pc-mobile#_1-about-which-client-to-use)
+Please use [Jego's recommended clients](/en/subscription/#_1-about-which-client-to-use)
 :::
 
 ## <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F7qSsONFAwi0T78ewIQku_2Fimage_2.png" width="26" height="26" alt="v2rayN icon"> Get v2rayN
@@ -133,4 +133,4 @@ There are four core types in total: v2fly, SgerNet, Xray, sing-box. Generally, t
 
 #### Relationship with v2rayNG
 
-<img src="/images/image_1707374615-v2rayNG-150x150_1.png" alt="v2rayNG" width="30">The Android mobile version of v2rayN is called v2rayNG, you can go to [v2rayNG](/en/tool/v2rayng) to download and view detailed tutorials.
+<img src="/images/image_1707374615-v2rayNG-150x150_1.png" alt="v2rayNG" width="30">The Android mobile version of v2rayN is called v2rayNG, you can go to [v2rayNG](/en/subscription/clients/v2rayng) to download and view detailed tutorials.

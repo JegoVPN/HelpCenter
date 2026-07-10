@@ -36,7 +36,7 @@ v2rayNG是Android系统即安卓手机系统下的代理软件客户端，功能
 ::: danger 不推荐使用
 v2rayNG 第三方项目可能仍在维护，但 Jego 已不再支持其当前订阅协议，因此不推荐继续用于 Jego。本页保留为历史教程，并提供受支持的替代工具。
 
-请使用[无忧行推荐的客户端](/devices/pc-mobile#_1、关于应该使用什么客户端)
+请使用[无忧行推荐的客户端](/subscription/#_1、关于应该使用什么客户端)
 :::
 
 ## <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2Fr7lhxwWpINBib1IY4DuB_2Fimage_2.png" width="26" height="26" alt="v2rayNG图标"> 获取 v2rayNG

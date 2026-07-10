@@ -1,9 +1,9 @@
 ---
 translationKey: devices-pc-mobile
-contentType: device-guide
+contentType: overview
 product: subscription-service
-productArea: device-selection
-uiSurface: null
+productArea: subscription-management
+uiSurface: control-panel
 locale: en
 status: current
 owner: docs
@@ -13,57 +13,69 @@ platforms: [windows, macos, linux, android, ios, harmonyos]
 tools: []
 appliesTo: []
 sources: []
-title: How to Use Proxy on PC or Mobile - Device Support
-description: Learn how Jego members choose a client and import subscription nodes on Windows, Mac, Linux, Android, iPhone, iPad, and HarmonyOS.
+title: Use a Jego subscription on computers and phones
+description: Install a supported client for your device, copy and update a Jego subscription, and understand browser extension, system proxy, and TUN connections.
 ---
 
-# How to Use Proxy on PC or Mobile
+# Use a Jego subscription on computers and phones
 
-Jego members can add subscription nodes to compatible clients on Windows, Mac, Linux, Android, iPhone, iPad, and HarmonyOS, allowing apps outside the browser to use the VPN. Choose your device first, then follow the matching installation and import guide.
+Jego members can add a subscription to a compatible client on a computer or phone. After one installation and import, apps outside the browser can also use Jego routes.
 
-::: info Quick Start
-To help you get started quickly, we provide beginner guides for various network proxy tool programs (mainland users usually call it "ladder"). Please choose the guide that suits your needs and read carefully.
+The browser extension and subscription service are two ways to use Jego. Websites in Chrome and Edge can use the [Jego browser extension](/en/guide/usage). Computer software and phone apps connect through a subscription client described on this page.
 
-For in-depth research, please search for related video tutorials on YouTube yourself.
-:::
+## Install by device
 
-| Platform | Devicies | Guideline |
-| --- | --- | --- |
-| <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F7Hh3XGbbAH0jtCKDKIF6_2Fandroid_3.svg" width="38" height="28" alt="Android icon"> | **Android Devices** | [How to Use Proxy on Android](/en/devices/android) |
-| <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F7GBp8VQdHNWWH3aalDTP_2Fios_3.svg" width="38" height="28" alt="iOS icon"> | **iOS/iPadOS Devices** | [How to Use Proxy on iPhone/iPad](/en/devices/ios) |
-| <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FbeA5N21M1iATQm5HiGND_2Fwin_1.svg" width="38" height="28" alt="Windows icon"> | **Windows PC Devices** | [How to Use Proxy on Windows PC](/en/devices/windows) |
-| <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FrUGve1gm2gP1sXdvgjCw_2Fapple_1.svg" width="38" height="28" alt="macOS icon"> | **macOS Devices** | [How to Use Proxy on Mac](/en/devices/mac) |
-| <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FJJlooO6sJC8xrcR6vqGj_2Flinux_1.svg" width="38" height="28" alt="Linux icon"> | **Linux Devices** | [How to Use Proxy on Linux PC](/en/devices/linux) |
-| <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FhUBqYs4CpmMcueAi690m_2FHMOS_Logo_Icon_1.svg" width="38" height="28" alt="HarmonyOS icon"> | **HarmonyOS (鸿蒙) Devices** | [How to Use Proxy on Huawei Harmony OS](/en/devices/harmony) |
+<span id="_1-about-which-client-to-use"></span>
 
-## Common Questions
+Choose the device you are using. Its guide starts with the recommended clients and continues through subscription import on the same path.
 
-### 1. About which client to use
+<div class="subscription-device-grid">
+  <a class="subscription-device-card" href="/en/subscription/devices/windows"><img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FbeA5N21M1iATQm5HiGND_2Fwin_1.svg" width="38" height="28" alt="Windows icon"><strong>Windows</strong><span>Computer setup</span></a>
+  <a class="subscription-device-card" href="/en/subscription/devices/mac"><img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FrUGve1gm2gP1sXdvgjCw_2Fapple_1.svg" width="38" height="28" alt="macOS icon"><strong>macOS</strong><span>Mac setup</span></a>
+  <a class="subscription-device-card" href="/en/subscription/devices/ios"><img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F7GBp8VQdHNWWH3aalDTP_2Fios_3.svg" width="38" height="28" alt="iOS icon"><strong>iPhone / iPad</strong><span>Apple mobile setup</span></a>
+  <a class="subscription-device-card" href="/en/subscription/devices/android"><img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F7Hh3XGbbAH0jtCKDKIF6_2Fandroid_3.svg" width="38" height="28" alt="Android icon"><strong>Android</strong><span>Phone setup</span></a>
+  <a class="subscription-device-card" href="/en/subscription/devices/linux"><img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FJJlooO6sJC8xrcR6vqGj_2Flinux_1.svg" width="38" height="28" alt="Linux icon"><strong>Linux</strong><span>Computer setup</span></a>
+  <a class="subscription-device-card" href="/en/subscription/devices/harmony"><img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FhUBqYs4CpmMcueAi690m_2FHMOS_Logo_Icon_1.svg" width="38" height="28" alt="HarmonyOS icon"><strong>HarmonyOS</strong><span>Harmony device setup</span></a>
+</div>
 
-The table shows whether each client is still maintained, who it suits, and whether it works with Jego. Jego no longer supports v2rayN, v2rayNG, Loon, or OneClick. New users can go straight to an option marked **Good for most users**.
+The [Apple ID guide](/en/subscription/devices/us-apple-id) covers App Store account details for iPhone and iPad. The original v2rayN, v2rayNG, Loon, and OneClick tutorials remain available for existing users, while current installations should follow the recommended client on the device guide.
 
-<ToolCatalog locale="en" />
+## Copy and update the subscription
 
-After choosing a client, click its name for the complete guide. See [Subscription Management](/en/subscription/management) to copy or update the URL, or [Client troubleshooting](/en/troubleshooting/client) when a connection fails.
+After installing a client, add the Jego subscription in this order:
 
-### 2. The difference between system proxy and virtual network card/tun in these software
+1. Open the Jego Control Panel and choose **Mobile Proxy**.
+2. Return to the client guide and confirm the subscription type it uses.
+3. Copy the matching row from Mobile Proxy.
+4. Paste the URL into the client's add-subscription screen, save it, and update.
+5. When the nodes appear, choose a route and connect.
 
-System proxy is an operating-system proxy interface. Each application decides whether to honor it; browsers commonly read the setting, but verify the actual connection.
+Mihomo, sing-box, Surfboard, Shadowrocket, Surge, Quantumult X, and Clash are formats for the same subscription service. Copy only the format named by the client guide.
 
-Virtual network adapter/TUN mode creates a virtual interface and processes traffic routed to it according to client configuration. Route exceptions, permissions, other VPNs, and application behavior can still affect the result, so it does not guarantee that every request passes through.
+To receive current nodes later, open the existing subscription in the client and choose **Update**, **Sync**, or **Refresh**. When moving to another computer, phone, or client, copy the matching format from the Control Panel again. On a phone, <https://jego.us> also provides access to subscription-node copy and management.
 
-#### Conclusion:
+When a new subscription URL is needed, use Reset on the Mobile Proxy page. Reset creates a new URL and stops the old one; import the new URL into the clients you use.
 
-When an application ignores system proxy, evaluate the client's TUN mode and verify each application. For browser-only traffic, use system proxy or the browser extension.
+## Browser extension, system proxy, and TUN
 
-<span style="color:green;">For browser-only needs,</span> [<span style="color:green;">start with the Jego browser extension.</span>](/en/guide/usage)
+These options cover different parts of a device:
 
-### 3. Set the Jego extension after enabling TUN mode
+- **Browser extension:** covers Chrome or Edge where Jego is installed and is the simplest choice for browser use.
+- **System proxy:** the client writes a proxy setting to the operating system, which browsers and apps that support the setting can use.
+- **TUN mode:** the client creates a virtual network adapter and handles requests that enter it according to the client's rules. It is useful when other computer apps also need the connection.
 
-If you have enabled virtual network card/TUN mode in proxy software such as FlClash, Clash Verge Rev, sing-box, or v2rayN, your computer's network requests are already handled by that software to decide whether they should go through the proxy. In this case, keep the Jego browser extension turned off.
+<span id="_2-the-difference-between-system-proxy-and-virtual-network-cardtun-in-these-software"></span>
 
-<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FISwY5XX4FX2qker0nOYC_2Fimage_3.png" alt="Jego extension off mode interface" width="280" />
+System proxy and TUN are both controlled by the subscription client. On phones, the client commonly uses the system's VPN connection indicator while the selected client and node continue to provide the connection.
 
-Click <span style="background-color:grey; color:white; padding:2px 6px; border-radius:3px;">Off</span> in the extension popup and keep it in the state shown above. While TUN mode is on, use the client as the single proxy layer. This prevents duplicate processing, slower speeds, and rule conflicts in the browser.
+<span id="_3-set-the-jego-extension-after-enabling-tun-mode"></span>
 
-The <span style="background-color:grey; color:white; padding:2px 6px; border-radius:3px;">Off</span> state here only turns off the browser proxy function of the Jego extension. It does not turn off the proxy software or TUN mode you are using. In short: when using TUN mode in proxy software, keep the Jego extension off; when you only want the browser to use a proxy, use the [Jego browser extension](/en/guide/usage). For more details about extension modes, see [Mode Selection](/en/guide/mode-selection).
+### Jego extension while a client uses TUN
+
+When a computer client has TUN mode enabled, keep the Jego browser extension **Off** so the browser requests are handled by that client.
+
+<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FISwY5XX4FX2qker0nOYC_2Fimage_3.png" alt="Jego extension Off mode" width="280" />
+
+Off only disables the browser extension's own proxy function. It does not affect the computer client or TUN. When using only the browser extension, select Rules or Global in its popup. See [Rules, Global, and Off](/en/guide/mode-selection) for the full mode explanation.
+
+Downloads, installation steps, and button locations stay in each device guide, so this page does not repeat a complete software directory. Site search can still open any of the 18 existing client guides directly.

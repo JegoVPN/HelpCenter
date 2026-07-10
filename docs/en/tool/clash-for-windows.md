@@ -36,7 +36,7 @@ This historical tutorial covers the Clash for Windows client. The project is dis
 ::: danger Not Recommended
 This software has not been updated for several years. Jego does not recommend continued use.
 
-Please use [Jego's recommended clients](/en/devices/pc-mobile#_1-about-which-client-to-use)
+Please use [Jego's recommended clients](/en/subscription/#_1-about-which-client-to-use)
 :::
 
 ::: danger Discontinued
@@ -44,7 +44,7 @@ Clash for Windows was discontinued on November 2, 2023.
 :::
 
 ::: info Alternative
-You can visit the [Mihomo Series Software](/en/tool/mihomo) page to get the latest software.
+You can visit the [Mihomo Series Software](/en/subscription/clients/mihomo) page to get the latest software.
 :::
 
 ## <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F4VjXObRb6A8YcNiBGA9e_2Fclash_2.png" width="26" height="26" alt="Clash icon"> Historical installation note

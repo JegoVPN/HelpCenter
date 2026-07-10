@@ -2,10 +2,19 @@
 import { computed } from 'vue'
 import catalog from '../../data/tool-catalog.json'
 
-const props = defineProps<{ locale: 'zh' | 'en', platform?: string }>()
-const tools = computed(() => props.platform
-  ? catalog.tools.filter((tool) => tool.platforms.includes(props.platform as never))
-  : catalog.tools)
+const props = defineProps<{
+  locale: 'zh' | 'en'
+  platform?: string
+  recommendedOnly?: boolean
+}>()
+const tools = computed(() => catalog.tools.filter((tool) => {
+  const matchesPlatform = !props.platform || tool.platforms.includes(props.platform as never)
+  const matchesRecommendation = !props.recommendedOnly || (
+    tool.recommendation === 'recommended' &&
+    catalog.jegoSupport[tool.slug as keyof typeof catalog.jegoSupport] === 'supported'
+  )
+  return matchesPlatform && matchesRecommendation
+}))
 
 function label(value: string | null, kind: 'lifecycle' | 'recommendation') {
   if (!value) return props.locale === 'en' ? 'Not confirmed' : '暂未确认'
@@ -43,7 +52,7 @@ function supportLabel(slug: string) {
       <tbody>
         <tr v-for="tool in tools" :key="tool.slug">
           <td>
-            <a :href="`${locale === 'en' ? '/en' : ''}/tool/${tool.slug}`">
+            <a :href="`${locale === 'en' ? '/en' : ''}/subscription/clients/${tool.slug}`">
               {{ tool.name[locale] }}
             </a>
           </td>

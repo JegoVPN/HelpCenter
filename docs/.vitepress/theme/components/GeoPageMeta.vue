@@ -60,12 +60,12 @@ const replacements = computed(() => (tool.value?.replacements || [])
         {{ isEnglish ? ' Try instead: ' : '可以改用：' }}
         <template v-for="(entry, index) in replacements" :key="entry!.slug">
           <span v-if="index"> · </span>
-          <a :href="`${isEnglish ? '/en' : ''}/tool/${entry!.slug}`">{{ entry!.name[isEnglish ? 'en' : 'zh'] }}</a>
+          <a :href="`${isEnglish ? '/en' : ''}/subscription/clients/${entry!.slug}`">{{ entry!.name[isEnglish ? 'en' : 'zh'] }}</a>
         </template>
       </span>
     </div>
     <p v-if="tool" class="geo-tool-context-links">
-      <a :href="`${isEnglish ? '/en' : ''}/subscription/management`">
+      <a :href="isEnglish ? '/en/subscription/#copy-and-update-the-subscription' : '/subscription/#复制和更新订阅'">
         {{ isEnglish ? 'Copy or update a subscription' : '复制或更新订阅' }}
       </a>
       <span aria-hidden="true">·</span>

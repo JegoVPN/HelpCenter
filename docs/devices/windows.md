@@ -27,15 +27,18 @@ Microsoft Windows，通称Windows操作系统，是微软以图形用户界面�
 
 新用户优先选择同时标为“适合大多数用户”和“能使用 Jego：可以”的客户端，再点进完整教程。
 
-<ToolCatalog locale="zh" platform="windows" />
+<ToolCatalog locale="zh" platform="windows" recommended-only />
+
+<details class="subscription-more-clients">
+<summary>其他客户端与原有教程</summary>
 
 ### 既有工具说明与教程入口
 
-<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2Fu2sHeQjHJurcgVhJB1zO_2Ficon_2.png" width="26" height="26" alt="FlClash图标"> [FlClash](/tool/flclash)
+<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2Fu2sHeQjHJurcgVhJB1zO_2Ficon_2.png" width="26" height="26" alt="FlClash图标"> [FlClash](/subscription/clients/flclash)
 
 FlClash是一款基于Mihomo（原ClashMeta）的多平台代理客户端，简单易用，开源无广告。
 
-<img src="/images/clashvergelogo.png" width="26" height="26" alt="Clash Verge Rev"> [Clash Verge Rev](/tool/clashverge)
+<img src="/images/clashvergelogo.png" width="26" height="26" alt="Clash Verge Rev"> [Clash Verge Rev](/subscription/clients/clashverge)
 
 Clash Verge Rev是一款基于Mihomo（原ClashMeta）内核的多平台代理客户端，并支持切换 Alpha 版本内核。简洁美观的用户界面，支持自定义主题颜色。
 
@@ -43,11 +46,11 @@ Clash Verge Rev是一款基于Mihomo（原ClashMeta）内核的多平台代理�
 
 #### 需要更多配置的既有教程：
 
-<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FfJY0Si3bowLOO8nIXwPG_2Fmihomo_3.png" width="26" height="26" alt="Mihomo图标"> [Mihomo系列软件](/tool/mihomo)
+<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FfJY0Si3bowLOO8nIXwPG_2Fmihomo_3.png" width="26" height="26" alt="Mihomo图标"> [Mihomo系列软件](/subscription/clients/mihomo)
 
 MetaCubeX基于Clash核心推出的全新的Mihomo内核，团队持续地在开源社区维护和更新，生态链里已经推出了包含Windows、Andriod、macOS和Linux的客户端。
 
-<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FX6LBfzRlMdWyQVvPC9eg_2Fimage_1.png" width="26" height="26" alt="sing-box图标"> [GUI.for.SingBox](/tool/guiforsing-box)
+<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FX6LBfzRlMdWyQVvPC9eg_2Fimage_1.png" width="26" height="26" alt="sing-box图标"> [GUI.for.SingBox](/subscription/clients/guiforsing-box)
 
 sing-box 是跨平台网络代理项目；GUI.for.SingBox 是社区图形客户端，需要更多配置。当前协议、平台、版本和官方命令行包以各自项目来源为准。
 
@@ -55,10 +58,12 @@ sing-box 是跨平台网络代理项目；GUI.for.SingBox 是社区图形客户�
 
 #### 历史或不推荐工具教程：
 
-<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FzSfmyRFCh3igxLUDkYXc_2Fimage_2.png" width="26" height="26" alt="v2rayN图标"> [v2rayN](/tool/v2rayn)
+<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FzSfmyRFCh3igxLUDkYXc_2Fimage_2.png" width="26" height="26" alt="v2rayN图标"> [v2rayN](/subscription/clients/v2rayn)
 
 v2rayN是Windows系统下的代理软件客户端，功能强大且支持多种代理协议，如VMess、VLESS、Trojan、Socks、Shadowsocks等代理协议。
 
-<img src="/images/image_clash_2.png" width="26" height="26" alt="Clash图标"> [Clash for Windows](/tool/clash-for-windows)
+<img src="/images/image_clash_2.png" width="26" height="26" alt="Clash图标"> [Clash for Windows](/subscription/clients/clash-for-windows)
 
-Clash for Windows已于2023年11月2日下架，但当时的最后一个版本还能用，建议换至Mihomo系列软件如[FlClash](/tool/flclash) 。
+Clash for Windows已于2023年11月2日下架，但当时的最后一个版本还能用，建议换至Mihomo系列软件如[FlClash](/subscription/clients/flclash) 。
+
+</details>

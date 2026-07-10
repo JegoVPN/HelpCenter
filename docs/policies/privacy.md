@@ -58,4 +58,4 @@ description: 用简单的话说明 Jego 会处理哪些账号和支付信息，�
 - 政策说明数据存储在美国，服务不面向 13 岁以下用户。
 - 用户可登录查看数据，并可在 Account Settings 发起账户删除。遇到安全事件或无法登录时，可以[联系客服](/guide/support)。
 
-订阅服务的复制、导入和更新步骤见[订阅管理](/subscription/management)。
+订阅服务的复制、导入和更新步骤见[订阅管理](/subscription/#复制和更新订阅)。

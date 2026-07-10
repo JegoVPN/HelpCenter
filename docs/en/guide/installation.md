@@ -154,4 +154,4 @@ Extension compatibility and installation rules can change between versions of QQ
 
 ## Use Jego in other computer or phone apps
 
-The browser extension controls only the browser where Jego is installed. To use a proxy in other computer or phone apps, see [How to Use Proxy on PC or Mobile](/en/devices/pc-mobile).
+The browser extension controls only the browser where Jego is installed. To use a proxy in other computer or phone apps, see [How to Use Proxy on PC or Mobile](/en/subscription/).

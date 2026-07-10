@@ -31,7 +31,7 @@ hero:
       link: /guide/usage
     - theme: alt
       text: 在电脑或手机上翻墙
-      link: /devices/pc-mobile
+      link: /subscription/
     - theme: alt
       text: Vibe Coding
       link: /guide/vibe-coding
@@ -89,12 +89,12 @@ features:
 
 为了帮助你更高效地掌握电脑翻墙和手机翻墙的方法，我们按照不同的操作系统和设备整理了下列翻墙指南，请按需阅读：
 
-1. [安卓手机怎么翻墙](/devices/android)
-2. [苹果手机/iPad 怎么翻墙](/devices/ios)
-3. [华为鸿蒙手机怎么翻墙](/devices/harmony)
-4. [Windows 电脑怎么翻墙](/devices/windows)
-5. [苹果Mac 电脑怎么翻墙](/devices/mac)
-6. [Linux 电脑怎么翻墙](/devices/linux)
+1. [安卓手机怎么翻墙](/subscription/devices/android)
+2. [苹果手机/iPad 怎么翻墙](/subscription/devices/ios)
+3. [华为鸿蒙手机怎么翻墙](/subscription/devices/harmony)
+4. [Windows 电脑怎么翻墙](/subscription/devices/windows)
+5. [苹果Mac 电脑怎么翻墙](/subscription/devices/mac)
+6. [Linux 电脑怎么翻墙](/subscription/devices/linux)
 
 ### 三、了解无忧行的使用准则
 

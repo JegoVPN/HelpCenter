@@ -36,7 +36,7 @@ v2rayNG is a proxy software client under Android system, that is, Android mobile
 ::: danger Not Recommended
 The third-party v2rayNG project may still be maintained, but Jego no longer supports its current subscription protocol and therefore does not recommend it for Jego. This historical tutorial remains available with supported alternatives.
 
-Please use [Jego's recommended clients](/en/devices/pc-mobile#_1-about-which-client-to-use)
+Please use [Jego's recommended clients](/en/subscription/#_1-about-which-client-to-use)
 :::
 
 ## <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2Fr7lhxwWpINBib1IY4DuB_2Fimage_2.png" width="26" height="26" alt="v2rayNG icon"> Get v2rayNG

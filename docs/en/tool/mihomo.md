@@ -60,11 +60,11 @@ Note: There are currently no good iOS products in the Mihomo ecosystem
 
 ### Recommended to Use the Following Software
 
-<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2Fu2sHeQjHJurcgVhJB1zO_2Ficon_2.png" width="26" height="26" alt="FlClash icon"> [FlClash](/en/tool/flclash)
+<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2Fu2sHeQjHJurcgVhJB1zO_2Ficon_2.png" width="26" height="26" alt="FlClash icon"> [FlClash](/en/subscription/clients/flclash)
 
 FlClash is a multi-platform proxy client based on Mihomo (formerly ClashMeta), simple to use, open source and ad-free.
 
-<img src="/images/clashvergelogo.png" width="26" height="26" alt="Clash Verge Rev"> [Clash Verge Rev](/en/tool/clashverge)
+<img src="/images/clashvergelogo.png" width="26" height="26" alt="Clash Verge Rev"> [Clash Verge Rev](/en/subscription/clients/clashverge)
 
 Clash Verge Rev is a multi-platform proxy client based on Mihomo (formerly ClashMeta) kernel, supporting Alpha version kernel switching. Clean and beautiful user interface with customizable theme colors.
 

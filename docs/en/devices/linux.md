@@ -27,22 +27,27 @@ Jego members can add subscription nodes to a compatible Linux client, allowing a
 
 New users should choose a client marked **Good for most users** and **Works with Jego: Yes**, then open its complete guide.
 
-<ToolCatalog locale="en" platform="linux" />
+<ToolCatalog locale="en" platform="linux" recommended-only />
+
+<details class="subscription-more-clients">
+<summary>Other clients and original guides</summary>
 
 ### Existing tool notes and tutorial entry points
 
-<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FX6LBfzRlMdWyQVvPC9eg_2Fimage_1.png" width="26" height="26" alt="sing-box icon"> [sing-box](/en/tool/sing-box)
+<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FX6LBfzRlMdWyQVvPC9eg_2Fimage_1.png" width="26" height="26" alt="sing-box icon"> [sing-box](/en/subscription/clients/sing-box)
 
 sing-box is a cross-platform network proxy project; verify current protocols, platforms, and versions from the official project and tool status.
 
-<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2Fu2sHeQjHJurcgVhJB1zO_2Ficon_2.png" width="26" height="26" alt="FlClash icon"> [FlClash](/en/tool/flclash)
+<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2Fu2sHeQjHJurcgVhJB1zO_2Ficon_2.png" width="26" height="26" alt="FlClash icon"> [FlClash](/en/subscription/clients/flclash)
 
 FlClash is a multi-platform proxy client based on Mihomo (formerly ClashMeta), simple to use, open source and ad-free.
 
-<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FfJY0Si3bowLOO8nIXwPG_2Fmihomo_3.png" width="26" height="26" alt="Mihomo icon"> [Mihomo Series Software](/en/tool/mihomo)
+<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FfJY0Si3bowLOO8nIXwPG_2Fmihomo_3.png" width="26" height="26" alt="Mihomo icon"> [Mihomo Series Software](/en/subscription/clients/mihomo)
 
 MetaCubeX launched the new Mihomo kernel based on Clash core, the team continuously maintains and updates in the open source community, and the ecosystem has launched clients including Windows, Android, macOS and Linux.
 
-<img src="/images/clashvergelogo.png" width="26" height="26" alt="Clash Verge Rev"> [Clash Verge Rev](/en/tool/clashverge)
+<img src="/images/clashvergelogo.png" width="26" height="26" alt="Clash Verge Rev"> [Clash Verge Rev](/en/subscription/clients/clashverge)
 
 Clash Verge Rev is a multi-platform proxy client based on Mihomo (formerly ClashMeta) kernel, supporting Alpha version kernel switching. Clean and beautiful user interface with customizable theme colors.
+
+</details>

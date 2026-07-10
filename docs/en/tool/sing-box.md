@@ -46,15 +46,15 @@ sing-box is a cross-platform network proxy project. Verify current protocols, pl
 
 ### Apple Family
 
-macOS iOS iPadOS tvOS users please go to: [sing-box for Apple](/en/tool/sing-boxforapple)
+macOS iOS iPadOS tvOS users please go to: [sing-box for Apple](/en/subscription/clients/sing-boxforapple)
 
 ### Android Devices
 
-Android users please go to: [sing-box for Android](/en/tool/sing-boxforandroid)
+Android users please go to: [sing-box for Android](/en/subscription/clients/sing-boxforandroid)
 
 ### Windows
 
-Windows users please go to: [GUI.for.SingBox](/en/tool/guiforsing-box)
+Windows users please go to: [GUI.for.SingBox](/en/subscription/clients/guiforsing-box)
 
 ### Linux
 

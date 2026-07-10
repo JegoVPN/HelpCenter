@@ -1,4 +1,5 @@
 import type { HeadConfig } from 'vitepress'
+import { canonicalizeRoute } from '../../scripts/subscription-route-map.mjs'
 
 export const SITE_ORIGIN = 'https://help.jegovpn.com'
 const ORGANIZATION_ID = `${SITE_ORIGIN}/#organization`
@@ -153,7 +154,7 @@ function jsonLd(ctx: any, route: string, locale: 'zh-Hans' | 'en') {
 
 export function geoHead(ctx: any): HeadConfig[] {
   if (ctx.pageData.isNotFound || ctx.page === '404.md') return []
-  const route = pageRoute(ctx.page)
+  const route = canonicalizeRoute(pageRoute(ctx.pageData.relativePath || ctx.page))
   const routes = languageRoutes(route)
   const locale = route === '/en/' || route.startsWith('/en/') ? 'en' : 'zh-Hans'
   const modified = ctx.pageData.lastUpdated

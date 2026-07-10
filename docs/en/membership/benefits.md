@@ -27,14 +27,14 @@ VIP membership combines premium browser-extension nodes with subscription nodes 
 2. **Use Jego on computers and phones:** Membership includes subscription nodes for compatible clients on Windows, macOS, Linux, Android, iPhone, and iPad.
 3. **Manage everything in one account:** View membership status, expiration, subscription nodes, orders, and support from the Control Panel.
 
-See [Computer and phone setup](/en/devices/pc-mobile) to understand how subscriptions work.
+See [Computer and phone setup](/en/subscription/) to understand how subscriptions work.
 
 ## Verify benefits before purchase
 
 1. Click the Free/VIP badge in the Jego popup, or open **Control Panel → Upgrade Membership**.
 2. Choose a plan and review its duration, price, browser nodes, and subscription service.
 3. Review order currency, actual amount, and renewal behavior before paying.
-4. If you need the subscription in desktop or mobile apps, first read the [device guide](/en/devices/pc-mobile) and [subscription management](/en/subscription/management).
+4. If you need the subscription in desktop or mobile apps, first read the [device guide](/en/subscription/) and [subscription management](/en/subscription/#copy-and-update-the-subscription).
 
 ::: tip Read the purchase page before paying
 Plans and promotions can change, so the current purchase page is the best source. If the Control Panel and checkout disagree, ask Support to confirm.

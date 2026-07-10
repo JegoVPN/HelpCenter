@@ -3,6 +3,7 @@ import { existsSync, readFileSync } from 'node:fs'
 import { homedir, tmpdir, userInfo } from 'node:os'
 import path from 'node:path'
 import { pageRecord, walkFiles } from './geo-content.mjs'
+import { canonicalizeRoute, LEGACY_ROUTE_PAIRS, TOOL_SLUGS } from './subscription-route-map.mjs'
 
 const root = process.cwd()
 const dist = path.join(root, 'docs/.vitepress/dist')
@@ -98,7 +99,10 @@ if (!existsSync(dist)) fail('构建目录不存在；请先运行 npm run docs:b
 const sources = walkFiles(path.join(root, 'docs'))
   .filter((file) => file.endsWith('.md'))
   .map((file) => path.relative(root, file))
-const pages = sources.map((source) => pageRecord(source, readFileSync(path.join(root, source), 'utf8')))
+const pages = sources.map((source) => {
+  const record = pageRecord(source, readFileSync(path.join(root, source), 'utf8'))
+  return { ...record, route: canonicalizeRoute(record.route) }
+})
 const routeSet = new Set(pages.map((page) => page.route))
 const htmlByRoute = new Map()
 
@@ -224,15 +228,6 @@ for (const [start, localePrefix] of [['/', 'zh-Hans'], ['/en/', 'en']]) {
   }
 }
 
-for (const slug of [
-  'clash-for-android', 'clash-for-windows', 'clashbox', 'clashverge', 'flclash', 'guiforsing-box',
-  'loon', 'mihomo', 'oneclick', 'quantumult-x', 'shadowrocket', 'sing-box', 'sing-boxforandroid',
-  'sing-boxforapple', 'surfboard', 'surge', 'v2rayn', 'v2rayng'
-]) {
-  if (!adjacency.get('/tool/')?.has(`/tool/${slug}`)) fail(`中文工具索引未链接工具：${slug}`)
-  if (!adjacency.get('/en/tool/')?.has(`/en/tool/${slug}`)) fail(`英文工具索引未链接工具：${slug}`)
-}
-
 const requiredRelationships = [
   ['/guide/plugin-features', ['/guide/mode-selection', '/guide/node-selection', '/guide/proxy-strategy', '/guide/network-diagnostics', '/guide/network-diagnostics-node-speed']],
   ['/en/guide/plugin-features', ['/en/guide/mode-selection', '/en/guide/node-selection', '/en/guide/proxy-strategy', '/en/guide/network-diagnostics', '/en/guide/network-diagnostics-node-speed']],
@@ -242,8 +237,8 @@ const requiredRelationships = [
   ['/en/guide/network-diagnostics-node-speed', ['/en/guide/network-diagnostics', '/en/guide/node-selection', '/en/troubleshooting/', '/en/guide/support']],
   ['/guide/proxy-strategy', ['/guide/network-diagnostics']],
   ['/en/guide/proxy-strategy', ['/en/guide/network-diagnostics']],
-  ['/subscription/', ['/subscription/management', '/devices/', '/tool/', '/troubleshooting/client']],
-  ['/en/subscription/', ['/en/subscription/management', '/en/devices/', '/en/tool/', '/en/troubleshooting/client']]
+  ['/subscription/', ['/subscription/devices/windows', '/subscription/devices/mac', '/subscription/devices/ios', '/subscription/devices/android', '/subscription/devices/linux', '/subscription/devices/harmony']],
+  ['/en/subscription/', ['/en/subscription/devices/windows', '/en/subscription/devices/mac', '/en/subscription/devices/ios', '/en/subscription/devices/android', '/en/subscription/devices/linux', '/en/subscription/devices/harmony']]
 ]
 for (const [source, targets] of requiredRelationships) {
   for (const target of targets) {
@@ -251,13 +246,21 @@ for (const [source, targets] of requiredRelationships) {
   }
 }
 
-for (const slug of [
-  'clash-for-android', 'clash-for-windows', 'clashbox', 'clashverge', 'flclash', 'guiforsing-box',
-  'loon', 'mihomo', 'oneclick', 'quantumult-x', 'shadowrocket', 'sing-box', 'sing-boxforandroid',
-  'sing-boxforapple', 'surfboard', 'surge', 'v2rayn', 'v2rayng'
-]) {
-  if (!adjacency.get(`/tool/${slug}`)?.has('/subscription/management')) fail(`中文工具页缺少订阅管理入口：${slug}`)
-  if (!adjacency.get(`/en/tool/${slug}`)?.has('/en/subscription/management')) fail(`英文工具页缺少订阅管理入口：${slug}`)
+for (const slug of TOOL_SLUGS) {
+  if (!adjacency.get(`/subscription/clients/${slug}`)?.has('/subscription/')) fail(`中文工具页缺少订阅入口：${slug}`)
+  if (!adjacency.get(`/en/subscription/clients/${slug}`)?.has('/en/subscription/')) fail(`英文工具页缺少订阅入口：${slug}`)
+}
+
+for (const [legacy, canonical] of LEGACY_ROUTE_PAIRS) {
+  const output = htmlPath(legacy)
+  if (!existsSync(output)) {
+    fail(`基线旧路由缺少兼容产物：${legacy}`)
+    continue
+  }
+  const html = readFileSync(output, 'utf8')
+  if (!html.includes(`https://help.jegovpn.com${canonical}`) || !html.includes(`location.replace(${JSON.stringify(canonical)}`)) {
+    fail(`基线旧路由跳转目标错误：${legacy} -> ${canonical}`)
+  }
 }
 
 const robotsPath = path.join(dist, 'robots.txt')

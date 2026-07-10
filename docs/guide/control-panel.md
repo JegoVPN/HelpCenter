@@ -61,6 +61,6 @@ description: 打开无忧行控制面板，先看当前模式、节点和 Google
 - 比较当前账号里的节点：[节点测速](/guide/network-diagnostics-node-speed)
 - 让指定网站按自己的规则连接：[自定义代理策略](/guide/proxy-strategy)
 - 在电脑或手机的其他应用中使用：[订阅服务](/subscription/)
-- 复制、导入或更新订阅：[订阅管理](/subscription/management)
+- 复制、导入或更新订阅：[订阅管理](/subscription/#复制和更新订阅)
 
 不同账号看到的菜单会有一些差别。需要的入口没有显示时，先确认已经登录并更新无忧行，再重新打开控制面板。仍然找不到时，记录插件版本和菜单名称后[联系客服](/guide/support)。

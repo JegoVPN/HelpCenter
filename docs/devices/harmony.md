@@ -33,11 +33,11 @@ description: 鸿蒙（英语：HarmonyOS，简称HMOS，开发代号Ark，正式
 
 先看下表确认工具是否能使用 Jego，再进入与你系统版本对应的教程。
 
-<ToolCatalog locale="zh" platform="harmonyos" />
+<ToolCatalog locale="zh" platform="harmonyos" recommended-only />
 
 ## <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FhUBqYs4CpmMcueAi690m_2FHMOS_Logo_Icon_1.svg" width="38" height="28" alt="HarmonyOS图标"> HarmonyOS 5(鸿蒙) 设备上能用的代理工具
 
-<img src="/images/clashbox-logo-new.png" width="26" height="26" alt="ClashBox图标"> [ClashBox](/tool/clashbox) <span style="color:green;">`🧪实验品`</span>
+<img src="/images/clashbox-logo-new.png" width="26" height="26" alt="ClashBox图标"> [ClashBox](/subscription/clients/clashbox) <span style="color:green;">`🧪实验品`</span>
 
 ClashBox/ClashNEXT是首个基于Navigation框架的HarmonyOS NEXT(OpenHarmony)平台的代理软件，使用改版的Mihomo(ClashMeta)内核。
 
@@ -57,7 +57,7 @@ ClashBox/ClashNEXT 的安装条件非常硬核，需要华为开发者账户或�
 
 #### 安装 FlClash
 
-完整版教程请移步 [FlClash](/tool/flclash)
+完整版教程请移步 [FlClash](/subscription/clients/flclash)
 
 <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FvB9dTjQXfG9lDK06rDTM_2FScreenshot_20250728_172648_com_huawei_appmarket_2.jpg" alt="FlClash安装1" width="300"> <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FVEv5M4JTvd9MvEupS01U_2FScreenshot_20250728_172334_com_huawei_appmarket_3.jpg" alt="FlClash安装2" width="300">
 
@@ -67,7 +67,7 @@ ClashBox/ClashNEXT 的安装条件非常硬核，需要华为开发者账户或�
 
 #### 安装 sing-box for Android
 
-完整版教程请移步 [sing-box for Android](/tool/sing-boxforandroid)
+完整版教程请移步 [sing-box for Android](/subscription/clients/sing-boxforandroid)
 
 <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FyKRacwkMLGa4MTyzkLKF_2FScreenshot_20250728_173345_com_huawei_appmarket_3.jpg" alt="sing-box安装" width="300">
 

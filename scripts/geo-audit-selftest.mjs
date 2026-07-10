@@ -56,6 +56,24 @@ function expectMutationFailure(label, relativePath, mutate) {
   }
 }
 
+function expectAddedFileFailure(label, relativePath, content, expectedMessage) {
+  const target = path.join(sandbox, relativePath)
+  writeFileSync(target, content)
+  try {
+    const result = spawnSync(process.execPath, ['scripts/geo-audit.mjs'], {
+      cwd: sandbox,
+      encoding: 'utf8'
+    })
+    const output = `${result.stdout || ''}\n${result.stderr || ''}`
+    if (result.status === 0 || !output.includes(expectedMessage)) {
+      throw new Error(`${label} 未触发指定完整门禁`)
+    }
+    console.log(`PASS ${label} 会被完整门禁阻止`)
+  } finally {
+    rmSync(target, { force: true })
+  }
+}
+
 try {
   expectMissingFileFailure('删除基线页面', 'docs/guide/overview.md')
   expectMissingFileFailure('删除基线公开资产', 'docs/public/favicon.ico')
@@ -70,6 +88,15 @@ try {
   )
   expectMutationFailure('把全局模式改成临时排查场景', 'docs/guide/mode-selection.md', (raw) =>
     raw.replace('全局模式会让全部浏览器请求经过当前无忧行节点，本地地址仍直接连接。', '全局模式只用于临时排查网站。')
+  )
+  expectMutationFailure('把免费版界面改回截图不一致提示', 'docs/guide/mode-selection.md', (raw) =>
+    raw.replace('## 免费版界面', '## 按钮和截图不一样时')
+  )
+  expectMutationFailure('把节点测速状态提示塞回关闭模式', 'docs/guide/mode-selection.md', (raw) =>
+    raw.replace('- 当前保存的节点不会参与连接。', '- 当前保存的节点不会参与连接；\n- 节点测速页面会按需要提示切换到这个状态。')
+  )
+  expectMutationFailure('在节点选择页虚构客服测试要求', 'docs/guide/node-selection.md', (raw) =>
+    raw.replace('- 想用节点测速里带绿色闪电的线路。', '- 想用节点测速里带绿色闪电的线路；\n- 客服建议你测试某个具体节点。')
   )
   expectMutationFailure('把网络诊断改回非正式名称', 'docs/guide/network-diagnostics.md', (raw) =>
     raw.replace('**控制面板** → **网络诊断**', '**控制面板** → **诊断**')
@@ -115,6 +142,27 @@ try {
   )
   expectMutationFailure('把账号信息改回技术字段堆叠', 'docs/guide/plugin-permissions-privacy.md', (raw) =>
     raw.replace('完整隐私说明见', '服务会处理登录邮箱、哈希后的密码、订阅状态和用于核对付款的交易 ID。\n\n完整隐私说明见')
+  )
+  expectMutationFailure('把完整客户端大列表塞回订阅入口', 'docs/devices/pc-mobile.md', (raw) =>
+    raw.replace('## 复制和更新订阅', '<ToolCatalog locale="zh" />\n\n## 复制和更新订阅')
+  )
+  expectMutationFailure('删除订阅入口的设备路径', 'docs/devices/pc-mobile.md', (raw) =>
+    raw.replace('/subscription/devices/windows', '/subscription/devices/mac')
+  )
+  expectMutationFailure('删除订阅重置结果说明', 'docs/devices/pc-mobile.md', (raw) =>
+    raw.replace('原地址随即停止使用', '地址会发生变化')
+  )
+  expectMutationFailure('把设备页改回完整客户端表', 'docs/devices/windows.md', (raw) =>
+    raw.replace('platform="windows" recommended-only', 'platform="windows"')
+  )
+  expectMutationFailure('把订阅正式路由改回额外页面', 'scripts/subscription-route-map.mjs', (raw) =>
+    raw.replace('`/${prefix}subscription/`]', '`/${prefix}subscription/connection-methods`]')
+  )
+  expectAddedFileFailure(
+    '恢复未发布的重复工具目录',
+    'docs/tool/index.md',
+    '---\ntitle: 重复目录\n---\n\n# 重复目录\n\n重复内容。\n',
+    '未发布的重复入口必须删除：docs/tool/index.md'
   )
   console.log('\nGEO regression self-test passed.')
 } finally {

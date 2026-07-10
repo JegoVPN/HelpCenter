@@ -34,7 +34,7 @@ Follow these guides in order: [Install the extension](/en/guide/installation) �
 
 Use the subscription service on Windows, macOS, Linux, Android, iPhone, or iPad. Members can open **Mobile Proxy** in the Control Panel, copy the subscription URL, and import it into a compatible computer or mobile client so other apps can use Jego too.
 
-Follow these guides in order: [Learn about subscriptions](/en/subscription/) → [Choose a client by device](/en/devices/) → [Import and manage a subscription](/en/subscription/management).
+The [subscription guide](/en/subscription/) takes you from device selection to installation, import, and later updates on one page.
 
 Current membership price, expiration, and benefits appear in the signed-in Control Panel and purchase page. Review them there before payment.
 

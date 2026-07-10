@@ -58,16 +58,14 @@ Off stops Jego from proxying browser traffic. Websites use the local connection.
 When Jego is Off:
 
 - browser websites use the local connection;
-- the saved node does not take part in the connection;
-- Node Test may ask for this state before a test.
+- the saved node does not take part in the connection.
 
-## When the buttons look different
+## Free version interface
 
-Depending on the account plan, the popup may show Connect/Off or Rules/Global/Off:
+The member popup shows Rules / Global / Off. The Free popup shows Connect / Off.
 
-- **Connect** enables the proxy mode available to the account;
-- **Rules** and **Global** work as described above;
-- **Off** always returns the browser to its normal connection.
+- **Connect:** turns Jego on;
+- **Off:** uses the local connection.
 
 The example below shows the Free interface and helps Free users recognize the Connect and Off states.
 

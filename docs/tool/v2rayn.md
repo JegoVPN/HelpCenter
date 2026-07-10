@@ -36,7 +36,7 @@ v2rayN 是PC 平台上一个对新手比较友好的v2ray Windows 客户端。
 ::: danger 不推荐使用
 v2rayN 第三方项目可能仍在维护，但 Jego 已不再支持其当前订阅协议，因此不推荐继续用于 Jego。本页保留为历史教程，并提供受支持的替代工具。
 
-请使用[无忧行推荐的客户端](/devices/pc-mobile#_1、关于应该使用什么客户端)
+请使用[无忧行推荐的客户端](/subscription/#_1、关于应该使用什么客户端)
 :::
 
 ## <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F7qSsONFAwi0T78ewIQku_2Fimage_2.png" width="26" height="26" alt="v2rayN图标"> 获取 v2rayN
@@ -133,4 +133,4 @@ core类型一共有四个，分别是v2fly、SgerNet、Xray、sing-box，一般�
 
 #### 与 v2rayNG 的关系
 
-<img src="/images/image_1707374615-v2rayNG-150x150_1.png" alt="v2rayNG" width="30">v2rayN 安卓手机版名为 v2rayNG，可移步至 [v2rayNG](/tool/v2rayng) 下载并查看详细教程。
+<img src="/images/image_1707374615-v2rayNG-150x150_1.png" alt="v2rayNG" width="30">v2rayN 安卓手机版名为 v2rayNG，可移步至 [v2rayNG](/subscription/clients/v2rayng) 下载并查看详细教程。

@@ -22,7 +22,7 @@ description: Sign in, choose Rules mode and Auto Select, and start using Jego in
 Jego is a free VPN extension built for Chrome and Edge. After installation, sign in, choose a mode and node, and you can start accessing websites worldwide in that browser. First-time users should begin with **Rules** mode and **Auto Select**.
 
 ::: info It affects this browser only
-Rules, Global, and Off control the browser where Jego is installed. To use a VPN in other apps on your computer or phone, see [Use Jego on a computer or phone](/en/devices/pc-mobile).
+Rules, Global, and Off control the browser where Jego is installed. To use a VPN in other apps on your computer or phone, see [Use Jego on a computer or phone](/en/subscription/).
 :::
 
 ## 📺 Video Tutorial
@@ -88,4 +88,4 @@ More help: [FAQ](/en/guide/faq) · [Use ChatGPT, Copilot, and other services](/e
 
 ## How to use Jego for proxy access on PC or mobile
 
-The browser extension does not control other apps on your computer or phone. Members can use a Jego subscription and follow the [device guide](/en/devices/) to install a compatible client.
+The browser extension covers Chrome and Edge. Members can follow [Install by device](/en/subscription/#install-by-device) to use a Jego subscription in other computer or phone apps.

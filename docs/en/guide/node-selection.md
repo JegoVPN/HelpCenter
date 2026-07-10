@@ -53,8 +53,7 @@ When **Current location** shows the selected node name instead of Auto Select, t
 
 - Auto Select cannot connect right now;
 - the website opens but feels unusually slow;
-- you want to use a route marked with green lightning in Node Test;
-- Jego Support asked you to test a specific node.
+- you want to use a route marked with green lightning in Node Test.
 
 If only one site fails, run [Website Route Check](/en/guide/network-diagnostics#route-check) and see whether the domain is proxied. An available node does not mean every site automatically uses it.
 

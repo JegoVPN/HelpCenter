@@ -46,15 +46,15 @@ sing-box 是跨平台网络代理项目。当前协议、平台与版本以官�
 
 ### 苹果全家桶
 
-macOS iOS iPadOS tvOS的用户请移步： [sing-box for Apple](/tool/sing-boxforapple)
+macOS iOS iPadOS tvOS的用户请移步： [sing-box for Apple](/subscription/clients/sing-boxforapple)
 
 ### Andorid设备
 
-安卓的用户请移步： [sing-box for Android](/tool/sing-boxforandroid)
+安卓的用户请移步： [sing-box for Android](/subscription/clients/sing-boxforandroid)
 
 ### Windows
 
-Windows的用户请移步： [GUI.for.SingBox](/tool/guiforsing-box)
+Windows的用户请移步： [GUI.for.SingBox](/subscription/clients/guiforsing-box)
 
 ### Linux
 

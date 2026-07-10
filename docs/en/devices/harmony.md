@@ -33,11 +33,11 @@ Jego subscription service mobile panel: <https://jego.us>
 
 Check the table first to see whether a tool works with Jego, then follow the section for your HarmonyOS version.
 
-<ToolCatalog locale="en" platform="harmonyos" />
+<ToolCatalog locale="en" platform="harmonyos" recommended-only />
 
 ## <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FhUBqYs4CpmMcueAi690m_2FHMOS_Logo_Icon_1.svg" width="38" height="28" alt="HarmonyOS icon"> Proxy Tools Available on HarmonyOS 5(鸿蒙) Devices
 
-<img src="/images/clashbox-logo-new.png" width="26" height="26" alt="ClashBox icon"> [ClashBox](/en/tool/clashbox) <span style="color:green;">`🧪Experimental`</span>
+<img src="/images/clashbox-logo-new.png" width="26" height="26" alt="ClashBox icon"> [ClashBox](/en/subscription/clients/clashbox) <span style="color:green;">`🧪Experimental`</span>
 
 ClashBox/ClashNEXT is the first proxy software based on Navigation framework for HarmonyOS NEXT(OpenHarmony) platform, using modified Mihomo(ClashMeta) kernel.
 
@@ -57,7 +57,7 @@ The screenshots below are retained to identify older security settings and are n
 
 #### Install FlClash
 
-Complete tutorial please go to [FlClash](/en/tool/flclash)
+Complete tutorial please go to [FlClash](/en/subscription/clients/flclash)
 
 <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FvB9dTjQXfG9lDK06rDTM_2FScreenshot_20250728_172648_com_huawei_appmarket_2.jpg" alt="FlClash Installation 1" width="300"> <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FVEv5M4JTvd9MvEupS01U_2FScreenshot_20250728_172334_com_huawei_appmarket_3.jpg" alt="FlClash Installation 2" width="300">
 
@@ -67,7 +67,7 @@ Complete tutorial please go to [FlClash](/en/tool/flclash)
 
 #### Install sing-box for Android
 
-Complete tutorial please go to [sing-box for Android](/en/tool/sing-boxforandroid)
+Complete tutorial please go to [sing-box for Android](/en/subscription/clients/sing-boxforandroid)
 
 <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FyKRacwkMLGa4MTyzkLKF_2FScreenshot_20250728_173345_com_huawei_appmarket_3.jpg" alt="sing-box Installation" width="300">
 

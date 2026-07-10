@@ -32,26 +32,6 @@
       "en": { "source": "docs/en/guide/network-diagnostics-node-speed.md", "route": "/en/guide/network-diagnostics-node-speed" }
     },
     {
-      "translationKey": "subscription-index",
-      "zh": { "source": "docs/subscription/index.md", "route": "/subscription/" },
-      "en": { "source": "docs/en/subscription/index.md", "route": "/en/subscription/" }
-    },
-    {
-      "translationKey": "subscription-management",
-      "zh": { "source": "docs/subscription/management.md", "route": "/subscription/management" },
-      "en": { "source": "docs/en/subscription/management.md", "route": "/en/subscription/management" }
-    },
-    {
-      "translationKey": "tool-index",
-      "zh": { "source": "docs/tool/index.md", "route": "/tool/" },
-      "en": { "source": "docs/en/tool/index.md", "route": "/en/tool/" }
-    },
-    {
-      "translationKey": "devices-index",
-      "zh": { "source": "docs/devices/index.md", "route": "/devices/" },
-      "en": { "source": "docs/en/devices/index.md", "route": "/en/devices/" }
-    },
-    {
       "translationKey": "troubleshooting-index",
       "zh": { "source": "docs/troubleshooting/index.md", "route": "/troubleshooting/" },
       "en": { "source": "docs/en/troubleshooting/index.md", "route": "/en/troubleshooting/" }

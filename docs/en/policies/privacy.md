@@ -58,4 +58,4 @@ These permissions save settings, change proxy routes, keep connection informatio
 - The policy says data is stored in the United States and the Service is not intended for users under 13.
 - Users can sign in to view their data and can request account deletion in Account Settings. For a security incident or inaccessible account, use [Support](/en/guide/support).
 
-See [Subscription management](/en/subscription/management) for the steps to copy, import, and update the subscription service.
+See [Subscription management](/en/subscription/#copy-and-update-the-subscription) for the steps to copy, import, and update the subscription service.

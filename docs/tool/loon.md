@@ -34,7 +34,7 @@ description: Loon 第三方项目可能仍在维护，但 Jego 已不再支持�
 ::: danger 不推荐使用
 Loon 第三方项目可能仍在维护，但 Jego 已不再支持其当前订阅协议，因此不推荐继续用于 Jego。
 
-请使用[无忧行推荐的客户端](/devices/pc-mobile#_1、关于应该使用什么客户端)
+请使用[无忧行推荐的客户端](/subscription/#_1、关于应该使用什么客户端)
 :::
 
 ## <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FrQykYPazvOUVLyWMmu7C_2Floon_2.png" width="26" height="26" alt="Loon图标"> 获取Loon

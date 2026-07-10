@@ -26,7 +26,7 @@ description: Configure and verify a proxy path for an IDE or CLI using FlClash a
 This guide uses FlClash to show how to configure a proxy for an IDE and command-line tools. Development tools differ in system-proxy, environment-variable, and TUN support, so test the actual tool after setup.
 
 ::: tip Applicable Scope
-This tutorial uses the FlClash desktop interface. Other clients have different menus, so first [choose a client by device](/en/devices/) and make sure it works with Jego, then open that client's complete guide.
+This tutorial uses the FlClash desktop interface. Other clients have different menus; [Install by device](/en/subscription/#install-by-device) opens the matching complete guide.
 
 The key is understanding virtual network adapter mode and node routing strategies.
 :::
@@ -138,8 +138,8 @@ The objective is similar, but menus and capabilities are not necessarily the sam
 
 ## Related Links
 
-* [FlClash Complete Tutorial](/en/tool/flclash) - Learn all FlClash features
-* [Clash Verge Rev Tutorial](/en/tool/clashverge) - Multi-platform client tutorial
-* [sing-box Tutorial](/en/tool/sing-box) - Lightweight proxy tool
+* [FlClash Complete Tutorial](/en/subscription/clients/flclash) - Learn all FlClash features
+* [Clash Verge Rev Tutorial](/en/subscription/clients/clashverge) - Multi-platform client tutorial
+* [sing-box Tutorial](/en/subscription/clients/sing-box) - Lightweight proxy tool
 * [Node Selection Guide](/en/guide/node-selection) - Choose and verify a candidate node
-* [Device Configuration Overview](/en/devices/pc-mobile) - View proxy guides for all devices
+* [Device Configuration Overview](/en/subscription/) - View proxy guides for all devices

@@ -34,7 +34,7 @@ description: 无忧行是专为 Chrome 和 Edge 设计的免费代理工具；�
 
 订阅服务适合在 Windows、macOS、Linux、Android、iPhone 或 iPad 上使用。会员登录控制面板后，进入**订阅节点**复制订阅地址，再把它导入兼容的电脑或手机客户端，浏览器之外的应用也可以使用代理。
 
-按顺序查看：[了解订阅服务](/subscription/) → [按设备选择客户端](/devices/) → [导入和管理订阅](/subscription/management)。
+[订阅服务指南](/subscription/)把设备选择、安装、导入和后续更新放在同一页，按顺序查看即可。
 
 会员价格、有效期和当前权益会直接显示在登录后的控制面板和购买页面，付款前以页面内容为准。
 

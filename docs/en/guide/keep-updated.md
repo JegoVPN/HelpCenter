@@ -82,7 +82,7 @@ You can also [contact support](/en/guide/support) for the current CRX package. A
 
 Mobile subscription clients should be updated every 24 hours so they receive Jego's latest nodes and ports. You can also update immediately after a renewal or after the subscription content in your account changes.
 
-Update controls differ by client. Open your current app in the [client guides](/en/tool/) to follow its steps. Use the time and status shown by the client to confirm that the update has finished.
+Update controls differ by client. Open the matching guide from [Install by device](/en/subscription/#install-by-device) and follow its steps. The time and status shown by the client confirm when the update has finished.
 
 ## After updating
 

@@ -15,6 +15,7 @@ import {
   splitFrontmatter,
   walkFiles
 } from './geo-content.mjs'
+import { canonicalizeRoute, LEGACY_ROUTE_PAIRS } from './subscription-route-map.mjs'
 
 const root = process.cwd()
 const baselineMode = process.argv.includes('--baseline')
@@ -171,7 +172,7 @@ if (baseline) {
 
 if (required) {
   const pairs = required.requiredPairs || []
-  if (pairs.length !== 13) fail(`mandatory route manifest 必须有 13 对，实际为 ${pairs.length}`)
+  if (pairs.length !== 9) fail(`mandatory route manifest 必须有 9 对，实际为 ${pairs.length}`)
   const keys = new Set()
   const sources = new Set()
   const routes = new Set()
@@ -193,7 +194,7 @@ if (required) {
       }
     }
   }
-  if (sources.size !== 26 || routes.size !== 26) fail('mandatory route manifest 必须固定 26 个唯一源文件和路由')
+  if (sources.size !== 18 || routes.size !== 18) fail('mandatory route manifest 必须固定 18 个唯一源文件和路由')
   pass(`mandatory route manifest：${pairs.length} 对、${sources.size} 个源文件、${routes.size} 条路由`)
 }
 
@@ -213,7 +214,7 @@ for (const media of allMedia) {
 pass(`当前源内容：${markdownFiles.length} 个 Markdown；${allMedia.size} 个独立本地媒体引用均存在`)
 
 if (!baselineMode) {
-  if (markdownFiles.length < 118) fail(`正式 Markdown 不得少于 118，实际为 ${markdownFiles.length}`)
+  if (markdownFiles.length < 110) fail(`正式 Markdown 不得少于 110，实际为 ${markdownFiles.length}`)
   const requiredFields = [
     'title', 'description', 'translationKey', 'contentType', 'product', 'productArea', 'uiSurface',
     'locale', 'status', 'owner', 'reviewStatus', 'lastVerified', 'platforms', 'tools', 'appliesTo', 'sources'
@@ -227,7 +228,13 @@ if (!baselineMode) {
   const reviewStatuses = new Set(['verified', 'needs-review', 'blocked'])
   const pages = markdownFiles.map((source) => {
     const raw = readFileSync(path.join(root, source), 'utf8')
-    return { source, raw, frontmatter: parseFrontmatter(raw), record: pageRecord(source, raw) }
+    const record = pageRecord(source, raw)
+    return {
+      source,
+      raw,
+      frontmatter: parseFrontmatter(raw),
+      record: { ...record, route: canonicalizeRoute(record.route) }
+    }
   })
   const routeSet = new Set(pages.map((page) => page.record.route))
   const routeSources = new Map(pages.map((page) => [page.record.route, page.source]))
@@ -261,7 +268,7 @@ if (!baselineMode) {
       fail(`translationKey 未形成唯一中英对：${key}`)
     }
   }
-  if (translationGroups.size < 59) fail(`双语关系不得少于 59 对，实际为 ${translationGroups.size}`)
+  if (translationGroups.size < 55) fail(`双语关系不得少于 55 对，实际为 ${translationGroups.size}`)
 
   for (const page of pages) {
     for (const link of extractInternalLinks(page.raw)) {
@@ -361,10 +368,6 @@ if (!baselineMode) {
   }
 
   const deviceCatalogPages = {
-    'docs/devices/index.md': ['zh', null],
-    'docs/en/devices/index.md': ['en', null],
-    'docs/devices/pc-mobile.md': ['zh', null],
-    'docs/en/devices/pc-mobile.md': ['en', null],
     'docs/devices/android.md': ['zh', 'android'],
     'docs/en/devices/android.md': ['en', 'android'],
     'docs/devices/ios.md': ['zh', 'ios'],
@@ -382,12 +385,57 @@ if (!baselineMode) {
     const page = pages.find((entry) => entry.source === source)
     if (!page) continue
     const expected = platform
-      ? `<ToolCatalog locale="${locale}" platform="${platform}" />`
+      ? `<ToolCatalog locale="${locale}" platform="${platform}" recommended-only />`
       : `<ToolCatalog locale="${locale}" />`
     if (!page.raw.includes(expected)) fail(`设备页未从唯一 catalog 渲染：${source}`)
     if (/推荐使用下列软件|### Recommended Software|\*\*Recommended\*\*/.test(page.raw)) {
       fail(`设备页仍含第二份手工推荐表：${source}`)
     }
+  }
+
+  const removedDraftPages = [
+    'docs/subscription/index.md',
+    'docs/en/subscription/index.md',
+    'docs/subscription/management.md',
+    'docs/en/subscription/management.md',
+    'docs/devices/index.md',
+    'docs/en/devices/index.md',
+    'docs/tool/index.md',
+    'docs/en/tool/index.md'
+  ]
+  for (const source of removedDraftPages) {
+    if (existsSync(path.join(root, source))) fail(`未发布的重复入口必须删除：${source}`)
+  }
+
+  if (LEGACY_ROUTE_PAIRS.length !== 52) fail(`基线订阅旧路由兼容映射必须为 52 条，实际为 ${LEGACY_ROUTE_PAIRS.length}`)
+  for (const [legacy, canonical] of LEGACY_ROUTE_PAIRS) {
+    if (!/^\/(?:en\/)?(?:devices|tool)\//.test(legacy)) fail(`旧路由映射超出基线范围：${legacy}`)
+    if (!/^\/(?:en\/)?subscription\//.test(canonical)) fail(`订阅正式路由未统一：${canonical}`)
+  }
+
+  for (const [source, locale] of [
+    ['docs/devices/pc-mobile.md', 'zh-Hans'],
+    ['docs/en/devices/pc-mobile.md', 'en']
+  ]) {
+    const page = pages.find((entry) => entry.source === source)
+    if (!page) continue
+    const expectedRoute = locale === 'en' ? '/en/subscription/' : '/subscription/'
+    if (page.record.route !== expectedRoute) fail(`订阅入口正式路由不正确：${source} -> ${page.record.route}`)
+    const { body } = splitFrontmatter(page.raw)
+    const h2 = [...body.matchAll(/^##\s+(.+?)\s*$/gm)].map((match) => match[1].trim())
+    const expectedHeadings = locale === 'en'
+      ? ['Install by device', 'Copy and update the subscription', 'Browser extension, system proxy, and TUN']
+      : ['按设备安装', '复制和更新订阅', '浏览器插件、系统代理和 TUN']
+    if (h2.join('|') !== expectedHeadings.join('|')) fail(`订阅入口职责未收敛：${source}`)
+    if (/<ToolCatalog\b/.test(body)) fail(`订阅入口不得展示客户端大列表：${source}`)
+    const devicePrefix = locale === 'en' ? '/en/subscription/devices/' : '/subscription/devices/'
+    for (const slug of ['windows', 'mac', 'ios', 'android', 'linux', 'harmony']) {
+      if (!body.includes(`${devicePrefix}${slug}`)) fail(`订阅入口缺少设备入口 ${slug}：${source}`)
+    }
+    const requiredCopy = locale === 'en'
+      ? ['Mobile Proxy', 'Mihomo', 'sing-box', 'Shadowrocket', 'Reset', 'stops the old one']
+      : ['订阅节点', 'Mihomo', 'sing-box', 'Shadowrocket', '重置', '原地址随即停止使用']
+    if (!requiredCopy.every((phrase) => body.includes(phrase))) fail(`订阅复制、更新与重置说明不完整：${source}`)
   }
 
   const migrationPath = path.join(root, 'scripts/geo-migration-records.json')
@@ -742,6 +790,22 @@ if (!baselineMode) {
     if (/mode-selection\.md$/.test(page.source)) {
       const iconHeading = page.frontmatter.locale === 'en' ? /^## Browser icon state$/m : /^## 浏览器图标状态$/m
       if (!iconHeading.test(body)) fail(`浏览器图标状态必须是独立二级区块：${page.source}`)
+      const hasFreeInterfaceCopy = page.frontmatter.locale === 'en'
+        ? /^## Free version interface$/m.test(body) && /The member popup shows Rules \/ Global \/ Off\. The Free popup shows Connect \/ Off\./.test(body)
+        : /^## 免费版界面$/m.test(body) && /会员版弹窗显示“规则 \/ 全局 \/ 关闭”，免费版显示“开启 \/ 关闭”。/.test(body)
+      if (!hasFreeInterfaceCopy || /按钮和截图不一样|账号方案不同|When the buttons look different|Depending on the account plan/i.test(body)) {
+        fail(`模式页必须直接说明免费版界面，不得暗示按钮与截图不一致：${page.source}`)
+      }
+      if (/节点测速页面会按需要提示切换到这个状态|Node Test may ask for this state before a test/i.test(body)) {
+        fail(`关闭模式说明不得虚构节点测速会提示切换状态：${page.source}`)
+      }
+    }
+  }
+
+  for (const page of pages.filter((entry) => /^docs\/(?:en\/)?guide\/node-selection\.md$/.test(entry.source))) {
+    const { body } = splitFrontmatter(page.raw)
+    if (/客服建议你测试某个具体节点|Jego Support asked you to test a specific node/i.test(body)) {
+      fail(`节点选择页不得虚构客服要求用户测试具体节点：${page.source}`)
     }
   }
 

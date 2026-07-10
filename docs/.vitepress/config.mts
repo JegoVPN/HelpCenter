@@ -1,6 +1,52 @@
 import { defineConfig } from 'vitepress'
+import { mkdir, writeFile } from 'node:fs/promises'
+import path from 'node:path'
 import { geoHead, geoSitemapItems } from './geo'
 import { enNav, enSidebar, zhNav, zhSidebar } from './navigation'
+import {
+  LEGACY_ROUTE_MAP,
+  LEGACY_ROUTE_PAIRS,
+  VITEPRESS_REWRITES
+} from '../../scripts/subscription-route-map.mjs'
+
+function outputPath(outDir: string, route: string) {
+  if (route.endsWith('/')) return path.join(outDir, route.slice(1), 'index.html')
+  return path.join(outDir, `${route.slice(1)}.html`)
+}
+
+function redirectHtml(target: string, locale: 'zh-Hans' | 'en') {
+  const title = locale === 'en' ? 'Opening the updated page' : '正在打开新页面'
+  const link = locale === 'en' ? 'Continue' : '继续前往'
+  return `<!doctype html>
+<html lang="${locale}">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="0; url=${target}">
+    <link rel="canonical" href="https://help.jegovpn.com${target}">
+    <title>${title}</title>
+  </head>
+  <body>
+    <p><a href="${target}">${link}</a></p>
+    <script>location.replace(${JSON.stringify(target)} + location.search + location.hash)</script>
+  </body>
+</html>`
+}
+
+const legacyRoutePlugin = {
+  name: 'jego-legacy-subscription-routes',
+  enforce: 'pre' as const,
+  configureServer(server: any) {
+    server.middlewares.use((request: any, response: any, next: () => void) => {
+      const url = new URL(request.url || '/', 'http://127.0.0.1')
+      const target = LEGACY_ROUTE_MAP[url.pathname]
+      if (!target) return next()
+      response.statusCode = 302
+      response.setHeader('Location', `${target}${url.search}`)
+      response.end()
+    })
+  }
+}
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -18,6 +64,17 @@ export default defineConfig({
   transformHead: geoHead,
   // 启用简洁URL，移除.html后缀
   cleanUrls: true,
+  rewrites: VITEPRESS_REWRITES,
+  vite: {
+    plugins: [legacyRoutePlugin]
+  },
+  async buildEnd(siteConfig) {
+    for (const [legacy, canonical] of LEGACY_ROUTE_PAIRS) {
+      const output = outputPath(siteConfig.outDir, legacy)
+      await mkdir(path.dirname(output), { recursive: true })
+      await writeFile(output, redirectHtml(canonical, legacy.startsWith('/en/') ? 'en' : 'zh-Hans'))
+    }
+  },
   
   // 配置favicon和PWA
   head: [

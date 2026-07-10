@@ -26,7 +26,7 @@ description: 以 FlClash 为例，为 IDE 或 CLI 配置并验证代理路径，
 本教程以 FlClash 为例，介绍怎样给 IDE 和命令行工具配置代理。不同开发工具对系统代理、环境变量和 TUN 的支持不同，完成后请用实际工具测试一次。
 
 ::: tip 适用范围
-本教程以 [FlClash](/tool/flclash) 的桌面界面为例。其他客户端的菜单会有差别，请先从[设备选择页](/devices/)确认它能使用 Jego，再打开该客户端自己的完整教程。
+本教程以 [FlClash](/subscription/clients/flclash) 的桌面界面为例。其他客户端的菜单会有差别，可以从[按设备安装](/subscription/#按设备安装)进入对应的完整教程。
 
 关键在于理解虚拟网卡模式和节点分流策略。
 :::
@@ -138,8 +138,8 @@ curl ip.sb
 
 ## 相关链接
 
-* [FlClash 详细使用教程](/tool/flclash) - 了解 FlClash 的完整功能
-* [Clash Verge Rev 教程](/tool/clashverge) - 多平台代理工具教程
-* [sing-box 教程](/tool/sing-box) - 轻量级代理工具
+* [FlClash 详细使用教程](/subscription/clients/flclash) - 了解 FlClash 的完整功能
+* [Clash Verge Rev 教程](/subscription/clients/clashverge) - 多平台代理工具教程
+* [sing-box 教程](/subscription/clients/sing-box) - 轻量级代理工具
 * [节点选择指南](/guide/node-selection) - 了解如何选择并验证候选节点
-* [设备配置总览](/devices/pc-mobile) - 查看所有设备的翻墙指南
+* [设备配置总览](/subscription/) - 查看所有设备的翻墙指南
