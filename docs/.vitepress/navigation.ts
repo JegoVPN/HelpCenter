@@ -9,7 +9,7 @@ export const zhNav = [
     ]
   },
   { text: '订阅服务', link: '/subscription/' },
-  { text: '故障排查', link: '/troubleshooting/' }
+  { text: '帮助与支持', link: '/guide/faq' }
 ]
 
 export const enNav = [
@@ -23,7 +23,7 @@ export const enNav = [
     ]
   },
   { text: 'Subscription service', link: '/en/subscription/' },
-  { text: 'Troubleshooting', link: '/en/troubleshooting/' }
+  { text: 'Help and support', link: '/en/guide/faq' }
 ]
 
 export const zhSidebar = [
@@ -65,11 +65,8 @@ export const zhSidebar = [
     ]
   },
   {
-    text: '故障排查与支持',
+    text: '帮助与支持',
     items: [
-      { text: '无忧行故障排查', link: '/troubleshooting/' },
-      { text: '客户端故障排查', link: '/troubleshooting/client' },
-      { text: 'AI 服务访问', link: '/guide/chatgpt-access' },
       { text: '常见问题', link: '/guide/faq' },
       { text: '联系支持', link: '/guide/support' }
     ]
@@ -99,7 +96,10 @@ export const zhSidebar = [
   },
   {
     text: '场景教程',
-    items: [{ text: 'Vibe Coding', link: '/guide/vibe-coding' }]
+    items: [
+      { text: 'AI 产品访问（浏览器插件）', link: '/guide/chatgpt-access' },
+      { text: 'Vibe Coding（订阅服务）', link: '/guide/vibe-coding' }
+    ]
   }
 ]
 
@@ -142,11 +142,8 @@ export const enSidebar = [
     ]
   },
   {
-    text: 'Troubleshooting and support',
+    text: 'Help and support',
     items: [
-      { text: 'Jego troubleshooting', link: '/en/troubleshooting/' },
-      { text: 'Fix a client problem', link: '/en/troubleshooting/client' },
-      { text: 'AI service access', link: '/en/guide/chatgpt-access' },
       { text: 'FAQ', link: '/en/guide/faq' },
       { text: 'Contact support', link: '/en/guide/support' }
     ]
@@ -176,6 +173,9 @@ export const enSidebar = [
   },
   {
     text: 'Scenario tutorials',
-    items: [{ text: 'Vibe Coding', link: '/en/guide/vibe-coding' }]
+    items: [
+      { text: 'AI product access (browser extension)', link: '/en/guide/chatgpt-access' },
+      { text: 'Vibe Coding (subscription service)', link: '/en/guide/vibe-coding' }
+    ]
   }
 ]

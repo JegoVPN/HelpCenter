@@ -3,6 +3,8 @@ import { existsSync, readFileSync } from 'node:fs'
 import { homedir, tmpdir, userInfo } from 'node:os'
 import path from 'node:path'
 import {
+  APPROVED_CONTENT_RESTRUCTURES,
+  APPROVED_MEDIA_RETIREMENTS,
   BASELINE_COMMIT,
   TOOL_SLUGS,
   extractLocalMedia,
@@ -144,10 +146,13 @@ if (baseline) {
     if (page.source.includes('/tool/') && current.h1 !== page.h1) {
       fail(`工具页 H1 发生变化：${page.source}`)
     }
+    const approvedRetirements = APPROVED_MEDIA_RETIREMENTS[page.source] || []
     for (const media of page.media) {
-      if (!current.media.includes(media)) fail(`基线媒体引用被移除：${page.source} -> ${media}`)
+      if (!current.media.includes(media) && !approvedRetirements.includes(media)) {
+        fail(`基线媒体引用被移除：${page.source} -> ${media}`)
+      }
     }
-    if (current.contentLength < page.contentLength * 0.75) {
+    if (!APPROVED_CONTENT_RESTRUCTURES.includes(page.source) && current.contentLength < page.contentLength * 0.75) {
       fail(`基线正文长度下降超过 25%：${page.source}`)
     }
   }
@@ -172,7 +177,7 @@ if (baseline) {
 
 if (required) {
   const pairs = required.requiredPairs || []
-  if (pairs.length !== 9) fail(`mandatory route manifest 必须有 9 对，实际为 ${pairs.length}`)
+  if (pairs.length !== 7) fail(`mandatory route manifest 必须有 7 对，实际为 ${pairs.length}`)
   const keys = new Set()
   const sources = new Set()
   const routes = new Set()
@@ -194,7 +199,7 @@ if (required) {
       }
     }
   }
-  if (sources.size !== 18 || routes.size !== 18) fail('mandatory route manifest 必须固定 18 个唯一源文件和路由')
+  if (sources.size !== 14 || routes.size !== 14) fail('mandatory route manifest 必须固定 14 个唯一源文件和路由')
   pass(`mandatory route manifest：${pairs.length} 对、${sources.size} 个源文件、${routes.size} 条路由`)
 }
 
@@ -214,7 +219,7 @@ for (const media of allMedia) {
 pass(`当前源内容：${markdownFiles.length} 个 Markdown；${allMedia.size} 个独立本地媒体引用均存在`)
 
 if (!baselineMode) {
-  if (markdownFiles.length < 110) fail(`正式 Markdown 不得少于 110，实际为 ${markdownFiles.length}`)
+  if (markdownFiles.length < 106) fail(`正式 Markdown 不得少于 106，实际为 ${markdownFiles.length}`)
   const requiredFields = [
     'title', 'description', 'translationKey', 'contentType', 'product', 'productArea', 'uiSurface',
     'locale', 'status', 'owner', 'reviewStatus', 'lastVerified', 'platforms', 'tools', 'appliesTo', 'sources'
@@ -268,7 +273,7 @@ if (!baselineMode) {
       fail(`translationKey 未形成唯一中英对：${key}`)
     }
   }
-  if (translationGroups.size < 55) fail(`双语关系不得少于 55 对，实际为 ${translationGroups.size}`)
+  if (translationGroups.size < 53) fail(`双语关系不得少于 53 对，实际为 ${translationGroups.size}`)
 
   for (const page of pages) {
     for (const link of extractInternalLinks(page.raw)) {
@@ -428,7 +433,11 @@ if (!baselineMode) {
     'docs/devices/index.md',
     'docs/en/devices/index.md',
     'docs/tool/index.md',
-    'docs/en/tool/index.md'
+    'docs/en/tool/index.md',
+    'docs/troubleshooting/index.md',
+    'docs/en/troubleshooting/index.md',
+    'docs/troubleshooting/client.md',
+    'docs/en/troubleshooting/client.md'
   ]
   for (const source of removedDraftPages) {
     if (existsSync(path.join(root, source))) fail(`未发布的重复入口必须删除：${source}`)
@@ -500,7 +509,15 @@ if (!baselineMode) {
       if (!Array.isArray(record.corrections) || record.corrections.length === 0 || record.contentChangeReviewed !== true) {
         fail(`逐页迁移记录缺少事实更正复核：${page.source}`)
       }
-      if (record.mediaAndExternalLinkChanges?.mediaPreserved !== true || record.mediaAndExternalLinkChanges?.removedMedia?.length) {
+      const mediaChanges = record.mediaAndExternalLinkChanges || {}
+      const expectedRetirements = APPROVED_MEDIA_RETIREMENTS[page.source] || []
+      const actualRetirements = mediaChanges.removedMedia || []
+      if (
+        mediaChanges.mediaPreserved !== true ||
+        (mediaChanges.unexpectedRemovedMedia || []).length ||
+        !sameArray([...actualRetirements].sort(), [...expectedRetirements].sort()) ||
+        !sameArray([...(mediaChanges.approvedRemovedMedia || [])].sort(), [...expectedRetirements].sort())
+      ) {
         fail(`逐页迁移记录显示媒体未保全：${page.source}`)
       }
       if (/docs\/(?:en\/)?tool\//.test(page.source) && record.strategy !== 'preserve-and-enhance') {
@@ -601,7 +618,7 @@ if (!baselineMode) {
     ['高风险第三方分发或账号渠道', /rocketgirls|apkpure|archive\.org\/download\/clash|gist\.githubusercontent|proother\/Shadowrocket|file\.olo4/i]
   ]
   const safeNegativeContext = {
-    '关闭系统安全防护': /不要|不关闭|不得|而不是|不构成|do not|don't|never|rather than|not advice|is not/i,
+    '关闭系统安全防护': /不要|不关闭|不建议|不合适|不得|而不是|不构成|do not|don't|never|rather than|not advice|is not/i,
     '第三方账号/地区/限额规避': /不要|不得|不通过|do not|rather than|is not/i,
     '绝对或无依据承诺': /不用|不作|不得|不声称|does not|without making/i,
     '未经核验的性能或连通承诺': /不.{0,36}保证|不能写成|不声称|does not.{0,80}guarantee|do not guarantee|cannot guarantee|must not|not a guarantee/i,
@@ -647,6 +664,7 @@ if (!baselineMode) {
   const pressurePhrases = /你想怎么使用|你想要做什么|想让.{0,24}[？?]|不知道选哪个[？?]|What (?:do|would) you (?:want|like) to do|Not sure which|Want to .{0,40}[?？]|不要着急|别急|do not worry|don['’]t panic/i
   for (const page of pages) {
     const { body } = splitFrontmatter(page.raw)
+    const isFaqPage = /^docs\/(?:en\/)?guide\/faq\.md$/.test(page.source)
     if (/[?？]/.test(String(page.frontmatter.title)) || /[?？]/.test(String(page.frontmatter.description))) {
       fail(`标题或摘要仍以问题要求用户判断：${page.source}`)
     }
@@ -658,7 +676,7 @@ if (!baselineMode) {
         inFence = !inFence
         continue
       }
-      if (inFence || /^\s*import\s/.test(line)) continue
+      if (inFence || /^\s*import\s/.test(line) || (isFaqPage && /^###\s+/.test(line))) continue
       const visible = line
         .replace(/\]\([^)]*\)/g, ']')
         .replace(/https?:\/\/[^\s)>]+/g, '')
@@ -918,6 +936,51 @@ if (!baselineMode) {
   }
   if (/link:\s*'\/(?:en\/)?subscription\/clients\//.test(navigationSource)) {
     fail('订阅侧边栏不得重新列出 18 个客户端教程')
+  }
+  const zhDiagnosticsEntries = navigationSource.match(/link:\s*'\/guide\/network-diagnostics'/g) || []
+  const enDiagnosticsEntries = navigationSource.match(/link:\s*'\/en\/guide\/network-diagnostics'/g) || []
+  if (zhDiagnosticsEntries.length !== 2 || enDiagnosticsEntries.length !== 2) {
+    fail('网络诊断只能出现在浏览器插件的顶部菜单和侧边栏，不得复制到帮助与支持')
+  }
+  const zhHelpGroup = navigationSource.match(/text:\s*'帮助与支持',\s*items:\s*\[([\s\S]*?)\]\s*\}/)?.[1] || ''
+  const enHelpGroup = navigationSource.match(/text:\s*'Help and support',\s*items:\s*\[([\s\S]*?)\]\s*\}/)?.[1] || ''
+  if (
+    !/常见问题[\s\S]*联系支持/.test(zhHelpGroup) ||
+    !/FAQ[\s\S]*Contact support/.test(enHelpGroup) ||
+    /网络诊断|AI 产品访问|Diagnostics|AI product access/.test(`${zhHelpGroup}\n${enHelpGroup}`)
+  ) {
+    fail('帮助与支持侧边栏必须只保留常见问题和联系支持')
+  }
+  const zhScenarioGroup = navigationSource.match(/text:\s*'场景教程',\s*items:\s*\[([\s\S]*?)\]\s*\}/)?.[1] || ''
+  const enScenarioGroup = navigationSource.match(/text:\s*'Scenario tutorials',\s*items:\s*\[([\s\S]*?)\]\s*\}/)?.[1] || ''
+  if (
+    !/AI 产品访问（浏览器插件）/.test(zhScenarioGroup) ||
+    !/Vibe Coding（订阅服务）/.test(zhScenarioGroup) ||
+    !/AI product access \(browser extension\)/.test(enScenarioGroup) ||
+    !/Vibe Coding \(subscription service\)/.test(enScenarioGroup)
+  ) {
+    fail('场景教程必须明确区分浏览器插件与订阅服务')
+  }
+  if (/\/(?:en\/)?troubleshooting(?:\/client)?/.test(navigationSource)) {
+    fail('导航不得恢复未发布的重复故障排查入口')
+  }
+
+  for (const source of ['docs/guide/faq.md', 'docs/en/guide/faq.md']) {
+    const faq = pages.find((page) => page.source === source)
+    if (!faq) continue
+    const { body } = splitFrontmatter(faq.raw)
+    if (/当前加速状态|连接检测|查询网址走向|Current Acceleration Status|Connection Check|website route/i.test(body)) {
+      fail(`常见问题不得复制网络诊断的任务说明：${source}`)
+    }
+    const requiredQuestions = faq.frontmatter.locale === 'en'
+      ? ['Do all routes support Gemini, ChatGPT, Claude', 'does not open?', 'location different from the selected node?', 'private browsing window?', 'turn off the firewall']
+      : ['所有线路都能进行 Gemini、ChatGPT、Claude', '打不开 Gemini、ChatGPT、Claude', '地理位置与节点服务器不符', '如何在浏览器的隐私模式里使用无忧行', '建议关闭防火墙']
+    if (!requiredQuestions.every((phrase) => body.includes(phrase))) {
+      fail(`常见问题必须保留五个经产品确认的真实问题：${source}`)
+    }
+    if (/建议关闭或者降低网络防火墙|请将设置切换为.?关闭|recommended to turn off|switch the setting to.?Off/i.test(body)) {
+      fail(`常见问题不得恢复关闭系统防火墙的建议：${source}`)
+    }
   }
 
   const reviewPath = path.join(root, 'GEO_CONTENT_REVIEW.md')

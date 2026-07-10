@@ -1,7 +1,7 @@
 ---
 translationKey: guide-vibe-coding
 contentType: how-to
-product: browser-extension
+product: subscription-service
 productArea: scenario-tutorial
 uiSurface: null
 locale: en
@@ -9,8 +9,8 @@ status: current
 owner: docs
 reviewStatus: needs-review
 lastVerified: null
-platforms: [chrome, edge]
-tools: []
+platforms: [windows, macos, linux]
+tools: [flclash]
 appliesTo: []
 sources: []
 title: How to Use Jego for Vibe Coding - AI Development Tools Proxy Configuration Tutorial
@@ -23,7 +23,7 @@ description: Configure and verify a proxy path for an IDE or CLI using FlClash a
 
 <img src="/images/ClaudeCode.png" alt="Claude Code AI Development Tool Interface" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); margin: 20px 0;">
 
-This guide uses FlClash to show how to configure a proxy for an IDE and command-line tools. Development tools differ in system-proxy, environment-variable, and TUN support, so test the actual tool after setup.
+This guide uses the Jego subscription service and FlClash to configure a proxy for an IDE or command-line tool.
 
 ::: tip Applicable Scope
 This tutorial uses the FlClash desktop interface. Other clients have different menus; [Install by device](/en/subscription/#install-by-device) opens the matching complete guide.

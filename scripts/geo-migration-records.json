@@ -88,14 +88,17 @@
         "baselineMediaCount": 0,
         "currentMediaCount": 0,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [],
         "currentExternalHosts": [],
         "removedExternalHosts": [],
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/abuse/limits.md",
@@ -166,14 +169,17 @@
         "baselineMediaCount": 0,
         "currentMediaCount": 0,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [],
         "currentExternalHosts": [],
         "removedExternalHosts": [],
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/devices/android.md",
@@ -249,7 +255,10 @@
         "baselineMediaCount": 8,
         "currentMediaCount": 8,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [
           "github.com",
           "jego.us"
@@ -262,7 +271,7 @@
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/devices/harmony.md",
@@ -359,7 +368,10 @@
         "baselineMediaCount": 11,
         "currentMediaCount": 13,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [
           "jego.us"
         ],
@@ -370,7 +382,7 @@
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/devices/ios.md",
@@ -462,7 +474,10 @@
         "baselineMediaCount": 7,
         "currentMediaCount": 7,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [
           "jego.us"
         ],
@@ -473,7 +488,7 @@
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/devices/linux.md",
@@ -544,14 +559,17 @@
         "baselineMediaCount": 5,
         "currentMediaCount": 5,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [],
         "currentExternalHosts": [],
         "removedExternalHosts": [],
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/devices/mac.md",
@@ -623,14 +641,17 @@
         "baselineMediaCount": 7,
         "currentMediaCount": 7,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [],
         "currentExternalHosts": [],
         "removedExternalHosts": [],
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/devices/pc-mobile.md",
@@ -732,7 +753,10 @@
         "baselineMediaCount": 7,
         "currentMediaCount": 8,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [
           "github.com"
         ],
@@ -743,7 +767,7 @@
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/devices/us-apple-id.md",
@@ -890,7 +914,10 @@
         "baselineMediaCount": 20,
         "currentMediaCount": 20,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [
           "appleid.apple.com"
         ],
@@ -907,7 +934,7 @@
         ]
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/devices/windows.md",
@@ -982,14 +1009,17 @@
         "baselineMediaCount": 7,
         "currentMediaCount": 7,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [],
         "currentExternalHosts": [],
         "removedExternalHosts": [],
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/en/abuse/fair-use.md",
@@ -1076,14 +1106,17 @@
         "baselineMediaCount": 0,
         "currentMediaCount": 0,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [],
         "currentExternalHosts": [],
         "removedExternalHosts": [],
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/en/abuse/limits.md",
@@ -1155,14 +1188,17 @@
         "baselineMediaCount": 0,
         "currentMediaCount": 0,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [],
         "currentExternalHosts": [],
         "removedExternalHosts": [],
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/en/devices/android.md",
@@ -1238,7 +1274,10 @@
         "baselineMediaCount": 8,
         "currentMediaCount": 8,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [
           "github.com",
           "jego.us"
@@ -1251,7 +1290,7 @@
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/en/devices/harmony.md",
@@ -1348,7 +1387,10 @@
         "baselineMediaCount": 11,
         "currentMediaCount": 13,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [
           "jego.us"
         ],
@@ -1359,7 +1401,7 @@
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/en/devices/ios.md",
@@ -1452,7 +1494,10 @@
         "baselineMediaCount": 7,
         "currentMediaCount": 7,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [
           "jego.us"
         ],
@@ -1463,7 +1508,7 @@
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/en/devices/linux.md",
@@ -1534,14 +1579,17 @@
         "baselineMediaCount": 5,
         "currentMediaCount": 5,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [],
         "currentExternalHosts": [],
         "removedExternalHosts": [],
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/en/devices/mac.md",
@@ -1613,14 +1661,17 @@
         "baselineMediaCount": 7,
         "currentMediaCount": 7,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [],
         "currentExternalHosts": [],
         "removedExternalHosts": [],
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/en/devices/pc-mobile.md",
@@ -1722,7 +1773,10 @@
         "baselineMediaCount": 7,
         "currentMediaCount": 8,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [
           "github.com"
         ],
@@ -1733,7 +1787,7 @@
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/en/devices/us-apple-id.md",
@@ -1880,7 +1934,10 @@
         "baselineMediaCount": 20,
         "currentMediaCount": 20,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [
           "appleid.apple.com"
         ],
@@ -1897,7 +1954,7 @@
         ]
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/en/devices/windows.md",
@@ -1972,21 +2029,24 @@
         "baselineMediaCount": 7,
         "currentMediaCount": 7,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [],
         "currentExternalHosts": [],
         "removedExternalHosts": [],
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/en/guide/chatgpt-access.md",
       "route": "/en/guide/chatgpt-access",
-      "strategy": "preserve-and-enhance",
+      "strategy": "restructure-in-place",
       "baselineH1": "How to Access New Bing, Copilot or ChatGPT",
-      "currentH1": "How to Access New Bing, Copilot or ChatGPT",
+      "currentH1": "AI Product Access Guide",
       "baselineSections": [
         {
           "level": 2,
@@ -2012,23 +2072,15 @@
       "currentSections": [
         {
           "level": 2,
-          "text": "Access Process"
+          "text": "Keep the default Proxy Rules"
         },
         {
           "level": 2,
-          "text": "Common Issue: Cannot Access New Bing, Copilot or ChatGPT Websites"
+          "text": "Choose a suitable route"
         },
         {
-          "level": 3,
-          "text": "1. Network Environment"
-        },
-        {
-          "level": 3,
-          "text": "2. Browser Environment"
-        },
-        {
-          "level": 3,
-          "text": "3. Access Again"
+          "level": 2,
+          "text": "View the current connection status"
         }
       ],
       "sectionMapping": [
@@ -2039,9 +2091,9 @@
           },
           "to": {
             "level": 2,
-            "text": "Access Process"
+            "text": "Keep the default Proxy Rules"
           },
-          "disposition": "preserved-heading"
+          "disposition": "restructured-in-place"
         },
         {
           "from": {
@@ -2050,9 +2102,9 @@
           },
           "to": {
             "level": 2,
-            "text": "Common Issue: Cannot Access New Bing, Copilot or ChatGPT Websites"
+            "text": "Choose a suitable route"
           },
-          "disposition": "preserved-heading"
+          "disposition": "restructured-in-place"
         },
         {
           "from": {
@@ -2060,10 +2112,10 @@
             "text": "1. Network Environment"
           },
           "to": {
-            "level": 3,
-            "text": "1. Network Environment"
+            "level": 2,
+            "text": "View the current connection status"
           },
-          "disposition": "preserved-heading"
+          "disposition": "restructured-in-place"
         },
         {
           "from": {
@@ -2071,10 +2123,10 @@
             "text": "2. Browser Environment"
           },
           "to": {
-            "level": 3,
-            "text": "2. Browser Environment"
+            "level": 2,
+            "text": "View the current connection status"
           },
-          "disposition": "preserved-heading"
+          "disposition": "restructured-in-place"
         },
         {
           "from": {
@@ -2082,10 +2134,10 @@
             "text": "3. Access Again"
           },
           "to": {
-            "level": 3,
-            "text": "3. Access Again"
+            "level": 2,
+            "text": "View the current connection status"
           },
-          "disposition": "preserved-heading"
+          "disposition": "restructured-in-place"
         }
       ],
       "preservedTasks": [
@@ -2103,22 +2155,33 @@
       ],
       "mediaAndExternalLinkChanges": {
         "baselineMediaCount": 5,
-        "currentMediaCount": 5,
-        "removedMedia": [],
+        "currentMediaCount": 2,
+        "removedMedia": [
+          "/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F8oyNaJcc0tFJdbungX6t_2Fimage_1.png",
+          "/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F8xAkeKaPFvJCAt1MuBYf_2Fimage_2.png",
+          "/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2Fz7RH5pwBUDwrBQdsdvah_2Fimage_3.png"
+        ],
+        "approvedRemovedMedia": [
+          "/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F8oyNaJcc0tFJdbungX6t_2Fimage_1.png",
+          "/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F8xAkeKaPFvJCAt1MuBYf_2Fimage_2.png",
+          "/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2Fz7RH5pwBUDwrBQdsdvah_2Fimage_3.png"
+        ],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": "human-confirmed outdated FAQ and AI-product media retired from rendered content; public asset files retained",
         "baselineExternalHosts": [
           "alidns.com",
           "www.alidns.com"
         ],
-        "currentExternalHosts": [
+        "currentExternalHosts": [],
+        "removedExternalHosts": [
           "alidns.com",
           "www.alidns.com"
         ],
-        "removedExternalHosts": [],
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/en/guide/encrypted-dns.md",
@@ -2359,7 +2422,10 @@
         "baselineMediaCount": 0,
         "currentMediaCount": 0,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [
           "cloudflare-dns.com",
           "common.dot.dns.yandex.net",
@@ -2406,7 +2472,7 @@
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/en/guide/faq.md",
@@ -2471,55 +2537,35 @@
       "currentSections": [
         {
           "level": 3,
-          "text": "Choosing a route for AI websites"
+          "text": "Do all routes support Gemini, ChatGPT, Claude, and other AI products?"
         },
         {
           "level": 3,
-          "text": "Gemini, ChatGPT, Claude, or another website does not connect"
+          "text": "Gemini, ChatGPT, Claude, or another overseas website does not open?"
         },
         {
           "level": 3,
-          "text": "Google or ChatGPT shows a different location from the selected node"
+          "text": "Why does Google or ChatGPT show a location different from the selected node?"
         },
         {
           "level": 3,
-          "text": "Too many redirects"
+          "text": "How do I use Jego in a private browsing window?"
         },
         {
           "level": 3,
-          "text": "New Bing is not shown"
+          "text": "The old “turn off the firewall” advice is not suitable. What should I do instead?"
         },
         {
-          "level": 3,
-          "text": "The default search engine is mainland Bing"
+          "level": 2,
+          "text": "Desktop and mobile subscription clients"
         },
         {
-          "level": 3,
-          "text": "Account profile reference"
+          "level": 2,
+          "text": "Extension updates"
         },
         {
-          "level": 3,
-          "text": "Windows region and location reference"
-        },
-        {
-          "level": 3,
-          "text": "Compare another network"
-        },
-        {
-          "level": 3,
-          "text": "Bing says the daily conversation limit has been reached"
-        },
-        {
-          "level": 3,
-          "text": "Enable Jego in private browsing"
-        },
-        {
-          "level": 3,
-          "text": "Keep the firewall on and isolate a block safely"
-        },
-        {
-          "level": 3,
-          "text": "Check New Bing in Edge InPrivate mode"
+          "level": 2,
+          "text": "Contact support"
         }
       ],
       "sectionMapping": [
@@ -2530,7 +2576,7 @@
           },
           "to": {
             "level": 3,
-            "text": "Choosing a route for AI websites"
+            "text": "Do all routes support Gemini, ChatGPT, Claude, and other AI products?"
           },
           "disposition": "restructured-in-place"
         },
@@ -2541,7 +2587,7 @@
           },
           "to": {
             "level": 3,
-            "text": "Gemini, ChatGPT, Claude, or another website does not connect"
+            "text": "Gemini, ChatGPT, Claude, or another overseas website does not open?"
           },
           "disposition": "restructured-in-place"
         },
@@ -2552,7 +2598,7 @@
           },
           "to": {
             "level": 3,
-            "text": "Google or ChatGPT shows a different location from the selected node"
+            "text": "Why does Google or ChatGPT show a location different from the selected node?"
           },
           "disposition": "restructured-in-place"
         },
@@ -2563,7 +2609,7 @@
           },
           "to": {
             "level": 3,
-            "text": "Too many redirects"
+            "text": "How do I use Jego in a private browsing window?"
           },
           "disposition": "restructured-in-place"
         },
@@ -2574,7 +2620,7 @@
           },
           "to": {
             "level": 3,
-            "text": "New Bing is not shown"
+            "text": "The old “turn off the firewall” advice is not suitable. What should I do instead?"
           },
           "disposition": "restructured-in-place"
         },
@@ -2584,8 +2630,8 @@
             "text": "Question 5: What if the default search engine is mainland Bing?"
           },
           "to": {
-            "level": 3,
-            "text": "The default search engine is mainland Bing"
+            "level": 2,
+            "text": "Desktop and mobile subscription clients"
           },
           "disposition": "restructured-in-place"
         },
@@ -2595,8 +2641,8 @@
             "text": "Extended Solution 1 for Question 5: It's best to change the Microsoft account country too."
           },
           "to": {
-            "level": 3,
-            "text": "Account profile reference"
+            "level": 2,
+            "text": "Extension updates"
           },
           "disposition": "restructured-in-place"
         },
@@ -2606,8 +2652,8 @@
             "text": "Extended Solution 2 for Question 5: It's best to change Windows settings too"
           },
           "to": {
-            "level": 3,
-            "text": "Windows region and location reference"
+            "level": 2,
+            "text": "Contact support"
           },
           "disposition": "restructured-in-place"
         },
@@ -2617,8 +2663,8 @@
             "text": "Extended Solution 3 for Question 5: Change ISP"
           },
           "to": {
-            "level": 3,
-            "text": "Compare another network"
+            "level": 2,
+            "text": "Contact support"
           },
           "disposition": "restructured-in-place"
         },
@@ -2628,8 +2674,8 @@
             "text": "Question 6: Bing prompt: You've reached the conversation limit for today. Sign in to continue your chat."
           },
           "to": {
-            "level": 3,
-            "text": "Bing says the daily conversation limit has been reached"
+            "level": 2,
+            "text": "Contact support"
           },
           "disposition": "restructured-in-place"
         },
@@ -2639,8 +2685,8 @@
             "text": "Question 7: How to enable privacy mode?"
           },
           "to": {
-            "level": 3,
-            "text": "Enable Jego in private browsing"
+            "level": 2,
+            "text": "Contact support"
           },
           "disposition": "restructured-in-place"
         },
@@ -2650,8 +2696,8 @@
             "text": "Question 8: Recommend turning off firewall"
           },
           "to": {
-            "level": 3,
-            "text": "Keep the firewall on and isolate a block safely"
+            "level": 2,
+            "text": "Contact support"
           },
           "disposition": "restructured-in-place"
         },
@@ -2661,8 +2707,8 @@
             "text": "Question 9: How to test if New Bing is successfully unlocked through Edge incognito mode?"
           },
           "to": {
-            "level": 3,
-            "text": "Check New Bing in Edge InPrivate mode"
+            "level": 2,
+            "text": "Contact support"
           },
           "disposition": "restructured-in-place"
         }
@@ -2684,24 +2730,66 @@
       ],
       "mediaAndExternalLinkChanges": {
         "baselineMediaCount": 18,
-        "currentMediaCount": 18,
-        "removedMedia": [],
+        "currentMediaCount": 0,
+        "removedMedia": [
+          "/images/image_2f77cc85238452e25cb517130188bf99_2.png",
+          "/images/image_8cfb53953fdf6e7e49ac94510557df95_3.png",
+          "/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F0WsYu8S2aed4NEWVLscQ_2Fimage_3.png",
+          "/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F2urY4db1qFvocDlTtgNj_2Fimage_1.png",
+          "/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F4X4pVnYK2KWM6XiyHkP6_2Fimage_3.png",
+          "/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F9NPKEgiCoLEpqb6WCQMb_2Fimage_2.png",
+          "/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FF6dZ9YLI7YU5b3kOalpA_2Fimage_1.png",
+          "/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FHV0QVHMxq4rRJPSEghvH_2Fimage_1.png",
+          "/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FNzcdN0zHPrnfQfxvzine_2Fimage_3.png",
+          "/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FPrqRnEhRBtThiFNriRYY_2Fimage_2.png",
+          "/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FQFg8JMkptC2tNNiLnUk0_2Fimage_1.png",
+          "/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FR5N7binyonxvysAkUl5m_2Fimage_1.png",
+          "/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FlTK7Ld57wxLmFhBvHDz3_2Fimage_2.png",
+          "/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FmSgH7un2lH6oQ2I02okf_2Fimage_2.png",
+          "/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FzQJALXbqHJDo0am5sbx0_2Fimage_3.png",
+          "/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FzX0shn8SkzNDitbuWyLk_2Fimage_2.png",
+          "/videos/video_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F5kaw1En36b4S8wPLm3ok_2F20230927-110903_2.mp4",
+          "/videos/video_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FHdfcY8pUhEOe7afX3nGk_2F20230528-141341_1.mp4"
+        ],
+        "approvedRemovedMedia": [
+          "/images/image_2f77cc85238452e25cb517130188bf99_2.png",
+          "/images/image_8cfb53953fdf6e7e49ac94510557df95_3.png",
+          "/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F0WsYu8S2aed4NEWVLscQ_2Fimage_3.png",
+          "/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F2urY4db1qFvocDlTtgNj_2Fimage_1.png",
+          "/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F4X4pVnYK2KWM6XiyHkP6_2Fimage_3.png",
+          "/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F9NPKEgiCoLEpqb6WCQMb_2Fimage_2.png",
+          "/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FF6dZ9YLI7YU5b3kOalpA_2Fimage_1.png",
+          "/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FHV0QVHMxq4rRJPSEghvH_2Fimage_1.png",
+          "/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FNzcdN0zHPrnfQfxvzine_2Fimage_3.png",
+          "/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FPrqRnEhRBtThiFNriRYY_2Fimage_2.png",
+          "/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FQFg8JMkptC2tNNiLnUk0_2Fimage_1.png",
+          "/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FR5N7binyonxvysAkUl5m_2Fimage_1.png",
+          "/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FlTK7Ld57wxLmFhBvHDz3_2Fimage_2.png",
+          "/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FmSgH7un2lH6oQ2I02okf_2Fimage_2.png",
+          "/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FzQJALXbqHJDo0am5sbx0_2Fimage_3.png",
+          "/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FzX0shn8SkzNDitbuWyLk_2Fimage_2.png",
+          "/videos/video_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F5kaw1En36b4S8wPLm3ok_2F20230927-110903_2.mp4",
+          "/videos/video_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FHdfcY8pUhEOe7afX3nGk_2F20230528-141341_1.mp4"
+        ],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": "human-confirmed outdated FAQ and AI-product media retired from rendered content; public asset files retained",
         "baselineExternalHosts": [
           "account.microsoft.com",
           "ip111.cn",
           "support.google.com"
         ],
         "currentExternalHosts": [
-          "account.microsoft.com",
-          "ip111.cn",
           "support.google.com"
         ],
-        "removedExternalHosts": [],
+        "removedExternalHosts": [
+          "account.microsoft.com",
+          "ip111.cn"
+        ],
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/en/guide/installation.md",
@@ -2948,7 +3036,10 @@
         "baselineMediaCount": 12,
         "currentMediaCount": 12,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [
           "chrome.google.com",
           "jegocloud.com",
@@ -2971,7 +3062,7 @@
         ]
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/en/guide/keep-updated.md",
@@ -3121,7 +3212,10 @@
         "baselineMediaCount": 6,
         "currentMediaCount": 6,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [
           "chrome.google.com",
           "jegocloud.com",
@@ -3136,7 +3230,7 @@
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/en/guide/mode-selection.md",
@@ -3318,14 +3412,17 @@
         "baselineMediaCount": 8,
         "currentMediaCount": 8,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [],
         "currentExternalHosts": [],
         "removedExternalHosts": [],
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/en/guide/node-selection.md",
@@ -3416,14 +3513,17 @@
         "baselineMediaCount": 4,
         "currentMediaCount": 4,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [],
         "currentExternalHosts": [],
         "removedExternalHosts": [],
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/en/guide/nodes.md",
@@ -3587,14 +3687,17 @@
         "baselineMediaCount": 0,
         "currentMediaCount": 0,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [],
         "currentExternalHosts": [],
         "removedExternalHosts": [],
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/en/guide/overview.md",
@@ -3656,14 +3759,17 @@
         "baselineMediaCount": 0,
         "currentMediaCount": 0,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [],
         "currentExternalHosts": [],
         "removedExternalHosts": [],
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/en/guide/proxy-strategy.md",
@@ -3761,14 +3867,17 @@
         "baselineMediaCount": 1,
         "currentMediaCount": 2,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [],
         "currentExternalHosts": [],
         "removedExternalHosts": [],
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/en/guide/registration.md",
@@ -3833,14 +3942,17 @@
         "baselineMediaCount": 4,
         "currentMediaCount": 4,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [],
         "currentExternalHosts": [],
         "removedExternalHosts": [],
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/en/guide/services.md",
@@ -3947,14 +4059,17 @@
         "baselineMediaCount": 3,
         "currentMediaCount": 3,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [],
         "currentExternalHosts": [],
         "removedExternalHosts": [],
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/en/guide/support.md",
@@ -4079,7 +4194,10 @@
         "baselineMediaCount": 3,
         "currentMediaCount": 3,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [
           "www.w3.org"
         ],
@@ -4090,7 +4208,7 @@
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/en/guide/usage.md",
@@ -4243,14 +4361,17 @@
         "baselineMediaCount": 5,
         "currentMediaCount": 5,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [],
         "currentExternalHosts": [],
         "removedExternalHosts": [],
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/en/guide/vibe-coding.md",
@@ -4528,14 +4649,17 @@
         "baselineMediaCount": 5,
         "currentMediaCount": 5,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [],
         "currentExternalHosts": [],
         "removedExternalHosts": [],
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/en/index.md",
@@ -4663,7 +4787,10 @@
         "baselineMediaCount": 0,
         "currentMediaCount": 0,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [
           "www.w3.org"
         ],
@@ -4674,7 +4801,7 @@
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/en/membership/benefits.md",
@@ -4795,14 +4922,17 @@
         "baselineMediaCount": 0,
         "currentMediaCount": 0,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [],
         "currentExternalHosts": [],
         "removedExternalHosts": [],
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/en/membership/payment.md",
@@ -5044,14 +5174,17 @@
         "baselineMediaCount": 6,
         "currentMediaCount": 6,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [],
         "currentExternalHosts": [],
         "removedExternalHosts": [],
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/en/tool/clash-for-android.md",
@@ -5215,7 +5348,10 @@
         "baselineMediaCount": 8,
         "currentMediaCount": 8,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [
           "apkpure.com",
           "github.com",
@@ -5233,7 +5369,7 @@
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/en/tool/clash-for-windows.md",
@@ -5627,7 +5763,10 @@
         "baselineMediaCount": 7,
         "currentMediaCount": 7,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [
           "127.0.0.1",
           "archive.org",
@@ -5647,7 +5786,7 @@
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/en/tool/clashbox.md",
@@ -5794,7 +5933,10 @@
         "baselineMediaCount": 5,
         "currentMediaCount": 5,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [
           "appgallery.huawei.com",
           "developer.huawei.com",
@@ -5811,7 +5953,7 @@
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/en/tool/clashverge.md",
@@ -6031,7 +6173,10 @@
         "baselineMediaCount": 8,
         "currentMediaCount": 8,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [
           "github.com",
           "jego.us"
@@ -6044,7 +6189,7 @@
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/en/tool/flclash.md",
@@ -6303,7 +6448,10 @@
         "baselineMediaCount": 13,
         "currentMediaCount": 13,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [
           "github.com",
           "jego.us"
@@ -6316,7 +6464,7 @@
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/en/tool/guiforsing-box.md",
@@ -6441,7 +6589,10 @@
         "baselineMediaCount": 5,
         "currentMediaCount": 5,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [
           "github.com",
           "jego.us"
@@ -6454,7 +6605,7 @@
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/en/tool/loon.md",
@@ -6619,7 +6770,10 @@
         "baselineMediaCount": 6,
         "currentMediaCount": 6,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [
           "apps.apple.com",
           "jego.us",
@@ -6638,7 +6792,7 @@
         ]
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/en/tool/mihomo.md",
@@ -6935,7 +7089,10 @@
         "baselineMediaCount": 8,
         "currentMediaCount": 8,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [
           "gist.githubusercontent.com",
           "github.com",
@@ -6953,7 +7110,7 @@
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/en/tool/oneclick.md",
@@ -7099,7 +7256,10 @@
         "baselineMediaCount": 7,
         "currentMediaCount": 7,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [
           "apkpure.com",
           "apps.apple.com",
@@ -7119,7 +7279,7 @@
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/en/tool/quantumult-x.md",
@@ -7246,7 +7406,10 @@
         "baselineMediaCount": 6,
         "currentMediaCount": 6,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [
           "apps.apple.com",
           "file.olo4.com",
@@ -7264,7 +7427,7 @@
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/en/tool/shadowrocket.md",
@@ -7505,7 +7668,10 @@
         "baselineMediaCount": 5,
         "currentMediaCount": 5,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [
           "apps.apple.com",
           "jego.us",
@@ -7523,7 +7689,7 @@
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/en/tool/sing-box.md",
@@ -7706,7 +7872,10 @@
         "baselineMediaCount": 1,
         "currentMediaCount": 1,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [
           "github.com"
         ],
@@ -7717,7 +7886,7 @@
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/en/tool/sing-boxforandroid.md",
@@ -7900,7 +8069,10 @@
         "baselineMediaCount": 10,
         "currentMediaCount": 10,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [
           "github.com",
           "jego.us",
@@ -7917,7 +8089,7 @@
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/en/tool/sing-boxforapple.md",
@@ -8178,7 +8350,10 @@
         "baselineMediaCount": 12,
         "currentMediaCount": 12,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [
           "apps.apple.com",
           "github.com",
@@ -8195,7 +8370,7 @@
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/en/tool/surfboard.md",
@@ -8344,7 +8519,10 @@
         "baselineMediaCount": 5,
         "currentMediaCount": 5,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [
           "apkpure.com",
           "github.com",
@@ -8362,7 +8540,7 @@
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/en/tool/surge.md",
@@ -8451,7 +8629,10 @@
         "baselineMediaCount": 7,
         "currentMediaCount": 7,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [
           "apps.apple.com",
           "jego.us",
@@ -8466,7 +8647,7 @@
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/en/tool/v2rayn.md",
@@ -8592,7 +8773,10 @@
         "baselineMediaCount": 15,
         "currentMediaCount": 15,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [
           "github.com",
           "jego.us",
@@ -8607,7 +8791,7 @@
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/en/tool/v2rayng.md",
@@ -8752,7 +8936,10 @@
         "baselineMediaCount": 6,
         "currentMediaCount": 6,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [
           "github.com",
           "jego.us",
@@ -8767,14 +8954,14 @@
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/guide/chatgpt-access.md",
       "route": "/guide/chatgpt-access",
-      "strategy": "preserve-and-enhance",
+      "strategy": "restructure-in-place",
       "baselineH1": "如何解锁New Bing、Copilot或者ChatGPT",
-      "currentH1": "如何解锁New Bing、Copilot或者ChatGPT",
+      "currentH1": "AI 产品访问指南",
       "baselineSections": [
         {
           "level": 2,
@@ -8800,23 +8987,15 @@
       "currentSections": [
         {
           "level": 2,
-          "text": "解锁流程"
+          "text": "保持默认代理策略"
         },
         {
           "level": 2,
-          "text": "常见问题：打不开New Bing、Copilot或者ChatGPT的网站了"
+          "text": "选择合适的线路"
         },
         {
-          "level": 3,
-          "text": "1. 网络环境"
-        },
-        {
-          "level": 3,
-          "text": "2. 浏览器环境"
-        },
-        {
-          "level": 3,
-          "text": "3. 再次访问"
+          "level": 2,
+          "text": "查看当前连接状态"
         }
       ],
       "sectionMapping": [
@@ -8827,9 +9006,9 @@
           },
           "to": {
             "level": 2,
-            "text": "解锁流程"
+            "text": "保持默认代理策略"
           },
-          "disposition": "preserved-heading"
+          "disposition": "restructured-in-place"
         },
         {
           "from": {
@@ -8838,9 +9017,9 @@
           },
           "to": {
             "level": 2,
-            "text": "常见问题：打不开New Bing、Copilot或者ChatGPT的网站了"
+            "text": "选择合适的线路"
           },
-          "disposition": "preserved-heading"
+          "disposition": "restructured-in-place"
         },
         {
           "from": {
@@ -8848,10 +9027,10 @@
             "text": "1. 网络环境"
           },
           "to": {
-            "level": 3,
-            "text": "1. 网络环境"
+            "level": 2,
+            "text": "查看当前连接状态"
           },
-          "disposition": "preserved-heading"
+          "disposition": "restructured-in-place"
         },
         {
           "from": {
@@ -8859,10 +9038,10 @@
             "text": "2. 浏览器环境"
           },
           "to": {
-            "level": 3,
-            "text": "2. 浏览器环境"
+            "level": 2,
+            "text": "查看当前连接状态"
           },
-          "disposition": "preserved-heading"
+          "disposition": "restructured-in-place"
         },
         {
           "from": {
@@ -8870,10 +9049,10 @@
             "text": "3. 再次访问"
           },
           "to": {
-            "level": 3,
-            "text": "3. 再次访问"
+            "level": 2,
+            "text": "查看当前连接状态"
           },
-          "disposition": "preserved-heading"
+          "disposition": "restructured-in-place"
         }
       ],
       "preservedTasks": [
@@ -8892,22 +9071,33 @@
       ],
       "mediaAndExternalLinkChanges": {
         "baselineMediaCount": 5,
-        "currentMediaCount": 5,
-        "removedMedia": [],
+        "currentMediaCount": 2,
+        "removedMedia": [
+          "/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F8oyNaJcc0tFJdbungX6t_2Fimage_1.png",
+          "/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F8xAkeKaPFvJCAt1MuBYf_2Fimage_2.png",
+          "/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2Fz7RH5pwBUDwrBQdsdvah_2Fimage_3.png"
+        ],
+        "approvedRemovedMedia": [
+          "/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F8oyNaJcc0tFJdbungX6t_2Fimage_1.png",
+          "/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F8xAkeKaPFvJCAt1MuBYf_2Fimage_2.png",
+          "/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2Fz7RH5pwBUDwrBQdsdvah_2Fimage_3.png"
+        ],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": "human-confirmed outdated FAQ and AI-product media retired from rendered content; public asset files retained",
         "baselineExternalHosts": [
           "alidns.com",
           "www.alidns.com"
         ],
-        "currentExternalHosts": [
+        "currentExternalHosts": [],
+        "removedExternalHosts": [
           "alidns.com",
           "www.alidns.com"
         ],
-        "removedExternalHosts": [],
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/guide/encrypted-dns.md",
@@ -9145,7 +9335,10 @@
         "baselineMediaCount": 0,
         "currentMediaCount": 0,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [
           "cloudflare-dns.com",
           "common.dot.dns.yandex.net",
@@ -9192,7 +9385,7 @@
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/guide/faq.md",
@@ -9257,51 +9450,35 @@
       "currentSections": [
         {
           "level": 3,
-          "text": "AI 网站的线路选择"
+          "text": "所有线路都能进行 Gemini、ChatGPT、Claude 等 AI 产品的访问吗？"
         },
         {
           "level": 3,
-          "text": "Gemini、ChatGPT、Claude 等网站无法连接"
+          "text": "打不开 Gemini、ChatGPT、Claude 等境外的网站了？"
         },
         {
           "level": 3,
-          "text": "Google、ChatGPT 显示的位置与节点地区不同"
+          "text": "为什么 Google、ChatGPT 显示的地理位置与节点服务器不符（区域判定错误）？"
         },
         {
           "level": 3,
-          "text": "重定向次数过多。"
+          "text": "如何在浏览器的隐私模式里使用无忧行？"
         },
         {
           "level": 3,
-          "text": "没有显示 New Bing 入口"
+          "text": "“建议关闭防火墙”并不合适，应该怎么设置？"
         },
         {
-          "level": 3,
-          "text": "默认搜索引擎显示为中国大陆版必应"
+          "level": 2,
+          "text": "电脑和手机订阅客户端"
         },
         {
-          "level": 3,
-          "text": "账户和系统地区应保持真实一致"
+          "level": 2,
+          "text": "插件更新"
         },
         {
-          "level": 3,
-          "text": "拓展解决方案 3：更换 ISP"
-        },
-        {
-          "level": 3,
-          "text": "Bing 提示“你已达到今天的对话限制，登录以继续你的聊天”"
-        },
-        {
-          "level": 3,
-          "text": "在浏览器隐私模式中使用无忧行"
-        },
-        {
-          "level": 3,
-          "text": "防火墙保持开启，按最小范围排查"
-        },
-        {
-          "level": 3,
-          "text": "使用 Edge 无痕模式检查 New Bing"
+          "level": 2,
+          "text": "联系支持"
         }
       ],
       "sectionMapping": [
@@ -9312,9 +9489,9 @@
           },
           "to": {
             "level": 3,
-            "text": "AI 网站的线路选择"
+            "text": "所有线路都能进行 Gemini、ChatGPT、Claude 等 AI 产品的访问吗？"
           },
-          "disposition": "restructured-in-place"
+          "disposition": "preserved-heading"
         },
         {
           "from": {
@@ -9323,9 +9500,9 @@
           },
           "to": {
             "level": 3,
-            "text": "Gemini、ChatGPT、Claude 等网站无法连接"
+            "text": "打不开 Gemini、ChatGPT、Claude 等境外的网站了？"
           },
-          "disposition": "restructured-in-place"
+          "disposition": "preserved-heading"
         },
         {
           "from": {
@@ -9334,9 +9511,9 @@
           },
           "to": {
             "level": 3,
-            "text": "Google、ChatGPT 显示的位置与节点地区不同"
+            "text": "为什么 Google、ChatGPT 显示的地理位置与节点服务器不符（区域判定错误）？"
           },
-          "disposition": "restructured-in-place"
+          "disposition": "preserved-heading"
         },
         {
           "from": {
@@ -9345,9 +9522,9 @@
           },
           "to": {
             "level": 3,
-            "text": "重定向次数过多。"
+            "text": "如何在浏览器的隐私模式里使用无忧行？"
           },
-          "disposition": "preserved-heading"
+          "disposition": "restructured-in-place"
         },
         {
           "from": {
@@ -9356,7 +9533,7 @@
           },
           "to": {
             "level": 3,
-            "text": "没有显示 New Bing 入口"
+            "text": "“建议关闭防火墙”并不合适，应该怎么设置？"
           },
           "disposition": "restructured-in-place"
         },
@@ -9366,8 +9543,8 @@
             "text": "默认搜索引擎是大陆的必应怎么办？"
           },
           "to": {
-            "level": 3,
-            "text": "默认搜索引擎显示为中国大陆版必应"
+            "level": 2,
+            "text": "电脑和手机订阅客户端"
           },
           "disposition": "restructured-in-place"
         },
@@ -9377,8 +9554,8 @@
             "text": "拓展解决方案 1：最好把微软账户也改个国家"
           },
           "to": {
-            "level": 3,
-            "text": "账户和系统地区应保持真实一致"
+            "level": 2,
+            "text": "插件更新"
           },
           "disposition": "restructured-in-place"
         },
@@ -9388,8 +9565,8 @@
             "text": "拓展解决方案 2：最好把 Windows 的设置也改掉"
           },
           "to": {
-            "level": 3,
-            "text": "拓展解决方案 3：更换 ISP"
+            "level": 2,
+            "text": "联系支持"
           },
           "disposition": "restructured-in-place"
         },
@@ -9399,10 +9576,10 @@
             "text": "拓展解决方案 3：更换 ISP"
           },
           "to": {
-            "level": 3,
-            "text": "拓展解决方案 3：更换 ISP"
+            "level": 2,
+            "text": "联系支持"
           },
-          "disposition": "preserved-heading"
+          "disposition": "restructured-in-place"
         },
         {
           "from": {
@@ -9410,10 +9587,10 @@
             "text": "Bing 提示“你已达到今天的对话限制，登录以继续你的聊天”"
           },
           "to": {
-            "level": 3,
-            "text": "Bing 提示“你已达到今天的对话限制，登录以继续你的聊天”"
+            "level": 2,
+            "text": "联系支持"
           },
-          "disposition": "preserved-heading"
+          "disposition": "restructured-in-place"
         },
         {
           "from": {
@@ -9422,9 +9599,9 @@
           },
           "to": {
             "level": 3,
-            "text": "防火墙保持开启，按最小范围排查"
+            "text": "如何在浏览器的隐私模式里使用无忧行？"
           },
-          "disposition": "restructured-in-place"
+          "disposition": "preserved-heading"
         },
         {
           "from": {
@@ -9432,8 +9609,8 @@
             "text": "建议关闭防火墙"
           },
           "to": {
-            "level": 3,
-            "text": "使用 Edge 无痕模式检查 New Bing"
+            "level": 2,
+            "text": "联系支持"
           },
           "disposition": "restructured-in-place"
         },
@@ -9443,8 +9620,8 @@
             "text": "如何通过 Edge 无痕模式测试 New Bing 是否解锁成功？"
           },
           "to": {
-            "level": 3,
-            "text": "使用 Edge 无痕模式检查 New Bing"
+            "level": 2,
+            "text": "联系支持"
           },
           "disposition": "restructured-in-place"
         }
@@ -9467,23 +9644,26 @@
         "baselineMediaCount": 0,
         "currentMediaCount": 0,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [
           "account.microsoft.com",
           "ip111.cn",
           "support.google.com"
         ],
         "currentExternalHosts": [
-          "ip111.cn",
           "support.google.com"
         ],
         "removedExternalHosts": [
-          "account.microsoft.com"
+          "account.microsoft.com",
+          "ip111.cn"
         ],
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/guide/installation.md",
@@ -9730,7 +9910,10 @@
         "baselineMediaCount": 12,
         "currentMediaCount": 12,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [
           "chrome.google.com",
           "jegocloud.com",
@@ -9753,7 +9936,7 @@
         ]
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/guide/keep-updated.md",
@@ -9902,7 +10085,10 @@
         "baselineMediaCount": 6,
         "currentMediaCount": 6,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [
           "chrome.google.com",
           "jegocloud.com",
@@ -9917,7 +10103,7 @@
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/guide/mode-selection.md",
@@ -10099,14 +10285,17 @@
         "baselineMediaCount": 8,
         "currentMediaCount": 8,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [],
         "currentExternalHosts": [],
         "removedExternalHosts": [],
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/guide/node-selection.md",
@@ -10197,14 +10386,17 @@
         "baselineMediaCount": 4,
         "currentMediaCount": 4,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [],
         "currentExternalHosts": [],
         "removedExternalHosts": [],
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/guide/nodes.md",
@@ -10368,14 +10560,17 @@
         "baselineMediaCount": 0,
         "currentMediaCount": 0,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [],
         "currentExternalHosts": [],
         "removedExternalHosts": [],
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/guide/overview.md",
@@ -10436,14 +10631,17 @@
         "baselineMediaCount": 0,
         "currentMediaCount": 0,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [],
         "currentExternalHosts": [],
         "removedExternalHosts": [],
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/guide/proxy-strategy.md",
@@ -10541,14 +10739,17 @@
         "baselineMediaCount": 1,
         "currentMediaCount": 2,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [],
         "currentExternalHosts": [],
         "removedExternalHosts": [],
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/guide/registration.md",
@@ -10613,14 +10814,17 @@
         "baselineMediaCount": 4,
         "currentMediaCount": 4,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [],
         "currentExternalHosts": [],
         "removedExternalHosts": [],
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/guide/services.md",
@@ -10726,14 +10930,17 @@
         "baselineMediaCount": 3,
         "currentMediaCount": 3,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [],
         "currentExternalHosts": [],
         "removedExternalHosts": [],
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/guide/support.md",
@@ -10857,7 +11064,10 @@
         "baselineMediaCount": 3,
         "currentMediaCount": 3,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [
           "www.w3.org"
         ],
@@ -10868,7 +11078,7 @@
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/guide/usage.md",
@@ -11021,14 +11231,17 @@
         "baselineMediaCount": 5,
         "currentMediaCount": 5,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [],
         "currentExternalHosts": [],
         "removedExternalHosts": [],
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/guide/vibe-coding.md",
@@ -11306,14 +11519,17 @@
         "baselineMediaCount": 5,
         "currentMediaCount": 5,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [],
         "currentExternalHosts": [],
         "removedExternalHosts": [],
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/index.md",
@@ -11440,7 +11656,10 @@
         "baselineMediaCount": 0,
         "currentMediaCount": 0,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [
           "www.w3.org"
         ],
@@ -11451,7 +11670,7 @@
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/membership/benefits.md",
@@ -11577,14 +11796,17 @@
         "baselineMediaCount": 0,
         "currentMediaCount": 0,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [],
         "currentExternalHosts": [],
         "removedExternalHosts": [],
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/membership/payment.md",
@@ -11827,14 +12049,17 @@
         "baselineMediaCount": 6,
         "currentMediaCount": 6,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [],
         "currentExternalHosts": [],
         "removedExternalHosts": [],
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/tool/clash-for-android.md",
@@ -11996,7 +12221,10 @@
         "baselineMediaCount": 8,
         "currentMediaCount": 8,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [
           "apkpure.com",
           "github.com",
@@ -12014,7 +12242,7 @@
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/tool/clash-for-windows.md",
@@ -12407,7 +12635,10 @@
         "baselineMediaCount": 7,
         "currentMediaCount": 7,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [
           "127.0.0.1",
           "archive.org",
@@ -12427,7 +12658,7 @@
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/tool/clashbox.md",
@@ -12573,7 +12804,10 @@
         "baselineMediaCount": 5,
         "currentMediaCount": 5,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [
           "appgallery.huawei.com",
           "developer.huawei.com",
@@ -12590,7 +12824,7 @@
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/tool/clashverge.md",
@@ -12810,7 +13044,10 @@
         "baselineMediaCount": 8,
         "currentMediaCount": 8,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [
           "github.com",
           "jego.us"
@@ -12823,7 +13060,7 @@
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/tool/flclash.md",
@@ -13082,7 +13319,10 @@
         "baselineMediaCount": 13,
         "currentMediaCount": 13,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [
           "github.com",
           "jego.us"
@@ -13095,7 +13335,7 @@
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/tool/guiforsing-box.md",
@@ -13220,7 +13460,10 @@
         "baselineMediaCount": 5,
         "currentMediaCount": 5,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [
           "github.com",
           "jego.us"
@@ -13233,7 +13476,7 @@
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/tool/loon.md",
@@ -13398,7 +13641,10 @@
         "baselineMediaCount": 6,
         "currentMediaCount": 6,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [
           "apps.apple.com",
           "jego.us",
@@ -13417,7 +13663,7 @@
         ]
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/tool/mihomo.md",
@@ -13713,7 +13959,10 @@
         "baselineMediaCount": 8,
         "currentMediaCount": 8,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [
           "gist.githubusercontent.com",
           "github.com",
@@ -13731,7 +13980,7 @@
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/tool/oneclick.md",
@@ -13876,7 +14125,10 @@
         "baselineMediaCount": 7,
         "currentMediaCount": 7,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [
           "apkpure.com",
           "apps.apple.com",
@@ -13896,7 +14148,7 @@
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/tool/quantumult-x.md",
@@ -14021,7 +14273,10 @@
         "baselineMediaCount": 6,
         "currentMediaCount": 6,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [
           "apps.apple.com",
           "file.olo4.com",
@@ -14039,7 +14294,7 @@
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/tool/shadowrocket.md",
@@ -14279,7 +14534,10 @@
         "baselineMediaCount": 5,
         "currentMediaCount": 5,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [
           "apps.apple.com",
           "jego.us",
@@ -14297,7 +14555,7 @@
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/tool/sing-box.md",
@@ -14480,7 +14738,10 @@
         "baselineMediaCount": 1,
         "currentMediaCount": 1,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [
           "github.com"
         ],
@@ -14491,7 +14752,7 @@
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/tool/sing-boxforandroid.md",
@@ -14674,7 +14935,10 @@
         "baselineMediaCount": 10,
         "currentMediaCount": 10,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [
           "github.com",
           "jego.us",
@@ -14691,7 +14955,7 @@
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/tool/sing-boxforapple.md",
@@ -14951,7 +15215,10 @@
         "baselineMediaCount": 12,
         "currentMediaCount": 12,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [
           "apps.apple.com",
           "github.com",
@@ -14968,7 +15235,7 @@
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/tool/surfboard.md",
@@ -15116,7 +15383,10 @@
         "baselineMediaCount": 5,
         "currentMediaCount": 5,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [
           "apkpure.com",
           "github.com",
@@ -15134,7 +15404,7 @@
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/tool/surge.md",
@@ -15222,7 +15492,10 @@
         "baselineMediaCount": 7,
         "currentMediaCount": 7,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [
           "apps.apple.com",
           "jego.us",
@@ -15237,7 +15510,7 @@
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/tool/v2rayn.md",
@@ -15364,7 +15637,10 @@
         "baselineMediaCount": 15,
         "currentMediaCount": 15,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [
           "github.com",
           "jego.us",
@@ -15379,7 +15655,7 @@
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     },
     {
       "source": "docs/tool/v2rayng.md",
@@ -15524,7 +15800,10 @@
         "baselineMediaCount": 6,
         "currentMediaCount": 6,
         "removedMedia": [],
+        "approvedRemovedMedia": [],
+        "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
+        "retirementDecision": null,
         "baselineExternalHosts": [
           "github.com",
           "jego.us",
@@ -15539,7 +15818,7 @@
         "addedExternalHosts": []
       },
       "contentChangeReviewed": true,
-      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories"
+      "reviewBasis": "baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories"
     }
   ]
 }

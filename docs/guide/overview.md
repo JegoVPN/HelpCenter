@@ -42,7 +42,8 @@ description: 无忧行是专为 Chrome 和 Edge 设计的免费代理工具；�
 
 - 查看弹窗里的模式和节点：[插件弹窗](/guide/plugin-features)
 - 检查网站连接：[网络诊断](/guide/network-diagnostics)
-- 按现象查找解决方法：[故障排查](/troubleshooting/)
+- 查看连接和网址走向：[网络诊断](/guide/network-diagnostics)
+- 查看简短答案：[常见问题](/guide/faq)
 
 ## 🌐支持 20 种界面语言
 

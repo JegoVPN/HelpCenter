@@ -194,6 +194,12 @@ try {
     '---\ntitle: 重复目录\n---\n\n# 重复目录\n\n重复内容。\n',
     '未发布的重复入口必须删除：docs/tool/index.md'
   )
+  expectAddedFileFailure(
+    '恢复未发布的故障排查入口',
+    'docs/troubleshooting/index.md',
+    '---\ntitle: 重复故障入口\n---\n\n# 重复故障入口\n\n重复内容。\n',
+    '未发布的重复入口必须删除：docs/troubleshooting/index.md'
+  )
   expectMutationFailure('把订阅页章节重新塞回导航', 'docs/.vitepress/navigation.ts', (raw) =>
     raw.replace(
       "{ text: '订阅服务', link: '/subscription/' }",
@@ -205,6 +211,27 @@ try {
   )
   expectMutationFailure('把订阅侧边栏退回只有系统名', 'docs/.vitepress/navigation.ts', (raw) =>
     raw.replace("{ text: 'Windows 翻墙指南', link: '/subscription/devices/windows' }", "{ text: 'Windows', link: '/subscription/devices/windows' }")
+  )
+  expectMutationFailure('把网络诊断复制到帮助与支持', 'docs/.vitepress/navigation.ts', (raw) =>
+    raw.replace(
+      "text: '帮助与支持',\n    items: [\n      { text: '常见问题'",
+      "text: '帮助与支持',\n    items: [\n      { text: '网络诊断', link: '/guide/network-diagnostics' },\n      { text: '常见问题'"
+    )
+  )
+  expectMutationFailure('把 AI 产品访问移回帮助与支持', 'docs/.vitepress/navigation.ts', (raw) =>
+    raw.replace(
+      "text: '帮助与支持',\n    items: [\n      { text: '常见问题'",
+      "text: '帮助与支持',\n    items: [\n      { text: 'AI 产品访问', link: '/guide/chatgpt-access' },\n      { text: '常见问题'"
+    )
+  )
+  expectMutationFailure('把网络诊断任务说明复制回常见问题', 'docs/guide/faq.md', (raw) =>
+    raw.replace('这里保留网络诊断之外仍需要单独说明的常见问题。', '这里重新说明当前加速状态、连接检测和查询网址走向。')
+  )
+  expectMutationFailure('删除经产品确认的 FAQ 问题', 'docs/guide/faq.md', (raw) =>
+    raw.replace('### 所有线路都能进行 Gemini、ChatGPT、Claude 等 AI 产品的访问吗？\n\n', '')
+  )
+  expectMutationFailure('恢复关闭系统防火墙建议', 'docs/guide/faq.md', (raw) =>
+    raw.replace('请保持系统防火墙开启。', '建议关闭或者降低网络防火墙的安全等级。')
   )
   console.log('\nGEO regression self-test passed.')
 } finally {

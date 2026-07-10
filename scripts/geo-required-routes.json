@@ -32,16 +32,6 @@
       "en": { "source": "docs/en/guide/network-diagnostics-node-speed.md", "route": "/en/guide/network-diagnostics-node-speed" }
     },
     {
-      "translationKey": "troubleshooting-index",
-      "zh": { "source": "docs/troubleshooting/index.md", "route": "/troubleshooting/" },
-      "en": { "source": "docs/en/troubleshooting/index.md", "route": "/en/troubleshooting/" }
-    },
-    {
-      "translationKey": "troubleshooting-client",
-      "zh": { "source": "docs/troubleshooting/client.md", "route": "/troubleshooting/client" },
-      "en": { "source": "docs/en/troubleshooting/client.md", "route": "/en/troubleshooting/client" }
-    },
-    {
       "translationKey": "privacy-policy",
       "zh": { "source": "docs/policies/privacy.md", "route": "/policies/privacy" },
       "en": { "source": "docs/en/policies/privacy.md", "route": "/en/policies/privacy" }

@@ -7,74 +7,34 @@ uiSurface: null
 locale: zh-Hans
 status: current
 owner: docs
-reviewStatus: needs-review
-lastVerified: null
+reviewStatus: verified
+lastVerified: 2026-07-10
 platforms: [chrome, edge]
 tools: []
 appliesTo: []
-sources: []
-title: 如何解锁New Bing、Copilot或者ChatGPT - 使用指南
-description: 如何用正确的姿势在中国大陆解锁New Bing、Copilot或者ChatGPT
+sources: ["human-product-decision@2026-07-10", "cloud/app/chromev2@1.5.10"]
+title: AI 产品访问指南
+description: 使用无忧行默认策略和合适的线路访问 OpenAI、Anthropic、Grok 等 AI 产品。
 ---
 
-# 如何解锁New Bing、Copilot或者ChatGPT
+# AI 产品访问指南
 
-## 解锁流程
+本页适用于 Chrome 和 Edge 的无忧行浏览器插件。OpenAI、Anthropic、Grok 等 AI 产品通常使用无忧行现有的默认策略，选择合适的线路即可。
 
-1️⃣ **第一步**，确保 **无忧行** 的 **控制面板 - 代理策略** 里没有<span style="color:blue;">`bing.com`</span>、<span style="color:blue;">`microsoft.com`</span>和<span style="color:blue;">`openai.com`</span>的访问策略：
+## 保持默认代理策略
 
-<img src="/images/jego-v1.5.9/dashboard-proxy-policy-empty-zh.png" alt="代理策略">
+打开**控制面板 → 代理策略**，保持无忧行现有的默认设置即可，不需要另外添加 AI 产品域名。
 
-::: danger 再次强调
-<span style="color:red;">**再次强调：**</span>
+<img src="/images/jego-v1.5.9/dashboard-proxy-policy-empty-zh.png" alt="无忧行代理策略默认界面">
 
-<span style="color:red;">解锁ChatGPT和New Bing无需设置代理策略。</span>
-:::
+## 选择合适的线路
 
-2️⃣ **第二步**，无忧行插件的模式处于<span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">全局</span>或者<span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">规则</span>均可，但服务器节点必须选择带有`[AI]`标注的节点：
+回到插件弹窗，选择**规则**模式，再选择适合该 AI 产品的线路。带 `[AI]` 标注的节点可以直接作为参考。
 
 <img src="/images/jego-v1.5.9/popup-paid-rules-ai-zh.png" alt="无忧行选择 AI 节点" width="280">
 
-✅ **连接检查完成**。下面的截图展示历史上成功加载 `Bing`、`Copilot` 和 `ChatGPT` 的页面；实际功能仍取决于第三方服务状态和账户资格：
+## 查看当前连接状态
 
-<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F8xAkeKaPFvJCAt1MuBYf_2Fimage_2.png" alt="New Bing ✌">
+想确认当前线路的工作状态，可以打开[网络诊断](/guide/network-diagnostics)，查看连接检测和网址走向。
 
-<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2Fz7RH5pwBUDwrBQdsdvah_2Fimage_3.png" alt="Copilot ✌">
-
-<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F8oyNaJcc0tFJdbungX6t_2Fimage_1.png" alt="ChatGPT ✌">
-
-::: info 就是这么简单
-
-以上步骤用于检查浏览器连接，不会更改或保证第三方账户资格。
-:::
-
----
-
-## 常见问题：打不开New Bing、Copilot或者ChatGPT的网站了
-
-请**优化本地网络和浏览器的环境**， 按照下面的步骤处理一下，<span style="background-color:red; color:white; padding:2px 6px; border-radius:3px;">每一步都很重要</span>：
-
-### 1. 网络环境
-1. 把路由器和本机的DNS改成阿里公共DNS: [alidns.com](http://alidns.com/) （[查看DNS设置帮助](https://www.alidns.com/knowledge?type=SETTING_DOCS#user_windows)）
-   * 按设置帮助在DNS服务器地址中输入`223.5.5.5` 和 `223.6.6.6`。
-2. 清理DNS缓存：
-   * 点击`开始`->`运行`，输入`CMD`进入命令行模式。
-   * 在命令行里输入`ipconfig/flushdns`按回车。
-3. 关闭本地其他代理软件，如网易UU、讯飞游戏加速器、V2rayN、Clash等软件干扰
-4. 打开 `系统设置`->`网络和Internet`->`代理` ，设置：
-   * 自动检测设置：关闭
-   * 使用设置脚本：关闭
-   * 使用代理服务器：关闭
-
-### 2. 浏览器环境
-1. 升级浏览器至最新版本；如需清理，只删除发生问题域名的 Cookies 和缓存后重启浏览器
-2. 升级无忧行至[最新版本](/guide/keep-updated)，并只保留无忧行暂时禁用其他浏览器插件
-3. 将无忧行设置为规则模式（免费为开启）
-4. 重启浏览器
-
-### 3. 再次访问
-* 在无痕模式开启无忧行，对比未登录和登录状态，区分连接故障与账户资格问题。
-* 使用本人持有、资料真实并符合第三方条款的账户，按目标网站的正式资格和地区规则操作。
-* 然后再次访问 New Bing、Copilot 或 ChatGPT；若只有登录后失败，请联系对应平台支持。
-
-> 能访问New Bing或者ChatGPT之后，就可以尝试逐个开启其他插件或者软件了，目的是排查插件之间的相互影响。
+AI 产品登录后的账户与功能提示，以该产品页面的说明为准。

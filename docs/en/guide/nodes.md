@@ -45,7 +45,7 @@ The full path when you visit an overseas website (e.g. YouTube) looks roughly li
 Jego can optimize only part of this path. Home Wi-Fi, the local ISP, cross-border links, node load, and the destination website all affect the result. A premium node cannot fix a poor local connection by itself.
 
 ::: warning Example
-If your local connection to the cross-border backbone entry point is already congested, every route after that point will also be affected. Start by checking the local network environment. See: [Check the local network and browser](/en/guide/faq#gemini-chatgpt-claude-or-another-website-does-not-connect)
+If your local connection to the cross-border backbone entry point is already congested, every route after that point will also be affected. This part of the connection is still determined by the home network and local ISP; the Jego route starts working after the connection reaches the Jego service.
 :::
 
 ## <span style="color:orange;">Edge Network (Overseas)</span>

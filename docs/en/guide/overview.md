@@ -42,7 +42,8 @@ Current membership price, expiration, and benefits appear in the signed-in Contr
 
 - See modes and nodes in the popup: [Extension popup](/en/guide/plugin-features)
 - Check a website connection: [Diagnostics](/en/guide/network-diagnostics)
-- Find steps for a specific problem: [Troubleshooting](/en/troubleshooting/)
+- Check a connection and website route: [Diagnostics](/en/guide/network-diagnostics)
+- Read short answers: [FAQ](/en/guide/faq)
 
 ## 🌐 Available in 20 interface languages
 

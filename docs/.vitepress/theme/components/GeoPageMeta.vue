@@ -69,8 +69,8 @@ const replacements = computed(() => (tool.value?.replacements || [])
         {{ isEnglish ? 'Subscription service' : '订阅服务' }}
       </a>
       <span aria-hidden="true">·</span>
-      <a :href="`${isEnglish ? '/en' : ''}/troubleshooting/client`">
-        {{ isEnglish ? 'Client troubleshooting' : '客户端故障排查' }}
+      <a :href="`${isEnglish ? '/en' : ''}/guide/support`">
+        {{ isEnglish ? 'Contact support' : '联系支持' }}
       </a>
     </p>
   </div>

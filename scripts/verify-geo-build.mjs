@@ -166,8 +166,8 @@ for (const page of pages) {
     }
     const faqNodes = graph.filter((node) => node['@type'] === 'FAQPage')
     const isFaq = page.route === '/guide/faq' || page.route === '/en/guide/faq'
-    if (isFaq && (faqNodes.length !== 1 || !faqNodes[0].mainEntity?.length)) {
-      fail(`真实 FAQ 页面缺少 FAQPage：${page.route}`)
+    if (isFaq && (faqNodes.length !== 1 || faqNodes[0].mainEntity?.length < 5)) {
+      fail(`真实常见问题页面缺少五项 FAQPage 问答：${page.route}`)
     }
     if (!isFaq && faqNodes.length) fail(`非 FAQ 页面生成了 FAQPage：${page.route}`)
   } catch {
@@ -233,8 +233,8 @@ const requiredRelationships = [
   ['/en/guide/plugin-features', ['/en/guide/mode-selection', '/en/guide/node-selection', '/en/guide/proxy-strategy', '/en/guide/network-diagnostics', '/en/guide/network-diagnostics-node-speed']],
   ['/guide/network-diagnostics', ['/guide/proxy-strategy']],
   ['/en/guide/network-diagnostics', ['/en/guide/proxy-strategy']],
-  ['/guide/network-diagnostics-node-speed', ['/guide/network-diagnostics', '/guide/node-selection', '/troubleshooting/', '/guide/support']],
-  ['/en/guide/network-diagnostics-node-speed', ['/en/guide/network-diagnostics', '/en/guide/node-selection', '/en/troubleshooting/', '/en/guide/support']],
+  ['/guide/network-diagnostics-node-speed', ['/guide/network-diagnostics', '/guide/node-selection', '/guide/faq', '/guide/support']],
+  ['/en/guide/network-diagnostics-node-speed', ['/en/guide/network-diagnostics', '/en/guide/node-selection', '/en/guide/faq', '/en/guide/support']],
   ['/guide/proxy-strategy', ['/guide/network-diagnostics']],
   ['/en/guide/proxy-strategy', ['/en/guide/network-diagnostics']],
   ['/subscription/', ['/subscription/devices/windows', '/subscription/devices/mac', '/subscription/devices/ios', '/subscription/devices/android', '/subscription/devices/linux', '/subscription/devices/harmony']],

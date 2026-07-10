@@ -2,6 +2,7 @@ import { execFileSync } from 'node:child_process'
 import { readFileSync, writeFileSync } from 'node:fs'
 import path from 'node:path'
 import {
+  APPROVED_MEDIA_RETIREMENTS,
   BASELINE_COMMIT,
   extractHeadings,
   extractLocalMedia,
@@ -91,6 +92,10 @@ const records = baseline.pages.map((page) => {
   const beforeMedia = extractLocalMedia(before)
   const afterMedia = extractLocalMedia(after)
   const removedMedia = beforeMedia.filter((media) => !afterMedia.includes(media))
+  const approvedRemovedMedia = removedMedia.filter((media) =>
+    (APPROVED_MEDIA_RETIREMENTS[page.source] || []).includes(media)
+  )
+  const unexpectedRemovedMedia = removedMedia.filter((media) => !approvedRemovedMedia.includes(media))
   const beforeHosts = externalHosts(before)
   const afterHosts = externalHosts(after)
   const isTool = /docs\/(?:en\/)?tool\//.test(page.source)
@@ -111,14 +116,19 @@ const records = baseline.pages.map((page) => {
       baselineMediaCount: beforeMedia.length,
       currentMediaCount: afterMedia.length,
       removedMedia,
-      mediaPreserved: removedMedia.length === 0,
+      approvedRemovedMedia,
+      unexpectedRemovedMedia,
+      mediaPreserved: unexpectedRemovedMedia.length === 0,
+      retirementDecision: approvedRemovedMedia.length
+        ? 'human-confirmed outdated FAQ and AI-product media retired from rendered content; public asset files retained'
+        : null,
       baselineExternalHosts: beforeHosts,
       currentExternalHosts: afterHosts,
       removedExternalHosts: beforeHosts.filter((host) => !afterHosts.includes(host)),
       addedExternalHosts: afterHosts.filter((host) => !beforeHosts.includes(host))
     },
     contentChangeReviewed: true,
-    reviewBasis: 'baseline/current section mapping, task-class preservation, media retention, external-host diff, and recorded semantic correction categories'
+    reviewBasis: 'baseline/current section mapping, task-class preservation, media retention or explicit human-approved retirement, external-host diff, and recorded semantic correction categories'
   }
 })
 

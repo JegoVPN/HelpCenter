@@ -1,7 +1,7 @@
 ---
 translationKey: guide-vibe-coding
 contentType: how-to
-product: browser-extension
+product: subscription-service
 productArea: scenario-tutorial
 uiSurface: null
 locale: zh-Hans
@@ -9,8 +9,8 @@ status: current
 owner: docs
 reviewStatus: needs-review
 lastVerified: null
-platforms: [chrome, edge]
-tools: []
+platforms: [windows, macos, linux]
+tools: [flclash]
 appliesTo: []
 sources: []
 title: 如何使用无忧行进行 Vibe Coding - AI 编程工具代理配置教程
@@ -23,7 +23,7 @@ description: 以 FlClash 为例，为 IDE 或 CLI 配置并验证代理路径，
 
 <img src="/images/ClaudeCode.png" alt="Claude Code AI 编程工具界面" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); margin: 20px 0;">
 
-本教程以 FlClash 为例，介绍怎样给 IDE 和命令行工具配置代理。不同开发工具对系统代理、环境变量和 TUN 的支持不同，完成后请用实际工具测试一次。
+本教程使用无忧行订阅服务，以 FlClash 为例为 IDE 和命令行工具配置代理。
 
 ::: tip 适用范围
 本教程以 [FlClash](/subscription/clients/flclash) 的桌面界面为例。其他客户端的菜单会有差别，可以从[按设备安装](/subscription/#按设备安装)进入对应的完整教程。
