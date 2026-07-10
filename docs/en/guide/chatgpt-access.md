@@ -21,6 +21,10 @@ description: Use Jego's default rules and a suitable route for OpenAI, Anthropic
 
 This page is for the Jego browser extension in Chrome and Edge. OpenAI, Anthropic, Grok, and similar AI products normally work with Jego's existing default rules. Choose a suitable route for the product.
 
+**Gemini example**
+
+<img src="/images/jego-v1.5.10/ai-gemini-jego-en.png" alt="Access Gemini with the Jego browser extension">
+
 ## Keep the default Proxy Rules
 
 Open **Control Panel → Proxy Rules** and keep Jego's existing default settings. You do not need to add separate AI product domains.
@@ -32,9 +36,3 @@ Open **Control Panel → Proxy Rules** and keep Jego's existing default settings
 Return to the extension popup, select **Rules** mode, and then choose a route suitable for the AI product. A node marked `[AI]` is a useful starting point.
 
 <img src="/images/jego-v1.5.9/popup-paid-rules-ai-en.png" alt="Choose an AI node in Jego" width="280">
-
-## View the current connection status
-
-To confirm how the current route is working, open [Diagnostics](/en/guide/network-diagnostics) and view Connection Check and the website route.
-
-For account and feature messages shown after sign-in, follow the information on the AI product's page.
