@@ -322,6 +322,9 @@ if (!baselineMode) {
       if (catalog.jegoSupport?.[slug] !== 'unsupported' || tool?.recommendation !== 'not-recommended') {
         fail(`已确认的 Jego 不支持状态发生回退：${slug}`)
       }
+      if (slug === 'oneclick' && tool?.lifecycle !== 'discontinued') {
+        fail('OneClick 已确认停止更新，lifecycle 必须保持 discontinued')
+      }
       for (const locale of ['zh', 'en']) {
         const source = `docs/${locale === 'en' ? 'en/' : ''}tool/${slug}.md`
         const page = pages.find((entry) => entry.source === source)
@@ -367,23 +370,6 @@ if (!baselineMode) {
     }
   }
 
-  const deviceCatalogPages = {
-    'docs/devices/linux.md': ['zh', 'linux'],
-    'docs/en/devices/linux.md': ['en', 'linux'],
-    'docs/devices/harmony.md': ['zh', 'harmonyos'],
-    'docs/en/devices/harmony.md': ['en', 'harmonyos']
-  }
-  for (const [source, [locale, platform]] of Object.entries(deviceCatalogPages)) {
-    const page = pages.find((entry) => entry.source === source)
-    if (!page) continue
-    const expected = platform
-      ? `<ToolCatalog locale="${locale}" platform="${platform}" recommended-only />`
-      : `<ToolCatalog locale="${locale}" />`
-    if (!page.raw.includes(expected)) fail(`设备页未从唯一 catalog 渲染：${source}`)
-    if (/推荐使用下列软件|### Recommended Software|\*\*Recommended\*\*/.test(page.raw)) {
-      fail(`设备页仍含第二份手工推荐表：${source}`)
-    }
-  }
   for (const [source, headings, expectedLinks, firstClient, secondClient] of [
     ['docs/devices/windows.md', ['### 推荐客户端', '### 其他客户端', '### 历史教程'], 6, 'flclash', 'clashverge'],
     ['docs/en/devices/windows.md', ['### Recommended clients', '### Other clients', '### Historical guides'], 6, 'flclash', 'clashverge'],
@@ -392,11 +378,15 @@ if (!baselineMode) {
     ['docs/devices/ios.md', ['### 推荐客户端', '### 历史教程'], 6, 'shadowrocket', 'sing-boxforapple'],
     ['docs/en/devices/ios.md', ['### Recommended clients', '### Historical guides'], 6, 'shadowrocket', 'sing-boxforapple'],
     ['docs/devices/android.md', ['### 推荐客户端', '### 其他客户端', '### 历史教程'], 7, 'sing-boxforandroid', 'flclash'],
-    ['docs/en/devices/android.md', ['### Recommended clients', '### Other clients', '### Historical guides'], 7, 'sing-boxforandroid', 'flclash']
+    ['docs/en/devices/android.md', ['### Recommended clients', '### Other clients', '### Historical guides'], 7, 'sing-boxforandroid', 'flclash'],
+    ['docs/devices/linux.md', ['### 推荐客户端', '### 其他客户端'], 4, 'flclash', 'clashverge'],
+    ['docs/en/devices/linux.md', ['### Recommended clients', '### Other clients'], 4, 'flclash', 'clashverge'],
+    ['docs/devices/harmony.md', ['### 实验性客户端', '### 推荐客户端', '### 旧版鸿蒙安装界面参考'], 3, 'clashbox', 'flclash'],
+    ['docs/en/devices/harmony.md', ['### Experimental client', '### Recommended clients', '### Older HarmonyOS interface reference'], 3, 'clashbox', 'flclash']
   ]) {
     const raw = pages.find((entry) => entry.source === source)?.raw || ''
     if (/<details class="subscription-more-clients">|<ToolCatalog\b/.test(raw) || !headings.every((heading) => raw.includes(heading))) {
-      fail(`Windows/macOS/iOS/Android 设备页必须使用直接展开的分组列表，不得恢复折叠区或工具表格：${source}`)
+      fail(`设备指南必须使用直接展开的分组列表，不得恢复折叠区或工具表格：${source}`)
     }
     if (raw.split('class="client-guide-link"').length !== expectedLinks + 1) {
       fail(`设备页客户端图标与名称的同行数量不正确：${source}`)
@@ -405,6 +395,28 @@ if (!baselineMode) {
     const secondIndex = raw.indexOf(`subscription/clients/${secondClient}`)
     if (firstIndex < 0 || secondIndex < 0 || firstIndex > secondIndex) {
       fail(`设备页推荐客户端的首项顺序不正确：${source}`)
+    }
+  }
+
+  for (const [source, h1, title] of [
+    ['docs/devices/windows.md', 'Windows 翻墙指南', 'Windows 翻墙指南 - 设备支持'],
+    ['docs/devices/mac.md', 'macOS 翻墙指南', 'macOS 翻墙指南 - 设备支持'],
+    ['docs/devices/ios.md', 'iPhone / iPad 翻墙指南', 'iPhone / iPad 翻墙指南 - 设备支持'],
+    ['docs/devices/android.md', 'Android 翻墙指南', 'Android 翻墙指南 - 设备支持'],
+    ['docs/devices/linux.md', 'Linux 翻墙指南', 'Linux 翻墙指南 - 设备支持'],
+    ['docs/devices/harmony.md', 'HarmonyOS 翻墙指南', 'HarmonyOS 翻墙指南 - 设备支持'],
+    ['docs/en/devices/windows.md', 'Windows Proxy Guide', 'Windows Proxy Guide - Device Support'],
+    ['docs/en/devices/mac.md', 'macOS Proxy Guide', 'macOS Proxy Guide - Device Support'],
+    ['docs/en/devices/ios.md', 'iPhone / iPad Proxy Guide', 'iPhone / iPad Proxy Guide - Device Support'],
+    ['docs/en/devices/android.md', 'Android Proxy Guide', 'Android Proxy Guide - Device Support'],
+    ['docs/en/devices/linux.md', 'Linux Proxy Guide', 'Linux Proxy Guide - Device Support'],
+    ['docs/en/devices/harmony.md', 'HarmonyOS Proxy Guide', 'HarmonyOS Proxy Guide - Device Support']
+  ]) {
+    const page = pages.find((entry) => entry.source === source)
+    if (!page) continue
+    const { body } = splitFrontmatter(page.raw)
+    if (page.frontmatter.title !== title || !body.split('\n').includes(`# ${h1}`)) {
+      fail(`设备指南标题未按 Windows 页面规则统一：${source}`)
     }
   }
 

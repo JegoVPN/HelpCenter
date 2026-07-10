@@ -13,11 +13,11 @@ platforms: [windows]
 tools: []
 appliesTo: []
 sources: []
-title: Windows 电脑怎么翻墙 - 设备支持
+title: Windows 翻墙指南 - 设备支持
 description: Microsoft Windows，通称Windows操作系统，是微软以图形用户界面为主推出的一系列专有商业软件操作系统。在全世界范围内个人电脑操作系统的处于垄断地位。
 ---
 
-# Windows 电脑怎么翻墙
+# Windows 翻墙指南
 
 Microsoft Windows，通称Windows操作系统，是微软以图形用户界面为主推出的一系列专有商业软件操作系统。在全世界范围内个人电脑操作系统的处于垄断地位。
 

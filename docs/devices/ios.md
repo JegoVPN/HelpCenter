@@ -13,11 +13,11 @@ platforms: [ios, ipados]
 tools: []
 appliesTo: []
 sources: []
-title: 苹果手机/iPad 怎么翻墙 - 设备支持
+title: iPhone / iPad 翻墙指南 - 设备支持
 description: iOS是苹果公司为其移动设备所开发的专有移动操作系统，为其公司的许多移动设备提供操作界面，支持设备包括iPhone、iPad、iPod touch和Apple TV。
 ---
 
-# 苹果手机/iPad 怎么翻墙
+# iPhone / iPad 翻墙指南
 
 iOS是苹果公司为其移动设备所开发的专有移动操作系统，为其公司的许多移动设备提供操作界面，支持设备包括iPhone、iPad、iPod touch和Apple TV。
 
@@ -65,4 +65,4 @@ Loon 的第三方项目可能仍在维护，但 Jego 已不再支持该客户端
 
 <div class="client-guide-link"><img src="/images/image_oneclick_3.png" width="26" height="26" alt="OneClick图标"><a href="/subscription/clients/oneclick">OneClick</a></div>
 
-OneClick 的第三方项目可能仍在维护，但 Jego 已不再支持该客户端；本入口仅保留历史教程，现有用户应按工具页迁移。
+OneClick 已停止更新，Jego 也不再支持该客户端；本入口仅保留历史教程，现有用户可以按工具页迁移。

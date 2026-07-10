@@ -5,7 +5,7 @@ clientKind: null
 minimumOs: []
 architectures: []
 subscriptionFormats: []
-lifecycle: current
+lifecycle: discontinued
 recommendation: not-recommended
 securityStatus: needs-review
 supportedVersions: []
@@ -26,7 +26,7 @@ tools: [oneclick]
 appliesTo: []
 sources: [https://apps.apple.com/us/app/id1545555197, https://www.oneclick.earth/]
 title: OneClick - 工具软件
-description: OneClick 第三方项目可能仍在维护，但 Jego 已不再支持；本页保留历史教程并提供受支持替代项。
+description: OneClick 已停止更新，Jego 已不再支持；本页保留历史教程并提供受支持替代项。
 ---
 
 # OneClick
@@ -34,7 +34,7 @@ description: OneClick 第三方项目可能仍在维护，但 Jego 已不再支�
 OneClick是一款免费的支持主流加密协议的上网工具。
 
 ::: danger 不推荐使用
-OneClick 第三方项目可能仍在维护，但 Jego 已不再支持其当前订阅协议，因此不推荐继续用于 Jego。
+OneClick 已停止更新，Jego 也不再支持该客户端。本页保留原有教程，方便现有用户查阅和迁移。
 
 请使用[无忧行推荐的客户端](/subscription/#_1、关于应该使用什么客户端)
 :::

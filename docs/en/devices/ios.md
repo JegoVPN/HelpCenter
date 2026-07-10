@@ -13,11 +13,11 @@ platforms: [ios, ipados]
 tools: []
 appliesTo: []
 sources: []
-title: How to Use Proxy on iPhone/iPad - Device Support
+title: iPhone / iPad Proxy Guide - Device Support
 description: iOS is a proprietary mobile operating system developed by Apple Inc. for its mobile devices, providing operating interface for many of the company's mobile devices, supporting devices including iPhone, iPad, iPod touch and Apple TV.
 ---
 
-# How to Use Proxy on iPhone/iPad
+# iPhone / iPad Proxy Guide
 
 iOS is a proprietary mobile operating system developed by Apple Inc. for its mobile devices, providing operating interface for many of the company's mobile devices, supporting devices including iPhone, iPad, iPod touch and Apple TV.
 
@@ -65,4 +65,4 @@ The third-party Loon project may still be maintained, but Jego no longer support
 
 <div class="client-guide-link"><img src="/images/image_oneclick_3.png" width="26" height="26" alt="OneClick icon"><a href="/en/subscription/clients/oneclick">OneClick</a></div>
 
-The third-party OneClick project may still be maintained, but Jego no longer supports this client. This entry preserves the historical tutorial; existing users should follow its migration alternatives.
+OneClick is no longer updated and is no longer supported by Jego. This entry preserves the historical tutorial and its migration alternatives.

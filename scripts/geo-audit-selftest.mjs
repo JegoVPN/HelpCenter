@@ -80,6 +80,9 @@ try {
   expectMutationFailure('回退用户确认的 Jego 支持状态', 'docs/.vitepress/data/tool-catalog.json', (raw) =>
     raw.replace('"v2rayn": "unsupported"', '"v2rayn": "supported"')
   )
+  expectMutationFailure('把 OneClick 改回仍在更新', 'docs/.vitepress/data/tool-catalog.json', (raw) =>
+    raw.replace('"slug": "oneclick", "name": { "zh": "OneClick", "en": "OneClick" }, "platforms": ["ios", "ipados", "android"], "architectures": [], "subscriptionFormats": [], "lifecycle": "discontinued"', '"slug": "oneclick", "name": { "zh": "OneClick", "en": "OneClick" }, "platforms": ["ios", "ipados", "android"], "architectures": [], "subscriptionFormats": [], "lifecycle": "current"')
+  )
   expectMutationFailure('删除官方隐私来源', 'docs/policies/privacy.md', (raw) =>
     raw.replace('sources: [https://jegocloud.com/policy]', 'sources: []')
   )
@@ -169,6 +172,15 @@ try {
   )
   expectMutationFailure('把 Android 工具表格加回来', 'docs/devices/android.md', (raw) =>
     raw.replace('### 推荐客户端', '<ToolCatalog locale="zh" platform="android" />\n\n### 推荐客户端')
+  )
+  expectMutationFailure('把 Linux 工具表格加回来', 'docs/devices/linux.md', (raw) =>
+    raw.replace('### 推荐客户端', '<ToolCatalog locale="zh" platform="linux" />\n\n### 推荐客户端')
+  )
+  expectMutationFailure('把 HarmonyOS 工具表格加回来', 'docs/devices/harmony.md', (raw) =>
+    raw.replace('### 推荐客户端', '<ToolCatalog locale="zh" platform="harmonyos" />\n\n### 推荐客户端')
+  )
+  expectMutationFailure('把设备页标题改回旧写法', 'docs/devices/ios.md', (raw) =>
+    raw.replace('# iPhone / iPad 翻墙指南', '# 苹果手机/iPad 怎么翻墙')
   )
   expectMutationFailure('删除全局图标文字同行样式', 'docs/.vitepress/theme/style.css', (raw) =>
     raw.replace('.vp-doc :is(h2, h3, h4) > img', '.vp-doc h2 > img')

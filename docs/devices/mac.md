@@ -13,11 +13,11 @@ platforms: [macos]
 tools: []
 appliesTo: []
 sources: []
-title: 苹果Mac电脑怎么翻墙 - 设备支持
+title: macOS 翻墙指南 - 设备支持
 description: macOS是苹果公司推出的使用图形用户界面的操作系统，为麦金塔（Macintosh，简称 Mac）系列电脑的操作系统。在桌面操作系统中，macOS的市占率位居第二。
 ---
 
-# 苹果Mac电脑怎么翻墙
+# macOS 翻墙指南
 
 macOS是苹果公司推出的使用图形用户界面的操作系统，为麦金塔（Macintosh，简称 Mac）系列电脑的操作系统。在桌面操作系统中，macOS的市占率位居第二。
 

@@ -13,11 +13,11 @@ platforms: [macos]
 tools: []
 appliesTo: []
 sources: []
-title: How to Use Proxy on Mac - Device Support
+title: macOS Proxy Guide - Device Support
 description: macOS is an operating system with graphical user interface launched by Apple Inc., serving as the operating system for the Macintosh (Mac for short) series of computers. Among desktop operating systems, macOS ranks second in market share.
 ---
 
-# How to Use Proxy on Mac
+# macOS Proxy Guide
 
 macOS is an operating system with graphical user interface launched by Apple Inc., serving as the operating system for the Macintosh (Mac for short) series of computers. Among desktop operating systems, macOS ranks second in market share.
 

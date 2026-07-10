@@ -13,11 +13,11 @@ platforms: [harmonyos]
 tools: []
 appliesTo: []
 sources: []
-title: 华为鸿蒙手机怎么翻墙 - 设备支持
+title: HarmonyOS 翻墙指南 - 设备支持
 description: 鸿蒙（英语：HarmonyOS，简称HMOS，开发代号Ark，正式名称为华为终端鸿蒙智能设备操作系统软件）
 ---
 
-# 华为鸿蒙手机怎么翻墙
+# HarmonyOS 翻墙指南
 
 鸿蒙（英语：HarmonyOS，简称HMOS，开发代号Ark，正式名称为华为终端鸿蒙智能设备操作系统软件）
 
@@ -29,48 +29,48 @@ description: 鸿蒙（英语：HarmonyOS，简称HMOS，开发代号Ark，正式
 
 </div>
 
-## 当前工具状态
+## <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FhUBqYs4CpmMcueAi690m_2FHMOS_Logo_Icon_1.svg" width="38" height="28" alt="HarmonyOS图标"> HarmonyOS 5 翻墙客户端
 
-先看下表确认工具是否能使用 Jego，再进入与你系统版本对应的教程。
+HarmonyOS 5 / NEXT 目前可以查看 **ClashBox** 教程。它仍是实验性客户端，安装需要华为开发者账号或境外华为应用市场账号。
 
-<ToolCatalog locale="zh" platform="harmonyos" recommended-only />
+### 实验性客户端
 
-## <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FhUBqYs4CpmMcueAi690m_2FHMOS_Logo_Icon_1.svg" width="38" height="28" alt="HarmonyOS图标"> HarmonyOS 5(鸿蒙) 设备上能用的代理工具
+<div class="client-guide-link"><img src="/images/clashbox-logo-new.png" width="26" height="26" alt="ClashBox图标"><a href="/subscription/clients/clashbox">ClashBox</a></div>
 
-<img src="/images/clashbox-logo-new.png" width="26" height="26" alt="ClashBox图标"> [ClashBox](/subscription/clients/clashbox) <span style="color:green;">`🧪实验品`</span>
+ClashBox / ClashNEXT 是面向 HarmonyOS NEXT（OpenHarmony）的代理客户端，使用 Mihomo（原 ClashMeta）内核。满足上面的安装条件时，可以进入完整教程继续操作。
 
-ClashBox/ClashNEXT是首个基于Navigation框架的HarmonyOS NEXT(OpenHarmony)平台的代理软件，使用改版的Mihomo(ClashMeta)内核。
+## <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FhUBqYs4CpmMcueAi690m_2FHMOS_Logo_Icon_1.svg" width="38" height="28" alt="HarmonyOS图标"> HarmonyOS 1.0–4.3 翻墙客户端
 
-::: danger 安装条件
-ClashBox/ClashNEXT 的安装条件非常硬核，需要华为开发者账户或者华为应用市场境外账户。
-:::
+这些版本可以运行兼容的 Android 客户端。新用户可以从 **FlClash** 或 **sing-box for Android** 开始。
 
-## <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FhUBqYs4CpmMcueAi690m_2FHMOS_Logo_Icon_1.svg" width="38" height="28" alt="HarmonyOS图标"> HarmonyOS 1.0至4.3(鸿蒙) 设备上能用的代理工具
+### 推荐客户端
 
-在旧版 HarmonyOS 上，部分用户通过兼容层运行 Android 客户端。优先从华为应用市场或项目官方来源安装，并保持系统安全保护开启。
+<div class="client-guide-link"><img src="/images/android_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2Fu2sHeQjHJurcgVhJB1zO_2Ficon_3.png" width="26" height="26" alt="FlClash图标"><a href="/subscription/clients/flclash">FlClash</a></div>
 
-### 历史界面参考：纯净模式与增强保护
+FlClash 是一款简单易用的多平台代理客户端，完整教程包含安装、导入订阅和连接步骤。
 
-以下截图用于识别旧版安全设置。若系统阻止安装，先核对应用来源、签名和权限；官方渠道仍无法安装时，直接选择当前系统支持的工具。
+<div class="client-guide-link"><img src="/images/android_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FX6LBfzRlMdWyQVvPC9eg_2Fimage_2.png" width="26" height="26" alt="sing-box图标"><a href="/subscription/clients/sing-boxforandroid">sing-box for Android</a></div>
+
+sing-box for Android 是开源 Android 客户端，可以从完整教程进入安装和订阅导入步骤。
+
+### 旧版鸿蒙安装界面参考
+
+以下截图保留用于辨认旧版鸿蒙的安全设置和客户端界面。安装时优先使用华为应用市场或项目官方来源，并保持系统安全保护开启。
 
 <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FlOmPh9FmJQxTo1pm8Jsv_2FScreenshot_20250728_172057_com_android_settings_3.jpg" alt="纯净模式设置1" width="300"> <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FDveGgHccNfs6rbpP0MDI_2FScreenshot_20250728_172103_com_huawei_security_privacycenter_1.jpg" alt="纯净模式设置2" width="300">
 
-#### 安装 FlClash
+#### FlClash 安装与启动
 
 完整版教程请移步 [FlClash](/subscription/clients/flclash)
 
 <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FvB9dTjQXfG9lDK06rDTM_2FScreenshot_20250728_172648_com_huawei_appmarket_2.jpg" alt="FlClash安装1" width="300"> <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FVEv5M4JTvd9MvEupS01U_2FScreenshot_20250728_172334_com_huawei_appmarket_3.jpg" alt="FlClash安装2" width="300">
 
-#### 启动 FlClash
-
 <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2Ff2xMTCJIx7S7NuKXWdir_2FScreenshot_20250728_173020_com_android_vpndialogs_1.jpg" alt="FlClash启动1" width="300"> <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FyvqWWA3WTAf2uBGdMeYD_2FScreenshot_20250728_173808_com_follow_clash_2.jpg" alt="FlClash启动2" width="300">
 
-#### 安装 sing-box for Android
+#### sing-box for Android 安装与启动
 
 完整版教程请移步 [sing-box for Android](/subscription/clients/sing-boxforandroid)
 
 <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FyKRacwkMLGa4MTyzkLKF_2FScreenshot_20250728_173345_com_huawei_appmarket_3.jpg" alt="sing-box安装" width="300">
-
-#### 启动 sing-box
 
 <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FBQfwN7xlCao01P3bCfBM_2FScreenshot_20250728_173617_com_android_vpndialogs_1.jpg" alt="sing-box启动1" width="300"> <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2Fq5glu31ZimAgjcxXLi5E_2FScreenshot_20250728_173755_io_nekohasekai_sfa_2.jpg" alt="sing-box启动2" width="300">

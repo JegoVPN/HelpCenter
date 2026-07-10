@@ -13,11 +13,11 @@ platforms: [android]
 tools: []
 appliesTo: []
 sources: []
-title: 安卓手机怎么翻墙 - 设备支持
+title: Android 翻墙指南 - 设备支持
 description: Android/安卓是一个基于Linux核心与其他开源软件的开放源代码的移动操作系统，由Google成立的开放手持设备联盟持续领导与开发。
 ---
 
-# 安卓手机怎么翻墙
+# Android 翻墙指南
 
 Android/安卓是一个基于Linux核心与其他开源软件的开放源代码的移动操作系统，由Google成立的开放手持设备联盟持续领导与开发。
 
@@ -67,4 +67,4 @@ Clash 在 Android系统上的图形用户界面，于2023年11月3日删库并�
 
 <div class="client-guide-link"><img src="/images/android_oneclick_8.png" width="26" height="26" alt="OneClick图标"><a href="/subscription/clients/oneclick">OneClick</a></div>
 
-OneClick 的第三方项目可能仍在维护，但 Jego 已不再支持该客户端；本入口仅保留历史教程，现有用户应按工具页迁移。
+OneClick 已停止更新，Jego 也不再支持该客户端；本入口仅保留历史教程，现有用户可以按工具页迁移。

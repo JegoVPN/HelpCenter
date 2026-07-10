@@ -13,11 +13,11 @@ platforms: [android]
 tools: []
 appliesTo: []
 sources: []
-title: How to Use Proxy on Android - Device Support
+title: Android Proxy Guide - Device Support
 description: Android is an open source mobile operating system based on Linux kernel and other open source software, continuously led and developed by the Open Handset Alliance established by Google.
 ---
 
-# How to Use Proxy on Android
+# Android Proxy Guide
 
 Android is an open source mobile operating system based on Linux kernel and other open source software, continuously led and developed by the Open Handset Alliance established by Google.
 
@@ -67,4 +67,4 @@ Clash's graphical user interface on Android systems, deleted repository and disc
 
 <div class="client-guide-link"><img src="/images/android_oneclick_8.png" width="26" height="26" alt="OneClick icon"><a href="/en/subscription/clients/oneclick">OneClick</a></div>
 
-The third-party OneClick project may still be maintained, but Jego no longer supports this client. This entry preserves the historical tutorial; existing users should follow its migration alternatives.
+OneClick is no longer updated and is no longer supported by Jego. This entry preserves the historical tutorial and its migration alternatives.

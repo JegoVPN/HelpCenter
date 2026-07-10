@@ -13,11 +13,11 @@ platforms: [windows]
 tools: []
 appliesTo: []
 sources: []
-title: How to Use Proxy on Windows PC - Device Support
+title: Windows Proxy Guide - Device Support
 description: Microsoft Windows, commonly known as Windows operating system, is a series of proprietary commercial software operating systems launched by Microsoft with graphical user interface as the main feature. It has a monopoly position in personal computer operating systems worldwide.
 ---
 
-# How to Use Proxy on Windows PC
+# Windows Proxy Guide
 
 Microsoft Windows, commonly known as Windows operating system, is a series of proprietary commercial software operating systems launched by Microsoft with graphical user interface as the main feature. It has a monopoly position in personal computer operating systems worldwide.
 

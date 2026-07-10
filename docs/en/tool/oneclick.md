@@ -5,7 +5,7 @@ clientKind: null
 minimumOs: []
 architectures: []
 subscriptionFormats: []
-lifecycle: current
+lifecycle: discontinued
 recommendation: not-recommended
 securityStatus: needs-review
 supportedVersions: []
@@ -26,7 +26,7 @@ tools: [oneclick]
 appliesTo: []
 sources: [https://apps.apple.com/us/app/id1545555197, https://www.oneclick.earth/]
 title: OneClick - Tools & Software
-description: The third-party OneClick project may still be maintained, but Jego no longer supports it; this historical guide provides supported alternatives.
+description: OneClick is no longer updated and Jego no longer supports it; this historical guide provides supported alternatives.
 ---
 
 # OneClick
@@ -34,7 +34,7 @@ description: The third-party OneClick project may still be maintained, but Jego 
 OneClick is a free internet tool that supports mainstream encryption protocols.
 
 ::: danger Not Recommended
-The third-party OneClick project may still be maintained, but Jego no longer supports its current subscription protocol and therefore does not recommend it for Jego.
+OneClick is no longer updated and is no longer supported by Jego. This page preserves the original guide for existing users who need to review it or migrate.
 
 Please use [Jego's recommended clients](/en/subscription/#_1-about-which-client-to-use)
 :::
