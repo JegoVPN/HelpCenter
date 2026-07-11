@@ -12,11 +12,6 @@
       "en": { "source": "docs/en/guide/control-panel.md", "route": "/en/guide/control-panel" }
     },
     {
-      "translationKey": "plugin-maintenance",
-      "zh": { "source": "docs/guide/plugin-maintenance.md", "route": "/guide/plugin-maintenance" },
-      "en": { "source": "docs/en/guide/plugin-maintenance.md", "route": "/en/guide/plugin-maintenance" }
-    },
-    {
       "translationKey": "plugin-permissions-privacy",
       "zh": { "source": "docs/guide/plugin-permissions-privacy.md", "route": "/guide/plugin-permissions-privacy" },
       "en": { "source": "docs/en/guide/plugin-permissions-privacy.md", "route": "/en/guide/plugin-permissions-privacy" }

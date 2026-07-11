@@ -14,7 +14,7 @@ tools: []
 appliesTo: []
 sources: []
 title: How to Pay - Membership Service
-description: Follow Jego payment steps and learn how to check checkout methods, order status, invoices, and receipts.
+description: Follow Jego's payment steps, and learn about the checkout methods, order status, invoices, and receipts.
 ---
 
 # How to Pay
@@ -23,9 +23,9 @@ description: Follow Jego payment steps and learn how to check checkout methods, 
 Checkout displays the current product currency, actual charge, and available payment methods. Exchange rates, fees, and channels can vary by region, issuer, and payment provider; verify the page before confirming payment.
 :::
 
-## Payment Path:
+## Payment Path
 
-Open the **Jego** extension, click **Control Panel**, then click **Upgrade Membership** in the left navigation bar, select the membership you want to purchase to start payment.
+Open the **Jego** extension, click **Dashboard**, then click **Upgrade VIP** in the left navigation bar (shown as **Renewal VIP** if you already have a paid membership), and select the membership you want to purchase to start payment.
 
 Before paying, check these items in order:
 
@@ -36,9 +36,11 @@ Before paying, check these items in order:
 
 ## Check Payment History after purchase
 
-After payment, open **Control Panel → Payment History** and check whether the order appears there.
+After payment, open **Dashboard → Payment History** and check whether the order appears there.
 
-## Payment Channels:
+Membership normally takes effect within a few minutes after payment. If it still has not arrived after a short wait, open **Dashboard → Tickets** and report the order.
+
+## Payment Channels
 
 Jego shows the payment methods currently available for your account and region. The entries below are methods you may see at checkout; use a method only when it appears on your checkout page.
 
@@ -52,7 +54,7 @@ A card issued in mainland China may be declined if online or cross-border paymen
 
 If checkout shows Alipay, verify the paying account, currency, and amount on its checkout before completing payment. Current availability is controlled by the provider.
 
-Wait for Alipay to return you to Jego after payment, or go back to the Control Panel and check **Payment History**.
+Wait for Alipay to return you to Jego after payment, or go back to the Dashboard and check **Payment History**.
 
 ### <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FP1bfW4Ha7dtRtCBM1TsO_2Fimage_2.png" width="104" height="33" alt="WeChat Pay icon"> WeChat Pay
 
@@ -76,24 +78,24 @@ You can use a funding source saved in your PayPal account. If checkout offers ca
 
 If checkout shows a card or digital-wallet option, follow its secure checkout. Supported card networks, wallets, currency, fees, and conversion are determined by the current checkout and issuer.
 
-Enter card details only on the payment provider's secure checkout. Keep the full card number, security code, SMS verification code, and Apple Pay / Google Pay verification information on your own payment device; support only needs redacted order details.
+Enter card details only on the payment provider's secure checkout. Jego support will never ask you for your full card number, card security code, SMS verification codes, or Apple Pay / Google Pay verification details.
 
 ## Common Questions
 
 ### Payment rejected by card issuer?
 
-If you are a user from mainland China and use UnionPay, Alipay or WeChat Pay bound to bank cards issued by Chinese banks for payment, there is a certain probability of payment failure, because some bank cards issued by Chinese banks do not have cross-border payment functions enabled by default.
+Payments with a bank card issued in mainland China — through UnionPay, Alipay, or WeChat Pay — occasionally fail, because some of these cards do not have cross-border payments enabled by default.
 
-At this time, you need to call UnionPay customer service center 95516 or your card issuer's customer service center to confirm whether your card has overseas transaction services enabled.
+Call the UnionPay customer service center 95516 or your card issuer to confirm that overseas transactions are enabled for the card.
 
-For cards with overseas transactions enabled and bearing the UnionPay logo, including debit cards, credit cards, and quasi-credit cards, all can be used.
+Any UnionPay-branded card with overseas transactions enabled can be used, whether it is a debit, credit, or quasi-credit card.
 
 ### Can I get an invoice for membership purchase?
 
 Jego is an overseas company and has not established a main company in mainland China, so we cannot issue mainland China invoices.
 
-For membership purchases, we can provide formal Invoices issued by overseas main companies. After each payment, the system will automatically send the Invoice to your registered email and provide a PDF version for download. If you need to reimburse the Invoice, please consult your finance department first.
+For membership purchases we provide a formal invoice issued by our overseas entity. After each payment the system automatically emails the invoice to your registered address, with a PDF available for download. If you plan to claim it as a business expense, check with your finance team first.
 
 You can also view your last 3 successful orders in **Jego Dashboard** → **Payment History**, and click to view, print, or download detailed Invoices.
 
-If you don't receive the relevant email, please check your email, including the spam folder. If you need further assistance, please contact our customer support team.
+If the email has not arrived, check your inbox, including the spam folder. For further help, please contact our [customer support team](/en/guide/support).

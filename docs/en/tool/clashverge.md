@@ -31,8 +31,6 @@ description: Install Clash Verge Rev, import the Jego subscription, and start th
 
 # Clash Verge Rev
 
-A multi-platform proxy client based on Mihomo (formerly ClashMeta) kernel, supporting Alpha version kernel switching. Clean and beautiful user interface with customizable theme colors.
-
 ::: info Welcome
 Welcome to the 2025 Clash Verge Rev usage tutorial
 :::
@@ -54,19 +52,21 @@ If you're unsure about your computer's system architecture, download the x64 arc
 #### macOS
 macOS 10 is not supported, please upgrade macOS to version 11 or higher.
 
+On Apple silicon (M-series) download the aarch64 dmg; on Intel download the x64 dmg.
+
 ### Operation Interface
 
 <img src="/images/screenshot-20250807-123729.png" alt="Desktop version">
 
 ## Adding Subscription
 
-In the **Jego - Control Panel**, click on **Subscription Nodes** in the left navigation bar, find the Mihomo subscription address and click **Copy**.
+In the **Jego Dashboard**, click on **Mobile Proxy** in the left navigation bar, find the Mihomo subscription address and click **Copy**.
 
-<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2Fbf6ZGnMBZioZr9rD5P5J_2Fimage_2.png" alt="Jego Control Panel">
+<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2Fbf6ZGnMBZioZr9rD5P5J_2Fimage_2.png" alt="Jego Dashboard">
 
 <div class="tip custom-block" style="padding-top: 8px">
 
-Jego subscription service mobile panel: <https://jego.us>
+You can also get the subscription URL on your phone: open <https://jego.us> in the phone browser and sign in to copy it.
 
 </div>
 
@@ -74,7 +74,7 @@ Open Clash Verge Rev, click **Import Subscription** in the top-left corner of th
 
 <img src="/images/screenshot-20250807-121741.png" alt="Import Subscription">
 
-In the popup new configuration window, the **Type** defaults to `Remote`, **Name** should be `Jego`, description can be left blank, **Subscription Link** should be the `Mihomo subscription link` copied from the Jego control panel, **Update Interval** should be changed to `1440` minutes, then click **Save**.
+In the popup new configuration window, the **Type** defaults to `Remote`, **Name** should be `Jego`, description can be left blank, **Subscription Link** should be the `Mihomo subscription link` copied from the Jego Dashboard, **Update Interval** should be changed to `1440` minutes, then click **Save**.
 
 <img src="/images/screenshot-20250807-121847.png" alt="Edit Configuration">
 
@@ -101,7 +101,7 @@ Then return to the homepage: turn on **System Proxy** and **TUN Mode** to enable
 
 Suitable for users who use both domestic and international services.
 
-Mainland traffic does not consume package data.
+In Rule mode, mainland-China traffic connects directly and does not go through the proxy server.
 
 When querying IP on mainland websites, you get the local IP address.
 
@@ -116,7 +116,7 @@ Traffic routing rules cannot be comprehensive and have timeliness. If you encoun
 
 All traffic goes through the proxy server, suitable for scenarios requiring global proxy access, users who don't rely on mainland services.
 
-Global mode sends client-managed traffic through the proxy; verify performance and destination results on the current network.
+In Global mode, foreign traffic goes through the proxy as usual; mainland traffic also goes through the proxy server — it works, but noticeably slower.
 
 ### **Direct Mode: No proxy for any traffic**
 

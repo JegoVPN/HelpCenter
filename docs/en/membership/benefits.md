@@ -64,3 +64,5 @@ Each purchase increases the level by the corresponding amount:
 ## Purpose of VIP Levels
 
 Higher VIP levels provide access to more high-speed nodes. Some nodes have level requirements.
+
+Paid members can see the current level and remaining days in the popup membership area, for example “VIP 3 · 155 days remaining”.

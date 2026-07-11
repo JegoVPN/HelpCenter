@@ -26,16 +26,16 @@ tools: [surge]
 appliesTo: []
 sources: [https://nssurge.com/, https://apps.apple.com/us/app/surge-3/id1442620678]
 title: Surge - 工具软件
-description: Surge 是 Apple 平台的网络工具；当前功能、平台、价格和版本以官方来源与工具页状态为准。
+description: Surge 是 Apple 平台的网络工具；当前功能、平台、价格和版本以官方来源为准。
 ---
 
 # Surge
 
-Surge 是 Apple 平台的网络工具；当前功能、平台、价格和版本以官方来源与工具页状态为准。
+Surge 是 Apple 平台的网络工具；当前功能、平台、价格和版本以官方来源为准。
 
 ## <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FoBLta0TNRbF6ARUAOFxW_2Fsurge_1.png" width="26" height="26" alt="Surge图标"> 获取Surge
 
-App Store 可用性由 Apple 和开发者按账户地区决定。不要购买、共享账号或虚构地区资料；只使用本人合法账户与官方商店入口。
+App Store 可用性由 Apple 和开发者按账户地区决定。不要购买、共享账号或虚构地区资料；只使用本人合法账户与官方商店入口。应用商店账号地区的官方要求见[美区 Apple ID 注册教程](/subscription/devices/us-apple-id)；没有符合条件的账号时，可改用本人地区可用且受支持的其他客户端，或使用[浏览器插件](/guide/installation)。
 
 ## 下载 Surge
 
@@ -51,7 +51,7 @@ Surge 的网络代理功能需要解锁 Pro 授权，可通过 [AppStore 内购]
 
 <div class="tip custom-block" style="padding-top: 8px">
 
-无忧行订阅服务手机面板：<https://jego.us>
+手机上也能取订阅地址：用手机浏览器打开 <https://jego.us> 登录即可复制。
 
 </div>
 

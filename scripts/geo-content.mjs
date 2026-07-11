@@ -25,6 +25,22 @@ export const TOOL_SLUGS = [
 ]
 
 export const APPROVED_MEDIA_RETIREMENTS = {
+  'docs/devices/pc-mobile.md': [
+    '/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FISwY5XX4FX2qker0nOYC_2Fimage_3.png'
+  ],
+  'docs/en/devices/pc-mobile.md': [
+    '/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FISwY5XX4FX2qker0nOYC_2Fimage_3.png'
+  ],
+  'docs/guide/installation.md': [
+    '/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FfcXOYhXbZ9Tr2bWUoI5p_2Fimage_3.png',
+    '/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F8gEriEnVmF77fYUY2XxI_2Fimage_1.png',
+    '/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FqJVM1Fphg1LsgyqucvDn_2F20250326-115951_2.gif'
+  ],
+  'docs/en/guide/installation.md': [
+    '/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FfcXOYhXbZ9Tr2bWUoI5p_2Fimage_3.png',
+    '/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F8gEriEnVmF77fYUY2XxI_2Fimage_1.png',
+    '/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FqJVM1Fphg1LsgyqucvDn_2F20250326-115951_2.gif'
+  ],
   'docs/en/guide/faq.md': [
     '/images/image_2f77cc85238452e25cb517130188bf99_2.png',
     '/images/image_8cfb53953fdf6e7e49ac94510557df95_3.png',
@@ -58,12 +74,18 @@ export const APPROVED_MEDIA_RETIREMENTS = {
 }
 
 export const APPROVED_CONTENT_RESTRUCTURES = [
+  'docs/devices/pc-mobile.md',
+  'docs/en/devices/pc-mobile.md',
   'docs/guide/faq.md',
   'docs/en/guide/faq.md',
   'docs/guide/chatgpt-access.md',
   'docs/en/guide/chatgpt-access.md',
   'docs/guide/services.md',
-  'docs/en/guide/services.md'
+  'docs/en/guide/services.md',
+  'docs/en/guide/nodes.md',
+  'docs/en/devices/pc-mobile.md',
+  'docs/index.md',
+  'docs/en/index.md'
 ]
 
 export function toPosix(filePath) {

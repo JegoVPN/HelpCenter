@@ -35,7 +35,13 @@ Do not use Jego for BT, magnet-link, Xunlei, or other P2P downloads. An account 
 
 Please also avoid watching high-definition video or downloading large software continuously for long periods, because sustained heavy use affects other users.
 
-Within one month, if high-load usage happens more than 3 times, each lasting longer than 60 minutes and reaching 100 M/s, the account can continue using data, but maximum upload and download speed will be reduced from 100 M/s to 1 M/s.
+Speed limiting is triggered when all three of the following happen within one month:
+
+- high-load usage occurs more than 3 times;
+- each time lasts longer than 60 minutes;
+- the rate reaches 100 Mbps during those periods.
+
+The account can still use data afterwards, but maximum upload and download speed drops from 100 Mbps to 1 Mbps.
 
 ## Prohibited abuse
 

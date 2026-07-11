@@ -14,15 +14,15 @@ platforms: [chrome, edge]
 tools: []
 appliesTo: []
 sources: ["cloud/app/chromev2@1.5.10"]
-title: "Jego Control Panel: connection status and common entries"
-description: Open the Jego Control Panel, read the current mode, node, and Google reachability, then use Proxy Rules, Diagnostics, Mobile Proxy, and account services as needed.
+title: "Jego Dashboard: connection status and common entries"
+description: Open the Jego Dashboard, read the current mode, node, and Google reachability, then use Proxy Rules, Diagnostics, Mobile Proxy, and account services as needed.
 ---
 
-# Jego Control Panel
+# Jego Dashboard
 
-Use the extension popup for quick mode and node changes. The Control Panel brings connection status, Diagnostics, Mobile Proxy, and account services together on a full page. Open it from **Control Panel** at the bottom of the Jego popup.
+Use the extension popup for quick mode and node changes. The Dashboard brings connection status, Diagnostics, Mobile Proxy, and account services together on a full page. Open it from **Dashboard** at the bottom of the Jego popup.
 
-<img class="jego-wide-screenshot" src="/images/jego-v1.5.10/control-panel-en.png" alt="The Jego Control Panel home page in English">
+<img class="jego-wide-screenshot" src="/images/jego-v1.5.10/control-panel-en.png" alt="The Jego Dashboard home page in English">
 
 ## Start with the three status items on Home
 
@@ -51,16 +51,16 @@ Select **Diagnostics** below this area when you want to check the connection. It
 
 - **Activity Center:** View activities available to the current account.
 - **Ticket:** Send a question and read support replies.
-- **Renewal VIP:** View currently available membership purchase or renewal options.
+- **Upgrade VIP / Renewal VIP** (shown according to membership status): View currently available membership purchase or renewal options.
 - **Payment History:** View created orders and their payment status.
-- **Guidelines** at the bottom opens the help center; **Contact US** opens the support entry.
+- **Guidelines** at the bottom opens the in-panel guide page, which links back to the help center; **Contact US** opens the support entry.
+- Click your account email at the bottom of the sidebar to open the account menu: membership details, appearance, **Manage Account**, and **Log Out**.
 
 ## Start common tasks here
 
-- See whether one address is proxied or direct: [Website Route Check](/en/guide/network-diagnostics#route-check)
-- Compare the nodes on the current account: [Node Test](/en/guide/network-diagnostics-node-speed)
+- See whether one address is proxied or direct: [Rules Check](/en/guide/network-diagnostics#route-check)
+- Compare the nodes on the current account: [Node test](/en/guide/network-diagnostics-node-speed)
 - Apply your own connection rule to a website: [Custom proxy rules](/en/guide/proxy-strategy)
-- Use Jego in other computer or phone apps: [Subscription Services](/en/subscription/)
-- Use a subscription on a computer or phone: [Install by device](/en/subscription/#install-by-device)
+- Use the subscription in other computer or phone apps: [Subscription Services](/en/subscription/) (then pick the guide for your device)
 
-Menus can vary slightly by account. If an entry you need is not visible, confirm that you are signed in, update Jego, and reopen the Control Panel. If it is still missing, record the extension version and menu name before [contacting support](/en/guide/support).
+Menus can vary slightly by account. If an entry you need is not visible, confirm that you are signed in, update Jego, and reopen the Dashboard. If it is still missing, record the extension version and menu name before [contacting support](/en/guide/support).

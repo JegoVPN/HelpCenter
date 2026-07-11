@@ -19,13 +19,11 @@ description: Choose a HarmonyOS client, import the Jego subscription, and start 
 
 # HarmonyOS Proxy Guide
 
-HarmonyOS (English: HarmonyOS, abbreviated as HMOS, development codename Ark, official name is Huawei Terminal HarmonyOS Intelligent Device Operating System Software)
-
 Jego members can use a compatible proxy client on HarmonyOS. HarmonyOS NEXT and older HarmonyOS releases use different tools, so check the system version before following the matching install and import guide below.
 
 <div class="tip custom-block" style="padding-top: 8px">
 
-Jego subscription service mobile panel: <https://jego.us>
+You can also get the subscription URL on your phone: open <https://jego.us> in the phone browser and sign in to copy it.
 
 </div>
 

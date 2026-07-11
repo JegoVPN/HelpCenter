@@ -20,13 +20,13 @@ description: Use Diagnostics to understand how the Jego proxy is working and dec
 
 # Jego Diagnostics guide
 
-To understand how the Jego proxy is working, open **Diagnostics**. Check the current acceleration status, common website results, and website route in order to see whether the next step is changing the node or adjusting Proxy Rules.
+To understand how the Jego proxy is working, open **Diagnostics**. Check the **Traffic handling** card, common website results, and website route in order to see whether the next step is changing the node or adjusting Proxy Rules.
 
-To open it: click the Jego icon → **Control Panel** → **Diagnostics**.
+To open it: click the Jego icon → **Dashboard** → **Diagnostics**.
 
-<img class="jego-wide-screenshot" src="/images/jego-v1.5.10/network-diagnostics-en.png" alt="The Jego Diagnostics page in the Control Panel">
+<img class="jego-wide-screenshot" src="/images/jego-v1.5.10/network-diagnostics-en.png" alt="The Jego Diagnostics page in the Dashboard">
 
-## Current Acceleration Status {#current-status}
+## Traffic handling {#current-status}
 
 First, check the **current mode** and **current node**. They determine how the checks below connect:
 
@@ -36,7 +36,7 @@ First, check the **current mode** and **current node**. They determine how the c
 
 To use Jego, select **Rules** or **Global** mode. The current node is the route used by proxied traffic.
 
-## Connection Check {#connection-check}
+## Connection {#connection-check}
 
 Next, select **Check** under **Connectivity check**. Jego will test:
 
@@ -61,3 +61,5 @@ The page will show:
 - **Proxy:** the domain will use the current Jego node. To use another route, choose a different node and try again;
 - **Direct:** the domain will use the local connection. To send it through Jego, add a rule under [Proxy Rules](/en/guide/proxy-strategy);
 - **Could not determine route:** wait for routing data to finish syncing, then reload the page and check again.
+
+If several websites remain unreachable after switching nodes, check the [FAQ](/en/guide/faq) or [contact support](/en/guide/support) with your check results.

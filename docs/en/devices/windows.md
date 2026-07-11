@@ -19,8 +19,6 @@ description: Choose a Windows client, import the Jego subscription, and start th
 
 # Windows Proxy Guide
 
-Microsoft Windows, commonly known as Windows operating system, is a series of proprietary commercial software operating systems launched by Microsoft with graphical user interface as the main feature. It has a monopoly position in personal computer operating systems worldwide.
-
 Jego members can add subscription nodes to a compatible Windows client, allowing apps outside the browser to use the VPN. Choose a currently supported client below, then follow its complete installation and import guide.
 
 ## <img class="client-guide-heading-icon" src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FbeA5N21M1iATQm5HiGND_2Fwin_1.svg" width="38" height="28" alt="Windows icon"> Windows proxy clients

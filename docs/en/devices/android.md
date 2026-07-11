@@ -19,13 +19,11 @@ description: Choose an Android client, import the Jego subscription, and start t
 
 # Android Proxy Guide
 
-Android is an open source mobile operating system based on Linux kernel and other open source software, continuously led and developed by the Open Handset Alliance established by Google.
-
 Jego members can add subscription nodes to a compatible Android client, allowing other phone apps to use the VPN. Choose a currently supported client below, then follow its complete installation and import guide.
 
 <div class="tip custom-block" style="padding-top: 8px">
 
-Jego subscription service mobile panel: <https://jego.us>
+You can also get the subscription URL on your phone: open <https://jego.us> in the phone browser and sign in to copy it.
 
 </div>
 

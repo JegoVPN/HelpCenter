@@ -14,7 +14,7 @@ tools: []
 appliesTo: []
 sources: ["cloud/app/chromev2@1.5.10", "cloud/locales/zh_CN.csv"]
 title: 如何翻墙 - 使用指南
-description: 登录后选择规则模式和自动节点，只需几步就能在 Chrome 或 Edge 里使用无忧行访问全球网站。
+description: 登录后选择规则模式和自动选择节点，只需几步就能在 Chrome 或 Edge 里使用无忧行访问全球网站。
 ---
 
 # 如何翻墙
@@ -31,11 +31,13 @@ description: 登录后选择规则模式和自动节点，只需几步就能在 
 
 <YouTube videoId="buQRWqyO7UM" title="无忧行插件安装与使用教程" />
 
+视频暂时无法播放时，直接按下面五步操作即可。
+
 ## 第一次使用，只要五步
 
 1. 点击浏览器右上角的无忧行图标。
 2. 还没登录时，输入邮箱和密码，点击**账户登录**；没有账号可以点**创建账户**。
-3. 登录后选择**规则**模式。
+3. 登录后选择**规则**模式（免费版点**开启**即可）。
 4. 在**当前节点**中选择**自动选择**。
 5. 打开 Google 或你想访问的网站；已经打开的网页可以刷新一次。
 
@@ -43,7 +45,7 @@ description: 登录后选择规则模式和自动节点，只需几步就能在 
 
 <img src="/images/jego-v1.5.9/usage-free-browser-zh.png" alt="免费版翻墙">
 
-如果你的界面只有“开启”和“关闭”，点击**开启**就是开始使用代理；点击**关闭**则恢复本地网络。新版界面会显示“规则、全局、关闭”三个选项，作用见下一节。
+免费版只显示**开启**和**关闭**两个按钮：点**开启**就是开始使用代理（与规则模式相同），点**关闭**则恢复本地网络。会员（含体验）会显示“规则、全局、关闭”三个选项，作用见下一节。
 
 ## 规则、全局和关闭
 
@@ -53,7 +55,7 @@ description: 登录后选择规则模式和自动节点，只需几步就能在 
 
 会员界面示例如下。右上角会显示会员状态，下面可以选择模式和节点。
 
-<img src="/images/jego-v1.5.9/usage-paid-browser-zh.png" alt="旧版会员浏览器代理界面">
+<img src="/images/jego-v1.5.9/usage-paid-browser-zh.png" alt="会员版弹窗界面">
 
 需要更多例子，请看[模式选择](/guide/mode-selection)。如果规则模式没有自动代理某个网站，可以在[代理策略](/guide/proxy-strategy)中添加它。
 
@@ -82,10 +84,10 @@ description: 登录后选择规则模式和自动节点，只需几步就能在 
 
 1. 先确认不是**关闭**模式。
 2. 换一个节点，或运行[节点测速](/guide/network-diagnostics-node-speed)。
-3. 打开**控制面板 → 网络诊断 → 连接检测**，点击“测一下”。
+3. 打开**控制面板 → 网络诊断 → 连接检测**，点击“检查”。
 4. 只有一个网站失败时，用“查网址走向”检查它是否走代理。
 
-更多帮助：[常见问题](/guide/faq) · [如何访问 ChatGPT、Copilot 等服务](/guide/chatgpt-access) · [联系客服](/guide/support)
+更多帮助：[常见问题](/guide/faq) · [如何访问 ChatGPT、Claude、Gemini 等 AI 产品](/guide/chatgpt-access) · [联系客服](/guide/support)
 
 ## 如何在电脑或手机上使用无忧行进行翻墙
 

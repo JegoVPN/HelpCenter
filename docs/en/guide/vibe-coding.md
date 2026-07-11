@@ -14,7 +14,7 @@ tools: [flclash]
 appliesTo: []
 sources: []
 title: How to Use Jego for Vibe Coding - AI Development Tools Proxy Configuration Tutorial
-description: Configure and verify a proxy path for an IDE or CLI using FlClash as the example, while separating connectivity from third-party account eligibility.
+description: Configure and verify a proxy path for AI coding tools like Claude Code and Cursor using FlClash as the example, while separating connectivity from third-party account eligibility.
 ---
 
 # How to Use Jego for Vibe Coding
@@ -38,7 +38,7 @@ The key is understanding virtual network adapter mode and node routing strategie
 In FlClash's dashboard:
 
 * Enable <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Virtual Network Adapter</span> (TUN mode)
-* Outbound Mode, select <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Rule Mode</span>
+* Set Outbound Mode to <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Rule Mode</span>
 
 <img src="/images/vibecoding/1.png" alt="Dashboard: Enable Virtual Network Adapter and Rule Mode" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); margin: 16px 0; max-width: 800px; width: 100%;">
 
@@ -59,7 +59,7 @@ On the Profiles page:
 
 Configure the following on the proxy page (node selection):
 
-* Under **❇️Manual Select**, choose a current candidate exposed by the Control Panel that can connect.
+* Under **❇️Manual Select**, choose a current candidate exposed by the Dashboard that can connect.
 * If **🤖 ChatGPT Group** still appears, choose a candidate from it and verify with the real API destination. “Hong Kong Ultra” and “Singapore Pro+” in the screenshot are historical examples, not promises that those names or performance remain.
 
 <img src="/images/vibecoding/2.png" alt="Proxy Page: Node Selection" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); margin: 16px 0; max-width: 800px; width: 100%;">
@@ -107,13 +107,13 @@ After this setup, visits to DeepSeek.com will bypass the proxy and use your loca
 
 ## Verify Configuration
 
-You may query the public exit IP for this command. A third-party lookup service sees that exit address; skip this step if undesired and inspect the client's request page instead:
+You can check the public exit IP of this one request from the command line. The third-party lookup service will see that exit address — skip this step if you prefer, and check the client's request page instead:
 
 ```bash
 curl ip.sb
 ```
 
-The returned address belongs only to this test request. Your IDE or CLI may use different settings, so test the actual tool after configuring it.
+The returned address belongs only to this test request; it does not prove that every domain, IDE/CLI, or third-party account uses the same path. Test the actual tool after configuring it.
 
 ::: tip Further Verification
 You can also try using AI features in Cursor or other AI coding tools, such as code completion or chat, to verify that you can access AI services normally.
@@ -141,5 +141,5 @@ The objective is similar, but menus and capabilities are not necessarily the sam
 * [FlClash Complete Tutorial](/en/subscription/clients/flclash) - Learn all FlClash features
 * [Clash Verge Rev Tutorial](/en/subscription/clients/clashverge) - Multi-platform client tutorial
 * [sing-box Tutorial](/en/subscription/clients/sing-box) - Lightweight proxy tool
-* [Node Selection Guide](/en/guide/node-selection) - Choose and verify a candidate node
+* [Node Selection Guide (browser extension)](/en/guide/node-selection) - How to choose and verify nodes in the browser extension
 * [Device Configuration Overview](/en/subscription/) - View proxy guides for all devices

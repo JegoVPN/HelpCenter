@@ -26,16 +26,16 @@ tools: [surge]
 appliesTo: []
 sources: [https://nssurge.com/, https://apps.apple.com/us/app/surge-3/id1442620678]
 title: Surge - Tools & Software
-description: Surge is an Apple-platform network tool; verify current features, platforms, price, and version from official sources and the tool status.
+description: Surge is an Apple-platform network tool; verify current features, platforms, price, and version from official sources.
 ---
 
 # Surge
 
-Surge is an Apple-platform network tool; verify current features, platforms, price, and version from official sources and the tool status.
+Surge is an Apple-platform network tool; verify current features, platforms, price, and version from official sources.
 
 ## <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FoBLta0TNRbF6ARUAOFxW_2Fsurge_1.png" width="26" height="26" alt="Surge icon"> Get Surge
 
-App Store availability is controlled by Apple and the developer for each account region. Do not buy or share accounts or falsify region details; use an account you legitimately own and the official store.
+App Store availability is controlled by Apple and the developer for each account region. Do not buy or share accounts or falsify region details; use an account you legitimately own and the official store. For Apple's official region requirements, see the [US Apple ID Registration Guide](/en/subscription/devices/us-apple-id); without a qualifying account, use another supported client available in your region, or the [browser extension](/en/guide/installation).
 
 ## Download Surge
 
@@ -45,13 +45,13 @@ Surge's network proxy function requires Pro authorization unlock, which can be p
 
 ## Add Subscription
 
-In the **Jego - Control Panel**, click on **Subscription Nodes** in the left navigation bar, find the **Surge** subscription address and click **Copy**.
+In the **Jego Dashboard**, click on **Mobile Proxy** in the left navigation bar, find the **Surge** subscription address and click **Copy**.
 
-<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FIJSBJWhaXZhdze3wrTAj_2Fimage_2.png" alt="Jego control panel">
+<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FIJSBJWhaXZhdze3wrTAj_2Fimage_2.png" alt="Jego Dashboard">
 
 <div class="tip custom-block" style="padding-top: 8px">
 
-Jego subscription service mobile panel: <https://jego.us>
+You can also get the subscription URL on your phone: open <https://jego.us> in the phone browser and sign in to copy it.
 
 </div>
 

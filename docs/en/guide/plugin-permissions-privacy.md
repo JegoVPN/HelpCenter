@@ -15,7 +15,7 @@ tools: []
 appliesTo: []
 sources: [https://jegocloud.com/policy]
 title: Jego browser permissions explained
-description: "Understand Jego's four extension permissions and its host_permissions website access permission in plain language."
+description: "Understand Jego's four extension permissions, its host_permissions website access permission, and where to find its official Privacy Policy — in plain language."
 ---
 
 # Jego browser permissions explained
@@ -28,7 +28,7 @@ Jego needs the browser permissions below to save your settings, switch the proxy
 | `proxy` | Send browser traffic through the mode and node you choose |
 | `alarms` | Refresh connection information on a schedule |
 | `management` | Identify other proxy extensions so multiple proxies do not control the browser at the same time |
-| `host_permissions` · `all URLs` | Get service configuration, run Connection Check, and run Node Test |
+| `host_permissions` · `all URLs` | Get service configuration, run the Connection check, and run Node test |
 
 See the [extension popup](/en/guide/plugin-features) for the modes and node controls these permissions support.
 

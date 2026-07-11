@@ -14,7 +14,7 @@ tools: [flclash]
 appliesTo: []
 sources: []
 title: 如何使用无忧行进行 Vibe Coding - AI 编程工具代理配置教程
-description: 以 FlClash 为例，为 IDE 或 CLI 配置并验证代理路径，同时区分连接结果与第三方账户资格。
+description: 以 FlClash 为例，为 Claude Code、Cursor 等 AI 编程工具配置并验证代理路径，同时区分连接结果与第三方账户资格。
 ---
 
 # 如何使用无忧行进行 Vibe Coding
@@ -141,5 +141,5 @@ curl ip.sb
 * [FlClash 详细使用教程](/subscription/clients/flclash) - 了解 FlClash 的完整功能
 * [Clash Verge Rev 教程](/subscription/clients/clashverge) - 多平台代理工具教程
 * [sing-box 教程](/subscription/clients/sing-box) - 轻量级代理工具
-* [节点选择指南](/guide/node-selection) - 了解如何选择并验证候选节点
+* [节点选择指南（浏览器插件）](/guide/node-selection) - 浏览器插件中选择并验证节点的方法
 * [设备配置总览](/subscription/) - 查看所有设备的翻墙指南

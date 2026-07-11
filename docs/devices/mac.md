@@ -19,8 +19,6 @@ description: 在 macOS 电脑上选择合适的客户端，导入无忧行订阅
 
 # macOS 翻墙指南
 
-macOS是苹果公司推出的使用图形用户界面的操作系统，为麦金塔（Macintosh，简称 Mac）系列电脑的操作系统。在桌面操作系统中，macOS的市占率位居第二。
-
 无忧行会员可以把订阅节点添加到 Mac 代理客户端中，让浏览器之外的软件也能使用代理。下面先选一个当前支持的工具，再跟着完整教程安装和导入订阅。
 
 ## <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FrUGve1gm2gP1sXdvgjCw_2Fapple_1.svg" width="38" height="28" alt="macOS图标"> macOS 翻墙客户端
@@ -43,7 +41,7 @@ Surge 是 Apple 平台的网络工具；当前功能、平台、价格和版本�
 
 <div class="client-guide-link"><img src="/images/image_shadowrocket_2.png" width="26" height="26" alt="Shadowrocket图标"><a href="/subscription/clients/shadowrocket">Shadowrocket</a></div>
 
-Shadowrocket 是一个功能齐全的 iOS/iPadOS 代理工具客戶端，支持大多数常见的连接协议。
+Shadowrocket 是一个功能齐全的 iOS/iPadOS 代理工具客户端，支持大多数常见的连接协议；Apple 芯片（M 系列）的 Mac 可以从 App Store 安装同一应用使用。
 
 <div class="client-guide-link"><img src="/images/clashvergelogo.png" width="26" height="26" alt="Clash Verge Rev"><a href="/subscription/clients/clashverge">Clash Verge Rev</a></div>
 
@@ -56,4 +54,4 @@ Clash Verge Rev是一款基于Mihomo（原ClashMeta）内核的多平台代理�
 
 <div class="client-guide-link"><img src="/images/image_clash_2.png" width="26" height="26" alt="Clash图标"><a href="/subscription/clients/clash-for-windows">Clash for Windows</a></div>
 
-Clash for Windows已于2023年11月2日下架，但当时的最后一个版本还能用，建议换至Mihomo系列软件如[FlClash](/subscription/clients/flclash) 。
+Clash for Windows 已于 2023 年 11 月 2 日下架，不再获得更新，本站仅保留历史教程；建议换至 Mihomo 系列软件如 [FlClash](/subscription/clients/flclash)。

@@ -7,12 +7,12 @@ uiSurface: null
 locale: zh-Hans
 status: current
 owner: docs
-reviewStatus: needs-review
-lastVerified: 2026-07-10
+reviewStatus: verified
+lastVerified: 2026-07-11
 platforms: [chrome, edge]
 tools: []
 appliesTo: []
-sources: [https://developer.chrome.com/docs/extensions/get-started/tutorial/hello-world, https://learn.microsoft.com/en-us/microsoft-edge/extensions/getting-started/extension-sideloading]
+sources: [https://support.google.com/chrome/answer/2664769, https://learn.microsoft.com/en-us/troubleshoot/microsoft-edge/development/self-host-extension-deploy, human-browser-test@chrome-149-edge-150-macos-2026-07-11]
 title: 如何安装 - 使用指南
 description: 按浏览器选择官方入口，几步完成无忧行安装并确认插件已经启用。
 ---
@@ -22,7 +22,7 @@ description: 按浏览器选择官方入口，几步完成无忧行安装并确�
 无忧行推荐安装在 Chrome 或 Microsoft Edge。直接从浏览器的官方扩展商店安装最简单；商店暂时无法使用时，本页也保留了手动安装方法。
 
 ::: tip 安装前先确认版本
-可以在[防止失联](/guide/keep-updated)页面查看当前官方发布入口。保持浏览器和无忧行为最新版本，可以及时获得功能改进和问题修复；实际连接情况还会受到所在地区和目标网站的影响。
+可以在[更新插件](/guide/keep-updated)页面查看当前官方发布入口。保持浏览器和无忧行为最新版本，可以及时获得功能改进和问题修复；实际连接情况还会受到所在地区和目标网站的影响。
 :::
 
 ## 先按浏览器进入安装步骤 {#在线安装}
@@ -44,15 +44,23 @@ description: 按浏览器选择官方入口，几步完成无忧行安装并确�
 
 ### 商店暂时无法使用时，手动安装
 
-优先使用 Edge 扩展商店。无忧行官网提供手动安装包时，可以按下面的步骤安装：
+优先使用 Edge 扩展商店。需要手动安装时，先从无忧行官网下载 ZIP 安装包，解压后找到 CRX 文件，再按下面的步骤操作：
 
-1. 从[无忧行官网](https://jegocloud.com/zh/)下载手动安装包并解压。
-2. 在 Edge 地址栏输入 `edge://extensions/`。
+1. 从[无忧行官网](https://jegocloud.com/zh/)下载 ZIP 安装包，解压后找到里面的 `.crx` 文件。
+2. 在 Edge 地址栏输入 `edge://extensions/`，打开扩展管理页。
 3. 打开页面上的**开发人员模式**。
-4. 点击 **Load unpacked**，选择解压后直接包含 `manifest.json` 的文件夹。
-5. 如果下载内容只有 `.crx` 文件，请改用扩展商店或 Edge 当前允许的安装方式；**Load unpacked** 选择的是文件夹，不是 `.crx` 文件。
+4. 把 `.crx` 文件从访达或文件资源管理器拖到 Edge 的扩展管理页中。
+5. 页面出现安装确认时，核对扩展名称是**无忧行**，然后点击**添加扩展**。
+6. 安装完成后，确认无忧行出现在扩展列表中并已启用。
 
-<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FfcXOYhXbZ9Tr2bWUoI5p_2Fimage_3.png" alt="Edge 插件管理界面">
+<span id="edge-crx-video"></span>
+
+下面的视频演示了在 Edge 中开启开发人员模式、拖入 CRX 并完成安装的过程：
+
+<video class="installation-video" controls playsinline preload="metadata" aria-label="Edge 拖入 CRX 安装无忧行视频">
+  <source src="/videos/jego-edge-crx-install-20260711.mp4" type="video/mp4">
+  你的浏览器无法播放此视频。
+</video>
 
 <span id="安装完成后-固定无忧行图标"></span>
 <span id="安装后的初始设置"></span>
@@ -70,6 +78,8 @@ description: 按浏览器选择官方入口，几步完成无忧行安装并确�
 
 <img class="installation-settings-image" src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2Fg4tbKt6AKXlmq4DaA3H6_2Fimage_3.png" alt="Edge 设置界面">
 
+安装完成后，接下来可以[注册账户](/guide/registration)，再按[开始使用无忧行](/guide/usage)完成登录、模式和节点设置。
+
 ## 在 Google Chrome 中安装 {#chrome-install}
 
 开始前先把 Chrome 更新到最新版本。
@@ -81,19 +91,18 @@ description: 按浏览器选择官方入口，几步完成无忧行安装并确�
 
 ### 商店暂时无法使用时，手动安装
 
-优先使用 Chrome Web Store。无忧行官网提供手动安装包时，可以按下面的步骤安装：
+优先使用 Chrome Web Store。需要手动安装时，先从无忧行官网下载 ZIP 安装包，解压后找到 CRX 文件，再按下面的步骤操作：
 
-1. 从[无忧行官网](https://jegocloud.com/zh/)下载手动安装包并解压。
-2. 在 Chrome 地址栏输入 `chrome://extensions/`。
+1. 从[无忧行官网](https://jegocloud.com/zh/)下载 ZIP 安装包，解压后找到里面的 `.crx` 文件。
+2. 在 Chrome 地址栏输入 `chrome://extensions/`，打开扩展程序管理页。
 3. 打开页面上的**开发者模式**。
-4. 点击 **Load unpacked**，选择解压后直接包含 `manifest.json` 的文件夹。
-5. 如果下载内容只有 `.crx` 文件，请改用 Chrome Web Store 或 Chrome 当前允许的安装方式；**Load unpacked** 选择的是文件夹，不是 `.crx` 文件。
+4. 把 `.crx` 文件从访达或文件资源管理器拖到 Chrome 的扩展程序管理页中。
+5. 页面出现安装确认时，核对扩展名称是**无忧行**，然后点击**添加扩展程序**。
+6. 安装完成后，确认无忧行出现在扩展程序列表中并已启用。
 
-<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F8gEriEnVmF77fYUY2XxI_2Fimage_1.png" alt="Chrome 插件管理界面">
+下面的图片展示了把 CRX 文件拖入 Chrome 扩展程序管理页的位置：
 
-下面的录屏演示了 Chrome 的安装过程：
-
-<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FqJVM1Fphg1LsgyqucvDn_2F20250326-115951_2.gif" alt="Chrome 安装无忧行录屏演示">
+<img src="/images/jego-chrome-crx-drag-install-20260711.png" alt="把无忧行 CRX 文件拖入 Chrome 扩展程序管理页">
 
 ### 固定无忧行图标 {#chrome-pin}
 
@@ -113,12 +122,12 @@ description: 按浏览器选择官方入口，几步完成无忧行安装并确�
 ## 在其他 Chromium 浏览器中安装
 
 ::: warning 兼容性说明
-QQ 浏览器、360 浏览器等 Chromium 浏览器的扩展兼容性和安装规则可能随版本变化。先升级到浏览器当前稳定版，并以该浏览器当前允许的扩展安装方式为准。
+QQ 浏览器、360 浏览器、指纹浏览器等基于 Chromium 内核的浏览器，只要内核在 88 及以上，通常都可以安装无忧行。指纹浏览器（常用于多账号运营）一般支持加载 Chrome 扩展，按它自己的扩展安装入口操作即可。各浏览器的兼容性和安装规则可能随版本变化，先升级到当前稳定版，并以该浏览器允许的扩展安装方式为准。
 :::
 
 ### QQ浏览器
 
-1. 访问[无忧行官网](https://jegocloud.com/)，下载 **CRX package for Jego**，解压 ZIP 文件后取得 `.crx` 文件。
+1. 访问[无忧行官网](https://jegocloud.com/zh/)，下载 **CRX package for Jego**，解压 ZIP 文件后取得 `.crx` 文件。
 
 2. 打开 QQ 浏览器，点击右上角的 **≡**，再点击**应用中心**。
 
@@ -134,7 +143,7 @@ QQ 浏览器、360 浏览器等 Chromium 浏览器的扩展兼容性和安装规
 
 ### 360浏览器
 
-1. 访问[无忧行官网](https://jegocloud.com/)，下载 **CRX package for Jego**，解压 ZIP 文件后取得 `.crx` 文件。
+1. 访问[无忧行官网](https://jegocloud.com/zh/)，下载 **CRX package for Jego**，解压 ZIP 文件后取得 `.crx` 文件。
 
 2. 打开 360 浏览器，点击右上角四个彩色方块的图标，再点击**管理**。
 

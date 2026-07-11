@@ -67,7 +67,7 @@ FlClash 是基于 Mihomo（原 Clash Meta）的开源客户端，官方提供 Wi
 
 <div class="tip custom-block" style="padding-top: 8px">
 
-无忧行订阅服务手机面板：<https://jego.us>
+手机上也能取订阅地址：用手机浏览器打开 <https://jego.us> 登录即可复制。
 
 </div>
 
@@ -75,7 +75,7 @@ FlClash 是基于 Mihomo（原 Clash Meta）的开源客户端，官方提供 Wi
 
 <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FA1tnxVXgicb51EQ4sbmy_2Fimage_3.png" alt="新配置+"> <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FUCyxhXIZubhodcSGWnUg_2Fimage_1.png" alt="URL">
 
-复制刚才的URL到对话框里，然后点击提交。导入成功后，您会在配置页面看到已导入的代理配置。
+复制刚才的URL到对话框里，然后点击提交。导入成功后，你会在配置页面看到已导入的代理配置。
 
 点击配置文件右上角 **三个点 -> 编辑** 除了名称，其他不要动。
 
@@ -84,8 +84,6 @@ FlClash 是基于 Mihomo（原 Clash Meta）的开源客户端，官方提供 Wi
 点击配置文件右上角 **三个点 -> 同步** 就是更新订阅文件的意思。
 
 <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FSUZB0uhm5ulHogGxgLEG_2Fimage_3.png" alt="更新配置">
-
-点击配置文件右上角 **三个点 -> 同步** 就是更新订阅文件的意思。
 
 ### 配置覆写规则（可选）
 
@@ -137,13 +135,13 @@ FlClash 是基于 Mihomo（原 Clash Meta）的开源客户端，官方提供 Wi
 
 适用于同时使用国内外服务的用户。
 
-大陆流量不會消耗套餐流量。
+规则模式下，中国大陆的流量走本地直连，不经过代理服务器。
 
-在大陆网站上查詢 IP 得到的是本地 IP 地址。
+在大陆网站上查询 IP 得到的是本地 IP 地址。
 
-在国外网站上查詢 IP 得到的是代理 IP 地址。
+在国外网站上查询 IP 得到的是代理 IP 地址。
 
-分流规则无法做到全面且具有時效性，如果遇到以下情況，请尝试全局代理。
+分流规则无法做到全面且具有时效性，如果遇到以下情况，请尝试全局代理。
 
 * 无法打开国际网站；
 * 加载国际网站缓慢；
@@ -156,7 +154,7 @@ FlClash 是基于 Mihomo（原 Clash Meta）的开源客户端，官方提供 Wi
 
 适用于不依赖大陆服务的用户。
 
-對国外流量效果非常好，大陆流量會被減速。
+国外流量正常走代理；大陆流量也会经过代理服务器，能用但速度明显变慢。
 
 ## FlClash手机版本使用教程
 

@@ -48,7 +48,7 @@ sing-box for Android 简称 SFA，SFA是sing-box官方推出的图形界面客�
 
 * SFA是sing-box for Android的简称。
 
-## 添加订阅
+## 复制订阅地址
 
 在**无忧行 - 控制面板**里点击左侧导航栏**订阅节点**  ，找到**Sing-Box**订阅地址并点击**复制**。
 
@@ -56,7 +56,7 @@ sing-box for Android 简称 SFA，SFA是sing-box官方推出的图形界面客�
 
 <div class="tip custom-block" style="padding-top: 8px">
 
-无忧行订阅服务手机面板：<https://jego.us>
+手机上也能取订阅地址：用手机浏览器打开 <https://jego.us> 登录即可复制。
 
 </div>
 
@@ -86,16 +86,18 @@ sing-box for Android 简称 SFA，SFA是sing-box官方推出的图形界面客�
 #### Overview 标签 - 选择上网模式
 提醒：第一次使用可能三个模式都没选中，建议点一下`Rule`。
 
-`Rule` - 智能分流模式，根据规则自动选择直连或代理
-`Direct` - 直连模式，所有流量都不走代理
-`Global` - 全局代理模式，所有流量都走代理
+- `Rule`：智能分流模式，按规则自动选择直连或代理
+- `Direct`：直连模式，所有流量都不走代理
+- `Global`：全局代理模式，所有流量都走代理
 
-#### Groups 标签 ：更换节点服务器
+#### Groups 标签：更换节点服务器
 在这个页面里可以手动选择自己想使用的节点服务器。
 
 <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F4cQ0AKNudR808MoJ1zOt_2FScreenshot_2025-07-30-08-18-21-604_io_nekohasekai_sfa_1.jpg" alt="节点选择1" width="300"> <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F8rR5ZcKgpR3OQPVHoAPx_2FScreenshot_2025-07-30-08-18-27-812_io_nekohasekai_sfa_2.jpg" alt="节点选择2" width="300">
 
 默认是自动选择，我这里自动选择在`🇸🇬 直连｜新加坡四号`的服务器，点击`Auto Select` 就可以手动选其他服务器。
+
+连接成功后，打开 www.google.com 等境外网站，能正常访问就说明配置生效。
 
 ## sing-box 常见问题
 
@@ -103,7 +105,7 @@ sing-box for Android 简称 SFA，SFA是sing-box官方推出的图形界面客�
 
 **🟡 情况一：刚启动时**
 
-部分配置在启动时会执行 URL 测试或下载规则集，期间可能暂时没有可用结果。是否测试、测试对象和 DNS 行为取决于实际配置；请根据状态文字和日志排查，不把它概括为“选择最快节点”。
+刚启动的一两分钟内，客户端可能正在测试节点或下载规则文件，部分网站会暂时打不开。可以稍等片刻，或按下面的方法手动选择节点。
 
 > ✅ 解决方法：如果不想等待测速过程，可以手动选择一个可用节点，这样就能立即访问境外网站。
 

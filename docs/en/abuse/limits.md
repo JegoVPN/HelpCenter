@@ -27,7 +27,7 @@ The Jego extension on computer browsers currently has <span style="color:orange;
 
 The Jego subscription service has a <span style="color:orange;">**monthly data limit**</span>.
 
-To see what remains, open **Control Panel → Mobile Proxy** and look at **Remaining Monthly Data**. A negative value means the monthly allowance has been used up.
+To see what remains, open **Dashboard → Mobile Proxy** and look at **Remaining Monthly Data**. A negative value means the monthly allowance has been used up.
 
 ## After the monthly allowance is used
 
@@ -36,4 +36,4 @@ You receive a fresh full allowance in either case:
 1. **Automatic refresh on the 1st of each month:** The allowance is replenished when the new month begins.
 2. **Immediate refresh after renewal or upgrade:** The allowance is replenished after payment completes.
 
-After payment, return to the Control Panel and check membership status and Remaining Monthly Data.
+After payment, return to the Dashboard and check membership status and Remaining Monthly Data.

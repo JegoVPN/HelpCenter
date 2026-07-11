@@ -13,11 +13,11 @@ platforms: [chrome, edge]
 tools: []
 appliesTo: []
 sources: ["human-product-decision@2026-07-10", "cloud/app/chromev2@1.5.10"]
-title: AI Product Access Guide
-description: Use Jego's default rules and a suitable route for OpenAI, Anthropic, Grok, and other AI products.
+title: How to access AI products with Jego
+description: Use Jego's default rules and a suitable route for ChatGPT, Claude, Gemini, and other AI products.
 ---
 
-# AI Product Access Guide
+# How to access AI products with Jego
 
 This page is for the Jego browser extension in Chrome and Edge. Keep the existing Proxy Rules, then choose Rules or Global mode for the AI product.
 
@@ -27,7 +27,7 @@ This page is for the Jego browser extension in Chrome and Edge. Keep the existin
 
 ## Keep the default Proxy Rules
 
-Open **Control Panel → Proxy Rules** and keep Jego's existing default settings. You do not need to add separate AI product domains.
+Open **Dashboard → Proxy Rules** and keep Jego's existing default settings. You do not need to add separate AI product domains.
 
 <img src="/images/jego-v1.5.9/dashboard-proxy-policy-empty-en.png" alt="Jego default Proxy Rules screen">
 
@@ -41,4 +41,4 @@ For ChatGPT, Claude, Grok, and similar products, return to the extension popup, 
 
 For Google AI products such as Gemini, AI Studio, and NotebookLM, select **Global** mode in the extension popup and then choose a suitable node.
 
-<img src="/images/jego-v1.5.9/popup-paid-global-auto-en.png" alt="Use Jego Global mode for Google AI products" width="280">
+<img class="jego-popup-screenshot" src="/images/jego-v1.5.10/popup-paid-global-ai-en.png" alt="Use Jego Global mode with a San Jose AI node for Google AI products" width="280">

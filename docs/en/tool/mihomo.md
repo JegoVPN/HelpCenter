@@ -25,7 +25,7 @@ platforms: [windows, macos, linux, android]
 tools: [mihomo]
 appliesTo: []
 sources: [https://github.com/MetaCubeX/mihomo, https://mihomo.party/]
-title: Mihomo Series Software - Tools & Software
+title: Mihomo Series - Tools & Software
 description: Learn about Mihomo clients and open the matching device guide for installation and subscription steps.
 ---
 
@@ -43,7 +43,7 @@ Mihomo not only inherits Clash's core functions, but also adds some unique featu
 
 ### Protocols Supported by Mihomo
 
-Mihomo supports a wide range of proxy protocols and can meet the needs of most users. The supported bypass protocols include: HTTP, SOCKS, Shadowsocks, V2Ray(VMess, VLESS), Trojan, Hysteria(Hysteria, Hysteria2), TUIC, WireGuard.
+Mihomo supports a wide range of proxy protocols and can meet the needs of most users. The supported proxy protocols include: HTTP, SOCKS, Shadowsocks, V2Ray(VMess, VLESS), Trojan, Hysteria(Hysteria, Hysteria2), TUIC, WireGuard.
 
 ### Mihomo Features
 
@@ -74,26 +74,26 @@ Clash Verge Rev is a multi-platform proxy client based on Mihomo (formerly Clash
 
 ### <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FbeA5N21M1iATQm5HiGND_2Fwin_1.svg" width="38" height="28" alt="Windows icon"> Windows
 
-[Clash Nyanpasu](https://github.com/libnyanpasu/clash-nyanpasu) is a bypass client using Mihomo core, developed based on tarui. Simple interface, user-friendly operation.
+[Clash Nyanpasu](https://github.com/libnyanpasu/clash-nyanpasu) is a proxy client using the Mihomo core, developed based on tarui. Simple interface, user-friendly operation.
 
-[Mihomo Party](https://mihomo.party/) is a proxy bypass client using Mihomo core, simpler and easier to use.
+[Mihomo Party](https://mihomo.party/) is a proxy client using the Mihomo core, simpler and easier to use.
 
 
-[Clash N](https://github.com/2dust/clashN) is a bypass client based on Mihomo core developed by the author of v2rayN, also simple and easy to use.
+[Clash N](https://github.com/2dust/clashN) is a proxy client based on the Mihomo core, developed by the author of v2rayN, also simple and easy to use.
 
 ### <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FrUGve1gm2gP1sXdvgjCw_2Fapple_1.svg" width="38" height="28" alt="macOS icon"> macOS
 
-[Clash Nyanpasu](https://github.com/libnyanpasu/clash-nyanpasu) is a bypass client using Mihomo core, developed based on tarui. Simple interface, user-friendly operation.
+[Clash Nyanpasu](https://github.com/libnyanpasu/clash-nyanpasu) is a proxy client using the Mihomo core, developed based on tarui. Simple interface, user-friendly operation.
 
-[Mihomo Party](https://mihomo.party/) is a proxy bypass client using Mihomo core, simpler and easier to use.
+[Mihomo Party](https://mihomo.party/) is a proxy client using the Mihomo core, simpler and easier to use.
 
 [ClashX.Meta](https://github.com/MetaCubeX/ClashX.Meta) aims to provide a simple and lightweight proxy client.
 
 ### <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FJJlooO6sJC8xrcR6vqGj_2Flinux_1.svg" width="38" height="28" alt="Linux icon"> Linux
 
-[Clash Nyanpasu](https://github.com/libnyanpasu/clash-nyanpasu) is a bypass client using Mihomo core, developed based on tarui. Simple interface, user-friendly operation.
+[Clash Nyanpasu](https://github.com/libnyanpasu/clash-nyanpasu) is a proxy client using the Mihomo core, developed based on tarui. Simple interface, user-friendly operation.
 
-[Mihomo Party](https://mihomo.party/) is a proxy bypass client using Mihomo core, simpler and easier to use.
+[Mihomo Party](https://mihomo.party/) is a proxy client using the Mihomo core, simpler and easier to use.
 
 ### <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F7Hh3XGbbAH0jtCKDKIF6_2Fandroid_3.svg" width="38" height="28" alt="Android icon"> Android
 
@@ -101,28 +101,28 @@ Clash Verge Rev is a multi-platform proxy client based on Mihomo (formerly Clash
 
 ### Mihomo configuration safety
 
-An older revision linked an unverified third-party “lazy configuration.” A remote configuration can change traffic routing and DNS behavior, so that URL has been neutralized. Import only the subscription URL generated for your account in the Jego Control Panel, or a configuration you have reviewed and maintain using Mihomo's official documentation.
+An older revision linked an unverified third-party “lazy configuration.” A remote configuration can change traffic routing and DNS behavior, so that URL has been neutralized. Import only the subscription URL generated for your account in the Jego Dashboard, or a configuration you have reviewed and maintain using Mihomo's official documentation.
 
 ## Mihomo Subscription Address
 
 #### **Add Subscription:**
 
-In the **Jego - Control Panel**, click on **Subscription Nodes** in the left navigation bar, find the **Mihomo** subscription address and click **Copy**.
+In the **Jego Dashboard**, click on **Mobile Proxy** in the left navigation bar, find the **Mihomo** subscription address and click **Copy**.
 
 <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FIiJUB1Wa62NjydQ7rhLb_2Fimage_1.png" alt="Mihomo subscription address">
 
 <div class="tip custom-block" style="padding-top: 8px">
 
-Jego subscription service mobile panel: <https://jego.us>
+You can also get the subscription URL on your phone: open <https://jego.us> in the phone browser and sign in to copy it.
 
 </div>
 
-## On Computer: Mihomo Party Bypass Video Tutorial
+## On Computer: Mihomo Party video tutorial
 
-<YouTube videoId="jmnSpxgcbAI" title="Mihomo Party Bypass Video Tutorial" />
+<YouTube videoId="jmnSpxgcbAI" title="Mihomo Party video tutorial" />
 
-Welcome to watch the video tutorial forced to be recorded by the Jego team.
+A video walkthrough recorded by the Jego team.
 
-## On Mobile: Clash Meta for Android and FlClash Bypass Video Tutorial
+## On Mobile: Clash Meta for Android and FlClash video tutorial
 
-<YouTube videoId="HtZWdMHui6I" title="Clash Meta for Android and FlClash Bypass Video Tutorial" />
+<YouTube videoId="HtZWdMHui6I" title="Clash Meta for Android and FlClash video tutorial" />

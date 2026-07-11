@@ -54,7 +54,7 @@ The Jego browser extension and a subscription client can both handle browser req
 
 <span id="_2-the-difference-between-system-proxy-and-virtual-network-cardtun-in-these-software"></span>
 
-System proxy and TUN are both controlled by the subscription client. On phones, the client commonly uses the system's VPN connection indicator while the selected client and node continue to provide the connection.
+System proxy and TUN are both controlled by the subscription client. On phones, the client usually takes over network requests through a system VPN connection (shown as VPN in the status bar); the connection itself is still provided by the client and the selected node.
 
 <span id="_3-set-the-jego-extension-after-enabling-tun-mode"></span>
 
@@ -62,6 +62,6 @@ System proxy and TUN are both controlled by the subscription client. On phones, 
 
 When a computer client has TUN mode enabled, keep the Jego browser extension **Off** so the browser requests are handled by that client.
 
-<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FISwY5XX4FX2qker0nOYC_2Fimage_3.png" alt="Jego extension Off mode" width="280" />
+<img class="jego-popup-screenshot" src="/images/jego-v1.5.9/popup-paid-off-en.png" alt="Jego member extension in Off mode" width="280" />
 
 Off only disables the browser extension's own proxy function. It does not affect the computer client or TUN. When using only the browser extension, select Rules or Global in its popup. See [Rules, Global, and Off](/en/guide/mode-selection) for the full mode explanation.

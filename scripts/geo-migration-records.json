@@ -752,11 +752,15 @@
       "mediaAndExternalLinkChanges": {
         "baselineMediaCount": 7,
         "currentMediaCount": 8,
-        "removedMedia": [],
-        "approvedRemovedMedia": [],
+        "removedMedia": [
+          "/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FISwY5XX4FX2qker0nOYC_2Fimage_3.png"
+        ],
+        "approvedRemovedMedia": [
+          "/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FISwY5XX4FX2qker0nOYC_2Fimage_3.png"
+        ],
         "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
-        "retirementDecision": null,
+        "retirementDecision": "human-confirmed outdated FAQ and AI-product media retired from rendered content; public asset files retained",
         "baselineExternalHosts": [
           "github.com"
         ],
@@ -1772,11 +1776,15 @@
       "mediaAndExternalLinkChanges": {
         "baselineMediaCount": 7,
         "currentMediaCount": 8,
-        "removedMedia": [],
-        "approvedRemovedMedia": [],
+        "removedMedia": [
+          "/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FISwY5XX4FX2qker0nOYC_2Fimage_3.png"
+        ],
+        "approvedRemovedMedia": [
+          "/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FISwY5XX4FX2qker0nOYC_2Fimage_3.png"
+        ],
         "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
-        "retirementDecision": null,
+        "retirementDecision": "human-confirmed outdated FAQ and AI-product media retired from rendered content; public asset files retained",
         "baselineExternalHosts": [
           "github.com"
         ],
@@ -2046,7 +2054,7 @@
       "route": "/en/guide/chatgpt-access",
       "strategy": "restructure-in-place",
       "baselineH1": "How to Access New Bing, Copilot or ChatGPT",
-      "currentH1": "AI Product Access Guide",
+      "currentH1": "How to access AI products with Jego",
       "baselineSections": [
         {
           "level": 2,
@@ -2553,11 +2561,11 @@
         },
         {
           "level": 3,
-          "text": "The old “turn off the firewall” advice is not suitable. What should I do instead?"
+          "text": "How do I check the extension with Diagnostics?"
         },
         {
           "level": 3,
-          "text": "How do I check the extension with Diagnostics?"
+          "text": "The subscription client cannot connect or keeps dropping?"
         },
         {
           "level": 3,
@@ -2616,7 +2624,7 @@
           },
           "to": {
             "level": 3,
-            "text": "The old “turn off the firewall” advice is not suitable. What should I do instead?"
+            "text": "How do I check the extension with Diagnostics?"
           },
           "disposition": "restructured-in-place"
         },
@@ -2627,7 +2635,7 @@
           },
           "to": {
             "level": 3,
-            "text": "How do I check the extension with Diagnostics?"
+            "text": "The subscription client cannot connect or keeps dropping?"
           },
           "disposition": "restructured-in-place"
         },
@@ -2776,11 +2784,11 @@
           "support.google.com"
         ],
         "currentExternalHosts": [
+          "ip111.cn",
           "support.google.com"
         ],
         "removedExternalHosts": [
-          "account.microsoft.com",
-          "ip111.cn"
+          "account.microsoft.com"
         ],
         "addedExternalHosts": []
       },
@@ -3030,12 +3038,20 @@
       ],
       "mediaAndExternalLinkChanges": {
         "baselineMediaCount": 12,
-        "currentMediaCount": 12,
-        "removedMedia": [],
-        "approvedRemovedMedia": [],
+        "currentMediaCount": 11,
+        "removedMedia": [
+          "/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F8gEriEnVmF77fYUY2XxI_2Fimage_1.png",
+          "/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FfcXOYhXbZ9Tr2bWUoI5p_2Fimage_3.png",
+          "/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FqJVM1Fphg1LsgyqucvDn_2F20250326-115951_2.gif"
+        ],
+        "approvedRemovedMedia": [
+          "/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F8gEriEnVmF77fYUY2XxI_2Fimage_1.png",
+          "/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FfcXOYhXbZ9Tr2bWUoI5p_2Fimage_3.png",
+          "/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FqJVM1Fphg1LsgyqucvDn_2F20250326-115951_2.gif"
+        ],
         "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
-        "retirementDecision": null,
+        "retirementDecision": "human-confirmed outdated FAQ and AI-product media retired from rendered content; public asset files retained",
         "baselineExternalHosts": [
           "chrome.google.com",
           "jegocloud.com",
@@ -3044,17 +3060,17 @@
         ],
         "currentExternalHosts": [
           "chrome.google.com",
-          "developer.chrome.com",
           "jegocloud.com",
           "learn.microsoft.com",
-          "microsoftedge.microsoft.com"
+          "microsoftedge.microsoft.com",
+          "support.google.com"
         ],
         "removedExternalHosts": [
           "www.jegocloud.com"
         ],
         "addedExternalHosts": [
-          "developer.chrome.com",
-          "learn.microsoft.com"
+          "learn.microsoft.com",
+          "support.google.com"
         ]
       },
       "contentChangeReviewed": true,
@@ -3065,7 +3081,7 @@
       "route": "/en/guide/keep-updated",
       "strategy": "restructure-in-place",
       "baselineH1": "Stay Connected",
-      "currentH1": "Stay Connected",
+      "currentH1": "Update the extension",
       "baselineSections": [
         {
           "level": 2,
@@ -3111,11 +3127,11 @@
         },
         {
           "level": 2,
-          "text": "Update a mobile subscription"
+          "text": "After updating"
         },
         {
           "level": 2,
-          "text": "After updating"
+          "text": "When you choose to reinstall Jego"
         },
         {
           "level": 2,
@@ -3174,7 +3190,7 @@
           },
           "to": {
             "level": 2,
-            "text": "Update a mobile subscription"
+            "text": "After updating"
           },
           "disposition": "restructured-in-place"
         },
@@ -3185,7 +3201,7 @@
           },
           "to": {
             "level": 2,
-            "text": "After updating"
+            "text": "When you choose to reinstall Jego"
           },
           "disposition": "restructured-in-place"
         }
@@ -3443,7 +3459,7 @@
       "currentSections": [
         {
           "level": 2,
-          "text": "Auto Selection"
+          "text": "Auto Select"
         },
         {
           "level": 2,
@@ -3470,9 +3486,9 @@
           },
           "to": {
             "level": 2,
-            "text": "Auto Selection"
+            "text": "Auto Select"
           },
-          "disposition": "preserved-heading"
+          "disposition": "restructured-in-place"
         },
         {
           "from": {
@@ -3524,7 +3540,7 @@
     {
       "source": "docs/en/guide/nodes.md",
       "route": "/en/guide/nodes",
-      "strategy": "preserve-and-enhance",
+      "strategy": "restructure-in-place",
       "baselineH1": "Node Introduction",
       "currentH1": "Node Introduction",
       "baselineSections": [
@@ -3576,7 +3592,7 @@
         },
         {
           "level": 2,
-          "text": "Mainland Transit Server Routes"
+          "text": "Mainland Transit Routes"
         },
         {
           "level": 2,
@@ -3639,9 +3655,9 @@
           },
           "to": {
             "level": 2,
-            "text": "Mainland Transit Server Routes"
+            "text": "Mainland Transit Routes"
           },
-          "disposition": "preserved-heading"
+          "disposition": "restructured-in-place"
         },
         {
           "from": {
@@ -4068,7 +4084,7 @@
       "route": "/en/guide/support",
       "strategy": "preserve-and-enhance",
       "baselineH1": "Contact Customer Service",
-      "currentH1": "Contact Customer Service",
+      "currentH1": "Contact Support",
       "baselineSections": [
         {
           "level": 2,
@@ -4656,7 +4672,7 @@
     {
       "source": "docs/en/index.md",
       "route": "/en/",
-      "strategy": "preserve-and-enhance",
+      "strategy": "restructure-in-place",
       "baselineH1": null,
       "currentH1": null,
       "baselineSections": [
@@ -4684,23 +4700,23 @@
       "currentSections": [
         {
           "level": 2,
-          "text": "Quick Start"
+          "text": "Start using Jego"
         },
         {
           "level": 3,
-          "text": "I. How to Use Jego for Proxy Access in Browser"
+          "text": "Proxy in your browser"
         },
         {
           "level": 3,
-          "text": "Upgrade to Premium Membership"
+          "text": "Proxy on a computer or phone"
         },
         {
           "level": 3,
-          "text": "II. How to Use Jego for Proxy Access on PC or Mobile"
+          "text": "Membership and plans"
         },
         {
           "level": 3,
-          "text": "III. Understand Jego Usage Guidelines"
+          "text": "Help and support"
         }
       ],
       "sectionMapping": [
@@ -4711,9 +4727,9 @@
           },
           "to": {
             "level": 2,
-            "text": "Quick Start"
+            "text": "Start using Jego"
           },
-          "disposition": "preserved-heading"
+          "disposition": "restructured-in-place"
         },
         {
           "from": {
@@ -4722,9 +4738,9 @@
           },
           "to": {
             "level": 3,
-            "text": "I. How to Use Jego for Proxy Access in Browser"
+            "text": "Proxy in your browser"
           },
-          "disposition": "preserved-heading"
+          "disposition": "restructured-in-place"
         },
         {
           "from": {
@@ -4733,9 +4749,9 @@
           },
           "to": {
             "level": 3,
-            "text": "Upgrade to Premium Membership"
+            "text": "Proxy on a computer or phone"
           },
-          "disposition": "preserved-heading"
+          "disposition": "restructured-in-place"
         },
         {
           "from": {
@@ -4744,9 +4760,9 @@
           },
           "to": {
             "level": 3,
-            "text": "II. How to Use Jego for Proxy Access on PC or Mobile"
+            "text": "Membership and plans"
           },
-          "disposition": "preserved-heading"
+          "disposition": "restructured-in-place"
         },
         {
           "from": {
@@ -4755,9 +4771,9 @@
           },
           "to": {
             "level": 3,
-            "text": "III. Understand Jego Usage Guidelines"
+            "text": "Help and support"
           },
-          "disposition": "preserved-heading"
+          "disposition": "restructured-in-place"
         }
       ],
       "preservedTasks": [
@@ -4985,7 +5001,7 @@
       "currentSections": [
         {
           "level": 2,
-          "text": "Payment Path:"
+          "text": "Payment Path"
         },
         {
           "level": 2,
@@ -4993,7 +5009,7 @@
         },
         {
           "level": 2,
-          "text": "Payment Channels:"
+          "text": "Payment Channels"
         },
         {
           "level": 3,
@@ -5040,7 +5056,7 @@
           },
           "to": {
             "level": 2,
-            "text": "Payment Path:"
+            "text": "Payment Path"
           },
           "disposition": "preserved-heading"
         },
@@ -5051,7 +5067,7 @@
           },
           "to": {
             "level": 2,
-            "text": "Payment Channels:"
+            "text": "Payment Channels"
           },
           "disposition": "preserved-heading"
         },
@@ -5337,8 +5353,7 @@
       "corrections": [
         "metadata-and-bilingual-linkage",
         "human-first-copy-and-task-flow",
-        "tool-lifecycle-support-source-and-alternatives",
-        "high-risk-claim-reviewed"
+        "tool-lifecycle-support-source-and-alternatives"
       ],
       "mediaAndExternalLinkChanges": {
         "baselineMediaCount": 8,
@@ -6437,8 +6452,7 @@
       "corrections": [
         "metadata-and-bilingual-linkage",
         "human-first-copy-and-task-flow",
-        "tool-lifecycle-support-source-and-alternatives",
-        "high-risk-claim-reviewed"
+        "tool-lifecycle-support-source-and-alternatives"
       ],
       "mediaAndExternalLinkChanges": {
         "baselineMediaCount": 13,
@@ -6500,8 +6514,8 @@
           "text": "GUI.for.SingBox Windows Version Usage Tutorial"
         },
         {
-          "level": 2,
-          "text": "Add Subscription"
+          "level": 3,
+          "text": "Copy the subscription URL"
         },
         {
           "level": 3,
@@ -6541,10 +6555,10 @@
             "text": "Add Subscription"
           },
           "to": {
-            "level": 2,
-            "text": "Add Subscription"
+            "level": 3,
+            "text": "Copy the subscription URL"
           },
-          "disposition": "preserved-heading"
+          "disposition": "restructured-in-place"
         },
         {
           "from": {
@@ -6905,11 +6919,11 @@
         },
         {
           "level": 2,
-          "text": "On Computer: Mihomo Party Bypass Video Tutorial"
+          "text": "On Computer: Mihomo Party video tutorial"
         },
         {
           "level": 2,
-          "text": "On Mobile: Clash Meta for Android and FlClash Bypass Video Tutorial"
+          "text": "On Mobile: Clash Meta for Android and FlClash video tutorial"
         }
       ],
       "sectionMapping": [
@@ -7052,9 +7066,9 @@
           },
           "to": {
             "level": 2,
-            "text": "On Computer: Mihomo Party Bypass Video Tutorial"
+            "text": "On Computer: Mihomo Party video tutorial"
           },
-          "disposition": "preserved-heading"
+          "disposition": "restructured-in-place"
         },
         {
           "from": {
@@ -7063,9 +7077,9 @@
           },
           "to": {
             "level": 2,
-            "text": "On Mobile: Clash Meta for Android and FlClash Bypass Video Tutorial"
+            "text": "On Mobile: Clash Meta for Android and FlClash video tutorial"
           },
-          "disposition": "preserved-heading"
+          "disposition": "restructured-in-place"
         }
       ],
       "preservedTasks": [
@@ -7508,19 +7522,19 @@
         },
         {
           "level": 3,
-          "text": "Config / Config: Only proxy foreign traffic"
+          "text": "Config: Only proxy foreign traffic"
         },
         {
           "level": 3,
-          "text": "Proxy / Proxy: Proxy all traffic"
+          "text": "Proxy: Proxy all traffic"
         },
         {
           "level": 3,
-          "text": "Direct / Direct: Do not proxy any traffic"
+          "text": "Direct: Do not proxy any traffic"
         },
         {
           "level": 3,
-          "text": "Scene / Scene: Proxy traffic according to scenarios"
+          "text": "Scene: Proxy traffic according to scenarios"
         }
       ],
       "sectionMapping": [
@@ -7608,9 +7622,9 @@
           },
           "to": {
             "level": 3,
-            "text": "Config / Config: Only proxy foreign traffic"
+            "text": "Config: Only proxy foreign traffic"
           },
-          "disposition": "preserved-heading"
+          "disposition": "restructured-in-place"
         },
         {
           "from": {
@@ -7619,9 +7633,9 @@
           },
           "to": {
             "level": 3,
-            "text": "Proxy / Proxy: Proxy all traffic"
+            "text": "Proxy: Proxy all traffic"
           },
-          "disposition": "preserved-heading"
+          "disposition": "restructured-in-place"
         },
         {
           "from": {
@@ -7630,9 +7644,9 @@
           },
           "to": {
             "level": 3,
-            "text": "Direct / Direct: Do not proxy any traffic"
+            "text": "Direct: Do not proxy any traffic"
           },
-          "disposition": "preserved-heading"
+          "disposition": "restructured-in-place"
         },
         {
           "from": {
@@ -7641,9 +7655,9 @@
           },
           "to": {
             "level": 3,
-            "text": "Scene / Scene: Proxy traffic according to scenarios"
+            "text": "Scene: Proxy traffic according to scenarios"
           },
-          "disposition": "preserved-heading"
+          "disposition": "restructured-in-place"
         }
       ],
       "preservedTasks": [
@@ -7758,7 +7772,7 @@
         },
         {
           "level": 3,
-          "text": "When only local websites open"
+          "text": "Only mainland China websites open"
         }
       ],
       "sectionMapping": [
@@ -7846,7 +7860,7 @@
           },
           "to": {
             "level": 3,
-            "text": "When only local websites open"
+            "text": "Only mainland China websites open"
           },
           "disposition": "restructured-in-place"
         }
@@ -7931,7 +7945,7 @@
         },
         {
           "level": 2,
-          "text": "Add Subscription"
+          "text": "Copy the subscription URL"
         },
         {
           "level": 2,
@@ -7951,7 +7965,7 @@
         },
         {
           "level": 3,
-          "text": "When only local websites open"
+          "text": "Only mainland China websites open"
         },
         {
           "level": 3,
@@ -7976,7 +7990,7 @@
             "text": "Add Subscription"
           },
           "to": {
-            "level": 2,
+            "level": 3,
             "text": "Add Subscription"
           },
           "disposition": "preserved-heading"
@@ -7998,7 +8012,7 @@
             "text": "Add Subscription"
           },
           "to": {
-            "level": 2,
+            "level": 3,
             "text": "Add Subscription"
           },
           "disposition": "preserved-heading"
@@ -8032,7 +8046,7 @@
           },
           "to": {
             "level": 3,
-            "text": "When only local websites open"
+            "text": "Only mainland China websites open"
           },
           "disposition": "restructured-in-place"
         },
@@ -8154,11 +8168,11 @@
         },
         {
           "level": 2,
-          "text": "Add Subscription"
+          "text": "Copy the subscription URL"
         },
         {
           "level": 2,
-          "text": "sing-box for macOS /SFM Usage Tutorial"
+          "text": "sing-box for macOS / SFM Usage Tutorial"
         },
         {
           "level": 3,
@@ -8186,7 +8200,7 @@
         },
         {
           "level": 3,
-          "text": "When only local websites open"
+          "text": "Only mainland China websites open"
         },
         {
           "level": 3,
@@ -8222,7 +8236,7 @@
             "text": "Add Subscription"
           },
           "to": {
-            "level": 2,
+            "level": 3,
             "text": "Add Subscription"
           },
           "disposition": "preserved-heading"
@@ -8234,7 +8248,7 @@
           },
           "to": {
             "level": 2,
-            "text": "sing-box for macOS /SFM Usage Tutorial"
+            "text": "sing-box for macOS / SFM Usage Tutorial"
           },
           "disposition": "preserved-heading"
         },
@@ -8244,7 +8258,7 @@
             "text": "Add Subscription"
           },
           "to": {
-            "level": 2,
+            "level": 3,
             "text": "Add Subscription"
           },
           "disposition": "preserved-heading"
@@ -8277,7 +8291,7 @@
             "text": "Add Subscription"
           },
           "to": {
-            "level": 2,
+            "level": 3,
             "text": "Add Subscription"
           },
           "disposition": "preserved-heading"
@@ -8311,7 +8325,7 @@
           },
           "to": {
             "level": 3,
-            "text": "When only local websites open"
+            "text": "Only mainland China websites open"
           },
           "disposition": "restructured-in-place"
         },
@@ -8957,7 +8971,7 @@
       "route": "/guide/chatgpt-access",
       "strategy": "restructure-in-place",
       "baselineH1": "如何解锁New Bing、Copilot或者ChatGPT",
-      "currentH1": "AI 产品访问指南",
+      "currentH1": "如何使用无忧行访问 AI 产品",
       "baselineSections": [
         {
           "level": 2,
@@ -9100,7 +9114,7 @@
       "route": "/guide/encrypted-dns",
       "strategy": "restructure-in-place",
       "baselineH1": "加密DNS（DoH / DoT）完全指南",
-      "currentH1": "加密DNS（DoH / DoT）完全指南",
+      "currentH1": "加密 DNS（DoH / DoT）完全指南",
       "baselineSections": [
         {
           "level": 2,
@@ -9462,11 +9476,11 @@
         },
         {
           "level": 3,
-          "text": "“建议关闭防火墙”并不合适，应该怎么设置？"
+          "text": "如何使用网络诊断自助检查插件？"
         },
         {
           "level": 3,
-          "text": "如何使用网络诊断自助检查插件？"
+          "text": "订阅客户端连不上或不稳定，怎么排查？"
         },
         {
           "level": 3,
@@ -9525,7 +9539,7 @@
           },
           "to": {
             "level": 3,
-            "text": "“建议关闭防火墙”并不合适，应该怎么设置？"
+            "text": "如何使用网络诊断自助检查插件？"
           },
           "disposition": "restructured-in-place"
         },
@@ -9536,7 +9550,7 @@
           },
           "to": {
             "level": 3,
-            "text": "如何使用网络诊断自助检查插件？"
+            "text": "订阅客户端连不上或不稳定，怎么排查？"
           },
           "disposition": "restructured-in-place"
         },
@@ -9646,11 +9660,11 @@
           "support.google.com"
         ],
         "currentExternalHosts": [
+          "ip111.cn",
           "support.google.com"
         ],
         "removedExternalHosts": [
-          "account.microsoft.com",
-          "ip111.cn"
+          "account.microsoft.com"
         ],
         "addedExternalHosts": []
       },
@@ -9900,12 +9914,20 @@
       ],
       "mediaAndExternalLinkChanges": {
         "baselineMediaCount": 12,
-        "currentMediaCount": 12,
-        "removedMedia": [],
-        "approvedRemovedMedia": [],
+        "currentMediaCount": 11,
+        "removedMedia": [
+          "/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F8gEriEnVmF77fYUY2XxI_2Fimage_1.png",
+          "/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FfcXOYhXbZ9Tr2bWUoI5p_2Fimage_3.png",
+          "/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FqJVM1Fphg1LsgyqucvDn_2F20250326-115951_2.gif"
+        ],
+        "approvedRemovedMedia": [
+          "/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F8gEriEnVmF77fYUY2XxI_2Fimage_1.png",
+          "/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FfcXOYhXbZ9Tr2bWUoI5p_2Fimage_3.png",
+          "/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FqJVM1Fphg1LsgyqucvDn_2F20250326-115951_2.gif"
+        ],
         "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
-        "retirementDecision": null,
+        "retirementDecision": "human-confirmed outdated FAQ and AI-product media retired from rendered content; public asset files retained",
         "baselineExternalHosts": [
           "chrome.google.com",
           "jegocloud.com",
@@ -9914,17 +9936,17 @@
         ],
         "currentExternalHosts": [
           "chrome.google.com",
-          "developer.chrome.com",
           "jegocloud.com",
           "learn.microsoft.com",
-          "microsoftedge.microsoft.com"
+          "microsoftedge.microsoft.com",
+          "support.google.com"
         ],
         "removedExternalHosts": [
           "www.jegocloud.com"
         ],
         "addedExternalHosts": [
-          "developer.chrome.com",
-          "learn.microsoft.com"
+          "learn.microsoft.com",
+          "support.google.com"
         ]
       },
       "contentChangeReviewed": true,
@@ -9935,7 +9957,7 @@
       "route": "/guide/keep-updated",
       "strategy": "restructure-in-place",
       "baselineH1": "防止失联",
-      "currentH1": "防止失联",
+      "currentH1": "更新插件",
       "baselineSections": [
         {
           "level": 2,
@@ -9981,11 +10003,11 @@
         },
         {
           "level": 2,
-          "text": "更新手机订阅"
+          "text": "更新完成后"
         },
         {
           "level": 2,
-          "text": "更新完成后"
+          "text": "需要重新安装时"
         },
         {
           "level": 2,
@@ -10044,7 +10066,7 @@
           },
           "to": {
             "level": 2,
-            "text": "更新手机订阅"
+            "text": "更新完成后"
           },
           "disposition": "restructured-in-place"
         },
@@ -10055,7 +10077,7 @@
           },
           "to": {
             "level": 2,
-            "text": "更新完成后"
+            "text": "需要重新安装时"
           },
           "disposition": "restructured-in-place"
         }
@@ -10393,7 +10415,7 @@
     {
       "source": "docs/guide/nodes.md",
       "route": "/guide/nodes",
-      "strategy": "preserve-and-enhance",
+      "strategy": "restructure-in-place",
       "baselineH1": "节点介绍",
       "currentH1": "节点介绍",
       "baselineSections": [
@@ -10445,7 +10467,7 @@
         },
         {
           "level": 2,
-          "text": "大陆专用中转服务器线路"
+          "text": "大陆中转线路"
         },
         {
           "level": 2,
@@ -10508,9 +10530,9 @@
           },
           "to": {
             "level": 2,
-            "text": "大陆专用中转服务器线路"
+            "text": "大陆中转线路"
           },
-          "disposition": "preserved-heading"
+          "disposition": "restructured-in-place"
         },
         {
           "from": {
@@ -11522,7 +11544,7 @@
     {
       "source": "docs/index.md",
       "route": "/",
-      "strategy": "preserve-and-enhance",
+      "strategy": "restructure-in-place",
       "baselineH1": null,
       "currentH1": null,
       "baselineSections": [
@@ -11550,23 +11572,23 @@
       "currentSections": [
         {
           "level": 2,
-          "text": "快速开始"
+          "text": "开始使用无忧行"
         },
         {
           "level": 3,
-          "text": "一、如何在浏览器上使用无忧行进行翻墙"
+          "text": "在浏览器上翻墙"
         },
         {
           "level": 3,
-          "text": "升级成为会员"
+          "text": "在电脑或手机上翻墙"
         },
         {
           "level": 3,
-          "text": "二、如何在电脑或手机上使用无忧行进行翻墙"
+          "text": "会员与套餐"
         },
         {
           "level": 3,
-          "text": "三、了解无忧行的使用准则"
+          "text": "帮助与支持"
         }
       ],
       "sectionMapping": [
@@ -11577,9 +11599,9 @@
           },
           "to": {
             "level": 2,
-            "text": "快速开始"
+            "text": "开始使用无忧行"
           },
-          "disposition": "preserved-heading"
+          "disposition": "restructured-in-place"
         },
         {
           "from": {
@@ -11588,9 +11610,9 @@
           },
           "to": {
             "level": 3,
-            "text": "一、如何在浏览器上使用无忧行进行翻墙"
+            "text": "在浏览器上翻墙"
           },
-          "disposition": "preserved-heading"
+          "disposition": "restructured-in-place"
         },
         {
           "from": {
@@ -11599,9 +11621,9 @@
           },
           "to": {
             "level": 3,
-            "text": "升级成为会员"
+            "text": "在电脑或手机上翻墙"
           },
-          "disposition": "preserved-heading"
+          "disposition": "restructured-in-place"
         },
         {
           "from": {
@@ -11610,9 +11632,9 @@
           },
           "to": {
             "level": 3,
-            "text": "二、如何在电脑或手机上使用无忧行进行翻墙"
+            "text": "会员与套餐"
           },
-          "disposition": "preserved-heading"
+          "disposition": "restructured-in-place"
         },
         {
           "from": {
@@ -11621,9 +11643,9 @@
           },
           "to": {
             "level": 3,
-            "text": "三、了解无忧行的使用准则"
+            "text": "帮助与支持"
           },
-          "disposition": "preserved-heading"
+          "disposition": "restructured-in-place"
         }
       ],
       "preservedTasks": [
@@ -11851,7 +11873,7 @@
       "currentSections": [
         {
           "level": 2,
-          "text": "支付路径："
+          "text": "支付路径"
         },
         {
           "level": 2,
@@ -11859,7 +11881,7 @@
         },
         {
           "level": 2,
-          "text": "支付渠道："
+          "text": "支付渠道"
         },
         {
           "level": 3,
@@ -11906,7 +11928,7 @@
           },
           "to": {
             "level": 2,
-            "text": "支付路径："
+            "text": "支付路径"
           },
           "disposition": "preserved-heading"
         },
@@ -11917,7 +11939,7 @@
           },
           "to": {
             "level": 2,
-            "text": "支付渠道："
+            "text": "支付渠道"
           },
           "disposition": "preserved-heading"
         },
@@ -12375,7 +12397,7 @@
         },
         {
           "level": 3,
-          "text": "腳本模式 | Script：灵活地自定义规则"
+          "text": "脚本模式 | Script：灵活地自定义规则"
         },
         {
           "level": 2,
@@ -12556,9 +12578,9 @@
           },
           "to": {
             "level": 3,
-            "text": "腳本模式 | Script：灵活地自定义规则"
+            "text": "脚本模式 | Script：灵活地自定义规则"
           },
-          "disposition": "preserved-heading"
+          "disposition": "restructured-in-place"
         },
         {
           "from": {
@@ -13363,8 +13385,8 @@
           "text": "GUI.for.SingBox Windows版本使用教程"
         },
         {
-          "level": 2,
-          "text": "添加订阅"
+          "level": 3,
+          "text": "复制订阅地址"
         },
         {
           "level": 3,
@@ -13404,10 +13426,10 @@
             "text": "添加订阅"
           },
           "to": {
-            "level": 2,
-            "text": "添加订阅"
+            "level": 3,
+            "text": "复制订阅地址"
           },
-          "disposition": "preserved-heading"
+          "disposition": "restructured-in-place"
         },
         {
           "from": {
@@ -14600,7 +14622,7 @@
         },
         {
           "level": 3,
-          "text": "Andorid设备"
+          "text": "Android 设备"
         },
         {
           "level": 3,
@@ -14660,9 +14682,9 @@
           },
           "to": {
             "level": 3,
-            "text": "Andorid设备"
+            "text": "Android 设备"
           },
-          "disposition": "preserved-heading"
+          "disposition": "restructured-in-place"
         },
         {
           "from": {
@@ -14789,7 +14811,7 @@
         },
         {
           "level": 2,
-          "text": "添加订阅"
+          "text": "复制订阅地址"
         },
         {
           "level": 2,
@@ -14834,7 +14856,7 @@
             "text": "添加订阅"
           },
           "to": {
-            "level": 2,
+            "level": 3,
             "text": "添加订阅"
           },
           "disposition": "preserved-heading"
@@ -14856,7 +14878,7 @@
             "text": "添加订阅"
           },
           "to": {
-            "level": 2,
+            "level": 3,
             "text": "添加订阅"
           },
           "disposition": "preserved-heading"
@@ -15012,11 +15034,11 @@
         },
         {
           "level": 2,
-          "text": "添加订阅"
+          "text": "复制订阅地址"
         },
         {
           "level": 2,
-          "text": "sing-box for macOS /SFM 使用教程"
+          "text": "sing-box for macOS / SFM 使用教程"
         },
         {
           "level": 3,
@@ -15080,7 +15102,7 @@
             "text": "添加订阅"
           },
           "to": {
-            "level": 2,
+            "level": 3,
             "text": "添加订阅"
           },
           "disposition": "preserved-heading"
@@ -15092,7 +15114,7 @@
           },
           "to": {
             "level": 2,
-            "text": "sing-box for macOS /SFM 使用教程"
+            "text": "sing-box for macOS / SFM 使用教程"
           },
           "disposition": "preserved-heading"
         },
@@ -15102,7 +15124,7 @@
             "text": "添加订阅"
           },
           "to": {
-            "level": 2,
+            "level": 3,
             "text": "添加订阅"
           },
           "disposition": "preserved-heading"
@@ -15135,7 +15157,7 @@
             "text": "添加订阅"
           },
           "to": {
-            "level": 2,
+            "level": 3,
             "text": "添加订阅"
           },
           "disposition": "preserved-heading"

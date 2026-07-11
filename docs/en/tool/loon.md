@@ -43,21 +43,21 @@ App Store availability is controlled by Apple and the developer for each account
 
 ## Download Loon
 
-If the [official Loon App Store page](https://apps.apple.com/us/app/loon/id1373567447) is available for your legitimate account region, install it from the store. Jego users should prefer one of the supported replacements listed above.
+If the [official Loon App Store page](https://apps.apple.com/us/app/loon/id1373567447) is available for your legitimate account region, install it from the store. Jego users should prefer the recommended client linked in the notice at the top.
 
 ## Add Subscription
 
-In the **Jego - Control Panel**, click on **Subscription Nodes** in the left navigation bar, find the Loon subscription address and click **Copy**.
+In the **Jego Dashboard**, click on **Mobile Proxy** in the left navigation bar, find the Loon subscription address and click **Copy**.
 
-<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FepWbFG2WzCAPvzzriSLX_2Fimage_3.png" alt="Jego control panel">
+<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FepWbFG2WzCAPvzzriSLX_2Fimage_3.png" alt="Jego Dashboard">
 
 <div class="tip custom-block" style="padding-top: 8px">
 
-Jego subscription service mobile panel: <https://jego.us>
+You can also get the subscription URL on your phone: open <https://jego.us> in the phone browser and sign in to copy it.
 
 </div>
 
-Enter Loon, follow the path **Profile** -> **All Nodes** -> :heavy_plus_sign: and click to the following image, paste the copied subscription address into the address bar, fill in the name at the same time, and finally click the confirm button in the upper right corner to complete the addition.
+Open Loon and tap **Profile** -> **All Nodes** -> :heavy_plus_sign: to reach the screen shown below. Paste the copied subscription address into the address bar, give it a name, then tap the confirm button in the upper-right corner to finish.
 
 <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FEYFUwKu3KY9d1JL8NVE2_2Fimage_1.png" alt="Add subscription" width="300">
 
@@ -75,7 +75,7 @@ Click the switch in the upper right corner of the Loon homepage to connect to th
 
 ## Traffic Mode Selection
 
-Click the small text below LOON in the upper right corner of the homepage, and after clicking, the traffic modes as shown in the image below will be displayed, you can choose
+Tap the small text below LOON in the upper-right corner of the homepage; the traffic modes shown below will appear and you can pick one:
 
 <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FpJrQaTyQ0miteU5xrNGH_2Fimage_1.png" alt="Traffic mode" width="300">
 

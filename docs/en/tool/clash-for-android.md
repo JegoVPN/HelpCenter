@@ -26,7 +26,7 @@ tools: [clash-for-android]
 appliesTo: []
 sources: []
 title: Clash for Android - Tools & Software
-description: Historical Clash for Android installation and subscription steps, with currently supported alternatives.
+description: Why Clash for Android no longer offers an install entry, with subscription and usage steps kept for migrating old devices, plus currently supported alternatives.
 ---
 
 # Clash for Android
@@ -55,13 +55,13 @@ The original Google Play and GitHub project entries are no longer available, and
 
 ## Add Subscription
 
-In the **Jego - Control Panel**, click on **Subscription Nodes** in the left navigation bar, find the Clash/Mihomo Series subscription address and click **Copy**.
+In the **Jego Dashboard**, click on **Mobile Proxy** in the left navigation bar, find the Clash/Mihomo Series subscription address and click **Copy**.
 
-<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FZi4WzVyeec9wgY50xRLc_2Fimage_2.png" alt="Jego control panel">
+<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FZi4WzVyeec9wgY50xRLc_2Fimage_2.png" alt="Jego Dashboard">
 
 <div class="tip custom-block" style="padding-top: 8px">
 
-Jego subscription service mobile panel: <https://jego.us>
+You can also get the subscription URL on your phone: open <https://jego.us> in the phone browser and sign in to copy it.
 
 </div>
 
@@ -94,7 +94,7 @@ Go to the App main page, tap "Proxy" > "┇" > "Mode", and select the proxy mode
 
 Suitable for users who use both domestic and foreign services.
 
-Whether traffic is direct or proxied depends on the active configuration; account UI determines how it counts toward the plan.
+In Rule mode, mainland-China traffic connects directly and does not go through the proxy server.
 
 When querying IP on mainland websites, you get the local IP address.
 
@@ -113,4 +113,4 @@ Choosing this mode will result in inability to bypass restrictions, with the sam
 
 Suitable for users who do not rely on mainland services.
 
-Global mode sends client-managed traffic through the proxy; verify performance and destination results on the current network.
+In Global mode, foreign traffic goes through the proxy as usual; mainland traffic also goes through the proxy server — it works, but noticeably slower.

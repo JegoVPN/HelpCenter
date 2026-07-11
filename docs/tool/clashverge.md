@@ -31,13 +31,11 @@ description: 介绍如何安装 Clash Verge Rev、导入无忧行订阅并开始
 
 # Clash Verge Rev
 
-基于Mihomo（原ClashMeta）内核的多平台代理客户端，并支持切换 Alpha 版本内核。简洁美观的用户界面，支持自定义主题颜色。
-
 ::: info 欢迎
 欢迎阅读2025年Clash Verge Rev使用教程
 :::
 
-Clash Verge Rev是Clash Verge 的延续，一款基于 Tauri 的开发的Mihomo（原ClashMeta）内核的多平台代理客户端，并支持切换 Alpha 版本内核。简洁美观的用户界面，支持自定义主题颜色、代理组/托盘图标以及 CSS Injection。配置文件管理和增强（Merge 和 Script），配置文件语法提示。系统代理和守卫、TUN(虚拟网卡) 模式。可视化节点和规则编辑。WebDav 配置备份和同步。
+Clash Verge Rev是Clash Verge 的延续，一款基于 Tauri 开发的 Mihomo（原ClashMeta）内核的多平台代理客户端，并支持切换 Alpha 版本内核。简洁美观的用户界面，支持自定义主题颜色、代理组/托盘图标以及 CSS Injection。配置文件管理和增强（Merge 和 Script），配置文件语法提示。系统代理和守卫、TUN(虚拟网卡) 模式。可视化节点和规则编辑。WebDav 配置备份和同步。
 
 ## <img src="/images/clashvergelogo.png" width="26" height="26" alt="Clash Verge Rev"> 获取 Clash Verge Rev
 
@@ -52,7 +50,9 @@ Windows 7 用户请先升级至Win10/11
 如果你不清楚你的电脑系统架构，请下载 x64 架构文件（目前多数 Windows 电脑使用该架构）。
 
 #### macOS
-不支持 macOS 10 操作系统，请升级 macOS 到 11 或 更高版本。
+不支持 macOS 10 操作系统，请升级 macOS 到 11 或更高版本。
+
+Apple 芯片（M 系列）下载 aarch64 的 dmg，Intel 芯片下载 x64 的 dmg。
 
 ### 操作界面
 
@@ -66,7 +66,7 @@ Windows 7 用户请先升级至Win10/11
 
 <div class="tip custom-block" style="padding-top: 8px">
 
-无忧行订阅服务手机面板：<https://jego.us>
+手机上也能取订阅地址：用手机浏览器打开 <https://jego.us> 登录即可复制。
 
 </div>
 
@@ -74,7 +74,7 @@ Windows 7 用户请先升级至Win10/11
 
 <img src="/images/screenshot-20250807-121741.png" alt="导入订阅">
 
-在弹出的新建配置窗口，**类型默认**就是`Remote`，**名称**填写`Jego`，描述可以不填，**订阅链接**复制刚才从无忧行控制面板里复制的`Mihomo订阅链接`，**更新间隔**改成`1440`分钟，然后点击点击**保存**。
+在弹出的新建配置窗口，**类型默认**就是`Remote`，**名称**填写`Jego`，描述可以不填，**订阅链接**复制刚才从无忧行控制面板里复制的`Mihomo订阅链接`，**更新间隔**改成`1440`分钟，然后点击**保存**。
 
 <img src="/images/screenshot-20250807-121847.png" alt="编辑配置">
 
@@ -101,13 +101,13 @@ Windows 7 用户请先升级至Win10/11
 
 适用于同时使用国内外服务的用户。
 
-大陆流量不會消耗套餐流量。
+规则模式下，中国大陆的流量走本地直连，不经过代理服务器。
 
-在大陆网站上查詢 IP 得到的是本地 IP 地址。
+在大陆网站上查询 IP 得到的是本地 IP 地址。
 
-在国外网站上查詢 IP 得到的是代理 IP 地址。
+在国外网站上查询 IP 得到的是代理 IP 地址。
 
-分流规则无法做到全面且具有時效性，如果遇到以下情況，请尝试全局代理。
+分流规则无法做到全面且具有时效性，如果遇到以下情况，请尝试全局代理。
 
 * 无法打开国际网站；
 * 加载国际网站缓慢；
@@ -116,7 +116,7 @@ Windows 7 用户请先升级至Win10/11
 
 所有流量均通过代理服务器，适用于需要全局科学上网的场景，不依赖大陆服务的用户。
 
-對国外流量效果非常好，大陆流量會被減速。
+国外流量正常走代理；大陆流量也会经过代理服务器，能用但速度明显变慢。
 
 ### **直连 / Direct：不代理任何流量**
 

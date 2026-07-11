@@ -32,12 +32,12 @@ When no custom rules have been added yet, the page looks like this:
 
 ![Empty Proxy Rules page](/images/jego-v1.5.9/dashboard-proxy-policy-empty-en.png)
 
-1. Select the Jego icon and open the **Control Panel**.
+1. Select the Jego icon and open the **Dashboard**.
 2. Open **Proxy Rules** in the sidebar, then select **Add Proxy Rules**.
 3. Under **Proxy Server**, choose how matching addresses should connect:
    - choose a Jego node to send them through that node;
-   - choose **Direct [No Proxy]** to use the local connection.
-4. Under **Domain/Host List**, enter a website domain such as `bbc.com`. Put multiple entries on separate lines. You can also enter an IPv4 address or an IPv4 range such as `1.1.1.*` when needed.
+   - choose **Direct (No Proxy)** to use the local connection.
+4. Under **Domain/Host List**, enter a website domain such as `bbc.com`. Put multiple entries on separate lines. You can also enter an IPv4 address when needed; IPv4 ranges such as `1.1.1.*` apply only to direct-connection rules.
 5. Select **Save**. Jego returns to the Proxy Rules list, where the saved route and addresses are shown.
 
 The simplest format is a root domain. For example, `bbc.com` also covers subdomains such as `www.bbc.com`.
@@ -47,7 +47,7 @@ The simplest format is a root domain. For example, `bbc.com` also covers subdoma
 - **Use one route for several addresses:** Put the domains or IP addresses in one rule, one entry per line. They will all use the selected node or direct connection.
 - **Use different routes for different addresses:** Create separate rules. For example, save `bbc.com` with a London node and `nikkei.com` with a Tokyo node as two rules.
 - **Use a root domain for a website:** `bbc.com` covers its subdomains, so you do not need to add `www.bbc.com` separately.
-- **Route by IP when needed:** Enter a single IPv4 address as-is. For an IPv4 range, use an asterisk such as `1.1.1.*`.
+- **Route by IP when needed:** A single IPv4 address can use a node or connect directly. IPv4 ranges such as `1.1.1.*` apply only when Proxy Server is set to **Direct (No Proxy)**; sending a whole range through a node is not supported yet.
 
 A custom rule affects only matching addresses. Other websites continue to follow Jego's existing default rules.
 
@@ -55,7 +55,7 @@ A custom rule affects only matching addresses. Other websites continue to follow
 
 - **Send BBC through a London node:** Select a London node under Proxy Server and enter `bbc.com` under Domain/Host List.
 - **Send Nikkei Chinese through a Tokyo node:** Select a Tokyo node and enter `nikkei.com`.
-- **Connect to Bilibili directly:** Select **Direct [No Proxy]** and enter `bilibili.com`.
+- **Connect to Bilibili directly:** Select **Direct (No Proxy)** and enter `bilibili.com`.
 
 Node names can vary by account and current availability. Choose the matching location from your own list.
 
@@ -73,11 +73,11 @@ To add more addresses to the same route, select **Edit** and add them to the exi
 
 1. Return to the extension popup and choose **Rules** mode.
 2. Open the destination website normally.
-3. To confirm its route, open **Diagnostics → Connection Check** and enter the domain under **Rules Check**.
+3. To confirm its route, open **Diagnostics → Connection** and enter the domain under **Rules Check**.
 4. Return to the Proxy Rules list at any time to **Edit** the node or addresses, or **Delete** a rule you no longer need. After deletion, those addresses continue through Jego's remaining rules.
 
-See [Website Route Check](/en/guide/network-diagnostics#route-check) for the full checking flow.
+See [Rules Check](/en/guide/network-diagnostics#route-check) for the full checking flow.
 
 ## AI Products
 
-These services normally use Jego's existing default rules; choose the correct route, then see the [AI product access guide](/en/guide/chatgpt-access) for detailed steps.
+These services normally use Jego's existing default rules; choose the correct route, then see [How to access AI products with Jego](/en/guide/chatgpt-access) for detailed steps.

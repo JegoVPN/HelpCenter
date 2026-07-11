@@ -31,7 +31,7 @@ description: sing-box 是跨平台网络代理项目；当前协议、平台与�
 
 # sing-box
 
-sing-box 是跨平台网络代理项目。当前协议、平台与版本以官方项目文档和发布页为准，本页不使用“支持所有协议”或“全平台”作为承诺。
+sing-box 是跨平台网络代理项目，当前支持的协议、平台与版本以官方项目文档和发布页为准。
 
 <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FX6LBfzRlMdWyQVvPC9eg_2Fimage_1.png" width="38" height="38" alt="sing-box图标">
 
@@ -46,9 +46,9 @@ sing-box 是跨平台网络代理项目。当前协议、平台与版本以官�
 
 ### 苹果全家桶
 
-macOS iOS iPadOS tvOS的用户请移步： [sing-box for Apple](/subscription/clients/sing-boxforapple)
+macOS、iOS、iPadOS、tvOS 的用户请移步： [sing-box for Apple](/subscription/clients/sing-boxforapple)
 
-### Andorid设备
+### Android 设备
 
 安卓的用户请移步： [sing-box for Android](/subscription/clients/sing-boxforandroid)
 
@@ -66,7 +66,7 @@ Linux的硬核玩家请移步sing-box官方的[Github Release](https://github.co
 
 **🟡 情况一：刚启动时**
 
-部分配置在启动时会执行 URL 测试或下载规则集，期间可能暂时没有可用结果。是否测试、测试对象和 DNS 行为取决于实际配置；请根据状态文字和日志排查，不把它概括为“选择最快节点”。
+刚启动的一两分钟内，客户端可能正在测试节点或下载规则文件，部分网站会暂时打不开。可以稍等片刻，或按下面的方法手动选择节点。
 
 > ✅ 解决方法：如果不想等待测速过程，可以手动选择一个可用节点，这样就能立即访问境外网站。
 

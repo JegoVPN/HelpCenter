@@ -19,13 +19,11 @@ description: 在 Android 手机上选择合适的客户端，导入无忧行订�
 
 # Android 翻墙指南
 
-Android/安卓是一个基于Linux核心与其他开源软件的开放源代码的移动操作系统，由Google成立的开放手持设备联盟持续领导与开发。
-
 无忧行会员可以把订阅节点添加到 Android 代理客户端中，让手机里的其他应用也能使用代理。下面先选一个当前支持的工具，再跟着完整教程安装和导入订阅。
 
 <div class="tip custom-block" style="padding-top: 8px">
 
-无忧行订阅服务手机面板：<https://jego.us>
+手机上也能取订阅地址：用手机浏览器打开 <https://jego.us> 登录即可复制。
 
 </div>
 
@@ -37,7 +35,7 @@ Android/安卓是一个基于Linux核心与其他开源软件的开放源代码�
 
 <div class="client-guide-link"><img src="/images/android_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FX6LBfzRlMdWyQVvPC9eg_2Fimage_2.png" width="26" height="26" alt="sing-box图标"><a href="/subscription/clients/sing-boxforandroid">sing-box for Android</a></div>
 
-sing-box for Android官方出品的Android客户端，开源免费无广告，可从Play Store 和 GitHub Releases下载。
+sing-box for Android 是 sing-box 官方出品的 Android 客户端，开源免费无广告，可从 Play Store 和 GitHub Releases 下载。
 
 <div class="client-guide-link"><img src="/images/android_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2Fu2sHeQjHJurcgVhJB1zO_2Ficon_3.png" width="26" height="26" alt="FlClash图标"><a href="/subscription/clients/flclash">FlClash</a></div>
 
@@ -59,7 +57,7 @@ Surfboard 是一款运行在 Android 系统上的网络代理工具。
 
 <div class="client-guide-link"><img src="/images/android_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FtXufQKQ8l3yWMHiAonjn_2Fimage_5.png" width="26" height="26" alt="v2rayNG图标"><a href="/subscription/clients/v2rayng">v2rayNG</a></div>
 
-v2rayNG 是一个基于 v2ray 内核的 Android 应用，适用于安卓手机及部分 Android TV 设备；Jego 已不再支持该客户端，现有用户应按工具页迁移到受支持的替代项。
+v2rayNG 是一个基于 v2ray 内核的 Android 应用，适用于安卓手机及部分 Android TV 设备；无忧行已不再支持该客户端，现有用户应按工具页迁移到受支持的替代项。
 
 <div class="client-guide-link"><img src="/images/android_clash_7.png" width="26" height="26" alt="Clash图标"><a href="/subscription/clients/clash-for-android">Clash for Android</a></div>
 
@@ -67,4 +65,4 @@ Clash 在 Android系统上的图形用户界面，于2023年11月3日删库并�
 
 <div class="client-guide-link"><img src="/images/android_oneclick_8.png" width="26" height="26" alt="OneClick图标"><a href="/subscription/clients/oneclick">OneClick</a></div>
 
-OneClick 已停止更新，Jego 也不再支持该客户端；本入口仅保留历史教程，现有用户可以按工具页迁移。
+OneClick 已停止更新，无忧行也不再支持该客户端；本入口仅保留历史教程，现有用户可以按工具页迁移。

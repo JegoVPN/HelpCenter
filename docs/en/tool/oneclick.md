@@ -41,7 +41,7 @@ Please use [Jego's recommended clients](/en/subscription/#_1-about-which-client-
 
 ## <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FJbOoXNw3x77qs1JZbQlI_2Foneclick_2.png" width="26" height="26" alt="OneClick icon"> Get OneClick
 
-Store availability is controlled by each platform and developer. Do not buy or share accounts or falsify region details; use an account you legitimately own and the official sources below. The historical steps remain, but Jego users should choose one of the supported replacements listed above.
+Store availability is controlled by each platform and developer. Do not buy or share accounts or falsify region details; use an account you legitimately own and the official sources below. The historical steps remain, but Jego users should use the recommended client linked in the notice at the top.
 
 ## Download OneClick
 
@@ -52,13 +52,13 @@ Store availability is controlled by each platform and developer. Do not buy or s
 
 ## Add Subscription
 
-In the **Jego - Control Panel**, click on **Subscription Nodes** in the left navigation bar, find the **OneClick** subscription address and click **Copy**.
+In the **Jego Dashboard**, click on **Mobile Proxy** in the left navigation bar, find the **OneClick** subscription address and click **Copy**.
 
-<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FSw1y49nJ027tgYJL8gvd_2Fimage_3.png" alt="Jego control panel">
+<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FSw1y49nJ027tgYJL8gvd_2Fimage_3.png" alt="Jego Dashboard">
 
 <div class="tip custom-block" style="padding-top: 8px">
 
-Jego subscription service mobile panel: <https://jego.us>
+You can also get the subscription URL on your phone: open <https://jego.us> in the phone browser and sign in to copy it.
 
 </div>
 
@@ -82,7 +82,7 @@ OneClick provides automatic, global, and direct modes. Click to select the speci
 
 * Automatic mode. Automatic mode means that overseas websites are accessed through proxy, while domestic websites will not go through proxy servers.
 * Global mode. Global mode means that all websites are accessed through proxy, including websites that can be directly connected domestically.
-* Direct mode. Means all servers do not go through proxy servers.
+* Direct mode: no traffic goes through the proxy servers.
 
 ## **Connect to Server**
 

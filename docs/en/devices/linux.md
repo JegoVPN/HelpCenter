@@ -19,8 +19,6 @@ description: Choose a Linux client, import the Jego subscription, and start the 
 
 # Linux Proxy Guide
 
-Linux strictly speaking refers only to the operating system kernel, as the operating system contains many user graphical interfaces and other utility tools.
-
 Jego members can add subscription nodes to a compatible Linux client, allowing apps outside the browser to use the VPN. Choose a currently supported client below, then follow its complete installation and import guide.
 
 ## <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FJJlooO6sJC8xrcR6vqGj_2Flinux_1.svg" width="38" height="28" alt="Linux icon"> Linux proxy clients

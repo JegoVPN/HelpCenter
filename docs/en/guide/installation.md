@@ -7,12 +7,12 @@ uiSurface: null
 locale: en
 status: current
 owner: docs
-reviewStatus: needs-review
-lastVerified: 2026-07-10
+reviewStatus: verified
+lastVerified: 2026-07-11
 platforms: [chrome, edge]
 tools: []
 appliesTo: []
-sources: [https://developer.chrome.com/docs/extensions/get-started/tutorial/hello-world, https://learn.microsoft.com/en-us/microsoft-edge/extensions/getting-started/extension-sideloading]
+sources: [https://support.google.com/chrome/answer/2664769, https://learn.microsoft.com/en-us/troubleshoot/microsoft-edge/development/self-host-extension-deploy, human-browser-test@chrome-149-edge-150-macos-2026-07-11]
 title: How to Install - User Guide
 description: Choose the official source for your browser, install Jego in a few steps, and confirm that it is enabled.
 ---
@@ -22,7 +22,7 @@ description: Choose the official source for your browser, install Jego in a few 
 Jego is designed for Chrome and Microsoft Edge. Installing it from the browser's official extension store is the simplest path. This page also keeps the manual installation steps for times when the store is temporarily unavailable.
 
 ::: tip Check the version before installation
-Use [Stay Connected](/en/guide/keep-updated) to find the current official release entry. Keeping the browser and Jego up to date provides the latest improvements and fixes. Actual connection results can still vary by region and destination.
+Use [Update the extension](/en/guide/keep-updated) to find the current official release entry. Keeping the browser and Jego up to date provides the latest improvements and fixes. Actual connection results can still vary by region and destination.
 :::
 
 ## Go to the steps for your browser {#online-installation}
@@ -44,15 +44,23 @@ Update Edge to the latest version before starting.
 
 ### Install manually when the store is unavailable
 
-Microsoft Edge Add-ons remains the preferred source. When the official Jego site provides a manual package, use these steps:
+Microsoft Edge Add-ons remains the preferred source. For manual installation, download the ZIP package from the official Jego site, extract it, find the CRX file, and then follow these steps:
 
-1. Download the manual package from the [official Jego site](https://jegocloud.com/) and extract it.
-2. Enter `edge://extensions/` in the Edge address bar.
+1. Download the ZIP package from the [official Jego site](https://jegocloud.com/), extract it, and locate the `.crx` file inside.
+2. Enter `edge://extensions/` in the Edge address bar to open Manage Extensions.
 3. Turn on **Developer mode**.
-4. Select **Load unpacked**, then choose the extracted folder that directly contains `manifest.json`.
-5. If the download contains only a `.crx` file, use Microsoft Edge Add-ons or another installation method currently allowed by Edge. **Load unpacked** selects a folder, not a `.crx` file.
+4. Drag the `.crx` file from Finder or File Explorer onto the Edge extensions page.
+5. When the installation prompt appears, confirm that the extension name is **Jego**, and then select **Add extension**.
+6. After installation, make sure that Jego appears in the extension list and is enabled.
 
-<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FfcXOYhXbZ9Tr2bWUoI5p_2Fimage_3.png" alt="Edge extension management interface">
+<span id="edge-crx-video"></span>
+
+The video below shows how to enable Developer mode in Edge, drag in the CRX file, and finish installation:
+
+<video class="installation-video" controls playsinline preload="metadata" aria-label="Install Jego by dragging a CRX file into Edge">
+  <source src="/videos/jego-edge-crx-install-20260711.mp4" type="video/mp4">
+  Your browser cannot play this video.
+</video>
 
 <span id="pin-the-jego-icon-after-installation"></span>
 <span id="initial-settings-after-installation"></span>
@@ -70,6 +78,8 @@ Pin Jego to the Edge toolbar so you can open it directly from the upper-right co
 
 <img class="installation-settings-image" src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2Fg4tbKt6AKXlmq4DaA3H6_2Fimage_3.png" alt="Edge settings interface">
 
+Once installed, you can [register an account](/en/guide/registration), then follow [Start using Jego](/en/guide/usage) to sign in and pick a mode and node.
+
 ## Install Jego in Google Chrome {#chrome-install}
 
 Update Chrome to the latest version before starting.
@@ -81,19 +91,18 @@ Update Chrome to the latest version before starting.
 
 ### Install manually when the store is unavailable
 
-Chrome Web Store remains the preferred source. When the official Jego site provides a manual package, use these steps:
+Chrome Web Store remains the preferred source. For manual installation, download the ZIP package from the official Jego site, extract it, find the CRX file, and then follow these steps:
 
-1. Download the manual package from the [official Jego site](https://jegocloud.com/) and extract it.
-2. Enter `chrome://extensions/` in the Chrome address bar.
+1. Download the ZIP package from the [official Jego site](https://jegocloud.com/), extract it, and locate the `.crx` file inside.
+2. Enter `chrome://extensions/` in the Chrome address bar to open Manage Extensions.
 3. Turn on **Developer mode**.
-4. Select **Load unpacked**, then choose the extracted folder that directly contains `manifest.json`.
-5. If the download contains only a `.crx` file, use Chrome Web Store or another installation method currently allowed by Chrome. **Load unpacked** selects a folder, not a `.crx` file.
+4. Drag the `.crx` file from Finder or File Explorer onto the Chrome extensions page.
+5. When the installation prompt appears, confirm that the extension name is **Jego**, and then select **Add extension**.
+6. After installation, make sure that Jego appears in the extension list and is enabled.
 
-<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F8gEriEnVmF77fYUY2XxI_2Fimage_1.png" alt="Chrome extension management interface">
+The image below shows where to drag the CRX file on the Chrome extensions page:
 
-The recording below shows the Chrome installation flow:
-
-<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FqJVM1Fphg1LsgyqucvDn_2F20250326-115951_2.gif" alt="Chrome Jego installation screen recording demo">
+<img src="/images/jego-chrome-crx-drag-install-20260711.png" alt="Drag the Jego CRX file onto the Chrome extensions page">
 
 ### Pin the Jego icon {#chrome-pin}
 
@@ -110,10 +119,12 @@ Pin Jego to the Chrome toolbar so you can open it directly from the upper-right 
 
 Next, [register an account](/en/guide/registration), then follow [Start using Jego](/en/guide/usage) to sign in and choose a mode and node.
 
+Once installed, you can [register an account](/en/guide/registration), then follow [Start using Jego](/en/guide/usage) to sign in and pick a mode and node.
+
 ## Install in other Chromium browsers
 
 ::: warning Compatibility note
-Extension compatibility and installation rules can change between versions of QQ Browser, 360 Browser, and other Chromium browsers. Update to the current stable version and use an extension installation method allowed by that browser.
+QQ Browser, 360 Browser, fingerprint (anti-detect) browsers, and other Chromium-based browsers can usually install Jego as long as their kernel is 88 or later. Fingerprint browsers (often used for multi-account work) generally support loading Chrome extensions — just use their own extension entry. Compatibility and installation rules can change between versions, so update to the current stable version and use an extension installation method allowed by that browser.
 :::
 
 ### QQ Browser

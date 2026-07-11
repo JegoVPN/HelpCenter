@@ -47,7 +47,7 @@ Please use [Jego's recommended clients](/en/subscription/#_1-about-which-client-
 
 [https://play.google.com/store/apps/details?id=com.v2ray.ang ](https://play.google.com/store/apps/details?id=com.v2ray.ang)
 
-For beginners, it's recommended to download the stable version, which is the version marked as `Latest` after the version number.
+The download links below are kept for existing users maintaining old setups; for a new installation, use the recommended client from the notice at the top. If you do download, choose the stable build marked `Latest`.
 
 ## Installation Tutorial
 
@@ -59,13 +59,13 @@ After installation, open the software and enter the main interface, which is the
 
 ## **Add Subscription:**
 
-In the **Jego - Control Panel**, click on **Subscription Nodes** in the left navigation bar, find the **v2rayNG** subscription address and click **Copy**.
+In the **Jego Dashboard**, click on **Mobile Proxy** in the left navigation bar, find the **v2rayNG** subscription address and click **Copy**.
 
-<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FvcuzdBLdVvZgq9XT0TZy_2Fimage_1.png" alt="Jego control panel">
+<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FvcuzdBLdVvZgq9XT0TZy_2Fimage_1.png" alt="Jego Dashboard">
 
 <div class="tip custom-block" style="padding-top: 8px">
 
-Jego subscription service mobile panel: <https://jego.us>
+You can also get the subscription URL on your phone: open <https://jego.us> in the phone browser and sign in to copy it.
 
 </div>
 
@@ -107,7 +107,7 @@ The principle of routing settings is to send incoming data to different outbound
 
 In the domain strategy, the system has three built-in domain strategies to choose from.
 
-* Asls
+* AsIs
 * IPIfNonMatch
 * IPOnDemand
 

@@ -19,13 +19,11 @@ description: 在 HarmonyOS 设备上选择合适的客户端，导入无忧行�
 
 # HarmonyOS 翻墙指南
 
-鸿蒙（英语：HarmonyOS，简称HMOS，开发代号Ark，正式名称为华为终端鸿蒙智能设备操作系统软件）
-
 无忧行会员可以在 HarmonyOS 设备上使用兼容的代理客户端。HarmonyOS NEXT 与旧版鸿蒙可用的工具不同，请先确认系统版本，再按下面的教程安装和导入订阅。
 
 <div class="tip custom-block" style="padding-top: 8px">
 
-无忧行订阅服务手机面板：<https://jego.us>
+手机上也能取订阅地址：用手机浏览器打开 <https://jego.us> 登录即可复制。
 
 </div>
 

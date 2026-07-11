@@ -41,7 +41,7 @@ OneClick 已停止更新，Jego 也不再支持该客户端。本页保留原有
 
 ## <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FJbOoXNw3x77qs1JZbQlI_2Foneclick_2.png" width="26" height="26" alt="OneClick图标"> 获取OneClick
 
-商店可用性由平台与开发者决定。不要购买、共享账号或虚构地区资料；只使用本人合法账户和下列官方入口。本页保留历史操作步骤，但 Jego 用户应改用上方受支持的替代工具。
+商店可用性由平台与开发者决定。不要购买、共享账号或虚构地区资料；只使用本人合法账户和下列官方入口。本页保留历史操作步骤，但 Jego 用户应改用顶部提示中链接的推荐客户端。
 
 ## 下载 OneClick
 
@@ -58,7 +58,7 @@ OneClick 已停止更新，Jego 也不再支持该客户端。本页保留原有
 
 <div class="tip custom-block" style="padding-top: 8px">
 
-无忧行订阅服务手机面板：<https://jego.us>
+手机上也能取订阅地址：用手机浏览器打开 <https://jego.us> 登录即可复制。
 
 </div>
 
@@ -82,7 +82,7 @@ OneClick提供自动、全局、直连模式，点击选择指定模式。
 
 * 自动模式。自动模式是指境外的网站走代理访问，国内的网站不会通过代理服务器。
 * 全局模式。全局模式是指所有网站通过代理访问，包括在国内可以直连的网站。
-* 直连模式。是指所有的服务器都不走代理服务器。
+* 直连模式：所有流量都不经过代理服务器。
 
 ## **连接服务器**
 

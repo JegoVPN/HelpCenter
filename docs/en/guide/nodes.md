@@ -30,10 +30,10 @@ A node is a Jego network route. Each connection passes through your local networ
 
 ## <span style="color:red;">Conclusion First</span>
 
-::: danger Important Reminder
-<span style="color:red;">If there are no special requirements, prefer</span><span style="color:red;">**Auto Selection**</span><span style="color:red;">.</span>
+::: tip Important Reminder
+<span style="color:red;">If there are no special requirements, prefer **Auto Select**.</span>
 
-The same node can behave differently across regions and ISPs. **Auto Select** chooses from the routes currently available to the account and is the easiest place to start. If a site still feels slow, run [Node Test](/en/guide/network-diagnostics-node-speed) and choose another node.
+The same node can behave differently across regions and ISPs. **Auto Select** chooses from the routes currently available to the account and is the easiest place to start. If a site still feels slow, run [Node test](/en/guide/network-diagnostics-node-speed) and choose another node.
 :::
 
 ## FYI: Your Speed Depends on the Weakest Link
@@ -45,7 +45,7 @@ The full path when you visit an overseas website (e.g. YouTube) looks roughly li
 Jego can optimize only part of this path. Home Wi-Fi, the local ISP, cross-border links, node load, and the destination website all affect the result. A premium node cannot fix a poor local connection by itself.
 
 ::: warning Example
-If your local connection to the cross-border backbone entry point is already congested, every route after that point will also be affected. This part of the connection is still determined by the home network and local ISP; the Jego route starts working after the connection reaches the Jego service.
+If the connection from your home to the **Jego entry server** is already congested, every route after that point is affected no matter how fast it is. That first leg is determined by your home network and local ISP; Jego’s optimization starts after traffic reaches the Jego entry server.
 :::
 
 ## <span style="color:orange;">Edge Network (Overseas)</span>
@@ -57,7 +57,7 @@ If your local connection to the cross-border backbone entry point is already con
 This route mainly reaches an overseas node through the public internet. It has broad coverage and is easy to use, but speed and availability can change during busy periods.
 
 ::: info Usage tip
-Results depend heavily on your region and ISP. If it fails, return to Auto Select or choose another route that passed Node Test.
+Results depend heavily on your region and ISP. If it fails, return to Auto Select or choose another route that passed Node test.
 :::
 
 ::: tip Best For
@@ -80,7 +80,7 @@ Optimized does not mean faster at every moment. Compare the same website around 
 Frequent international browsing when ordinary public routes fluctuate during busy periods.
 :::
 
-## <span style="color:purple;">Mainland Transit Server Routes</span>
+## <span style="color:purple;">Mainland Transit Routes</span>
 
 <div v-html="transitSvg"></div>
 
@@ -107,7 +107,7 @@ When direct overseas routes are unstable, compare a transit route and then test 
 A private-line segment can reduce exposure to public-network congestion in the middle of the path. Local Wi-Fi, ISP access, overseas exit, and the destination still affect the final experience.
 
 ::: info Usage tip
-Private line does not mean a route can never fail. Use Node Test and the actual website to check the current result.
+Private line does not mean a route can never fail. Use Node test and the actual website to check the current result.
 :::
 
 ::: tip Best For
@@ -121,8 +121,8 @@ Users who value stability and want to reduce the effect of public-network conges
 | Edge network | Mainly uses the public internet to reach an overseas node | Everyday light use or a first connection check |
 | Mainland optimized | Optimizes part of the cross-border route | Ordinary public routes fluctuate at busy times |
 | Mainland transit | Reaches an entry first, then forwards to the overseas exit | A direct overseas route is unstable |
-| IEPL | Uses a private-line-style transport for a middle segment | Stability matters and you want less public-network fluctuation |
+| IEPL private lines | Uses a private-line-style transport for a middle segment | Stability matters and you want less public-network fluctuation |
 
 ::: info Note
-Whether Pro, Ultra, or another route appears depends on the account and VIP level. Check the popup node list and [Membership Benefits](/en/membership/benefits).
+Whether Pro, Ultra, or another route appears depends on the account and VIP level. Check the popup node list and [Membership System](/en/membership/benefits).
 :::

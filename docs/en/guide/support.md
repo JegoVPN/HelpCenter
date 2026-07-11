@@ -14,22 +14,22 @@ tools: []
 appliesTo: []
 sources: ["cloud/app/chromev2@1.5.10", "cloud/locales/*.csv"]
 title: Contact Support - User Guide
-description: Contact support from the Jego Control Panel and include the device and connection details shown in the examples.
+description: Contact support from the Jego Dashboard and include the device and connection details shown in the examples.
 ---
 
-# Contact Customer Service
+# Contact Support
 
 ## Contact Information
 
 <h3><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" style="display:inline;vertical-align:middle" viewBox="0 0 16 16"><path d="M0 7.76C0 3.301 3.493 0 8 0s8 3.301 8 7.76-3.493 7.76-8 7.76c-.81 0-1.586-.107-2.316-.307a.64.64 0 0 0-.427.03l-1.588.702a.64.64 0 0 1-.898-.566l-.044-1.423a.64.64 0 0 0-.215-.456C.956 12.108 0 10.092 0 7.76m5.546-1.459-2.35 3.728c-.225.358.214.761.551.506l2.525-1.916a.48.48 0 0 1 .578-.002l1.869 1.402a1.2 1.2 0 0 0 1.735-.32l2.35-3.728c.226-.358-.214-.761-.551-.506L9.728 7.381a.48.48 0 0 1-.578.002L7.281 5.98a1.2 1.2 0 0 0-1.735.32z"/></svg> Online Tickets System</h3>
 
-When you need human help, open **Tickets** in the Jego Control Panel and submit the problem. Time zones and staffing mean the team may not reply immediately; the current product message says all ticket messages are answered within 24 hours.
+When you need human help, open **Tickets** in the Jego Dashboard and submit the problem. Time zones and staffing mean the team may not reply immediately; per the official notice, ticket messages are answered within 24 hours.
 
 ::: tip Recommended
-Use the **Contact Support** feature in the **Jego Dashboard** for a faster response.
+Use **Tickets** (the **Ticket** entry in the Dashboard sidebar) for a faster response.
 :::
 
-Include when it happened, the operating system and version, browser or client version, Jego mode and node, steps you took, exact error, and the [Connection Check](/en/guide/network-diagnostics#connection-check) result.
+Include when it happened, the operating system and version, browser or client version, Jego mode and node, steps you took, exact error, and the [Connection](/en/guide/network-diagnostics#connection-check) result.
 
 ### ✉️ Email
 
@@ -61,7 +61,7 @@ Jego Browser Extension: Cannot find server when accessing bing.com
 ```
 Incident time and timezone: 2026-07-10 14:30 UTC+8
 Account email: name@example.com
-Jego version: full version displayed by the Control Panel
+Jego version: full version displayed by the Dashboard
 Browser version: full version displayed on the browser About page
 Operating system: system name and version
 Jego mode: Rules / Global / Off

@@ -13,13 +13,13 @@ platforms: [chrome, edge]
 tools: []
 appliesTo: []
 sources: []
-title: Stay Connected - User Guide
-description: Check the current Jego version and update it in your browser or mobile client.
+title: Update the extension - User Guide
+description: Check the current Jego extension version, update it in your browser, and reinstall when needed.
 ---
 
-# Stay Connected
+# Update the extension
 
-Jego regularly updates both the browser extension and subscription content. Keeping them up to date gives your browser and mobile client the latest nodes and connection settings. Store installations usually update automatically; use the matching browser section below when you want to check immediately.
+Jego regularly updates the browser extension. Keeping it up to date gives your browser the latest nodes and connection settings. Store installations usually update automatically; use the matching browser section below when you want to check immediately.
 
 ## Current extension version
 
@@ -36,6 +36,8 @@ Jego regularly updates both the browser extension and subscription content. Keep
   </a>
 </div>
 
+To see the version installed in this browser: open the extensions page (`chrome://extensions/` or `edge://extensions/`), find Jego, and select **Details**.
+
 ## Update Jego in Chrome
 
 <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2Fomxd1Mr1qsuzHUduonWU_2Fchrome_1.png" width="38" height="28" alt="Chrome icon">
@@ -43,7 +45,7 @@ Jego regularly updates both the browser extension and subscription content. Keep
 Chrome normally updates Jego automatically. To check immediately, use any one of these methods:
 
 1. Open the [Jego page in Chrome Web Store](https://chrome.google.com/webstore/detail/bnnamacamhjbdoimlbkegmbgkekphcbb) so Chrome can check the store version.
-2. Enter `chrome://extensions/` in the address bar, then select **Update** in the upper-left corner.
+2. Enter `chrome://extensions/` in the address bar, turn on **Developer mode**, then select **Update** in the upper-left corner.
 3. Fully quit and reopen Chrome so the browser checks for extension updates automatically.
 
 ## Update Jego in Edge
@@ -53,7 +55,7 @@ Chrome normally updates Jego automatically. To check immediately, use any one of
 Edge normally updates Jego automatically as well. To check immediately, use any one of these methods:
 
 1. Open the [Jego page in Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/detail/bkpoijbobhmbglhjjmnoedomdoabilol) so Edge can check the store version.
-2. Enter `edge://extensions/` in the address bar, then select **Update** in the upper-right corner.
+2. Enter `edge://extensions/` in the address bar, turn on **Developer mode**, then select **Update** in the upper-right corner.
 3. Fully quit and reopen Edge so the browser checks for extension updates automatically.
 
 While Microsoft Edge Add-ons is rolling out a new version, open the [online installation guide](/en/guide/installation#online-installation) to check the currently available official source.
@@ -78,16 +80,21 @@ For the current `1.5.9` release, the filename is `JegoV1.5.9.zip`. Join the addr
 
 You can also [contact support](/en/guide/support) for the current CRX package. After downloading it, follow the manual steps for your browser in the [installation guide](/en/guide/installation).
 
-## Update a mobile subscription
-
-Mobile subscription clients should be updated every 24 hours so they receive Jego's latest nodes and ports. You can also update immediately after a renewal or after the subscription content in your account changes.
-
-Update controls differ by client. Open the matching guide from [Install by device](/en/subscription/#install-by-device) and follow its steps. The time and status shown by the client confirm when the update has finished.
-
 ## After updating
 
-After updating the browser extension, fully quit and reopen the browser. To check the version or reselect the mode and node, continue with [Jego updates and recovery](/en/guide/plugin-maintenance).
+After updating the browser extension, fully quit and reopen the browser. An update normally keeps your settings: click the Jego icon and confirm the popup still shows the mode and node you normally use — when unsure, **Auto Select** is fine.
+
+To confirm the overall status, open **Dashboard** → **Diagnostics** and review the current mode, node, and common-website results.
+
+## When you choose to reinstall Jego
+
+Use this section only after you decide to reinstall Jego or Support specifically asks you to do so.
+
+1. Note the current version and the original installation source; your Proxy Rules are stored in your account and come back after you sign in.
+2. Find Jego in the extension manager and select **Remove**.
+3. Use the [installation guide](/en/guide/installation) to install Jego from the same official source.
+4. Sign in, then select the mode and node you normally use.
 
 ## Contact support
 
-When you need personal help, [contact support](/en/guide/support) and include the name and current version of your browser or client.
+When you need personal help, [contact support](/en/guide/support) and include your browser and Jego versions, your operating system, and the **Diagnostics** results.

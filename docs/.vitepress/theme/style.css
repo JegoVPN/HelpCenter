@@ -305,6 +305,20 @@
   height: auto;
 }
 
+.installation-video {
+  display: block;
+  width: min(100%, 960px);
+  height: auto;
+  margin: 1rem 0 1.5rem;
+  border-radius: 12px;
+  background: #000;
+}
+
+.vp-doc img.jego-popup-screenshot {
+  box-sizing: border-box;
+  border: 1px solid #d1d5db;
+}
+
 @media (max-width: 640px) {
   .geo-page-meta {
     display: grid;

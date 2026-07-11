@@ -42,13 +42,13 @@ Do not install packages from APK aggregators or chat-forwarded links. Before dow
 
 ## Add Subscription
 
-In the **Jego - Control Panel**, click on **Subscription Nodes** in the left navigation bar, find the Surfboard subscription address and click **Copy**.
+In the **Jego Dashboard**, click on **Mobile Proxy** in the left navigation bar, find the Surfboard subscription address and click **Copy**.
 
-<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FZMDHBqHudtCdWwPe57a1_2Fimage_1.png" alt="Jego control panel">
+<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FZMDHBqHudtCdWwPe57a1_2Fimage_1.png" alt="Jego Dashboard">
 
 <div class="tip custom-block" style="padding-top: 8px">
 
-Jego subscription service mobile panel: <https://jego.us>
+You can also get the subscription URL on your phone: open <https://jego.us> in the phone browser and sign in to copy it.
 
 </div>
 
@@ -56,7 +56,7 @@ Jego subscription service mobile panel: <https://jego.us>
 
 ## Configure Subscription
 
-Open the Surfboard main interface, switch to the configuration tab, click the add subscription button in the bottom right, select "Import from URL", paste the converted subscription address in the popup input box. After clicking import, Surfboard will download the subscription link.
+Open the Surfboard main interface, switch to the configuration tab, click the add subscription button in the bottom right, select "Import from URL", paste the Surfboard subscription URL you just copied in the popup input box. After clicking import, Surfboard will download the subscription link.
 
 <img src="/images/Screenshot_2025-08-04-00-49-02-803_com.getsurfboard.jpg" alt="Add subscription" width="300">
 

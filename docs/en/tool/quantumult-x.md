@@ -26,16 +26,16 @@ tools: [quantumult-x]
 appliesTo: []
 sources: [https://apps.apple.com/us/app/quantumult-x/id1443988620]
 title: Quantumult X - Tools & Software
-description: Quantumult X is a powerful network tool on iOS.
+description: Quantumult X is a powerful network tool on iOS/iPadOS.
 ---
 
 # Quantumult X
 
-Quantumult X is a powerful network tool on iOS.
+Quantumult X is a powerful network tool on iOS/iPadOS.
 
 ## <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2Fuap2kKrwZ32jilQhXxlt_2Fquantumultx_3.png" width="26" height="26" alt="Quantumult X icon"> Get Quantumult X
 
-App Store availability is controlled by Apple and the developer for each account region. Do not buy or share accounts or falsify region details; use an account you legitimately own and the official store.
+App Store availability is controlled by Apple and the developer for each account region. Do not buy or share accounts or falsify region details; use an account you legitimately own and the official store. For Apple's official region requirements, see the [US Apple ID Registration Guide](/en/subscription/devices/us-apple-id); without a qualifying account, use another supported client available in your region, or the [browser extension](/en/guide/installation).
 
 ## Download Quantumult X
 
@@ -43,17 +43,17 @@ If the [official Quantumult X App Store page](https://apps.apple.com/us/app/quan
 
 ## Add Subscription
 
-In the **Jego - Control Panel**, click on **Subscription Nodes** in the left navigation bar, find the **Quantumult X** subscription address and click **Copy**.
+In the **Jego Dashboard**, click on **Mobile Proxy** in the left navigation bar, find the **Quantumult X** subscription address and click **Copy**.
 
-<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FQm1BeQfkNoZIVisl8RpP_2Fimage_1.png" alt="Jego control panel">
+<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FQm1BeQfkNoZIVisl8RpP_2Fimage_1.png" alt="Jego Dashboard">
 
 <div class="tip custom-block" style="padding-top: 8px">
 
-Jego subscription service mobile panel: <https://jego.us>
+You can also get the subscription URL on your phone: open <https://jego.us> in the phone browser and sign in to copy it.
 
 </div>
 
-Open **Quantumult X** and tap the main function icon in the bottom-right corner. The old off-site image is no longer reliable; the local screenshot below shows the same entry:
+Open **Quantumult X** and tap the main function icon in the bottom-right corner:
 
 <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FTYLTzRrBAtQzw9mgGxzK_2Fimage_3.png" alt="Quantumult X interface" width="300">
 

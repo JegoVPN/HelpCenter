@@ -19,8 +19,6 @@ description: 在 Linux 电脑上选择合适的客户端，导入无忧行订阅
 
 # Linux 翻墙指南
 
-Linux严格来说是单指操作系统的内核，因操作系统中包含了许多用户图形界面和其他实用工具。
-
 无忧行会员可以把订阅节点添加到 Linux 代理客户端中，让浏览器之外的软件也能使用代理。下面先选一个当前支持的工具，再跟着完整教程安装和导入订阅。
 
 ## <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FJJlooO6sJC8xrcR6vqGj_2Flinux_1.svg" width="38" height="28" alt="Linux图标"> Linux 翻墙客户端
@@ -43,7 +41,7 @@ Clash Verge Rev是一款基于Mihomo（原ClashMeta）内核的多平台代理�
 
 <div class="client-guide-link"><img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FfJY0Si3bowLOO8nIXwPG_2Fmihomo_3.png" width="26" height="26" alt="Mihomo图标"><a href="/subscription/clients/mihomo">Mihomo系列软件</a></div>
 
-MetaCubeX基于Clash核心推出的全新的Mihomo内核，团队持续地在开源社区维护和更新，生态链里已经推出了包含Windows、Andriod、macOS和Linux的客户端。
+MetaCubeX基于Clash核心推出的全新的Mihomo内核，团队持续地在开源社区维护和更新，生态链里已经推出了包含Windows、Android、macOS和Linux的客户端。
 
 <div class="client-guide-link"><img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FX6LBfzRlMdWyQVvPC9eg_2Fimage_1.png" width="26" height="26" alt="sing-box图标"><a href="/subscription/clients/sing-box">sing-box</a></div>
 

@@ -31,11 +31,13 @@ If you prefer video, start with the complete installation and usage demo:
 
 <YouTube videoId="buQRWqyO7UM" title="Jego Extension Installation and Usage Tutorial" />
 
+If the video does not load, just follow the five steps below.
+
 ## Get started in five steps
 
 1. Click the Jego icon in the top-right corner of the browser.
 2. If you are signed out, enter your email and password and select **Log In**. Select **Sign Up** if you do not have an account.
-3. Choose **Rules** mode.
+3. Choose **Rules** mode (in the Free version, select **Connect**).
 4. Under **Current location**, choose **Auto Select**.
 5. Open Google or the website you need. Reload it if it was already open.
 
@@ -43,7 +45,7 @@ The image below shows the free interface. Jego displays Free, Trial, or VIP stat
 
 <img src="/images/jego-v1.5.9/usage-free-browser-en.png" alt="Free version proxy">
 
-If your version shows only Connect and Off, **Connect** starts the browser VPN and **Off** returns to the normal connection. The current interface uses Rules, Global, and Off as described next.
+The Free version shows only **Connect** and **Off**: **Connect** starts the browser proxy (it works like Rules mode) and **Off** returns to the normal connection. Member accounts (including trial) show Rules, Global, and Off, as described next.
 
 ## Choose Rules, Global, or Off
 
@@ -53,7 +55,7 @@ If your version shows only Connect and Off, **Connect** starts the browser VPN a
 
 The member interface below shows membership status, mode buttons, and node selection.
 
-<img src="/images/jego-v1.5.9/usage-paid-browser-en.png" alt="Older paid browser-proxy interface">
+<img src="/images/jego-v1.5.9/usage-paid-browser-en.png" alt="Paid (VIP) popup interface">
 
 See [Mode Selection](/en/guide/mode-selection) for examples. If Rules mode does not proxy a website, add its domain through [Proxy Rules](/en/guide/proxy-strategy).
 
@@ -80,11 +82,11 @@ When the dot becomes the Jego logo again, the change is complete. Now reload the
 ## If a website still will not open
 
 1. Make sure Jego is not Off.
-2. Try another node or run [Node Test](/en/guide/network-diagnostics-node-speed).
-3. Open **Control Panel → Diagnostics → Connection** and run the common-site check.
+2. Try another node or run [Node test](/en/guide/network-diagnostics-node-speed).
+3. Open **Dashboard → Diagnostics → Connection** and run the common-site check.
 4. If only one website fails, use **Rules Check** to see whether its domain is proxied.
 
-More help: [FAQ](/en/guide/faq) · [Use ChatGPT, Copilot, and other services](/en/guide/chatgpt-access) · [Contact support](/en/guide/support)
+More help: [FAQ](/en/guide/faq) · [Use ChatGPT, Claude, Gemini, and other AI products](/en/guide/chatgpt-access) · [Contact support](/en/guide/support)
 
 ## How to use Jego for proxy access on PC or mobile
 

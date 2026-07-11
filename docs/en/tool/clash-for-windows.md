@@ -26,7 +26,7 @@ tools: [clash-for-windows]
 appliesTo: []
 sources: []
 title: Clash for Windows - Tools & Software
-description: This is a tutorial for the Clash for Windows client. Clash for Windows was discontinued on November 2, 2023, but the last version at that time can still be used.
+description: Clash for Windows was discontinued on November 2, 2023 and no longer receives updates; this page is kept as a historical guide — switch to a Mihomo-family client such as FlClash.
 ---
 
 # Clash for Windows
@@ -55,13 +55,13 @@ The old archive is not an official, maintained, or integrity-verifiable distribu
 
 ### **Add Subscription:**
 
-In the **Jego - Control Panel**, click on **Subscription Nodes** in the left navigation bar, find the **Clash/Mihomo Series** subscription address and click **Copy**.
+In the **Jego Dashboard**, click on **Mobile Proxy** in the left navigation bar, find the **Clash/Mihomo Series** subscription address and click **Copy**.
 
-<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FZi4WzVyeec9wgY50xRLc_2Fimage_2.png" alt="Jego control panel">
+<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FZi4WzVyeec9wgY50xRLc_2Fimage_2.png" alt="Jego Dashboard">
 
 <div class="tip custom-block" style="padding-top: 8px">
 
-Jego subscription service mobile panel: <https://jego.us>
+You can also get the subscription URL on your phone: open <https://jego.us> in the phone browser and sign in to copy it.
 
 </div>
 
@@ -158,20 +158,20 @@ Nodes are separated by policy groups and can be tested for latency by group, mak
 1. Do not turn off the system firewall or exit security software globally. If launch is blocked, verify the Clash executable's source and integrity, then create only the minimum app-specific exception and remove it when no longer needed.
 2. Must extract before running, cannot run directly in the compressed package.
 3. After running, the Clash icon "cat" will be displayed in the taskbar at the bottom of the screen.
-   * If you can't see the Clash icon, it may be hidden. Click to show hidden icons.
+   * If you can't see the Clash icon, it may be hidden — click the taskbar chevron (^) to show hidden icons.
    * Double-click the taskbar Clash icon to display the software main interface.
 
 ### Get Subscription Address
 
 1. Be sure to 🚫 **disable web translation function**, otherwise the obtained subscription address may be incorrect.
-2. In the **Jego - Control Panel**, select **Mobile Proxy** in the left navigation, find the **Clash for Windows** subscription address, and click **Copy**.
+2. In the **Jego Dashboard**, select **Mobile Proxy** in the left navigation, find the **Clash/Mihomo Series** subscription address, and click **Copy**.
 
 ### **Subscription download or update fails**
 
 The following 3 reasons are most common, check in the following order:
 
 1. **🐷 Wrong subscription address**
-   * Make sure the subscription address is copied from the **Jego - Control Panel**.
+   * Make sure the subscription address is copied from the **Jego Dashboard**.
 2. **📶 Network reasons**
    * Try changing networks, such as: your own or friend's mobile hotspot, home, company, neighbor's WIFI, etc.
    * Try turning off Clash > General > System Proxy.
@@ -186,14 +186,14 @@ Go to the "Proxies" interface and select the proxy mode according to your needs:
 ### **Global Connection | Global: Proxy all traffic**
 
 * Suitable for users who do not rely on domestic services.
-* Very effective for foreign traffic, domestic traffic will be slowed down.
+* In Global mode, foreign traffic goes through the proxy as usual; mainland traffic also goes through the proxy server — it works, but noticeably slower.
 * In this mode 🈲 **cannot select DIRECT and REJECT nodes**, they will cause inability to access the internet.
 
 ### **Rule Judgment | Rules: Only proxy foreign traffic**
 
 Suitable for users who use both domestic and foreign services.
 
-* Whether traffic is direct or proxied depends on the active configuration; account UI determines how it counts toward the plan.
+* In Rule mode, mainland-China traffic connects directly and does not go through the proxy server.
 * When querying IP on domestic websites, you get the local IP address.
 * When querying IP on foreign websites, you get the proxy IP address.
 

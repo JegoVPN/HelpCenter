@@ -18,7 +18,7 @@ export const enNav = [
     text: 'Browser Extension',
     items: [
       { text: 'Extension popup', link: '/en/guide/plugin-features' },
-      { text: 'Control Panel', link: '/en/guide/control-panel' },
+      { text: 'Dashboard', link: '/en/guide/control-panel' },
       { text: 'Diagnostics', link: '/en/guide/network-diagnostics' }
     ]
   },
@@ -46,8 +46,7 @@ export const zhSidebar = [
       { text: '代理策略', link: '/guide/proxy-strategy' },
       { text: '网络诊断', link: '/guide/network-diagnostics' },
       { text: '节点测速', link: '/guide/network-diagnostics-node-speed' },
-      { text: '插件更新与恢复', link: '/guide/plugin-maintenance' },
-      { text: '防止失联', link: '/guide/keep-updated' },
+      { text: '更新插件', link: '/guide/keep-updated' },
       { text: '权限、隐私与安全', link: '/guide/plugin-permissions-privacy' }
     ]
   },
@@ -118,12 +117,11 @@ export const enSidebar = [
       { text: 'Extension popup', link: '/en/guide/plugin-features' },
       { text: 'Rules, Global, and Off', link: '/en/guide/mode-selection' },
       { text: 'Auto or manual nodes', link: '/en/guide/node-selection' },
-      { text: 'Control Panel', link: '/en/guide/control-panel' },
+      { text: 'Dashboard', link: '/en/guide/control-panel' },
       { text: 'Proxy Rules', link: '/en/guide/proxy-strategy' },
       { text: 'Diagnostics', link: '/en/guide/network-diagnostics' },
       { text: 'Node Test', link: '/en/guide/network-diagnostics-node-speed' },
-      { text: 'Updates and recovery', link: '/en/guide/plugin-maintenance' },
-      { text: 'Stay Connected', link: '/en/guide/keep-updated' },
+      { text: 'Update the extension', link: '/en/guide/keep-updated' },
       { text: 'Permissions, privacy, and security', link: '/en/guide/plugin-permissions-privacy' }
     ]
   },

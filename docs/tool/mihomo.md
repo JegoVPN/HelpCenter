@@ -25,13 +25,13 @@ platforms: [windows, macos, linux, android]
 tools: [mihomo]
 appliesTo: []
 sources: [https://github.com/MetaCubeX/mihomo, https://mihomo.party/]
-title: Mihomo系列软件 - 工具软件
+title: Mihomo 系列 - 工具软件
 description: 了解 Mihomo 系列客户端，并从对应设备教程进入安装和订阅步骤。
 ---
 
 # Mihomo系列软件
 
-MetaCubeX基于Clash核心推出的全新的Mihomo内核，团队持续地在开源社区维护和更新，生态链里已经推出了包含Windows、Andriod、macOS和Linux的客户端。
+MetaCubeX基于Clash核心推出的全新的Mihomo内核，团队持续地在开源社区维护和更新，生态链里已经推出了包含Windows、Android、macOS和Linux的客户端。
 
 <img src="/images/Mihomo-logo.png" width="38" height="38" alt="Mihomo">
 
@@ -112,7 +112,7 @@ Clash Verge Rev是一款基于Mihomo（原ClashMeta）内核的多平台代理�
 
 <div class="tip custom-block" style="padding-top: 8px">
 
-无忧行订阅服务手机面板：<https://jego.us>
+手机上也能取订阅地址：用手机浏览器打开 <https://jego.us> 登录即可复制。
 
 </div>
 

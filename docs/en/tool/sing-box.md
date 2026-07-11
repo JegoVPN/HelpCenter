@@ -31,7 +31,7 @@ description: sing-box is a cross-platform network proxy project; verify current 
 
 # sing-box
 
-sing-box is a cross-platform network proxy project. Verify current protocols, platforms, and versions in official documentation and releases; this page does not promise “all protocols” or “every platform.”
+sing-box is a cross-platform network proxy project. Current protocols, platforms, and versions are listed in the official documentation and releases.
 
 <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FX6LBfzRlMdWyQVvPC9eg_2Fimage_1.png" width="38" height="38" alt="sing-box icon">
 
@@ -62,11 +62,11 @@ Linux hardcore players please go to sing-box official [Github Release](https://g
 
 ## sing-box Common Issues
 
-### When only local websites open
+### Only mainland China websites open
 
 **🟡 Situation 1: Just started**
 
-Some configurations run a URL test or fetch rule sets during startup, during which a usable result may be temporarily absent. Whether a test runs, what it covers, and how DNS behaves depend on the actual configuration; use status text and logs rather than describing it as “selecting the fastest node.”
+For a minute or two after startup, the client may still be testing nodes or downloading rule files, so some sites temporarily fail to open. Wait a moment, or pick a node manually as described below.
 
 > ✅ Solution: If you don't want to wait for the speed test process, you can manually select an available node, so you can immediately access foreign websites.
 

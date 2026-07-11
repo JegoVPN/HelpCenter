@@ -26,7 +26,7 @@ tools: [clashbox]
 appliesTo: []
 sources: [https://github.com/xiaobaigroup/ClashBox, https://appgallery.huawei.com/app/detail?id=org.xbgroup.clashbox]
 title: ClashBox - 工具软件
-description: 介绍 ClashBox 在 HarmonyOS 上的安装和订阅步骤，使用前请先查看兼容性说明。
+description: 介绍 ClashBox 在 HarmonyOS 上的安装和订阅步骤；该软件尚未开源，安装前请留意页面内的安全提示与 PuraX 外屏白名单限制。
 ---
 
 # ClashBox
@@ -67,7 +67,7 @@ PuraX外屏目前仅显示华为白名单内的App，在本软件获得白名单
 
 开发者可从官方 GitHub 仓库取得项目发布，并使用华为官方开发者工具按当前文档安装：
 * Github下载：[https://github.com/xiaobaigroup/ClashBox/releases](https://github.com/xiaobaigroup/ClashBox/releases)
-* 或者使用[DevEcho Testing](https://developer.huawei.com/consumer/cn/deveco-testing/)进行安装
+* 或者使用[DevEco Testing](https://developer.huawei.com/consumer/cn/deveco-testing/)进行安装
 
 ::: warning 开发者安装
 开发者工具安装需要理解签名、权限和有效期。若华为官方工具因账户、设备或地区策略拒绝操作，请查阅华为当前开发者文档，不要伪装 IP 或账户地区绕过限制。
@@ -85,14 +85,14 @@ PuraX外屏目前仅显示华为白名单内的App，在本软件获得白名单
 
 <div class="tip custom-block" style="padding-top: 8px">
 
-无忧行订阅服务手机面板：<https://jego.us>
+手机上也能取订阅地址：用手机浏览器打开 <https://jego.us> 登录即可复制。
 
 </div>
 
 ## ClashBox/ClashNEXT 使用教程
 
 ### 配置订阅
-打开`ClashBox`进入`配置`页面，然后点击右下角的` + `添加订阅
+打开`ClashBox`进入`配置`页面，点击右下角的` + `添加订阅：选择从 URL 导入，粘贴刚才复制的 Mihomo 订阅地址并保存。配置列表出现新条目即添加成功（界面细节以当前版本为准）
 <img src="/images/clashbox_photo_2025-08-03_10-56-23.jpg" alt="ClashBox" width="297" heigh="640">
 
 ### 启动代理

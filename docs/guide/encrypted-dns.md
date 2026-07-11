@@ -13,11 +13,11 @@ platforms: []
 tools: []
 appliesTo: []
 sources: []
-title: 加密DNS（DoH / DoT）完全指南 - 使用指南
-description: 用简单的话了解 DNS、明文查询、DoH 与 DoT，并按设备开启适合当前网络的加密 DNS。
+title: 加密 DNS（DoH / DoT）完全说明 - 使用指南
+description: 用简单的话了解 DNS、明文查询、DoH 与 DoT，并按设备开启适合当前网络的加密 DNS（中国大陆需改用阿里/腾讯等国内解析器）。
 ---
 
-# 加密DNS（DoH / DoT）完全指南
+# 加密 DNS（DoH / DoT）完全指南
 
 很多「打不开网站、网页加载到一半被掐断、明明连了代理却还是访问异常」的问题，根子都在 **DNS** 这一步。这篇文章用大白话讲清楚 DNS 是什么、为什么明文 DNS 不安全、加密 DNS（DoH / DoT）怎么帮你，以及在你的设备上怎么开。
 
@@ -49,7 +49,7 @@ DNS（域名系统）的作用，是把你输入的**域名**（如 `google.com`
 
 无忧行是**浏览器代理**——它只接管浏览器内的流量，**不接管系统 DNS**。所以加密 DNS 和无忧行是互补关系：
 
-- 它能挡住**本地链路上的 DNS 劫持 / 污染**，并提升隐私；
+- 加密 DNS 能挡住**本地链路上的 DNS 劫持 / 污染**，并提升隐私；
 - 在中国大陆，**国外的加密 DNS（如 1.1.1.1）无法直接当作你的 DNS 使用**，原因见下方「中国大陆专区」。
 
 ## 四、🇨🇳 中国大陆专区
@@ -116,14 +116,14 @@ DNS（域名系统）的作用，是把你输入的**域名**（如 `google.com`
 
 | 服务商 | DoH 地址 | DoT 主机名 | 明文 IP | 特点 |
 | --- | --- | --- | --- | --- |
-| **IIJ（日本）** | `https://public.dns.iij.jp/dns-query` | `public.dns.iij.jp` | — | 日本 · 仅加密 · 查询数据 24h 内删除 |
+| **IIJ（日本）** | `https://public.dns.iij.jp/dns-query` | `public.dns.iij.jp` | — | 日本 · 加密端点；隐私细节以官方当前政策说明为准 |
 | **Tiarap** | `https://doh.tiar.app/dns-query` | `dot.tiar.app` | `174.138.21.128` `188.166.206.224` | 可选过滤端点；核对当前政策 |
 
 **美洲 / 大洋洲**
 
 | 服务商 | DoH 地址 | DoT 主机名 | 明文 IP | 特点 |
 | --- | --- | --- | --- | --- |
-| **CIRA Canadian Shield** | `https://private.canadianshield.cira.ca/dns-query` | `private.canadianshield.cira.ca` | `149.112.121.10` `149.112.122.10` | 加拿大 · 个人信息 24h 内删除 · Protected/Family 变体可加过滤 |
+| **CIRA Canadian Shield** | `https://private.canadianshield.cira.ca/dns-query` | `private.canadianshield.cira.ca` | `149.112.121.10` `149.112.122.10` | 加拿大 · 端点变体与隐私政策以官方说明为准 |
 :::
 
 ## 六、开启加密 DNS（推荐组合）
@@ -173,9 +173,9 @@ DNS（域名系统）的作用，是把你输入的**域名**（如 `google.com`
 ## 七、暂时无法使用 DoH/DoT 时
 
 ::: tip 至少做这一步
-如果暂时没有配置 DoH/DoT，可以先按系统说明使用公共解析器：中国大陆可用 `223.5.5.5`（阿里），其他地区可比较 `1.1.1.1` / `8.8.8.8`。这一步本身不加密，但有助于排除运营商默认 DNS 的解析影响。
+暂时没法配置 DoH/DoT 时，**至少把公共解析器的明文 IP 设为系统 DNS**，替换运营商默认的那个：中国大陆用 `223.5.5.5`（阿里），其他地区可用 `1.1.1.1` / `8.8.8.8`。这一步本身不加密，但能避开最常见的运营商 DNS 劫持。
 :::
 
 ---
 
-> 连接仍未恢复时，可以回到[常见问题](/guide/faq)，按“网络环境 + 浏览器环境”逐项检查，也可以直接[联系客服](/guide/support)。
+> 连接仍未恢复时，可以看[常见问题](/guide/faq)里「打不开境外网站」和「用网络诊断自助检查插件」两条说明，也可以直接[联系客服](/guide/support)。

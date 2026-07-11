@@ -19,8 +19,6 @@ description: Choose a macOS client, import the Jego subscription, and start the 
 
 # macOS Proxy Guide
 
-macOS is an operating system with graphical user interface launched by Apple Inc., serving as the operating system for the Macintosh (Mac for short) series of computers. Among desktop operating systems, macOS ranks second in market share.
-
 Jego members can add subscription nodes to a compatible Mac client, allowing apps outside the browser to use the VPN. Choose a currently supported client below, then follow its complete installation and import guide.
 
 ## <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FrUGve1gm2gP1sXdvgjCw_2Fapple_1.svg" width="38" height="28" alt="macOS icon"> macOS proxy clients
@@ -43,7 +41,7 @@ Surge is an Apple-platform network tool; verify current features, platforms, pri
 
 <div class="client-guide-link"><img src="/images/image_shadowrocket_2.png" width="26" height="26" alt="Shadowrocket icon"><a href="/en/subscription/clients/shadowrocket">Shadowrocket</a></div>
 
-Shadowrocket is a fully-featured iOS/iPadOS proxy tool client that supports most common connection protocols.
+Shadowrocket is a fully-featured iOS/iPadOS proxy tool client that supports most common connection protocols; Macs with Apple silicon (M-series) can install the same app from the App Store.
 
 <div class="client-guide-link"><img src="/images/clashvergelogo.png" width="26" height="26" alt="Clash Verge Rev"><a href="/en/subscription/clients/clashverge">Clash Verge Rev</a></div>
 

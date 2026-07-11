@@ -31,11 +31,11 @@ description: Shadowrocket is a fully-featured iOS proxy tool client that support
 
 # Shadowrocket
 
-Shadowrocket is a fully-featured iOS proxy tool client that supports most common connection protocols.
+Shadowrocket is a fully-featured iOS proxy tool client that supports most common connection protocols. Macs with Apple silicon (M-series) can also install it from the App Store; the steps on this page apply there as well.
 
 ## <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F7AV6HDd5wUpQFm7nVO7V_2Fshadowrocket_1.png" width="26" height="26" alt="Shadowrocket icon"> Get Shadowrocket
 
-App Store availability is controlled by Apple and the developer for each account region. Do not buy or share accounts or falsify region details; use an account you legitimately own and the official store.
+App Store availability is controlled by Apple and the developer for each account region. Do not buy or share accounts or falsify region details; use an account you legitimately own and the official store. For Apple's official region requirements, see the [US Apple ID Registration Guide](/en/subscription/devices/us-apple-id); without a qualifying account, use another supported client available in your region, or the [browser extension](/en/guide/installation).
 
 ## Download Shadowrocket
 
@@ -43,13 +43,13 @@ If the [official Shadowrocket App Store page](https://apps.apple.com/us/app/shad
 
 ## Add Subscription
 
-In the **Jego - Control Panel**, click on **Subscription Nodes** in the left navigation bar, find the Shadowrocket subscription address and click **Copy**.
+In the **Jego Dashboard**, click on **Mobile Proxy** in the left navigation bar, find the Shadowrocket subscription address and click **Copy**.
 
-<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FR0ByTjT0xp3A9tvDTjft_2Fimage_2.png" alt="Jego control panel">
+<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FR0ByTjT0xp3A9tvDTjft_2Fimage_2.png" alt="Jego Dashboard">
 
 <div class="tip custom-block" style="padding-top: 8px">
 
-Jego subscription service mobile panel: <https://jego.us>
+You can also get the subscription URL on your phone: open <https://jego.us> in the phone browser and sign in to copy it.
 
 </div>
 
@@ -77,12 +77,12 @@ Open Shadowrocket, click "**Settings**" in the bottom navigation bar to enter th
 
 Tap "**Home**" > "**Global Routing**", select the proxy mode according to your needs:
 
-### **Config / Config: Only proxy foreign traffic**
+### **Config: Only proxy foreign traffic**
 
-Do not import a third-party remote configuration whose source, maintenance state, and content have not been verified. For rule routing, prefer the matching subscription URL exposed by the Jego Control Panel and confirm that its domain belongs to your account before importing it.
+Do not import a third-party remote configuration whose source, maintenance state, and content have not been verified. For rule routing, prefer the matching subscription URL exposed by the Jego Dashboard and confirm that its domain belongs to your account before importing it.
 
 Suitable for users who use both domestic and foreign services.\
-Whether traffic is direct or proxied depends on the active configuration; account UI determines how it counts toward the plan.\
+In Config mode, mainland-China traffic connects directly and does not go through the proxy server.\
 When querying IP on mainland websites, you get the local IP address.\
 When querying IP on foreign websites, you get the proxy IP address.\
 Traffic routing rules cannot be comprehensive and have timeliness. If you encounter the following situations, try global proxy.
@@ -90,16 +90,16 @@ Traffic routing rules cannot be comprehensive and have timeliness. If you encoun
 * Unable to open international websites;
 * Slow loading of international websites;
 
-### **Proxy / Proxy: Proxy all traffic**
+### **Proxy: Proxy all traffic**
 
 Suitable for users who do not rely on mainland services.
 
-Global mode sends client-managed traffic through the proxy; verify performance and destination results on the current network.
+In Proxy mode, foreign traffic goes through the proxy as usual; mainland traffic also goes through the proxy server — it works, but noticeably slower.
 
-### **Direct / Direct: Do not proxy any traffic**
+### **Direct: Do not proxy any traffic**
 
 Choosing this mode will result in inability to bypass restrictions, with the same effect as turning off VPN.
 
-### **Scene / Scene: Proxy traffic according to scenarios**
+### **Scene: Proxy traffic according to scenarios**
 
 You can customize the required network, routing, nodes and other proxy conditions according to your own needs.

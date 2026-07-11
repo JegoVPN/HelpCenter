@@ -30,8 +30,8 @@ import ieplSvg from '../.vitepress/svgs/node-iepl.svg?raw'
 
 ## <span style="color:red;">先说结论</span>
 
-::: danger 重要提醒
-<span style="color:red;">如无特殊需求，首选</span><span style="color:red;">**自动选择**</span><span style="color:red;">。</span>
+::: tip 重要提醒
+<span style="color:red;">如无特殊需求，首选**自动选择**。</span>
 
 不同地区、不同运营商连接同一个节点，结果也可能不同。**自动选择**会从账号当前可用的线路中帮你选择，最适合第一次使用。网站仍不理想时，再做[节点测速](/guide/network-diagnostics-node-speed)并手动更换。
 :::
@@ -45,7 +45,7 @@ import ieplSvg from '../.vitepress/svgs/node-iepl.svg?raw'
 无忧行只能优化其中一部分。家里的 Wi-Fi、当地运营商、跨境线路、节点负载和目标网站都会影响体验，所以“换了高级节点”也不一定能解决本地网络本身的问题。
 
 ::: warning 举个例子
-如果你的本地网络到中国跨海骨干网络入口处的速率本身就不理想，那么从你家到无忧行入口服务器这一段就已经在“堵车”了，后续线路也会受到影响。这一段仍由当前的家庭网络和当地运营商决定，无忧行线路从接入无忧行服务后开始发挥作用。
+如果从你家到**无忧行入口服务器**这一段速率本身就不理想，相当于路上已经在“堵车”，后面的线路再快也会受影响。这一段由你的家庭网络和当地运营商决定；无忧行的优化从流量到达无忧行入口服务器之后才开始。
 :::
 
 ## <span style="color:orange;">边缘网络（境外）</span>
@@ -80,7 +80,7 @@ import ieplSvg from '../.vitepress/svgs/node-iepl.svg?raw'
 适合经常访问境外网站、希望比普通公网更稳定的用户。
 :::
 
-## <span style="color:purple;">大陆专用中转服务器线路</span>
+## <span style="color:purple;">大陆中转线路</span>
 
 <div v-html="transitSvg"></div>
 
@@ -121,7 +121,7 @@ import ieplSvg from '../.vitepress/svgs/node-iepl.svg?raw'
 | 边缘网络 | 主要走公共互联网连接境外节点 | 日常轻量使用、先确认基本连接 |
 | 大陆优化线路 | 对跨境路径中的部分线路做优化 | 普通线路高峰期波动较大 |
 | 大陆中转线路 | 先连接入口，再转发到境外出口 | 本地直连到境外不稳定 |
-| IEPL | 中间某段使用专线类传输 | 更看重稳定性，希望减少公网波动 |
+| IEPL 内网专线 | 中间某段使用专线类传输 | 更看重稳定性，希望减少公网波动 |
 
 ::: info 提示
 Pro、Ultra 等线路是否出现在列表中，取决于当前账号和会员等级。具体可以在弹窗节点列表和[会员体系](/membership/benefits)中查看。

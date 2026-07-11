@@ -48,15 +48,15 @@ Additional explanation:
 
 * SFA is the abbreviation of sing-box for Android.
 
-## Add Subscription
+## Copy the subscription URL
 
-In the **Jego - Control Panel**, click on **Subscription Nodes** in the left navigation bar, find the **Sing-Box** subscription address and click **Copy**.
+In the **Jego Dashboard**, click on **Mobile Proxy** in the left navigation bar, find the **Sing-Box** subscription address and click **Copy**.
 
 <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FQ9Ncmw0YFCe4ziEMoSuw_2Fimage_3.png" alt="Sing-Box subscription address">
 
 <div class="tip custom-block" style="padding-top: 8px">
 
-Jego subscription service mobile panel: <https://jego.us>
+You can also get the subscription URL on your phone: open <https://jego.us> in the phone browser and sign in to copy it.
 
 </div>
 
@@ -87,9 +87,9 @@ The first time you start, you'll also be prompted for VPN permission, just click
 
 Reminder: The first time you use it, all three modes may not be selected. It's recommended to click on `Rule`.
 
-`Rule` - Smart routing mode, automatically selects direct connection or proxy based on rules
-`Direct` - Direct connection mode, all traffic bypasses proxy
-`Global` - Global proxy mode, all traffic goes through proxy
+- `Rule`: smart routing — chooses direct or proxy automatically based on rules
+- `Direct`: direct connection — no traffic goes through the proxy
+- `Global`: global proxy — all traffic goes through the proxy
 
 #### Groups tab: Switch node servers
 
@@ -99,13 +99,15 @@ The default is auto-select. Here auto-select is on the `🇸🇬 Direct｜Singap
 
 On this Tab, you can manually choose the node server you want to use.
 
+After connecting, open www.google.com or another overseas site — if it loads, the setup works.
+
 ## sing-box Common Issues
 
-### When only local websites open
+### Only mainland China websites open
 
 **🟡 Situation 1: Just started**
 
-Some configurations run a URL test or fetch rule sets during startup, during which a usable result may be temporarily absent. Whether a test runs, what it covers, and how DNS behaves depend on the actual configuration; use status text and logs rather than describing it as “selecting the fastest node.”
+For a minute or two after startup, the client may still be testing nodes or downloading rule files, so some sites temporarily fail to open. Wait a moment, or pick a node manually as described below.
 
 > ✅ Solution: If you don't want to wait for the speed test process, you can manually select an available node, so you can immediately access foreign websites.
 

@@ -14,7 +14,7 @@ tools: []
 appliesTo: []
 sources: [https://support.apple.com/en-us/118283, https://support.apple.com/en-us/118429, https://support.apple.com/en-us/108285]
 title: US Apple ID Registration Guide - iOS/iPadOS
-description: Manage an Apple Account and region under Apple's official requirements when your real residence or account region is the United States.
+description: Manage an Apple Account and region under Apple's official requirements when your real residence or account region is the United States, and buy paid apps with a gift card in the US App Store.
 ---
 
 # US Apple ID Registration Guide

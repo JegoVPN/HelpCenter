@@ -37,7 +37,7 @@ GUI.for.SingBox是开源社区基于sing-box内核在Windows系统里做的图�
 欢迎阅读2025年GUI.for.SingBox使用教程
 :::
 
-> 小声逼逼一下：GUI.for.SingBox 用起来的体验并不丝滑，非sing-box信徒建议使用[FlClash](flclash)。
+> 提示：GUI.for.SingBox 的上手体验一般。如果不是特别需要 sing-box 内核，建议优先使用 [FlClash](flclash)。
 
 ## 获取 GUI.for.SingBox
 
@@ -49,7 +49,7 @@ GUI.for.SingBox是开源社区基于sing-box内核在Windows系统里做的图�
 
 ## GUI.for.SingBox Windows版本使用教程
 
-## 添加订阅
+### 复制订阅地址
 
 在**无忧行 - 控制面板**里点击左侧导航栏**订阅节点**  ，找到**Sing-Box**订阅地址并点击**复制**。
 
@@ -57,19 +57,19 @@ GUI.for.SingBox是开源社区基于sing-box内核在Windows系统里做的图�
 
 <div class="tip custom-block" style="padding-top: 8px">
 
-无忧行订阅服务手机面板：<https://jego.us>
+手机上也能取订阅地址：用手机浏览器打开 <https://jego.us> 登录即可复制。
 
 </div>
 
 ### 基础设置
 
-下载后先点开 `Settings - Kernel` 然后看sing-box标题下面的 `Local` 有没有内核版本，如下方左侧图所示就是没有，需要点击右侧蓝色的按钮`Update:版本` 进行安装。ps.以后有内核有新版本也是点这里更新。
+下载后先点开 `Settings - Kernel` 然后看sing-box标题下面的 `Local` 有没有内核版本，如下面第一张图所示就是没有，需要点击右侧蓝色的按钮`Update:版本` 进行安装。以后内核有新版本时，也在这里点击更新。
 
 ![刚下载](/images/guiforsingbox_no_kernel.png)
 
 ![有内核才能使用](/images/guiforsingbox_with_kernel.png)
 
-如上方右侧图片所示，sing-box下方Local有版本号GUI.for.SingBox才处于可用状态。
+如上面第二张图所示，sing-box 下方 Local 有版本号GUI.for.SingBox才处于可用状态。
 
 ### 添加订阅和启动
 
@@ -83,6 +83,6 @@ GUI.for.SingBox是开源社区基于sing-box内核在Windows系统里做的图�
 
 ![快速开始步骤2](/images/guiforsingbox_quickstart2.png)
 
-* 启动后应该就能用了，其他一些使用习惯上的问题需要慢慢学习。
+启动后打开 www.google.com 等境外网站，能正常访问就说明连接成功。要换节点时，进入左侧的`代理`页，在 ❇️Manual Select 分组中选择一个可用节点。启动失败时，先回 `Settings - Kernel` 确认内核已安装，再换一个节点重试。
 
 另外建议去设置里打开以管理员身份运行：对于非 Windows Administrators 用户组成员，建议勾选此项，以避免 TUN 模式启动失败。

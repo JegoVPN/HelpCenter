@@ -26,16 +26,16 @@ tools: [quantumult-x]
 appliesTo: []
 sources: [https://apps.apple.com/us/app/quantumult-x/id1443988620]
 title: Quantumult X - 工具软件
-description: Quantumult X是iOS上一款功能强大的网络工具。
+description: Quantumult X 是 iOS/iPadOS 上一款功能强大的网络工具。
 ---
 
 # Quantumult X
 
-Quantumult X是iOS上一款功能强大的网络工具。
+Quantumult X 是 iOS/iPadOS 上一款功能强大的网络工具。
 
 ## <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2Fuap2kKrwZ32jilQhXxlt_2Fquantumultx_3.png" width="26" height="26" alt="Quantumult X图标"> 获取Quantumult  X
 
-App Store 可用性由 Apple 和开发者按账户地区决定。不要购买、共享账号或虚构地区资料；只使用本人合法账户与官方商店入口。
+App Store 可用性由 Apple 和开发者按账户地区决定。不要购买、共享账号或虚构地区资料；只使用本人合法账户与官方商店入口。应用商店账号地区的官方要求见[美区 Apple ID 注册教程](/subscription/devices/us-apple-id)；没有符合条件的账号时，可改用本人地区可用且受支持的其他客户端，或使用[浏览器插件](/guide/installation)。
 
 ## 下载 Quantumult X
 
@@ -49,11 +49,11 @@ App Store 可用性由 Apple 和开发者按账户地区决定。不要购买、
 
 <div class="tip custom-block" style="padding-top: 8px">
 
-无忧行订阅服务手机面板：<https://jego.us>
+手机上也能取订阅地址：用手机浏览器打开 <https://jego.us> 登录即可复制。
 
 </div>
 
-打开 **Quantumult X**，点击右下角主功能图标。旧外站图片已失效，以下本地截图展示同一入口：
+打开 **Quantumult X**，点击右下角主功能图标：
 
 <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FTYLTzRrBAtQzw9mgGxzK_2Fimage_3.png" alt="Quantumult X界面" width="300">
 

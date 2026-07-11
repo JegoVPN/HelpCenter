@@ -14,7 +14,7 @@ tools: []
 appliesTo: []
 sources: []
 title: 在电脑和手机上使用无忧行订阅
-description: 选择正在使用的设备，安装合适的客户端，并了解不同连接方式的使用范围。
+description: 选择正在使用的设备，安装合适的客户端，并了解浏览器插件、系统代理、TUN 各自的适用范围。
 ---
 
 # 在电脑和手机上使用无忧行订阅
@@ -62,6 +62,6 @@ iPhone 和 iPad 的应用商店账号说明放在[Apple ID 教程](/subscription
 
 电脑客户端已经开启 TUN 模式时，让无忧行浏览器插件保持**关闭**，浏览器请求便由当前客户端统一处理。
 
-<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FISwY5XX4FX2qker0nOYC_2Fimage_3.png" alt="无忧行插件关闭模式界面" width="280">
+<img class="jego-popup-screenshot" src="/images/jego-v1.5.9/popup-paid-off-zh.png" alt="无忧行会员版插件关闭模式" width="280">
 
 插件里的“关闭”只关闭浏览器插件自己的代理功能，不会影响电脑客户端和 TUN。只使用浏览器插件时，再从弹窗选择规则或全局模式。完整说明见[规则、全局和关闭](/guide/mode-selection)。

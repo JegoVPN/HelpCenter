@@ -31,9 +31,10 @@ In Rules mode:
 
 - domains or IP addresses matched by a proxy rule use the current node;
 - domains, IP addresses, or subnets matched by a direct rule use the local connection;
-- requests not matched by a custom rule continue through Jego's built-in rules.
+- requests not matched by a custom rule continue through Jego's built-in rules;
+- local addresses always connect directly and never go through a node.
 
-If a domain or IP address does not follow the expected proxy rule, open **Control Panel → Diagnostics → Connection → Rules Check** to view the match result.
+If a domain or IP address does not follow the expected proxy rule, open **Dashboard → Diagnostics → Connection → Rules Check** to view the match result.
 
 ## Global mode: proxy all browser requests
 
@@ -86,13 +87,13 @@ Free version icon states:
 
 | Connected | Off |
 | --- | --- |
-| <img src="/images/jego-v1.5.9/icon-rule-48.png" alt="Connected icon" width="32" /> | <img src="/images/jego-v1.5.9/icon-off-48.png" alt="Disabled icon" width="32" /> |
+| <img src="/images/jego-v1.5.9/icon-rule-48.png" alt="Connected icon" width="32" /> | <img src="/images/jego-v1.5.9/icon-off-48.png" alt="Off icon" width="32" /> |
 
 Member icon states:
 
-| When in Global mode | When in Rules mode | When disabled |
+| When in Global mode | When in Rules mode | When Off |
 | --- | --- | --- |
-| <img src="/images/jego-v1.5.9/icon-global-48.png" alt="Global mode icon" width="32" /> | <img src="/images/jego-v1.5.9/icon-rule-48.png" alt="Rules mode icon" width="32" /> | <img src="/images/jego-v1.5.9/icon-off-48.png" alt="Disabled icon" width="32" /> |
+| <img src="/images/jego-v1.5.9/icon-global-48.png" alt="Global mode icon" width="32" /> | <img src="/images/jego-v1.5.9/icon-rule-48.png" alt="Rules mode icon" width="32" /> | <img src="/images/jego-v1.5.9/icon-off-48.png" alt="Off icon" width="32" /> |
 
 
-After switching, wait for the small dot at the top to become the Jego logo again, then reload the website. Use [Website Route Check](/en/guide/network-diagnostics#route-check) to confirm the actual route.
+After switching, wait for the small dot at the top to become the Jego logo again, then reload the website. Use [Rules Check](/en/guide/network-diagnostics#route-check) to confirm the actual route.

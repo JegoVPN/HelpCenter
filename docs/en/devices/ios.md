@@ -19,19 +19,17 @@ description: Choose an iPhone or iPad client, import the Jego subscription, and 
 
 # iPhone / iPad Proxy Guide
 
-iOS is a proprietary mobile operating system developed by Apple Inc. for its mobile devices, providing operating interface for many of the company's mobile devices, supporting devices including iPhone, iPad, iPod touch and Apple TV.
-
 Jego members can add subscription nodes to a compatible iPhone or iPad client, allowing other apps to use the VPN. Choose a currently supported client below, then follow its complete installation and import guide.
 
 <div class="tip custom-block" style="padding-top: 8px">
 
-Jego subscription service mobile panel: <https://jego.us>
+You can also get the subscription URL on your phone: open <https://jego.us> in the phone browser and sign in to copy it.
 
 </div>
 
 ## Get a Non-Mainland Apple ID
 
-Some iOS/iPadOS proxy apps must be downloaded from an App Store region outside mainland China. If you do not have a usable account, see the [US Apple ID Registration Guide](/en/subscription/devices/us-apple-id).
+Some iOS/iPadOS proxy apps must be downloaded from an App Store region outside mainland China. For Apple's official region requirements and the US-account creation and gift-card notes, see the [US Apple ID Registration Guide](/en/subscription/devices/us-apple-id); without a qualifying account, simply pick a supported client available in your real region.
 
 ## <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F7GBp8VQdHNWWH3aalDTP_2Fios_3.svg" width="38" height="28" alt="iOS icon"> iPhone / iPad proxy clients
 

@@ -26,7 +26,7 @@ tools: [clash-for-android]
 appliesTo: []
 sources: []
 title: Clash for Android - 工具软件
-description: 介绍 Clash for Android 的历史安装与订阅步骤，并提供当前可用的替代工具。
+description: 说明 Clash for Android 已停止提供安装入口的原因，保留订阅与使用步骤供旧设备迁移参考，并提供当前可用的替代工具。
 ---
 
 # Clash for Android
@@ -61,7 +61,7 @@ Clash for Android已于2023年11月3日下架。
 
 <div class="tip custom-block" style="padding-top: 8px">
 
-无忧行订阅服务手机面板：<https://jego.us>
+手机上也能取订阅地址：用手机浏览器打开 <https://jego.us> 登录即可复制。
 
 </div>
 
@@ -78,13 +78,13 @@ Clash for Android已于2023年11月3日下架。
 
 回到 Clash for Android 主页，**启动服务**。在弹出的设置 VPN 中点击 "**允许**"，Clash for Android 便开始接管系统流量。
 
-点击代理，在上方模式中选择对应节点即可。您亦可以选择相应应用，使用对应的代理节点。
+点击代理，在上方模式中选择对应节点即可。你亦可以选择相应应用，使用对应的代理节点。
 
 <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F4RjUE6nSLiUqpSjeX7Pu_2Fimage_2.png" alt="开启代理" width="300">
 
 ## 选择代理模式
 
-前往 App 主页，轻点「代理 / Proxy」>「┇」>「模式 / Mode」，根据您的需求选择代理模式。
+前往 App 主页，轻点「代理 / Proxy」>「┇」>「模式 / Mode」，根据你的需求选择代理模式。
 
 <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FKgx0JHC9I5UfcSThfdKI_2Fimage_3.png" alt="第一步" width="300">
 
@@ -94,13 +94,13 @@ Clash for Android已于2023年11月3日下架。
 
 适用于同时使用国内外服务的用户。
 
-大陆流量不會消耗套餐流量。
+规则模式下，中国大陆的流量走本地直连，不经过代理服务器。
 
-在大陆网站上查詢 IP 得到的是本地 IP 地址。
+在大陆网站上查询 IP 得到的是本地 IP 地址。
 
-在国外网站上查詢 IP 得到的是代理 IP 地址。
+在国外网站上查询 IP 得到的是代理 IP 地址。
 
-分流规则无法做到全面且具有時效性，如果遇到以下情況，请尝试全局代理。
+分流规则无法做到全面且具有时效性，如果遇到以下情况，请尝试全局代理。
 
 * 无法打开国际网站；
 * 加载国际网站缓慢；
@@ -113,4 +113,4 @@ Clash for Android已于2023年11月3日下架。
 
 适用于不依赖大陆服务的用户。
 
-對国外流量效果非常好，大陆流量會被減速。
+国外流量正常走代理；大陆流量也会经过代理服务器，能用但速度明显变慢。

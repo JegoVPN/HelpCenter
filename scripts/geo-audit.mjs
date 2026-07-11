@@ -180,7 +180,7 @@ if (baseline) {
 
 if (required) {
   const pairs = required.requiredPairs || []
-  if (pairs.length !== 6) fail(`mandatory route manifest 必须有 6 对，实际为 ${pairs.length}`)
+  if (pairs.length !== 5) fail(`mandatory route manifest 必须有 5 对，实际为 ${pairs.length}`)
   const keys = new Set()
   const sources = new Set()
   const routes = new Set()
@@ -202,7 +202,7 @@ if (required) {
       }
     }
   }
-  if (sources.size !== 12 || routes.size !== 12) fail('mandatory route manifest 必须固定 12 个唯一源文件和路由')
+  if (sources.size !== 10 || routes.size !== 10) fail('mandatory route manifest 必须固定 10 个唯一源文件和路由')
   pass(`mandatory route manifest：${pairs.length} 对、${sources.size} 个源文件、${routes.size} 条路由`)
 }
 
@@ -222,7 +222,7 @@ for (const media of allMedia) {
 pass(`当前源内容：${markdownFiles.length} 个 Markdown；${allMedia.size} 个独立本地媒体引用均存在`)
 
 if (!baselineMode) {
-  if (markdownFiles.length < 104) fail(`正式 Markdown 不得少于 104，实际为 ${markdownFiles.length}`)
+  if (markdownFiles.length < 102) fail(`正式 Markdown 不得少于 102，实际为 ${markdownFiles.length}`)
   const requiredFields = [
     'title', 'description', 'translationKey', 'contentType', 'product', 'productArea', 'uiSurface',
     'locale', 'status', 'owner', 'reviewStatus', 'lastVerified', 'platforms', 'tools', 'appliesTo', 'sources'
@@ -283,7 +283,7 @@ if (!baselineMode) {
       fail(`translationKey 未形成唯一中英对：${key}`)
     }
   }
-  if (translationGroups.size < 52) fail(`双语关系不得少于 52 对，实际为 ${translationGroups.size}`)
+  if (translationGroups.size < 51) fail(`双语关系不得少于 51 对，实际为 ${translationGroups.size}`)
 
   for (const page of pages) {
     for (const link of extractInternalLinks(page.raw)) {
@@ -457,7 +457,7 @@ if (!baselineMode) {
     if (!page) continue
     const { body } = splitFrontmatter(page.raw)
     const hasPaymentHistory = page.frontmatter.locale === 'en'
-      ? /## Check Payment History after purchase[\s\S]{0,160}Control Panel → Payment History[\s\S]{0,100}order appears there/.test(body)
+      ? /## Check Payment History after purchase[\s\S]{0,160}Dashboard → Payment History[\s\S]{0,100}order appears there/.test(body)
       : /## 付款后查看支付记录[\s\S]{0,120}控制面板 → 支付记录[\s\S]{0,80}查询到本次订单/.test(body)
     if (!hasPaymentHistory) fail(`如何支付页必须使用支付记录查询订单：${source}`)
     const restoredFaqFacts = page.frontmatter.locale === 'en'
@@ -483,7 +483,7 @@ if (!baselineMode) {
       fail(`版本说明页不得在标题后重复三个版本：${source}`)
     }
     const requiredServiceFacts = page.frontmatter.locale === 'en'
-      ? ['Register for a Jego account with an email address', 'website access is limited', 'Google', 'Wikipedia', 'NewBing', 'ChatGPT', 'Grok', 'Claude', 'nodes and proxy rules preset by Jego', 'Activate the account from the welcome email', 'three-day Trial', 'limited set of nodes', 'Complete payment', 'dozens of high-speed nodes worldwide', 'private network lines', 'subscription service for computers and phones']
+      ? ['Register for a Jego account with an email address', 'website access is limited', 'Google', 'Wikipedia', 'NewBing', 'ChatGPT', 'Grok', 'Claude', 'nodes and proxy rules preset by Jego', 'Activate the account from the welcome email', 'three-day Trial', 'limited set of nodes', 'Complete payment', 'dozens of high-speed nodes worldwide', 'IEPL private lines', 'subscription service for computers and phones']
       : ['使用邮箱注册无忧行账号后', '可访问的网站有限', 'Google', 'Wikipedia', 'NewBing', 'ChatGPT', 'Grok', 'Claude', '节点和代理策略由无忧行预先设置', '通过欢迎邮件激活账号后', '三天体验', '有限的几个节点', '完成付费后', '全球几十个高速节点', '内网专线', '电脑和手机订阅服务']
     for (const fact of requiredServiceFacts) {
       if (!body.includes(fact)) fail(`版本说明页不得删减原有服务范围：${source} -> ${fact}`)
@@ -544,6 +544,12 @@ if (!baselineMode) {
       ? '/images/jego-v1.5.10/subscription-panel-en.png'
       : '/images/jego-v1.5.10/subscription-panel-zh.png'
     if (!body.includes(panelImage)) fail(`订阅入口缺少对应语言的控制面板截图：${source}`)
+    const offImage = locale === 'en'
+      ? '/images/jego-v1.5.9/popup-paid-off-en.png'
+      : '/images/jego-v1.5.9/popup-paid-off-zh.png'
+    if (!body.includes(offImage) || !body.includes('class="jego-popup-screenshot"') || /ISwY5XX4FX2qker0nOYC/.test(body)) {
+      fail(`订阅入口必须使用对应语言的 1.5.9 会员版关闭截图：${source}`)
+    }
     if (/^##\s+(?:复制和更新订阅|Copy and update the subscription|浏览器插件、系统代理和 TUN|Browser extension, system proxy, and TUN)\s*$/m.test(body)) {
       fail(`订阅入口不得恢复重复管理模块或技术化标题：${source}`)
     }
@@ -644,7 +650,7 @@ if (!baselineMode) {
       fail(`插件权限页必须包含四项扩展权限与 all URLs 网站访问权限：${page.source}`)
     }
     const hasAllHostsTableRow = page.frontmatter.locale === 'en'
-      ? /^\| `host_permissions` · `all URLs` \| Get service configuration, run Connection Check, and run Node Test \|$/m.test(body)
+      ? /^\| `host_permissions` · `all URLs` \| Get service configuration, run the Connection check, and run Node test \|$/m.test(body)
       : /^\| `host_permissions` · `all URLs` \| 用于获取服务配置、连接检测和节点测速 \|$/m.test(body)
     if (!hasAllHostsTableRow) {
       fail(`插件权限表必须单独列出 host_permissions / all URLs：${page.source}`)
@@ -710,14 +716,11 @@ if (!baselineMode) {
 
   const zhHome = pages.find((page) => page.source === 'docs/index.md')?.raw || ''
   const enHome = pages.find((page) => page.source === 'docs/en/index.md')?.raw || ''
-  if (!/text:\s*最好用的免费代理工具/.test(zhHome) || !/tagline:[^\n]*(?:Chrome|Edge)[^\n]*小白/.test(zhHome)) {
+  if (!/text:\s*最好用的免费代理工具/.test(zhHome) || !/tagline:[^\n]*(?:Chrome|Edge)[^\n]*打开就能用/.test(zhHome)) {
     fail('中文首页必须保留产品定位、浏览器价值和小白友好表达')
   }
-  if (!/text:\s*The Best Free VPN/.test(enHome) || !/tagline:[^\n]*(?:Chrome|Edge)[^\n]*first-time/i.test(enHome)) {
+  if (!/text:\s*The Best Free VPN/.test(enHome) || !/tagline:[^\n]*(?:Chrome|Edge)[^\n]*ready to use/i.test(enHome)) {
     fail('英文首页必须保留产品定位、浏览器价值和新手友好表达')
-  }
-  if (!/title:\s*20 种语言/.test(zhHome) || !/title:\s*20 Languages/.test(enHome)) {
-    fail('中英文首页必须展示插件的 20 种语言支持')
   }
 
   const publicJargon = /机器可读|状态语义|数据接收方|所有者确认|业务所有者|发布阻断|证据边界|owner-confirmed|owner-controlled|machine-readable|status semantics|publication block|product owner|pending review/i
@@ -751,7 +754,7 @@ if (!baselineMode) {
       if (/[?？]/.test(visible)) fail(`公开正文仍含面向用户的设问：${page.source}:${index + 1}`)
     }
 
-    if (!/docs\/(?:en\/)?guide\/plugin-maintenance\.md$/.test(page.source) && /卸载|重装|重新安装|uninstall|reinstall|remove (?:Jego|the extension)/i.test(body)) {
+    if (!/docs\/(?:en\/)?guide\/keep-updated\.md$/.test(page.source) && /卸载|重装|重新安装|uninstall|reinstall|remove (?:Jego|the extension)/i.test(body)) {
       fail(`普通页面主动提示移除或重装插件：${page.source}`)
     }
 
@@ -776,8 +779,8 @@ if (!baselineMode) {
     const { body } = splitFrontmatter(page.raw)
     const h2 = [...body.matchAll(/^##\s+(.+?)(?:\s+\{#[^}]+\})?\s*$/gm)].map((match) => match[1].trim())
     const expected = page.frontmatter.locale === 'en'
-      ? ['Current Acceleration Status', 'Connection Check', "Check a Website's Route"]
-      : ['当前加速状态', '连接检测', '查询网址走向']
+      ? ['Traffic handling', 'Connection', "Check a Website's Route"]
+      : ['当前加速状态', '连接检测', '查网址走向']
     if (h2.join('|') !== expected.join('|')) {
       fail(`网络诊断页必须按当前加速状态、连接检测与查询网址走向排列：${page.source}`)
     }
@@ -796,7 +799,7 @@ if (!baselineMode) {
     const { body } = splitFrontmatter(page.raw)
     const h2 = [...body.matchAll(/^##\s+(.+?)\s*$/gm)].map((match) => match[1].trim())
     const expected = page.frontmatter.locale === 'en'
-      ? ['Start Node Test', 'Read the Node Test results', 'Choose a suitable node']
+      ? ['Start Node test', 'Read the Node test results', 'Choose a suitable node']
       : ['开始节点测速', '看懂测速结果', '选择合适的节点']
     if (h2.join('|') !== expected.join('|')) {
       fail(`节点测速页必须按开始测速、看懂结果和选择节点排列：${page.source}`)
@@ -805,40 +808,49 @@ if (!baselineMode) {
       ? /To see which Jego nodes are currently available[\s\S]{0,350}help you choose a suitable node/.test(body)
       : /想了解哪些无忧行节点当前可用时[\s\S]{0,250}帮助你选择合适的节点/.test(body)
     const resultPhrases = page.frontmatter.locale === 'en'
-      ? ['Green lightning', 'Yellow indicator', 'Failed', '10 relatively fastest', 'does not show milliseconds']
-      : ['绿色闪电', '黄色标记', '失败', '相对较快的前 10 个', '不会显示毫秒']
+      ? ['Green lightning', 'Yellow indicator', 'Unreachable', '10 relatively fastest', 'does not show milliseconds']
+      : ['绿色闪电', '黄色标记', '无法访问', '相对较快的前 10 个', '不会显示毫秒']
     const hasResults = resultPhrases.every((phrase) => body.includes(phrase))
     if (!hasOutcomeCopy || !hasResults) {
       fail(`节点测速页必须说明用户会得到什么结果以及如何选择节点：${page.source}`)
     }
-    if (/如果结果不理想|所有节点都失败|联系客服|订阅地址|完整日志|If the results are poor|Every node fails|contacting support|subscription URL|complete logs/i.test(body)) {
+    if (/如果结果不理想|订阅地址|完整日志|If the results are poor|subscription URL|complete logs/i.test(body)) {
       fail(`节点测速页不得恢复负面问题表或额外支持负担：${page.source}`)
     }
   }
 
-  const pluginMaintenancePages = pages.filter((page) => /^docs\/(?:en\/)?guide\/plugin-maintenance\.md$/.test(page.source))
-  for (const page of pluginMaintenancePages) {
+  const installationPages = pages.filter((page) => /^docs\/(?:en\/)?guide\/installation\.md$/.test(page.source))
+  for (const page of installationPages) {
     const { body } = splitFrontmatter(page.raw)
-    const h2 = [...body.matchAll(/^##\s+(.+?)\s*$/gm)].map((match) => match[1].trim())
-    const expected = page.frontmatter.locale === 'en'
-      ? ['Confirm and update the version', 'Open Jego after updating', 'Check the current working status', 'When you choose to reinstall Jego', 'Get more help']
-      : ['确认并更新版本', '更新后重新打开无忧行', '确认当前工作状态', '需要重新安装时', '获得更多帮助']
-    if (h2.join('|') !== expected.join('|')) {
-      fail(`插件维护页必须按更新、重新加载、确认状态、主动重新安装和帮助排列：${page.source}`)
+    const isEnglish = page.frontmatter.locale === 'en'
+    const edgeCrxFlow = isEnglish
+      ? /download the ZIP package[\s\S]*extract it[\s\S]*edge:\/\/extensions\/[\s\S]*Developer mode[\s\S]*Drag the `\.crx` file[\s\S]*Add extension/i.test(body)
+      : /下载 ZIP 安装包[\s\S]*解压后找到[\s\S]*edge:\/\/extensions\/[\s\S]*开发人员模式[\s\S]*把 `\.crx` 文件[\s\S]*拖到[\s\S]*添加扩展/.test(body)
+    const chromeCrxFlow = isEnglish
+      ? /download the ZIP package[\s\S]*extract it[\s\S]*chrome:\/\/extensions\/[\s\S]*Developer mode[\s\S]*Drag the `\.crx` file[\s\S]*Add extension/i.test(body)
+      : /下载 ZIP 安装包[\s\S]*解压后找到[\s\S]*chrome:\/\/extensions\/[\s\S]*开发者模式[\s\S]*把 `\.crx` 文件[\s\S]*拖到[\s\S]*添加扩展程序/.test(body)
+    const sourceList = page.frontmatter.sources || []
+    if (
+      page.frontmatter.reviewStatus !== 'verified' ||
+      page.frontmatter.lastVerified !== '2026-07-11' ||
+      !sourceList.includes('https://support.google.com/chrome/answer/2664769') ||
+      !sourceList.includes('https://learn.microsoft.com/en-us/troubleshoot/microsoft-edge/development/self-host-extension-deploy') ||
+      !sourceList.includes('human-browser-test@chrome-149-edge-150-macos-2026-07-11') ||
+      !edgeCrxFlow ||
+      !chromeCrxFlow
+    ) {
+      fail(`安装页必须保留 Chrome 与 Edge 开启开发者模式后拖入 CRX 的实测流程：${page.source}`)
     }
-    const hasOutcomeCopy = page.frontmatter.locale === 'en'
-      ? /To keep Jego up to date[\s\S]{0,350}select Rules mode and Auto Select again[\s\S]{0,120}Diagnostics/.test(body)
-      : /想让无忧行保持最新版本[\s\S]{0,250}重新选择规则模式和自动节点[\s\S]{0,100}网络诊断/.test(body)
-    if (!hasOutcomeCopy) {
-      fail(`插件维护开场必须先说明用户会完成更新、重新加载状态并确认工作状态：${page.source}`)
+    if (/加载(?:已)?解压(?:缩)?的扩展|Load unpacked|manifest\.json|如果下载的是 ZIP|If it is a ZIP/i.test(body)) {
+      fail(`安装页不得向普通用户解释 Load unpacked 或源码文件夹：${page.source}`)
     }
-    const reinstallHeading = page.frontmatter.locale === 'en' ? '## When you choose to reinstall Jego' : '## 需要重新安装时'
-    const routineFlow = body.slice(0, body.indexOf(reinstallHeading))
-    if (/卸载|重装|重新安装|uninstall|reinstall|remove (?:Jego|the extension)/i.test(routineFlow)) {
-      fail(`插件维护普通流程不得主动提示移除或重新安装：${page.source}`)
-    }
-    if (/清(?:除|理).{0,12}Cookie|防火墙|其他.{0,12}(?:VPN|代理)|clear (?:cookies|site data)|firewall|other (?:VPN|proxy)/i.test(body)) {
-      fail(`插件维护页不得恢复与正常更新无关的技术排查清单：${page.source}`)
+    if (
+      !/\/videos\/jego-edge-crx-install-20260711\.mp4/.test(body) ||
+      !/\/images\/jego-chrome-crx-drag-install-20260711\.png/.test(body) ||
+      !/edge-crx-video/.test(body) ||
+      /fcXOYhXbZ9Tr2bWUoI5p|8gEriEnVmF77fYUY2XxI|qJVM1Fphg1LsgyqucvDn/.test(body)
+    ) {
+      fail(`安装页必须使用新 Edge CRX 视频与 Chrome 拖入 CRX 配图，且不得保留旧图或旧录屏：${page.source}`)
     }
   }
 
@@ -847,22 +859,22 @@ if (!baselineMode) {
     const { body } = splitFrontmatter(page.raw)
     const h2 = [...body.matchAll(/^##\s+(.+?)\s*$/gm)].map((match) => match[1].trim())
     const expected = page.frontmatter.locale === 'en'
-      ? ['Current extension version', 'Update Jego in Chrome', 'Update Jego in Edge', 'Update a manually installed version', 'Update a mobile subscription', 'After updating', 'Contact support']
-      : ['当前插件版本', '在 Chrome 中更新', '在 Edge 中更新', '更新手动安装的版本', '更新手机订阅', '更新完成后', '联系支持']
+      ? ['Current extension version', 'Update Jego in Chrome', 'Update Jego in Edge', 'Update a manually installed version', 'After updating', 'When you choose to reinstall Jego', 'Contact support']
+      : ['当前插件版本', '在 Chrome 中更新', '在 Edge 中更新', '更新手动安装的版本', '更新完成后', '需要重新安装时', '联系支持']
     if (h2.join('|') !== expected.join('|')) {
-      fail(`防止失联页必须按版本、Chrome、Edge、手动安装、手机订阅、完成确认和支持排列：${page.source}`)
+      fail(`更新插件页必须按版本、Chrome、Edge、手动安装、完成确认、重新安装和支持排列：${page.source}`)
     }
     const hasOutcomeCopy = page.frontmatter.locale === 'en'
-      ? /Jego regularly updates both the browser extension and subscription content[\s\S]{0,300}latest nodes and connection settings/.test(body)
-      : /无忧行会持续更新插件版本和订阅内容[\s\S]{0,220}新的节点与连接设置/.test(body)
+      ? /Jego regularly updates the browser extension[\s\S]{0,300}latest nodes and connection settings/.test(body)
+      : /无忧行会持续更新插件版本[\s\S]{0,220}新的节点与连接设置/.test(body)
     if (!hasOutcomeCopy) {
-      fail(`防止失联开场必须先说明保持更新后用户能获得什么：${page.source}`)
+      fail(`更新插件开场必须先说明保持更新后用户能获得什么：${page.source}`)
     }
     const requiredContent = page.frontmatter.locale === 'en'
-      ? ['1.5.9', 'chrome://extensions/', 'edge://extensions/', 'Chrome Web Store', 'Microsoft Edge Add-ons', 'https://jegocloud.com/static/app/', 'JegoV1.5.9.zip', 'every 24 hours', '/en/guide/plugin-maintenance']
-      : ['1.5.9', 'chrome://extensions/', 'edge://extensions/', 'Chrome Web Store', 'Microsoft Edge 扩展商店', 'https://jegocloud.com/static/app/', 'JegoV1.5.9.zip', '每 24 小时', '/guide/plugin-maintenance']
+      ? ['1.5.9', 'chrome://extensions/', 'edge://extensions/', 'Chrome Web Store', 'Microsoft Edge Add-ons', 'https://jegocloud.com/static/app/', 'JegoV1.5.9.zip']
+      : ['1.5.9', 'chrome://extensions/', 'edge://extensions/', 'Chrome Web Store', 'Microsoft Edge 扩展商店', 'https://jegocloud.com/static/app/', 'JegoV1.5.9.zip']
     if (!requiredContent.every((phrase) => body.includes(phrase))) {
-      fail(`防止失联页必须保留版本、商店、三种更新方式、地址组成、24 小时订阅建议和维护入口：${page.source}`)
+      fail(`更新插件页必须保留版本、商店、三种更新方式和地址组成：${page.source}`)
     }
     const requiredMedia = [
       'image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F5JRmsC6cdLC8T1CMokaN_2Fmsedge_3.png',
@@ -873,19 +885,24 @@ if (!baselineMode) {
       'image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FYHwAipQtF3QwJ7z85hyz_2F360se_2.png'
     ]
     if (!requiredMedia.every((media) => body.includes(media))) {
-      fail(`防止失联页不得删除既有浏览器媒体：${page.source}`)
+      fail(`更新插件页不得删除既有浏览器媒体：${page.source}`)
     }
     if (!body.includes('class="manual-browser-grid"') || !body.includes('class="manual-browser-item"')) {
-      fail(`防止失联页的手动安装浏览器必须使用横向响应式布局：${page.source}`)
+      fail(`更新插件页的手动安装浏览器必须使用横向响应式布局：${page.source}`)
     }
     const hasChromiumCoverage = page.frontmatter.locale === 'en'
       ? /other Chromium-based browsers/.test(body)
       : /其他基于 Chromium（Chrome 内核）的浏览器/.test(body)
     if (!hasChromiumCoverage) {
-      fail(`防止失联页必须说明安装包适用于其他 Chromium 浏览器：${page.source}`)
+      fail(`更新插件页必须说明安装包适用于其他 Chromium 浏览器：${page.source}`)
+    }
+    const reinstallHeading = page.frontmatter.locale === 'en' ? '## When you choose to reinstall Jego' : '## 需要重新安装时'
+    const routineFlow = body.slice(0, body.indexOf(reinstallHeading))
+    if (/卸载|重装|重新安装|uninstall|reinstall|remove (?:Jego|the extension)/i.test(routineFlow)) {
+      fail(`更新插件普通流程不得主动提示移除或重新安装：${page.source}`)
     }
     if (/反复尝试|搞不定|trying repeatedly|still can['’]?t solve/i.test(body)) {
-      fail(`防止失联页不得恢复增加用户负担的支持表达：${page.source}`)
+      fail(`更新插件页不得恢复增加用户负担的支持表达：${page.source}`)
     }
   }
   const themeStyleSource = readFileSync(path.join(root, 'docs/.vitepress/theme/style.css'), 'utf8')
@@ -994,10 +1011,10 @@ if (!baselineMode) {
     fail('导航必须区分首次使用教程与插件弹窗说明')
   }
   if (
-    !/text:\s*'防止失联',\s*link:\s*'\/guide\/keep-updated'/.test(navigationSource) ||
-    !/text:\s*'Stay Connected',\s*link:\s*'\/en\/guide\/keep-updated'/.test(navigationSource)
+    !/text:\s*'更新插件',\s*link:\s*'\/guide\/keep-updated'/.test(navigationSource) ||
+    !/text:\s*'Update the extension',\s*link:\s*'\/en\/guide\/keep-updated'/.test(navigationSource)
   ) {
-    fail('keep-updated 导航必须使用“防止失联”与“Stay Connected”')
+    fail('keep-updated 导航必须使用“更新插件”与“Update the extension”')
   }
   const zhSubscriptionEntries = navigationSource.match(/\{ text: '订阅服务', link: '\/subscription\/' \}/g) || []
   const enSubscriptionEntries = navigationSource.match(/\{ text: 'Subscription service', link: '\/en\/subscription\/' \}/g) || []
@@ -1083,10 +1100,10 @@ if (!baselineMode) {
       fail(`常见问题不得展示内部信息架构决策：${source}`)
     }
     const requiredQuestions = faq.frontmatter.locale === 'en'
-      ? ['Do all routes support Gemini, ChatGPT, Claude', 'does not open?', 'location different from the selected node?', 'private browsing window?', 'turn off the firewall']
-      : ['所有线路都能进行 Gemini、ChatGPT、Claude', '打不开 Gemini、ChatGPT、Claude', '地理位置与节点服务器不符', '如何在浏览器的隐私模式里使用无忧行', '建议关闭防火墙']
+      ? ['Do all routes support Gemini, ChatGPT, Claude', 'does not open?', 'location different from the selected node?', 'private browsing window?']
+      : ['所有线路都能进行 Gemini、ChatGPT、Claude', '打不开 Gemini、ChatGPT、Claude', '地理位置与节点服务器不符', '如何在浏览器的隐私模式里使用无忧行']
     if (!requiredQuestions.every((phrase) => body.includes(phrase))) {
-      fail(`常见问题必须保留五个经产品确认的真实问题：${source}`)
+      fail(`常见问题必须保留四个经产品确认的真实问题：${source}`)
     }
     if (/建议关闭或者降低网络防火墙|请将设置切换为.?关闭|recommended to turn off|switch the setting to.?Off/i.test(body)) {
       fail(`常见问题不得恢复关闭系统防火墙的建议：${source}`)
@@ -1120,6 +1137,17 @@ if (!baselineMode) {
     if (!completeBrowserGuide || /ChatGPT Group/.test(body)) {
       fail(`AI 产品指南必须完整承接浏览器插件操作，且不得混入手机订阅分组：${source}`)
     }
+    const expectedGlobalAiImage = isEnglish
+      ? '/images/jego-v1.5.10/popup-paid-global-ai-en.png'
+      : '/images/jego-v1.5.10/popup-paid-global-ai-zh.png'
+    if (!body.includes(expectedGlobalAiImage) || !body.includes('class="jego-popup-screenshot"') || /popup-paid-global-auto-(?:zh|en)\.png/.test(body)) {
+      fail(`Google AI 全局模式必须使用对应语言的硅谷 AI 节点配图：${source}`)
+    }
+  }
+
+  const themeCss = readFileSync(path.join(root, 'docs/.vitepress/theme/style.css'), 'utf8')
+  if (!/\.vp-doc img\.jego-popup-screenshot\s*\{[^}]*border:\s*1px solid #d1d5db/s.test(themeCss)) {
+    fail('裁切后的插件弹窗截图必须保留 1px 灰色描边')
   }
 
   const reviewPath = path.join(root, 'GEO_CONTENT_REVIEW.md')

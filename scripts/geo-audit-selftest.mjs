@@ -105,7 +105,7 @@ try {
     raw.replace('**控制面板** → **网络诊断**', '**控制面板** → **诊断**')
   )
   expectMutationFailure('把其他工具重新塞回网络诊断主页面', 'docs/guide/network-diagnostics.md', (raw) =>
-    raw.replace('## 查询网址走向 {#route-check}', '## 节点测速\n\n节点测速说明。\n\n## 查询网址走向 {#route-check}')
+    raw.replace('## 查网址走向 {#route-check}', '## 节点测速\n\n节点测速说明。\n\n## 查网址走向 {#route-check}')
   )
   expectMutationFailure('把网络诊断开场改回功能流水账', 'docs/guide/network-diagnostics.md', (raw) =>
     raw.replace('想了解无忧行代理工作状态时，可以打开**网络诊断**。', '**网络诊断**包含以下功能。')
@@ -113,26 +113,29 @@ try {
   expectMutationFailure('把节点测速开场改回问题清单', 'docs/guide/network-diagnostics-node-speed.md', (raw) =>
     raw.replace('想了解哪些无忧行节点当前可用时，可以打开**节点测速**。', '当前节点连不上或感觉很慢时，可以打开**节点测速**。')
   )
-  expectMutationFailure('把插件维护开场改回问题清单', 'docs/guide/plugin-maintenance.md', (raw) =>
-    raw.replace('想让无忧行保持最新版本，或在浏览器更新后重新确认插件状态时，可以按本页顺序操作。', '插件打不开或设置失效时，按下面清单排查。')
+  expectMutationFailure('把更新插件导航改回旧名称', 'docs/.vitepress/navigation.ts', (raw) =>
+    raw.replace("{ text: '更新插件', link: '/guide/keep-updated' }", "{ text: '保持更新', link: '/guide/keep-updated' }")
   )
-  expectMutationFailure('把泛化保密提醒塞回插件维护页', 'docs/guide/plugin-maintenance.md', (raw) =>
-    raw.replace('联系方法见[联系支持](/guide/support)。', '密码、Cookie 和订阅地址留在自己的设备上。联系方法见[联系支持](/guide/support)。')
-  )
-  expectMutationFailure('把防止失联导航改回旧名称', 'docs/.vitepress/navigation.ts', (raw) =>
-    raw.replace("{ text: '防止失联', link: '/guide/keep-updated' }", "{ text: '保持更新', link: '/guide/keep-updated' }")
-  )
-  expectMutationFailure('把防止失联开场改回功能清单', 'docs/guide/keep-updated.md', (raw) =>
-    raw.replace('无忧行会持续更新插件版本和订阅内容。', '**防止失联**包含以下更新功能。')
-  )
-  expectMutationFailure('删除手机订阅每 24 小时更新建议', 'docs/guide/keep-updated.md', (raw) =>
-    raw.replace('手机上的订阅客户端建议每 24 小时更新一次', '手机上的订阅客户端可以按需更新')
+  expectMutationFailure('把更新插件开场改回功能清单', 'docs/guide/keep-updated.md', (raw) =>
+    raw.replace('无忧行会持续更新插件版本。', '**更新插件**包含以下更新功能。')
   )
   expectMutationFailure('把手动安装浏览器改回纵排', 'docs/guide/keep-updated.md', (raw) =>
     raw.replace('class="manual-browser-grid"', 'class="manual-browser-list"')
   )
   expectMutationFailure('删除其他 Chromium 浏览器适用说明', 'docs/guide/keep-updated.md', (raw) =>
     raw.replace('，也适用于其他基于 Chromium（Chrome 内核）的浏览器', '')
+  )
+  expectMutationFailure('把 Edge CRX 安装改回 Load unpacked', 'docs/guide/installation.md', (raw) =>
+    raw.replace('把 `.crx` 文件从访达或文件资源管理器拖到 Edge 的扩展管理页中。', '点击**加载解压缩的扩展**，选择 CRX 文件。')
+  )
+  expectMutationFailure('把 Chrome CRX 安装改回 Load unpacked', 'docs/guide/installation.md', (raw) =>
+    raw.replace('把 `.crx` 文件从访达或文件资源管理器拖到 Chrome 的扩展程序管理页中。', '点击**加载已解压的扩展程序**，选择 CRX 文件。')
+  )
+  expectMutationFailure('删除 Edge CRX 安装视频', 'docs/guide/installation.md', (raw) =>
+    raw.replace('/videos/jego-edge-crx-install-20260711.mp4', '/videos/missing-edge-install.mp4')
+  )
+  expectMutationFailure('删除 Chrome 拖入 CRX 配图', 'docs/guide/installation.md', (raw) =>
+    raw.replace('/images/jego-chrome-crx-drag-install-20260711.png', '/images/missing-chrome-install.png')
   )
   expectMutationFailure('删除 all hosts 权限', 'docs/guide/plugin-permissions-privacy.md', (raw) =>
     raw.replace('| `host_permissions` · `all URLs` | 用于获取服务配置、连接检测和节点测速 |\n', '')
@@ -157,6 +160,9 @@ try {
   )
   expectMutationFailure('删除订阅入口控制面板截图', 'docs/devices/pc-mobile.md', (raw) =>
     raw.replace('\n<img src="/images/jego-v1.5.10/subscription-panel-zh.png" alt="无忧行控制面板的订阅节点页面" />\n', '\n')
+  )
+  expectMutationFailure('把订阅入口关闭截图改回旧图', 'docs/devices/pc-mobile.md', (raw) =>
+    raw.replace('/images/jego-v1.5.9/popup-paid-off-zh.png', '/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FISwY5XX4FX2qker0nOYC_2Fimage_3.png')
   )
   expectMutationFailure('把 Windows 工具表格加回来', 'docs/devices/windows.md', (raw) =>
     raw.replace('### 推荐客户端', '<ToolCatalog locale="zh" platform="windows" />\n\n### 推荐客户端')
@@ -236,9 +242,6 @@ try {
   expectMutationFailure('删除经产品确认的 FAQ 问题', 'docs/guide/faq.md', (raw) =>
     raw.replace('### 所有线路都能进行 Gemini、ChatGPT、Claude 等 AI 产品的访问吗？\n\n', '')
   )
-  expectMutationFailure('恢复关闭系统防火墙建议', 'docs/guide/faq.md', (raw) =>
-    raw.replace('请保持系统防火墙开启。', '建议关闭或者降低网络防火墙的安全等级。')
-  )
   expectMutationFailure('删除 FAQ 插件自助网络诊断入口', 'docs/guide/faq.md', (raw) =>
     raw.replace('### 如何使用网络诊断自助检查插件？', '### 插件帮助')
   )
@@ -247,6 +250,12 @@ try {
   )
   expectMutationFailure('删除 AI 指南的 Google 全局模式', 'docs/guide/chatgpt-access.md', (raw) =>
     raw.replace('## Google AI 产品使用全局模式', '## Google AI 产品')
+  )
+  expectMutationFailure('把 Google AI 配图改回香港节点', 'docs/guide/chatgpt-access.md', (raw) =>
+    raw.replace('/images/jego-v1.5.10/popup-paid-global-ai-zh.png', '/images/jego-v1.5.9/popup-paid-global-auto-zh.png')
+  )
+  expectMutationFailure('删除 Google AI 配图灰色描边', 'docs/guide/chatgpt-access.md', (raw) =>
+    raw.replace('class="jego-popup-screenshot"', '')
   )
   expectMutationFailure('把会员导航改回账户与支付', 'docs/.vitepress/navigation.ts', (raw) =>
     raw.replace("text: '会员与支付'", "text: '账户、会员与支付'")

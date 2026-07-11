@@ -26,7 +26,7 @@ tools: [clashbox]
 appliesTo: []
 sources: [https://github.com/xiaobaigroup/ClashBox, https://appgallery.huawei.com/app/detail?id=org.xbgroup.clashbox]
 title: ClashBox - Tools & Software
-description: Install ClashBox on HarmonyOS and import a subscription after checking the compatibility notes.
+description: Install ClashBox on HarmonyOS and import a subscription; it is not open source, so note the in-page safety tips and the PuraX outer-screen allowlist limit before installing.
 ---
 
 # ClashBox
@@ -67,7 +67,7 @@ Prefer the [official Huawei AppGallery page](https://appgallery.huawei.com/app/d
 
 Developers can obtain a project release from the official GitHub repository and use Huawei's official developer tools under current documentation:
 * Github download: [https://github.com/xiaobaigroup/ClashBox/releases](https://github.com/xiaobaigroup/ClashBox/releases)
-* Or use [DevEcho Testing](https://developer.huawei.com/consumer/cn/deveco-testing/) for installation
+* Or use [DevEco Testing](https://developer.huawei.com/consumer/cn/deveco-testing/) for installation
 
 ::: warning Developer installation
 Developer-tool installation requires an understanding of signing, permissions, and validity. If Huawei's official tools reject an action because of account, device, or region policy, consult Huawei's current developer documentation; do not disguise an IP address or account region to bypass the restriction.
@@ -79,20 +79,20 @@ Self-signed app validity and developer requirements can change with Huawei polic
 
 ## Add Subscription
 
-In the **Jego - Control Panel**, click on **Subscription Nodes** in the left navigation bar, find the Mihomo subscription address and click **Copy**.
+In the **Jego Dashboard**, click on **Mobile Proxy** in the left navigation bar, find the Mihomo subscription address and click **Copy**.
 
-<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2Fbf6ZGnMBZioZr9rD5P5J_2Fimage_2.png" alt="Jego control panel">
+<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2Fbf6ZGnMBZioZr9rD5P5J_2Fimage_2.png" alt="Jego Dashboard">
 
 <div class="tip custom-block" style="padding-top: 8px">
 
-Jego subscription service mobile panel: <https://jego.us>
+You can also get the subscription URL on your phone: open <https://jego.us> in the phone browser and sign in to copy it.
 
 </div>
 
 ## ClashBox/ClashNEXT Usage Tutorial
 
 ### Configure Subscription
-Open `ClashBox`, go to the `Configuration` page, then click the ` + ` in the bottom right corner to add subscription
+Open `ClashBox`, go to the `Configuration` page, then click the ` + ` in the bottom right corner to add a subscription: choose import from URL, paste the Mihomo subscription URL you just copied, and save. A new entry in the configuration list means it was added (details may vary by version)
 <img src="/images/clashbox_photo_2025-08-03_10-56-23.jpg" alt="ClashBox" width="297" heigh="640">
 
 ### Start Proxy

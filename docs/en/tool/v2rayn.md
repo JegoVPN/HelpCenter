@@ -43,7 +43,7 @@ Please use [Jego's recommended clients](/en/subscription/#_1-about-which-client-
 
 **v2rayN official website** download address: [https://github.com/2dust/v2rayN/releases](https://github.com/2dust/v2rayN/releases)
 
-For beginners, it's recommended to download the stable version, which is the version marked as `Latest` after the version number.
+The download links below are kept for existing users maintaining old setups; for a new installation, use the recommended client from the notice at the top. If you do download, choose the stable build marked `Latest`.
 
 ## Installation Tutorial
 
@@ -57,13 +57,13 @@ Find the main program `v2rayN.exe` and double-click the left mouse button to sta
 
 ## **Add Subscription:**
 
-In the **Jego - Control Panel**, click on **Subscription Nodes** in the left navigation bar, find the **v2rayN** subscription address and click **Copy**.
+In the **Jego Dashboard**, click on **Mobile Proxy** in the left navigation bar, find the **v2rayN** subscription address and click **Copy**.
 
-<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FDyLv7ygtf5WM9W3yG7zs_2Fimage_1.png" alt="Jego control panel">
+<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FDyLv7ygtf5WM9W3yG7zs_2Fimage_1.png" alt="Jego Dashboard">
 
 <div class="tip custom-block" style="padding-top: 8px">
 
-Jego subscription service mobile panel: <https://jego.us>
+You can also get the subscription URL on your phone: open <https://jego.us> in the phone browser and sign in to copy it.
 
 </div>
 
@@ -125,7 +125,7 @@ The icon color of the software is different in different states, refer to the ic
 
 #### Core type differences
 
-There are four core types in total: v2fly, SgerNet, Xray, sing-box. Generally, there's no difference in daily use, you can choose any one randomly.
+There are four core types in total: v2fly, SagerNet, Xray, sing-box. Generally, there's no difference in daily use, you can choose any one randomly.
 
 #### Supported protocols
 

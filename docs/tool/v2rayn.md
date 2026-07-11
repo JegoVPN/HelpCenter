@@ -43,7 +43,7 @@ v2rayN 第三方项目可能仍在维护，但 Jego 已不再支持其当前订�
 
 **v2rayN官网**下载地址：[https://github.com/2dust/v2rayN/releases](https://github.com/2dust/v2rayN/releases)
 
-新手使用建议下载稳定版本，即版本号后标记为 `Latest` 的版本。
+以下下载入口仅供仍在使用旧配置的用户查阅；新安装请改用顶部提示中的推荐客户端。确需下载时，选择版本号后标记为 `Latest` 的稳定版本。
 
 ## 安装教程
 
@@ -53,7 +53,7 @@ v2rayN 第三方项目可能仍在维护，但 Jego 已不再支持其当前订�
 
 <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FJCnIbRW02Nt9hR7tbUM6_2F1706546502-v2rayN-Floder_3.jpg" alt="v2rayN文件夹">
 
-找到软件主程序 `v2rayN.exe` 双击鼠标左键即可开始使用，程序启动后会最小化到任务右小角的托盘，鼠标双击蓝色的 `V` 字小图标，即可打开软件的主界面。
+找到软件主程序 `v2rayN.exe` 双击鼠标左键即可开始使用，程序启动后会最小化到任务栏右下角的托盘，鼠标双击蓝色的 `V` 字小图标，即可打开软件的主界面。
 
 ## **添加订阅：**
 
@@ -63,11 +63,11 @@ v2rayN 第三方项目可能仍在维护，但 Jego 已不再支持其当前订�
 
 <div class="tip custom-block" style="padding-top: 8px">
 
-无忧行订阅服务手机面板：<https://jego.us>
+手机上也能取订阅地址：用手机浏览器打开 <https://jego.us> 登录即可复制。
 
 </div>
 
-点击软件主界面的`订阅分组`，`点击订阅分组设置`，如下图所示：
+点击软件主界面的`订阅分组`，再点击`订阅分组设置`，如下图所示：
 
 <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FbI3ynYxOFBiJyBoHiEaB_2F1706686626-v2rayN-Subscription-Group_2.jpg" alt="订阅分组设置">
 
@@ -89,13 +89,13 @@ v2rayN 第三方项目可能仍在维护，但 Jego 已不再支持其当前订�
 
 #### 选择节点
 
-在软件主界面选择任意节点，单击鼠标右键，在弹出的窗口中扎到设为活动服务器即可选择节点，如下图所示，然后开启系统代理即可，也可以选择任意节点，双击鼠标左键选择节点。
+在软件主界面选择任意节点，单击鼠标右键，在弹出的窗口中找到设为活动服务器即可选择节点，如下图所示，然后开启系统代理即可，也可以选择任意节点，双击鼠标左键选择节点。
 
 <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FuPiGnlIgKPEkDUipRhw3_2F1707289273-v2rayN-Choose-Node_3.jpg" alt="选择节点">
 
 #### 系统代理
 
-按照上面的配置教程配置完服务器（节点）后，需要设置系统代理才能让浏览器支持科学上网功能，在任务栏右下角系统托盘找到软件的图标，在图标上**单击鼠标右键**，点击**自动配置系统代理**，此时软件的图标会标称**红色**，至此就可以开始使用了，打开 [Google](https://www.google.com/) 试试能不能访问吧。
+按照上面的配置教程配置完服务器（节点）后，需要设置系统代理才能让浏览器支持科学上网功能，在任务栏右下角系统托盘找到软件的图标，在图标上**单击鼠标右键**，点击**自动配置系统代理**，此时软件的图标会变成**红色**，至此就可以开始使用了，打开 [Google](https://www.google.com/) 试试能不能访问吧。
 
 <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FA0Vf9GqfeMmbnnhENII8_2F1706695100-v2rayN-enable-System-Proxy_1.jpg" alt="启用系统代理">
 
@@ -125,7 +125,7 @@ v2rayN 第三方项目可能仍在维护，但 Jego 已不再支持其当前订�
 
 #### core 类型的区别
 
-core类型一共有四个，分别是v2fly、SgerNet、Xray、sing-box，一般日常使用没有任何区别，随意选择哪个都可以。
+core类型一共有四个，分别是v2fly、SagerNet、Xray、sing-box，一般日常使用没有任何区别，随意选择哪个都可以。
 
 #### 支持的协议
 

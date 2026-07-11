@@ -13,7 +13,7 @@ platforms: []
 tools: []
 appliesTo: []
 sources: []
-title: Encrypted DNS (DoH / DoT) — Complete Guide - User Guide
+title: 'Encrypted DNS (DoH / DoT): The Complete Reference - User Guide'
 description: A plain-language guide to encrypted DNS — what DNS is, why plain DNS is risky, the difference between DoH and DoT, how to turn it on per platform, and what to use in mainland China.
 ---
 
@@ -49,7 +49,7 @@ Encrypted DNS is configured at the **system, browser, or router** level — **no
 
 Jego is a **browser proxy** — it only carries traffic inside the browser and **does not carry your system DNS**. So encrypted DNS and Jego complement each other:
 
-- It blocks **DNS hijacking / poisoning on your local link** and improves privacy;
+- Encrypted DNS blocks **DNS hijacking / poisoning on your local link** and improves privacy;
 - In mainland China, a **foreign encrypted resolver (like 1.1.1.1) won't work as your DNS** — see the mainland China section below for why.
 
 ## 4. 🇨🇳 Mainland China
@@ -145,7 +145,7 @@ DoH is easiest in the browser (paste one URL), and that's where most of your web
 
 | Browser | Where to set it |
 | --- | --- |
-| **Chrome / Edge** | Settings → Privacy and security → Security → Use secure DNS → "With" custom → paste a DoH URL |
+| **Chrome / Edge** | Settings → Privacy and security → Security → Use secure DNS → choose "Custom" → paste a DoH URL |
 | **Firefox** | Settings → Privacy & Security → DNS over HTTPS → Max Protection → Custom → paste a DoH URL |
 
 Which URL: in **mainland China** use AliDNS/DNSPod DoH (`https://dns.alidns.com/dns-query`, etc.; foreign DoH doesn't work there); **elsewhere** use Cloudflare/Google (see Section 5).
@@ -178,4 +178,4 @@ If you can't set up DoH/DoT for now, **at least set a plain public-resolver IP a
 
 ---
 
-> If the connection has not recovered, return to the [FAQ](/en/guide/faq) and follow the “Network environment + Browser environment” checklist, or [contact support](/en/guide/support).
+> If the connection has not recovered, see the [FAQ](/en/guide/faq) entries on overseas websites that do not open and on checking the extension with Diagnostics, or [contact support](/en/guide/support).

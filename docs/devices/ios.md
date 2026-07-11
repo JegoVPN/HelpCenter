@@ -19,29 +19,27 @@ description: 在 iPhone 或 iPad 上选择合适的客户端，导入无忧行�
 
 # iPhone / iPad 翻墙指南
 
-iOS是苹果公司为其移动设备所开发的专有移动操作系统，为其公司的许多移动设备提供操作界面，支持设备包括iPhone、iPad、iPod touch和Apple TV。
-
 无忧行会员可以把订阅节点添加到 iPhone 或 iPad 的代理客户端中，让手机和平板里的其他应用也能使用代理。下面先选一个当前支持的工具，再跟着完整教程安装和导入订阅。
 
 <div class="tip custom-block" style="padding-top: 8px">
 
-无忧行订阅服务手机面板：<https://jego.us>
+手机上也能取订阅地址：用手机浏览器打开 <https://jego.us> 登录即可复制。
 
 </div>
 
 ## 获取非大陆区 Apple ID
 
-部分 iOS/iPadOS 代理工具需要使用非中国大陆区 App Store 下载。如果你没有可用账号，可以参考 [美区 Apple ID 注册教程](/subscription/devices/us-apple-id)。
+部分 iOS/iPadOS 代理工具需要使用非中国大陆区 App Store 下载。应用商店账号地区的官方要求、美区账户的创建与礼品卡说明见[美区 Apple ID 注册教程](/subscription/devices/us-apple-id)；没有符合条件的账号时，直接选择本人真实地区可用且受支持的客户端即可。
 
 ## <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F7GBp8VQdHNWWH3aalDTP_2Fios_3.svg" width="38" height="28" alt="iOS图标"> iPhone / iPad 翻墙客户端
 
-下面先列出 Jego 当前支持的客户端，点击名称即可查看完整教程。
+下面先列出无忧行当前支持的客户端，点击名称即可查看完整教程。
 
 ### 推荐客户端
 
 <div class="client-guide-link"><img src="/images/image_shadowrocket_2.png" width="26" height="26" alt="Shadowrocket图标"><a href="/subscription/clients/shadowrocket">Shadowrocket</a></div>
 
-Shadowrocket 是一个功能齐全的 iOS/iPadOS 代理工具客戶端，支持大多数常见的连接协议。
+Shadowrocket 是一个功能齐全的 iOS/iPadOS 代理工具客户端，支持大多数常见的连接协议。
 
 <div class="client-guide-link"><img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FX6LBfzRlMdWyQVvPC9eg_2Fimage_1.png" width="26" height="26" alt="sing-box图标"><a href="/subscription/clients/sing-boxforapple">sing-box for Apple platforms</a></div>
 
@@ -61,8 +59,8 @@ Quantumult X是 iOS/iPadOS 上一款功能强大的网络工具。
 
 <div class="client-guide-link"><img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2Fws9jtv8bFaMiuYKmsAZX_2Floon_2.png" width="26" height="26" alt="Loon图标"><a href="/subscription/clients/loon">Loon</a></div>
 
-Loon 的第三方项目可能仍在维护，但 Jego 已不再支持该客户端；本入口仅保留历史教程，现有用户应按工具页迁移。
+Loon 的第三方项目可能仍在维护，但无忧行已不再支持该客户端；本入口仅保留历史教程，现有用户应按工具页迁移。
 
 <div class="client-guide-link"><img src="/images/image_oneclick_3.png" width="26" height="26" alt="OneClick图标"><a href="/subscription/clients/oneclick">OneClick</a></div>
 
-OneClick 已停止更新，Jego 也不再支持该客户端；本入口仅保留历史教程，现有用户可以按工具页迁移。
+OneClick 已停止更新，无忧行也不再支持该客户端；本入口仅保留历史教程，现有用户可以按工具页迁移。

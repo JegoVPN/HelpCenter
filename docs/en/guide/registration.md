@@ -21,11 +21,11 @@ description: Register and sign in to a Jego account, with password recovery step
 
 ## Registration and Login
 
-1. Click the small Jego icon on the browser, and a small loading window will pop up:
+1. Click the Jego icon in the browser toolbar; a small loading window pops up:
 
 <img src="/images/jego-v1.5.9/popup-loading.png" alt="Loading interface" width="280">
 
-2. After loading is complete, the login and registration interface shown in the figure below will appear:
+2. Once it loads, the sign-in and registration screen shown below appears:
 
 <img src="/images/jego-v1.5.9/popup-login-en.png" alt="Login registration interface" width="280">
 
@@ -36,12 +36,12 @@ description: Register and sign in to a Jego account, with password recovery step
 
 **1. Forgot password when logged out:**
 
-Open the Jego popup interface, click `Forgot Password`, enter the email address registered with Jego according to the page prompts, then go to the email and follow the email prompts to reset the password.
+Open the Jego popup, click `Forgot Password`, and enter the email address registered with Jego. Then check your inbox and follow the instructions in the email to reset the password.
 
 <img src="/images/jego-v1.5.9/popup-forgot-password-en.png" alt="Forgot password interface" width="560">
 
 **2. Forgot password when logged in:**
 
-Enter the Jego `Dashboard - Manage Account` page. At the bottom of the change password page, you can find the `Forgot Password` entry (as shown in the figure below). Click it, enter the email address for your Jego account, then go to your email and follow the instructions to reset the password.
+Open the Jego **Dashboard**, click your account email at the bottom of the sidebar, and select `Manage Account`. At the bottom of the change password page, you can find the `Forgot Password` entry (as shown in the figure below). Click it, enter the email address for your Jego account, then go to your email and follow the instructions to reset the password.
 
 ![Account management forgot password](/images/jego-v1.5.9/dashboard-account-forgot-password-en.png)

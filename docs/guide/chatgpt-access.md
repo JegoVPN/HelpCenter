@@ -13,11 +13,11 @@ platforms: [chrome, edge]
 tools: []
 appliesTo: []
 sources: ["human-product-decision@2026-07-10", "cloud/app/chromev2@1.5.10"]
-title: AI 产品访问指南
-description: 使用无忧行默认策略和合适的线路访问 OpenAI、Anthropic、Grok 等 AI 产品。
+title: 如何使用无忧行访问 AI 产品
+description: 使用无忧行默认策略和合适的线路访问 ChatGPT、Claude、Gemini 等 AI 产品。
 ---
 
-# AI 产品访问指南
+# 如何使用无忧行访问 AI 产品
 
 本页适用于 Chrome 和 Edge 的无忧行浏览器插件。保持现有代理策略，再根据 AI 产品选择规则或全局模式即可。
 
@@ -41,4 +41,4 @@ description: 使用无忧行默认策略和合适的线路访问 OpenAI、Anthro
 
 访问 Gemini、AI Studio、NotebookLM 等 Google AI 产品时，在插件弹窗选择**全局**模式，再选择合适的节点。
 
-<img src="/images/jego-v1.5.9/popup-paid-global-auto-zh.png" alt="使用无忧行全局模式访问 Google AI 产品" width="280">
+<img class="jego-popup-screenshot" src="/images/jego-v1.5.10/popup-paid-global-ai-zh.png" alt="无忧行使用硅谷 AI 节点和全局模式访问 Google AI 产品" width="280">

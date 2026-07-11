@@ -60,13 +60,13 @@ After opening the Github Release page, you'll see many installation packages. Do
 
 ## Add Subscription
 
-In the **Jego - Control Panel**, click on **Subscription Nodes** in the left navigation bar, find the Mihomo subscription address and click **Copy**.
+In the **Jego Dashboard**, click on **Mobile Proxy** in the left navigation bar, find the Mihomo subscription address and click **Copy**.
 
-<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2Fbf6ZGnMBZioZr9rD5P5J_2Fimage_2.png" alt="Jego control panel">
+<img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2Fbf6ZGnMBZioZr9rD5P5J_2Fimage_2.png" alt="Jego Dashboard">
 
 <div class="tip custom-block" style="padding-top: 8px">
 
-Jego subscription service mobile panel: <https://jego.us>
+You can also get the subscription URL on your phone: open <https://jego.us> in the phone browser and sign in to copy it.
 
 </div>
 
@@ -104,7 +104,7 @@ Override rules are suitable for scenarios where specific domains need to go thro
 
 ## Enable Proxy
 
-Then return to the dashboard: **select Rule for outbound mode**, **turn on virtual network card**, then click **Start in the bottom right corner**.
+Then return to the dashboard: **select Rule for outbound mode**, **turn on TUN (virtual network card)**, then click **Start in the bottom right corner**.
 
 <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FMsBeIDztWugUwwvG8IFR_2Fimage_1.png" alt="Enable proxy">
 
@@ -124,7 +124,7 @@ If you encounter an issue where the proxy interface only shows configuration fil
 
 Click on Proxy: Choose according to your actual situation.
 
-Note: Low latency doesn't mean fast speed, high latency doesn't mean slow speed, feel it yourself.
+Note: latency is only a rough hint — low latency does not guarantee fast browsing, and high latency does not always mean slow. Judge by your actual browsing experience.
 
 <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FliJ718yvcBlnxgOf1dw6_2Fimage_3.png" alt="Node selection">
 
@@ -134,7 +134,7 @@ Note: Low latency doesn't mean fast speed, high latency doesn't mean slow speed,
 
 Suitable for users who use both domestic and foreign services.
 
-Whether traffic is direct or proxied depends on the active configuration; account UI determines how it counts toward the plan.
+In Rule mode, mainland-China traffic connects directly and does not go through the proxy server.
 
 When querying IP on mainland websites, you get the local IP address.
 
@@ -153,7 +153,7 @@ Choosing this mode will result in inability to bypass restrictions, with the sam
 
 Suitable for users who do not rely on mainland services.
 
-Global mode sends client-managed traffic through the proxy; verify performance and destination results on the current network.
+In Global mode, foreign traffic goes through the proxy as usual; mainland traffic also goes through the proxy server — it works, but noticeably slower.
 
 ## FlClash Mobile Version Usage Tutorial
 
