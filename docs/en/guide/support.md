@@ -47,7 +47,7 @@ jegocloud@gmail.com
 
 ::: info The more specific the information, the faster the resolution!
 
-<span style="color:blue;">Detailed information and a specific description of the issue allow us to accurately pinpoint and resolve the problem.</span>
+Detailed information and a specific description of the issue allow us to accurately pinpoint and resolve the problem.
 :::
 
 **Email Subject Reference:**

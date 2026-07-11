@@ -64,7 +64,7 @@ import ieplSvg from '../.vitepress/svgs/node-iepl.svg?raw'
 适合日常轻量使用，或者先快速确认无忧行能否正常连接。
 :::
 
-## <span style="color:blue;">大陆优化线路（境外）</span>
+## 大陆优化线路（境外）
 
 <div v-html="optimizedSvg"></div>
 

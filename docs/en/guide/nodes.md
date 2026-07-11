@@ -64,7 +64,7 @@ Results depend heavily on your region and ISP. If it fails, return to Auto Selec
 Everyday light use, or a quick first check that Jego can connect.
 :::
 
-## <span style="color:blue;">Mainland Optimized Routes (Overseas)</span>
+## Mainland Optimized Routes (Overseas)
 
 <div v-html="optimizedSvg"></div>
 

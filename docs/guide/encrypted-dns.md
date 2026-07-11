@@ -128,6 +128,13 @@ DNS（域名系统）的作用，是把你输入的**域名**（如 `google.com`
 
 ## 六、开启加密 DNS（推荐组合）
 
+::: tip 想看图文教程（推荐）
+下面是逐字文字说明。如果更习惯跟着截图一步步操作，可配合腾讯云 Public DNS（就是本文推荐的 DNSPod，`doh.pub` / `119.29.29.29`）的官方图文教程：
+
+- [系统及设备接入 Public DNS](https://cloud.tencent.com/document/product/302/110786) —— Windows、macOS、iOS、Android、Linux 各系统的截图步骤，对应下面的「① 系统层」；
+- [浏览器接入 Public DNS](https://cloud.tencent.com/document/product/302/110788) —— Chrome、Edge、Firefox、Opera 开启 DoH 的截图步骤，对应下面的「② 浏览器层」。
+:::
+
 系统级加密 DNS 在 Windows / macOS 上很折腾（Windows 要用 `netsh` 注册模板、Apple 要装 `.mobileconfig` 描述文件）。对大多数人，**分两层**就够用了：
 
 ### ① 系统层：填公共 DNS 的明文 IP（管所有应用）

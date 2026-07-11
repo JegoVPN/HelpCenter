@@ -93,7 +93,8 @@ Try these steps in order, testing again after each one:
 3. Update the client to the latest version;
 4. On Windows, restart the client as administrator;
 5. Temporarily turn off the system firewall or security software and retry; do not leave it off — once the blocker is confirmed, turn it back on and allow just the client;
-6. If the client settings include a DNS override option, turn it on and try again.
+6. Switch your local network to a public or encrypted resolver: the ISP's default DNS may be hijacked or poisoned, causing the subscription URL and node domains to resolve incorrectly; point your computer's or router's DNS at a public resolver — or, better, encrypted DNS (DoH/DoT) — and retry. See [Encrypted DNS guide](/en/guide/encrypted-dns) for resolvers and per-platform setup;
+7. If the client settings include a DNS override option, turn it on and try again.
 
 If none of this helps, [contact support](/en/guide/support) with the steps you tried.
 
