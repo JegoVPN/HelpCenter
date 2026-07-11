@@ -30,6 +30,9 @@ npm run docs:build
 
 # 预览构建结果
 npm run docs:preview
+
+# 内容与 SEO/GEO 门禁（改动文档后运行，CI 部署前也会跑）
+npm run geo:verify
 ```
 
 ### 📁 项目结构
@@ -111,6 +114,9 @@ npm run docs:build
 
 # Preview build result
 npm run docs:preview
+
+# Content & SEO/GEO checks (run after editing docs; CI runs it before deploy)
+npm run geo:verify
 ```
 
 ### 📁 Project Structure
