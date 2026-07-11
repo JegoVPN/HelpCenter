@@ -1007,8 +1007,8 @@ if (!baselineMode) {
   ) {
     fail('keep-updated 导航必须使用“更新插件”与“Update the extension”')
   }
-  const zhSubscriptionEntries = navigationSource.match(/\{ text: '订阅服务', link: '\/subscription\/' \}/g) || []
-  const enSubscriptionEntries = navigationSource.match(/\{ text: 'Subscription service', link: '\/en\/subscription\/' \}/g) || []
+  const zhSubscriptionEntries = navigationSource.match(/link:\s*'\/subscription\/'/g) || []
+  const enSubscriptionEntries = navigationSource.match(/link:\s*'\/en\/subscription\/'/g) || []
   if (
     zhSubscriptionEntries.length !== 2 ||
     enSubscriptionEntries.length !== 2 ||
@@ -1033,8 +1033,8 @@ if (!baselineMode) {
   }
   const zhDiagnosticsEntries = navigationSource.match(/link:\s*'\/guide\/network-diagnostics'/g) || []
   const enDiagnosticsEntries = navigationSource.match(/link:\s*'\/en\/guide\/network-diagnostics'/g) || []
-  if (zhDiagnosticsEntries.length !== 2 || enDiagnosticsEntries.length !== 2) {
-    fail('网络诊断只能出现在浏览器插件的顶部菜单和侧边栏，不得复制到帮助与支持')
+  if (zhDiagnosticsEntries.length !== 1 || enDiagnosticsEntries.length !== 1) {
+    fail('网络诊断只能出现在浏览器插件的侧边栏，不得复制到帮助与支持')
   }
   const zhHelpGroup = navigationSource.match(/text:\s*'帮助与支持',\s*items:\s*\[([\s\S]*?)\]\s*\}/)?.[1] || ''
   const enHelpGroup = navigationSource.match(/text:\s*'Help and support',\s*items:\s*\[([\s\S]*?)\]\s*\}/)?.[1] || ''

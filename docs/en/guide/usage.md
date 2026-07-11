@@ -13,11 +13,11 @@ platforms: [chrome, edge]
 tools: []
 appliesTo: []
 sources: ["cloud/app/chromev2@1.5.10", "cloud/locales/*.csv"]
-title: How to Use Proxy - User Guide
+title: How to Bypass the Firewall with Jego - User Guide
 description: Sign in, choose Rules mode and Auto Select, and start using Jego in Chrome or Edge in just a few steps.
 ---
 
-# How to Use Proxy
+# How to Bypass the Firewall with Jego
 
 Jego is a free VPN extension built for Chrome and Edge. After installation, sign in, choose a mode and node, and you can start accessing websites worldwide in that browser. First-time users should begin with **Rules** mode and **Auto Select**.
 

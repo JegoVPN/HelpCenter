@@ -1,28 +1,12 @@
 export const zhNav = [
-  { text: '快速开始', link: '/guide/overview' },
-  {
-    text: '浏览器插件',
-    items: [
-      { text: '插件弹窗', link: '/guide/plugin-features' },
-      { text: '控制面板', link: '/guide/control-panel' },
-      { text: '网络诊断', link: '/guide/network-diagnostics' }
-    ]
-  },
-  { text: '订阅服务', link: '/subscription/' },
+  { text: '在浏览器上翻墙', link: '/guide/usage' },
+  { text: '在电脑或手机上翻墙', link: '/subscription/' },
   { text: '帮助与支持', link: '/guide/faq' }
 ]
 
 export const enNav = [
-  { text: 'Quick Start', link: '/en/guide/overview' },
-  {
-    text: 'Browser Extension',
-    items: [
-      { text: 'Extension popup', link: '/en/guide/plugin-features' },
-      { text: 'Dashboard', link: '/en/guide/control-panel' },
-      { text: 'Diagnostics', link: '/en/guide/network-diagnostics' }
-    ]
-  },
-  { text: 'Subscription service', link: '/en/subscription/' },
+  { text: 'Use Proxy in Browser', link: '/en/guide/usage' },
+  { text: 'Use Proxy on PC or Mobile', link: '/en/subscription/' },
   { text: 'Help and support', link: '/en/guide/faq' }
 ]
 

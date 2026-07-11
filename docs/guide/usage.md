@@ -13,11 +13,11 @@ platforms: [chrome, edge]
 tools: []
 appliesTo: []
 sources: ["cloud/app/chromev2@1.5.10", "cloud/locales/zh_CN.csv"]
-title: 如何翻墙 - 使用指南
+title: 如何用无忧行翻墙 - 使用指南
 description: 登录后选择规则模式和自动选择节点，只需几步就能在 Chrome 或 Edge 里使用无忧行访问全球网站。
 ---
 
-# 如何翻墙
+# 如何用无忧行翻墙
 
 无忧行是专为 Chrome 和 Edge 设计的免费代理插件。安装后登录账号，选择模式和节点，就可以在当前浏览器里翻墙。第一次使用，建议先选**规则**模式和**自动选择**节点。
 
