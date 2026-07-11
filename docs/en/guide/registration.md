@@ -30,7 +30,16 @@ description: Register and sign in to a Jego account, with password recovery step
 <img src="/images/jego-v1.5.9/popup-login-en.png" alt="Login registration interface" width="280">
 
 * **Registered** users can enter their email and password, then click `Log In` to use Jego services.
-* **New** users can click the `Sign Up` entry below and follow the prompts to complete Jego account registration.
+* **New** users can click the `Sign Up` entry below to open the registration page.
+
+### Create an Account
+
+<img src="/images/jego-v1.5.9/account-sign-up-en.png" alt="Jego sign-up page" width="560">
+
+1. Enter an email address that can receive messages in `Email`.
+2. Set your account password in `Create Password`, then enter the same password again in `Confirm Password`.
+3. `Referral Code` is optional. Enter one if you have it; otherwise, leave this field blank.
+4. Click `Sign Up` to create the account.
 
 ## Forgot Password
 
