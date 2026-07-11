@@ -76,6 +76,10 @@ jspm_packages/
 #Cursor IDE
 .cursor/
 .vscode/
+
+# Local documentation and GEO working files (repository root only)
+/DOC*.md
+/GEO*.md
 .idea/
 .cursor/
 .vscode/
