@@ -23,10 +23,6 @@ description: Turn on encrypted DNS (DoH / DoT) step by step to block the mainlan
 
 Encrypted DNS (DoH / DoT) encrypts that step so no one can see it or change it — your first line of defense against this hijacking and poisoning.
 
-::: tip Remember one thing
-Jego proxies your browser only and **does not carry your system DNS**, so encrypted DNS is something you set up separately in your system or browser — step by step below.
-:::
-
 ## Turn on encrypted DNS (two layers is enough)
 
 Just two steps: **set a public DNS in your system, then turn on encrypted DNS in your browser.**
