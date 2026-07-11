@@ -85,7 +85,9 @@ export const APPROVED_CONTENT_RESTRUCTURES = [
   'docs/en/guide/nodes.md',
   'docs/en/devices/pc-mobile.md',
   'docs/index.md',
-  'docs/en/index.md'
+  'docs/en/index.md',
+  'docs/guide/encrypted-dns.md',
+  'docs/en/guide/encrypted-dns.md'
 ]
 
 export function toPosix(filePath) {
