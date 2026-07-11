@@ -35,7 +35,7 @@ Shadowrocket is a fully-featured iOS proxy tool client that supports most common
 
 ## <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F7AV6HDd5wUpQFm7nVO7V_2Fshadowrocket_1.png" width="26" height="26" alt="Shadowrocket icon"> Get Shadowrocket
 
-App Store availability is controlled by Apple and the developer for each account region. Do not buy or share accounts or falsify region details; use an account you legitimately own and the official store. For Apple's official region requirements, see the [US Apple ID Registration Guide](/en/subscription/devices/us-apple-id); without a qualifying account, use another supported client available in your region, or the [browser extension](/en/guide/installation).
+Use an account you legitimately own and the official store; do not buy or share accounts. For Apple's official region requirements, see the [US Apple ID Registration Guide](/en/subscription/devices/us-apple-id); without a qualifying account, use another supported client available in your region, or the [browser extension](/en/guide/installation).
 
 ## Download Shadowrocket
 

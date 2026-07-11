@@ -42,7 +42,7 @@ You do not need to compare every client first. Start with one of the recommended
   <a class="subscription-device-card" href="/en/subscription/devices/harmony"><img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FhUBqYs4CpmMcueAi690m_2FHMOS_Logo_Icon_1.svg" width="38" height="28" alt="HarmonyOS icon"><strong>HarmonyOS</strong><span>Proxy guide</span></a>
 </div>
 
-The [Apple ID guide](/en/subscription/devices/us-apple-id) covers App Store account details for iPhone and iPad. The original v2rayN, v2rayNG, Loon, and OneClick tutorials remain available for existing users, while current installations should follow the recommended client on the device guide.
+The [Apple ID guide](/en/subscription/devices/us-apple-id) covers App Store account details for iPhone and iPad.
 
 ## Avoid conflicts between the extension and client
 

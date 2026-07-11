@@ -50,8 +50,8 @@ Clash Verge Rev是一款基于Mihomo（原ClashMeta）内核的多平台代理�
 
 ---
 
-### 历史教程
+### 其他客户端
 
 <div class="client-guide-link"><img src="/images/image_clash_2.png" width="26" height="26" alt="Clash图标"><a href="/subscription/clients/clash-for-windows">Clash for Windows</a></div>
 
-Clash for Windows 已于 2023 年 11 月 2 日下架，不再获得更新，本站仅保留历史教程；建议换至 Mihomo 系列软件如 [FlClash](/subscription/clients/flclash)。
+Clash for Windows 已于 2023 年 11 月 2 日下架、不再更新，建议改用 Mihomo 系列客户端如 [FlClash](/subscription/clients/flclash)。

@@ -26,7 +26,7 @@ tools: [loon]
 appliesTo: []
 sources: [https://apps.apple.com/us/app/loon/id1373567447, https://nsloon.app/docs/intro]
 title: Loon - Tools & Software
-description: The third-party Loon project may still be maintained, but Jego no longer supports it; this historical Apple-platform guide provides supported alternatives.
+description: Loon install and subscription guide for Apple platforms, plus currently supported alternative clients.
 ---
 
 # Loon
@@ -39,7 +39,7 @@ Please use [Jego's recommended clients](/en/subscription/#_1-about-which-client-
 
 ## <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FrQykYPazvOUVLyWMmu7C_2Floon_2.png" width="26" height="26" alt="Loon icon"> Get Loon
 
-App Store availability is controlled by Apple and the developer for each account region. Do not buy or share accounts or falsify region details; use an account you legitimately own and the official store. The third-party Loon project may still be updated, but Jego no longer supports its current subscription protocol, so this page is retained as a historical tutorial.
+Use an account you legitimately own and the official store; do not buy or share accounts. Jego no longer supports Loon’s current subscription protocol, so use a supported client instead.
 
 ## Download Loon
 

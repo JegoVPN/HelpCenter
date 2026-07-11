@@ -26,7 +26,7 @@ tools: [oneclick]
 appliesTo: []
 sources: [https://apps.apple.com/us/app/id1545555197, https://www.oneclick.earth/]
 title: OneClick - Tools & Software
-description: OneClick is no longer updated and Jego no longer supports it; this historical guide provides supported alternatives.
+description: OneClick install and subscription guide, plus currently supported alternative clients.
 ---
 
 # OneClick
@@ -34,14 +34,14 @@ description: OneClick is no longer updated and Jego no longer supports it; this 
 OneClick is a free internet tool that supports mainstream encryption protocols.
 
 ::: danger Not Recommended
-OneClick is no longer updated and is no longer supported by Jego. This page preserves the original guide for existing users who need to review it or migrate.
+OneClick is no longer updated and not supported by Jego. Use the recommended client linked in the notice at the top.
 
 Please use [Jego's recommended clients](/en/subscription/#_1-about-which-client-to-use)
 :::
 
 ## <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FJbOoXNw3x77qs1JZbQlI_2Foneclick_2.png" width="26" height="26" alt="OneClick icon"> Get OneClick
 
-Store availability is controlled by each platform and developer. Do not buy or share accounts or falsify region details; use an account you legitimately own and the official sources below. The historical steps remain, but Jego users should use the recommended client linked in the notice at the top.
+Use an account you legitimately own and the official sources below; do not buy or share accounts.
 
 ## Download OneClick
 

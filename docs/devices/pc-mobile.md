@@ -42,7 +42,7 @@ description: 选择正在使用的设备，安装合适的客户端，并了解�
   <a class="subscription-device-card" href="/subscription/devices/harmony"><img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FhUBqYs4CpmMcueAi690m_2FHMOS_Logo_Icon_1.svg" width="38" height="28" alt="HarmonyOS 图标"><strong>HarmonyOS</strong><span>翻墙指南</span></a>
 </div>
 
-iPhone 和 iPad 的应用商店账号说明放在[Apple ID 教程](/subscription/devices/us-apple-id)中。v2rayN、v2rayNG、Loon 和 OneClick 的旧教程继续保留给现有用户查阅，当前安装请直接使用设备教程里的推荐客户端。
+iPhone 和 iPad 的应用商店账号说明放在[Apple ID 教程](/subscription/devices/us-apple-id)中。
 
 ## 避免浏览器插件和客户端冲突
 

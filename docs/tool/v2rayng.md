@@ -26,7 +26,7 @@ tools: [v2rayng]
 appliesTo: []
 sources: [https://github.com/2dust/v2rayNG, https://play.google.com/store/apps/details?id=com.v2ray.ang]
 title: v2rayNG - 工具软件
-description: v2rayNG 第三方项目可能仍在维护，但 Jego 已不再支持；本页保留历史 Android 教程并提供受支持替代项。
+description: v2rayNG 在 Android 上的安装与订阅教程，以及当前受支持的替代客户端。
 ---
 
 # v2rayNG
@@ -34,7 +34,7 @@ description: v2rayNG 第三方项目可能仍在维护，但 Jego 已不再支�
 v2rayNG是Android系统即安卓手机系统下的代理软件客户端，功能强大且支持多种代理协议，如VMess、VLESS、Shadowsocks、Socks、Trojan等代理协议。
 
 ::: danger 不推荐使用
-v2rayNG 第三方项目可能仍在维护，但 Jego 已不再支持其当前订阅协议，因此不推荐继续用于 Jego。本页保留为历史教程，并提供受支持的替代工具。
+Jego 已不再支持 v2rayNG 的当前订阅协议，建议改用受支持的替代客户端。
 
 请使用[无忧行推荐的客户端](/subscription/#_1、关于应该使用什么客户端)
 :::
@@ -47,7 +47,7 @@ v2rayNG 第三方项目可能仍在维护，但 Jego 已不再支持其当前订
 
 [https://play.google.com/store/apps/details?id=com.v2ray.ang ](https://play.google.com/store/apps/details?id=com.v2ray.ang)
 
-以下下载入口仅供仍在使用旧配置的用户查阅；新安装请改用顶部提示中的推荐客户端。确需下载时，选择版本号后标记为 `Latest` 的稳定版本。
+如果你还在用旧配置，可从下面下载；新安装请改用顶部推荐的客户端。下载时选择版本号后标记为 `Latest` 的稳定版本。
 
 ## 安装教程
 

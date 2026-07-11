@@ -35,7 +35,7 @@ Shadowrocket 是一个功能齐全的 iOS 代理工具客户端，支持大多�
 
 ## <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F7AV6HDd5wUpQFm7nVO7V_2Fshadowrocket_1.png" width="26" height="26" alt="Shadowrocket图标"> 获取Shadowrocket
 
-App Store 可用性由 Apple 和开发者按账户地区决定。不要购买、共享账号或虚构地区资料；只使用本人合法账户与官方商店入口。应用商店账号地区的官方要求见[美区 Apple ID 注册教程](/subscription/devices/us-apple-id)；没有符合条件的账号时，可改用本人地区可用且受支持的其他客户端，或使用[浏览器插件](/guide/installation)。
+只使用本人合法账户与官方商店入口，不要购买或共享账号。应用商店账号地区的官方要求见[美区 Apple ID 注册教程](/subscription/devices/us-apple-id)；没有符合条件的账号时，可改用本人地区可用且受支持的其他客户端，或使用[浏览器插件](/guide/installation)。
 
 ## 下载 Shadowrocket
 

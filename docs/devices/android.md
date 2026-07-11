@@ -53,11 +53,11 @@ Surfboard 是一款运行在 Android 系统上的网络代理工具。
 
 ---
 
-### 历史教程
+### 更多客户端
 
 <div class="client-guide-link"><img src="/images/android_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FtXufQKQ8l3yWMHiAonjn_2Fimage_5.png" width="26" height="26" alt="v2rayNG图标"><a href="/subscription/clients/v2rayng">v2rayNG</a></div>
 
-v2rayNG 是一个基于 v2ray 内核的 Android 应用，适用于安卓手机及部分 Android TV 设备；无忧行已不再支持该客户端，现有用户应按工具页迁移到受支持的替代项。
+v2rayNG 是基于 v2ray 内核的 Android 应用，适用于安卓手机及部分 Android TV 设备；无忧行已不再支持，建议改用工具页里受支持的替代客户端。
 
 <div class="client-guide-link"><img src="/images/android_clash_7.png" width="26" height="26" alt="Clash图标"><a href="/subscription/clients/clash-for-android">Clash for Android</a></div>
 
@@ -65,4 +65,4 @@ Clash 在 Android系统上的图形用户界面，于2023年11月3日删库并�
 
 <div class="client-guide-link"><img src="/images/android_oneclick_8.png" width="26" height="26" alt="OneClick图标"><a href="/subscription/clients/oneclick">OneClick</a></div>
 
-OneClick 已停止更新，无忧行也不再支持该客户端；本入口仅保留历史教程，现有用户可以按工具页迁移。
+OneClick 已停止更新、无忧行不再支持，建议改用工具页里受支持的替代客户端。

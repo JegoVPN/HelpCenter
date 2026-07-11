@@ -26,7 +26,7 @@ tools: [v2rayn]
 appliesTo: []
 sources: [https://github.com/2dust/v2rayN]
 title: v2rayN - Tools & Software
-description: The third-party v2rayN project may still be maintained, but Jego no longer supports it; this historical Windows guide provides supported alternatives.
+description: v2rayN install and subscription guide for Windows, plus currently supported alternative clients.
 ---
 
 # v2rayN
@@ -34,7 +34,7 @@ description: The third-party v2rayN project may still be maintained, but Jego no
 v2rayN is a v2ray Windows client that is relatively friendly to beginners on PC platforms.
 
 ::: danger Not Recommended
-The third-party v2rayN project may still be maintained, but Jego no longer supports its current subscription protocol and therefore does not recommend it for Jego. This historical tutorial remains available with supported alternatives.
+Jego no longer supports v2rayN’s current subscription protocol; use a supported alternative client instead.
 
 Please use [Jego's recommended clients](/en/subscription/#_1-about-which-client-to-use)
 :::

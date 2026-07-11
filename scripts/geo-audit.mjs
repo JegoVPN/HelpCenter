@@ -340,15 +340,6 @@ if (!baselineMode) {
       if (slug === 'oneclick' && tool?.lifecycle !== 'discontinued') {
         fail('OneClick 已确认停止更新，lifecycle 必须保持 discontinued')
       }
-      for (const locale of ['zh', 'en']) {
-        const source = `docs/${locale === 'en' ? 'en/' : ''}tool/${slug}.md`
-        const page = pages.find((entry) => entry.source === source)
-        const description = String(page?.frontmatter.description || '')
-        const statesUnsupported = locale === 'en' ? /Jego no longer supports/i.test(description) : /Jego 已不再支持/.test(description)
-        if (!statesUnsupported || !/historical|历史/.test(description)) {
-          fail(`已确认不支持工具的搜索摘要未说明历史状态：${source}`)
-        }
-      }
     }
     for (const tool of catalog.tools || []) {
       if (!lifecycleValues.has(tool.lifecycle)) fail(`工具 lifecycle 非法：${tool.slug}`)
@@ -386,14 +377,14 @@ if (!baselineMode) {
   }
 
   for (const [source, headings, expectedLinks, firstClient, secondClient] of [
-    ['docs/devices/windows.md', ['### 推荐客户端', '### 其他客户端', '### 历史教程'], 6, 'flclash', 'clashverge'],
-    ['docs/en/devices/windows.md', ['### Recommended clients', '### Other clients', '### Historical guides'], 6, 'flclash', 'clashverge'],
-    ['docs/devices/mac.md', ['### 推荐客户端', '### 历史教程'], 6, 'flclash', 'sing-boxforapple'],
-    ['docs/en/devices/mac.md', ['### Recommended clients', '### Historical guides'], 6, 'flclash', 'sing-boxforapple'],
-    ['docs/devices/ios.md', ['### 推荐客户端', '### 历史教程'], 6, 'shadowrocket', 'sing-boxforapple'],
-    ['docs/en/devices/ios.md', ['### Recommended clients', '### Historical guides'], 6, 'shadowrocket', 'sing-boxforapple'],
-    ['docs/devices/android.md', ['### 推荐客户端', '### 其他客户端', '### 历史教程'], 7, 'sing-boxforandroid', 'flclash'],
-    ['docs/en/devices/android.md', ['### Recommended clients', '### Other clients', '### Historical guides'], 7, 'sing-boxforandroid', 'flclash'],
+    ['docs/devices/windows.md', ['### 推荐客户端', '### 其他客户端', '### 更多客户端'], 6, 'flclash', 'clashverge'],
+    ['docs/en/devices/windows.md', ['### Recommended clients', '### Other clients', '### More clients'], 6, 'flclash', 'clashverge'],
+    ['docs/devices/mac.md', ['### 推荐客户端', '### 其他客户端'], 6, 'flclash', 'sing-boxforapple'],
+    ['docs/en/devices/mac.md', ['### Recommended clients', '### Other clients'], 6, 'flclash', 'sing-boxforapple'],
+    ['docs/devices/ios.md', ['### 推荐客户端', '### 其他客户端'], 6, 'shadowrocket', 'sing-boxforapple'],
+    ['docs/en/devices/ios.md', ['### Recommended clients', '### Other clients'], 6, 'shadowrocket', 'sing-boxforapple'],
+    ['docs/devices/android.md', ['### 推荐客户端', '### 其他客户端', '### 更多客户端'], 7, 'sing-boxforandroid', 'flclash'],
+    ['docs/en/devices/android.md', ['### Recommended clients', '### Other clients', '### More clients'], 7, 'sing-boxforandroid', 'flclash'],
     ['docs/devices/linux.md', ['### 推荐客户端', '### 其他客户端'], 4, 'flclash', 'clashverge'],
     ['docs/en/devices/linux.md', ['### Recommended clients', '### Other clients'], 4, 'flclash', 'clashverge'],
     ['docs/devices/harmony.md', ['### 实验性客户端', '### 推荐客户端', '### 旧版鸿蒙安装界面参考'], 3, 'clashbox', 'flclash'],

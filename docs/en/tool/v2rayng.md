@@ -26,7 +26,7 @@ tools: [v2rayng]
 appliesTo: []
 sources: [https://github.com/2dust/v2rayNG, https://play.google.com/store/apps/details?id=com.v2ray.ang]
 title: v2rayNG - Tools & Software
-description: The third-party v2rayNG project may still be maintained, but Jego no longer supports it; this historical Android guide provides supported alternatives.
+description: v2rayNG install and subscription guide for Android, plus currently supported alternative clients.
 ---
 
 # v2rayNG
@@ -34,7 +34,7 @@ description: The third-party v2rayNG project may still be maintained, but Jego n
 v2rayNG is a proxy software client under Android system, that is, Android mobile system, with powerful functions and supports multiple proxy protocols, such as VMess, VLESS, Shadowsocks, Socks, Trojan and other proxy protocols.
 
 ::: danger Not Recommended
-The third-party v2rayNG project may still be maintained, but Jego no longer supports its current subscription protocol and therefore does not recommend it for Jego. This historical tutorial remains available with supported alternatives.
+Jego no longer supports v2rayNG’s current subscription protocol; use a supported alternative client instead.
 
 Please use [Jego's recommended clients](/en/subscription/#_1-about-which-client-to-use)
 :::

@@ -26,7 +26,7 @@ tools: [loon]
 appliesTo: []
 sources: [https://apps.apple.com/us/app/loon/id1373567447, https://nsloon.app/docs/intro]
 title: Loon - 工具软件
-description: Loon 第三方项目可能仍在维护，但 Jego 已不再支持；本页保留历史 Apple 平台教程并提供受支持替代项。
+description: Loon 在 Apple 平台的安装与订阅教程，以及当前受支持的替代客户端。
 ---
 
 # Loon
@@ -39,7 +39,7 @@ Loon 第三方项目可能仍在维护，但 Jego 已不再支持其当前订阅
 
 ## <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FrQykYPazvOUVLyWMmu7C_2Floon_2.png" width="26" height="26" alt="Loon图标"> 获取Loon
 
-App Store 可用性由 Apple 和开发者按账户地区决定。不要购买、共享账号或虚构地区资料；只使用本人合法账户和官方商店入口。Loon 第三方项目仍可能更新，但 Jego 已不再支持其当前订阅协议，本页仅保留历史教程。
+只使用本人合法账户和官方商店入口，不要购买或共享账号。Jego 已不再支持 Loon 的当前订阅协议，建议改用受支持的客户端。
 
 ## 下载 Loon
 

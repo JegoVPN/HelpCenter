@@ -55,12 +55,12 @@ Quantumult X是 iOS/iPadOS 上一款功能强大的网络工具。
 
 ---
 
-### 历史教程
+### 其他客户端
 
 <div class="client-guide-link"><img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2Fws9jtv8bFaMiuYKmsAZX_2Floon_2.png" width="26" height="26" alt="Loon图标"><a href="/subscription/clients/loon">Loon</a></div>
 
-Loon 的第三方项目可能仍在维护，但无忧行已不再支持该客户端；本入口仅保留历史教程，现有用户应按工具页迁移。
+无忧行已不再支持 Loon，建议改用工具页里受支持的替代客户端。
 
 <div class="client-guide-link"><img src="/images/image_oneclick_3.png" width="26" height="26" alt="OneClick图标"><a href="/subscription/clients/oneclick">OneClick</a></div>
 
-OneClick 已停止更新，无忧行也不再支持该客户端；本入口仅保留历史教程，现有用户可以按工具页迁移。
+OneClick 已停止更新、无忧行不再支持，建议改用工具页里受支持的替代客户端。

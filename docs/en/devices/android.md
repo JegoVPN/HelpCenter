@@ -53,11 +53,11 @@ Surfboard is a network proxy tool that runs on Android systems.
 
 ---
 
-### Historical guides
+### More clients
 
 <div class="client-guide-link"><img src="/images/android_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FtXufQKQ8l3yWMHiAonjn_2Fimage_5.png" width="26" height="26" alt="v2rayNG icon"><a href="/en/subscription/clients/v2rayng">v2rayNG</a></div>
 
-v2rayNG is an Android application based on the v2ray core for phones and some Android TV devices. Jego no longer supports this client; existing users should migrate to a supported alternative from the tool page.
+v2rayNG is an Android app based on the v2ray core for phones and some Android TV devices. Jego no longer supports it; use a supported alternative from the tool page.
 
 <div class="client-guide-link"><img src="/images/android_clash_7.png" width="26" height="26" alt="Clash icon"><a href="/en/subscription/clients/clash-for-android">Clash for Android</a></div>
 
@@ -65,4 +65,4 @@ Clash's graphical user interface on Android systems, deleted repository and disc
 
 <div class="client-guide-link"><img src="/images/android_oneclick_8.png" width="26" height="26" alt="OneClick icon"><a href="/en/subscription/clients/oneclick">OneClick</a></div>
 
-OneClick is no longer updated and is no longer supported by Jego. This entry preserves the historical tutorial and its migration alternatives.
+OneClick is no longer updated and not supported by Jego. Use a supported alternative from the tool page instead.

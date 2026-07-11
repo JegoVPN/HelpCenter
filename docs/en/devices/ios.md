@@ -55,12 +55,12 @@ Quantumult X is a powerful network tool on iOS/iPadOS.
 
 ---
 
-### Historical guides
+### Other clients
 
 <div class="client-guide-link"><img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2Fws9jtv8bFaMiuYKmsAZX_2Floon_2.png" width="26" height="26" alt="Loon icon"><a href="/en/subscription/clients/loon">Loon</a></div>
 
-The third-party Loon project may still be maintained, but Jego no longer supports this client. This entry preserves the historical tutorial; existing users should follow its migration alternatives.
+Jego no longer supports Loon. Use a supported alternative from the tool page instead.
 
 <div class="client-guide-link"><img src="/images/image_oneclick_3.png" width="26" height="26" alt="OneClick icon"><a href="/en/subscription/clients/oneclick">OneClick</a></div>
 
-OneClick is no longer updated and is no longer supported by Jego. This entry preserves the historical tutorial and its migration alternatives.
+OneClick is no longer updated and not supported by Jego. Use a supported alternative from the tool page instead.

@@ -49,8 +49,8 @@ Clash Verge Rev is a multi-platform proxy client based on Mihomo (formerly Clash
 
 ---
 
-### Historical guides
+### Other clients
 
 <div class="client-guide-link"><img src="/images/image_clash_2.png" width="26" height="26" alt="Clash icon"><a href="/en/subscription/clients/clash-for-windows">Clash for Windows</a></div>
 
-Clash for Windows was discontinued on November 2, 2023, but the last version at that time can still be used. It's recommended to switch to Mihomo series software such as [FlClash](/en/subscription/clients/flclash).
+Clash for Windows was discontinued on November 2, 2023 and no longer updated. Switch to a Mihomo-family client such as [FlClash](/en/subscription/clients/flclash).

@@ -26,7 +26,7 @@ tools: [oneclick]
 appliesTo: []
 sources: [https://apps.apple.com/us/app/id1545555197, https://www.oneclick.earth/]
 title: OneClick - 工具软件
-description: OneClick 已停止更新，Jego 已不再支持；本页保留历史教程并提供受支持替代项。
+description: OneClick 的安装与订阅教程，以及当前受支持的替代客户端。
 ---
 
 # OneClick
@@ -34,14 +34,14 @@ description: OneClick 已停止更新，Jego 已不再支持；本页保留历�
 OneClick是一款免费的支持主流加密协议的上网工具。
 
 ::: danger 不推荐使用
-OneClick 已停止更新，Jego 也不再支持该客户端。本页保留原有教程，方便现有用户查阅和迁移。
+OneClick 已停止更新、Jego 不再支持，建议改用顶部提示中链接的推荐客户端。
 
 请使用[无忧行推荐的客户端](/subscription/#_1、关于应该使用什么客户端)
 :::
 
 ## <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FJbOoXNw3x77qs1JZbQlI_2Foneclick_2.png" width="26" height="26" alt="OneClick图标"> 获取OneClick
 
-商店可用性由平台与开发者决定。不要购买、共享账号或虚构地区资料；只使用本人合法账户和下列官方入口。本页保留历史操作步骤，但 Jego 用户应改用顶部提示中链接的推荐客户端。
+只使用本人合法账户和下列官方入口，不要购买或共享账号。
 
 ## 下载 OneClick
 

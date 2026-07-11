@@ -26,7 +26,7 @@ tools: [clash-for-windows]
 appliesTo: []
 sources: []
 title: Clash for Windows - Tools & Software
-description: Clash for Windows was discontinued on November 2, 2023 and no longer receives updates; this page is kept as a historical guide — switch to a Mihomo-family client such as FlClash.
+description: Clash for Windows install and subscription guide, plus supported Mihomo-family alternatives such as FlClash.
 ---
 
 # Clash for Windows

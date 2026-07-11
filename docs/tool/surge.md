@@ -35,7 +35,7 @@ Surge 是 Apple 平台的网络工具；当前功能、平台、价格和版本�
 
 ## <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FoBLta0TNRbF6ARUAOFxW_2Fsurge_1.png" width="26" height="26" alt="Surge图标"> 获取Surge
 
-App Store 可用性由 Apple 和开发者按账户地区决定。不要购买、共享账号或虚构地区资料；只使用本人合法账户与官方商店入口。应用商店账号地区的官方要求见[美区 Apple ID 注册教程](/subscription/devices/us-apple-id)；没有符合条件的账号时，可改用本人地区可用且受支持的其他客户端，或使用[浏览器插件](/guide/installation)。
+只使用本人合法账户与官方商店入口，不要购买或共享账号。应用商店账号地区的官方要求见[美区 Apple ID 注册教程](/subscription/devices/us-apple-id)；没有符合条件的账号时，可改用本人地区可用且受支持的其他客户端，或使用[浏览器插件](/guide/installation)。
 
 ## 下载 Surge
 

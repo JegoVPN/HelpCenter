@@ -49,7 +49,7 @@ sing-box 是跨平台网络代理项目；GUI.for.SingBox 是社区图形客户�
 
 ---
 
-### 历史教程
+### 更多客户端
 
 <div class="client-guide-link"><img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FzSfmyRFCh3igxLUDkYXc_2Fimage_2.png" width="26" height="26" alt="v2rayN图标"><a href="/subscription/clients/v2rayn">v2rayN</a></div>
 
@@ -57,4 +57,4 @@ v2rayN是Windows系统下的代理软件客户端，功能强大且支持多种�
 
 <div class="client-guide-link"><img src="/images/image_clash_2.png" width="26" height="26" alt="Clash图标"><a href="/subscription/clients/clash-for-windows">Clash for Windows</a></div>
 
-Clash for Windows 已于 2023 年 11 月 2 日下架，不再获得更新，本站仅保留历史教程；建议换至 Mihomo 系列软件如 [FlClash](/subscription/clients/flclash)。
+Clash for Windows 已于 2023 年 11 月 2 日下架、不再更新，建议改用 Mihomo 系列客户端如 [FlClash](/subscription/clients/flclash)。

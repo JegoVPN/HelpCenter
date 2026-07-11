@@ -26,12 +26,12 @@ tools: [clash-for-windows]
 appliesTo: []
 sources: []
 title: Clash for Windows - 工具软件
-description: Clash for Windows 已于 2023 年 11 月 2 日下架且不再获得更新，本页仅保留历史教程，建议改用 FlClash 等 Mihomo 系列客户端。
+description: Clash for Windows 的安装与订阅教程，以及 FlClash 等受支持的 Mihomo 系列替代客户端。
 ---
 
 # Clash for Windows
 
-本文保留 Clash for Windows 客户端的历史教程。该项目已经下架且不再获得安全更新，不应把旧版本“仍能启动”理解为适合继续使用。
+Clash for Windows 已下架、不再获得安全更新，建议改用 FlClash 等受支持的 Mihomo 系列客户端。
 
 ::: danger 不推荐使用
 该软件已经好几年不更新了，无忧行不推荐大家继续使用。
