@@ -8,18 +8,18 @@ locale: zh-Hans
 status: current
 owner: docs
 reviewStatus: verified
-lastVerified: 2026-07-11
+lastVerified: 2026-08-31
 platforms: [chrome, edge]
 tools: []
 appliesTo: []
-sources: [https://support.google.com/chrome/answer/2664769, https://learn.microsoft.com/en-us/troubleshoot/microsoft-edge/development/self-host-extension-deploy, human-browser-test@chrome-149-edge-150-macos-2026-07-11]
+sources: [https://support.google.com/chrome/answer/2664769, https://learn.microsoft.com/en-us/troubleshoot/microsoft-edge/development/self-host-extension-deploy, human-browser-test@chrome-149-edge-150-macos-2026-07-11, https://help.adspower.com/docs/extensions, https://doc.bitbrowser.net/zh/help1/kuo-zhan-zhong-xin-gong-neng, https://gologin.com/docs/browser-profiles/profile-features/browser-extensions/adding-browser-extensions, https://multilogin.com/help/profile-management/installing-browser-extensions]
 title: 如何安装 - 使用指南
-description: 按浏览器选择官方入口，几步完成无忧行安装并确认插件已经启用。
+description: 在 Chrome、Edge 或基于 Chromium 的指纹浏览器中安装无忧行，并确认插件已经启用。
 ---
 
 # 如何安装
 
-无忧行推荐安装在 Chrome 或 Microsoft Edge。直接从浏览器的官方扩展商店安装最简单；商店暂时无法使用时，本页也保留了手动安装方法。
+无忧行推荐安装在 Chrome 或 Microsoft Edge。直接从浏览器的官方扩展商店安装最简单；使用 Chromium/Chrome 内核的指纹浏览器环境，通常也可以通过 Chrome 扩展入口安装。商店暂时无法使用时，本页还保留了手动安装方法。
 
 ::: tip 安装前先确认版本
 可以在[更新插件](/guide/keep-updated)页面查看当前官方发布入口。保持浏览器和无忧行为最新版本，可以及时获得功能改进和问题修复；实际连接情况还会受到所在地区和目标网站的影响。
@@ -30,6 +30,7 @@ description: 按浏览器选择官方入口，几步完成无忧行安装并确�
 <div class="installation-choice-grid">
   <a class="installation-choice-card" href="#chrome-install"><strong>Google Chrome</strong><span>从 Chrome Web Store 安装</span></a>
   <a class="installation-choice-card" href="#edge-install"><strong>Microsoft Edge</strong><span>从 Microsoft Edge 扩展商店安装</span></a>
+  <a class="installation-choice-card" href="#fingerprint-browser-install"><strong>指纹浏览器</strong><span>在 Chromium 浏览器环境中安装</span></a>
 </div>
 
 ## 在 Microsoft Edge 中安装 {#edge-install}
@@ -86,7 +87,7 @@ description: 按浏览器选择官方入口，几步完成无忧行安装并确�
 
 ### 从 Chrome Web Store 安装
 
-1. 打开[无忧行的 Chrome Web Store 页面](https://chrome.google.com/webstore/detail/bnnamacamhjbdoimlbkegmbgkekphcbb)。
+1. 打开[无忧行的 Chrome Web Store 页面](https://chromewebstore.google.com/detail/bnnamacamhjbdoimlbkegmbgkekphcbb)。
 2. 点击页面右上角的 **Add to Chrome**，按照浏览器提示完成安装。
 
 ### 商店暂时无法使用时，手动安装
@@ -122,8 +123,27 @@ description: 按浏览器选择官方入口，几步完成无忧行安装并确�
 ## 在其他 Chromium 浏览器中安装
 
 ::: warning 兼容性说明
-QQ 浏览器、360 浏览器、指纹浏览器等基于 Chromium 内核的浏览器，只要内核在 88 及以上，通常都可以安装无忧行。指纹浏览器（常用于多账号运营）一般支持加载 Chrome 扩展，按它自己的扩展安装入口操作即可。各浏览器的兼容性和安装规则可能随版本变化，先升级到当前稳定版，并以该浏览器允许的扩展安装方式为准。
+QQ 浏览器、360 浏览器和指纹浏览器如果支持安装 Chrome 扩展，通常就可以安装无忧行。请先把浏览器更新到当前稳定版；Firefox 类型的环境、云手机和移动端环境不适用本教程。
 :::
+
+### 指纹浏览器 {#fingerprint-browser-install}
+
+指纹浏览器通常把每个账号放在独立的“浏览器环境”或“配置文件”里。无忧行只需要安装到你准备使用的那个环境中。
+
+1. 创建或选择要使用无忧行的环境。如果可以选择浏览器类型，请选择 **Chrome** 或 **Chromium**。
+2. 在指纹浏览器主界面或环境设置中找到**扩展中心**、**扩展程序**或 **Extensions**。
+3. 选择**添加 Chrome 商店扩展**，粘贴[无忧行的 Chrome Web Store 链接](https://chromewebstore.google.com/detail/bnnamacamhjbdoimlbkegmbgkekphcbb)，再选择需要使用无忧行的环境并启用。如果没有这个入口，就先启动该环境，在里面打开同一个链接并点击 **Add to Chrome**。
+4. 保存后完全关闭并重新打开该环境。看到无忧行图标后，点击图标、登录账户并选择模式和节点，安装就完成了。
+
+不同产品的入口名称不完全相同，可以参考 [AdsPower](https://help.adspower.com/docs/extensions)、[比特浏览器](https://doc.bitbrowser.net/zh/help1/kuo-zhan-zhong-xin-gong-neng)、[GoLogin](https://gologin.com/docs/browser-profiles/profile-features/browser-extensions/adding-browser-extensions) 和 [Multilogin](https://multilogin.com/help/profile-management/installing-browser-extensions) 的官方扩展说明。
+
+#### 安装后看不到或无法连接
+
+- **看不到无忧行：**回到扩展中心，确认无忧行已经分配给当前环境并处于启用状态，然后重新打开这个环境。
+- **已经安装但无法连接：**先停用当前环境里的其他代理或 VPN 扩展。如果指纹浏览器还为这个环境设置了单独的代理，把它改为直连或关闭后再试。
+- **没有 Chrome 商店入口：**如果该浏览器明确支持导入 `.crx`，可以从[无忧行官网](https://jegocloud.com/zh/)下载当前 ZIP 安装包，解压后使用其中的 `.crx`。不要从第三方网站下载或转换插件；浏览器不接受该格式时，请查看它的官方扩展说明或联系其客服。
+
+连接后可以按[开始使用无忧行](/guide/usage)确认模式、节点和访问状态。
 
 ### QQ浏览器
 

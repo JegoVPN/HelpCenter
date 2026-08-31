@@ -140,6 +140,9 @@ try {
   expectMutationFailure('删除 Chrome 拖入 CRX 配图', 'docs/guide/installation.md', (raw) =>
     raw.replace('/images/jego-chrome-crx-drag-install-20260711.png', '/images/missing-chrome-install.png')
   )
+  expectMutationFailure('删除指纹浏览器安装入口', 'docs/guide/installation.md', (raw) =>
+    raw.replace('### 指纹浏览器 {#fingerprint-browser-install}', '### 其他浏览器')
+  )
   expectMutationFailure('删除 all hosts 权限', 'docs/guide/plugin-permissions-privacy.md', (raw) =>
     raw.replace('| `host_permissions` · `all URLs` | 用于获取服务配置、连接检测和节点测速 |\n', '')
   )

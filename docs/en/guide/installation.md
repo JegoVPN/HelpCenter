@@ -8,18 +8,18 @@ locale: en
 status: current
 owner: docs
 reviewStatus: verified
-lastVerified: 2026-07-11
+lastVerified: 2026-08-31
 platforms: [chrome, edge]
 tools: []
 appliesTo: []
-sources: [https://support.google.com/chrome/answer/2664769, https://learn.microsoft.com/en-us/troubleshoot/microsoft-edge/development/self-host-extension-deploy, human-browser-test@chrome-149-edge-150-macos-2026-07-11]
+sources: [https://support.google.com/chrome/answer/2664769, https://learn.microsoft.com/en-us/troubleshoot/microsoft-edge/development/self-host-extension-deploy, human-browser-test@chrome-149-edge-150-macos-2026-07-11, https://help.adspower.com/docs/extensions, https://doc.bitbrowser.net/help1/extensions, https://gologin.com/docs/browser-profiles/profile-features/browser-extensions/adding-browser-extensions, https://multilogin.com/help/profile-management/installing-browser-extensions]
 title: How to Install - User Guide
-description: Choose the official source for your browser, install Jego in a few steps, and confirm that it is enabled.
+description: Install Jego in Chrome, Edge, or a Chromium-based fingerprint browser and confirm that the extension is enabled.
 ---
 
 # How to Install
 
-Jego is designed for Chrome and Microsoft Edge. Installing it from the browser's official extension store is the simplest path. This page also keeps the manual installation steps for times when the store is temporarily unavailable.
+Jego is designed for Chrome and Microsoft Edge. Installing it from the browser's official extension store is the simplest path. Fingerprint (anti-detect) browser profiles that use a Chromium/Chrome engine can usually install it through a Chrome extension entry as well. This page also keeps the manual installation steps for times when the store is temporarily unavailable.
 
 ::: tip Check the version before installation
 Use [Update the extension](/en/guide/keep-updated) to find the current official release entry. Keeping the browser and Jego up to date provides the latest improvements and fixes. Actual connection results can still vary by region and destination.
@@ -30,6 +30,7 @@ Use [Update the extension](/en/guide/keep-updated) to find the current official 
 <div class="installation-choice-grid">
   <a class="installation-choice-card" href="#chrome-install"><strong>Google Chrome</strong><span>Install from Chrome Web Store</span></a>
   <a class="installation-choice-card" href="#edge-install"><strong>Microsoft Edge</strong><span>Install from Microsoft Edge Add-ons</span></a>
+  <a class="installation-choice-card" href="#fingerprint-browser-install"><strong>Fingerprint browser</strong><span>Install in a Chromium browser profile</span></a>
 </div>
 
 ## Install Jego in Microsoft Edge {#edge-install}
@@ -86,7 +87,7 @@ Update Chrome to the latest version before starting.
 
 ### Install from Chrome Web Store
 
-1. Open the [Jego page in Chrome Web Store](https://chrome.google.com/webstore/detail/bnnamacamhjbdoimlbkegmbgkekphcbb).
+1. Open the [Jego page in Chrome Web Store](https://chromewebstore.google.com/detail/bnnamacamhjbdoimlbkegmbgkekphcbb).
 2. Select **Add to Chrome** in the upper-right corner and follow the browser prompts.
 
 ### Install manually when the store is unavailable
@@ -119,13 +120,30 @@ Pin Jego to the Chrome toolbar so you can open it directly from the upper-right 
 
 Next, [register an account](/en/guide/registration), then follow [Start using Jego](/en/guide/usage) to sign in and choose a mode and node.
 
-Once installed, you can [register an account](/en/guide/registration), then follow [Start using Jego](/en/guide/usage) to sign in and pick a mode and node.
-
 ## Install in other Chromium browsers
 
 ::: warning Compatibility note
-QQ Browser, 360 Browser, fingerprint (anti-detect) browsers, and other Chromium-based browsers can usually install Jego as long as their kernel is 88 or later. Fingerprint browsers (often used for multi-account work) generally support loading Chrome extensions — just use their own extension entry. Compatibility and installation rules can change between versions, so update to the current stable version and use an extension installation method allowed by that browser.
+QQ Browser, 360 Browser, and fingerprint (anti-detect) browsers can usually install Jego when they support Chrome extensions. Update the browser to its current stable version first. This guide does not apply to Firefox profiles, cloud phones, or mobile environments.
 :::
+
+### Fingerprint (anti-detect) browsers {#fingerprint-browser-install}
+
+Fingerprint browsers normally keep each account in a separate browser profile. You only need to install Jego in the profile where you plan to use it.
+
+1. Create or select the profile where you want to use Jego. If you can choose a browser type, choose **Chrome** or **Chromium**.
+2. In the fingerprint browser or profile settings, open **Extensions**, **Extension center**, or the equivalent area.
+3. Select **Add Chrome Web Store extension**, paste the [Jego Chrome Web Store link](https://chromewebstore.google.com/detail/bnnamacamhjbdoimlbkegmbgkekphcbb), then choose the profile and enable Jego. If there is no such entry, launch the profile, open the same link inside it, and select **Add to Chrome**.
+4. Save, then fully close and reopen the profile. When the Jego icon appears, select it, sign in, and choose a mode and node. The installation is now complete.
+
+Menu names vary by product. See the official extension guides for [AdsPower](https://help.adspower.com/docs/extensions), [BitBrowser](https://doc.bitbrowser.net/help1/extensions), [GoLogin](https://gologin.com/docs/browser-profiles/profile-features/browser-extensions/adding-browser-extensions), and [Multilogin](https://multilogin.com/help/profile-management/installing-browser-extensions).
+
+#### If Jego is missing or cannot connect
+
+- **Jego does not appear:** Return to Extensions, make sure Jego is assigned to the current profile and enabled, then reopen the profile.
+- **Jego is installed but cannot connect:** Disable other proxy or VPN extensions in the profile. If the fingerprint browser also has a separate profile proxy, change it to direct or off and try again.
+- **There is no Chrome Web Store entry:** If the browser explicitly supports `.crx` imports, download the current ZIP package from the [official Jego site](https://jegocloud.com/), extract it, and use the included `.crx`. Do not download or convert Jego through a third-party site. If the browser does not accept the format, follow its official extension guide or contact its support team.
+
+After connecting, use [Start using Jego](/en/guide/usage) to confirm the mode, node, and access status.
 
 ### QQ Browser
 

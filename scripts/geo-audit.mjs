@@ -821,16 +821,27 @@ if (!baselineMode) {
       ? /download the ZIP package[\s\S]*extract it[\s\S]*chrome:\/\/extensions\/[\s\S]*Developer mode[\s\S]*Drag the `\.crx` file[\s\S]*Add extension/i.test(body)
       : /下载 ZIP 安装包[\s\S]*解压后找到[\s\S]*chrome:\/\/extensions\/[\s\S]*开发者模式[\s\S]*把 `\.crx` 文件[\s\S]*拖到[\s\S]*添加扩展程序/.test(body)
     const sourceList = page.frontmatter.sources || []
+    const fingerprintBrowserFacts = isEnglish
+      ? ['### Fingerprint (anti-detect) browsers {#fingerprint-browser-install}', 'choose a browser type, choose **Chrome** or **Chromium**', 'https://chromewebstore.google.com/detail/bnnamacamhjbdoimlbkegmbgkekphcbb', 'Select **Add Chrome Web Store extension**', 'fully close and reopen the profile', 'Jego does not appear', 'AdsPower', 'BitBrowser', 'GoLogin', 'Multilogin']
+      : ['### 指纹浏览器 {#fingerprint-browser-install}', '选择浏览器类型，请选择 **Chrome** 或 **Chromium**', 'https://chromewebstore.google.com/detail/bnnamacamhjbdoimlbkegmbgkekphcbb', '选择**添加 Chrome 商店扩展**', '完全关闭并重新打开该环境', '看不到无忧行', 'AdsPower', '比特浏览器', 'GoLogin', 'Multilogin']
+    const bitBrowserSource = isEnglish
+      ? 'https://doc.bitbrowser.net/help1/extensions'
+      : 'https://doc.bitbrowser.net/zh/help1/kuo-zhan-zhong-xin-gong-neng'
     if (
       page.frontmatter.reviewStatus !== 'verified' ||
-      page.frontmatter.lastVerified !== '2026-07-11' ||
+      page.frontmatter.lastVerified !== '2026-08-31' ||
       !sourceList.includes('https://support.google.com/chrome/answer/2664769') ||
       !sourceList.includes('https://learn.microsoft.com/en-us/troubleshoot/microsoft-edge/development/self-host-extension-deploy') ||
       !sourceList.includes('human-browser-test@chrome-149-edge-150-macos-2026-07-11') ||
+      !sourceList.includes('https://help.adspower.com/docs/extensions') ||
+      !sourceList.includes(bitBrowserSource) ||
+      !sourceList.includes('https://gologin.com/docs/browser-profiles/profile-features/browser-extensions/adding-browser-extensions') ||
+      !sourceList.includes('https://multilogin.com/help/profile-management/installing-browser-extensions') ||
       !edgeCrxFlow ||
-      !chromeCrxFlow
+      !chromeCrxFlow ||
+      !fingerprintBrowserFacts.every((fact) => body.includes(fact))
     ) {
-      fail(`安装页必须保留 Chrome 与 Edge 开启开发者模式后拖入 CRX 的实测流程：${page.source}`)
+      fail(`安装页必须保留 Chrome、Edge 的 CRX 实测流程和指纹浏览器的官方扩展安装路径：${page.source}`)
     }
     if (/加载(?:已)?解压(?:缩)?的扩展|Load unpacked|manifest\.json|如果下载的是 ZIP|If it is a ZIP/i.test(body)) {
       fail(`安装页不得向普通用户解释 Load unpacked 或源码文件夹：${page.source}`)
