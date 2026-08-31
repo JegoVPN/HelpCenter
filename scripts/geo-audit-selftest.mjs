@@ -122,6 +122,9 @@ try {
   expectMutationFailure('回退 Chrome 商店版本记录', 'docs/guide/keep-updated.md', (raw) =>
     raw.replace('<strong>1.5.10</strong>', '<strong>1.5.9</strong>')
   )
+  expectMutationFailure('回退 Edge 商店版本记录', 'docs/guide/keep-updated.md', (raw) =>
+    raw.replace('<span>Microsoft Edge</span>\n    <strong>1.5.10</strong>', '<span>Microsoft Edge</span>\n    <strong>1.5.9</strong>')
+  )
   expectMutationFailure('把手动安装浏览器改回纵排', 'docs/guide/keep-updated.md', (raw) =>
     raw.replace('class="manual-browser-grid"', 'class="manual-browser-list"')
   )

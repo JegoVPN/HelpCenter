@@ -873,8 +873,8 @@ if (!baselineMode) {
       fail(`更新插件开场必须先说明保持更新后用户能获得什么：${page.source}`)
     }
     const requiredContent = page.frontmatter.locale === 'en'
-      ? ['1.5.10', 'August 31, 2026', '1.5.9', 'chrome://extensions/', 'edge://extensions/', 'Chrome Web Store', 'Microsoft Edge Add-ons', 'https://chromewebstore.google.com/detail/bnnamacamhjbdoimlbkegmbgkekphcbb', 'https://jegocloud.com/static/app/', 'JegoV1.5.9.zip']
-      : ['1.5.10', '2026年8月31日', '1.5.9', 'chrome://extensions/', 'edge://extensions/', 'Chrome Web Store', 'Microsoft Edge 扩展商店', 'https://chromewebstore.google.com/detail/bnnamacamhjbdoimlbkegmbgkekphcbb', 'https://jegocloud.com/static/app/', 'JegoV1.5.9.zip']
+      ? ['<span>Chrome</span>\n    <strong>1.5.10</strong>\n    <small>August 31, 2026 · Chrome Web Store</small>', '<span>Microsoft Edge</span>\n    <strong>1.5.10</strong>\n    <small>August 31, 2026 · Microsoft Edge Add-ons</small>', '1.5.9', 'chrome://extensions/', 'edge://extensions/', 'Chrome Web Store', 'Microsoft Edge Add-ons', 'https://chromewebstore.google.com/detail/bnnamacamhjbdoimlbkegmbgkekphcbb', 'https://jegocloud.com/static/app/', 'JegoV1.5.9.zip']
+      : ['<span>Chrome</span>\n    <strong>1.5.10</strong>\n    <small>2026年8月31日 · Chrome Web Store</small>', '<span>Microsoft Edge</span>\n    <strong>1.5.10</strong>\n    <small>2026年8月31日 · Microsoft Edge 扩展商店</small>', '1.5.9', 'chrome://extensions/', 'edge://extensions/', 'Chrome Web Store', 'Microsoft Edge 扩展商店', 'https://chromewebstore.google.com/detail/bnnamacamhjbdoimlbkegmbgkekphcbb', 'https://jegocloud.com/static/app/', 'JegoV1.5.9.zip']
     if (!requiredContent.every((phrase) => body.includes(phrase))) {
       fail(`更新插件页必须保留版本、商店、三种更新方式和地址组成：${page.source}`)
     }

@@ -31,8 +31,8 @@ Jego regularly updates the browser extension. Keeping it up to date gives your b
   </a>
   <a class="version-card" href="https://microsoftedge.microsoft.com/addons/detail/bkpoijbobhmbglhjjmnoedomdoabilol">
     <span>Microsoft Edge</span>
-    <strong>1.5.9</strong>
-    <small>July 4, 2026 · Microsoft Edge Add-ons</small>
+    <strong>1.5.10</strong>
+    <small>August 31, 2026 · Microsoft Edge Add-ons</small>
   </a>
 </div>
 
