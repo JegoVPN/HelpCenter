@@ -24,10 +24,10 @@ Jego regularly updates the browser extension. Keeping it up to date gives your b
 ## Current extension version
 
 <div class="version-card-grid">
-  <a class="version-card" href="https://chrome.google.com/webstore/detail/bnnamacamhjbdoimlbkegmbgkekphcbb">
+  <a class="version-card" href="https://chromewebstore.google.com/detail/bnnamacamhjbdoimlbkegmbgkekphcbb">
     <span>Chrome</span>
-    <strong>1.5.9</strong>
-    <small>July 4, 2026 · Chrome Web Store</small>
+    <strong>1.5.10</strong>
+    <small>August 31, 2026 · Chrome Web Store</small>
   </a>
   <a class="version-card" href="https://microsoftedge.microsoft.com/addons/detail/bkpoijbobhmbglhjjmnoedomdoabilol">
     <span>Microsoft Edge</span>
@@ -44,7 +44,7 @@ To see the version installed in this browser: open the extensions page (`chrome:
 
 Chrome normally updates Jego automatically. To check immediately, use any one of these methods:
 
-1. Open the [Jego page in Chrome Web Store](https://chrome.google.com/webstore/detail/bnnamacamhjbdoimlbkegmbgkekphcbb) so Chrome can check the store version.
+1. Open the [Jego page in Chrome Web Store](https://chromewebstore.google.com/detail/bnnamacamhjbdoimlbkegmbgkekphcbb) so Chrome can check the store version.
 2. Enter `chrome://extensions/` in the address bar, turn on **Developer mode**, then select **Update** in the upper-left corner.
 3. Fully quit and reopen Chrome so the browser checks for extension updates automatically.
 

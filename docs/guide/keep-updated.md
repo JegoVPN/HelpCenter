@@ -24,10 +24,10 @@ description: 查看无忧行插件当前版本，在浏览器中完成更新，�
 ## 当前插件版本
 
 <div class="version-card-grid">
-  <a class="version-card" href="https://chrome.google.com/webstore/detail/bnnamacamhjbdoimlbkegmbgkekphcbb">
+  <a class="version-card" href="https://chromewebstore.google.com/detail/bnnamacamhjbdoimlbkegmbgkekphcbb">
     <span>Chrome</span>
-    <strong>1.5.9</strong>
-    <small>2026年7月4日 · Chrome Web Store</small>
+    <strong>1.5.10</strong>
+    <small>2026年8月31日 · Chrome Web Store</small>
   </a>
   <a class="version-card" href="https://microsoftedge.microsoft.com/addons/detail/bkpoijbobhmbglhjjmnoedomdoabilol">
     <span>Microsoft Edge</span>
@@ -44,7 +44,7 @@ description: 查看无忧行插件当前版本，在浏览器中完成更新，�
 
 Chrome 通常会自动更新无忧行。需要立即检查时，下面三种方式任选一种即可：
 
-1. 打开[无忧行的 Chrome Web Store 页面](https://chrome.google.com/webstore/detail/bnnamacamhjbdoimlbkegmbgkekphcbb)，让 Chrome 检查商店版本。
+1. 打开[无忧行的 Chrome Web Store 页面](https://chromewebstore.google.com/detail/bnnamacamhjbdoimlbkegmbgkekphcbb)，让 Chrome 检查商店版本。
 2. 在地址栏输入 `chrome://extensions/`，打开扩展管理页，先打开**开发者模式**开关，左上角才会显示**更新**按钮。
 3. 完全退出 Chrome 再重新打开，浏览器会自动检查扩展更新。
 
