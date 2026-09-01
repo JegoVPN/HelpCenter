@@ -36,7 +36,7 @@ Follow screenshots 1–5 in order. Allow the VPN configuration when iOS asks on 
 
 <div class="clash-step-grid clash-step-grid--phone">
   <figure>
-    <img src="/images/clash-apple/iphone/01-home.webp" alt="Clash Home on iPhone with the Profile control at the top" loading="lazy">
+    <img src="/images/clash-apple/iphone/01-home-not-connected.webp" alt="Clash Home on iPhone while disconnected, with the Profile control at the top" loading="lazy">
     <figcaption>1. Select the Profile name to the left of the blue start button to open Profiles.</figcaption>
   </figure>
   <figure>

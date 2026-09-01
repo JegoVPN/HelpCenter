@@ -36,7 +36,7 @@ description: 在 iPhone 和 iPad 上安装 Clash、添加无忧行 Mihomo 订阅
 
 <div class="clash-step-grid clash-step-grid--phone">
   <figure>
-    <img src="/images/clash-apple/iphone/01-home.webp" alt="iPhone 上的 Clash 首页与顶部 Profile 入口" loading="lazy">
+    <img src="/images/clash-apple/iphone/01-home-not-connected.webp" alt="iPhone 上未启动的 Clash 首页与顶部 Profile 入口" loading="lazy">
     <figcaption>1. 点击蓝色启动按钮左边的配置名字，进入配置中心。</figcaption>
   </figure>
   <figure>
