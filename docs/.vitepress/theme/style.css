@@ -200,6 +200,45 @@
   border-radius: 8px;
 }
 
+.clash-step-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.clash-step-grid figure {
+  overflow: hidden;
+  margin: 0;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 12px;
+  background: var(--vp-c-bg-soft);
+}
+
+.clash-step-grid img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  border-radius: 0;
+}
+
+.clash-step-grid figcaption {
+  padding: 0.7rem 0.85rem 0.8rem;
+  color: var(--vp-c-text-2);
+  font-size: 0.875rem;
+  line-height: 1.45;
+}
+
+.clash-step-grid--phone {
+  grid-template-columns: repeat(2, minmax(0, 240px));
+  justify-content: center;
+}
+
+.clash-step-grid--wide {
+  grid-template-columns: 1fr;
+}
+
 .installation-choice-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -333,6 +372,15 @@
 
   .jego-popup-state-grid {
     grid-template-columns: minmax(0, 280px);
+  }
+
+  .clash-step-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .clash-step-grid--phone {
+    grid-template-columns: minmax(0, 260px);
+    justify-content: center;
   }
 
   .installation-choice-grid {

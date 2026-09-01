@@ -379,10 +379,10 @@ if (!baselineMode) {
   for (const [source, headings, expectedLinks, firstClient, secondClient] of [
     ['docs/devices/windows.md', ['### 推荐客户端', '### 其他客户端', '### 更多客户端'], 6, 'flclash', 'clashverge'],
     ['docs/en/devices/windows.md', ['### Recommended clients', '### Other clients', '### More clients'], 6, 'flclash', 'clashverge'],
-    ['docs/devices/mac.md', ['### 推荐客户端', '### 其他客户端'], 6, 'flclash', 'sing-boxforapple'],
-    ['docs/en/devices/mac.md', ['### Recommended clients', '### Other clients'], 6, 'flclash', 'sing-boxforapple'],
-    ['docs/devices/ios.md', ['### 推荐客户端', '### 其他客户端'], 6, 'shadowrocket', 'sing-boxforapple'],
-    ['docs/en/devices/ios.md', ['### Recommended clients', '### Other clients'], 6, 'shadowrocket', 'sing-boxforapple'],
+    ['docs/devices/mac.md', ['### 推荐客户端', '### 其他客户端'], 7, '/guide/clash-macos', 'flclash'],
+    ['docs/en/devices/mac.md', ['### Recommended clients', '### Other clients'], 7, '/en/guide/clash-macos', 'flclash'],
+    ['docs/devices/ios.md', ['### 推荐客户端', '### 其他客户端'], 7, '/guide/clash-ios', 'shadowrocket'],
+    ['docs/en/devices/ios.md', ['### Recommended clients', '### Other clients'], 7, '/en/guide/clash-ios', 'shadowrocket'],
     ['docs/devices/android.md', ['### 推荐客户端', '### 其他客户端', '### 更多客户端'], 7, 'sing-boxforandroid', 'flclash'],
     ['docs/en/devices/android.md', ['### Recommended clients', '### Other clients', '### More clients'], 7, 'sing-boxforandroid', 'flclash'],
     ['docs/devices/linux.md', ['### 推荐客户端', '### 其他客户端'], 4, 'flclash', 'clashverge'],
@@ -397,8 +397,10 @@ if (!baselineMode) {
     if (raw.split('class="client-guide-link"').length !== expectedLinks + 1) {
       fail(`设备页客户端图标与名称的同行数量不正确：${source}`)
     }
-    const firstIndex = raw.indexOf(`subscription/clients/${firstClient}`)
-    const secondIndex = raw.indexOf(`subscription/clients/${secondClient}`)
+    const firstHref = firstClient.startsWith('/') ? firstClient : `subscription/clients/${firstClient}`
+    const secondHref = secondClient.startsWith('/') ? secondClient : `subscription/clients/${secondClient}`
+    const firstIndex = raw.indexOf(firstHref)
+    const secondIndex = raw.indexOf(secondHref)
     if (firstIndex < 0 || secondIndex < 0 || firstIndex > secondIndex) {
       fail(`设备页推荐客户端的首项顺序不正确：${source}`)
     }
@@ -408,12 +410,14 @@ if (!baselineMode) {
     ['docs/devices/windows.md', 'Windows 翻墙指南', 'Windows 翻墙指南 - 设备支持'],
     ['docs/devices/mac.md', 'macOS 翻墙指南', 'macOS 翻墙指南 - 设备支持'],
     ['docs/devices/ios.md', 'iPhone / iPad 翻墙指南', 'iPhone / iPad 翻墙指南 - 设备支持'],
+    ['docs/devices/tvos.md', 'tvOS 翻墙指南', 'tvOS 翻墙指南 - Apple TV 设备支持'],
     ['docs/devices/android.md', 'Android 翻墙指南', 'Android 翻墙指南 - 设备支持'],
     ['docs/devices/linux.md', 'Linux 翻墙指南', 'Linux 翻墙指南 - 设备支持'],
     ['docs/devices/harmony.md', 'HarmonyOS 翻墙指南', 'HarmonyOS 翻墙指南 - 设备支持'],
     ['docs/en/devices/windows.md', 'Windows Proxy Guide', 'Windows Proxy Guide - Device Support'],
     ['docs/en/devices/mac.md', 'macOS Proxy Guide', 'macOS Proxy Guide - Device Support'],
     ['docs/en/devices/ios.md', 'iPhone / iPad Proxy Guide', 'iPhone / iPad Proxy Guide - Device Support'],
+    ['docs/en/devices/tvos.md', 'tvOS Proxy Guide', 'tvOS Proxy Guide - Apple TV Device Support'],
     ['docs/en/devices/android.md', 'Android Proxy Guide', 'Android Proxy Guide - Device Support'],
     ['docs/en/devices/linux.md', 'Linux Proxy Guide', 'Linux Proxy Guide - Device Support'],
     ['docs/en/devices/harmony.md', 'HarmonyOS Proxy Guide', 'HarmonyOS Proxy Guide - Device Support']
@@ -501,7 +505,7 @@ if (!baselineMode) {
     if (existsSync(path.join(root, source))) fail(`未发布的重复入口必须删除：${source}`)
   }
 
-  if (LEGACY_ROUTE_PAIRS.length !== 52) fail(`基线订阅旧路由兼容映射必须为 52 条，实际为 ${LEGACY_ROUTE_PAIRS.length}`)
+  if (LEGACY_ROUTE_PAIRS.length !== 54) fail(`基线订阅旧路由兼容映射必须为 54 条，实际为 ${LEGACY_ROUTE_PAIRS.length}`)
   for (const [legacy, canonical] of LEGACY_ROUTE_PAIRS) {
     if (!/^\/(?:en\/)?(?:devices|tool)\//.test(legacy)) fail(`旧路由映射超出基线范围：${legacy}`)
     if (!/^\/(?:en\/)?subscription\//.test(canonical)) fail(`订阅正式路由未统一：${canonical}`)
@@ -523,11 +527,11 @@ if (!baselineMode) {
     if (h2.join('|') !== expectedHeadings.join('|')) fail(`订阅入口职责未收敛：${source}`)
     if (/<ToolCatalog\b/.test(body)) fail(`订阅入口不得展示客户端大列表：${source}`)
     const devicePrefix = locale === 'en' ? '/en/subscription/devices/' : '/subscription/devices/'
-    for (const slug of ['windows', 'mac', 'ios', 'android', 'linux', 'harmony']) {
+    for (const slug of ['windows', 'mac', 'ios', 'tvos', 'android', 'linux', 'harmony']) {
       if (!body.includes(`${devicePrefix}${slug}`)) fail(`订阅入口缺少设备入口 ${slug}：${source}`)
     }
     const guideLabel = locale === 'en' ? '<span>Proxy guide</span>' : '<span>翻墙指南</span>'
-    if (body.split(guideLabel).length !== 7) fail(`六个设备入口必须明确标为翻墙指南：${source}`)
+    if (body.split(guideLabel).length !== 8) fail(`七个设备入口必须明确标为翻墙指南：${source}`)
     if (/站内搜索仍可以直接找到现有的 18 篇客户端教程|Site search can still open any of the 18 existing client guides/.test(body)) {
       fail(`订阅入口不得恢复无用的站内搜索结尾：${source}`)
     }
@@ -1029,8 +1033,8 @@ if (!baselineMode) {
     fail('顶部和侧边导航的订阅服务域必须各只保留一个订阅服务入口，章节跳转留在页内目录')
   }
   for (const [prefix, entries] of [
-    ['', [['windows', 'Windows 翻墙指南'], ['mac', 'macOS 翻墙指南'], ['ios', 'iPhone / iPad 翻墙指南'], ['android', 'Android 翻墙指南'], ['linux', 'Linux 翻墙指南'], ['harmony', 'HarmonyOS 翻墙指南'], ['us-apple-id', 'Apple ID 帮助']]],
-    ['en/', [['windows', 'Windows proxy guide'], ['mac', 'macOS proxy guide'], ['ios', 'iPhone / iPad proxy guide'], ['android', 'Android proxy guide'], ['linux', 'Linux proxy guide'], ['harmony', 'HarmonyOS proxy guide'], ['us-apple-id', 'Apple ID help']]]
+    ['', [['windows', 'Windows 翻墙指南'], ['mac', 'macOS 翻墙指南'], ['ios', 'iPhone / iPad 翻墙指南'], ['tvos', 'tvOS 翻墙指南'], ['android', 'Android 翻墙指南'], ['linux', 'Linux 翻墙指南'], ['harmony', 'HarmonyOS 翻墙指南'], ['us-apple-id', 'Apple ID 帮助']]],
+    ['en/', [['windows', 'Windows proxy guide'], ['mac', 'macOS proxy guide'], ['ios', 'iPhone / iPad proxy guide'], ['tvos', 'tvOS proxy guide'], ['android', 'Android proxy guide'], ['linux', 'Linux proxy guide'], ['harmony', 'HarmonyOS proxy guide'], ['us-apple-id', 'Apple ID help']]]
   ]) {
     for (const [slug, label] of entries) {
       const entry = `{ text: '${label}', link: '/${prefix}subscription/devices/${slug}' }`

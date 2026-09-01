@@ -9,7 +9,7 @@ status: current
 owner: docs
 reviewStatus: needs-review
 lastVerified: null
-platforms: [windows, macos, linux, android, ios, harmonyos]
+platforms: [windows, macos, linux, android, ios, tvos, harmonyos]
 tools: []
 appliesTo: []
 sources: []
@@ -37,6 +37,7 @@ You do not need to compare every client first. Start with one of the recommended
   <a class="subscription-device-card" href="/en/subscription/devices/windows"><img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FbeA5N21M1iATQm5HiGND_2Fwin_1.svg" width="38" height="28" alt="Windows icon"><strong>Windows</strong><span>Proxy guide</span></a>
   <a class="subscription-device-card" href="/en/subscription/devices/mac"><img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FrUGve1gm2gP1sXdvgjCw_2Fapple_1.svg" width="38" height="28" alt="macOS icon"><strong>macOS</strong><span>Proxy guide</span></a>
   <a class="subscription-device-card" href="/en/subscription/devices/ios"><img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F7GBp8VQdHNWWH3aalDTP_2Fios_3.svg" width="38" height="28" alt="iOS icon"><strong>iPhone / iPad</strong><span>Proxy guide</span></a>
+  <a class="subscription-device-card" href="/en/subscription/devices/tvos"><img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FrUGve1gm2gP1sXdvgjCw_2Fapple_1.svg" width="38" height="28" alt="Apple TV icon"><strong>Apple TV / tvOS</strong><span>Proxy guide</span></a>
   <a class="subscription-device-card" href="/en/subscription/devices/android"><img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F7Hh3XGbbAH0jtCKDKIF6_2Fandroid_3.svg" width="38" height="28" alt="Android icon"><strong>Android</strong><span>Proxy guide</span></a>
   <a class="subscription-device-card" href="/en/subscription/devices/linux"><img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FJJlooO6sJC8xrcR6vqGj_2Flinux_1.svg" width="38" height="28" alt="Linux icon"><strong>Linux</strong><span>Proxy guide</span></a>
   <a class="subscription-device-card" href="/en/subscription/devices/harmony"><img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FhUBqYs4CpmMcueAi690m_2FHMOS_Logo_Icon_1.svg" width="38" height="28" alt="HarmonyOS icon"><strong>HarmonyOS</strong><span>Proxy guide</span></a>

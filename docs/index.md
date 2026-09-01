@@ -62,7 +62,7 @@ features:
 
 会员可以获取订阅，让浏览器之外的软件也走代理。选好设备，按教程装客户端、导入订阅：
 
-[Windows](/subscription/devices/windows) · [macOS](/subscription/devices/mac) · [Linux](/subscription/devices/linux) · [安卓](/subscription/devices/android) · [iPhone / iPad](/subscription/devices/ios) · [鸿蒙](/subscription/devices/harmony) · [Vibe Coding](/guide/vibe-coding)
+[Windows](/subscription/devices/windows) · [macOS](/subscription/devices/mac) · [Linux](/subscription/devices/linux) · [安卓](/subscription/devices/android) · [iPhone / iPad](/subscription/devices/ios) · [Apple TV](/subscription/devices/tvos) · [鸿蒙](/subscription/devices/harmony) · [Vibe Coding](/guide/vibe-coding)
 
 ### 会员与套餐
 

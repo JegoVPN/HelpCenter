@@ -37,6 +37,10 @@ The supported clients come first. Select a client name to open its complete guid
 
 ### Recommended clients
 
+<div class="client-guide-link"><img src="/images/clash-apple/clash-app-icon.webp" width="26" height="26" alt="Clash icon"><a href="/en/guide/clash-ios">Clash</a></div>
+
+Clash is a native rule-based proxy client for iPhone and iPad. The guide includes screenshots for installation, adding the Jego Mihomo subscription, selecting the Profile, and starting.
+
 <div class="client-guide-link"><img src="/images/image_shadowrocket_2.png" width="26" height="26" alt="Shadowrocket icon"><a href="/en/subscription/clients/shadowrocket">Shadowrocket</a></div>
 
 Shadowrocket is a fully-featured iOS/iPadOS proxy tool client that supports most common connection protocols.

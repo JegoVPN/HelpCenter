@@ -23,9 +23,13 @@ description: 在 macOS 电脑上选择合适的客户端，导入无忧行订阅
 
 ## <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FrUGve1gm2gP1sXdvgjCw_2Fapple_1.svg" width="38" height="28" alt="macOS图标"> macOS 翻墙客户端
 
-新用户可以直接从 **FlClash** 开始。点击客户端名称即可查看完整教程。
+新用户可以直接从 **Clash** 开始。点击客户端名称即可查看完整教程。
 
 ### 推荐客户端
+
+<div class="client-guide-link"><img src="/images/clash-apple/clash-app-icon.webp" width="26" height="26" alt="Clash图标"><a href="/guide/clash-macos">Clash</a></div>
+
+Clash 是 Apple 平台的原生规则代理客户端；教程包含安装、添加无忧行 Mihomo 订阅、选中配置和启动的完整截图。
 
 <div class="client-guide-link"><img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2Fu2sHeQjHJurcgVhJB1zO_2Ficon_2.png" width="26" height="26" alt="FlClash图标"><a href="/subscription/clients/flclash">FlClash</a></div>
 

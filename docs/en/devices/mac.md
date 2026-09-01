@@ -23,9 +23,13 @@ Jego members can add subscription nodes to a compatible Mac client, allowing app
 
 ## <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FrUGve1gm2gP1sXdvgjCw_2Fapple_1.svg" width="38" height="28" alt="macOS icon"> macOS proxy clients
 
-New users can start with **FlClash**. Select a client name to open its complete guide.
+New users can start with **Clash**. Select a client name to open its complete guide.
 
 ### Recommended clients
+
+<div class="client-guide-link"><img src="/images/clash-apple/clash-app-icon.webp" width="26" height="26" alt="Clash icon"><a href="/en/guide/clash-macos">Clash</a></div>
+
+Clash is a native rule-based proxy client for Apple platforms. The guide includes screenshots for installation, adding the Jego Mihomo subscription, selecting the Profile, and starting.
 
 <div class="client-guide-link"><img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2Fu2sHeQjHJurcgVhJB1zO_2Ficon_2.png" width="26" height="26" alt="FlClash icon"><a href="/en/subscription/clients/flclash">FlClash</a></div>
 

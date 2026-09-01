@@ -62,7 +62,7 @@ Common: [Extension popup](/en/guide/plugin-features) · [Rules, Global, and Off]
 
 With membership you can use a subscription so apps outside the browser go through the proxy too. Pick your device, then follow the guide to install a client and import the subscription:
 
-[Windows](/en/subscription/devices/windows) · [macOS](/en/subscription/devices/mac) · [Linux](/en/subscription/devices/linux) · [Android](/en/subscription/devices/android) · [iPhone / iPad](/en/subscription/devices/ios) · [HarmonyOS](/en/subscription/devices/harmony) · [Vibe Coding](/en/guide/vibe-coding)
+[Windows](/en/subscription/devices/windows) · [macOS](/en/subscription/devices/mac) · [Linux](/en/subscription/devices/linux) · [Android](/en/subscription/devices/android) · [iPhone / iPad](/en/subscription/devices/ios) · [Apple TV](/en/subscription/devices/tvos) · [HarmonyOS](/en/subscription/devices/harmony) · [Vibe Coding](/en/guide/vibe-coding)
 
 ### Membership and plans
 

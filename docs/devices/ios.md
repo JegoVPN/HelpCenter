@@ -37,6 +37,10 @@ description: 在 iPhone 或 iPad 上选择合适的客户端，导入无忧行�
 
 ### 推荐客户端
 
+<div class="client-guide-link"><img src="/images/clash-apple/clash-app-icon.webp" width="26" height="26" alt="Clash图标"><a href="/guide/clash-ios">Clash</a></div>
+
+Clash 是 iPhone 和 iPad 的原生规则代理客户端；教程包含安装、添加无忧行 Mihomo 订阅、选中配置和启动的完整截图。
+
 <div class="client-guide-link"><img src="/images/image_shadowrocket_2.png" width="26" height="26" alt="Shadowrocket图标"><a href="/subscription/clients/shadowrocket">Shadowrocket</a></div>
 
 Shadowrocket 是一个功能齐全的 iOS/iPadOS 代理工具客户端，支持大多数常见的连接协议。

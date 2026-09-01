@@ -4,6 +4,7 @@ export const DEVICE_SLUGS = [
   'ios',
   'linux',
   'mac',
+  'tvos',
   'us-apple-id',
   'windows'
 ]

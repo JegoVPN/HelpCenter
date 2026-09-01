@@ -9,7 +9,7 @@ status: current
 owner: docs
 reviewStatus: needs-review
 lastVerified: null
-platforms: [windows, macos, linux, android, ios, harmonyos]
+platforms: [windows, macos, linux, android, ios, tvos, harmonyos]
 tools: []
 appliesTo: []
 sources: []
@@ -37,6 +37,7 @@ description: 选择正在使用的设备，安装合适的客户端，并了解�
   <a class="subscription-device-card" href="/subscription/devices/windows"><img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FbeA5N21M1iATQm5HiGND_2Fwin_1.svg" width="38" height="28" alt="Windows 图标"><strong>Windows</strong><span>翻墙指南</span></a>
   <a class="subscription-device-card" href="/subscription/devices/mac"><img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FrUGve1gm2gP1sXdvgjCw_2Fapple_1.svg" width="38" height="28" alt="macOS 图标"><strong>macOS</strong><span>翻墙指南</span></a>
   <a class="subscription-device-card" href="/subscription/devices/ios"><img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F7GBp8VQdHNWWH3aalDTP_2Fios_3.svg" width="38" height="28" alt="iOS 图标"><strong>iPhone / iPad</strong><span>翻墙指南</span></a>
+  <a class="subscription-device-card" href="/subscription/devices/tvos"><img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FrUGve1gm2gP1sXdvgjCw_2Fapple_1.svg" width="38" height="28" alt="Apple TV 图标"><strong>Apple TV / tvOS</strong><span>翻墙指南</span></a>
   <a class="subscription-device-card" href="/subscription/devices/android"><img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F7Hh3XGbbAH0jtCKDKIF6_2Fandroid_3.svg" width="38" height="28" alt="安卓图标"><strong>Android</strong><span>翻墙指南</span></a>
   <a class="subscription-device-card" href="/subscription/devices/linux"><img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FJJlooO6sJC8xrcR6vqGj_2Flinux_1.svg" width="38" height="28" alt="Linux 图标"><strong>Linux</strong><span>翻墙指南</span></a>
   <a class="subscription-device-card" href="/subscription/devices/harmony"><img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FhUBqYs4CpmMcueAi690m_2FHMOS_Logo_Icon_1.svg" width="38" height="28" alt="HarmonyOS 图标"><strong>HarmonyOS</strong><span>翻墙指南</span></a>
