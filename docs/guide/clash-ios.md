@@ -63,7 +63,7 @@ description: 在 iPhone 和 iPad 上安装 Clash、添加无忧行 Mihomo 订阅
 
 <div class="clash-step-grid">
   <figure>
-    <img src="/images/clash-apple/ipad/01-home.webp" alt="iPad 上的 Clash 首页与 Profiles 侧边栏入口" loading="lazy">
+    <img src="/images/clash-apple/ipad/01-home-not-connected.webp" alt="iPad 上未启动的 Clash 首页与 Profiles 侧边栏入口" loading="lazy">
     <figcaption>1. 首页和 Profiles 都在左侧栏；顶部显示当前 Profile。</figcaption>
   </figure>
   <figure>
@@ -75,8 +75,8 @@ description: 在 iPhone 和 iPad 上安装 Clash、添加无忧行 Mihomo 订阅
     <figcaption>3. 粘贴 Mihomo 地址、填写名称并点 Add；图中地址已模糊。</figcaption>
   </figure>
   <figure>
-    <img src="/images/clash-apple/ipad/04-home-ready.webp" alt="iPad 已选中无忧行 Profile、Rule 模式且可以启动" loading="lazy">
-    <figcaption>4. 返回首页选择 Rule，点右上角 START。</figcaption>
+    <img src="/images/clash-apple/ipad/04-home-connected.webp" alt="iPad 已选中无忧行 Profile、Rule 模式并成功启动" loading="lazy">
+    <figcaption>4. 返回首页选择 Rule 并启动；绿色 STOP 和启动时长表示已连接。</figcaption>
   </figure>
 </div>
 

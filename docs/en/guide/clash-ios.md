@@ -63,7 +63,7 @@ Follow screenshots 1–4 in order and allow the VPN configuration on the first s
 
 <div class="clash-step-grid">
   <figure>
-    <img src="/images/clash-apple/ipad/01-home.webp" alt="Clash Home and the Profiles sidebar entry on iPad" loading="lazy">
+    <img src="/images/clash-apple/ipad/01-home-not-connected.webp" alt="Clash Home while disconnected and the Profiles sidebar entry on iPad" loading="lazy">
     <figcaption>1. Home and Profiles are available in the sidebar.</figcaption>
   </figure>
   <figure>
@@ -75,8 +75,8 @@ Follow screenshots 1–4 in order and allow the VPN configuration on the first s
     <figcaption>3. Paste the URL, enter the name, and tap Add. The example URL is blurred.</figcaption>
   </figure>
   <figure>
-    <img src="/images/clash-apple/ipad/04-home-ready.webp" alt="Clash on iPad with the Jego Profile, Rule selected, and START available" loading="lazy">
-    <figcaption>4. Return Home, select Rule, and tap START.</figcaption>
+    <img src="/images/clash-apple/ipad/04-home-connected.webp" alt="Clash on iPad connected with the Jego Profile and Rule selected" loading="lazy">
+    <figcaption>4. Return Home, select Rule, and start. Green STOP and the duration show that Clash is connected.</figcaption>
   </figure>
 </div>
 
