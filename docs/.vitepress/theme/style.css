@@ -235,6 +235,12 @@
   justify-content: center;
 }
 
+.clash-step-grid--phone img {
+  aspect-ratio: 590 / 1106;
+  object-fit: cover;
+  object-position: top;
+}
+
 .clash-step-grid--wide {
   grid-template-columns: 1fr;
 }
