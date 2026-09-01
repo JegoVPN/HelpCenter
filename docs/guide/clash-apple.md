@@ -13,7 +13,7 @@ dateModified: 2026-09-01
 platforms: [ios, ipados, macos, tvos]
 tools: [clash]
 appliesTo: [jego-subscription]
-sources: [https://clash.md/zh/guide/, https://apps.apple.com/app/id6794257189]
+sources: [https://clash.md/zh/guide/, https://apps.apple.com/app/id6794257189?platform=iphone, https://apps.apple.com/app/id6794257189?platform=mac, https://apps.apple.com/app/id6794257189?platform=tv]
 title: Clash Apple 使用指南 - 订阅服务
 description: 按 iOS、macOS 和 tvOS 选择 Clash 使用指南，添加无忧行 Mihomo 订阅并启动。
 ---
@@ -37,4 +37,4 @@ description: 按 iOS、macOS 和 tvOS 选择 Clash 使用指南，添加无忧�
   </a>
 </div>
 
-请从 [Clash 官网](https://clash.md/zh/) 或 [App Store](https://apps.apple.com/app/id6794257189) 安装 Apple 原生版 Clash。
+请从 [Clash 官网](https://clash.md/zh/) 查看介绍，或按设备打开 App Store：[iPhone / iPad](https://apps.apple.com/app/id6794257189?platform=iphone) · [Mac](https://apps.apple.com/app/id6794257189?platform=mac) · [Apple TV](https://apps.apple.com/app/id6794257189?platform=tv)。

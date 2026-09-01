@@ -13,14 +13,14 @@ dateModified: 2026-09-01
 platforms: [macos]
 tools: [clash]
 appliesTo: [jego-subscription]
-sources: [https://clash.md/zh/platforms/macos, https://clash.md/zh/guide/macos, https://apps.apple.com/app/id6794257189]
+sources: [https://clash.md/zh/platforms/macos, https://clash.md/zh/guide/macos, https://apps.apple.com/app/id6794257189?platform=mac]
 title: Clash for macOS 使用指南 - 无忧行订阅
 description: 在 Mac 上安装 Clash、添加无忧行 Mihomo 订阅、选中配置并从首页启动。
 ---
 
 # Clash for macOS 使用指南
 
-请先从 [Clash macOS 官网](https://clash.md/zh/platforms/macos) 或 [App Store](https://apps.apple.com/app/id6794257189) 安装 Apple 原生版 Clash。
+请先从 [Clash macOS 官网](https://clash.md/zh/platforms/macos) 或 [App Store](https://apps.apple.com/app/id6794257189?platform=mac) 安装 Apple 原生版 Clash。
 
 ## 复制 Mihomo 订阅
 

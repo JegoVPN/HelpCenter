@@ -13,7 +13,7 @@ dateModified: 2026-09-01
 platforms: [ios, ipados, macos, tvos]
 tools: [clash]
 appliesTo: [jego-subscription]
-sources: [https://clash.md/guide/, https://apps.apple.com/app/id6794257189]
+sources: [https://clash.md/guide/, https://apps.apple.com/app/id6794257189?platform=iphone, https://apps.apple.com/app/id6794257189?platform=mac, https://apps.apple.com/app/id6794257189?platform=tv]
 title: Clash for Apple Platforms - Subscription Service
 description: Choose the iOS, macOS, or tvOS Clash guide to add a Jego Mihomo subscription and start the connection.
 ---
@@ -37,4 +37,4 @@ Choose your device. Each guide shows the complete path from copying the Jego Mih
   </a>
 </div>
 
-Install the native Apple version from the [Clash website](https://clash.md/) or the [App Store](https://apps.apple.com/app/id6794257189).
+Read about Clash on its [official website](https://clash.md/), or open the App Store for your device: [iPhone / iPad](https://apps.apple.com/app/id6794257189?platform=iphone) · [Mac](https://apps.apple.com/app/id6794257189?platform=mac) · [Apple TV](https://apps.apple.com/app/id6794257189?platform=tv).

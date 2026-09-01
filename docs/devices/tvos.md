@@ -13,14 +13,14 @@ dateModified: 2026-09-01
 platforms: [tvos]
 tools: [clash]
 appliesTo: [jego-subscription]
-sources: [https://clash.md/zh/platforms/tvos, https://clash.md/zh/guide/tvos, https://apps.apple.com/app/id6794257189]
+sources: [https://clash.md/zh/platforms/tvos, https://clash.md/zh/guide/tvos, https://apps.apple.com/app/id6794257189?platform=tv]
 title: tvOS 翻墙指南 - Apple TV 设备支持
 description: 在 Apple TV 上安装 Clash、添加无忧行 Mihomo 订阅、选中配置并启动。
 ---
 
 # tvOS 翻墙指南
 
-Apple TV 当前推荐使用 Apple 原生版 [Clash tvOS（官网）](https://clash.md/zh/platforms/tvos)。请先从 [App Store 下载 Clash](https://apps.apple.com/app/id6794257189)；下面直接说明如何添加无忧行订阅并启动。
+Apple TV 当前推荐使用 Apple 原生版 [Clash tvOS（官网）](https://clash.md/zh/platforms/tvos)。请先从 [App Store 下载 Clash](https://apps.apple.com/app/id6794257189?platform=tv)；下面直接说明如何添加无忧行订阅并启动。
 
 ## 复制 Mihomo 订阅
 

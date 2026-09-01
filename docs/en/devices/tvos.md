@@ -13,14 +13,14 @@ dateModified: 2026-09-01
 platforms: [tvos]
 tools: [clash]
 appliesTo: [jego-subscription]
-sources: [https://clash.md/platforms/tvos, https://clash.md/guide/tvos, https://apps.apple.com/app/id6794257189]
+sources: [https://clash.md/platforms/tvos, https://clash.md/guide/tvos, https://apps.apple.com/app/id6794257189?platform=tv]
 title: tvOS Proxy Guide - Apple TV Device Support
 description: Install Clash on Apple TV, add a Jego Mihomo subscription, activate the Profile, and start the Tunnel.
 ---
 
 # tvOS Proxy Guide
 
-The currently recommended Apple TV client is the native [Clash tvOS app](https://clash.md/platforms/tvos). [Download Clash from the App Store](https://apps.apple.com/app/id6794257189), then follow the steps below to add a Jego subscription and start it.
+The currently recommended Apple TV client is the native [Clash tvOS app](https://clash.md/platforms/tvos). [Download Clash from the App Store](https://apps.apple.com/app/id6794257189?platform=tv), then follow the steps below to add a Jego subscription and start it.
 
 ## Copy the Mihomo subscription
 

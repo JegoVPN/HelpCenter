@@ -13,14 +13,14 @@ dateModified: 2026-09-01
 platforms: [macos]
 tools: [clash]
 appliesTo: [jego-subscription]
-sources: [https://clash.md/platforms/macos, https://clash.md/guide/macos, https://apps.apple.com/app/id6794257189]
+sources: [https://clash.md/platforms/macos, https://clash.md/guide/macos, https://apps.apple.com/app/id6794257189?platform=mac]
 title: Clash for macOS - Jego Subscription Guide
 description: Install Clash on Mac, add a Jego Mihomo subscription, select the Profile, and start from Home.
 ---
 
 # Clash for macOS
 
-Install the native Apple version from the [Clash macOS website](https://clash.md/platforms/macos) or the [App Store](https://apps.apple.com/app/id6794257189).
+Install the native Apple version from the [Clash macOS website](https://clash.md/platforms/macos) or the [App Store](https://apps.apple.com/app/id6794257189?platform=mac).
 
 ## Copy the Mihomo subscription
 

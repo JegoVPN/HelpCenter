@@ -13,14 +13,14 @@ dateModified: 2026-09-01
 platforms: [ios, ipados]
 tools: [clash]
 appliesTo: [jego-subscription]
-sources: [https://clash.md/platforms/ios, https://clash.md/guide/ios, https://apps.apple.com/app/id6794257189]
+sources: [https://clash.md/platforms/ios, https://clash.md/guide/ios, https://apps.apple.com/app/id6794257189?platform=iphone]
 title: Clash for iOS - Jego Subscription Guide
 description: Install Clash on iPhone or iPad, add a Jego Mihomo subscription, select the Profile, and start from Home.
 ---
 
 # Clash for iOS
 
-This guide covers iPhone and iPad. Install the native Apple version from the [Clash iOS website](https://clash.md/platforms/ios) or the [App Store](https://apps.apple.com/app/id6794257189).
+This guide covers iPhone and iPad. Install the native Apple version from the [Clash iOS website](https://clash.md/platforms/ios) or the [App Store](https://apps.apple.com/app/id6794257189?platform=iphone).
 
 ## Copy the Mihomo subscription
 
