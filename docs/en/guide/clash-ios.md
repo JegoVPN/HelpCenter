@@ -84,7 +84,25 @@ In a narrow Split View, iPad uses an iPhone-like tab layout. Open Profiles from 
 
 ## Choose a node
 
-Open **Proxies**, choose a policy group, then select a node. Use **Test All** after connecting to compare latency. Use **Rule** for normal operation; **Global** sends all traffic through the global policy group, and **Direct** bypasses the proxy.
+<div class="clash-step-grid clash-step-grid--phone">
+  <figure>
+    <img src="/images/clash-apple/iphone-home-connected.jpg" alt="Connected Clash Home on iPhone with the Proxies entry" loading="lazy">
+    <figcaption>1. Select Proxies on Home.</figcaption>
+  </figure>
+  <figure>
+    <img src="/images/clash-apple/iphone/05-proxy-selection.webp" alt="Policy groups and nodes on iPhone with a blue checkmark beside the selected node" loading="lazy">
+    <figcaption>2. Expand a policy group and select a node. The blue checkmark marks the selection; green values show latency.</figcaption>
+  </figure>
+</div>
+
+<div class="clash-step-grid clash-step-grid--wide">
+  <figure>
+    <img src="/images/clash-apple/ipad/05-proxy-selection.webp" alt="Policy groups and nodes on iPad after opening Proxies from the sidebar" loading="lazy">
+    <figcaption>iPad: select Proxies in the Home sidebar, expand a policy group, and select a node. Use the lightning button to test latency again.</figcaption>
+  </figure>
+</div>
+
+Use **Rule** for normal operation; **Global** sends all traffic through the global policy group, and **Direct** bypasses the proxy.
 
 If the imported Profile has no nodes, confirm that `无忧行 JegoVPN.com` is current, update it once, and add a newly copied Mihomo URL if needed.
 

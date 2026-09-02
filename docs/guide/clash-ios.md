@@ -84,10 +84,23 @@ description: 在 iPhone 和 iPad 上安装 Clash、添加无忧行 Mihomo 订阅
 
 ## 选择节点
 
-1. 在首页点 **Proxies**，iPad 也可以从侧边栏进入。
-2. 打开要使用的策略组。
-3. 点一个节点；选中背景与左侧强调线表示当前节点。
-4. 连接后可用 **Test All** 比较延迟。
+<div class="clash-step-grid clash-step-grid--phone">
+  <figure>
+    <img src="/images/clash-apple/iphone-home-connected.jpg" alt="iPhone 上已启动的 Clash 首页与 Proxies 入口" loading="lazy">
+    <figcaption>1. 在首页点 Proxies（代理）。</figcaption>
+  </figure>
+  <figure>
+    <img src="/images/clash-apple/iphone/05-proxy-selection.webp" alt="iPhone 上的策略组和节点选择页面，当前节点左侧有蓝色勾选" loading="lazy">
+    <figcaption>2. 展开策略组并点一个节点；蓝色勾表示当前选择，绿色数字是延迟。</figcaption>
+  </figure>
+</div>
+
+<div class="clash-step-grid clash-step-grid--wide">
+  <figure>
+    <img src="/images/clash-apple/ipad/05-proxy-selection.webp" alt="iPad 上从左侧栏进入代理后的策略组和节点选择页面" loading="lazy">
+    <figcaption>iPad：从首页左侧栏点「代理」；展开策略组后点一个节点。闪电按钮可以重新测速。</figcaption>
+  </figure>
+</div>
 
 日常使用请选择 **Rule**。只有需要全部流量走同一代理组时才切到 **Global**；**Direct** 表示直连。
 
