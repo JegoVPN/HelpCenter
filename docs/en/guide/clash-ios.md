@@ -87,7 +87,7 @@ When Split View makes the iPad window narrow, an iPhone-like menu appears at the
 <div class="clash-step-grid clash-step-grid--phone">
   <figure>
     <img src="/images/clash-apple/iphone-home-connected.jpg" alt="Connected Clash Home on iPhone with the Proxies entry" loading="lazy">
-    <figcaption>1. Select the Proxies card on Home. You can select anywhere on the card.</figcaption>
+    <figcaption>1. Select the Proxies card on Home.</figcaption>
   </figure>
   <figure>
     <img src="/images/clash-apple/iphone/05-proxy-selection.webp" alt="Policy groups and nodes on iPhone with a blue checkmark beside the selected node" loading="lazy">

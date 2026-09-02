@@ -87,7 +87,7 @@ description: 在 iPhone 和 iPad 上安装 Clash、添加无忧行 Mihomo 订阅
 <div class="clash-step-grid clash-step-grid--phone">
   <figure>
     <img src="/images/clash-apple/iphone-home-connected.jpg" alt="iPhone 上已启动的 Clash 首页与 Proxies 入口" loading="lazy">
-    <figcaption>1. 在首页点 Proxies（代理）卡片，卡片内任意位置都可以点。</figcaption>
+    <figcaption>1. 在首页点 Proxies（代理）卡片。</figcaption>
   </figure>
   <figure>
     <img src="/images/clash-apple/iphone/05-proxy-selection.webp" alt="iPhone 上的策略组和节点选择页面，当前节点左侧有蓝色勾选" loading="lazy">
