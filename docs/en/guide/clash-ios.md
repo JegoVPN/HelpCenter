@@ -8,8 +8,8 @@ locale: en
 status: current
 owner: docs
 reviewStatus: verified
-lastVerified: 2026-09-01
-dateModified: 2026-09-01
+lastVerified: 2026-09-02
+dateModified: 2026-09-02
 platforms: [ios, ipados]
 tools: [clash]
 appliesTo: [jego-subscription]
@@ -80,7 +80,7 @@ Follow screenshots 1–4 in order and allow the VPN configuration on the first s
   </figure>
 </div>
 
-In a narrow Split View, iPad uses an iPhone-like tab layout. Open Profiles from the Profile name at the top of Home.
+When Split View makes the iPad window narrow, an iPhone-like menu appears at the bottom. Select the Profile name at the top of Home to open Profiles.
 
 ## Choose a node
 
@@ -91,20 +91,20 @@ In a narrow Split View, iPad uses an iPhone-like tab layout. Open Profiles from 
   </figure>
   <figure>
     <img src="/images/clash-apple/iphone/05-proxy-selection.webp" alt="Policy groups and nodes on iPhone with a blue checkmark beside the selected node" loading="lazy">
-    <figcaption>2. Expand a policy group and select a node. The blue checkmark marks the selection; green values show latency.</figcaption>
+    <figcaption>2. Open a group and select a node. A blue checkmark means it is selected; a smaller green number is usually faster.</figcaption>
   </figure>
 </div>
 
 <div class="clash-step-grid clash-step-grid--wide">
   <figure>
     <img src="/images/clash-apple/ipad/05-proxy-selection.webp" alt="Policy groups and nodes on iPad after opening Proxies from the sidebar" loading="lazy">
-    <figcaption>iPad: select Proxies in the Home sidebar, expand a policy group, and select a node. Use the lightning button to test latency again.</figcaption>
+    <figcaption>iPad: select Proxies in the Home sidebar, open a group, and select a node. Select the lightning button to test again.</figcaption>
   </figure>
 </div>
 
-Use **Rule** for normal operation; **Global** sends all traffic through the global policy group, and **Direct** bypasses the proxy.
+Use **Rule** for everyday browsing. Clash will use the right node group for each site. The first time, open every group once: select a node in manual groups such as **Manual Select** and **ChatGPT Group**; **Auto Select** works by itself. Use **Global** only when you want all traffic to use one route. **Direct** turns the proxy off.
 
-If the imported Profile has no nodes, confirm that `无忧行 JegoVPN.com` is current, update it once, and add a newly copied Mihomo URL if needed.
+If no nodes appear after you add the subscription, return to Profiles and confirm that `无忧行 JegoVPN.com` has a checkmark. Update it once. If the list is still empty, copy a new Mihomo subscription from the Jego Dashboard and add it again.
 
 See the [official Clash iOS guide](https://clash.md/guide/ios) for more interface details.
 

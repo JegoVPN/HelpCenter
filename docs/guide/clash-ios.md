@@ -8,8 +8,8 @@ locale: zh-Hans
 status: current
 owner: docs
 reviewStatus: verified
-lastVerified: 2026-09-01
-dateModified: 2026-09-01
+lastVerified: 2026-09-02
+dateModified: 2026-09-02
 platforms: [ios, ipados]
 tools: [clash]
 appliesTo: [jego-subscription]
@@ -80,7 +80,7 @@ description: 在 iPhone 和 iPad 上安装 Clash、添加无忧行 Mihomo 订阅
   </figure>
 </div>
 
-窄幅分屏时，iPad 会改用接近 iPhone 的底部标签布局；这时从首页顶部的 Profile 名称进入配置。
+如果 iPad 分屏后界面变窄，底部会出现和 iPhone 相似的菜单。这时点首页顶部的配置名称，就能进入配置页。
 
 ## 选择节点
 
@@ -91,22 +91,22 @@ description: 在 iPhone 和 iPad 上安装 Clash、添加无忧行 Mihomo 订阅
   </figure>
   <figure>
     <img src="/images/clash-apple/iphone/05-proxy-selection.webp" alt="iPhone 上的策略组和节点选择页面，当前节点左侧有蓝色勾选" loading="lazy">
-    <figcaption>2. 展开策略组并点一个节点；蓝色勾表示当前选择，绿色数字是延迟。</figcaption>
+    <figcaption>2. 点开一个分组，再点要用的节点；蓝色勾表示已经选中，绿色数字越小通常越快。</figcaption>
   </figure>
 </div>
 
 <div class="clash-step-grid clash-step-grid--wide">
   <figure>
     <img src="/images/clash-apple/ipad/05-proxy-selection.webp" alt="iPad 上从左侧栏进入代理后的策略组和节点选择页面" loading="lazy">
-    <figcaption>iPad：从首页左侧栏点「代理」；展开策略组后点一个节点。闪电按钮可以重新测速。</figcaption>
+    <figcaption>iPad：从首页左侧栏点「代理」，再点开分组选择节点。想重新测速时，点闪电按钮。</figcaption>
   </figure>
 </div>
 
-日常使用请选择 **Rule**。只有需要全部流量走同一代理组时才切到 **Global**；**Direct** 表示直连。
+日常使用选 **Rule**，Clash 会根据你打开的网站使用对应的节点分组。第一次使用时，建议把每个分组都点开看一次：**Manual Select**、**ChatGPT Group** 等手动分组各选一个节点；**Auto Select** 会自己选择，不用设置。只有想让所有流量都走同一线路时才用 **Global**；**Direct** 是不使用代理。
 
 ## 添加后没有节点
 
-先确认 `无忧行 JegoVPN.com` 左侧有勾选，再更新一次 Profile。如果仍为空，回到无忧行控制面板重新复制 **Mihomo** 订阅后再添加。
+如果添加后看不到节点，先回到配置页，确认 `无忧行 JegoVPN.com` 左侧有勾，再点一次更新。还是没有，就回无忧行控制面板重新复制 **Mihomo** 订阅，然后重新添加。
 
 更多 iPhone 与 iPad 界面说明见 [Clash 官方 iOS 指南](https://clash.md/zh/guide/ios)。
 
