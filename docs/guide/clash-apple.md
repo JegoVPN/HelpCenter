@@ -8,8 +8,8 @@ locale: zh-Hans
 status: current
 owner: docs
 reviewStatus: verified
-lastVerified: 2026-09-01
-dateModified: 2026-09-01
+lastVerified: 2026-09-12
+dateModified: 2026-09-12
 platforms: [ios, ipados, macos, tvos]
 tools: [clash]
 appliesTo: [jego-subscription]
@@ -20,7 +20,7 @@ description: 按 iOS、macOS 和 tvOS 选择 Clash 使用指南，添加无忧�
 
 # Clash Apple 使用指南
 
-请选择你的设备。三篇指南都从复制无忧行 Mihomo 订阅开始，并分别展示添加配置、填写订阅、选中 `无忧行 JegoVPN.com` 和返回首页启动的完整界面。
+请选择你的设备。三篇指南都从复制无忧行 Mihomo 订阅开始，再按各自的界面演示创建配置、选择节点和启动的完整过程。
 
 <div class="installation-choice-grid">
   <a class="installation-choice-card" href="/guide/clash-ios">
