@@ -26,13 +26,13 @@ Jego regularly updates the browser extension. Keeping it up to date gives your b
 <div class="version-card-grid">
   <a class="version-card" href="https://chromewebstore.google.com/detail/bnnamacamhjbdoimlbkegmbgkekphcbb">
     <span>Chrome</span>
-    <strong>1.5.10</strong>
-    <small>August 31, 2026 · Chrome Web Store</small>
+    <strong>1.5.11</strong>
+    <small>October 7, 2026 · Chrome Web Store</small>
   </a>
   <a class="version-card" href="https://microsoftedge.microsoft.com/addons/detail/bkpoijbobhmbglhjjmnoedomdoabilol">
     <span>Microsoft Edge</span>
-    <strong>1.5.10</strong>
-    <small>August 31, 2026 · Microsoft Edge Add-ons</small>
+    <strong>1.5.11</strong>
+    <small>October 7, 2026 · Microsoft Edge Add-ons</small>
   </a>
 </div>
 

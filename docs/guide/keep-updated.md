@@ -26,13 +26,13 @@ description: 查看无忧行插件当前版本，在浏览器中完成更新，�
 <div class="version-card-grid">
   <a class="version-card" href="https://chromewebstore.google.com/detail/bnnamacamhjbdoimlbkegmbgkekphcbb">
     <span>Chrome</span>
-    <strong>1.5.10</strong>
-    <small>2026年8月31日 · Chrome Web Store</small>
+    <strong>1.5.11</strong>
+    <small>2026年10月7日 · Chrome Web Store</small>
   </a>
   <a class="version-card" href="https://microsoftedge.microsoft.com/addons/detail/bkpoijbobhmbglhjjmnoedomdoabilol">
     <span>Microsoft Edge</span>
-    <strong>1.5.10</strong>
-    <small>2026年8月31日 · Microsoft Edge 扩展商店</small>
+    <strong>1.5.11</strong>
+    <small>2026年10月7日 · Microsoft Edge 扩展商店</small>
   </a>
 </div>
 
