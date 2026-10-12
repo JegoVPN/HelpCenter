@@ -877,8 +877,8 @@ if (!baselineMode) {
       fail(`更新插件开场必须先说明保持更新后用户能获得什么：${page.source}`)
     }
     const requiredContent = page.frontmatter.locale === 'en'
-      ? ['<span>Chrome</span>\n    <strong>1.5.11</strong>\n    <small>October 7, 2026 · Chrome Web Store</small>', '<span>Microsoft Edge</span>\n    <strong>1.5.11</strong>\n    <small>October 7, 2026 · Microsoft Edge Add-ons</small>', '1.5.9', 'chrome://extensions/', 'edge://extensions/', 'Chrome Web Store', 'Microsoft Edge Add-ons', 'https://chromewebstore.google.com/detail/bnnamacamhjbdoimlbkegmbgkekphcbb', 'https://jegocloud.com/static/app/', 'JegoV1.5.9.zip']
-      : ['<span>Chrome</span>\n    <strong>1.5.11</strong>\n    <small>2026年10月7日 · Chrome Web Store</small>', '<span>Microsoft Edge</span>\n    <strong>1.5.11</strong>\n    <small>2026年10月7日 · Microsoft Edge 扩展商店</small>', '1.5.9', 'chrome://extensions/', 'edge://extensions/', 'Chrome Web Store', 'Microsoft Edge 扩展商店', 'https://chromewebstore.google.com/detail/bnnamacamhjbdoimlbkegmbgkekphcbb', 'https://jegocloud.com/static/app/', 'JegoV1.5.9.zip']
+      ? ['<span>Chrome</span>\n    <strong>1.5.12</strong>\n    <small>October 12, 2026 · Chrome Web Store</small>', '<span>Microsoft Edge</span>\n    <strong>1.5.12</strong>\n    <small>October 11, 2026 · Microsoft Edge Add-ons</small>', '1.5.9', 'chrome://extensions/', 'edge://extensions/', 'Chrome Web Store', 'Microsoft Edge Add-ons', 'https://chromewebstore.google.com/detail/bnnamacamhjbdoimlbkegmbgkekphcbb', 'https://jegocloud.com/static/app/', 'JegoV1.5.9.zip']
+      : ['<span>Chrome</span>\n    <strong>1.5.12</strong>\n    <small>2026年10月12日 · Chrome Web Store</small>', '<span>Microsoft Edge</span>\n    <strong>1.5.12</strong>\n    <small>2026年10月11日 · Microsoft Edge 扩展商店</small>', '1.5.9', 'chrome://extensions/', 'edge://extensions/', 'Chrome Web Store', 'Microsoft Edge 扩展商店', 'https://chromewebstore.google.com/detail/bnnamacamhjbdoimlbkegmbgkekphcbb', 'https://jegocloud.com/static/app/', 'JegoV1.5.9.zip']
     if (!requiredContent.every((phrase) => body.includes(phrase))) {
       fail(`更新插件页必须保留版本、商店、三种更新方式和地址组成：${page.source}`)
     }
