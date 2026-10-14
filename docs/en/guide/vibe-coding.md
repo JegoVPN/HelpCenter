@@ -68,7 +68,18 @@ Configure the following on the proxy page (node selection):
 Node names and groups come from the current subscription configuration and can change. Compare bandwidth, stability, and third-party availability through actual results on the same network and at the same time.
 :::
 
-### 4. Start Service
+### 4. Tools Page: Block QUIC
+
+Claude and other AI apps prefer QUIC (UDP port 443). When the current node does not support UDP, this traffic bypasses the proxy and connects directly, so the destination site sees your real IP. After QUIC is blocked, apps switch to TCP and the traffic keeps going through the proxy.
+
+Go to <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Tools</span> → <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Advanced configuration</span> → <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Added rules</span>, then follow the steps for your FlClash version:
+
+* **0.9.0 and later**: Click the lightning icon <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Quick actions</span> in the upper right corner, select <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Block QUIC</span>, then click ✓ in the upper right corner to confirm.
+* **Earlier versions**: Click <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Add</span>, set **Rule name** to `AND`, enter `((NETWORK,UDP),(DST-PORT,443))` in **Content**, set **Rule target** to `REJECT`, then click <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Confirm</span>.
+
+A rule starting with `AND,((NETWORK,UDP),(DST-PORT,443))` then appears in the added rules list. It only blocks UDP port 443, so voice calls, games, and other UDP connections are unaffected. Added rules apply to every profile and stay in place after subscription updates.
+
+### 5. Start Service
 
 Return to the dashboard and click the <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Start</span> button in the lower right corner to activate the proxy service.
 
@@ -76,31 +87,27 @@ Return to the dashboard and click the <span style="background-color:green; color
 
 After starting, check the status, start time, virtual-adapter state, and outbound mode shown by the app, then open a test page or run the command below to confirm the connection.
 
-### 5. Request Page: Verify Traffic Routing
+### 6. Request Page: Verify Traffic Routing
 
 On the request page (or connections page), confirm that traffic is being routed correctly:
 
-* Check whether an AI hostname such as `api.openai.com` or `api.anthropic.com` matches the node currently chosen for the AI group.
+* Check whether an AI hostname such as `api.openai.com` or `api.anthropic.com` matches the node currently chosen for the AI group. It should not show as direct (DIRECT); if it does, first confirm that the Block QUIC rule from step 4 has been added.
 * Check whether an ordinary hostname matches the expected general group or direct rule. Record only hostnames; never publish query strings, tokens, or request content.
 
 ::: warning Custom Routing
-If you need custom routing rules, you can add override rules (Overrides) in FlClash.
+If you need custom routing rules, you can add them to FlClash's added rules.
 
 **Example Steps**:
 
 For instance, if you need DeepSeek.com to connect directly (without proxy), follow these steps:
 
-1. On the configuration page, click the <span style="background-color:green; color:white; padding:2px 4px; border-radius:3px;">three dots ⋮</span> in the upper right corner of the Jego subscription card
-2. Select <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">More</span>
-3. Click <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Overrides</span>
-4. Click <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Add</span>
-5. In the popup dialog, configure:
-   * **Rule Name**: Click to select, e.g., `DOMAIN-SUFFIX` (domain suffix matching)
-   * **Rule Content**: Click to enter, e.g., `deepseek.com` (main domain or subdomain)
-   * **Rule Target**: Click to select, e.g., `DIRECT` (direct connection)
-6. Click save
-
-<img src="/images/vibecoding/4.png" alt="Custom Routing: Add override rules (Overrides)" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); margin: 16px 0; max-width: 800px; width: 100%;">
+1. Go to <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Tools</span> → <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Advanced configuration</span> → <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Added rules</span>
+2. Click <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Add</span>
+3. In the popup dialog, configure:
+   * **Rule name**: Click to select, e.g., `DOMAIN-SUFFIX` (domain suffix matching)
+   * **Content**: Click to enter, e.g., `deepseek.com` (main domain or subdomain)
+   * **Rule target**: Click to select, e.g., `DIRECT` (direct connection)
+4. Click <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Confirm</span>
 
 After this setup, visits to DeepSeek.com will bypass the proxy and use your local network directly.
 :::

@@ -68,7 +68,18 @@ description: 以 FlClash 为例，为 Claude Code、Cursor 等 AI 编程工具�
 节点名称和分组来自当前订阅配置，可能更新。带宽、稳定性和第三方可用情况以相同网络与时间下的实际测试为准。
 :::
 
-### 4. 启动服务
+### 4. 工具页面：屏蔽 QUIC
+
+Claude 等 AI 应用会优先用 QUIC（UDP 443 端口）连接。当前节点不支持 UDP 时，这部分流量会绕过代理直接连接，对方网站会看到你的真实 IP。屏蔽 QUIC 后，应用会改用 TCP 连接，流量继续经过代理。
+
+依次进入<span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">工具</span> → <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">进阶配置</span> → <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">附加规则</span>，然后按 FlClash 版本操作：
+
+* **0.9.0 及以上**：点击右上角的闪电图标<span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">快捷操作</span>，勾选<span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">屏蔽 QUIC</span>，再点击右上角的 ✓ 确认。
+* **更早的版本**：点击<span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">添加</span>，**规则名称**选 `AND`，**内容**填 `((NETWORK,UDP),(DST-PORT,443))`，**规则目标**选 `REJECT`，点击<span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">确定</span>。
+
+添加后，附加规则列表里会出现一条以 `AND,((NETWORK,UDP),(DST-PORT,443))` 开头的规则。这条规则只拦截 UDP 443 端口，语音通话、游戏等其他 UDP 连接不受影响。附加规则对所有订阅配置生效，更新订阅后不用重新设置。
+
+### 5. 启动服务
 
 返回仪表盘，点击右下角的<span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">开启</span>按钮启动代理服务。
 
@@ -76,31 +87,27 @@ description: 以 FlClash 为例，为 Claude Code、Cursor 等 AI 编程工具�
 
 启动后记录界面明确显示的核心状态、启动时间、虚拟网卡和出站模式。颜色或图标含义可能随版本变化，再打开测试页面或运行下面的命令确认连接。
 
-### 5. 请求页面：检查分流
+### 6. 请求页面：检查分流
 
 在请求页面（或连接页面）中确认流量分流是否正确：
 
-* 检查 AI 相关 hostname（如 `api.openai.com`、`api.anthropic.com`）是否命中你为 AI 分组选择的当前节点；
+* 检查 AI 相关 hostname（如 `api.openai.com`、`api.anthropic.com`）是否命中你为 AI 分组选择的当前节点，不应显示为直连（DIRECT）。出现直连时，先确认第 4 步的屏蔽 QUIC 规则已经添加；
 * 检查一个普通 hostname 是否命中预期的通用分组或直连规则。只记录 hostname，不公开查询串、令牌或请求内容。
 
 ::: warning 自定义分流
-如有自定义接管需求，可在 FlClash 中添加覆写规则（Overrides）。
+如有自定义接管需求，可在 FlClash 的附加规则中添加规则。
 
 **操作步骤示例**：
 
 假设你需要让 DeepSeek.com 直连（不走代理），可按以下步骤操作：
 
-1. 在配置页面，点击无忧行订阅卡片右上角的<span style="background-color:green; color:white; padding:2px 4px; border-radius:3px;">三个点 ⋮</span>
-2. 选择 <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">更多</span>
-3. 点击 <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">覆写</span>
-4. 点击 <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">添加</span>
-5. 在弹出的对话框中配置：
+1. 依次进入<span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">工具</span> → <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">进阶配置</span> → <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">附加规则</span>
+2. 点击 <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">添加</span>
+3. 在弹出的对话框中配置：
    * **规则名称**：点击后选择，如 `DOMAIN-SUFFIX`（域名后缀匹配）
-   * **规则内容**：点击后填写，如 `deepseek.com`（主域名或者二级三级域名）
+   * **内容**：点击后填写，如 `deepseek.com`（主域名或者二级三级域名）
    * **规则目标**：点击后选择，如 `DIRECT`（直连）
-6. 点击保存
-
-<img src="/images/vibecoding/4.png" alt="自定义分流：添加覆写规则（Overrides）" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); margin: 16px 0; max-width: 800px; width: 100%;">
+4. 点击 <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">确定</span>
 
 这样设置后，访问 DeepSeek.com 将不经过代理，直接使用本地网络访问。
 :::

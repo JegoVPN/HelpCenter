@@ -70,6 +70,12 @@ export const APPROVED_MEDIA_RETIREMENTS = {
     '/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F8xAkeKaPFvJCAt1MuBYf_2Fimage_2.png',
     '/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2Fz7RH5pwBUDwrBQdsdvah_2Fimage_3.png',
     '/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2F8oyNaJcc0tFJdbungX6t_2Fimage_1.png'
+  ],
+  'docs/guide/vibe-coding.md': [
+    '/images/vibecoding/4.png'
+  ],
+  'docs/en/guide/vibe-coding.md': [
+    '/images/vibecoding/4.png'
   ]
 }
 

@@ -84,22 +84,31 @@ Click **three dots -> Sync** in the upper right corner of the configuration file
 
 <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FSUZB0uhm5ulHogGxgLEG_2Fimage_3.png" alt="Update configuration">
 
-### Configure Override Rules (Optional)
+### Block QUIC (Recommended)
 
-If you need to customize proxy behavior for specific domains, you can add override rules:
+Browsers and AI apps such as Claude prefer QUIC (UDP port 443). When the current node does not support UDP, this traffic bypasses the proxy and connects directly, exposing your real IP. Add an added rule that blocks QUIC, and these apps switch to TCP and keep going through the proxy.
 
-1. On the configuration page, click the <span style="background-color:green; color:white; padding:2px 4px; border-radius:3px;">three dots ⋮</span> in the upper right corner of the subscription card
-2. Select <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">More</span>
-3. Click <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Overrides</span>
-4. Click <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Add</span>
-5. In the popup dialog, configure:
-   * **Rule Name**: Click to select, e.g., `DOMAIN-SUFFIX` (domain suffix matching)
-   * **Rule Content**: Click to enter, e.g., `example.com` (main domain or subdomain)
-   * **Rule Target**: Click to select, e.g., `DIRECT` (direct connection), `REJECT` (reject), `MATCH` (match)
-6. Click save
+Go to <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Tools</span> → <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Advanced configuration</span> → <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Added rules</span>, then follow the steps for your FlClash version:
+
+* **0.9.0 and later**: Click the lightning icon <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Quick actions</span> in the upper right corner, select <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Block QUIC</span>, then click ✓ in the upper right corner to confirm.
+* **Earlier versions**: Click <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Add</span>, set **Rule name** to `AND`, enter `((NETWORK,UDP),(DST-PORT,443))` in **Content**, set **Rule target** to `REJECT`, then click <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Confirm</span>.
+
+This rule only blocks UDP port 443, so voice calls, games, and other UDP connections are unaffected. Added rules apply to every profile and stay in place after subscription updates.
+
+### Add Custom Rules (Optional)
+
+If you need to customize proxy behavior for specific domains, add rules on the same page:
+
+1. Go to <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Tools</span> → <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Advanced configuration</span> → <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Added rules</span>
+2. Click <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Add</span>
+3. In the popup dialog, configure:
+   * **Rule name**: Click to select, e.g., `DOMAIN-SUFFIX` (domain suffix matching)
+   * **Content**: Click to enter, e.g., `example.com` (main domain or subdomain)
+   * **Rule target**: Click to select, e.g., `DIRECT` (direct connection), `REJECT` (reject), `MATCH` (match)
+4. Click <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">Confirm</span>
 
 ::: tip Use Cases
-Override rules are suitable for scenarios where specific domains need to go through designated nodes, such as AI development tools, specific website acceleration, etc. See [Vibe Coding Setup Guide](/en/guide/vibe-coding) for details.
+Added rules are suitable for scenarios where specific domains need to go through designated nodes, such as AI development tools, specific website acceleration, etc. See [Vibe Coding Setup Guide](/en/guide/vibe-coding) for details.
 :::
 
 ## Enable Proxy

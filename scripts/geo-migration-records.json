@@ -4464,11 +4464,15 @@
         },
         {
           "level": 3,
-          "text": "4. Start Service"
+          "text": "4. Tools Page: Block QUIC"
         },
         {
           "level": 3,
-          "text": "5. Request Page: Verify Traffic Routing"
+          "text": "5. Start Service"
+        },
+        {
+          "level": 3,
+          "text": "6. Request Page: Verify Traffic Routing"
         },
         {
           "level": 2,
@@ -4558,9 +4562,9 @@
           },
           "to": {
             "level": 3,
-            "text": "4. Start Service"
+            "text": "4. Tools Page: Block QUIC"
           },
-          "disposition": "preserved-heading"
+          "disposition": "restructured-in-place"
         },
         {
           "from": {
@@ -4569,9 +4573,9 @@
           },
           "to": {
             "level": 3,
-            "text": "5. Request Page: Verify Traffic Routing"
+            "text": "5. Start Service"
           },
-          "disposition": "preserved-heading"
+          "disposition": "restructured-in-place"
         },
         {
           "from": {
@@ -4601,8 +4605,8 @@
             "text": "Why is my AI tool connection failing?"
           },
           "to": {
-            "level": 3,
-            "text": "AI tool connection failure"
+            "level": 2,
+            "text": "Common Issues"
           },
           "disposition": "restructured-in-place"
         },
@@ -4613,7 +4617,7 @@
           },
           "to": {
             "level": 3,
-            "text": "Using system proxy mode"
+            "text": "AI tool connection failure"
           },
           "disposition": "restructured-in-place"
         },
@@ -4624,7 +4628,7 @@
           },
           "to": {
             "level": 3,
-            "text": "Configure other proxy tools"
+            "text": "Using system proxy mode"
           },
           "disposition": "restructured-in-place"
         },
@@ -4655,12 +4659,16 @@
       ],
       "mediaAndExternalLinkChanges": {
         "baselineMediaCount": 5,
-        "currentMediaCount": 5,
-        "removedMedia": [],
-        "approvedRemovedMedia": [],
+        "currentMediaCount": 4,
+        "removedMedia": [
+          "/images/vibecoding/4.png"
+        ],
+        "approvedRemovedMedia": [
+          "/images/vibecoding/4.png"
+        ],
         "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
-        "retirementDecision": null,
+        "retirementDecision": "human-confirmed outdated FAQ and AI-product media retired from rendered content; public asset files retained",
         "baselineExternalHosts": [],
         "currentExternalHosts": [],
         "removedExternalHosts": [],
@@ -11336,11 +11344,15 @@
         },
         {
           "level": 3,
-          "text": "4. 启动服务"
+          "text": "4. 工具页面：屏蔽 QUIC"
         },
         {
           "level": 3,
-          "text": "5. 请求页面：检查分流"
+          "text": "5. 启动服务"
+        },
+        {
+          "level": 3,
+          "text": "6. 请求页面：检查分流"
         },
         {
           "level": 2,
@@ -11430,9 +11442,9 @@
           },
           "to": {
             "level": 3,
-            "text": "4. 启动服务"
+            "text": "4. 工具页面：屏蔽 QUIC"
           },
-          "disposition": "preserved-heading"
+          "disposition": "restructured-in-place"
         },
         {
           "from": {
@@ -11441,9 +11453,9 @@
           },
           "to": {
             "level": 3,
-            "text": "5. 请求页面：检查分流"
+            "text": "5. 启动服务"
           },
-          "disposition": "preserved-heading"
+          "disposition": "restructured-in-place"
         },
         {
           "from": {
@@ -11473,8 +11485,8 @@
             "text": "为什么 AI 工具连接失败？"
           },
           "to": {
-            "level": 3,
-            "text": "AI 工具连接失败"
+            "level": 2,
+            "text": "常见问题"
           },
           "disposition": "restructured-in-place"
         },
@@ -11485,7 +11497,7 @@
           },
           "to": {
             "level": 3,
-            "text": "使用系统代理模式"
+            "text": "AI 工具连接失败"
           },
           "disposition": "restructured-in-place"
         },
@@ -11496,7 +11508,7 @@
           },
           "to": {
             "level": 3,
-            "text": "配置其他代理工具"
+            "text": "使用系统代理模式"
           },
           "disposition": "restructured-in-place"
         },
@@ -11527,12 +11539,16 @@
       ],
       "mediaAndExternalLinkChanges": {
         "baselineMediaCount": 5,
-        "currentMediaCount": 5,
-        "removedMedia": [],
-        "approvedRemovedMedia": [],
+        "currentMediaCount": 4,
+        "removedMedia": [
+          "/images/vibecoding/4.png"
+        ],
+        "approvedRemovedMedia": [
+          "/images/vibecoding/4.png"
+        ],
         "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
-        "retirementDecision": null,
+        "retirementDecision": "human-confirmed outdated FAQ and AI-product media retired from rendered content; public asset files retained",
         "baselineExternalHosts": [],
         "currentExternalHosts": [],
         "removedExternalHosts": [],

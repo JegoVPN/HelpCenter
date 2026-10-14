@@ -85,22 +85,31 @@ FlClash 是基于 Mihomo（原 Clash Meta）的开源客户端，官方提供 Wi
 
 <img src="/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2FSUZB0uhm5ulHogGxgLEG_2Fimage_3.png" alt="更新配置">
 
-### 配置覆写规则（可选）
+### 屏蔽 QUIC（推荐）
 
-如果需要自定义某些域名的代理行为，可以通过添加覆写规则来实现：
+浏览器和 Claude 等 AI 应用会优先用 QUIC（UDP 443 端口）连接。当前节点不支持 UDP 时，这部分流量会绕过代理直接连接，暴露真实 IP。添加一条屏蔽 QUIC 的附加规则，这些应用会改用 TCP 连接，继续经过代理。
 
-1. 在配置页面，点击订阅配置卡片右上角的<span style="background-color:green; color:white; padding:2px 4px; border-radius:3px;">三个点 ⋮</span>
-2. 选择 <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">更多</span>
-3. 点击 <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">覆写</span>
-4. 点击 <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">添加</span>
-5. 在弹出的对话框中配置：
+依次进入<span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">工具</span> → <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">进阶配置</span> → <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">附加规则</span>，然后按 FlClash 版本操作：
+
+* **0.9.0 及以上**：点击右上角的闪电图标<span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">快捷操作</span>，勾选<span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">屏蔽 QUIC</span>，再点击右上角的 ✓ 确认。
+* **更早的版本**：点击<span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">添加</span>，**规则名称**选 `AND`，**内容**填 `((NETWORK,UDP),(DST-PORT,443))`，**规则目标**选 `REJECT`，点击<span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">确定</span>。
+
+这条规则只拦截 UDP 443 端口，语音通话、游戏等其他 UDP 连接不受影响。附加规则对所有订阅配置生效，更新订阅后不用重新设置。
+
+### 添加附加规则（可选）
+
+如果需要自定义某些域名的代理行为，可以在同一页面添加规则：
+
+1. 依次进入<span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">工具</span> → <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">进阶配置</span> → <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">附加规则</span>
+2. 点击 <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">添加</span>
+3. 在弹出的对话框中配置：
    * **规则名称**：点击后选择，如 `DOMAIN-SUFFIX`（域名后缀匹配）
-   * **规则内容**：点击后填写，如 `example.com`（主域名或者二级三级域名）
+   * **内容**：点击后填写，如 `example.com`（主域名或者二级三级域名）
    * **规则目标**：点击后选择，如 `DIRECT`（直连）、`REJECT`（拒绝）、`MATCH`（匹配）
-6. 点击保存
+4. 点击 <span style="background-color:green; color:white; padding:2px 6px; border-radius:3px;">确定</span>
 
 ::: tip 使用场景
-覆写规则适用于需要特定域名走指定节点的场景，如 AI 开发工具、特定网站加速等。详见 [Vibe Coding 配置指南](/guide/vibe-coding)。
+附加规则适用于需要特定域名走指定节点的场景，如 AI 开发工具、特定网站加速等。详见 [Vibe Coding 配置指南](/guide/vibe-coding)。
 :::
 
 ## 开启代理
