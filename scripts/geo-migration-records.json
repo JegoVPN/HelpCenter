@@ -4082,7 +4082,7 @@
     {
       "source": "docs/en/guide/support.md",
       "route": "/en/guide/support",
-      "strategy": "preserve-and-enhance",
+      "strategy": "restructure-in-place",
       "baselineH1": "Contact Customer Service",
       "currentH1": "Contact Support",
       "baselineSections": [
@@ -4113,8 +4113,20 @@
           "text": "Contact Information"
         },
         {
+          "level": 2,
+          "text": "Follow These 3 Steps to Get Your Issue Solved Fastest"
+        },
+        {
           "level": 3,
-          "text": "✉️ Email"
+          "text": "1. Check the Guidelines First"
+        },
+        {
+          "level": 3,
+          "text": "2. Submit a Ticket and Describe the Issue Clearly"
+        },
+        {
+          "level": 3,
+          "text": "3. Wait for Our Reply"
         },
         {
           "level": 2,
@@ -4123,10 +4135,6 @@
         {
           "level": 2,
           "text": "Feedback for Jego Subscription Service"
-        },
-        {
-          "level": 2,
-          "text": "💔 Ineffective Feedback"
         }
       ],
       "sectionMapping": [
@@ -4147,43 +4155,43 @@
             "text": "✉️ Email"
           },
           "to": {
+            "level": 2,
+            "text": "Follow These 3 Steps to Get Your Issue Solved Fastest"
+          },
+          "disposition": "restructured-in-place"
+        },
+        {
+          "from": {
+            "level": 2,
+            "text": "Feedback for Jego Browser Extension"
+          },
+          "to": {
+            "level": 2,
+            "text": "Feedback for Jego Browser Extension"
+          },
+          "disposition": "preserved-heading"
+        },
+        {
+          "from": {
+            "level": 2,
+            "text": "Feedback for Jego Subscription Service"
+          },
+          "to": {
+            "level": 2,
+            "text": "Feedback for Jego Subscription Service"
+          },
+          "disposition": "preserved-heading"
+        },
+        {
+          "from": {
+            "level": 2,
+            "text": "💔 Ineffective Feedback"
+          },
+          "to": {
             "level": 3,
-            "text": "✉️ Email"
+            "text": "3. Wait for Our Reply"
           },
-          "disposition": "preserved-heading"
-        },
-        {
-          "from": {
-            "level": 2,
-            "text": "Feedback for Jego Browser Extension"
-          },
-          "to": {
-            "level": 2,
-            "text": "Feedback for Jego Browser Extension"
-          },
-          "disposition": "preserved-heading"
-        },
-        {
-          "from": {
-            "level": 2,
-            "text": "Feedback for Jego Subscription Service"
-          },
-          "to": {
-            "level": 2,
-            "text": "Feedback for Jego Subscription Service"
-          },
-          "disposition": "preserved-heading"
-        },
-        {
-          "from": {
-            "level": 2,
-            "text": "💔 Ineffective Feedback"
-          },
-          "to": {
-            "level": 2,
-            "text": "💔 Ineffective Feedback"
-          },
-          "disposition": "preserved-heading"
+          "disposition": "restructured-in-place"
         }
       ],
       "preservedTasks": [
@@ -4200,12 +4208,16 @@
       ],
       "mediaAndExternalLinkChanges": {
         "baselineMediaCount": 3,
-        "currentMediaCount": 3,
-        "removedMedia": [],
-        "approvedRemovedMedia": [],
+        "currentMediaCount": 2,
+        "removedMedia": [
+          "/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2Fbdg94Dg1RfBdLyc4L8EI_2Fimage_1.png"
+        ],
+        "approvedRemovedMedia": [
+          "/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2Fbdg94Dg1RfBdLyc4L8EI_2Fimage_1.png"
+        ],
         "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
-        "retirementDecision": null,
+        "retirementDecision": "human-confirmed outdated FAQ and AI-product media retired from rendered content; public asset files retained",
         "baselineExternalHosts": [
           "www.w3.org"
         ],
@@ -10963,7 +10975,7 @@
     {
       "source": "docs/guide/support.md",
       "route": "/guide/support",
-      "strategy": "preserve-and-enhance",
+      "strategy": "restructure-in-place",
       "baselineH1": "联系客服",
       "currentH1": "联系客服",
       "baselineSections": [
@@ -10994,8 +11006,20 @@
           "text": "联系方式"
         },
         {
+          "level": 2,
+          "text": "照这 3 步来，问题解决得最快"
+        },
+        {
           "level": 3,
-          "text": "✉️ 邮箱"
+          "text": "1. 先看使用指南"
+        },
+        {
+          "level": 3,
+          "text": "2. 提交工单，把问题说清楚"
+        },
+        {
+          "level": 3,
+          "text": "3. 等我们回复"
         },
         {
           "level": 2,
@@ -11004,10 +11028,6 @@
         {
           "level": 2,
           "text": "无忧行订阅服务问题反馈"
-        },
-        {
-          "level": 2,
-          "text": "💔 无效反馈"
         }
       ],
       "sectionMapping": [
@@ -11028,43 +11048,43 @@
             "text": "✉️ 邮箱"
           },
           "to": {
+            "level": 2,
+            "text": "照这 3 步来，问题解决得最快"
+          },
+          "disposition": "restructured-in-place"
+        },
+        {
+          "from": {
+            "level": 2,
+            "text": "无忧行插件问题反馈"
+          },
+          "to": {
+            "level": 2,
+            "text": "无忧行插件问题反馈"
+          },
+          "disposition": "preserved-heading"
+        },
+        {
+          "from": {
+            "level": 2,
+            "text": "无忧行订阅服务问题反馈"
+          },
+          "to": {
+            "level": 2,
+            "text": "无忧行订阅服务问题反馈"
+          },
+          "disposition": "preserved-heading"
+        },
+        {
+          "from": {
+            "level": 2,
+            "text": "💔 无效反馈"
+          },
+          "to": {
             "level": 3,
-            "text": "✉️ 邮箱"
+            "text": "3. 等我们回复"
           },
-          "disposition": "preserved-heading"
-        },
-        {
-          "from": {
-            "level": 2,
-            "text": "无忧行插件问题反馈"
-          },
-          "to": {
-            "level": 2,
-            "text": "无忧行插件问题反馈"
-          },
-          "disposition": "preserved-heading"
-        },
-        {
-          "from": {
-            "level": 2,
-            "text": "无忧行订阅服务问题反馈"
-          },
-          "to": {
-            "level": 2,
-            "text": "无忧行订阅服务问题反馈"
-          },
-          "disposition": "preserved-heading"
-        },
-        {
-          "from": {
-            "level": 2,
-            "text": "💔 无效反馈"
-          },
-          "to": {
-            "level": 2,
-            "text": "💔 无效反馈"
-          },
-          "disposition": "preserved-heading"
+          "disposition": "restructured-in-place"
         }
       ],
       "preservedTasks": [
@@ -11080,12 +11100,16 @@
       ],
       "mediaAndExternalLinkChanges": {
         "baselineMediaCount": 3,
-        "currentMediaCount": 3,
-        "removedMedia": [],
-        "approvedRemovedMedia": [],
+        "currentMediaCount": 2,
+        "removedMedia": [
+          "/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2Fbdg94Dg1RfBdLyc4L8EI_2Fimage_1.png"
+        ],
+        "approvedRemovedMedia": [
+          "/images/image_spaces_2FtaiByLw8cj0IZKJTlaiM_2Fuploads_2Fbdg94Dg1RfBdLyc4L8EI_2Fimage_1.png"
+        ],
         "unexpectedRemovedMedia": [],
         "mediaPreserved": true,
-        "retirementDecision": null,
+        "retirementDecision": "human-confirmed outdated FAQ and AI-product media retired from rendered content; public asset files retained",
         "baselineExternalHosts": [
           "www.w3.org"
         ],
